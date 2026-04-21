@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin — Sell·U</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --navy:#0D1B3E; --navy2:#122050; --gold:#F5A623; --gold2:#E09415;
+            --white:#FFFFFF; --gray:#F5F6FA; --gray2:#E8EAF0; --text:#333A50; --muted:#6B7394;
+            --green:#0F6E4A; --green-bg:#E6F5EF; --amber:#92600A; --amber-bg:#FEF7E6;
+            --blue:#1B4FD8; --blue-bg:#EEF3FF; --red:#8B2020; --red-bg:#FDEEEE;
+        }
+        body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); }
+        a { text-decoration:none; color:inherit; }
+
+        .shell { display:flex; min-height:100vh; }
+
+        /* SIDEBAR */
+        .sidebar { width:230px; background:var(--navy); display:flex; flex-direction:column; flex-shrink:0; }
+        .sidebar-logo { padding:20px 18px 16px; border-bottom:1px solid rgba(255,255,255,.07); }
+        .sidebar-logo-text { font-family:'Montserrat',sans-serif; font-size:22px; font-weight:900; color:var(--white); letter-spacing:-1px; }
+        .sidebar-logo-text span { color:var(--gold); }
+        .sidebar-logo-sub { font-size:10px; color:rgba(255,255,255,.35); margin-top:2px; background:rgba(245,166,35,.2); color:var(--gold); padding:2px 8px; border-radius:10px; display:inline-block; margin-top:6px; font-weight:700; }
+        .sidebar-nav { flex:1; padding:16px 0; }
+        .sidebar-section { font-size:10px; font-weight:700; color:rgba(255,255,255,.25); text-transform:uppercase; letter-spacing:.08em; padding:10px 18px 5px; }
+        .sidebar-link { display:flex; align-items:center; gap:10px; padding:9px 18px; font-size:13px; color:rgba(255,255,255,.55); border-left:2px solid transparent; transition:all .15s; }
+        .sidebar-link:hover { color:rgba(255,255,255,.9); background:rgba(255,255,255,.05); }
+        .sidebar-link.active { color:var(--white); background:rgba(245,166,35,.15); border-left-color:var(--gold); font-weight:600; }
+        .sidebar-link svg { width:16px; height:16px; flex-shrink:0; }
+        .sidebar-badge { margin-left:auto; background:var(--gold); color:var(--navy); font-size:10px; font-weight:800; padding:1px 7px; border-radius:10px; }
+        .sidebar-footer { padding:16px 18px; border-top:1px solid rgba(255,255,255,.07); }
+        .sidebar-user strong { display:block; color:rgba(255,255,255,.7); font-size:13px; }
+        .sidebar-user span { font-size:11px; color:rgba(255,255,255,.35); }
+        .btn-logout { width:100%; margin-top:10px; padding:8px; background:rgba(255,255,255,.07); color:rgba(255,255,255,.5); border:none; border-radius:6px; font-size:12px; cursor:pointer; font-family:'Open Sans',sans-serif; }
+        .btn-logout:hover { background:rgba(255,255,255,.12); color:var(--white); }
+
+        /* MAIN */
+        .main { flex:1; display:flex; flex-direction:column; overflow:hidden; }
+        .topbar { background:var(--white); border-bottom:1px solid var(--gray2); padding:14px 28px; display:flex; align-items:center; justify-content:space-between; }
+        .topbar-title { font-family:'Montserrat',sans-serif; font-size:16px; font-weight:700; color:var(--navy); }
+        .topbar-right { font-size:13px; color:var(--muted); }
+
+        .content { flex:1; overflow-y:auto; padding:28px; }
+
+        /* METRICS */
+        .metrics { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:28px; }
+        .metric { background:var(--white); border:1px solid var(--gray2); border-radius:12px; padding:18px 16px; }
+        .metric-label { font-size:11px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px; }
+        .metric-value { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:800; color:var(--navy); }
+        .metric-sub { font-size:11px; color:var(--muted); margin-top:3px; }
+        .metric.highlight { background:var(--navy); border-color:var(--navy); }
+        .metric.highlight .metric-label { color:rgba(255,255,255,.5); }
+        .metric.highlight .metric-value { color:var(--gold); }
+        .metric.highlight .metric-sub { color:rgba(255,255,255,.35); }
+
+        /* TABLE */
+        .section-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; }
+        .section-title { font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; color:var(--navy); }
+        .btn-sm { padding:7px 16px; background:var(--navy); color:var(--white); border:none; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; font-family:'Montserrat',sans-serif; }
+        .btn-sm:hover { background:var(--navy2); }
+
+        .table-wrap { background:var(--white); border:1px solid var(--gray2); border-radius:12px; overflow:hidden; }
+        table { width:100%; border-collapse:collapse; }
+        th { padding:12px 16px; text-align:left; font-size:11px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; border-bottom:1px solid var(--gray2); background:var(--gray); }
+        td { padding:13px 16px; font-size:13px; border-bottom:1px solid var(--gray2); vertical-align:middle; }
+        tr:last-child td { border-bottom:none; }
+        tr:hover td { background:var(--gray); }
+        .td-empresa { font-weight:600; color:var(--navy); }
+        .td-meta { font-size:12px; color:var(--muted); margin-top:2px; }
+
+        .badge { font-size:11px; font-weight:600; padding:4px 10px; border-radius:20px; }
+        .badge-amber { background:var(--amber-bg); color:var(--amber); }
+        .badge-blue { background:var(--blue-bg); color:var(--blue); }
+        .badge-green { background:var(--green-bg); color:var(--green); }
+        .badge-red { background:var(--red-bg); color:var(--red); }
+        .badge-gray { background:var(--gray2); color:var(--muted); }
+
+        .link-detail { color:var(--blue); font-size:12px; font-weight:600; }
+        .link-detail:hover { text-decoration:underline; }
+
+        /* EMPTY */
+        .empty-row td { text-align:center; padding:40px; color:var(--muted); font-size:14px; }
+    </style>
+</head>
+<body>
+<div class="shell">
+
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <div class="sidebar-logo-text">Sell<span>·U</span></div>
+            <span class="sidebar-logo-sub">Admin</span>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="sidebar-section">Panel</div>
+            <a href="{{ route('admin.dashboard') }}" class="sidebar-link active">
+                <svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.3"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.3"/></svg>
+                Dashboard
+            </a>
+            <a href="{{ route('admin.tramites.index') }}" class="sidebar-link">
+                <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M5 6h6M5 9h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                Trámites
+                @if($stats['pendientes'] > 0)
+                    <span class="sidebar-badge">{{ $stats['pendientes'] }}</span>
+                @endif
+            </a>
+            <a href="{{ route('admin.clientes') }}" class="sidebar-link">
+                <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                Clientes
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="sidebar-user">
+                <strong>{{ auth()->user()->name }}</strong>
+                <span>Administrador</span>
+            </div>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="btn-logout">Cerrar sesión</button>
+            </form>
+        </div>
+    </aside>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="topbar-title">Centro de comandos</div>
+            <div class="topbar-right">{{ now()->format('d/m/Y') }}</div>
+        </div>
+
+        <div class="content">
+
+            {{-- MÉTRICAS --}}
+            <div class="metrics">
+                <div class="metric highlight">
+                    <div class="metric-label">Total trámites</div>
+                    <div class="metric-value">{{ $stats['total'] }}</div>
+                    <div class="metric-sub">Todos los tiempos</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Pendientes</div>
+                    <div class="metric-value" style="color:var(--amber)">{{ $stats['pendientes'] }}</div>
+                    <div class="metric-sub">Requieren atención</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">En proceso</div>
+                    <div class="metric-value" style="color:var(--blue)">{{ $stats['en_proceso'] }}</div>
+                    <div class="metric-sub">Activos</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Completados</div>
+                    <div class="metric-value" style="color:var(--green)">{{ $stats['completados'] }}</div>
+                    <div class="metric-sub">Empresas constituidas</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Clientes</div>
+                    <div class="metric-value">{{ $stats['clientes'] }}</div>
+                    <div class="metric-sub">Registrados</div>
+                </div>
+            </div>
+
+            {{-- TRÁMITES RECIENTES --}}
+            <div class="section-header">
+                <div class="section-title">Trámites recientes</div>
+                <a href="{{ route('admin.tramites.index') }}" class="btn-sm">Ver todos</a>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Empresa</th>
+                            <th>Cliente</th>
+                            <th>Plan</th>
+                            <th>Jurisdicción</th>
+                            <th>Estado</th>
+                            <th>Fecha</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @forelse($recientes as $tramite)
+                            @php $badge = $tramite->estado_badge; @endphp
+                            <tr>
+                                <td>
+                                    <div class="td-empresa">{{ $tramite->nombre_empresa ?? 'Sin nombre' }}</div>
+                                    <div class="td-meta">{{ $tramite->tipo_entidad }}</div>
+                                </td>
+                                <td>
+                                    <div>{{ $tramite->user->name }}</div>
+                                    <div class="td-meta">{{ $tramite->user->email }}</div>
+                                </td>
+                                <td>{{ $tramite->plan_seleccionado ?? '—' }}</td>
+                                <td>{{ $tramite->jurisdiccion }}</td>
+                                <td><span class="badge badge-{{ $badge['color'] }}">{{ $badge['label'] }}</span></td>
+                                <td>{{ $tramite->created_at->format('d/m/Y') }}</td>
+                                <td><a href="{{ route('admin.tramites.show', $tramite) }}" class="link-detail">Ver →</a></td>
+                            </tr>
+                        @empty
+                            <tr class="empty-row"><td colspan="7">No hay trámites todavía.</td></tr>
+                        @endforelse
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
