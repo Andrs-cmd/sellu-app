@@ -9,7 +9,7 @@ class AdminMiddleware
 {
     public function handle(Request $request, Closure $next)
     {
-        if (!auth()->check() || !auth()->user()->isAdmin()) {
+        if (!auth()->check() || !auth()->user()->isStaff()) {
             abort(403, 'Acceso no autorizado.');
         }
         return $next($request);

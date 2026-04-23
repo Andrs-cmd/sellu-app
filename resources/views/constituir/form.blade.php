@@ -470,10 +470,30 @@ async function irPaso2() {
 
 async function seleccionarPlan(plan, precio) {
     if (!tramiteId) { showAlert('Error: trámite no iniciado.'); return; }
-    const res = await post('{{ route("tramite.pago") }}', { tramite_id: tramiteId, plan_seleccionado: plan, precio_plan: precio });
-    if (!res.ok) { showAlert('Error al guardar el plan.'); return; }
-    addMember();
-    goStep(3);
+
+    const btn = event.target;
+    btn.disabled = true;
+    btn.textContent = 'Procesando...';
+
+    try {
+        const res = await post('{{ route("pago.checkout") }}', {
+            tramite_id:        tramiteId,
+            plan_seleccionado: plan,
+            precio_plan:       precio,
+        });
+
+        if (res.url) {
+            window.location.href = res.url;
+        } else {
+            showAlert('Error al iniciar el pago. Intenta de nuevo.');
+            btn.disabled = false;
+            btn.textContent = 'Seleccionar';
+        }
+    } catch(e) {
+        showAlert('Error de conexión. Intenta de nuevo.');
+        btn.disabled = false;
+        btn.textContent = 'Seleccionar';
+    }
 }
 
 async function irPaso4() {
@@ -630,7 +650,18 @@ function hideAlert() { document.getElementById('alert-box').style.display = 'non
 
 document.addEventListener('DOMContentLoaded', () => {
     renderPlans('FL');
+
+    // Retomar desde paso 3 si viene de pago exitoso
+    const params = new URLSearchParams(window.location.search);
+    const step = params.get('step');
+    const tid = params.get('tramite_id');
+
+    if (step && tid) {
+        tramiteId = parseInt(tid);
+        goStep(parseInt(step));
+    }
 });
+
 </script>
 </body>
 </html>

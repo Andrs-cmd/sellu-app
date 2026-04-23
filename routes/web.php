@@ -7,6 +7,8 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\TramiteController as AdminTramiteController;
 use App\Http\Controllers\Admin\DocumentoController as AdminDocumentoController;
 use App\Http\Controllers\Admin\NotaTramiteController;
+use App\Http\Controllers\Admin\UsuarioController;
+use App\Http\Controllers\PagoController;
 
 // ── Páginas públicas ──
 Route::get('/', fn() => view('pages.home'));
@@ -16,10 +18,12 @@ Route::get('/amazon', fn() => view('pages.amazon'));
 Route::get('/marca', fn() => view('pages.marca'));
 Route::get('/envios', fn() => view('pages.envios'));
 Route::get('/sanitario', fn() => view('pages.sanitario'));
+Route::get('/invitacion/{token}', [UsuarioController::class, 'aceptarInvitacion'])->name('invitacion.aceptar');
+Route::post('/invitacion/{token}', [UsuarioController::class, 'registrarInvitado'])->name('invitacion.registrar');
 
 // ── Auth (Breeze) ──
 require __DIR__.'/auth.php';
-
+Route::post('/webhook/stripe', [PagoController::class, 'webhook'])->name('webhook.stripe');
 // ── Panel del cliente ──
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [TramiteController::class, 'dashboard'])->name('dashboard');
@@ -33,6 +37,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/tramite/{tramite}/documentos', [DocumentoController::class, 'index'])->name('documentos.index');
     Route::post('/tramite/{tramite}/documentos', [DocumentoController::class, 'store'])->name('documentos.store');
     Route::delete('/documentos/{documento}', [DocumentoController::class, 'destroy'])->name('documentos.destroy');
+
+    Route::post('/pago/checkout', [PagoController::class, 'checkout'])->name('pago.checkout');
+Route::get('/pago/success', [PagoController::class, 'success'])->name('pago.success');
+
 });
 
 // ── Panel admin ──
@@ -50,4 +58,8 @@ Route::delete('/notas/{nota}', [NotaTramiteController::class, 'destroy'])->name(
 Route::patch('/tramites/{tramite}/registro', [NotaTramiteController::class, 'updateRegistro'])->name('tramites.registro');
 Route::get('/tramites/{tramite}/gestion', [AdminTramiteController::class, 'gestion'])->name('tramites.gestion');
 Route::post('/tramites/{tramite}/documentos-finales', [AdminDocumentoController::class, 'storeAdmin'])->name('tramites.documentos.admin');
+Route::get('/usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
+Route::post('/usuarios/invitar', [UsuarioController::class, 'invite'])->name('usuarios.invite');
+Route::patch('/usuarios/{user}/role', [UsuarioController::class, 'updateRole'])->name('usuarios.role');
+Route::patch('/usuarios/{user}/toggle', [UsuarioController::class, 'toggleActivo'])->name('usuarios.toggle');
 });

@@ -111,6 +111,10 @@
                 <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
                 Clientes
             </a>
+            <a href="{{ route('admin.usuarios.index') }}" class="sidebar-link">
+    <svg viewBox="0 0 16 16" fill="none"><circle cx="6" cy="5" r="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M1 14c0-2.8 2.2-5 5-5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M11 9v6M8 12h6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+    Usuarios
+</a>
         </nav>
         <div class="sidebar-footer">
             <div class="sidebar-user">
@@ -122,6 +126,7 @@
                 <button type="submit" class="btn-logout">Cerrar sesión</button>
             </form>
         </div>
+        
     </aside>
 
     <div class="main">

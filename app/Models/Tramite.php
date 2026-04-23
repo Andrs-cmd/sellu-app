@@ -13,6 +13,7 @@ class Tramite extends Model
     'estado', 'etapa',
     'numero_registro', 'fecha_presentacion', 'fecha_aprobacion',
     'agente_registrado', 'ein_solicitado', 'ein_numero', 'notas_internas',
+    'stripe_session_id', 'stripe_payment_intent', 'pago_estado', 'pago_at',
 ];
 
     public function user()
