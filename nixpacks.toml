@@ -16,6 +16,7 @@ cmds = [
   "php artisan config:cache",
   "php artisan route:cache",
   "php artisan view:cache",
+  "php artisan storage:link",
   # Las migraciones aquí pueden fallar si la DB no está lista, 
   # pero con el driver correcto deberían pasar.
   "php artisan migrate --force"
