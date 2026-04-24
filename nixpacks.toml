@@ -29,6 +29,4 @@ cmds = [
 ]
 
 [start]
-# Ojo: Para producción en Railway, es mejor usar el servidor nativo o Frannk
-# pero si prefieres artisan serve, este comando está bien.
-cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
+cmd = "frankenphp run --config /app/Caddyfile"
