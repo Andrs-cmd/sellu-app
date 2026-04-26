@@ -62,4 +62,29 @@ Route::get('/usuarios', [UsuarioController::class, 'index'])->name('usuarios.ind
 Route::post('/usuarios/invitar', [UsuarioController::class, 'invite'])->name('usuarios.invite');
 Route::patch('/usuarios/{user}/role', [UsuarioController::class, 'updateRole'])->name('usuarios.role');
 Route::patch('/usuarios/{user}/toggle', [UsuarioController::class, 'toggleActivo'])->name('usuarios.toggle');
+
+// RUTA TEMPORAL — ELIMINAR DESPUÉS
+Route::get('/setup-admin', function () {
+    $user = App\Models\User::where('email', 'admin@sellu.co')->first();
+    
+    if ($user) {
+        $user->update([
+            'role'   => 'admin',
+            'activo' => true,
+            'password' => bcrypt('Sellu2026*'),
+        ]);
+        return 'Admin actualizado correctamente';
+    }
+    
+    App\Models\User::create([
+        'name'              => 'Admin Sellu',
+        'email'             => 'admin@sellu.co',
+        'password'          => bcrypt('Sellu2026*'),
+        'role'              => 'admin',
+        'activo'            => true,
+        'email_verified_at' => now(),
+    ]);
+    
+    return 'Admin creado correctamente';
+});
 });
