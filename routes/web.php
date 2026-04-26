@@ -62,6 +62,7 @@ Route::get('/usuarios', [UsuarioController::class, 'index'])->name('usuarios.ind
 Route::post('/usuarios/invitar', [UsuarioController::class, 'invite'])->name('usuarios.invite');
 Route::patch('/usuarios/{user}/role', [UsuarioController::class, 'updateRole'])->name('usuarios.role');
 Route::patch('/usuarios/{user}/toggle', [UsuarioController::class, 'toggleActivo'])->name('usuarios.toggle');
+});
 
 // RUTA TEMPORAL — ELIMINAR DESPUÉS
 Route::get('/setup-admin', function () {
@@ -69,8 +70,8 @@ Route::get('/setup-admin', function () {
     
     if ($user) {
         $user->update([
-            'role'   => 'admin',
-            'activo' => true,
+            'role'     => 'admin',
+            'activo'   => true,
             'password' => bcrypt('Sellu2026*'),
         ]);
         return 'Admin actualizado correctamente';
@@ -86,5 +87,4 @@ Route::get('/setup-admin', function () {
     ]);
     
     return 'Admin creado correctamente';
-});
 });
