@@ -10,10 +10,29 @@ use App\Helpers\Notificar;
 class TramiteController extends Controller
 {
     public function dashboard()
-    {
-        $tramites = auth()->user()->tramites()->latest()->get();
-        return view('dashboard', compact('tramites'));
+{
+    $buscar = request('buscar');
+    $estado = request('estado');
+
+    $query = auth()->user()->tramites();
+
+    if ($buscar) {
+        $query->where(function($q) use ($buscar) {
+            $q->where('nombre_empresa', 'like', "%{$buscar}%")
+              ->orWhere('jurisdiccion', 'like', "%{$buscar}%")
+              ->orWhere('tipo_entidad', 'like', "%{$buscar}%")
+              ->orWhere('plan_seleccionado', 'like', "%{$buscar}%");
+        });
     }
+
+    if ($estado) {
+        $query->where('estado', $estado);
+    }
+
+    $tramites = $query->latest()->get();
+
+    return view('dashboard', compact('tramites'));
+}
 
     public function create()
     {

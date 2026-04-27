@@ -29,7 +29,7 @@
         .sidebar-link.active { color:var(--white); background:rgba(245,166,35,.15); border-left-color:var(--gold); font-weight:600; }
         .sidebar-link svg { width:16px; height:16px; flex-shrink:0; }
         .sidebar-badge { margin-left:auto; background:var(--gold); color:var(--navy); font-size:10px; font-weight:800; padding:1px 7px; border-radius:10px; }
-.sidebar-badge.red { background:var(--red); color:white; }
+        .sidebar-badge.red { background:var(--red); color:white; }
         .sidebar-footer { padding:16px 18px; border-top:1px solid rgba(255,255,255,.07); }
         .sidebar-user strong { display:block; color:rgba(255,255,255,.7); font-size:13px; }
         .sidebar-user span { font-size:11px; color:rgba(255,255,255,.35); }
@@ -47,7 +47,23 @@
         .metric-label { font-size:11px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px; }
         .metric-value { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:800; }
 
-        .section-title { font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; color:var(--navy); margin-bottom:14px; }
+        /* FILTROS */
+        .filter-bar { background:var(--white); border:1px solid var(--gray2); border-radius:10px; padding:14px 18px; margin-bottom:18px; }
+        .filter-form { display:flex; gap:10px; align-items:flex-end; flex-wrap:wrap; }
+        .filter-group { flex:1; min-width:140px; }
+        .filter-label { display:block; font-size:11px; font-weight:700; color:var(--navy); margin-bottom:5px; }
+        .filter-input { width:100%; padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Open Sans',sans-serif; color:var(--text); outline:none; background:var(--white); transition:border-color .2s; }
+        .filter-input:focus { border-color:var(--navy); }
+        .btn-buscar { padding:9px 18px; background:var(--navy); color:var(--white); border:none; border-radius:6px; font-size:13px; font-weight:600; cursor:pointer; font-family:'Montserrat',sans-serif; white-space:nowrap; }
+        .btn-buscar:hover { background:var(--navy2); }
+        .btn-limpiar { padding:9px 12px; background:var(--gray2); color:var(--text); border:none; border-radius:6px; font-size:13px; cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; }
+        .btn-limpiar:hover { background:#D3D1C7; }
+        .filtros-activos { display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
+        .filtro-tag { display:inline-flex; align-items:center; gap:4px; background:var(--blue-bg); color:var(--blue); font-size:11px; font-weight:600; padding:3px 10px; border-radius:20px; }
+
+        .section-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+        .section-title { font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; color:var(--navy); }
+        .section-count { font-size:12px; color:var(--muted); }
 
         .table-wrap { background:var(--white); border:1px solid var(--gray2); border-radius:12px; overflow:hidden; margin-bottom:20px; }
         table { width:100%; border-collapse:collapse; }
@@ -69,17 +85,16 @@
         .btn-action { display:inline-flex; align-items:center; gap:5px; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; font-family:'Montserrat',sans-serif; border:none; cursor:pointer; transition:all .2s; text-decoration:none; white-space:nowrap; }
         .btn-ver { background:var(--blue-bg); color:var(--blue); }
         .btn-ver:hover { background:#B5D4F4; }
-        .btn-wa { background:#E6F5EF; color:var(--green); }
-        .btn-wa:hover { background:#C5ECD8; }
+        .btn-nota { background:var(--amber-bg); color:var(--amber); }
+        .btn-nota:hover { background:#FAC775; }
+
+        .empty-row td { text-align:center; padding:40px; color:var(--muted); }
 
         .pagination { display:flex; gap:6px; justify-content:center; margin-top:16px; }
         .pagination a, .pagination span { padding:7px 13px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; color:var(--text); background:var(--white); }
         .pagination a:hover { background:var(--gray); }
         .pagination .active span { background:var(--navy); color:var(--white); border-color:var(--navy); }
 
-        .empty-row td { text-align:center; padding:40px; color:var(--muted); }
-
-        /* NOTA MODAL */
         .modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,.5); display:flex; align-items:center; justify-content:center; z-index:100; }
         .modal-overlay.hidden { display:none; }
         .modal { background:var(--white); border-radius:12px; width:90%; max-width:480px; overflow:hidden; }
@@ -112,13 +127,13 @@
                 Todos los trámites
             </a>
             @php $noLeidas = auth()->user()->notificacionesNoLeidas()->count(); @endphp
-                <a href="{{ route('admin.notificaciones.index') }}" class="sidebar-link">
-                    <svg viewBox="0 0 16 16" fill="none"><path d="M8 2a5 5 0 015 5v3l1 2H2l1-2V7a5 5 0 015-5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M6.5 13a1.5 1.5 0 003 0" stroke="currentColor" stroke-width="1.3"/></svg>
-                    Notificaciones
-                    @if($noLeidas > 0)
-                        <span class="sidebar-badge red">{{ $noLeidas }}</span>
-                    @endif
-                </a>
+            <a href="{{ route('admin.notificaciones.index') }}" class="sidebar-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M8 2a5 5 0 015 5v3l1 2H2l1-2V7a5 5 0 015-5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M6.5 13a1.5 1.5 0 003 0" stroke="currentColor" stroke-width="1.3"/></svg>
+                Notificaciones
+                @if($noLeidas > 0)
+                    <span class="sidebar-badge red">{{ $noLeidas }}</span>
+                @endif
+            </a>
         </nav>
         <div class="sidebar-footer">
             <div class="sidebar-user">
@@ -158,8 +173,49 @@
                 </div>
             </div>
 
+            {{-- FILTROS --}}
+            <div class="filter-bar">
+                <form method="GET" action="{{ route('admin.mi.panel') }}" class="filter-form">
+                    <div class="filter-group" style="flex:2">
+                        <span class="filter-label">Buscar</span>
+                        <input type="text" name="buscar" class="filter-input"
+                            placeholder="Nombre empresa, cliente, email..."
+                            value="{{ request('buscar') }}">
+                    </div>
+                    <div class="filter-group">
+                        <span class="filter-label">Estado</span>
+                        <select name="estado" class="filter-input">
+                            <option value="">Todos</option>
+                            <option value="pendiente"  {{ request('estado') === 'pendiente'  ? 'selected' : '' }}>Pendiente</option>
+                            <option value="en_proceso" {{ request('estado') === 'en_proceso' ? 'selected' : '' }}>En proceso</option>
+                            <option value="completado" {{ request('estado') === 'completado' ? 'selected' : '' }}>Completado</option>
+                            <option value="cancelado"  {{ request('estado') === 'cancelado'  ? 'selected' : '' }}>Cancelado</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-buscar">Buscar</button>
+                    @if(request('buscar') || request('estado'))
+                        <a href="{{ route('admin.mi.panel') }}" class="btn-limpiar">Limpiar</a>
+                    @endif
+                </form>
+
+                @if(request('buscar') || request('estado'))
+                    <div class="filtros-activos">
+                        @if(request('buscar'))
+                            <span class="filtro-tag">Búsqueda: "{{ request('buscar') }}"</span>
+                        @endif
+                        @if(request('estado'))
+                            <span class="filtro-tag">Estado: {{ ucfirst(request('estado')) }}</span>
+                        @endif
+                    </div>
+                @endif
+            </div>
+
             {{-- TABLA TRÁMITES --}}
-            <div class="section-title">Todos los trámites</div>
+            <div class="section-header">
+                <div class="section-title">Todos los trámites</div>
+                <div class="section-count">{{ $tramites->total() }} resultado(s)</div>
+            </div>
+
             <div class="table-wrap">
                 <table>
                     <thead>
@@ -190,27 +246,19 @@
                                 <td>
                                     <div style="display:flex;gap:6px">
                                         <a href="{{ route('admin.tramites.show', $tramite) }}" class="btn-action btn-ver">Ver</a>
-                                        <button type="button" class="btn-action btn-wa"
-                                            onclick="abrirNota({{ $tramite->id }})">
-                                            + Nota
-                                        </button>
-                                        <a href="https://wa.me/?text=Hola+{{ urlencode($tramite->user->name) }}"
-                                           target="_blank" class="btn-action btn-wa">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6 0C2.7 0 0 2.7 0 6c0 1.1.3 2.1.8 3L0 12l3.1-.8C4 11.7 5 12 6 12c3.3 0 6-2.7 6-6S9.3 0 6 0z"/></svg>
-                                            WA
-                                        </a>
+                                        <button type="button" class="btn-action btn-nota" onclick="abrirNota({{ $tramite->id }})">+ Nota</button>
                                     </div>
                                 </td>
                             </tr>
                         @empty
-                            <tr class="empty-row"><td colspan="6">No hay trámites.</td></tr>
+                            <tr class="empty-row"><td colspan="6">No hay trámites con esos filtros.</td></tr>
                         @endforelse
                     </tbody>
                 </table>
             </div>
 
             <div class="pagination">
-                {{ $tramites->links() }}
+                {{ $tramites->withQueryString()->links() }}
             </div>
 
         </div>
@@ -245,8 +293,7 @@
 
 <script>
 function abrirNota(tramiteId) {
-    const form = document.getElementById('form-nota');
-    form.action = `/admin/tramites/${tramiteId}/notas`;
+    document.getElementById('form-nota').action = `/admin/tramites/${tramiteId}/notas`;
     document.getElementById('modal-nota').classList.remove('hidden');
 }
 function cerrarNota() {

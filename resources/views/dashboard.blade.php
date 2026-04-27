@@ -15,10 +15,8 @@
         }
         body { font-family: 'Open Sans', sans-serif; background: var(--gray); color: var(--text); }
         a { text-decoration: none; color: inherit; }
-
         .shell { display: flex; min-height: 100vh; }
 
-        /* SIDEBAR */
         .sidebar { width: 220px; background: var(--navy); display: flex; flex-direction: column; flex-shrink: 0; }
         .sidebar-logo { padding: 20px 18px; border-bottom: 1px solid rgba(255,255,255,.07); }
         .sidebar-logo-text { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: var(--white); letter-spacing: -1px; }
@@ -36,25 +34,39 @@
         .btn-logout { width: 100%; padding: 8px; background: rgba(255,255,255,.07); color: rgba(255,255,255,.5); border: none; border-radius: 6px; font-size: 12px; cursor: pointer; font-family: 'Open Sans', sans-serif; transition: background .15s; }
         .btn-logout:hover { background: rgba(255,255,255,.12); color: var(--white); }
 
-        /* MAIN */
         .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
         .topbar { background: var(--white); border-bottom: 1px solid var(--gray2); padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; }
         .topbar-title { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: var(--navy); }
         .topbar-greeting { font-size: 13px; color: var(--muted); }
-        .btn-primary { background: var(--gold); color: var(--navy); padding: 9px 20px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; border: none; cursor: pointer; text-transform: uppercase; letter-spacing: .04em; transition: background .2s; }
+        .btn-primary { background: var(--gold); color: var(--navy); padding: 9px 20px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; border: none; cursor: pointer; text-transform: uppercase; letter-spacing: .04em; transition: background .2s; display:inline-block; }
         .btn-primary:hover { background: var(--gold2); }
 
         .content { flex: 1; overflow-y: auto; padding: 28px; }
 
-        /* MÉTRICAS */
-        .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 28px; }
+        .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
         .metric { background: var(--white); border: 1px solid var(--gray2); border-radius: 12px; padding: 20px; }
         .metric-label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
         .metric-value { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 800; color: var(--navy); }
         .metric-sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
-        /* TRAMITES */
-        .section-title { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 16px; }
+        /* FILTROS */
+        .filter-bar { background: var(--white); border: 1px solid var(--gray2); border-radius: 10px; padding: 14px 18px; margin-bottom: 18px; }
+        .filter-form { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; }
+        .filter-group { flex: 1; min-width: 160px; }
+        .filter-label { display: block; font-size: 11px; font-weight: 700; color: var(--navy); margin-bottom: 5px; }
+        .filter-input { width: 100%; padding: 9px 12px; border: 1px solid var(--gray2); border-radius: 6px; font-size: 13px; font-family: 'Open Sans', sans-serif; color: var(--text); outline: none; background: var(--white); transition: border-color .2s; }
+        .filter-input:focus { border-color: var(--navy); }
+        .btn-buscar { padding: 9px 18px; background: var(--navy); color: var(--white); border: none; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'Montserrat', sans-serif; white-space: nowrap; }
+        .btn-buscar:hover { background: var(--navy2); }
+        .btn-limpiar { padding: 9px 12px; background: var(--gray2); color: var(--text); border: none; border-radius: 6px; font-size: 13px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; }
+        .btn-limpiar:hover { background: #D3D1C7; }
+        .filtros-activos { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+        .filtro-tag { display: inline-flex; align-items: center; gap: 4px; background: var(--blue-bg); color: var(--blue); font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+
+        .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+        .section-title { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); }
+        .section-count { font-size: 12px; color: var(--muted); }
+
         .tramites-list { display: flex; flex-direction: column; gap: 12px; }
         .tramite-card { background: var(--white); border: 1px solid var(--gray2); border-radius: 12px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; transition: border-color .15s; }
         .tramite-card:hover { border-color: var(--gold); }
@@ -72,17 +84,19 @@
         .tramite-arrow { color: var(--gray2); }
         .tramite-arrow svg { width: 18px; height: 18px; }
 
-        /* EMPTY STATE */
         .empty { background: var(--white); border: 1px dashed var(--gray2); border-radius: 12px; padding: 56px 24px; text-align: center; }
         .empty svg { width: 48px; height: 48px; color: var(--gray2); margin-bottom: 16px; }
         .empty h3 { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
         .empty p { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
+
+        .no-resultados { background: var(--white); border: 1px solid var(--gray2); border-radius: 12px; padding: 36px 24px; text-align: center; }
+        .no-resultados p { font-size: 14px; color: var(--muted); }
+        .no-resultados a { color: var(--blue); font-weight: 600; }
     </style>
 </head>
 <body>
 <div class="shell">
 
-    {{-- SIDEBAR --}}
     <aside class="sidebar">
         <div class="sidebar-logo">
             <div class="sidebar-logo-text">Sell<span>·U</span></div>
@@ -111,7 +125,6 @@
         </div>
     </aside>
 
-    {{-- MAIN --}}
     <div class="main">
         <div class="topbar">
             <div>
@@ -142,15 +155,59 @@
                 </div>
             </div>
 
-            {{-- LISTA DE TRÁMITES --}}
-            <div class="section-title">Mis trámites</div>
+            {{-- FILTROS --}}
+            <div class="filter-bar">
+                <form method="GET" action="{{ route('dashboard') }}" class="filter-form">
+                    <div class="filter-group" style="flex:2">
+                        <span class="filter-label">Buscar</span>
+                        <input type="text" name="buscar" class="filter-input"
+                            placeholder="Nombre empresa, tipo, plan, estado..."
+                            value="{{ request('buscar') }}">
+                    </div>
+                    <div class="filter-group">
+                        <span class="filter-label">Estado</span>
+                        <select name="estado" class="filter-input">
+                            <option value="">Todos</option>
+                            <option value="pendiente"  {{ request('estado') === 'pendiente'  ? 'selected' : '' }}>Pendiente</option>
+                            <option value="en_proceso" {{ request('estado') === 'en_proceso' ? 'selected' : '' }}>En proceso</option>
+                            <option value="completado" {{ request('estado') === 'completado' ? 'selected' : '' }}>Completado</option>
+                            <option value="cancelado"  {{ request('estado') === 'cancelado'  ? 'selected' : '' }}>Cancelado</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-buscar">Buscar</button>
+                    @if(request('buscar') || request('estado'))
+                        <a href="{{ route('dashboard') }}" class="btn-limpiar">Limpiar</a>
+                    @endif
+                </form>
 
-            @if($tramites->isEmpty())
+                @if(request('buscar') || request('estado'))
+                    <div class="filtros-activos">
+                        @if(request('buscar'))
+                            <span class="filtro-tag">Búsqueda: "{{ request('buscar') }}"</span>
+                        @endif
+                        @if(request('estado'))
+                            <span class="filtro-tag">Estado: {{ ucfirst(request('estado')) }}</span>
+                        @endif
+                    </div>
+                @endif
+            </div>
+
+            {{-- LISTA DE TRÁMITES --}}
+            <div class="section-header">
+                <div class="section-title">Mis trámites</div>
+                <div class="section-count">{{ $tramites->count() }} resultado(s)</div>
+            </div>
+
+            @if($tramites->isEmpty() && !request('buscar') && !request('estado'))
                 <div class="empty">
                     <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="6" stroke="currentColor" stroke-width="2"/><path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
                     <h3>Aún no tienes trámites</h3>
                     <p>Comienza el proceso de constitución de tu empresa en EE.UU.</p>
-                    <a href="{{ route('tramite.create') }}" class="btn-primary" style="display:inline-block">Empezar ahora</a>
+                    <a href="{{ route('tramite.create') }}" class="btn-primary">Empezar ahora</a>
+                </div>
+            @elseif($tramites->isEmpty())
+                <div class="no-resultados">
+                    <p>No se encontraron trámites con esos criterios. <a href="{{ route('dashboard') }}">Ver todos</a></p>
                 </div>
             @else
                 <div class="tramites-list">
@@ -160,9 +217,7 @@
                                 <svg viewBox="0 0 20 20" fill="none"><path d="M4 4h12v12H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M7 8h6M7 11h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
                             </div>
                             <div class="tramite-info">
-                                <div class="tramite-nombre">
-                                    {{ $tramite->nombre_empresa ?? 'Empresa en proceso' }}
-                                </div>
+                                <div class="tramite-nombre">{{ $tramite->nombre_empresa ?? 'Empresa en proceso' }}</div>
                                 <div class="tramite-meta">
                                     {{ $tramite->tipo_entidad }} · {{ $tramite->jurisdiccion }} ·
                                     {{ $tramite->plan_seleccionado ?? 'Sin plan' }} ·
