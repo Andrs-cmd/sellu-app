@@ -12,7 +12,6 @@
             --white:#FFFFFF; --gray:#F5F6FA; --gray2:#E8EAF0; --text:#333A50; --muted:#6B7394;
             --green:#0F6E4A; --green-bg:#E6F5EF; --amber:#92600A; --amber-bg:#FEF7E6;
             --blue:#1B4FD8; --blue-bg:#EEF3FF; --red:#8B2020; --red-bg:#FDEEEE;
-            --purple:#534AB7; --purple-bg:#EEEDFE;
         }
         body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); }
         a { text-decoration:none; color:inherit; }
@@ -52,8 +51,18 @@
         .badge-soporte { background:var(--amber-bg); color:var(--amber); }
         .badge-cliente { background:var(--gray2); color:var(--muted); }
 
-        .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:24px; }
-        @media(max-width:800px) { .grid-2 { grid-template-columns:1fr; } }
+        .roles-info { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:20px; }
+        .role-card { padding:12px 14px; border-radius:8px; border:1px solid var(--gray2); }
+        .role-card-name { font-size:12px; font-weight:700; margin-bottom:4px; }
+        .role-card-desc { font-size:11px; color:var(--muted); line-height:1.5; }
+        .role-card.admin { background:#EEEDFE; border-color:#AFA9EC; }
+        .role-card.admin .role-card-name { color:#3C3489; }
+        .role-card.legal { background:var(--blue-bg); border-color:#85B7EB; }
+        .role-card.legal .role-card-name { color:var(--blue); }
+        .role-card.contable { background:var(--green-bg); border-color:#97C459; }
+        .role-card.contable .role-card-name { color:var(--green); }
+        .role-card.soporte { background:var(--amber-bg); border-color:#EF9F27; }
+        .role-card.soporte .role-card-name { color:var(--amber); }
 
         .card { background:var(--white); border:1px solid var(--gray2); border-radius:12px; overflow:hidden; margin-bottom:20px; }
         .card-header { padding:16px 20px; border-bottom:1px solid var(--gray2); display:flex; align-items:center; justify-content:space-between; }
@@ -61,8 +70,15 @@
         .card-body { padding:20px; }
 
         label { display:block; font-size:12px; font-weight:700; color:var(--navy); margin-bottom:6px; }
-        input[type=email], select { width:100%; padding:10px 12px; border:1px solid var(--gray2); border-radius:6px; font-family:'Open Sans',sans-serif; font-size:13px; color:var(--text); background:var(--white); outline:none; transition:border-color .2s; margin-bottom:14px; }
+        input[type=text], input[type=email], input[type=password], select {
+            width:100%; padding:10px 12px; border:1px solid var(--gray2); border-radius:6px;
+            font-family:'Open Sans',sans-serif; font-size:13px; color:var(--text);
+            background:var(--white); outline:none; transition:border-color .2s; margin-bottom:14px;
+        }
         input:focus, select:focus { border-color:var(--navy); }
+
+        .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+        @media(max-width:700px) { .form-grid { grid-template-columns:1fr; } }
 
         .btn { padding:9px 18px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; cursor:pointer; border:none; transition:all .2s; }
         .btn-navy { background:var(--navy); color:var(--white); }
@@ -87,7 +103,6 @@
         .avatar-legal { background:var(--blue-bg); color:var(--blue); }
         .avatar-contable { background:var(--green-bg); color:var(--green); }
         .avatar-soporte { background:var(--amber-bg); color:var(--amber); }
-        .avatar-cliente { background:var(--gray2); color:var(--muted); }
         .user-name { font-weight:600; color:var(--navy); font-size:13px; }
         .user-email { font-size:11px; color:var(--muted); }
 
@@ -98,28 +113,11 @@
         .role-form { display:flex; gap:8px; align-items:center; }
         .role-form select { width:auto; margin:0; padding:6px 10px; font-size:12px; }
 
-        .invite-link { background:var(--blue-bg); border:1px solid #B5D4F4; border-radius:8px; padding:12px 16px; font-size:12px; color:var(--blue); word-break:break-all; margin-top:8px; display:flex; align-items:center; gap:10px; justify-content:space-between; }
-        .btn-copy { padding:5px 12px; background:var(--blue); color:white; border:none; border-radius:5px; font-size:11px; font-weight:700; cursor:pointer; white-space:nowrap; }
-
-        .inv-item { display:flex; align-items:center; justify-content:space-between; padding:10px 0; border-bottom:1px solid var(--gray2); font-size:13px; gap:12px; }
-        .inv-item:last-child { border-bottom:none; }
-        .inv-email { font-weight:600; color:var(--navy); }
-        .inv-meta { font-size:11px; color:var(--muted); margin-top:2px; }
-
         .empty-row td { text-align:center; padding:32px; color:var(--muted); font-size:13px; }
 
-        .roles-info { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:20px; }
-        .role-card { padding:12px 14px; border-radius:8px; border:1px solid var(--gray2); }
-        .role-card-name { font-size:12px; font-weight:700; margin-bottom:4px; }
-        .role-card-desc { font-size:11px; color:var(--muted); line-height:1.5; }
-        .role-card.admin { background:#EEEDFE; border-color:#AFA9EC; }
-        .role-card.admin .role-card-name { color:#3C3489; }
-        .role-card.legal { background:var(--blue-bg); border-color:#85B7EB; }
-        .role-card.legal .role-card-name { color:var(--blue); }
-        .role-card.contable { background:var(--green-bg); border-color:#97C459; }
-        .role-card.contable .role-card-name { color:var(--green); }
-        .role-card.soporte { background:var(--amber-bg); border-color:#EF9F27; }
-        .role-card.soporte .role-card-name { color:var(--amber); }
+        .pass-wrap { position:relative; }
+        .pass-wrap input { padding-right:60px; margin-bottom:14px; }
+        .pass-toggle { position:absolute; right:10px; top:10px; background:none; border:none; cursor:pointer; color:var(--muted); font-size:11px; font-weight:600; }
     </style>
 </head>
 <body>
@@ -195,52 +193,43 @@
                     </div>
                 </div>
 
-                <div class="grid-2">
-
-                    {{-- INVITAR USUARIO --}}
-                    <div class="card">
-                        <div class="card-header"><h3>Invitar nuevo usuario</h3></div>
-                        <div class="card-body">
-                            <form method="POST" action="{{ route('admin.usuarios.invite') }}">
-                                @csrf
-                                <label>Correo electrónico</label>
-                                <input type="email" name="email" placeholder="colaborador@email.com" required>
-                                <label>Rol asignado</label>
-                                <select name="role">
-                                    <option value="legal">Legal</option>
-                                    <option value="contable">Contable</option>
-                                    <option value="soporte">Soporte</option>
-                                    <option value="admin">Admin</option>
-                                </select>
-                                <button type="submit" class="btn btn-gold btn-full">Enviar invitación</button>
-                            </form>
-                        </div>
-                    </div>
-
-                    {{-- INVITACIONES PENDIENTES --}}
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Invitaciones pendientes</h3>
-                            <span style="font-size:12px;color:var(--muted)">{{ $invitaciones->count() }} activas</span>
-                        </div>
-                        <div class="card-body">
-                            @forelse($invitaciones as $inv)
-                                <div class="inv-item">
-                                    <div>
-                                        <div class="inv-email">{{ $inv->email }}</div>
-                                        <div class="inv-meta">
-                                            <span class="badge badge-{{ $inv->role }}">{{ ucfirst($inv->role) }}</span>
-                                            · Expira {{ $inv->expires_at->format('d/m/Y') }}
-                                        </div>
-                                    </div>
-                                    <button onclick="copiarLink('{{ route('invitacion.aceptar', $inv->token) }}')" class="btn-copy">Copiar link</button>
+                {{-- CREAR USUARIO --}}
+                <div class="card">
+                    <div class="card-header"><h3>Crear nuevo usuario del equipo</h3></div>
+                    <div class="card-body">
+                        <form method="POST" action="{{ route('admin.usuarios.store') }}">
+                            @csrf
+                            <div class="form-grid">
+                                <div>
+                                    <label>Nombre completo</label>
+                                    <input type="text" name="name" placeholder="Ej: María García" required value="{{ old('name') }}">
                                 </div>
-                            @empty
-                                <p style="font-size:13px;color:var(--muted);text-align:center;padding:20px 0">No hay invitaciones pendientes.</p>
-                            @endforelse
-                        </div>
+                                <div>
+                                    <label>Correo electrónico</label>
+                                    <input type="email" name="email" placeholder="colaborador@sellu.co" required value="{{ old('email') }}">
+                                </div>
+                            </div>
+                            <div class="form-grid">
+                                <div>
+                                    <label>Contraseña temporal</label>
+                                    <div class="pass-wrap">
+                                        <input type="password" name="password" id="pass-input" placeholder="Mínimo 8 caracteres" required>
+                                        <button type="button" class="pass-toggle" onclick="togglePass()">Ver</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label>Rol asignado</label>
+                                    <select name="role">
+                                        <option value="legal">Legal — Gestiona trámites y LLC</option>
+                                        <option value="contable">Contable — Finanzas y clientes</option>
+                                        <option value="soporte">Soporte — Consultas y notas</option>
+                                        <option value="admin">Admin — Acceso total</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-gold" style="min-width:200px">Crear usuario</button>
+                        </form>
                     </div>
-
                 </div>
 
                 {{-- TABLA DE USUARIOS STAFF --}}
@@ -257,7 +246,7 @@
                                     <th>Estado</th>
                                     <th>Desde</th>
                                     <th>Cambiar rol</th>
-                                    <th></th>
+                                    <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -288,7 +277,7 @@
                                                     @csrf
                                                     @method('PATCH')
                                                     <select name="role">
-                                                        @foreach(['admin','legal','contable','soporte','cliente'] as $rol)
+                                                        @foreach(['admin','legal','contable','soporte'] as $rol)
                                                             <option value="{{ $rol }}" {{ $usuario->role === $rol ? 'selected' : '' }}>{{ ucfirst($rol) }}</option>
                                                         @endforeach
                                                     </select>
@@ -300,18 +289,25 @@
                                         </td>
                                         <td>
                                             @if($usuario->id !== auth()->id())
-                                                <form method="POST" action="{{ route('admin.usuarios.toggle', $usuario) }}" onsubmit="return confirm('¿Confirmar cambio de estado?')">
-                                                    @csrf
-                                                    @method('PATCH')
-                                                    <button type="submit" class="btn btn-sm {{ $usuario->activo ? 'btn-danger' : 'btn-gold' }}">
-                                                        {{ $usuario->activo ? 'Desactivar' : 'Activar' }}
-                                                    </button>
-                                                </form>
+                                                <div style="display:flex;gap:6px">
+                                                    <form method="POST" action="{{ route('admin.usuarios.toggle', $usuario) }}" onsubmit="return confirm('¿Confirmar cambio de estado?')">
+                                                        @csrf
+                                                        @method('PATCH')
+                                                        <button type="submit" class="btn btn-sm {{ $usuario->activo ? 'btn-danger' : 'btn-gold' }}">
+                                                            {{ $usuario->activo ? 'Desactivar' : 'Activar' }}
+                                                        </button>
+                                                    </form>
+                                                    <form method="POST" action="{{ route('admin.usuarios.destroy', $usuario) }}" onsubmit="return confirm('¿Eliminar este usuario permanentemente?')">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
+                                                    </form>
+                                                </div>
                                             @endif
                                         </td>
                                     </tr>
                                 @empty
-                                    <tr class="empty-row"><td colspan="6">No hay usuarios de staff todavía.</td></tr>
+                                    <tr class="empty-row"><td colspan="6">No hay usuarios de staff todavía. Crea el primero arriba.</td></tr>
                                 @endforelse
                             </tbody>
                         </table>
@@ -324,10 +320,9 @@
 </div>
 
 <script>
-function copiarLink(url) {
-    navigator.clipboard.writeText(url).then(() => {
-        alert('Link copiado al portapapeles');
-    });
+function togglePass() {
+    const input = document.getElementById('pass-input');
+    input.type = input.type === 'password' ? 'text' : 'password';
 }
 </script>
 </body>

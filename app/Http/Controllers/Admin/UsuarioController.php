@@ -3,10 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Invitacion;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
 
 class UsuarioController extends Controller
 {
@@ -14,30 +12,28 @@ class UsuarioController extends Controller
     {
         $usuarios = User::whereIn('role', ['admin','legal','contable','soporte'])
             ->latest()->get();
-        $invitaciones = Invitacion::with('invitadoPor')
-            ->whereNull('usado_at')->latest()->get();
-        return view('admin.usuarios.index', compact('usuarios', 'invitaciones'));
+        return view('admin.usuarios.index', compact('usuarios'));
     }
 
-    public function invite(Request $request)
+    public function store(Request $request)
     {
         $request->validate([
-            'email' => 'required|email|unique:users,email|unique:invitaciones,email',
-            'role'  => 'required|in:admin,legal,contable,soporte',
+            'name'     => 'required|string|max:255',
+            'email'    => 'required|email|unique:users,email',
+            'password' => 'required|min:8',
+            'role'     => 'required|in:admin,legal,contable,soporte',
         ]);
 
-        $invitacion = Invitacion::create([
-            'email'        => $request->email,
-            'role'         => $request->role,
-            'token'        => Str::random(64),
-            'invitado_por' => auth()->id(),
-            'expires_at'   => now()->addDays(7),
+        User::create([
+            'name'              => $request->name,
+            'email'             => $request->email,
+            'password'          => bcrypt($request->password),
+            'role'              => $request->role,
+            'activo'            => true,
+            'email_verified_at' => now(),
         ]);
 
-        // TODO: enviar email con el link
-        $link = route('invitacion.aceptar', $invitacion->token);
-
-        return back()->with('success', "Invitación enviada. Link: {$link}");
+        return back()->with('success', "Usuario {$request->name} creado con rol " . ucfirst($request->role) . ".");
     }
 
     public function updateRole(Request $request, User $user)
@@ -45,57 +41,22 @@ class UsuarioController extends Controller
         $request->validate([
             'role' => 'required|in:admin,legal,contable,soporte,cliente',
         ]);
-
         abort_if($user->id === auth()->id(), 403, 'No puedes cambiar tu propio rol.');
-
         $user->update(['role' => $request->role]);
-
-        return back()->with('success', 'Rol actualizado correctamente.');
+        return back()->with('success', 'Rol actualizado.');
     }
 
     public function toggleActivo(User $user)
     {
-        abort_if($user->id === auth()->id(), 403, 'No puedes desactivarte a ti mismo.');
+        abort_if($user->id === auth()->id(), 403);
         $user->update(['activo' => !$user->activo]);
         return back()->with('success', $user->activo ? 'Usuario activado.' : 'Usuario desactivado.');
     }
 
-    public function aceptarInvitacion(string $token)
+    public function destroy(User $user)
     {
-        $invitacion = Invitacion::where('token', $token)->firstOrFail();
-
-        if (!$invitacion->isValida()) {
-            abort(410, 'Esta invitación ha expirado o ya fue usada.');
-        }
-
-        return view('auth.invitacion', compact('invitacion'));
-    }
-
-    public function registrarInvitado(Request $request, string $token)
-    {
-        $invitacion = Invitacion::where('token', $token)->firstOrFail();
-
-        if (!$invitacion->isValida()) {
-            abort(410, 'Esta invitación ha expirado o ya fue usada.');
-        }
-
-        $request->validate([
-            'name'     => 'required|string|max:255',
-            'password' => 'required|min:8|confirmed',
-        ]);
-
-        $user = User::create([
-            'name'              => $request->name,
-            'email'             => $invitacion->email,
-            'password'          => bcrypt($request->password),
-            'role'              => $invitacion->role,
-            'email_verified_at' => now(),
-        ]);
-
-        $invitacion->update(['usado_at' => now()]);
-
-        auth()->login($user);
-
-        return redirect()->route('admin.dashboard');
+        abort_if($user->id === auth()->id(), 403, 'No puedes eliminarte a ti mismo.');
+        $user->delete();
+        return back()->with('success', 'Usuario eliminado.');
     }
 }

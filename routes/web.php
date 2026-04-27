@@ -18,8 +18,6 @@ Route::get('/amazon', fn() => view('pages.amazon'));
 Route::get('/marca', fn() => view('pages.marca'));
 Route::get('/envios', fn() => view('pages.envios'));
 Route::get('/sanitario', fn() => view('pages.sanitario'));
-Route::get('/invitacion/{token}', [UsuarioController::class, 'aceptarInvitacion'])->name('invitacion.aceptar');
-Route::post('/invitacion/{token}', [UsuarioController::class, 'registrarInvitado'])->name('invitacion.registrar');
 
 // ── Auth (Breeze) ──
 require __DIR__.'/auth.php';
@@ -59,9 +57,10 @@ Route::patch('/tramites/{tramite}/registro', [NotaTramiteController::class, 'upd
 Route::get('/tramites/{tramite}/gestion', [AdminTramiteController::class, 'gestion'])->name('tramites.gestion');
 Route::post('/tramites/{tramite}/documentos-finales', [AdminDocumentoController::class, 'storeAdmin'])->name('tramites.documentos.admin');
 Route::get('/usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
-Route::post('/usuarios/invitar', [UsuarioController::class, 'invite'])->name('usuarios.invite');
+Route::post('/usuarios', [UsuarioController::class, 'store'])->name('usuarios.store');
 Route::patch('/usuarios/{user}/role', [UsuarioController::class, 'updateRole'])->name('usuarios.role');
 Route::patch('/usuarios/{user}/toggle', [UsuarioController::class, 'toggleActivo'])->name('usuarios.toggle');
+Route::delete('/usuarios/{user}', [UsuarioController::class, 'destroy'])->name('usuarios.destroy');
 });
 
 // RUTA TEMPORAL — ELIMINAR DESPUÉS
