@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\DocumentoController as AdminDocumentoController;
 use App\Http\Controllers\Admin\NotaTramiteController;
 use App\Http\Controllers\Admin\UsuarioController;
 use App\Http\Controllers\PagoController;
+use App\Http\Controllers\Admin\NotificacionController;
 
 // ── Páginas públicas ──
 Route::get('/', fn() => view('pages.home'));
@@ -62,6 +63,9 @@ Route::patch('/usuarios/{user}/role', [UsuarioController::class, 'updateRole'])-
 Route::patch('/usuarios/{user}/toggle', [UsuarioController::class, 'toggleActivo'])->name('usuarios.toggle');
 Route::delete('/usuarios/{user}', [UsuarioController::class, 'destroy'])->name('usuarios.destroy');
 Route::get('/mi-panel', [DashboardController::class, 'miPanel'])->name('mi.panel');
+Route::get('/notificaciones', [NotificacionController::class, 'index'])->name('notificaciones.index');
+Route::patch('/notificaciones/todas', [NotificacionController::class, 'marcarTodasLeidas'])->name('notificaciones.todas');
+Route::patch('/notificaciones/{notificacion}', [NotificacionController::class, 'marcarLeida'])->name('notificaciones.leida');
 });
 
 // RUTA TEMPORAL — ELIMINAR DESPUÉS

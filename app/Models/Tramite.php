@@ -44,4 +44,8 @@ public function notas()
 {
     return $this->hasMany(NotaTramite::class)->latest();
 }
+public function historial()
+{
+    return $this->hasMany(HistorialTramite::class)->latest();
+}
 }

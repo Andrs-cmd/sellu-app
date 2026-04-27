@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Documento;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
+use App\Helpers\Notificar;
 
 class DocumentoController extends Controller
 {
@@ -22,11 +23,28 @@ class DocumentoController extends Controller
             'nota_admin' => 'nullable|string|max:500',
         ]);
 
-        $documento->update([
-            'estado'     => $request->estado,
-            'nota_admin' => $request->nota_admin,
-        ]);
+    $anterior = $documento->estado;
 
+    $documento->update([
+        'estado'     => $request->estado,
+        'nota_admin' => $request->nota_admin,
+    ]);
+    Historial::registrar(
+        $documento->tramite_id,
+        $request->estado === 'aprobado' ? 'documento_aprobado' : 'documento_rechazado',
+        "Documento '{$documento->nombre}' " . ($request->estado === 'aprobado' ? 'aprobado' : 'rechazado'),
+        'documento',
+        $anterior,
+        $request->estado
+    );
+    Notificar::alEquipo(
+    $request->estado === 'aprobado' ? 'documento_aprobado' : 'documento_rechazado',
+    'Documento ' . ($request->estado === 'aprobado' ? 'aprobado' : 'rechazado'),
+    auth()->user()->name . ' ' . ($request->estado === 'aprobado' ? 'aprobó' : 'rechazó') . ' el documento "' . $documento->nombre . '"',
+    $documento->tramite_id,
+    route('admin.tramites.gestion', $documento->tramite_id),
+    ['admin', 'legal']
+);
         return back()->with('success', 'Documento actualizado.');
     }
 

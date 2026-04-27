@@ -62,4 +62,14 @@ class User extends Authenticatable
     {
         return in_array($this->role, ['admin', 'contable']);
     }
+
+    public function notificaciones()
+{
+    return $this->hasMany(Notificacion::class)->latest();
+}
+
+public function notificacionesNoLeidas()
+{
+    return $this->hasMany(Notificacion::class)->whereNull('leida_at');
+}
 }

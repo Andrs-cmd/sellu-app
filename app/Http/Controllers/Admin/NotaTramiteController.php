@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Helpers\Historial;
 use App\Models\NotaTramite;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
@@ -22,6 +23,12 @@ class NotaTramiteController extends Controller
             'contenido'  => $request->contenido,
             'tipo'       => $request->tipo,
         ]);
+
+        Historial::registrar(
+            $tramite->id,
+            'nota_agregada',
+            "Nota {$request->tipo} agregada por " . auth()->user()->name
+        );
 
         return back()->with('success', 'Nota agregada correctamente.');
     }
@@ -53,6 +60,12 @@ class NotaTramiteController extends Controller
             'ein_numero'         => $request->ein_numero,
             'notas_internas'     => $request->notas_internas,
         ]);
+
+        Historial::registrar(
+            $tramite->id,
+            'registro_actualizado',
+            'Datos del registro LLC actualizados por ' . auth()->user()->name
+        );
 
         return back()->with('success', 'Datos del registro actualizados.');
     }

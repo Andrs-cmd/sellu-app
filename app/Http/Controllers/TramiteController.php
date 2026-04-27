@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Tramite;
 use App\Models\Miembro;
 use Illuminate\Http\Request;
+use App\Helpers\Notificar;
 
 class TramiteController extends Controller
 {
@@ -34,9 +35,17 @@ class TramiteController extends Controller
             [
                 'tipo_entidad' => $request->tipo_entidad,
                 'jurisdiccion' => $request->jurisdiccion,
-                'etapa'        => 'pago',
-                'estado'       => 'pendiente',
+                'etapa' => 'pago',
+                'estado' => 'pendiente',
             ]
+        );
+        // En saveCuenta — nuevo trámite
+        Notificar::alEquipo(
+            'tramite_nuevo',
+            'Nuevo trámite iniciado',
+            auth()->user()->name . ' inició un nuevo trámite de ' . $request->tipo_entidad . ' en ' . $request->jurisdiccion,
+            $tramite->id,
+            route('admin.tramites.gestion', $tramite)
         );
 
         return response()->json(['ok' => true, 'tramite_id' => $tramite->id]);
@@ -45,16 +54,16 @@ class TramiteController extends Controller
     public function savePago(Request $request)
     {
         $request->validate([
-            'tramite_id'       => 'required|exists:tramites,id',
+            'tramite_id' => 'required|exists:tramites,id',
             'plan_seleccionado' => 'required|string',
-            'precio_plan'      => 'required|numeric',
+            'precio_plan' => 'required|numeric',
         ]);
 
         $tramite = Tramite::findOrFail($request->tramite_id);
         $tramite->update([
             'plan_seleccionado' => $request->plan_seleccionado,
-            'precio_plan'       => $request->precio_plan,
-            'etapa'             => 'compania',
+            'precio_plan' => $request->precio_plan,
+            'etapa' => 'compania',
         ]);
 
         return response()->json(['ok' => true]);
@@ -63,17 +72,17 @@ class TramiteController extends Controller
     public function saveCompania(Request $request)
     {
         $request->validate([
-            'tramite_id'     => 'required|exists:tramites,id',
+            'tramite_id' => 'required|exists:tramites,id',
             'nombre_empresa' => 'required|string|max:255',
         ]);
 
         $tramite = Tramite::findOrFail($request->tramite_id);
         $tramite->update([
-            'nombre_empresa'  => $request->nombre_empresa,
-            'copia_abogado'   => $request->copia_abogado ?? 'No, gracias',
+            'nombre_empresa' => $request->nombre_empresa,
+            'copia_abogado' => $request->copia_abogado ?? 'No, gracias',
             'direccion_fisica' => $request->direccion_fisica,
-            'direccion_envio'  => $request->direccion_envio,
-            'etapa'           => 'gestion',
+            'direccion_envio' => $request->direccion_envio,
+            'etapa' => 'gestion',
         ]);
 
         return response()->json(['ok' => true]);
@@ -82,26 +91,26 @@ class TramiteController extends Controller
     public function saveGestion(Request $request)
     {
         $request->validate([
-            'tramite_id'   => 'required|exists:tramites,id',
+            'tramite_id' => 'required|exists:tramites,id',
             'tipo_gestion' => 'required|string',
-            'miembros'     => 'required|array|min:1',
+            'miembros' => 'required|array|min:1',
         ]);
 
         $tramite = Tramite::findOrFail($request->tramite_id);
         $tramite->update([
             'tipo_gestion' => $request->tipo_gestion,
-            'etapa'        => 'contacto',
+            'etapa' => 'contacto',
         ]);
 
         $tramite->miembros()->delete();
         foreach ($request->miembros as $i => $m) {
             Miembro::create([
                 'tramite_id' => $tramite->id,
-                'nombre'     => $m['nombre'] ?? '',
-                'apellido'   => $m['apellido'] ?? '',
+                'nombre' => $m['nombre'] ?? '',
+                'apellido' => $m['apellido'] ?? '',
                 'es_entidad' => isset($m['es_entidad']),
-                'direccion'  => $m['direccion'] ?? 'Agente Registrado',
-                'orden'      => $i + 1,
+                'direccion' => $m['direccion'] ?? 'Agente Registrado',
+                'orden' => $i + 1,
             ]);
         }
 
@@ -112,19 +121,19 @@ class TramiteController extends Controller
     {
         $request->validate([
             'tramite_id' => 'required|exists:tramites,id',
-            'telefono'   => 'required|string',
-            'pais'       => 'required|string',
+            'telefono' => 'required|string',
+            'pais' => 'required|string',
         ]);
 
         $tramite = Tramite::findOrFail($request->tramite_id);
         $tramite->update([
-            'etapa'  => 'completado',
+            'etapa' => 'completado',
             'estado' => 'en_proceso',
         ]);
 
         $user = auth()->user();
         $user->update([
-            'phone'   => $request->telefono ?? null,
+            'phone' => $request->telefono ?? null,
         ]);
 
         return response()->json(['ok' => true, 'redirect' => route('tramite.show', $tramite)]);

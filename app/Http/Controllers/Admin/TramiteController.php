@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Tramite;
 use Illuminate\Http\Request;
+use App\Helpers\Historial;
+use App\Helpers\Notificar;
 
 class TramiteController extends Controller
 {
@@ -27,19 +29,36 @@ class TramiteController extends Controller
         return view('admin.tramites.show', compact('tramite'));
     }
 
-    public function updateEstado(Request $request, Tramite $tramite)
-    {
-        $request->validate([
-            'estado' => 'required|in:pendiente,en_proceso,completado,cancelado',
-        ]);
-
-        $tramite->update(['estado' => $request->estado]);
-
-        return back()->with('success', 'Estado actualizado correctamente.');
-    }
-    public function gestion(Tramite $tramite)
+public function gestion(Tramite $tramite)
 {
-    $tramite->load('user', 'miembros', 'documentos', 'notas.user');
+    $tramite->load('user', 'miembros', 'documentos', 'notas.user', 'historial.user');
     return view('admin.gestion-llc', compact('tramite'));
+}
+public function updateEstado(Request $request, Tramite $tramite)
+{
+    $request->validate([
+        'estado' => 'required|in:pendiente,en_proceso,completado,cancelado',
+    ]);
+
+    $anterior = $tramite->estado;
+    $tramite->update(['estado' => $request->estado]);
+
+    Historial::registrar(
+        $tramite->id,
+        'estado_cambiado',
+        "Estado cambiado de '{$anterior}' a '{$request->estado}'",
+        'estado',
+        $anterior,
+        $request->estado
+    );
+    Notificar::alEquipo(
+    'estado_cambiado',
+    'Estado de trámite actualizado',
+    auth()->user()->name . ' cambió el estado de "' . $anterior . '" a "' . $request->estado . '" en ' . ($tramite->nombre_empresa ?? 'trámite #'.$tramite->id),
+    $tramite->id,
+    route('admin.tramites.gestion', $tramite),
+    ['admin', 'legal', 'soporte']
+);
+    return back()->with('success', 'Estado actualizado correctamente.');
 }
 }
