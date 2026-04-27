@@ -132,7 +132,8 @@
             height: 16px;
             flex-shrink: 0;
         }
-
+.sidebar-badge { margin-left:auto; background:var(--gold); color:var(--navy); font-size:10px; font-weight:800; padding:1px 7px; border-radius:10px; }
+.sidebar-badge.red { background:var(--red); color:white; }
         .sidebar-footer {
             padding: 16px 18px;
             border-top: 1px solid rgba(255, 255, 255, .07);
@@ -803,6 +804,14 @@
                         <path d="M11 9v6M8 12h6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
                     </svg>
                     Usuarios
+                </a>
+                @php $noLeidas = auth()->user()->notificacionesNoLeidas()->count(); @endphp
+                <a href="{{ route('admin.notificaciones.index') }}" class="sidebar-link">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M8 2a5 5 0 015 5v3l1 2H2l1-2V7a5 5 0 015-5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M6.5 13a1.5 1.5 0 003 0" stroke="currentColor" stroke-width="1.3"/></svg>
+                    Notificaciones
+                    @if($noLeidas > 0)
+                        <span class="sidebar-badge red">{{ $noLeidas }}</span>
+                    @endif
                 </a>
             </nav>
             <div class="sidebar-footer">

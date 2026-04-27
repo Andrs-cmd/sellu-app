@@ -28,6 +28,8 @@
         .sidebar-link:hover { color:rgba(255,255,255,.9); background:rgba(255,255,255,.05); }
         .sidebar-link.active { color:var(--white); background:rgba(245,166,35,.15); border-left-color:var(--gold); font-weight:600; }
         .sidebar-link svg { width:16px; height:16px; flex-shrink:0; }
+        .sidebar-badge { margin-left:auto; background:var(--gold); color:var(--navy); font-size:10px; font-weight:800; padding:1px 7px; border-radius:10px; }
+.sidebar-badge.red { background:var(--red); color:white; }
         .sidebar-footer { padding:16px 18px; border-top:1px solid rgba(255,255,255,.07); }
         .sidebar-user strong { display:block; color:rgba(255,255,255,.7); font-size:13px; }
         .sidebar-user span { font-size:11px; color:rgba(255,255,255,.35); }
@@ -95,6 +97,14 @@
                 <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M5 6h6M5 9h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
                 Todos los trámites
             </a>
+            @php $noLeidas = auth()->user()->notificacionesNoLeidas()->count(); @endphp
+                <a href="{{ route('admin.notificaciones.index') }}" class="sidebar-link">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M8 2a5 5 0 015 5v3l1 2H2l1-2V7a5 5 0 015-5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M6.5 13a1.5 1.5 0 003 0" stroke="currentColor" stroke-width="1.3"/></svg>
+                    Notificaciones
+                    @if($noLeidas > 0)
+                        <span class="sidebar-badge red">{{ $noLeidas }}</span>
+                    @endif
+                </a>
         </nav>
         <div class="sidebar-footer">
             <div class="sidebar-user">

@@ -28,6 +28,8 @@
         .sidebar-link:hover { color:rgba(255,255,255,.9); background:rgba(255,255,255,.05); }
         .sidebar-link.active { color:var(--white); background:rgba(245,166,35,.15); border-left-color:var(--gold); font-weight:600; }
         .sidebar-link svg { width:16px; height:16px; flex-shrink:0; }
+        .sidebar-badge { margin-left:auto; background:var(--gold); color:var(--navy); font-size:10px; font-weight:800; padding:1px 7px; border-radius:10px; }
+        .sidebar-badge.red { background:var(--red); color:white; }
         .sidebar-footer { padding:16px 18px; border-top:1px solid rgba(255,255,255,.07); }
         .sidebar-user strong { display:block; color:rgba(255,255,255,.7); font-size:13px; }
         .sidebar-user span { font-size:11px; color:rgba(255,255,255,.35); }
@@ -39,21 +41,17 @@
         .topbar-back { color:var(--muted); font-size:13px; display:flex; align-items:center; gap:5px; }
         .topbar-back:hover { color:var(--navy); }
         .topbar-title { font-family:'Montserrat',sans-serif; font-size:16px; font-weight:700; color:var(--navy); }
-
         .content { flex:1; overflow-y:auto; padding:28px; }
         .content-inner { max-width:960px; margin:0 auto; }
 
-        /* ALERT */
         .alert-success { background:var(--green-bg); color:var(--green); border:1px solid #5DCAA5; padding:12px 16px; border-radius:8px; font-size:13px; margin-bottom:16px; }
 
-        /* HERO */
         .hero-card { background:var(--navy); border-radius:14px; padding:24px 28px; margin-bottom:20px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
         .hero-left h1 { font-family:'Montserrat',sans-serif; font-size:20px; font-weight:800; color:var(--white); margin-bottom:6px; }
         .hero-left p { font-size:13px; color:rgba(255,255,255,.5); }
         .hero-right { display:flex; flex-direction:column; align-items:flex-end; gap:8px; }
         .hero-price { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:900; color:var(--gold); }
 
-        /* ESTADO FORM */
         .estado-form { background:var(--white); border:1px solid var(--gray2); border-radius:12px; padding:20px 24px; margin-bottom:20px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
         .estado-form label { font-size:13px; font-weight:700; color:var(--navy); }
         .estado-select { padding:9px 14px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Open Sans',sans-serif; color:var(--text); outline:none; }
@@ -61,11 +59,9 @@
         .btn-update { padding:9px 20px; background:var(--navy); color:var(--white); border:none; border-radius:6px; font-size:13px; font-weight:600; cursor:pointer; font-family:'Montserrat',sans-serif; }
         .btn-update:hover { background:var(--navy2); }
 
-        /* GRID */
         .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
         @media(max-width:700px) { .grid-2 { grid-template-columns:1fr; } }
 
-        /* CARDS */
         .card { background:var(--white); border:1px solid var(--gray2); border-radius:12px; overflow:hidden; margin-bottom:16px; }
         .card-header { padding:14px 20px; border-bottom:1px solid var(--gray2); }
         .card-header h3 { font-family:'Montserrat',sans-serif; font-size:14px; font-weight:700; color:var(--navy); margin:0; }
@@ -75,7 +71,6 @@
         .info-label { color:var(--muted); }
         .info-value { font-weight:600; color:var(--navy); text-align:right; max-width:60%; }
 
-        /* MEMBER */
         .member-item { display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid var(--gray2); }
         .member-item:last-child { border-bottom:none; }
         .member-avatar { width:34px; height:34px; border-radius:50%; background:var(--blue-bg); color:var(--blue); font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
@@ -112,9 +107,17 @@
                 Clientes
             </a>
             <a href="{{ route('admin.usuarios.index') }}" class="sidebar-link">
-    <svg viewBox="0 0 16 16" fill="none"><circle cx="6" cy="5" r="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M1 14c0-2.8 2.2-5 5-5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M11 9v6M8 12h6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-    Usuarios
-</a>
+                <svg viewBox="0 0 16 16" fill="none"><circle cx="6" cy="5" r="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M1 14c0-2.8 2.2-5 5-5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M11 9v6M8 12h6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                Usuarios
+            </a>
+            @php $noLeidas = auth()->user()->notificacionesNoLeidas()->count(); @endphp
+            <a href="{{ route('admin.notificaciones.index') }}" class="sidebar-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M8 2a5 5 0 015 5v3l1 2H2l1-2V7a5 5 0 015-5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M6.5 13a1.5 1.5 0 003 0" stroke="currentColor" stroke-width="1.3"/></svg>
+                Notificaciones
+                @if($noLeidas > 0)
+                    <span class="sidebar-badge red">{{ $noLeidas }}</span>
+                @endif
+            </a>
         </nav>
         <div class="sidebar-footer">
             <div class="sidebar-user">
@@ -126,22 +129,21 @@
                 <button type="submit" class="btn-logout">Cerrar sesión</button>
             </form>
         </div>
-        
     </aside>
 
     <div class="main">
         <div class="topbar">
-    <a href="{{ route('admin.tramites.index') }}" class="topbar-back">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        Trámites
-    </a>
-    <span style="color:var(--gray2)">›</span>
-    <div class="topbar-title" style="flex:1">{{ $tramite->nombre_empresa ?? 'Trámite #'.$tramite->id }}</div>
-    <a href="{{ route('admin.tramites.gestion', $tramite) }}"
-       style="padding:9px 18px;background:var(--gold);color:var(--navy);border-radius:6px;font-size:13px;font-weight:700;font-family:Montserrat,sans-serif;white-space:nowrap">
-        Gestionar LLC
-    </a>
-</div>
+            <a href="{{ route('admin.tramites.index') }}" class="topbar-back">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Trámites
+            </a>
+            <span style="color:var(--gray2)">›</span>
+            <div class="topbar-title" style="flex:1">{{ $tramite->nombre_empresa ?? 'Trámite #'.$tramite->id }}</div>
+            <a href="{{ route('admin.tramites.gestion', $tramite) }}"
+               style="padding:9px 18px;background:var(--gold);color:var(--navy);border-radius:6px;font-size:13px;font-weight:700;font-family:Montserrat,sans-serif;white-space:nowrap">
+                Gestionar LLC
+            </a>
+        </div>
 
         <div class="content">
             <div class="content-inner">
@@ -150,7 +152,6 @@
                     <div class="alert-success">{{ session('success') }}</div>
                 @endif
 
-                {{-- HERO --}}
                 @php $badge = $tramite->estado_badge; @endphp
                 <div class="hero-card">
                     <div class="hero-left">
@@ -166,7 +167,6 @@
                     </div>
                 </div>
 
-                {{-- CAMBIAR ESTADO --}}
                 <form method="POST" action="{{ route('admin.tramites.estado', $tramite) }}" class="estado-form">
                     @csrf
                     @method('PATCH')
@@ -179,12 +179,11 @@
                     </select>
                     <button type="submit" class="btn-update">Actualizar estado</button>
                     <a href="{{ route('admin.tramites.documentos', $tramite) }}"
-   style="display:inline-flex;align-items:center;gap:6px;padding:9px 20px;background:var(--blue-bg);color:var(--blue);border-radius:6px;font-size:13px;font-weight:600;font-family:Montserrat,sans-serif">
-    Ver documentos ({{ $tramite->documentos->count() }})
-</a>
+                       style="display:inline-flex;align-items:center;gap:6px;padding:9px 20px;background:var(--blue-bg);color:var(--blue);border-radius:6px;font-size:13px;font-weight:600;font-family:Montserrat,sans-serif">
+                        Ver documentos ({{ $tramite->documentos->count() }})
+                    </a>
                 </form>
 
-                {{-- DETALLES --}}
                 <div class="grid-2">
                     <div class="card">
                         <div class="card-header"><h3>Datos del cliente</h3></div>
@@ -226,7 +225,6 @@
                     </div>
                 </div>
 
-                {{-- MIEMBROS --}}
                 @if($tramite->miembros->count())
                     <div class="card">
                         <div class="card-header"><h3>Miembros ({{ $tramite->miembros->count() }})</h3></div>

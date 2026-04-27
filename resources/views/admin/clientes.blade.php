@@ -10,7 +10,7 @@
         :root {
             --navy:#0D1B3E; --navy2:#122050; --gold:#F5A623;
             --white:#FFFFFF; --gray:#F5F6FA; --gray2:#E8EAF0; --text:#333A50; --muted:#6B7394;
-            --blue:#1B4FD8; --blue-bg:#EEF3FF;
+            --blue:#1B4FD8; --blue-bg:#EEF3FF; --red:#8B2020;
         }
         body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); }
         a { text-decoration:none; color:inherit; }
@@ -26,6 +26,8 @@
         .sidebar-link:hover { color:rgba(255,255,255,.9); background:rgba(255,255,255,.05); }
         .sidebar-link.active { color:var(--white); background:rgba(245,166,35,.15); border-left-color:var(--gold); font-weight:600; }
         .sidebar-link svg { width:16px; height:16px; flex-shrink:0; }
+        .sidebar-badge { margin-left:auto; background:var(--gold); color:var(--navy); font-size:10px; font-weight:800; padding:1px 7px; border-radius:10px; }
+        .sidebar-badge.red { background:var(--red); color:white; }
         .sidebar-footer { padding:16px 18px; border-top:1px solid rgba(255,255,255,.07); }
         .sidebar-user strong { display:block; color:rgba(255,255,255,.7); font-size:13px; }
         .sidebar-user span { font-size:11px; color:rgba(255,255,255,.35); }
@@ -74,9 +76,17 @@
                 Clientes
             </a>
             <a href="{{ route('admin.usuarios.index') }}" class="sidebar-link">
-    <svg viewBox="0 0 16 16" fill="none"><circle cx="6" cy="5" r="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M1 14c0-2.8 2.2-5 5-5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M11 9v6M8 12h6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-    Usuarios
-</a>
+                <svg viewBox="0 0 16 16" fill="none"><circle cx="6" cy="5" r="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M1 14c0-2.8 2.2-5 5-5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M11 9v6M8 12h6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                Usuarios
+            </a>
+            @php $noLeidas = auth()->user()->notificacionesNoLeidas()->count(); @endphp
+            <a href="{{ route('admin.notificaciones.index') }}" class="sidebar-link">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M8 2a5 5 0 015 5v3l1 2H2l1-2V7a5 5 0 015-5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M6.5 13a1.5 1.5 0 003 0" stroke="currentColor" stroke-width="1.3"/></svg>
+                Notificaciones
+                @if($noLeidas > 0)
+                    <span class="sidebar-badge red">{{ $noLeidas }}</span>
+                @endif
+            </a>
         </nav>
         <div class="sidebar-footer">
             <div class="sidebar-user">
@@ -88,7 +98,6 @@
                 <button type="submit" class="btn-logout">Cerrar sesión</button>
             </form>
         </div>
-        
     </aside>
     <div class="main">
         <div class="topbar"><div class="topbar-title">Clientes registrados</div></div>
