@@ -24,12 +24,12 @@ class AuthenticatedSessionController extends Controller
         $user = auth()->user();
 
         $redirect = match(true) {
-            $user->isAdmin()           => route('admin.dashboard'),
-            $user->hasRole('legal')    => route('admin.tramites.index'),
-            $user->hasRole('contable') => route('admin.clientes'),
-            $user->hasRole('soporte')  => route('admin.tramites.index'),
-            default                    => route('dashboard'),
-        };
+    $user->isAdmin()           => route('admin.dashboard'),
+    $user->hasRole('legal')    => route('admin.mi.panel'),
+    $user->hasRole('contable') => route('admin.mi.panel'),
+    $user->hasRole('soporte')  => route('admin.mi.panel'),
+    default                    => route('dashboard'),
+};
 
         return redirect()->intended($redirect);
     }

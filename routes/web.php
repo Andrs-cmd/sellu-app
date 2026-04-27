@@ -61,6 +61,7 @@ Route::post('/usuarios', [UsuarioController::class, 'store'])->name('usuarios.st
 Route::patch('/usuarios/{user}/role', [UsuarioController::class, 'updateRole'])->name('usuarios.role');
 Route::patch('/usuarios/{user}/toggle', [UsuarioController::class, 'toggleActivo'])->name('usuarios.toggle');
 Route::delete('/usuarios/{user}', [UsuarioController::class, 'destroy'])->name('usuarios.destroy');
+Route::get('/mi-panel', [DashboardController::class, 'miPanel'])->name('mi.panel');
 });
 
 // RUTA TEMPORAL — ELIMINAR DESPUÉS

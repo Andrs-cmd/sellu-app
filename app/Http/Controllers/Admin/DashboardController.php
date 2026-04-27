@@ -26,4 +26,44 @@ class DashboardController extends Controller
         $clientes = User::withCount('tramites')->latest()->paginate(20);
         return view('admin.clientes', compact('clientes'));
     }
+    public function miPanel()
+{
+    $user = auth()->user();
+
+    if ($user->hasRole('legal')) {
+        $tramites = \App\Models\Tramite::with('user')
+            ->whereIn('estado', ['pendiente', 'en_proceso'])
+            ->latest()->get();
+        $completados = \App\Models\Tramite::where('estado', 'completado')->count();
+        return view('admin.roles.legal', compact('tramites', 'completados'));
+    }
+
+    if ($user->hasRole('contable')) {
+        $ingresos_total = \App\Models\Tramite::where('pago_estado', 'pagado')->sum('precio_plan');
+        $ingresos_mes   = \App\Models\Tramite::where('pago_estado', 'pagado')
+            ->whereMonth('pago_at', now()->month)->sum('precio_plan');
+        $tramites_completados = \App\Models\Tramite::where('estado', 'completado')->count();
+        $clientes = \App\Models\User::where('role', 'cliente')
+            ->withCount('tramites')->latest()->take(20)->get();
+        $por_plan = \App\Models\Tramite::where('pago_estado', 'pagado')
+            ->selectRaw('plan_seleccionado, count(*) as total, sum(precio_plan) as ingresos')
+            ->groupBy('plan_seleccionado')->get();
+        return view('admin.roles.contable', compact(
+            'ingresos_total', 'ingresos_mes', 'tramites_completados', 'clientes', 'por_plan'
+        ));
+    }
+
+    if ($user->hasRole('soporte')) {
+        $tramites = \App\Models\Tramite::with('user')
+            ->latest()->paginate(20);
+        $stats = [
+            'pendientes' => \App\Models\Tramite::where('estado', 'pendiente')->count(),
+            'en_proceso' => \App\Models\Tramite::where('estado', 'en_proceso')->count(),
+            'completados' => \App\Models\Tramite::where('estado', 'completado')->count(),
+        ];
+        return view('admin.roles.soporte', compact('tramites', 'stats'));
+    }
+
+    return redirect()->route('admin.dashboard');
+}
 }
