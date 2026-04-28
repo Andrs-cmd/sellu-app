@@ -7,7 +7,8 @@ use App\Models\Tramite;
 use Illuminate\Http\Request;
 use App\Helpers\Historial;
 use App\Helpers\Notificar;
-
+use Illuminate\Support\Facades\Mail;
+use App\Mail\EstadoTramiteMail;
 class TramiteController extends Controller
 {
     public function index(Request $request)
@@ -81,6 +82,8 @@ class TramiteController extends Controller
             $anterior,
             $request->estado
         );
+        // Después de Historial::registrar(...)
+Mail::to($tramite->user->email)->send(new EstadoTramiteMail($tramite, $anterior));
 
         Notificar::alEquipo(
             'estado_cambiado',
