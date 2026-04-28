@@ -83,7 +83,11 @@ class TramiteController extends Controller
             $request->estado
         );
         // Después de Historial::registrar(...)
-Mail::to($tramite->user->email)->send(new EstadoTramiteMail($tramite, $anterior));
+try {
+    Mail::to($tramite->user->email)->send(new EstadoTramiteMail($tramite, $anterior));
+} catch (\Exception $e) {
+    \Log::error('Error enviando email: ' . $e->getMessage());
+}
 
         Notificar::alEquipo(
             'estado_cambiado',
