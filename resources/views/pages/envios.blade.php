@@ -12,11 +12,11 @@
     <meta name="keywords" content="envíos desde USA a Latinoamérica, logística para LLC, dirección física USA, recepción de paquetes USA, fulfillment LATAM, envíos internacionales, importaciones a USA, warehousing USA">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
-    <link rel="canonical" href="https://sellu.co/envios">
+    <link rel="canonical" href="https://sellu.co/pages/envios">
 
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sellu.co/envios">
+    <meta property="og:url" content="https://sellu.co/pages/envios">
     <meta property="og:title" content="Envíos y Logística Internacional para tu LLC — Sell·U">
     <meta property="og:description" content="Dirección física en USA, recepción de paquetes, reenvíos y fulfillment para tu negocio en EE.UU. desde Latinoamérica.">
     <meta property="og:image" content="https://sellu.co/og-image.jpg">
@@ -37,7 +37,7 @@
         "@type": "Service",
         "name": "Sell·U LATAM — Envíos y Logística Internacional",
         "description": "Servicios de logística, dirección física en USA, recepción y reenvío de paquetes, y fulfillment para empresas latinoamericanas con operaciones en Estados Unidos.",
-        "url": "https://sellu.co/envios",
+        "url": "https://sellu.co/pages/envios",
         "telephone": "+19542105405",
         "email": "contacto@sellu.co",
         "provider": {
@@ -385,13 +385,13 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Menú Principal</p>
-                <a href="{{ url('/abre-empresa') }}">Abre tu empresa</a>
-<a href="{{ url('/contabilidad') }}">Contabilidad</a>
-<a href="{{ url('/amazon') }}">Vende en Amazon</a>
-<a href="{{ url('/marca') }}">Registro de marca</a>
-<a href="{{ url('/envios') }}">Envíos</a>
-<a href="{{ url('/sanitario') }}">Registro Sanitario</a>
-<a href="{{ url('/soporte') }}">Soporte</a>
+                <a href="{{ url('/pages/abre-empresa') }}">Abre tu empresa</a>
+<a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
+<a href="{{ url('/pages/amazon') }}">Vende en Amazon</a>
+<a href="{{ url('/pages/marca') }}">Registro de marca</a>
+<a href="{{ url('/pages/envios') }}">Envíos</a>
+<a href="{{ url('/pages/sanitario') }}">Registro Sanitario</a>
+<a href="{{ url('/pages/soporte') }}">Soporte</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Información Legal</p>

@@ -12,11 +12,11 @@
     <meta name="keywords" content="vender en Amazon desde Latinoamérica, Amazon seller account LLC, TikTok Shop vendedor, Etsy vendedor LATAM, Walmart Marketplace, cuenta Amazon para extranjeros, ecommerce USA desde LATAM">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
-    <link rel="canonical" href="https://sellu.co/amazon">
+    <link rel="canonical" href="https://sellu.co/pages/amazon">
 
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sellu.co/amazon">
+    <meta property="og:url" content="https://sellu.co/pages/amazon">
     <meta property="og:title" content="Vende en Amazon, TikTok Shop, Etsy y Walmart desde LATAM — Sell·U">
     <meta property="og:description" content="Crea tu cuenta de vendedor en Amazon, TikTok Shop, Etsy o Walmart con tu LLC americana. Registro y configuración completa desde Latinoamérica.">
     <meta property="og:image" content="https://sellu.co/og-image.jpg">
@@ -37,7 +37,7 @@
         "@type": "Service",
         "name": "Sell·U LATAM — Vender en Marketplaces de USA",
         "description": "Servicio de apertura y gestión de cuentas de vendedor en Amazon, TikTok Shop, Etsy y Walmart para emprendedores latinoamericanos con LLC americana.",
-        "url": "https://sellu.co/amazon",
+        "url": "https://sellu.co/pages/amazon",
         "telephone": "+19542105405",
         "email": "contacto@sellu.co",
         "provider": {
@@ -476,13 +476,13 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Menú Principal</p>
-                <a href="{{ url('/abre-empresa') }}">Abre tu empresa</a>
-<a href="{{ url('/contabilidad') }}">Contabilidad</a>
-<a href="{{ url('/amazon') }}">Vende en Amazon</a>
-<a href="{{ url('/marca') }}">Registro de marca</a>
-<a href="{{ url('/envios') }}">Envíos</a>
-<a href="{{ url('/sanitario') }}">Registro Sanitario</a>
-<a href="{{ url('/soporte') }}">Soporte</a>
+                <a href="{{ url('/pages/abre-empresa') }}">Abre tu empresa</a>
+<a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
+<a href="{{ url('/pages/amazon') }}">Vende en Amazon</a>
+<a href="{{ url('/pages/marca') }}">Registro de marca</a>
+<a href="{{ url('/pages/envios') }}">Envíos</a>
+<a href="{{ url('/pages/sanitario') }}">Registro Sanitario</a>
+<a href="{{ url('/pages/soporte') }}">Soporte</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Información Legal</p>

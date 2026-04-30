@@ -12,11 +12,11 @@
     <meta name="keywords" content="soporte sell-u, contacto sellu, atención al cliente LLC, ayuda empresa estados unidos, whatsapp sellu latam">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
-    <link rel="canonical" href="https://sellu.co/soporte">
+    <link rel="canonical" href="https://sellu.co/pages/soporte">
 
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sellu.co/soporte">
+    <meta property="og:url" content="https://sellu.co/pages/soporte">
     <meta property="og:title" content="Soporte y Atención al Cliente — Sell·U">
     <meta property="og:description" content="Canales de atención al cliente: Instagram, Facebook, WhatsApp, email o llamada. Lunes a viernes 9–6 pm.">
     <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
@@ -252,13 +252,13 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Menú Principal</p>
-                <a href="{{ url('/abre-empresa') }}">Abre tu empresa</a>
-                <a href="{{ url('/contabilidad') }}">Contabilidad</a>
-                <a href="{{ url('/amazon') }}">Vende en Amazon</a>
-                <a href="{{ url('/marca') }}">Registro de marca</a>
-                <a href="{{ url('/envios') }}">Envíos</a>
-                <a href="{{ url('/sanitario') }}">Registro Sanitario</a>
-                <a href="{{ url('/soporte') }}">Soporte</a>
+                <a href="{{ url('/pages/abre-empresa') }}">Abre tu empresa</a>
+                <a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
+                <a href="{{ url('/pages/amazon') }}">Vende en Amazon</a>
+                <a href="{{ url('/pages/marca') }}">Registro de marca</a>
+                <a href="{{ url('/pages/envios') }}">Envíos</a>
+                <a href="{{ url('/pages/sanitario') }}">Registro Sanitario</a>
+                <a href="{{ url('/pages/soporte') }}">Soporte</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Información Legal</p>

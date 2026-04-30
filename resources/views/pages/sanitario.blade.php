@@ -12,11 +12,11 @@
     <meta name="keywords" content="registro FDA USA, registro sanitario estados unidos, FDA alimentos, FDA cosméticos, importar alimentos USA, cumplimiento FDA Latinoamérica, FDA bioterrorism registration, FSVP agente">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
-    <link rel="canonical" href="https://sellu.co/sanitario">
+    <link rel="canonical" href="https://sellu.co/pages/sanitario">
 
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sellu.co/sanitario">
+    <meta property="og:url" content="https://sellu.co/pages/sanitario">
     <meta property="og:title" content="Registro FDA de Alimentos y Cosméticos en USA — Sell·U">
     <meta property="og:description" content="Registra tus productos ante la FDA de Estados Unidos. Asesoría en cumplimiento sanitario y regulatorio para importadores y exportadores de LATAM.">
     <meta property="og:image" content="https://sellu.co/og-image.jpg">
@@ -37,7 +37,7 @@
         "@type": "LegalService",
         "name": "Sell·U LATAM — Registro FDA y Cumplimiento Sanitario",
         "description": "Servicio de registro ante la FDA de Estados Unidos para alimentos, cosméticos y suplementos. Asesoría en cumplimiento regulatorio para importadores y exportadores latinoamericanos.",
-        "url": "https://sellu.co/sanitario",
+        "url": "https://sellu.co/pages/sanitario",
         "telephone": "+19542105405",
         "email": "contacto@sellu.co",
         "priceRange": "$$",
@@ -488,13 +488,13 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Menú Principal</p>
-                <a href="{{ url('/abre-empresa') }}">Abre tu empresa</a>
-<a href="{{ url('/contabilidad') }}">Contabilidad</a>
-<a href="{{ url('/amazon') }}">Vende en Amazon</a>
-<a href="{{ url('/marca') }}">Registro de marca</a>
-<a href="{{ url('/envios') }}">Envíos</a>
-<a href="{{ url('/sanitario') }}">Registro Sanitario</a>
-<a href="{{ url('/soporte') }}">Soporte</a>
+                <a href="{{ url('/pages/abre-empresa') }}">Abre tu empresa</a>
+<a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
+<a href="{{ url('/pages/amazon') }}">Vende en Amazon</a>
+<a href="{{ url('/pages/marca') }}">Registro de marca</a>
+<a href="{{ url('/pages/envios') }}">Envíos</a>
+<a href="{{ url('/pages/sanitario') }}">Registro Sanitario</a>
+<a href="{{ url('/pages/soporte') }}">Soporte</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Información Legal</p>

@@ -45,24 +45,24 @@
 
     {{-- FILA 2: Menú centrado (desktop) --}}
     <nav class="nav-menu-row">
-        <a href="{{ url('/abre-empresa') }}" class="nav-item {{ request()->is('abre-empresa') ? 'active' : '' }}">Abre tu empresa</a>
-        <a href="{{ url('/contabilidad') }}" class="nav-item {{ request()->is('contabilidad') ? 'active' : '' }}">Contabilidad</a>
-        <a href="{{ url('/amazon') }}" class="nav-item {{ request()->is('amazon') ? 'active' : '' }}">Vende en Amazon</a>
-        <a href="{{ url('/marca') }}" class="nav-item {{ request()->is('marca') ? 'active' : '' }}">Registro de marca</a>
-        <a href="{{ url('/envios') }}" class="nav-item {{ request()->is('envios') ? 'active' : '' }}">Envíos</a>
-        <a href="{{ url('/sanitario') }}" class="nav-item {{ request()->is('sanitario') ? 'active' : '' }}">Registro sanitario</a>
-        <a href="{{ url('/soporte') }}" class="nav-item {{ request()->is('soporte') ? 'active' : '' }}">Soporte</a>
+        <a href="{{ url('/pages/abre-empresa') }}" class="nav-item {{ request()->is('pages/abre-empresa') ? 'active' : '' }}">Abre tu empresa</a>
+        <a href="{{ url('/pages/contabilidad') }}" class="nav-item {{ request()->is('pages/contabilidad') ? 'active' : '' }}">Contabilidad</a>
+        <a href="{{ url('/pages/amazon') }}" class="nav-item {{ request()->is('pages/amazon') ? 'active' : '' }}">Vende en Amazon</a>
+        <a href="{{ url('/pages/marca') }}" class="nav-item {{ request()->is('pages/marca') ? 'active' : '' }}">Registro de marca</a>
+        <a href="{{ url('/pages/envios') }}" class="nav-item {{ request()->is('pages/envios') ? 'active' : '' }}">Envíos</a>
+        <a href="{{ url('/pages/sanitario') }}" class="nav-item {{ request()->is('pages/sanitario') ? 'active' : '' }}">Registro sanitario</a>
+        <a href="{{ url('/pages/soporte') }}" class="nav-item {{ request()->is('pages/soporte') ? 'active' : '' }}">Soporte</a>
     </nav>
 
     {{-- Menú móvil desplegable --}}
     <nav class="nav-mobile-menu" id="navMobileMenu">
-        <a href="{{ url('/abre-empresa') }}" class="mobile-item {{ request()->is('abre-empresa') ? 'active' : '' }}">Abre tu empresa</a>
-        <a href="{{ url('/contabilidad') }}" class="mobile-item {{ request()->is('contabilidad') ? 'active' : '' }}">Contabilidad</a>
-        <a href="{{ url('/amazon') }}" class="mobile-item {{ request()->is('amazon') ? 'active' : '' }}">Vende en Amazon</a>
-        <a href="{{ url('/marca') }}" class="mobile-item {{ request()->is('marca') ? 'active' : '' }}">Registro de marca</a>
-        <a href="{{ url('/envios') }}" class="mobile-item {{ request()->is('envios') ? 'active' : '' }}">Envíos</a>
-        <a href="{{ url('/sanitario') }}" class="mobile-item {{ request()->is('sanitario') ? 'active' : '' }}">Registro sanitario</a>
-        <a href="{{ url('/soporte') }}" class="mobile-item {{ request()->is('soporte') ? 'active' : '' }}">Soporte</a>
+        <a href="{{ url('/pages/abre-empresa') }}" class="mobile-item {{ request()->is('pages/abre-empresa') ? 'active' : '' }}">Abre tu empresa</a>
+        <a href="{{ url('/pages/contabilidad') }}" class="mobile-item {{ request()->is('pages/contabilidad') ? 'active' : '' }}">Contabilidad</a>
+        <a href="{{ url('/pages/amazon') }}" class="mobile-item {{ request()->is('pages/amazon') ? 'active' : '' }}">Vende en Amazon</a>
+        <a href="{{ url('/pages/marca') }}" class="mobile-item {{ request()->is('pages/marca') ? 'active' : '' }}">Registro de marca</a>
+        <a href="{{ url('/pages/envios') }}" class="mobile-item {{ request()->is('pages/envios') ? 'active' : '' }}">Envíos</a>
+        <a href="{{ url('/pages/sanitario') }}" class="mobile-item {{ request()->is('pages/sanitario') ? 'active' : '' }}">Registro sanitario</a>
+        <a href="{{ url('/pages/soporte') }}" class="mobile-item {{ request()->is('pages/soporte') ? 'active' : '' }}">Soporte</a>
         <div class="mobile-auth">
             @auth
                 <a href="{{ route('dashboard') }}" class="mobile-auth-btn outline">Mi panel</a>

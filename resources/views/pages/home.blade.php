@@ -303,37 +303,37 @@
     <h2 class="section-title">Servicios clave para tu empresa en Estados Unidos</h2>
     <p class="section-sub">Simplificamos los procesos para que tu empresa crezca sin límites.</p>
     <div class="servicios-grid">
-        <a href="{{ url('/abre-empresa') }}" class="servicio-card" aria-label="Crea tu empresa en USA">
+        <a href="{{ url('/pages/abre-empresa') }}" class="servicio-card" aria-label="Crea tu empresa en USA">
             <div class="servicio-icon">
                 <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="6" width="24" height="20" rx="3" stroke="#0D1B3E" stroke-width="2"/><path d="M10 14h12M10 19h8" stroke="#0D1B3E" stroke-width="2" stroke-linecap="round"/><path d="M16 2v6" stroke="#0D1B3E" stroke-width="2" stroke-linecap="round"/></svg>
             </div>
             <span class="servicio-label">Crea tu empresa</span>
         </a>
-        <a href="{{ url('/contabilidad') }}" class="servicio-card" aria-label="Contabilidad e impuestos">
+        <a href="{{ url('/pages/contabilidad') }}" class="servicio-card" aria-label="Contabilidad e impuestos">
             <div class="servicio-icon">
                 <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="3" stroke="#0D1B3E" stroke-width="2"/><path d="M10 10h12M10 16h12M10 22h8" stroke="#0D1B3E" stroke-width="2" stroke-linecap="round"/></svg>
             </div>
             <span class="servicio-label">Contabilidad e impuestos</span>
         </a>
-        <a href="{{ url('/marca') }}" class="servicio-card" aria-label="Registro de marca USPTO">
+        <a href="{{ url('/pages/marca') }}" class="servicio-card" aria-label="Registro de marca USPTO">
             <div class="servicio-icon">
                 <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="11" stroke="#0D1B3E" stroke-width="2"/><path d="M16 10v6l4 3" stroke="#0D1B3E" stroke-width="2" stroke-linecap="round"/></svg>
             </div>
             <span class="servicio-label">Registro de marca (USPTO)</span>
         </a>
-        <a href="{{ url('/sanitario') }}" class="servicio-card dark" aria-label="Registro sanitario FDA">
+        <a href="{{ url('/pages/sanitario') }}" class="servicio-card dark" aria-label="Registro sanitario FDA">
             <div class="servicio-icon">
                 <svg viewBox="0 0 32 32" fill="none"><path d="M6 26l4-8 6 4 4-12 6 16" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <span class="servicio-label">Registro sanitario (FDA)</span>
         </a>
-        <a href="{{ url('/envios') }}" class="servicio-card dark" aria-label="Logística y envíos">
+        <a href="{{ url('/pages/envios') }}" class="servicio-card dark" aria-label="Logística y envíos">
             <div class="servicio-icon">
                 <svg viewBox="0 0 32 32" fill="none"><rect x="3" y="14" width="18" height="12" rx="2" stroke="#F5A623" stroke-width="2"/><path d="M21 18h5a2 2 0 012 2v2a2 2 0 01-2 2h-5" stroke="#F5A623" stroke-width="2"/><circle cx="8" cy="29" r="2" fill="#F5A623"/><circle cx="18" cy="29" r="2" fill="#F5A623"/></svg>
             </div>
             <span class="servicio-label">Logística y almacenamiento</span>
         </a>
-        <a href="{{ url('/amazon') }}" class="servicio-card dark" aria-label="Vende en Amazon">
+        <a href="{{ url('/pages/amazon') }}" class="servicio-card dark" aria-label="Vende en Amazon">
             <div class="servicio-icon">
                 <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="16" height="14" rx="2" stroke="#F5A623" stroke-width="2"/><path d="M20 12l8-4v14l-8-4" stroke="#F5A623" stroke-width="2" stroke-linejoin="round"/></svg>
             </div>
@@ -508,13 +508,13 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Menú principal</p>
-                <a href="{{ url('/abre-empresa') }}">Abre tu empresa</a>
-                <a href="{{ url('/contabilidad') }}">Contabilidad</a>
-                <a href="{{ url('/amazon') }}">Vende en Amazon</a>
-                <a href="{{ url('/marca') }}">Registro de marca</a>
-                <a href="{{ url('/envios') }}">Envíos</a>
-                <a href="{{ url('/sanitario') }}">Registro Sanitario</a>
-                <a href="{{ url('/soporte') }}">Soporte</a>
+                <a href="{{ url('/pages/abre-empresa') }}">Abre tu empresa</a>
+                <a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
+                <a href="{{ url('/pages/amazon') }}">Vende en Amazon</a>
+                <a href="{{ url('/pages/marca') }}">Registro de marca</a>
+                <a href="{{ url('/pages/envios') }}">Envíos</a>
+                <a href="{{ url('/pages/sanitario') }}">Registro Sanitario</a>
+                <a href="{{ url('/pages/soporte') }}">Soporte</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Información legal</p>

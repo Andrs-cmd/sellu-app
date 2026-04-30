@@ -12,11 +12,11 @@
     <meta name="keywords" content="registro de marca USA, USPTO trademark, registrar marca estados unidos, trademark registration LATAM, proteger marca en USA, registro marca para latinoamericanos, propiedad intelectual USA">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
-    <link rel="canonical" href="https://sellu.co/marca">
+    <link rel="canonical" href="https://sellu.co/pages/marca">
 
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sellu.co/marca">
+    <meta property="og:url" content="https://sellu.co/pages/marca">
     <meta property="og:title" content="Registro de Marca ante la USPTO desde LATAM — Sell·U">
     <meta property="og:description" content="Registra tu marca en Estados Unidos ante la USPTO. Protege tu nombre, logo y slogan a nivel federal. Asesoría para latinoamericanos.">
     <meta property="og:image" content="https://sellu.co/og-image.jpg">
@@ -37,7 +37,7 @@
         "@type": "LegalService",
         "name": "Sell·U LATAM — Registro de Marca USPTO",
         "description": "Servicio de registro de marcas comerciales ante la USPTO de Estados Unidos para emprendedores y empresas latinoamericanas. Protección de nombre comercial, logo y slogan.",
-        "url": "https://sellu.co/marca",
+        "url": "https://sellu.co/pages/marca",
         "telephone": "+19542105405",
         "email": "contacto@sellu.co",
         "priceRange": "$$",
@@ -492,13 +492,13 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Menú Principal</p>
-               <a href="{{ url('/abre-empresa') }}">Abre tu empresa</a>
-<a href="{{ url('/contabilidad') }}">Contabilidad</a>
-<a href="{{ url('/amazon') }}">Vende en Amazon</a>
-<a href="{{ url('/marca') }}">Registro de marca</a>
-<a href="{{ url('/envios') }}">Envíos</a>
-<a href="{{ url('/sanitario') }}">Registro Sanitario</a>
-<a href="{{ url('/soporte') }}">Soporte</a>
+               <a href="{{ url('/pages/abre-empresa') }}">Abre tu empresa</a>
+<a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
+<a href="{{ url('/pages/amazon') }}">Vende en Amazon</a>
+<a href="{{ url('/pages/marca') }}">Registro de marca</a>
+<a href="{{ url('/pages/envios') }}">Envíos</a>
+<a href="{{ url('/pages/sanitario') }}">Registro Sanitario</a>
+<a href="{{ url('/pages/soporte') }}">Soporte</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Información Legal</p>

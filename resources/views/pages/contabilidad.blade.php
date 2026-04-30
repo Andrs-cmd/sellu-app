@@ -12,11 +12,11 @@
     <meta name="keywords" content="contabilidad LLC USA, taxes para LLC, declaración de impuestos estados unidos, bookkeeping estados unidos, contador LLC, impuestos para extranjeros USA, asesoría fiscal LATAM">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
-    <link rel="canonical" href="https://sellu.co/contabilidad">
+    <link rel="canonical" href="https://sellu.co/pages/contabilidad">
 
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sellu.co/contabilidad">
+    <meta property="og:url" content="https://sellu.co/pages/contabilidad">
     <meta property="og:title" content="Contabilidad para LLC No Residente USA — Sell·U">
     <meta property="og:description" content="Contabilidad, bookkeeping e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. Proceso 100% digital.">
     <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
@@ -40,7 +40,7 @@
         "@type": "AccountingService",
         "name": "Sell·U LATAM — Contabilidad y Taxes para LLC",
         "description": "Servicio de contabilidad, bookkeeping y declaración de impuestos para LLC y corporaciones en Estados Unidos, especializado en emprendedores latinoamericanos.",
-        "url": "https://sellu.co/contabilidad",
+        "url": "https://sellu.co/pages/contabilidad",
         "logo": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196",
         "image": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008",
         "telephone": "+19542105405",
@@ -983,12 +983,12 @@ Tus reportes contables al día · sin pendientes críticos                      
             <div>
                 <div class="footer-col-title">Servicios</div>
                 <div class="footer-col">
-                    <a href="{{ url('/abre-empresa') }}">Abre tu empresa</a>
-                    <a href="{{ url('/contabilidad') }}">Contabilidad</a>
-                    <a href="{{ url('/amazon') }}">Vende en Amazon</a>
-                    <a href="{{ url('/marca') }}">Registro de marca</a>
-                    <a href="{{ url('/envios') }}">Envíos</a>
-                    <a href="{{ url('/sanitario') }}">Reg. Sanitario</a>
+                    <a href="{{ url('/pages/abre-empresa') }}">Abre tu empresa</a>
+                    <a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
+                    <a href="{{ url('/pages/amazon') }}">Vende en Amazon</a>
+                    <a href="{{ url('/pages/marca') }}">Registro de marca</a>
+                    <a href="{{ url('/pages/envios') }}">Envíos</a>
+                    <a href="{{ url('/pages/sanitario') }}">Reg. Sanitario</a>
                 </div>
             </div>
             <div>
