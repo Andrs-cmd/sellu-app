@@ -111,7 +111,8 @@
         img { max-width:100%; height:auto; }
 
         /* ── HERO ── */
-        .hero { background:var(--navy); min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
+        .hero { background:var(--navy) url('https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008') center/cover no-repeat; min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
+        .hero::before { content:''; position:absolute; inset:0; background:rgba(13,27,62,.55); z-index:1; }
         .hero-content { position:relative; z-index:2; padding:72px 5%; max-width:580px; }
         .hero-eyebrow { font-size:12px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:20px; }
         .hero h1 { font-family:'Montserrat',sans-serif; font-size:42px; font-weight:900; line-height:1.1; color:var(--white); margin-bottom:20px; letter-spacing:-.5px; }
