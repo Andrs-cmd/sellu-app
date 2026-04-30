@@ -433,6 +433,11 @@
     </div>
 </section>
 
+<!-- ── FAQ BANNER ── -->
+<div style="width:100%; height:130px; overflow:hidden; line-height:0;">
+    <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/2151306056_1.png?v=1761170724" alt="" style="width:100%; height:130px; object-fit:cover; object-position:center top; display:block;">
+</div>
+
 <!-- ── FAQ ── -->
 <section id="faq" class="faq" aria-label="Preguntas frecuentes">
     <div class="faq-inner">
