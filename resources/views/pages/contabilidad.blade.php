@@ -620,7 +620,7 @@ Tus reportes contables al día · sin pendientes críticos                      
         <div class="section-head reveal">
             <span class="eyebrow">Precios</span>
             <h2>Paquetes de contabilidad para tu LLC.</h2>
-            <p>Tarifas claras en USD. Cancela cuando quieras, sin letra chica ni renovaciones automáticas que no avisemos.</p>
+            <p>Tarifas claras en USD, sin complicaciones ni sorpresas. Pagas por lo que necesitas, con total control.</p>
         </div>
 
         <div class="pricing-toggle">
@@ -692,7 +692,7 @@ Tus reportes contables al día · sin pendientes críticos                      
                     <p>Ofrecemos limpieza de libros y conciliación de fin de año. Te ponemos al día con el IRS, paso a paso.</p>
                 </div>
             </div>
-            <a href="#contacto" class="btn btn-primary">Habla con un contador →</a>
+            <a href="#contacto" class="btn btn-primary">Habla con un asesor →</a>
         </div>
     </div>
 </section>
