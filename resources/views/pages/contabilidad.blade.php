@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
     <link rel="apple-touch-icon" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
-    <title>Contabilidad para LLC No Residente USA — Sell·U</title>
+    <title>Contabilidad LLC No Residente USA | Servicios en Español | Sell U</title>
 
     <!-- ── SEO PRIMARIO ── -->
-    <meta name="description" content="Contabilidad, bookkeeping e impuestos para tu LLC en Estados Unidos. Declaración anual, reportes financieros y asesoría tributaria para latinoamericanos. Precios claros y proceso digital.">
-    <meta name="keywords" content="contabilidad LLC USA, taxes para LLC, declaración de impuestos estados unidos, bookkeeping estados unidos, contador LLC, impuestos para extranjeros USA, asesoría fiscal LATAM">
+    <meta name="description" content="Servicios de contabilidad LLC para latinos en Latinoamérica con empresa en Estados Unidos. Bookkeeping mensual, declaración de impuestos y Form 5472. 100% en español.">
+    <meta name="keywords" content="contabilidad LLC no residente USA, declaración impuestos LLC extranjero, servicios contables LLC español, contador LLC Estados Unidos español, contabilidad LLC dueños extranjeros, bookkeeping LLC español, CPA para latinos no residentes, formulario 5472 LLC, form 5472 español, declarar IRS LLC desde Latinoamérica, impuestos LLC no residente, compliance LLC Estados Unidos, bookkeeping mensual LLC, declaración anual LLC sin ingresos, contador para LLC desde Colombia, contador para LLC desde México, contador para LLC desde Argentina, contabilidad LLC Wyoming, contabilidad LLC Florida, contabilidad LLC Delaware">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
     <link rel="canonical" href="https://sellu.co/contabilidad">
@@ -17,29 +17,29 @@
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sellu.co/contabilidad">
-    <meta property="og:title" content="Contabilidad para LLC No Residente USA — Sell·U">
-    <meta property="og:description" content="Contabilidad, bookkeeping e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. Proceso 100% digital.">
+    <meta property="og:title" content="Contabilidad LLC para Latinos | Sell U">
+    <meta property="og:description" content="Llevamos la contabilidad de tu LLC en USA mientras tú haces crecer tu negocio. Bookkeeping mensual, Form 5472 y declaración de impuestos. 100% en español.">
     <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Sell·U — Contabilidad para LLC No Residente USA">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:site_name" content="Sell·U LATAM">
+    <meta property="og:image:alt" content="Sell U — Contabilidad LLC No Residente USA en Español">
+    <meta property="og:locale" content="es_LA">
+    <meta property="og:site_name" content="Sell U">
 
     <!-- ── TWITTER CARD ── -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contabilidad para LLC No Residente USA — Sell·U">
-    <meta name="twitter:description" content="Contabilidad e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. 100% digital.">
+    <meta name="twitter:title" content="Contabilidad LLC No Residente USA | Sell U">
+    <meta name="twitter:description" content="Llevamos la contabilidad de tu LLC en USA. Bookkeeping mensual, Form 5472 y declaración de impuestos. 100% en español desde LATAM.">
     <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
 
-    <!-- ── STRUCTURED DATA ── -->
+    <!-- ── STRUCTURED DATA — AccountingService ── -->
     @verbatim
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "AccountingService",
-        "name": "Sell·U LATAM — Contabilidad y Taxes para LLC",
-        "description": "Servicio de contabilidad, bookkeeping y declaración de impuestos para LLC y corporaciones en Estados Unidos, especializado en emprendedores latinoamericanos.",
+        "name": "Sell U — Contabilidad LLC No Residente USA en Español",
+        "description": "Servicios de contabilidad, bookkeeping y declaración de impuestos para LLC en Estados Unidos. Especialistas en emprendedores latinoamericanos no residentes. Form 5472, Form 1120, declaración anual IRS.",
         "url": "https://sellu.co/contabilidad",
         "logo": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196",
         "image": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008",
@@ -58,23 +58,36 @@
             {"@type": "Country", "name": "Peru"},
             {"@type": "Country", "name": "Venezuela"},
             {"@type": "Country", "name": "Ecuador"},
+            {"@type": "Country", "name": "Costa Rica"},
+            {"@type": "Country", "name": "Spain"},
             {"@type": "Country", "name": "United States"}
         ],
-        "serviceType": ["Bookkeeping", "Tax Preparation", "Financial Reporting", "Tax Advisory", "LLC Accounting"],
+        "serviceType": [
+            "Bookkeeping mensual LLC",
+            "Declaración de impuestos LLC extranjero",
+            "Form 5472 LLC no residente",
+            "Form 1120 LLC",
+            "Tax Preparation LLC español",
+            "Contabilidad LLC Wyoming",
+            "Contabilidad LLC Delaware",
+            "Contabilidad LLC Florida",
+            "CPA para latinos no residentes",
+            "Compliance LLC Estados Unidos"
+        ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Planes de Contabilidad para LLC",
+            "name": "Planes de Contabilidad LLC para No Residentes",
             "itemListElement": [
                 {
                     "@type": "Offer",
-                    "itemOffered": {"@type": "Service", "name": "Starter — Bookkeeping básico"},
+                    "itemOffered": {"@type": "Service", "name": "Starter — Bookkeeping mensual LLC"},
                     "price": "179",
                     "priceCurrency": "USD",
                     "priceSpecification": {"@type": "UnitPriceSpecification", "unitText": "MONTH"}
                 },
                 {
                     "@type": "Offer",
-                    "itemOffered": {"@type": "Service", "name": "Pro — Contabilidad completa con taxes"},
+                    "itemOffered": {"@type": "Service", "name": "Pro — Contabilidad completa + declaración de impuestos LLC"},
                     "price": "299",
                     "priceCurrency": "USD",
                     "priceSpecification": {"@type": "UnitPriceSpecification", "unitText": "MONTH"}
@@ -82,6 +95,64 @@
             ]
         },
         "sameAs": ["https://sellu.co"]
+    }
+    </script>
+
+    <!-- ── STRUCTURED DATA — FAQPage (long-tail keywords) ── -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cómo declarar impuestos de una LLC siendo extranjero?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Una LLC con dueño extranjero debe presentar el Form 5472 y el Form 1120 ante el IRS cada año. Si no lo haces, la multa es de $25,000 USD. En Sell U nos encargamos de todo el proceso 100% en español desde tu país en Latinoamérica."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Una LLC sin ingresos tiene que declarar impuestos en USA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Aunque tu LLC no haya generado ingresos, si tiene un dueño extranjero está obligada a presentar el Form 5472 junto con el Form 1120 pro-forma. No declarar puede resultar en multas de $25,000 USD por el IRS."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta la contabilidad de una LLC al año?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En Sell U los planes de contabilidad mensual para LLC empiezan desde $179 USD/mes e incluyen bookkeeping mensual. El plan Pro desde $299 USD/mes incluye contabilidad completa y declaración de impuestos anual (Form 5472 y Form 1120)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué pasa si no declaro mi LLC en USA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El IRS puede imponerte una multa de $25,000 USD por no presentar el Form 5472. Además, pueden suspender tu LLC y generarte problemas legales. Es fundamental cumplir con las obligaciones fiscales aunque no hayas tenido ingresos."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo contratar contabilidad para mi LLC desde Colombia, México o Argentina?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Sell U atiende emprendedores de toda Latinoamérica: Colombia, México, Argentina, Chile, Perú, Venezuela, Ecuador y Costa Rica. Todo el servicio es 100% remoto y en español, sin necesidad de viajar a Estados Unidos."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué es el formulario 5472 para LLC?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Form 5472 es el formulario que el IRS exige a las LLC con dueños extranjeros para reportar transacciones entre la empresa y sus propietarios. Debe presentarse junto al Form 1120 cada año antes del 15 de abril (o 15 de octubre con extensión)."
+                }
+            }
+        ]
     }
     </script>
     @endverbatim
