@@ -954,8 +954,8 @@ Tus reportes contables al día · sin pendientes críticos                      
             </div>
             <div class="cta-buttons">
                 <a href="{{ route('register') }}" class="btn btn-accent btn-lg" style="justify-content:center">Empezar ahora →</a>
-                <a href="https://wa.me/19542105405" target="_blank" class="btn btn-on-dark btn-lg" style="justify-content:center">Habla con un contador</a>
-                <p class="cta-note">Consulta gratuita · Sin tarjeta · Respondemos en 24 h hábiles</p>
+                <a href="https://wa.me/19542105405" target="_blank" class="btn btn-on-dark btn-lg" style="justify-content:center">Habla con un asesor</a>
+                <!--<p class="cta-note">Consulta gratuita · Sin tarjeta · Respondemos en 24 h hábiles</p>-->
             </div>
         </div>
         <div class="trust-strip-bottom">
