@@ -272,7 +272,7 @@
     /* ── DIFFERENTIATORS ── */
     .diff-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 16px; padding: 32px 28px; transition: all var(--duration-base) var(--ease-out); }
     .diff-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-md); transform: translateY(-2px); }
-    .diff-icon { width: 56px; height: 56px; border-radius: 14px; background: var(--accent-100); color: var(--accent-700); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 22px; }
+    .diff-icon { width: 56px; height: 56px; border-radius: 14px; background: var(--accent-100); color: #F5A623; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 22px; }
     .diff-card h4 { font-family: var(--font-display); font-size: 19px; line-height: 26px; letter-spacing: -0.01em; font-weight: 600; color: var(--navy-900); margin: 0 0 10px; }
     .diff-card p { font-size: 14px; line-height: 22px; color: var(--fg-secondary); margin: 0; }
 
