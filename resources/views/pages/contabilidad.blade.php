@@ -558,36 +558,36 @@ Tus reportes contables al día · sin pendientes críticos                      
     <div class="container">
         <div class="section-head reveal">
             <span class="eyebrow">Por qué Sell-U</span>
-            <h2>Contabilidad pensada para founders LATAM con LLC en EE.UU.</h2>
-            <p>No somos un software contable más, ni un contador genérico. Somos especialistas en el caso específico de LLCs de no residentes — y eso cambia todo.</p>
+            <h2>Contabilidad para tu LLC, clara y sin fricción desde LATAM.</h2>
+            <p>No es solo llevar números. Es darte estructura, control y cumplimiento real desde el día uno — pensado para operar tu LLC correctamente desde Latinoamérica</p>
         </div>
         <div class="grid-3 reveal" style="gap:16px">
             <div class="diff-card">
                 <div class="diff-icon"><i data-lucide="languages" width="26" height="26"></i></div>
-                <h4>100% en español, sin traducciones</h4>
-                <p>Tu contador habla, escribe y piensa en español. Sin Google Translate, sin reuniones a las 6 a.m.</p>
+                <h4> Acompañamiento en español</h4>
+                <p>Trabajas con un equipo que entiende cómo operas desde LATAM, sin barreras ni traducciones.</p>
             </div>
             <div class="diff-card">
                 <div class="diff-icon"><i data-lucide="badge-check" width="26" height="26"></i></div>
-                <h4>Certificados en QuickBooks y Xero</h4>
-                <p>ProAdvisors oficiales con experiencia específica en LLCs de dueños extranjeros.</p>
+                <h4>Especialistas en LLC de no residentes</h4>
+                <p>No es contabilidad genérica. Es manejo específico para estructuras en EE.UU. desde el extranjero.</p>
             </div>
             <div class="diff-card">
                 <div class="diff-icon"><i data-lucide="file-text" width="26" height="26"></i></div>
-                <h4>Integración con tus impuestos</h4>
-                <p>Tus libros se entregan listos para Form 1120, 5472 y 1065 — sin reprocesos ni preguntas extras.</p>
+                <h4> Listo para cumplir, sin reprocesos</h4>
+                <p>Tus libros se organizan correctamente para que puedas declarar sin fricciones ni correcciones.</p>
             </div>
         </div>
         <div class="grid-2 reveal" style="margin-top:16px;gap:16px">
             <div class="diff-card">
                 <div class="diff-icon"><i data-lucide="shield" width="26" height="26"></i></div>
-                <h4>Seguridad de nivel bancario</h4>
-                <p>Cifrado 256-bit, autenticación en dos pasos y SOC 2. Tu información financiera, blindada.</p>
+                <h4>Control y orden desde el día uno</h4>
+                <p>Tu información financiera estructurada, clara y siempre accesible para tomar decisiones.</p>
             </div>
             <div class="diff-card">
                 <div class="diff-icon"><i data-lucide="bell-ring" width="26" height="26"></i></div>
-                <h4>Recordatorios proactivos del IRS</h4>
-                <p>Te avisamos con tiempo cada deadline. Nunca más una multa por descuido o por una fecha pasada.</p>
+                <h4>Seguimiento y recordatorios activos</h4>
+                <p>No dependes de fechas ni memoria. Te guiamos para mantener todo al día sin errores.</p>
             </div>
         </div>
     </div>
