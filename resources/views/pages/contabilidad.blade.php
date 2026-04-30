@@ -277,7 +277,7 @@
     .diff-card p { font-size: 14px; line-height: 22px; color: var(--fg-secondary); margin: 0; }
 
     /* ── SERVICES ── */
-    .service-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 14px; padding: 22px; display: flex; align-items: flex-start; gap: 14px; transition: all var(--duration-base) var(--ease-out); }
+    .service-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 14px; padding: 30px; display: flex; align-items: flex-start; gap: 3px; transition: all var(--duration-base) var(--ease-out); }
     .service-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-sm); }
     .service-icon { width: 38px; height: 38px; border-radius: 9px; background: var(--paper-2); color: var(--navy-900); display: inline-flex; align-items: center; justify-content: center; flex: none; }
     .service-card h4 { font-size: 14px; font-weight: 600; color: var(--navy-900); margin: 0 0 4px; line-height: 18px; }
