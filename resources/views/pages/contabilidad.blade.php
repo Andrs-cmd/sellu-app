@@ -508,7 +508,7 @@
                     Contabilidad para tu LLC,<br>
                     <span class="highlight">la tranquilidad</span> que tu negocio merece.
                 </h1>
-                <p class="hero-sub">Sabes exactamente dónde está tu LLC en Estados Unidos, en cualquier momento — sin moverte de Latinoamérica.</p>
+                <p class="hero-sub">Ten el control contable de tu LLC en EE.UU. en todo momento — con acompañamiento experto, sin salir de Latinoamérica.</p>
                 <div class="bullet-row">
                     <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Libros al día, mes a mes</span>
                     <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Sin cargos ocultos</span>
@@ -569,10 +569,7 @@
                                 <div class="chart-bar active" style="height:72%"></div>
                             </div>
                         </div>
-                        <div class="dash-alert">
-                            <i data-lucide="bell" width="14" height="14"></i>
-                            Form 5472 · entrega en 47 días
-                        </div>
+                        
                     </div>
                 </div>
             </div>
