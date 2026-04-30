@@ -162,6 +162,7 @@
         .stat-num.gold { color:var(--gold); }
         .stat-icon { margin-bottom:8px; }
         .stat-icon svg { width:36px; height:36px; color:var(--navy); }
+        .stat-icon img { width:48px; height:48px; object-fit:contain; }
         .stat-label { font-size:13px; color:var(--muted); font-weight:500; line-height:1.4; }
 
         /* ── CLIENTES ── */
@@ -364,19 +365,19 @@
 <section class="stats" aria-label="Estadísticas">
     <div class="stats-inner">
         <div class="stat-item">
-            <div class="stat-num gold">7</div>
+            <div class="stat-icon"><img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/mqwnQi_tif.png?v=1761155258" alt="Años de experiencia"></div>
             <div class="stat-label">Años de experiencia</div>
         </div>
         <div class="stat-item">
-            <div class="stat-icon" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M6 18h24M18 6v24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+            <div class="stat-icon"><img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/VFTAIQ_tif.png?v=1761155258" alt="Servicios personalizados"></div>
             <div class="stat-label">Servicios personalizados</div>
         </div>
         <div class="stat-item">
-            <div class="stat-icon" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="12" stroke="currentColor" stroke-width="2"/><path d="M12 18l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="stat-icon"><img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/zygw1K_tif.png?v=1761155258" alt="Red de contactos estratégicos"></div>
             <div class="stat-label">Red de contactos estratégicos</div>
         </div>
         <div class="stat-item">
-            <div class="stat-icon" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M18 4l3.5 7.5 8.5 1-6 6 1.5 8.5L18 23l-7.5 4 1.5-8.5-6-6 8.5-1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+            <div class="stat-icon"><img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Q6Fjwp.png?v=1761155258" alt="Éxito comprobado"></div>
             <div class="stat-label">Éxito comprobado</div>
         </div>
     </div>
