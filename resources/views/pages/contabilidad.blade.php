@@ -780,7 +780,7 @@ Tus reportes contables al día · sin pendientes críticos                      
 </section>
 
 <!-- ══════════════════════ TESTIMONIALS ══════════════════════ -->
-<section class="section-pad section-band">
+<!--<section class="section-pad section-band">
     <div class="container">
         <div class="section-head reveal">
             <span class="eyebrow">Historias de clientes</span>
@@ -831,7 +831,7 @@ Tus reportes contables al día · sin pendientes críticos                      
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- ══════════════════════ IRS CALENDAR ══════════════════════ -->
 <section class="section-pad" id="calendario">
@@ -852,11 +852,11 @@ Tus reportes contables al día · sin pendientes críticos                      
                 <div><div class="form-name">Form 1120 + 5472 · LLC Single-Member</div><p class="form-desc">Form 5472 con multa mínima de USD 25,000 si no se presenta a tiempo.</p></div>
                 <span class="irs-tag danger">Crítico</span>
             </div>
-            <div class="irs-row">
+            <!--<div class="irs-row">
                 <div class="date-block"><div class="date-month">Jun</div><div class="date-day">15</div></div>
                 <div><div class="form-name">Estimated tax payment Q2</div><p class="form-desc">Pago estimado de impuestos para LLCs con ECI.</p></div>
                 <span class="irs-tag warn">Pago</span>
-            </div>
+            </div>-->
             <div class="irs-row">
                 <div class="date-block"><div class="date-month">Sep</div><div class="date-day">15</div></div>
                 <div><div class="form-name">Form 1065 · extensión</div><p class="form-desc">Fecha límite si pediste extensión en marzo.</p></div>
