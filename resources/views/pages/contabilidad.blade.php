@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contabilidad y Taxes para LLC en USA — Sell·U</title>
+    <title>Contabilidad para LLC No Residente USA — Sell·U</title>
 
     <!-- ── SEO PRIMARIO ── -->
     <meta name="description" content="Contabilidad, bookkeeping e impuestos para tu LLC en Estados Unidos. Declaración anual, reportes financieros y asesoría tributaria para latinoamericanos. Precios claros y proceso digital.">
@@ -15,7 +15,7 @@
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sellu.co/contabilidad">
-    <meta property="og:title" content="Contabilidad y Taxes para LLC en USA — Sell·U">
+    <meta property="og:title" content="Contabilidad para LLC No Residente USA — Sell·U">
     <meta property="og:description" content="Contabilidad, bookkeeping e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. Proceso 100% digital.">
     <meta property="og:image" content="https://sellu.co/og-image.jpg">
     <meta property="og:locale" content="es_ES">
@@ -23,7 +23,7 @@
 
     <!-- ── TWITTER CARD ── -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contabilidad y Taxes para LLC en USA — Sell·U">
+    <meta name="twitter:title" content="Contabilidad para LLC No Residente USA — Sell·U">
     <meta name="twitter:description" content="Contabilidad e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. 100% digital.">
     <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
 
@@ -45,236 +45,971 @@
     </script>
     @endverbatim
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
     <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root {
-            --navy:  #0D1B3E;
-            --navy2: #122050;
-            --gold:  #F5A623;
-            --gold2: #E09415;
-            --white: #FFFFFF;
-            --gray:  #F5F6FA;
-            --gray2: #E8EAF0;
-            --text:  #333A50;
-            --muted: #6B7394;
-        }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Open Sans', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
-        a { text-decoration: none; color: inherit; }
+    /* ── RESET & BASE ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        /* ── TOPBAR ── */
-        .topbar { background: var(--navy2); padding: 7px 5%; display: flex; justify-content: space-between; align-items: center; }
-        .topbar-left { font-size: 12px; color: rgba(255,255,255,.6); display: flex; align-items: center; gap: 6px; }
-        .topbar-left svg { width: 14px; height: 14px; opacity: .6; }
-        .topbar-right { display: flex; gap: 14px; }
-        .topbar-right a { color: rgba(255,255,255,.6); font-size: 13px; transition: color .2s; }
-        .topbar-right a:hover { color: var(--white); }
+    :root {
+        --navy-800: #2e3856;
+        --navy-700: #434966;
+        --navy-600: #5b607d;
+        --navy-500: #9499ad;
+        --navy-400: #b3b7c5;
+        --navy-300: #ced1da;
+        --navy-200: #e2e4ea;
+        --navy-100: #eef0f4;
+        --navy-50:  #f6f7f9;
+        --navy-900: #2e3856;
+        --accent-700: #c89320;
+        --accent-500: #f6bb33;
+        --accent-400: #f9cc66;
+        --accent-300: #fbdd95;
+        --accent-200: #fdecc2;
+        --accent-100: #fef5dd;
+        --paper:      #fbfaf7;
+        --paper-2:    #f5f3ee;
+        --ink-900:    #15161a;
+        --ink-700:    #3a3d46;
+        --ink-500:    #6b6f7a;
+        --ink-400:    #9298a3;
+        --ink-300:    #c5c8d0;
+        --ink-200:    #e5e6ea;
+        --ink-100:    #f0f0f2;
+        --white:      #ffffff;
+        --success-700: #0f6b3f;
+        --success-500: #1aa05f;
+        --success-100: #e3f6ec;
+        --danger-700:  #99231b;
+        --danger-500:  #d6362a;
+        --danger-100:  #fbe4e2;
+        --info-700:    #1d4f8a;
+        --info-500:    #2f7dd6;
+        --info-100:    #e3eefc;
+        --bg-page:     var(--paper);
+        --fg-primary:  var(--navy-900);
+        --fg-secondary: var(--ink-700);
+        --fg-tertiary:  var(--ink-500);
+        --border-default: var(--ink-200);
+        --border-strong:  var(--ink-300);
+        --border-subtle:  var(--ink-100);
+        --font-display: 'Inter Tight', 'Inter', ui-sans-serif, system-ui, sans-serif;
+        --font-sans:    'Inter', ui-sans-serif, system-ui, sans-serif;
+        --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+        --shadow-xs: 0 1px 2px rgba(46,56,86,.04);
+        --shadow-sm: 0 1px 2px rgba(46,56,86,.05), 0 1px 3px rgba(46,56,86,.04);
+        --shadow-md: 0 4px 8px -2px rgba(46,56,86,.06), 0 2px 4px -2px rgba(46,56,86,.04);
+        --shadow-lg: 0 12px 24px -8px rgba(46,56,86,.10), 0 4px 8px -4px rgba(46,56,86,.06);
+        --shadow-xl: 0 24px 48px -12px rgba(46,56,86,.16), 0 8px 16px -8px rgba(46,56,86,.08);
+        --ease-out: cubic-bezier(0.16,1,0.3,1);
+        --duration-base: 200ms;
+    }
 
-        /* ── NAV ── */
-        .nav { background: var(--white); border-bottom: 1px solid var(--gray2); padding: 0 5%; display: flex; align-items: center; justify-content: center; height: 68px; position: sticky; top: 0; z-index: 100; gap: 0; flex-wrap: wrap; }
-        .nav-logo { display: flex; align-items: center; margin-right: 40px; }
-        .nav-logo-text { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 900; color: var(--navy); letter-spacing: -1px; }
-        .nav-logo-text span { color: var(--gold); }
-        .nav-links { display: flex; gap: 0; }
-        .nav-link { padding: 0 16px; height: 68px; display: flex; align-items: center; font-size: 12px; font-weight: 700; color: var(--text); border-bottom: 3px solid transparent; transition: all .2s; white-space: nowrap; text-transform: uppercase; letter-spacing: .04em; }
-        .nav-link:hover { color: var(--navy); border-bottom-color: var(--gold); }
-        .nav-link.active { color: var(--gold); border-bottom-color: var(--gold); }
+    html, body {
+        background: var(--bg-page);
+        color: var(--fg-primary);
+        font-family: var(--font-sans);
+        font-size: 16px;
+        line-height: 24px;
+        -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--navy-900); text-decoration: none; }
+    h2 { font-family: var(--font-display); font-size: 44px; line-height: 52px; letter-spacing: -0.02em; font-weight: 600; color: var(--navy-900); margin: 0; }
+    h4 { font-family: var(--font-sans); font-size: 18px; line-height: 26px; font-weight: 600; color: var(--navy-900); margin: 0; }
+    p { color: var(--fg-secondary); margin: 0; }
 
-        /* ── HERO SPLIT ── */
-        .hero-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; }
-        .hero-img-col {
-            position: relative; overflow: hidden; background: var(--navy2);
-            min-height: 420px;
-        }
-        .hero-img-col img {
-            width: 100%; height: 100%; object-fit: cover; object-position: center;
-            display: block;
-        }
-        /* Placeholder — reemplazar img con URL real */
-        .hero-img-placeholder {
-            width: 100%; height: 100%; min-height: 520px;
-            background: #1a2a4a;
-            display: flex; align-items: center; justify-content: center;
-        }
-        .hero-img-placeholder svg { width: 80px; height: 80px; opacity: .15; color: white; }
-        .hero-text-col {
-            display: flex; flex-direction: column; justify-content: center;
-            padding: 60px 64px; background: var(--white);
-        }
-        .hero-tag {
-            font-size: 11px; font-weight: 700; color: var(--muted);
-            text-transform: uppercase; letter-spacing: .12em; margin-bottom: 20px;
-        }
-        .hero-text-col h1 {
-            font-family: 'Montserrat', sans-serif; font-size: 30px; font-weight: 800;
-            color: var(--navy); line-height: 1.25; letter-spacing: -.3px;
-        }
+    /* ── LAYOUT ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+    .section-pad { padding: 96px 0; }
+    .section-band { background: var(--paper-2); }
+    .section-inverse { background: var(--navy-900); color: var(--paper); }
 
-        /* ── FORMULARIO ── */
-        .contacto { padding: 72px 5%; background: var(--white); }
-        .contacto-inner { max-width: 600px; margin: 0 auto; text-align: center; }
-        .contacto h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
-        .contacto p { font-size: 14px; color: var(--muted); margin-bottom: 36px; line-height: 1.6; }
-        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
-        .form-full { margin-bottom: 12px; }
-        .form-input {
-            width: 100%; padding: 14px 16px; border: 1px solid var(--gray2);
-            border-radius: 4px; font-family: 'Open Sans', sans-serif; font-size: 14px;
-            color: var(--text); background: var(--white); outline: none;
-            transition: border-color .2s;
-        }
-        .form-input:focus { border-color: var(--navy); }
-        .form-input::placeholder { color: var(--muted); }
-        textarea.form-input { resize: vertical; min-height: 120px; }
-        .form-submit {
-            display: inline-flex; align-items: center; gap: 10px;
-            background: var(--navy); color: var(--white);
-            padding: 14px 36px; border-radius: 4px; border: none;
-            font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700;
-            text-transform: uppercase; letter-spacing: .08em; cursor: pointer;
-            transition: background .2s; margin-top: 8px;
-        }
-        .form-submit:hover { background: var(--navy2); }
-        .form-submit svg { width: 16px; height: 16px; }
+    /* ── EYEBROW ── */
+    .eyebrow {
+        font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+        letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-tertiary);
+        display: block; margin-bottom: 16px;
+    }
+    .section-inverse .eyebrow { color: var(--accent-500); }
 
-        /* ── FOOTER ── */
-        .footer { background: var(--white); border-top: 1px solid var(--gray2); padding: 52px 5% 0; }
-        .footer-inner { max-width: 1100px; margin: 0 auto; }
-        .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 60px; padding-bottom: 40px; }
-        .footer-contact-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
-        .footer-logo-text { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: var(--navy); letter-spacing: -1px; display: inline-block; margin-bottom: 14px; }
-        .footer-logo-text span { color: var(--gold); }
-        .footer-brand-title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
-        .footer-brand-info { font-size: 13px; color: var(--muted); line-height: 1.9; }
-        .footer-brand-info a { color: var(--muted); }
-        .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 800; color: var(--navy); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 16px; }
-        .footer-col a { display: block; font-size: 13px; color: var(--muted); margin-bottom: 10px; transition: color .2s; }
-        .footer-col a:hover { color: var(--navy); }
-        .footer-payments { border-top: 1px solid var(--gray2); padding: 20px 0; display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; align-items: center; }
-        .payment-badge { background: var(--gray); border: 1px solid var(--gray2); border-radius: 4px; padding: 4px 8px; font-size: 10px; font-weight: 700; color: var(--muted); }
-        .footer-bottom { background: var(--navy2); margin: 0 -5%; padding: 20px 5%; text-align: center; }
-        .footer-bottom p { font-size: 12px; color: rgba(255,255,255,.4); line-height: 1.7; }
-        .footer-bottom strong { color: rgba(255,255,255,.6); }
+    /* ── SECTION HEAD ── */
+    .section-head { max-width: 720px; margin-bottom: 56px; }
+    .section-head h2 { margin: 0 0 16px; text-wrap: balance; }
+    .section-head p { font-size: 18px; line-height: 28px; color: var(--fg-secondary); max-width: 640px; }
 
-        @media (max-width: 900px) {
-            .hero-split { grid-template-columns: 1fr; }
-            .hero-text-col { padding: 40px 24px; }
-            .form-grid { grid-template-columns: 1fr; }
-            .footer-top { grid-template-columns: 1fr; gap: 32px; }
-            .nav-logo { margin-right: 0; margin-bottom: 0; }
-        }
+    /* ── BUTTONS ── */
+    .btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        font-family: var(--font-sans); font-weight: 600; font-size: 14px;
+        padding: 10px 18px; border-radius: 10px; border: 1px solid transparent;
+        cursor: pointer; line-height: 20px; text-decoration: none;
+        transition: background var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out), border-color var(--duration-base) var(--ease-out);
+    }
+    .btn-primary { background: var(--navy-900); color: var(--paper); box-shadow: var(--shadow-sm); }
+    .btn-primary:hover { background: var(--navy-800); box-shadow: var(--shadow-md); }
+    .btn-accent { background: var(--accent-500); color: var(--navy-900); box-shadow: var(--shadow-sm); }
+    .btn-accent:hover { background: var(--accent-400); box-shadow: var(--shadow-md); }
+    .btn-secondary { background: var(--white); color: var(--navy-900); border-color: var(--border-strong); }
+    .btn-secondary:hover { background: var(--paper-2); border-color: var(--navy-700); }
+    .btn-on-dark { background: var(--paper); color: var(--navy-900); }
+    .btn-on-dark:hover { background: var(--white); }
+    .btn-lg { padding: 14px 22px; font-size: 16px; line-height: 22px; border-radius: 12px; }
+
+    /* ── GRIDS ── */
+    .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+
+    /* ── HERO ── */
+    .hero-section { padding: 56px 0 96px; position: relative; overflow: hidden; }
+    .hero-puzzle {
+        position: absolute; right: -160px; top: 100px; width: 540px; height: 540px;
+        background: var(--accent-500); opacity: 0.07; pointer-events: none;
+        clip-path: path("M260 0 C 320 0, 360 40, 360 100 L 360 180 C 400 180, 440 200, 440 240 C 440 280, 400 300, 360 300 L 360 380 C 360 440, 320 480, 260 480 L 80 480 C 40 480, 0 440, 0 380 L 0 260 C 40 260, 80 240, 80 200 C 80 160, 40 140, 0 140 L 0 80 C 0 40, 40 0, 80 0 Z");
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 64px; align-items: center; position: relative; }
+    .hero-h1 {
+        font-family: var(--font-display); font-size: 64px; line-height: 68px;
+        letter-spacing: -0.025em; font-weight: 600; color: var(--navy-900);
+        margin: 20px 0 24px; text-wrap: balance;
+    }
+    .hero-h1 .highlight {
+        background: linear-gradient(180deg, transparent 60%, var(--accent-300) 60%);
+        padding: 0 4px;
+    }
+    .hero-sub { font-size: 19px; line-height: 28px; letter-spacing: -0.005em; color: var(--fg-secondary); max-width: 540px; margin-bottom: 28px; }
+    .bullet-row { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 28px 0 32px; }
+    .bullet { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--fg-secondary); font-weight: 500; }
+    .bullet i { color: var(--success-500); }
+    .cta-pair { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .hero-trust { margin-top: 28px; display: flex; align-items: center; gap: 14px; font-size: 13px; color: var(--fg-tertiary); flex-wrap: wrap; }
+    .hero-trust-dot { width: 4px; height: 4px; background: var(--ink-300); border-radius: 50%; }
+
+    /* Dashboard mock */
+    .dash-frame { background: var(--navy-900); border-radius: 24px; padding: 18px; box-shadow: var(--shadow-xl); }
+    .dash-window { background: var(--white); border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,.06); }
+    .dash-titlebar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; border-bottom: 1px solid var(--border-default); background: var(--paper-2); }
+    .dash-titlebar .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dash-titlebar .url { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--fg-tertiary); }
+    .dash-body { padding: 24px; }
+    .dash-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+    .dash-title-label { font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-tertiary); }
+    .dash-title-main { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--navy-900); margin-top: 4px; letter-spacing: -0.015em; }
+    .dash-badge { font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--success-100); color: var(--success-700); display: inline-flex; align-items: center; gap: 6px; }
+    .kpi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+    .kpi-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 12px; padding: 14px 16px; }
+    .kpi-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-tertiary); }
+    .kpi-value { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--navy-900); letter-spacing: -0.02em; margin-top: 4px; }
+    .kpi-value.success { color: var(--success-700); }
+    .kpi-chart { background: var(--white); border: 1px solid var(--border-default); border-radius: 12px; padding: 16px; }
+    .kpi-chart-header { display: flex; justify-content: space-between; margin-bottom: 12px; }
+    .kpi-chart-pct { font-size: 11px; color: var(--success-700); font-weight: 600; }
+    .chart-bars { display: flex; align-items: flex-end; gap: 8px; height: 56px; }
+    .chart-bar { flex: 1; background: var(--navy-200); border-radius: 4px; }
+    .chart-bar.active { background: var(--accent-500); }
+    .dash-alert { margin-top: 12px; padding: 12px; background: var(--info-100); color: var(--info-700); border-radius: 10px; font-size: 13px; display: flex; align-items: center; gap: 8px; font-weight: 500; }
+
+    /* ── PAIN POINTS ── */
+    .card { background: var(--white); border: 1px solid var(--border-default); border-radius: 14px; padding: 28px; box-shadow: var(--shadow-xs); transition: box-shadow var(--duration-base) var(--ease-out), border-color var(--duration-base) var(--ease-out); }
+    .card:hover { box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+    .card-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--paper-2); display: inline-flex; align-items: center; justify-content: center; color: var(--navy-900); margin-bottom: 18px; border: 1px solid var(--border-default); }
+    .card-icon.danger { background: var(--danger-100); color: var(--danger-700); border-color: transparent; }
+    .card-title { font-family: var(--font-display); font-size: 18px; line-height: 24px; letter-spacing: -0.01em; font-weight: 600; color: var(--navy-900); margin: 0 0 8px; }
+    .card-body { font-size: 14px; line-height: 22px; color: var(--fg-secondary); margin: 0; }
+    .pull-quote { background: var(--navy-900); color: var(--paper); border-radius: 20px; padding: 48px 56px; margin-top: 48px; position: relative; overflow: hidden; }
+    .pull-quote .mark { position: absolute; right: 32px; top: 8px; font-family: var(--font-display); font-size: 200px; line-height: 1; color: var(--accent-500); opacity: 0.18; font-weight: 700; pointer-events: none; }
+    .pull-quote q { font-family: var(--font-display); font-size: 28px; line-height: 38px; letter-spacing: -0.015em; font-weight: 500; font-style: normal; quotes: none; display: block; position: relative; max-width: 820px; }
+    .pull-quote-author { margin-top: 24px; font-size: 13px; color: rgba(251,250,247,0.6); letter-spacing: 0.04em; }
+
+    /* ── DIFFERENTIATORS ── */
+    .diff-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 16px; padding: 32px 28px; transition: all var(--duration-base) var(--ease-out); }
+    .diff-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .diff-icon { width: 56px; height: 56px; border-radius: 14px; background: var(--accent-100); color: var(--accent-700); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 22px; }
+    .diff-card h4 { font-family: var(--font-display); font-size: 19px; line-height: 26px; letter-spacing: -0.01em; font-weight: 600; color: var(--navy-900); margin: 0 0 10px; }
+    .diff-card p { font-size: 14px; line-height: 22px; color: var(--fg-secondary); margin: 0; }
+
+    /* ── SERVICES ── */
+    .service-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 14px; padding: 22px; display: flex; align-items: flex-start; gap: 14px; transition: all var(--duration-base) var(--ease-out); }
+    .service-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-sm); }
+    .service-icon { width: 38px; height: 38px; border-radius: 9px; background: var(--paper-2); color: var(--navy-900); display: inline-flex; align-items: center; justify-content: center; flex: none; }
+    .service-card h4 { font-size: 14px; font-weight: 600; color: var(--navy-900); margin: 0 0 4px; line-height: 18px; }
+    .service-card p { font-size: 13px; line-height: 18px; color: var(--fg-tertiary); margin: 0; }
+
+    /* ── PRICING ── */
+    .pricing-toggle { display: flex; justify-content: center; margin-bottom: 40px; }
+    .toggle { display: inline-flex; align-items: center; background: var(--paper-2); border: 1px solid var(--border-default); padding: 4px; border-radius: 999px; gap: 4px; }
+    .toggle-btn { border: none; background: transparent; font-family: var(--font-sans); font-size: 13px; font-weight: 600; color: var(--fg-tertiary); padding: 8px 16px; border-radius: 999px; cursor: pointer; transition: all var(--duration-base) var(--ease-out); display: inline-flex; align-items: center; gap: 8px; }
+    .toggle-btn.active { background: var(--white); color: var(--navy-900); box-shadow: var(--shadow-xs); }
+    .badge-save { background: var(--accent-200); color: var(--accent-700); font-size: 10px; padding: 2px 6px; border-radius: 999px; letter-spacing: 0.04em; }
+    .price-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 16px; padding: 32px; position: relative; display: flex; flex-direction: column; transition: all var(--duration-base) var(--ease-out); }
+    .price-card.featured { background: var(--navy-900); color: var(--paper); border-color: var(--navy-900); box-shadow: var(--shadow-xl); transform: translateY(-8px); }
+    .plan-name { font-family: var(--font-display); font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+    .plan-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .price-amount { font-family: var(--font-display); font-size: 56px; line-height: 1; letter-spacing: -0.025em; font-weight: 600; margin: 18px 0 4px; }
+    .price-suffix { font-size: 14px; margin-left: 4px; color: var(--fg-tertiary); }
+    .price-card.featured .price-suffix { color: rgba(251,250,247,.7); }
+    .price-annual { font-size: 12px; color: var(--fg-tertiary); font-family: var(--font-mono); margin-bottom: 4px; }
+    .price-card.featured .price-annual { color: rgba(251,250,247,.6); }
+    .price-cap { font-size: 14px; line-height: 22px; margin: 4px 0 24px; color: var(--fg-secondary); }
+    .price-card.featured .price-cap { color: rgba(251,250,247,.78); }
+    .price-list { list-style: none; padding: 0; margin: 24px 0 0; display: flex; flex-direction: column; gap: 10px; }
+    .price-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; line-height: 20px; color: var(--fg-secondary); }
+    .price-card.featured .price-list li { color: rgba(251,250,247,.86); }
+    .price-list i { flex: none; margin-top: 2px; color: var(--success-500); }
+    .price-card.featured .price-list i { color: var(--accent-500); }
+    .popular-pill { position: absolute; top: -12px; left: 32px; background: var(--accent-500); color: var(--navy-900); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; display: inline-flex; align-items: center; gap: 6px; }
+    .hidden { display: none !important; }
+    .banner { background: var(--accent-100); border: 1px solid var(--accent-300); border-radius: 14px; padding: 24px 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 32px; flex-wrap: wrap; }
+    .banner-text { display: flex; align-items: center; gap: 16px; }
+    .banner-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--accent-500); display: flex; align-items: center; justify-content: center; color: var(--navy-900); flex: none; }
+    .banner h4 { font-family: var(--font-display); font-size: 17px; line-height: 22px; font-weight: 600; margin: 0 0 2px; color: var(--navy-900); }
+    .banner p { font-size: 14px; color: var(--ink-700); margin: 0; }
+
+    /* ── HOW IT WORKS ── */
+    .step { background: var(--white); border: 1px solid var(--border-default); border-radius: 16px; padding: 32px; display: flex; flex-direction: column; }
+    .step-num { font-family: var(--font-mono); font-size: 12px; color: var(--accent-700); font-weight: 500; letter-spacing: 0.08em; margin-bottom: 22px; }
+    .step-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--paper-2); display: inline-flex; align-items: center; justify-content: center; color: var(--navy-900); margin-bottom: 20px; }
+    .step h4 { font-family: var(--font-display); font-size: 22px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; color: var(--navy-900); margin: 0 0 10px; }
+    .step p { font-size: 15px; line-height: 22px; color: var(--fg-secondary); margin: 0; }
+
+    /* ── BENEFITS ── */
+    .benefits-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: flex-start; }
+    .benefits-sticky { position: sticky; top: 100px; }
+    .benefits-sticky h2 { font-size: 44px; line-height: 52px; letter-spacing: -0.02em; font-weight: 600; margin: 16px 0; }
+    .benefits-sticky p { font-size: 16px; line-height: 24px; color: var(--fg-secondary); margin-bottom: 24px; }
+    .benefit-row { display: flex; align-items: flex-start; gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--border-default); }
+    .benefit-row:last-child { border-bottom: none; }
+    .benefit-check { width: 32px; height: 32px; border-radius: 50%; background: var(--success-100); color: var(--success-700); display: inline-flex; align-items: center; justify-content: center; flex: none; }
+    .benefit-row h4 { font-size: 18px; line-height: 24px; letter-spacing: -0.01em; font-weight: 600; color: var(--navy-900); margin: 0 0 6px; }
+    .benefit-row p { font-size: 14px; line-height: 22px; color: var(--fg-secondary); margin: 0; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonial-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; }
+    .stars { display: flex; gap: 2px; margin-bottom: 14px; color: var(--accent-500); }
+    .testimonial-card q { font-family: var(--font-display); font-size: 17px; line-height: 26px; font-weight: 500; letter-spacing: -0.01em; color: var(--navy-900); flex: 1; quotes: none; font-style: normal; }
+    .testimonial-who { margin-top: 22px; display: flex; align-items: center; gap: 12px; padding-top: 18px; border-top: 1px solid var(--border-subtle); }
+    .avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--navy-200); color: var(--navy-900); font-weight: 600; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+    .who-name { font-size: 14px; font-weight: 600; color: var(--navy-900); }
+    .who-meta { font-size: 12px; color: var(--fg-tertiary); margin-top: 2px; }
+
+    /* ── IRS CALENDAR ── */
+    .irs-cal { background: var(--white); border: 1px solid var(--border-default); border-radius: 16px; overflow: hidden; }
+    .irs-row { display: grid; grid-template-columns: 88px 1fr auto; gap: 24px; align-items: center; padding: 22px 28px; border-bottom: 1px solid var(--border-default); }
+    .irs-row:last-child { border-bottom: none; }
+    .date-block { text-align: center; background: var(--paper-2); border: 1px solid var(--border-default); border-radius: 10px; padding: 10px 0; }
+    .irs-row.urgent .date-block { background: var(--danger-100); border-color: transparent; }
+    .date-month { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-tertiary); }
+    .irs-row.urgent .date-month { color: var(--danger-700); }
+    .date-day { font-family: var(--font-display); font-size: 26px; line-height: 1; font-weight: 600; color: var(--navy-900); letter-spacing: -0.02em; margin-top: 2px; }
+    .form-name { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: var(--navy-900); letter-spacing: -0.01em; margin: 0 0 4px; }
+    .form-desc { font-size: 13px; line-height: 20px; color: var(--fg-secondary); margin: 0; }
+    .irs-tag { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; white-space: nowrap; }
+    .irs-tag.danger { background: var(--danger-100); color: var(--danger-700); }
+    .irs-tag.warn { background: var(--accent-100); color: var(--accent-700); }
+    .irs-tag.info { background: var(--info-100); color: var(--info-700); }
+
+    /* ── FAQ ── */
+    .faq-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 80px; align-items: flex-start; }
+    .faq-sticky { position: sticky; top: 100px; }
+    .faq-sticky h2 { font-size: 44px; line-height: 52px; letter-spacing: -0.02em; font-weight: 600; margin: 16px 0; }
+    .faq-sticky p { font-size: 16px; line-height: 24px; color: var(--fg-secondary); margin-bottom: 24px; }
+    .faq-list { border-top: 1px solid var(--border-default); }
+    .faq-item { border-bottom: 1px solid var(--border-default); }
+    .faq-q { width: 100%; text-align: left; padding: 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: transparent; border: none; cursor: pointer; font-family: var(--font-display); font-size: 18px; line-height: 26px; font-weight: 600; color: var(--navy-900); letter-spacing: -0.01em; }
+    .faq-q i { flex: none; color: var(--fg-tertiary); }
+    .faq-a { padding-bottom: 24px; font-size: 15px; line-height: 24px; color: var(--fg-secondary); max-width: 680px; display: none; }
+    .faq-a.open { display: block; }
+
+    /* ── FINAL CTA ── */
+    .final-cta-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: center; }
+    .final-cta-grid h2 { font-size: 52px; line-height: 60px; letter-spacing: -0.025em; font-weight: 600; color: var(--paper); margin: 16px 0 0; text-wrap: balance; }
+    .final-cta-grid .accent-mark { color: var(--accent-500); font-style: normal; }
+    .final-cta-grid p { font-size: 18px; line-height: 28px; color: rgba(251,250,247,.78); margin-top: 20px; }
+    .cta-buttons { display: flex; flex-direction: column; gap: 12px; }
+    .cta-note { font-size: 13px; color: rgba(251,250,247,.55); text-align: center; margin-top: 4px; }
+    .trust-strip-bottom { margin-top: 64px; padding-top: 32px; border-top: 1px solid rgba(251,250,247,.12); }
+    .trust-label { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(251,250,247,.5); text-align: center; margin-bottom: 24px; }
+    .trust-logos { display: flex; flex-wrap: wrap; justify-content: center; gap: 56px; align-items: center; opacity: 0.85; }
+    .trust-logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 600; font-size: 18px; color: var(--paper); letter-spacing: -0.02em; }
+    .trust-logo i { color: var(--accent-500); }
+
+    /* ── FOOTER ── */
+    .footer { background: var(--paper); border-top: 1px solid var(--border-default); padding: 56px 0 24px; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-logo { font-family: 'Montserrat', var(--font-display); font-size: 24px; font-weight: 900; color: var(--navy-900); letter-spacing: -1px; display: block; margin-bottom: 12px; }
+    .footer-logo span { color: var(--accent-500); }
+    .footer-desc { font-size: 13px; line-height: 20px; color: var(--fg-tertiary); max-width: 240px; }
+    .footer-col-title { font-family: var(--font-display); font-size: 12px; font-weight: 700; color: var(--navy-900); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
+    .footer-col a { display: block; font-size: 13px; color: var(--fg-secondary); margin-bottom: 8px; transition: color var(--duration-base); }
+    .footer-col a:hover { color: var(--navy-900); }
+    .footer-bottom { border-top: 1px solid var(--border-default); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--fg-tertiary); }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out); }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1000px) {
+        .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+        .benefits-grid { grid-template-columns: 1fr; gap: 40px; }
+        .benefits-sticky { position: static; }
+        .faq-grid { grid-template-columns: 1fr; gap: 40px; }
+        .faq-sticky { position: static; }
+        .grid-3, .grid-4 { grid-template-columns: repeat(2,1fr); }
+        .final-cta-grid { grid-template-columns: 1fr; gap: 32px; }
+        .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 700px) {
+        .hero-h1 { font-size: 40px; line-height: 44px; }
+        h2 { font-size: 32px; line-height: 40px; }
+        .section-pad { padding: 64px 0; }
+        .container { padding: 0 20px; }
+        .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+        .pull-quote { padding: 32px 28px; }
+        .pull-quote q { font-size: 20px; line-height: 28px; }
+        .irs-row { grid-template-columns: 64px 1fr; gap: 16px; padding: 18px; }
+        .irs-row > .irs-tag { grid-column: 2; justify-self: start; margin-top: 4px; }
+        .final-cta-grid h2 { font-size: 36px; line-height: 42px; }
+        .footer-grid { grid-template-columns: 1fr; }
+    }
     </style>
 </head>
 <body>
 
-{{-- TOPBAR --}}
 <x-nav />
 
-{{-- HERO SPLIT --}}
-<section class="hero-split">
-    <div class="hero-img-col">
-        {{--
-            Para agregar imagen real, reemplaza el bloque .hero-img-placeholder con:
-            <img src="{{ asset('images/contabilidad-hero.jpg') }}" alt="Contabilidad en EE.UU.">
-            O con URL externa:
-            <img src="URL_DE_TU_IMAGEN_AQUI" alt="Contabilidad en EE.UU.">
-        --}}
-        <div class="hero-img-placeholder">
-            <svg viewBox="0 0 80 80" fill="none">
-                <rect x="10" y="15" width="60" height="50" rx="4" stroke="white" stroke-width="2"/>
-                <path d="M20 35h40M20 45h28M20 55h20" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="58" cy="52" r="10" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="2"/>
-                <path d="M55 52l2 2 5-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </div>
-    </div>
-    <div class="hero-text-col">
-        <p class="hero-tag">Pagina en actualización</p>
-        <h1>Estamos trabajando para mejorar, pronto estara de nuevo disponible</h1>
-    </div>
-</section>
-
-{{-- FORMULARIO CONTACTO --}}
-<section class="contacto">
-    <div class="contacto-inner">
-        <h2>Tienes una consulta urgente?</h2>
-        <p>Escríbenos y responderemos tus inquietudes pronto</p>
-        <form action="#" method="POST">
-            @csrf
-            <div class="form-grid">
-                <input type="text" name="nombre" placeholder="Nombre" class="form-input">
-                <input type="email" name="email" placeholder="Correo electrónico *" class="form-input" required>
-            </div>
-            <div class="form-full">
-                <input type="tel" name="telefono" placeholder="Número de teléfono" class="form-input">
-            </div>
-            <div class="form-full">
-                <textarea name="mensaje" placeholder="Mensaje" class="form-input"></textarea>
-            </div>
-            <button type="submit" class="form-submit">
-                Enviar
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-        </form>
-    </div>
-</section>
-
-{{-- FOOTER --}}
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-top">
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section class="hero-section" id="top">
+    <div class="hero-puzzle" aria-hidden="true"></div>
+    <div class="container">
+        <div class="hero-grid">
             <div>
-                <p class="footer-contact-label">Contacto</p>
-                <span class="footer-logo-text">Sell<span>·U</span></span>
-                <p class="footer-brand-title">Oficina Principal Estados Unidos</p>
-                <div class="footer-brand-info">
-                    Ubicación: Spring Hill, Florida, Zipcode 34609<br>
-                    Email: contacto@sellu.co<br>
-                    Teléfono: +1 954 210 8455<br>
-                    Horario de atención:<br>
-                    Lunes - Sábado: 9:00 am – 6:00 pm EST
+                <span class="eyebrow">Contabilidad para LLC · No residentes USA</span>
+                <h1 class="hero-h1">
+                    Contabilidad para tu LLC,<br>
+                    <span class="highlight">la tranquilidad</span> que tu negocio merece.
+                </h1>
+                <p class="hero-sub">Sabes exactamente dónde está tu LLC en Estados Unidos, en cualquier momento — sin moverte de Latinoamérica.</p>
+                <div class="bullet-row">
+                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Libros al día, mes a mes</span>
+                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Sin cargos ocultos</span>
+                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Contador dedicado en español</span>
+                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Especialistas en LLC de dueños extranjeros</span>
+                </div>
+                <div class="cta-pair">
+                    <a href="#precios" class="btn btn-primary btn-lg">Ver paquetes de contabilidad →</a>
+                    <a href="#contacto" class="btn btn-secondary btn-lg">Agenda una consulta gratuita</a>
+                </div>
+                <div class="hero-trust">
+                    <span style="display:inline-flex;align-items:center;gap:6px"><i data-lucide="shield-check" width="14" height="14"></i> Seguridad bancaria 256-bit</span>
+                    <span class="hero-trust-dot"></span>
+                    <span>+1,200 LLCs atendidas</span>
+                    <span class="hero-trust-dot"></span>
+                    <span>4.9 / 5 rating</span>
                 </div>
             </div>
-            <div class="footer-col">
-                <p class="footer-col-title">Menú Principal</p>
-                <a href="{{ url('/abre-empresa') }}">Abre tu empresa</a>
-<a href="{{ url('/contabilidad') }}">Contabilidad</a>
-<a href="{{ url('/amazon') }}">Vende en Amazon</a>
-<a href="{{ url('/marca') }}">Registro de marca</a>
-<a href="{{ url('/envios') }}">Envíos</a>
-<a href="{{ url('/sanitario') }}">Registro Sanitario</a>
-<a href="{{ url('/soporte') }}">Soporte</a>
+
+            <!-- Dashboard mock -->
+            <div class="dash-frame">
+                <div class="dash-window">
+                    <div class="dash-titlebar">
+                        <span class="dot" style="background:#e0606c"></span>
+                        <span class="dot" style="background:#f6bb33"></span>
+                        <span class="dot" style="background:#1aa05f"></span>
+                        <span class="url">app.sell-u.com/contabilidad</span>
+                    </div>
+                    <div class="dash-body">
+                        <div class="dash-header">
+                            <div>
+                                <div class="dash-title-label">Acme Holdings LLC · WY</div>
+                                <div class="dash-title-main">Resumen · Marzo 2026</div>
+                            </div>
+                            <span class="dash-badge"><i data-lucide="check-circle-2" width="12" height="12"></i> Al día</span>
+                        </div>
+                        <div class="kpi-grid">
+                            <div class="kpi-card">
+                                <div class="kpi-eyebrow">Ingresos MTD</div>
+                                <div class="kpi-value">$48,250</div>
+                            </div>
+                            <div class="kpi-card">
+                                <div class="kpi-eyebrow">Utilidad neta</div>
+                                <div class="kpi-value success">$21,180</div>
+                            </div>
+                        </div>
+                        <div class="kpi-chart">
+                            <div class="kpi-chart-header">
+                                <span class="kpi-eyebrow">P&amp;L · 6 meses</span>
+                                <span class="kpi-chart-pct">+18%</span>
+                            </div>
+                            <div class="chart-bars">
+                                <div class="chart-bar" style="height:36%"></div>
+                                <div class="chart-bar" style="height:48%"></div>
+                                <div class="chart-bar" style="height:42%"></div>
+                                <div class="chart-bar" style="height:64%"></div>
+                                <div class="chart-bar" style="height:58%"></div>
+                                <div class="chart-bar active" style="height:72%"></div>
+                            </div>
+                        </div>
+                        <div class="dash-alert">
+                            <i data-lucide="bell" width="14" height="14"></i>
+                            Form 5472 · entrega en 47 días
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer-col">
-                <p class="footer-col-title">Información Legal</p>
-                <a href="#">Términos de Servicio</a>
-                <a href="#">Política de privacidad</a>
-                <a href="#">Política de Garantía</a>
-            </div>
-        </div>
-        <div class="footer-payments">
-            <span class="payment-badge">AMEX</span>
-            <span class="payment-badge">Apple Pay</span>
-            <span class="payment-badge">Diners</span>
-            <span class="payment-badge">Discover</span>
-            <span class="payment-badge">Google Pay</span>
-            <span class="payment-badge">Mastercard</span>
-            <span class="payment-badge">PayPal</span>
-            <span class="payment-badge">Shop Pay</span>
-            <span class="payment-badge">Venmo</span>
-            <span class="payment-badge">Visa</span>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>
-            Hecho con <strong>♥</strong> por el equipo de Sell·U LATAM LLC<br>
-            © {{ date('Y') }} Empresa registrada en el estado de Florida, EE.UU. EIN: 84-3781816. Este sitio tiene fines<br>
-            informativos y no constituye asesoría legal o fiscal directa. Trabajamos con profesionales aliados debidamente autorizados.
-        </p>
+</section>
+
+<!-- ══════════════════════ PAIN POINTS ══════════════════════ -->
+<section class="section-pad" id="problema">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">El problema</span>
+            <h2>Llevar la contabilidad de tu LLC desde Latinoamérica no debería ser un dolor de cabeza.</h2>
+            <p>Eres founder, no contador. Pero el IRS no distingue: si tu LLC está en EE.UU., los libros importan desde el día uno — incluso si la empresa no facturó nada todavía.</p>
+        </div>
+        <div class="grid-3 reveal">
+            <div class="card">
+                <div class="card-icon danger"><i data-lucide="banknote" width="22" height="22"></i></div>
+                <div class="card-title">Multas de USD 25,000</div>
+                <p class="card-body">El Form 5472 mal presentado o no presentado activa una multa mínima de USD 25,000 — por cada año.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="search" width="22" height="22"></i></div>
+                <div class="card-title">Auditorías del IRS</div>
+                <p class="card-body">Una contabilidad incompleta enciende banderas. Operar como dueño extranjero exige libros impecables.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i data-lucide="trending-down" width="22" height="22"></i></div>
+                <div class="card-title">Financiamiento bloqueado</div>
+                <p class="card-body">Sin estados financieros limpios, no hay línea de crédito, ronda de inversión ni términos comerciales serios.</p>
+            </div>
+        </div>
+        <div class="grid-2 reveal" style="margin-top:16px">
+            <div class="card">
+                <div class="card-icon"><i data-lucide="help-circle" width="22" height="22"></i></div>
+                <div class="card-title">Decisiones a ciegas</div>
+                <p class="card-body">No sabes cuál producto rinde, qué cliente cuesta más, ni cuándo puedes pagarte. Es agotador.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon danger"><i data-lucide="alert-triangle" width="22" height="22"></i></div>
+                <div class="card-title">Riesgo de cumplimiento</div>
+                <p class="card-body">Reportes BOI, Form 1120, declaraciones estatales — un descuido y la LLC pierde good standing.</p>
+            </div>
+        </div>
+        <div class="pull-quote reveal">
+            <span class="mark">"</span>
+            <q>La mayoría de emprendedores latinos solo descubren lo importante que es una contabilidad limpia cuando ya están en modo pánico.</q>
+            <div class="pull-quote-author">— Equipo contable Sell-U</div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════ DIFFERENTIATORS ══════════════════════ -->
+<section class="section-pad section-band" id="por-que">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Por qué Sell-U</span>
+            <h2>Contabilidad pensada para founders LATAM con LLC en EE.UU.</h2>
+            <p>No somos un software contable más, ni un contador genérico. Somos especialistas en el caso específico de LLCs de no residentes — y eso cambia todo.</p>
+        </div>
+        <div class="grid-3 reveal" style="gap:16px">
+            <div class="diff-card">
+                <div class="diff-icon"><i data-lucide="languages" width="26" height="26"></i></div>
+                <h4>100% en español, sin traducciones</h4>
+                <p>Tu contador habla, escribe y piensa en español. Sin Google Translate, sin reuniones a las 6 a.m.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon"><i data-lucide="badge-check" width="26" height="26"></i></div>
+                <h4>Certificados en QuickBooks y Xero</h4>
+                <p>ProAdvisors oficiales con experiencia específica en LLCs de dueños extranjeros.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon"><i data-lucide="file-text" width="26" height="26"></i></div>
+                <h4>Integración con tus impuestos</h4>
+                <p>Tus libros se entregan listos para Form 1120, 5472 y 1065 — sin reprocesos ni preguntas extras.</p>
+            </div>
+        </div>
+        <div class="grid-2 reveal" style="margin-top:16px;gap:16px">
+            <div class="diff-card">
+                <div class="diff-icon"><i data-lucide="shield" width="26" height="26"></i></div>
+                <h4>Seguridad de nivel bancario</h4>
+                <p>Cifrado 256-bit, autenticación en dos pasos y SOC 2. Tu información financiera, blindada.</p>
+            </div>
+            <div class="diff-card">
+                <div class="diff-icon"><i data-lucide="bell-ring" width="26" height="26"></i></div>
+                <h4>Recordatorios proactivos del IRS</h4>
+                <p>Te avisamos con tiempo cada deadline. Nunca más una multa por descuido o por una fecha pasada.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════ SERVICES ══════════════════════ -->
+<section class="section-pad" id="servicios">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Servicios incluidos</span>
+            <h2>Qué incluye nuestro servicio de contabilidad LLC.</h2>
+            <p>Todo lo que tu LLC necesita para mantenerse al día con el IRS, sin perseguir múltiples proveedores ni montar planillas en Excel.</p>
+        </div>
+        <div class="grid-4 reveal">
+            <div class="service-card"><div class="service-icon"><i data-lucide="bar-chart-3" width="20" height="20"></i></div><div><h4>Bookkeeping mensual</h4><p>Cada transacción categorizada y reconciliada.</p></div></div>
+            <div class="service-card"><div class="service-icon"><i data-lucide="landmark" width="20" height="20"></i></div><div><h4>Conciliaciones bancarias</h4><p>Bancos, tarjetas y pasarelas como Stripe.</p></div></div>
+            <div class="service-card"><div class="service-icon"><i data-lucide="line-chart" width="20" height="20"></i></div><div><h4>Estados financieros</h4><p>P&L, Balance General y Cash Flow mensuales.</p></div></div>
+            <div class="service-card"><div class="service-icon"><i data-lucide="coins" width="20" height="20"></i></div><div><h4>Contabilidad multimoneda</h4><p>USD, COP, MXN, ARS — convertidos correctamente.</p></div></div>
+            <div class="service-card"><div class="service-icon"><i data-lucide="file-check-2" width="20" height="20"></i></div><div><h4>Listo para impuestos</h4><p>Form 1120, 5472 y 1065 sin sobresaltos.</p></div></div>
+            <div class="service-card"><div class="service-icon"><i data-lucide="search-check" width="20" height="20"></i></div><div><h4>Transacciones reportables</h4><p>Identificación de movimientos relacionados al dueño.</p></div></div>
+            <div class="service-card"><div class="service-icon"><i data-lucide="user-check" width="20" height="20"></i></div><div><h4>Contador dedicado</h4><p>Una sola persona conoce tu negocio a fondo.</p></div></div>
+            <div class="service-card"><div class="service-icon"><i data-lucide="message-circle" width="20" height="20"></i></div><div><h4>Soporte todo el año</h4><p>Respondemos en español, en horario LATAM.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════ PRICING ══════════════════════ -->
+<section class="section-pad section-band" id="precios">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Precios</span>
+            <h2>Paquetes de contabilidad para tu LLC.</h2>
+            <p>Tarifas claras en USD. Cancela cuando quieras, sin letra chica ni renovaciones automáticas que no avisemos.</p>
+        </div>
+
+        <div class="pricing-toggle">
+            <div class="toggle">
+                <button class="toggle-btn active" id="btn-monthly" onclick="setPricing('monthly')">Mensual</button>
+                <button class="toggle-btn" id="btn-annual" onclick="setPricing('annual')">Anual <span class="badge-save">Ahorra 20%</span></button>
+            </div>
+        </div>
+
+        <div class="grid-3 reveal" style="gap:16px;align-items:stretch">
+            <!-- Starter -->
+            <div class="price-card">
+                <div class="plan-name"><span class="plan-dot" style="background:var(--success-500)"></span> Starter</div>
+                <div class="price-amount"><span class="price-monthly">$179</span><span class="price-annual hidden">$143</span><span class="price-suffix">USD/mes</span></div>
+                <div class="price-annual-note hidden" style="font-size:12px;color:var(--fg-tertiary);font-family:var(--font-mono)">$1,719 facturado anual</div>
+                <p class="price-cap">Para LLCs nuevas, todavía sin demasiado movimiento.</p>
+                <a href="#contacto" class="btn btn-secondary btn-lg" style="justify-content:center;width:100%">Elegir Starter</a>
+                <ul class="price-list">
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Contabilidad cash basis</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Hasta 2 cuentas bancarias</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Hasta 100 transacciones/mes</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Reportes trimestrales</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>CPA-reviewed annual statements</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>QuickBooks incluido</span></li>
+                </ul>
+            </div>
+
+            <!-- Growth (featured) -->
+            <div class="price-card featured">
+                <span class="popular-pill"><i data-lucide="sparkles" width="12" height="12"></i> Más popular</span>
+                <div class="plan-name"><span class="plan-dot" style="background:var(--accent-500)"></span> Growth</div>
+                <div class="price-amount"><span class="price-monthly">$249</span><span class="price-annual hidden">$199</span><span class="price-suffix">USD/mes</span></div>
+                <div class="price-annual-note hidden" style="font-size:12px;color:rgba(251,250,247,.6);font-family:var(--font-mono)">$2,390 facturado anual</div>
+                <p class="price-cap">Para LLCs en crecimiento que ya facturan en serio.</p>
+                <a href="#contacto" class="btn btn-accent btn-lg" style="justify-content:center;width:100%">Empezar con Growth</a>
+                <ul class="price-list">
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Todo lo de Starter</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Hasta 4 cuentas bancarias</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Hasta 250 transacciones/mes</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Reportes mensuales</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Contabilidad multimoneda</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Soporte prioritario en español</span></li>
+                </ul>
+            </div>
+
+            <!-- Pro -->
+            <div class="price-card">
+                <div class="plan-name"><span class="plan-dot" style="background:var(--danger-500)"></span> Pro</div>
+                <div class="price-amount"><span class="price-monthly">$499</span><span class="price-annual hidden">$399</span><span class="price-suffix">USD/mes</span></div>
+                <div class="price-annual-note hidden" style="font-size:12px;color:var(--fg-tertiary);font-family:var(--font-mono)">$4,790 facturado anual</div>
+                <p class="price-cap">Para LLCs establecidas con operaciones complejas.</p>
+                <a href="#contacto" class="btn btn-secondary btn-lg" style="justify-content:center;width:100%">Elegir Pro</a>
+                <ul class="price-list">
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Cash o accrual basis</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Cuentas ilimitadas</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Hasta 500 transacciones/mes</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Facturación incluida (15/mes)</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Forms 1099-NEC incluidos</span></li>
+                    <li><i data-lucide="check" width="16" height="16"></i><span>Reuniones mensuales de revisión</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner reveal">
+            <div class="banner-text">
+                <div class="banner-icon"><i data-lucide="rewind" width="22" height="22"></i></div>
+                <div>
+                    <h4>¿Tu contabilidad está atrasada?</h4>
+                    <p>Ofrecemos limpieza de libros y conciliación de fin de año. Te ponemos al día con el IRS, paso a paso.</p>
+                </div>
+            </div>
+            <a href="#contacto" class="btn btn-primary">Habla con un contador →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════ HOW IT WORKS ══════════════════════ -->
+<section class="section-pad" id="como">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Cómo funciona</span>
+            <h2>Empezar es así de simple.</h2>
+            <p>Tres pasos, cero papeleo. Lo más complicado es el primer email.</p>
+        </div>
+        <div class="grid-3 reveal" style="gap:16px">
+            <div class="step">
+                <div class="step-num">01 / 03</div>
+                <div class="step-icon"><i data-lucide="calendar" width="22" height="22"></i></div>
+                <h4>Agenda tu consulta</h4>
+                <p>Una llamada de 30 minutos. Nos cuentas tu LLC, tu volumen y tus dudas. Sin compromiso.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">02 / 03</div>
+                <div class="step-icon"><i data-lucide="clipboard-list" width="22" height="22"></i></div>
+                <h4>Recibe tu plan a medida</h4>
+                <p>Te enviamos una recomendación personalizada con el paquete adecuado y un cronograma claro.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">03 / 03</div>
+                <div class="step-icon"><i data-lucide="coffee" width="22" height="22"></i></div>
+                <h4>Relájate, nosotros llevamos los libros</h4>
+                <p>Reportes mensuales claros, recordatorios a tiempo y un contador que responde cuando lo necesitas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════ BENEFITS ══════════════════════ -->
+<section class="section-pad">
+    <div class="container">
+        <div class="benefits-grid reveal">
+            <div class="benefits-sticky">
+                <span class="eyebrow">Por qué nos eligen</span>
+                <h2>Por qué emprendedores latinos eligen Sell-U.</h2>
+                <p>Cinco razones concretas — no promesas vacías ni listas de adjetivos.</p>
+                <a href="#contacto" class="btn btn-primary">Habla con un contador →</a>
+            </div>
+            <div>
+                <div class="benefit-row">
+                    <div class="benefit-check"><i data-lucide="check" width="18" height="18"></i></div>
+                    <div>
+                        <h4>Integración perfecta con tu declaración de impuestos</h4>
+                        <p>Cuando llega tax season, tu CPA recibe libros listos para Form 1120 y 5472. Cero reprocesos, cero preguntas a último minuto.</p>
+                    </div>
+                </div>
+                <div class="benefit-row">
+                    <div class="benefit-check"><i data-lucide="check" width="18" height="18"></i></div>
+                    <div>
+                        <h4>Soporte directo de expertos en español</h4>
+                        <p>Hablas con un contador real que entiende cómo funciona tu LLC y tu mercado en LATAM. No con un bot ni un agente de nivel 1.</p>
+                    </div>
+                </div>
+                <div class="benefit-row">
+                    <div class="benefit-check"><i data-lucide="check" width="18" height="18"></i></div>
+                    <div>
+                        <h4>Experiencia en clientes internacionales</h4>
+                        <p>Atendemos a más de 1,200 founders desde Colombia, México, Argentina, Chile, Perú y Costa Rica. Hemos visto tu caso.</p>
+                    </div>
+                </div>
+                <div class="benefit-row">
+                    <div class="benefit-check"><i data-lucide="check" width="18" height="18"></i></div>
+                    <div>
+                        <h4>Todo digital, todo seguro</h4>
+                        <p>Plataforma cifrada, autenticación en dos pasos, controles SOC 2. Sin pdfs sueltos por WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="benefit-row">
+                    <div class="benefit-check"><i data-lucide="check" width="18" height="18"></i></div>
+                    <div>
+                        <h4>Especialistas en LLC, no contadores genéricos</h4>
+                        <p>Form 5472, ECI, FDAP, transacciones reportables: nuestro día a día. No improvisamos sobre tu empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════ TESTIMONIALS ══════════════════════ -->
+<section class="section-pad section-band">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Historias de clientes</span>
+            <h2>Lo que dicen nuestros clientes.</h2>
+        </div>
+        <div class="grid-3 reveal">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                </div>
+                <q>Después de 8 meses sin conciliar, llegué a Sell-U en pánico. En 3 semanas tenía todo limpio. Ahora duermo tranquilo.</q>
+                <div class="testimonial-who">
+                    <div class="avatar">DM</div>
+                    <div><div class="who-name">Daniela M.</div><div class="who-meta">LLC Wyoming · Bogotá, CO</div></div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                </div>
+                <q>Tener un contador que habla español y entiende cómo funciona una LLC fue como encontrar un unicornio.</q>
+                <div class="testimonial-who">
+                    <div class="avatar">JR</div>
+                    <div><div class="who-name">Jorge R.</div><div class="who-meta">LLC Florida · CDMX, MX</div></div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                    <i data-lucide="star" width="14" height="14" style="fill:var(--accent-500);color:var(--accent-500)"></i>
+                </div>
+                <q>Lo mejor: me avisan con tiempo cada fecha del IRS. Nunca más una multa por descuido.</q>
+                <div class="testimonial-who">
+                    <div class="avatar">LF</div>
+                    <div><div class="who-name">Luciana F.</div><div class="who-meta">LLC Delaware · Buenos Aires, AR</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════ IRS CALENDAR ══════════════════════ -->
+<section class="section-pad" id="calendario">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Calendario IRS · 2026</span>
+            <h2>Las fechas que tu LLC no puede olvidar.</h2>
+            <p>Como cliente Sell-U recibes recordatorios automáticos antes de cada deadline. Estas son las fechas más relevantes para LLCs de no residentes.</p>
+        </div>
+        <div class="irs-cal reveal">
+            <div class="irs-row urgent">
+                <div class="date-block"><div class="date-month">Mar</div><div class="date-day">15</div></div>
+                <div><div class="form-name">Form 1065 · LLC Multi-miembro</div><p class="form-desc">Declaración informativa para LLCs con más de un dueño.</p></div>
+                <span class="irs-tag danger">Urgente</span>
+            </div>
+            <div class="irs-row">
+                <div class="date-block"><div class="date-month">Abr</div><div class="date-day">15</div></div>
+                <div><div class="form-name">Form 1120 + 5472 · LLC Single-Member</div><p class="form-desc">Form 5472 con multa mínima de USD 25,000 si no se presenta a tiempo.</p></div>
+                <span class="irs-tag danger">Crítico</span>
+            </div>
+            <div class="irs-row">
+                <div class="date-block"><div class="date-month">Jun</div><div class="date-day">15</div></div>
+                <div><div class="form-name">Estimated tax payment Q2</div><p class="form-desc">Pago estimado de impuestos para LLCs con ECI.</p></div>
+                <span class="irs-tag warn">Pago</span>
+            </div>
+            <div class="irs-row">
+                <div class="date-block"><div class="date-month">Sep</div><div class="date-day">15</div></div>
+                <div><div class="form-name">Form 1065 · extensión</div><p class="form-desc">Fecha límite si pediste extensión en marzo.</p></div>
+                <span class="irs-tag info">Extensión</span>
+            </div>
+            <div class="irs-row">
+                <div class="date-block"><div class="date-month">Oct</div><div class="date-day">15</div></div>
+                <div><div class="form-name">Form 1120 · extensión</div><p class="form-desc">Fecha límite con extensión presentada en abril.</p></div>
+                <span class="irs-tag info">Extensión</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════ FAQ ══════════════════════ -->
+<section class="section-pad section-band" id="faq">
+    <div class="container">
+        <div class="faq-grid reveal">
+            <div class="faq-sticky">
+                <span class="eyebrow">Preguntas frecuentes</span>
+                <h2>Lo que importa, sin rodeos.</h2>
+                <p>¿No ves tu pregunta? Escríbenos y un contador te responde en menos de 24 horas hábiles.</p>
+                <a href="#contacto" class="btn btn-secondary">Habla con un contador</a>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>¿Por qué necesito contabilidad si mi LLC no tuvo ingresos?</span>
+                        <i data-lucide="plus" width="20" height="20"></i>
+                    </button>
+                    <div class="faq-a">El IRS te exige presentar Form 5472 + Form 1120 incluso con cero ingresos. Sin libros mínimamente organizados no puedes responder bien si te preguntan, y la multa por no presentar es de USD 25,000.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>¿Cómo trabajan juntos el bookkeeping y los impuestos?</span>
+                        <i data-lucide="plus" width="20" height="20"></i>
+                    </button>
+                    <div class="faq-a">Nuestro bookkeeping se entrega listo para que tu CPA prepare Form 1120, 5472 o 1065. Trabajamos con CPAs aliados o con el tuyo — los reportes están en el formato que necesitan, sin reprocesos.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>¿Qué pasa si mi contabilidad está atrasada?</span>
+                        <i data-lucide="plus" width="20" height="20"></i>
+                    </button>
+                    <div class="faq-a">Hacemos limpieza de libros y conciliación de fin de año, mes por mes hasta ponerte al día. El precio depende del volumen y los meses pendientes; te lo confirmamos en la consulta gratuita.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>¿Puedo usar mi banco de Latinoamérica para mi LLC?</span>
+                        <i data-lucide="plus" width="20" height="20"></i>
+                    </button>
+                    <div class="faq-a">No es recomendable. Una LLC en EE.UU. debería operar con una cuenta bancaria estadounidense (Mercury, Relay, Wise, Brex). Te ayudamos a abrirla si todavía no la tienes.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>¿En qué moneda llevan mi contabilidad?</span>
+                        <i data-lucide="plus" width="20" height="20"></i>
+                    </button>
+                    <div class="faq-a">En USD por defecto, porque es la moneda de tu LLC. Si recibes ingresos en COP, MXN, ARS u otras, las convertimos correctamente al tipo de cambio del IRS — ese es el plan Growth o superior.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>¿Trabajan con LLCs de cualquier estado?</span>
+                        <i data-lucide="plus" width="20" height="20"></i>
+                    </button>
+                    <div class="faq-a">Sí: Wyoming, Delaware, Florida, New Mexico, Texas y prácticamente cualquier estado. Lo que cambia entre estados son las declaraciones estatales, no el bookkeeping en sí.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>¿Cuánto cuesta el servicio?</span>
+                        <i data-lucide="plus" width="20" height="20"></i>
+                    </button>
+                    <div class="faq-a">Desde USD 179/mes para Starter. El precio depende del número de transacciones, cuentas bancarias y si necesitas multimoneda. La consulta gratuita aterriza el plan adecuado para tu caso.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>¿Y si solo necesito ayuda una vez al año?</span>
+                        <i data-lucide="plus" width="20" height="20"></i>
+                    </button>
+                    <div class="faq-a">Tenemos un servicio puntual de "annual cleanup" para LLCs que solo presentan Form 5472 al año. Te lo cotizamos en la consulta — es ideal si la LLC tuvo poco o ningún movimiento.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════ FINAL CTA ══════════════════════ -->
+<section class="section-pad section-inverse" id="contacto">
+    <div class="container">
+        <div class="final-cta-grid reveal">
+            <div>
+                <span class="eyebrow">Empieza hoy</span>
+                <h2>Toma el control de las finanzas de tu LLC con la contabilidad <em class="accent-mark">experta</em> que mereces.</h2>
+                <p>No dejes que la contabilidad de tu LLC en Estados Unidos te quite el sueño. En Sell-U llevamos los números mientras tú haces crecer tu negocio.</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="{{ route('register') }}" class="btn btn-accent btn-lg" style="justify-content:center">Empezar ahora →</a>
+                <a href="https://wa.me/19542105405" target="_blank" class="btn btn-on-dark btn-lg" style="justify-content:center">Habla con un contador</a>
+                <p class="cta-note">Consulta gratuita · Sin tarjeta · Respondemos en 24 h hábiles</p>
+            </div>
+        </div>
+        <div class="trust-strip-bottom">
+            <div class="trust-label">Trabajamos con</div>
+            <div class="trust-logos">
+                <span class="trust-logo"><i data-lucide="book-open-check" width="20" height="20"></i> QuickBooks</span>
+                <span class="trust-logo"><i data-lucide="circle-dot" width="20" height="20"></i> Xero</span>
+                <span class="trust-logo"><i data-lucide="thermometer" width="20" height="20"></i> Mercury</span>
+                <span class="trust-logo"><i data-lucide="credit-card" width="20" height="20"></i> Stripe</span>
+                <span class="trust-logo"><i data-lucide="radio-tower" width="20" height="20"></i> Relay</span>
+                <span class="trust-logo"><i data-lucide="globe-2" width="20" height="20"></i> Wise</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <span class="footer-logo">Sell<span>·U</span></span>
+                <p class="footer-desc">Tu aliado para constituir, operar y crecer en Estados Unidos desde Latinoamérica.</p>
+            </div>
+            <div>
+                <div class="footer-col-title">Servicios</div>
+                <div class="footer-col">
+                    <a href="{{ url('/abre-empresa') }}">Abre tu empresa</a>
+                    <a href="{{ url('/contabilidad') }}">Contabilidad</a>
+                    <a href="{{ url('/amazon') }}">Vende en Amazon</a>
+                    <a href="{{ url('/marca') }}">Registro de marca</a>
+                    <a href="{{ url('/envios') }}">Envíos</a>
+                    <a href="{{ url('/sanitario') }}">Reg. Sanitario</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Empresa</div>
+                <div class="footer-col">
+                    <a href="#">Nosotros</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Soporte</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Contacto</div>
+                <div class="footer-col">
+                    <a href="mailto:contacto@sellu.co">contacto@sellu.co</a>
+                    <a href="tel:+19542105405">+1 954 210 5405</a>
+                    <a href="https://wa.me/19542105405" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Sell·U LATAM LLC. Todos los derechos reservados.</span>
+            <span>Spring Hill, Florida, USA</span>
+        </div>
     </div>
 </footer>
+
+<script>
+// Lucide icons
+if (window.lucide) lucide.createIcons();
+
+// Pricing toggle
+function setPricing(mode) {
+    document.getElementById('btn-monthly').classList.toggle('active', mode === 'monthly');
+    document.getElementById('btn-annual').classList.toggle('active', mode === 'annual');
+    document.querySelectorAll('.price-monthly').forEach(el => el.classList.toggle('hidden', mode === 'annual'));
+    document.querySelectorAll('.price-annual').forEach(el => el.classList.toggle('hidden', mode === 'monthly'));
+    document.querySelectorAll('.price-annual-note').forEach(el => el.classList.toggle('hidden', mode === 'monthly'));
+}
+
+// FAQ accordion
+function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('i[data-lucide]');
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-a.open').forEach(el => {
+        el.classList.remove('open');
+        el.previousElementSibling.querySelector('i[data-lucide]').setAttribute('data-lucide', 'plus');
+    });
+    if (!isOpen) {
+        answer.classList.add('open');
+        icon.setAttribute('data-lucide', 'minus');
+    }
+    lucide.createIcons();
+}
+
+// Scroll reveal
+const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
 
 </body>
 </html>
