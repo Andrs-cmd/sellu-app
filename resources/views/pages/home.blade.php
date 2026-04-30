@@ -110,36 +110,6 @@
         a { text-decoration:none; color:inherit; }
         img { max-width:100%; height:auto; }
 
-        /* ── TOPBAR ── */
-        .topbar { background:var(--navy2); padding:7px 5%; display:flex; justify-content:space-between; align-items:center; }
-        .topbar-left { font-size:12px; color:rgba(255,255,255,.6); }
-        .topbar-left strong { color:var(--gold); }
-        .topbar-right { display:flex; gap:14px; }
-        .topbar-right a { color:rgba(255,255,255,.6); font-size:13px; transition:color .2s; }
-        .topbar-right a:hover { color:var(--white); }
-
-        /* ── NAV ── */
-        .nav { background:var(--white); border-bottom:1px solid var(--gray2); padding:12px 5% 0; display:flex; flex-direction:column; align-items:center; position:sticky; top:0; z-index:100; }
-        .nav-logo { display:flex; align-items:center; justify-content:center; padding-bottom:10px; }
-        .nav-logo-text { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:900; color:var(--navy); letter-spacing:-1px; }
-        .nav-logo-text span { color:var(--gold); }
-        .nav-bottom { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; width:100%; }
-        .nav-links { display:flex; gap:0; justify-content:center; }
-        .nav-link { padding:0 14px; height:44px; display:flex; align-items:center; font-size:12px; font-weight:600; color:var(--text); border-bottom:3px solid transparent; transition:all .2s; white-space:nowrap; }
-        .nav-link:hover { color:var(--navy); border-bottom-color:var(--gold); }
-        .nav-cta { background:var(--gold); color:var(--navy); padding:8px 20px; border-radius:6px; font-size:13px; font-weight:700; font-family:'Montserrat',sans-serif; transition:background .2s; white-space:nowrap; justify-self:end; margin-bottom:6px; }
-        .nav-cta:hover { background:var(--gold2); }
-
-        /* ── MOBILE NAV ── */
-        .nav-hamburger { display:none; background:none; border:none; cursor:pointer; padding:4px; color:var(--navy); position:absolute; right:5%; top:50%; transform:translateY(-50%); }
-        .nav-hamburger svg { width:24px; height:24px; }
-        .mobile-menu { display:none; position:fixed; top:64px; left:0; right:0; background:var(--white); border-bottom:1px solid var(--gray2); z-index:99; padding:12px 0; box-shadow:0 4px 20px rgba(0,0,0,.1); }
-        .mobile-menu.open { display:block; }
-        .mobile-menu a { display:block; padding:12px 20px; font-size:14px; font-weight:600; color:var(--text); border-bottom:1px solid var(--gray2); }
-        .mobile-menu a:last-child { border-bottom:none; }
-        .mobile-menu a:hover { background:var(--gray); color:var(--navy); }
-        .mobile-menu .mobile-cta { background:var(--gold); color:var(--navy); margin:12px 20px; border-radius:6px; text-align:center; border-bottom:none; }
-
         /* ── HERO ── */
         .hero { background:var(--navy); min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
         .hero-content { position:relative; z-index:2; padding:72px 5%; max-width:580px; }
@@ -267,11 +237,6 @@
 
         /* ── RESPONSIVE ── */
         @media(max-width:900px) {
-            .topbar-right { display:none; }
-            .nav { flex-direction:row; justify-content:center; align-items:center; padding:0 5%; height:64px; position:relative; }
-            .nav-logo { padding-bottom:0; }
-            .nav-bottom { display:none; }
-            .nav-hamburger { display:flex; }
             .hero h1 { font-size:28px; }
             .hero-content { padding:48px 5%; }
             .servicios-grid { grid-template-columns:repeat(2,1fr); }
@@ -314,50 +279,7 @@
 </head>
 <body>
 
-<!-- ── TOPBAR ── -->
-<div class="topbar" role="banner">
-    <div class="topbar-left">Atención: <strong>Lunes – Sábado 9am – 9pm EST</strong> · +1 954 210 5405</div>
-    <div class="topbar-right">
-        <a href="tel:+19542105405">+1 954 210 5405</a>
-        <a href="mailto:contacto@sellu.co">contacto@sellu.co</a>
-    </div>
-</div>
-
-<!-- ── NAV ── -->
-<header>
-    <nav class="nav" role="navigation" aria-label="Navegación principal">
-        <div class="nav-logo">
-            <a href="{{ url('/') }}" aria-label="Sell·U - Inicio">
-                <span class="nav-logo-text">Sell<span>·U</span></span>
-            </a>
-        </div>
-        <div class="nav-bottom">
-            <div></div>
-            <div class="nav-links" role="menubar">
-                <a href="{{ url('/abre-empresa') }}" class="nav-link" role="menuitem">Abre tu empresa</a>
-                <a href="{{ url('/contabilidad') }}" class="nav-link" role="menuitem">Contabilidad</a>
-                <a href="{{ url('/amazon') }}" class="nav-link" role="menuitem">Vende en Amazon</a>
-                <a href="{{ url('/marca') }}" class="nav-link" role="menuitem">Registro de marca</a>
-                <a href="{{ url('/envios') }}" class="nav-link" role="menuitem">Envíos</a>
-                <a href="{{ url('/sanitario') }}" class="nav-link" role="menuitem">Reg. Sanitario</a>
-            </div>
-            <a href="{{ route('register') }}" class="nav-cta" aria-label="Empezar ahora">Empezar ahora</a>
-        </div>
-        <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false" id="hamburger">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        </button>
-    </nav>
-    <div class="mobile-menu" id="mobile-menu" role="menu" aria-hidden="true">
-        <a href="{{ url('/abre-empresa') }}" role="menuitem">Abre tu empresa</a>
-        <a href="{{ url('/contabilidad') }}" role="menuitem">Contabilidad</a>
-        <a href="{{ url('/amazon') }}" role="menuitem">Vende en Amazon</a>
-        <a href="{{ url('/marca') }}" role="menuitem">Registro de marca</a>
-        <a href="{{ url('/envios') }}" role="menuitem">Envíos</a>
-        <a href="{{ url('/sanitario') }}" role="menuitem">Reg. Sanitario</a>
-        <a href="{{ url('/soporte') }}" role="menuitem">Soporte</a>
-        <a href="{{ route('register') }}" class="mobile-cta" role="menuitem">Empezar ahora →</a>
-    </div>
-</header>
+<x-nav />
 
 <!-- ── HERO ── -->
 <main>
@@ -629,21 +551,7 @@ function toggleFaq(btn) {
     }
 }
 
-function toggleMenu() {
-    const menu = document.getElementById('mobile-menu');
-    const hamburger = document.getElementById('hamburger');
-    const isOpen = menu.classList.contains('open');
-    menu.classList.toggle('open');
-    menu.setAttribute('aria-hidden', isOpen ? 'true' : 'false');
-    hamburger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-}
 
-// Cerrar menú al hacer clic en un enlace
-document.querySelectorAll('#mobile-menu a').forEach(a => {
-    a.addEventListener('click', () => {
-        document.getElementById('mobile-menu').classList.remove('open');
-    });
-});
 </script>
 </body>
 </html>
