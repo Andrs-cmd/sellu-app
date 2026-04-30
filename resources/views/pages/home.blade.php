@@ -125,6 +125,8 @@
         .hero-badge { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15); border-radius:20px; padding:6px 14px; font-size:12px; color:rgba(255,255,255,.7); margin-bottom:20px; }
         .hero-badge span { background:var(--gold); color:var(--navy); font-size:10px; font-weight:800; padding:2px 8px; border-radius:10px; }
 .hero::before{background: transparent!important;}
+.section-band {
+    background: #fff!important;}
         /* ── SERVICIOS ── */
         .servicios { padding:72px 5%; background:var(--white); }
         .section-tag { font-size:11px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:10px; display:block; text-align:center; }
