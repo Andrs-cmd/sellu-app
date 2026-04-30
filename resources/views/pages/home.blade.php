@@ -123,11 +123,11 @@
         .nav-logo { display:flex; align-items:center; justify-content:center; padding-bottom:10px; }
         .nav-logo-text { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:900; color:var(--navy); letter-spacing:-1px; }
         .nav-logo-text span { color:var(--gold); }
-        .nav-bottom { display:flex; align-items:center; width:100%; justify-content:center; gap:0; }
-        .nav-links { display:flex; gap:0; }
+        .nav-bottom { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; width:100%; }
+        .nav-links { display:flex; gap:0; justify-content:center; }
         .nav-link { padding:0 14px; height:44px; display:flex; align-items:center; font-size:12px; font-weight:600; color:var(--text); border-bottom:3px solid transparent; transition:all .2s; white-space:nowrap; }
         .nav-link:hover { color:var(--navy); border-bottom-color:var(--gold); }
-        .nav-cta { background:var(--gold); color:var(--navy); padding:8px 20px; border-radius:6px; font-size:13px; font-weight:700; font-family:'Montserrat',sans-serif; transition:background .2s; white-space:nowrap; margin-left:16px; }
+        .nav-cta { background:var(--gold); color:var(--navy); padding:8px 20px; border-radius:6px; font-size:13px; font-weight:700; font-family:'Montserrat',sans-serif; transition:background .2s; white-space:nowrap; justify-self:end; margin-bottom:6px; }
         .nav-cta:hover { background:var(--gold2); }
 
         /* ── MOBILE NAV ── */
@@ -332,6 +332,7 @@
             </a>
         </div>
         <div class="nav-bottom">
+            <div></div>
             <div class="nav-links" role="menubar">
                 <a href="{{ url('/abre-empresa') }}" class="nav-link" role="menuitem">Abre tu empresa</a>
                 <a href="{{ url('/contabilidad') }}" class="nav-link" role="menuitem">Contabilidad</a>
