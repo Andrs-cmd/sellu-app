@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel Soporte — Sell·U</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -13,7 +13,7 @@
             --green:#0F6E4A; --green-bg:#E6F5EF; --amber:#92600A; --amber-bg:#FEF7E6;
             --blue:#1B4FD8; --blue-bg:#EEF3FF; --red:#8B2020; --red-bg:#FDEEEE;
         }
-        body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); }
+        body { font-family:'Montserrat',sans-serif; background:var(--gray); color:var(--text); }
         a { text-decoration:none; color:inherit; }
         .shell { display:flex; min-height:100vh; }
 
@@ -52,7 +52,7 @@
         .filter-form { display:flex; gap:10px; align-items:flex-end; flex-wrap:wrap; }
         .filter-group { flex:1; min-width:140px; }
         .filter-label { display:block; font-size:11px; font-weight:700; color:var(--navy); margin-bottom:5px; }
-        .filter-input { width:100%; padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Open Sans',sans-serif; color:var(--text); outline:none; background:var(--white); transition:border-color .2s; }
+        .filter-input { width:100%; padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Montserrat',sans-serif; color:var(--text); outline:none; background:var(--white); transition:border-color .2s; }
         .filter-input:focus { border-color:var(--navy); }
         .btn-buscar { padding:9px 18px; background:var(--navy); color:var(--white); border:none; border-radius:6px; font-size:13px; font-weight:600; cursor:pointer; font-family:'Montserrat',sans-serif; white-space:nowrap; }
         .btn-buscar:hover { background:var(--navy2); }
@@ -103,8 +103,8 @@
         .modal-body { padding:20px; }
         .modal-footer { padding:14px 20px; border-top:1px solid var(--gray2); display:flex; justify-content:flex-end; gap:8px; }
         label { display:block; font-size:12px; font-weight:700; color:var(--navy); margin-bottom:6px; }
-        textarea { width:100%; padding:10px 12px; border:1px solid var(--gray2); border-radius:6px; font-family:'Open Sans',sans-serif; font-size:13px; color:var(--text); outline:none; resize:vertical; min-height:100px; margin-bottom:12px; }
-        select { width:100%; padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-family:'Open Sans',sans-serif; font-size:13px; color:var(--text); outline:none; }
+        textarea { width:100%; padding:10px 12px; border:1px solid var(--gray2); border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; color:var(--text); outline:none; resize:vertical; min-height:100px; margin-bottom:12px; }
+        select { width:100%; padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; color:var(--text); outline:none; }
         .btn-cancel-modal { padding:8px 16px; background:var(--gray2); color:var(--text); border:none; border-radius:6px; font-size:13px; cursor:pointer; }
         .btn-guardar { padding:8px 16px; background:var(--navy); color:var(--white); border:none; border-radius:6px; font-size:13px; font-weight:700; cursor:pointer; font-family:'Montserrat',sans-serif; }
     </style>

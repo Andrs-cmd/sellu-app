@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Trámite — Sell·U</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -13,7 +13,7 @@
             --green:#0F6E4A; --green-bg:#E6F5EF; --amber:#92600A; --amber-bg:#FEF7E6;
             --blue:#1B4FD8; --blue-bg:#EEF3FF; --red:#8B2020; --red-bg:#FDEEEE;
         }
-        body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); }
+        body { font-family:'Montserrat',sans-serif; background:var(--gray); color:var(--text); }
         a { text-decoration:none; color:inherit; }
 
         .shell { display:flex; min-height:100vh; }
@@ -33,7 +33,7 @@
         .sidebar-footer { padding:16px 18px; border-top:1px solid rgba(255,255,255,.07); }
         .sidebar-user { font-size:12px; color:rgba(255,255,255,.4); margin-bottom:10px; }
         .sidebar-user strong { display:block; color:rgba(255,255,255,.7); font-size:13px; }
-        .btn-logout { width:100%; padding:8px; background:rgba(255,255,255,.07); color:rgba(255,255,255,.5); border:none; border-radius:6px; font-size:12px; cursor:pointer; font-family:'Open Sans',sans-serif; }
+        .btn-logout { width:100%; padding:8px; background:rgba(255,255,255,.07); color:rgba(255,255,255,.5); border:none; border-radius:6px; font-size:12px; cursor:pointer; font-family:'Montserrat',sans-serif; }
         .btn-logout:hover { background:rgba(255,255,255,.12); color:var(--white); }
 
         /* ── OVERLAY ── */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pago exitoso — Sell·U</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -12,7 +12,7 @@
             --white:#FFFFFF; --gray:#F5F6FA; --gray2:#E8EAF0; --text:#333A50; --muted:#6B7394;
             --green:#0F6E4A; --green-bg:#E6F5EF;
         }
-        body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px; }
+        body { font-family:'Montserrat',sans-serif; background:var(--gray); color:var(--text); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px; }
 
         .card { background:var(--white); border:1px solid var(--gray2); border-radius:16px; width:100%; max-width:480px; overflow:hidden; text-align:center; }
 

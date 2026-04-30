@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle Trámite — Admin Sell·U</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -13,7 +13,7 @@
             --green:#0F6E4A; --green-bg:#E6F5EF; --amber:#92600A; --amber-bg:#FEF7E6;
             --blue:#1B4FD8; --blue-bg:#EEF3FF; --red:#8B2020; --red-bg:#FDEEEE;
         }
-        body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); }
+        body { font-family:'Montserrat',sans-serif; background:var(--gray); color:var(--text); }
         a { text-decoration:none; color:inherit; }
 
         .shell { display:flex; min-height:100vh; }
@@ -69,7 +69,7 @@
         /* ── ESTADO FORM ── */
         .estado-form { background:var(--white); border:1px solid var(--gray2); border-radius:12px; padding:16px 20px; margin-bottom:16px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
         .estado-form label { font-size:13px; font-weight:700; color:var(--navy); white-space:nowrap; }
-        .estado-select { padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Open Sans',sans-serif; color:var(--text); outline:none; flex:1; min-width:120px; }
+        .estado-select { padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Montserrat',sans-serif; color:var(--text); outline:none; flex:1; min-width:120px; }
         .estado-select:focus { border-color:var(--navy); }
         .btn-update { padding:9px 18px; background:var(--navy); color:var(--white); border:none; border-radius:6px; font-size:13px; font-weight:600; cursor:pointer; font-family:'Montserrat',sans-serif; white-space:nowrap; }
         .btn-update:hover { background:var(--navy2); }

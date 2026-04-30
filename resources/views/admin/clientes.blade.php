@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes — Admin Sell·U</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -12,7 +12,7 @@
             --white:#FFFFFF; --gray:#F5F6FA; --gray2:#E8EAF0; --text:#333A50; --muted:#6B7394;
             --blue:#1B4FD8; --blue-bg:#EEF3FF; --red:#8B2020;
         }
-        body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); }
+        body { font-family:'Montserrat',sans-serif; background:var(--gray); color:var(--text); }
         a { text-decoration:none; color:inherit; }
         .shell { display:flex; min-height:100vh; }
         .sidebar { width:230px; background:var(--navy); display:flex; flex-direction:column; flex-shrink:0; }

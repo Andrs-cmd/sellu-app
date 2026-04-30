@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentos del trámite — Admin Sell·U</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -13,7 +13,7 @@
             --green:#0F6E4A; --green-bg:#E6F5EF; --amber:#92600A; --amber-bg:#FEF7E6;
             --blue:#1B4FD8; --blue-bg:#EEF3FF; --red:#8B2020; --red-bg:#FDEEEE;
         }
-        body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); }
+        body { font-family:'Montserrat',sans-serif; background:var(--gray); color:var(--text); }
         a { text-decoration:none; color:inherit; }
         .shell { display:flex; min-height:100vh; }
         .sidebar { width:230px; background:var(--navy); display:flex; flex-direction:column; flex-shrink:0; }
@@ -75,8 +75,8 @@
         .doc-card-body { padding:16px 20px; background:var(--gray); }
         .review-form { display:flex; gap:12px; align-items:flex-end; flex-wrap:wrap; }
         .review-form label { font-size:12px; font-weight:700; color:var(--navy); margin-bottom:5px; display:block; }
-        .review-form select { padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Open Sans',sans-serif; color:var(--text); background:var(--white); outline:none; min-width:160px; }
-        .review-form textarea { padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Open Sans',sans-serif; color:var(--text); background:var(--white); outline:none; resize:none; min-width:260px; height:40px; }
+        .review-form select { padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Montserrat',sans-serif; color:var(--text); background:var(--white); outline:none; min-width:160px; }
+        .review-form textarea { padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Montserrat',sans-serif; color:var(--text); background:var(--white); outline:none; resize:none; min-width:260px; height:40px; }
         .btn-save { padding:9px 20px; background:var(--gold); color:var(--navy); border:none; border-radius:6px; font-size:13px; font-weight:700; cursor:pointer; font-family:'Montserrat',sans-serif; white-space:nowrap; }
         .btn-save:hover { background:var(--gold2); }
 

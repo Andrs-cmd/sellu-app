@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Constituye tu Empresa — Sell·U</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -13,7 +13,7 @@
             --white: #FFFFFF; --gray: #F5F6FA; --gray2: #E8EAF0; --text: #333A50; --muted: #6B7394;
             --green: #25D366; --red: #E53935;
         }
-        body { font-family: 'Open Sans', sans-serif; background: #f8faff; color: var(--text); min-height: 100vh; }
+        body { font-family: 'Montserrat', sans-serif; background: #f8faff; color: var(--text); min-height: 100vh; }
         a { text-decoration: none; color: inherit; }
 
         .form-header { background: var(--white); border-bottom: 1px solid var(--gray2); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
@@ -40,7 +40,7 @@
         @media(max-width:700px) { .grid-2 { grid-template-columns: 1fr; } }
 
         label { display: block; font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 7px; }
-        input, select, textarea { width: 100%; padding: 11px 14px; border: 1px solid var(--gray2); border-radius: 6px; font-family: 'Open Sans', sans-serif; font-size: 14px; color: var(--text); background: var(--white); outline: none; transition: border-color .2s; margin-bottom: 18px; }
+        input, select, textarea { width: 100%; padding: 11px 14px; border: 1px solid var(--gray2); border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 14px; color: var(--text); background: var(--white); outline: none; transition: border-color .2s; margin-bottom: 18px; }
         input:focus, select:focus, textarea:focus { border-color: var(--navy); }
         input::placeholder { color: var(--muted); }
 

@@ -30,7 +30,7 @@
     <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -47,7 +47,7 @@
             --green: #25D366;
         }
         html { scroll-behavior: smooth; }
-        body { font-family: 'Open Sans', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
         a { text-decoration: none; color: inherit; }
 
         /* ── CANALES SECTION ── */
@@ -93,7 +93,7 @@
         .form-input, .form-textarea {
             width: 100%; padding: 14px 16px;
             border: 1px solid var(--gray2); border-radius: 4px;
-            font-family: 'Open Sans', sans-serif; font-size: 14px; color: var(--text);
+            font-family: 'Montserrat', sans-serif; font-size: 14px; color: var(--text);
             background: var(--white); transition: border-color .2s;
             outline: none; resize: none;
         }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trámites — Admin Sell·U</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -13,7 +13,7 @@
             --green:#0F6E4A; --green-bg:#E6F5EF; --amber:#92600A; --amber-bg:#FEF7E6;
             --blue:#1B4FD8; --blue-bg:#EEF3FF; --red:#8B2020; --red-bg:#FDEEEE;
         }
-        body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); }
+        body { font-family:'Montserrat',sans-serif; background:var(--gray); color:var(--text); }
         a { text-decoration:none; color:inherit; }
 
         .shell { display:flex; min-height:100vh; }
@@ -61,7 +61,7 @@
         .filter-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:10px; margin-bottom:10px; }
         .filter-grid-2 { display:grid; grid-template-columns:1fr 1fr auto auto; gap:10px; align-items:end; }
         .filter-label { font-size:11px; font-weight:700; color:var(--navy); margin-bottom:5px; display:block; }
-        .filter-input { width:100%; padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Open Sans',sans-serif; color:var(--text); outline:none; background:var(--white); transition:border-color .2s; }
+        .filter-input { width:100%; padding:9px 12px; border:1px solid var(--gray2); border-radius:6px; font-size:13px; font-family:'Montserrat',sans-serif; color:var(--text); outline:none; background:var(--white); transition:border-color .2s; }
         .filter-input:focus { border-color:var(--navy); }
         .btn-filter { padding:9px 18px; background:var(--navy); color:var(--white); border:none; border-radius:6px; font-size:13px; font-weight:600; cursor:pointer; font-family:'Montserrat',sans-serif; white-space:nowrap; }
         .btn-filter:hover { background:var(--navy2); }

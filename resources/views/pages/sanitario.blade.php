@@ -48,7 +48,7 @@
     @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -65,7 +65,7 @@
             --green: #25D366;
         }
         html { scroll-behavior: smooth; }
-        body { font-family: 'Open Sans', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
         a { text-decoration: none; color: inherit; }
 
         /* ── TOPBAR ── */
@@ -167,7 +167,7 @@
         .faq-header h2 { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
         .faq-header p { font-size: 14px; color: var(--muted); line-height: 1.6; }
         .faq-item { border-bottom: 1px solid var(--gray2); }
-        .faq-q { width: 100%; padding: 18px 0; text-align: left; background: none; border: none; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .faq-q { width: 100%; padding: 18px 0; text-align: left; background: none; border: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
         .faq-q:hover { color: var(--gold2); }
         .faq-q-left { display: flex; align-items: center; gap: 10px; }
         .faq-num { width: 20px; height: 20px; background: var(--blue, #1B4FD8); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: white; flex-shrink: 0; background: var(--navy); }

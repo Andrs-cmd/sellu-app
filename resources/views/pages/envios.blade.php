@@ -51,7 +51,7 @@
     @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -68,7 +68,7 @@
             --green: #25D366;
         }
         html { scroll-behavior: smooth; }
-        body { font-family: 'Open Sans', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
         a { text-decoration: none; color: inherit; }
 
         /* ── TOPBAR ── */
@@ -150,7 +150,7 @@
         .faq-tag { font-size: 11px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 10px; display: block; }
         .faq-header h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 900; color: var(--navy); }
         .faq-item { border-bottom: 1px solid var(--gray2); }
-        .faq-q { width: 100%; padding: 18px 0; text-align: left; background: none; border: none; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .faq-q { width: 100%; padding: 18px 0; text-align: left; background: none; border: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
         .faq-q:hover { color: var(--gold2); }
         .faq-icon { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--gray2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all .3s; }
         .faq-icon svg { width: 12px; height: 12px; color: var(--navy); transition: transform .3s; }

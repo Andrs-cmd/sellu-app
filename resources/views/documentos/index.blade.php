@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentos — Sell·U</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -13,7 +13,7 @@
             --green:#0F6E4A; --green-bg:#E6F5EF; --amber:#92600A; --amber-bg:#FEF7E6;
             --blue:#1B4FD8; --blue-bg:#EEF3FF; --red:#8B2020; --red-bg:#FDEEEE;
         }
-        body { font-family:'Open Sans',sans-serif; background:var(--gray); color:var(--text); }
+        body { font-family:'Montserrat',sans-serif; background:var(--gray); color:var(--text); }
         a { text-decoration:none; color:inherit; }
 
         .shell { display:flex; min-height:100vh; }
@@ -33,7 +33,7 @@
         .sidebar-footer { padding:16px 18px; border-top:1px solid rgba(255,255,255,.07); }
         .sidebar-user strong { display:block; color:rgba(255,255,255,.7); font-size:13px; }
         .sidebar-user span { font-size:11px; color:rgba(255,255,255,.4); }
-        .btn-logout { width:100%; margin-top:10px; padding:8px; background:rgba(255,255,255,.07); color:rgba(255,255,255,.5); border:none; border-radius:6px; font-size:12px; cursor:pointer; font-family:'Open Sans',sans-serif; }
+        .btn-logout { width:100%; margin-top:10px; padding:8px; background:rgba(255,255,255,.07); color:rgba(255,255,255,.5); border:none; border-radius:6px; font-size:12px; cursor:pointer; font-family:'Montserrat',sans-serif; }
         .btn-logout:hover { background:rgba(255,255,255,.12); color:var(--white); }
 
         /* ── OVERLAY ── */
@@ -96,7 +96,7 @@
         .upload-card h3 { font-family:'Montserrat',sans-serif; font-size:14px; font-weight:700; color:var(--navy); margin-bottom:16px; }
         .form-row { display:grid; grid-template-columns:1fr 1fr auto; gap:12px; align-items:end; }
         label { display:block; font-size:12px; font-weight:700; color:var(--navy); margin-bottom:6px; }
-        select, input[type=file] { width:100%; padding:10px 12px; border:1px solid var(--gray2); border-radius:6px; font-family:'Open Sans',sans-serif; font-size:13px; color:var(--text); background:var(--white); outline:none; transition:border-color .2s; }
+        select, input[type=file] { width:100%; padding:10px 12px; border:1px solid var(--gray2); border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; color:var(--text); background:var(--white); outline:none; transition:border-color .2s; }
         select:focus, input[type=file]:focus { border-color:var(--navy); }
         .btn-upload { width:100%; padding:11px; background:var(--navy); color:var(--white); border:none; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; cursor:pointer; transition:background .2s; text-align:center; }
         .btn-upload:hover { background:var(--navy2); }

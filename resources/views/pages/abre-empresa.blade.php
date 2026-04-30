@@ -60,7 +60,7 @@
     @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
@@ -76,7 +76,7 @@
             --green:  #25D366;
         }
         html { scroll-behavior: smooth; }
-        body { font-family: 'Open Sans', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
         a { text-decoration: none; color: inherit; }
 
         /* ── TOPBAR ── */
@@ -180,7 +180,7 @@
         .precios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 800; color: var(--navy); margin-bottom: 24px; }
         .estado-select-wrap { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 40px; }
         .estado-select-wrap label { font-size: 14px; font-weight: 600; color: var(--text); }
-        .estado-select { border: 1px solid var(--gray2); border-radius: 6px; padding: 9px 16px; font-family: 'Open Sans', sans-serif; font-size: 14px; color: var(--text); background: var(--white); cursor: pointer; outline: none; }
+        .estado-select { border: 1px solid var(--gray2); border-radius: 6px; padding: 9px 16px; font-family: 'Montserrat', sans-serif; font-size: 14px; color: var(--text); background: var(--white); cursor: pointer; outline: none; }
         .precios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto 40px; }
         .precio-card { border: 1px solid var(--gray2); border-radius: 12px; padding: 28px 24px; position: relative; transition: all .2s; }
         .precio-card:hover { border-color: var(--navy); }
@@ -228,7 +228,7 @@
         .faq-header h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 800; color: var(--navy); line-height: 1.25; margin-bottom: 10px; }
         .faq-header p { font-size: 14px; color: var(--muted); line-height: 1.6; }
         .faq-item { border-bottom: 1px solid var(--gray2); }
-        .faq-q { width: 100%; padding: 18px 0; text-align: left; background: none; border: none; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .faq-q { width: 100%; padding: 18px 0; text-align: left; background: none; border: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
         .faq-q:hover { color: var(--gold2); }
         .faq-icon { width: 22px; height: 22px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform .3s; }
         .faq-icon svg { width: 12px; height: 12px; }
