@@ -983,12 +983,12 @@ Tus reportes contables al día · sin pendientes críticos                      
             <div>
                 <div class="footer-col-title">Servicios</div>
                 <div class="footer-col">
-                    <a href="{{ url('/pages/abre-empresa') }}">Abre tu empresa</a>
+                    <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}">Abre tu empresa</a>
                     <a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
-                    <a href="{{ url('/pages/amazon') }}">Vende en Amazon</a>
-                    <a href="{{ url('/pages/marca') }}">Registro de marca</a>
-                    <a href="{{ url('/pages/envios') }}">Envíos</a>
-                    <a href="{{ url('/pages/sanitario') }}">Reg. Sanitario</a>
+                    <a href="{{ url('/pages/apertura-marketplace') }}">Vende en Amazon</a>
+                    <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}">Registro de marca</a>
+                    <a href="{{ url('/pages/almacenamiento-y-logistica') }}">Envíos</a>
+                    <a href="{{ url('/pages/registro-fda-de-alimentos') }}">Reg. Sanitario</a>
                 </div>
             </div>
             <div>

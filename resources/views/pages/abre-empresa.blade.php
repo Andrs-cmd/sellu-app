@@ -12,11 +12,11 @@
     <meta name="keywords" content="abrir empresa en USA, LLC para extranjeros, cómo abrir LLC en estados unidos, empresa en florida, incorporar empresa USA, LLC sin residencia, constituir empresa americana">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
-    <link rel="canonical" href="https://sellu.co/pages/abre-empresa">
+    <link rel="canonical" href="https://sellu.co/pages/crear-empresa-en-estados-unidos">
 
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sellu.co/pages/abre-empresa">
+    <meta property="og:url" content="https://sellu.co/pages/crear-empresa-en-estados-unidos">
     <meta property="og:title" content="Abre tu Empresa en EE.UU. sin ser Residente — Sell·U">
     <meta property="og:description" content="Constituye tu LLC en Estados Unidos desde LATAM. Agente registrado, EIN y Operating Agreement incluidos. Desde $349 USD. Proceso 100% online.">
     <meta property="og:image" content="https://sellu.co/og-image.jpg">
@@ -37,7 +37,7 @@
         "@type": "LegalService",
         "name": "Sell·U LATAM LLC — Constitución de Empresas en USA",
         "description": "Servicio de constitución de LLC y corporaciones en Estados Unidos para emprendedores latinoamericanos no residentes. Incluye agente registrado, EIN y Operating Agreement.",
-        "url": "https://sellu.co/pages/abre-empresa",
+        "url": "https://sellu.co/pages/crear-empresa-en-estados-unidos",
         "telephone": "+19542105405",
         "email": "contacto@sellu.co",
         "priceRange": "$$",
@@ -576,13 +576,13 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Menú principal</p>
-                <a href="{{ url('/pages/abre-empresa') }}">Abre tu empresa</a>
+                <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}">Abre tu empresa</a>
 <a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
-<a href="{{ url('/pages/amazon') }}">Vende en Amazon</a>
-<a href="{{ url('/pages/marca') }}">Registro de marca</a>
-<a href="{{ url('/pages/envios') }}">Envíos</a>
-<a href="{{ url('/pages/sanitario') }}">Registro Sanitario</a>
-<a href="{{ url('/pages/soporte') }}">Soporte</a>
+<a href="{{ url('/pages/apertura-marketplace') }}">Vende en Amazon</a>
+<a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}">Registro de marca</a>
+<a href="{{ url('/pages/almacenamiento-y-logistica') }}">Envíos</a>
+<a href="{{ url('/pages/registro-fda-de-alimentos') }}">Registro Sanitario</a>
+<a href="{{ url('/pages/canales-de-atencion') }}">Soporte</a>
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Información legal</p>

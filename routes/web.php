@@ -17,14 +17,14 @@ use App\Http\Controllers\Admin\NotificacionController;
 Route::get('/', fn() => view('pages.home'));
 
 Route::prefix('pages')->group(function () {
-    Route::get('/abre-empresa', fn() => view('pages.abre-empresa'))->name('pages.abre-empresa');
+    Route::get('/crear-empresa-en-estados-unidos', fn() => view('pages.abre-empresa'))->name('pages.crear-empresa-en-estados-unidos');
     Route::get('/contabilidad', fn() => view('pages.contabilidad'))->name('pages.contabilidad');
-    Route::get('/amazon', fn() => view('pages.amazon'))->name('pages.amazon');
-    Route::get('/marca', fn() => view('pages.marca'))->name('pages.marca');
-    Route::get('/envios', fn() => view('pages.envios'))->name('pages.envios');
-    Route::get('/sanitario', fn() => view('pages.sanitario'))->name('pages.sanitario');
-    Route::get('/soporte', fn() => view('pages.soporte'))->name('soporte');
-    Route::post('/soporte/contacto', function (Request $request) {
+    Route::get('/apertura-marketplace', fn() => view('pages.amazon'))->name('pages.apertura-marketplace');
+    Route::get('/registro-de-marca-ante-la-uspto', fn() => view('pages.marca'))->name('pages.registro-de-marca-ante-la-uspto');
+    Route::get('/almacenamiento-y-logistica', fn() => view('pages.envios'))->name('pages.almacenamiento-y-logistica');
+    Route::get('/registro-fda-de-alimentos', fn() => view('pages.sanitario'))->name('pages.registro-fda-de-alimentos');
+    Route::get('/canales-de-atencion', fn() => view('pages.soporte'))->name('pages.canales-de-atencion');
+    Route::post('/canales-de-atencion/contacto', function (Request $request) {
         $validated = $request->validate([
             'nombre'   => 'required|string|max:255',
             'email'    => 'required|email|max:255',
@@ -47,13 +47,19 @@ Route::prefix('pages')->group(function () {
 });
 
 // ── Redirects 301 desde URLs antiguas (SEO) ──
-Route::permanentRedirect('/abre-empresa', '/pages/abre-empresa');
+Route::permanentRedirect('/abre-empresa', '/pages/crear-empresa-en-estados-unidos');
 Route::permanentRedirect('/contabilidad', '/pages/contabilidad');
-Route::permanentRedirect('/amazon', '/pages/amazon');
-Route::permanentRedirect('/marca', '/pages/marca');
-Route::permanentRedirect('/envios', '/pages/envios');
-Route::permanentRedirect('/sanitario', '/pages/sanitario');
-Route::permanentRedirect('/soporte', '/pages/soporte');
+Route::permanentRedirect('/amazon', '/pages/apertura-marketplace');
+Route::permanentRedirect('/marca', '/pages/registro-de-marca-ante-la-uspto');
+Route::permanentRedirect('/envios', '/pages/almacenamiento-y-logistica');
+Route::permanentRedirect('/sanitario', '/pages/registro-fda-de-alimentos');
+Route::permanentRedirect('/soporte', '/pages/canales-de-atencion');
+Route::permanentRedirect('/pages/abre-empresa', '/pages/crear-empresa-en-estados-unidos');
+Route::permanentRedirect('/pages/amazon', '/pages/apertura-marketplace');
+Route::permanentRedirect('/pages/marca', '/pages/registro-de-marca-ante-la-uspto');
+Route::permanentRedirect('/pages/envios', '/pages/almacenamiento-y-logistica');
+Route::permanentRedirect('/pages/sanitario', '/pages/registro-fda-de-alimentos');
+Route::permanentRedirect('/pages/soporte', '/pages/canales-de-atencion');
 
 // ── Auth (Breeze) ──
 require __DIR__.'/auth.php';
