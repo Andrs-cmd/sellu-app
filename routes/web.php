@@ -15,33 +15,45 @@ use App\Http\Controllers\Admin\NotificacionController;
 
 // ── Páginas públicas ──
 Route::get('/', fn() => view('pages.home'));
-Route::get('/abre-empresa', fn() => view('pages.abre-empresa'));
-Route::get('/contabilidad', fn() => view('pages.contabilidad'));
-Route::get('/amazon', fn() => view('pages.amazon'));
-Route::get('/marca', fn() => view('pages.marca'));
-Route::get('/envios', fn() => view('pages.envios'));
-Route::get('/sanitario', fn() => view('pages.sanitario'));
-Route::get('/soporte', fn() => view('pages.soporte'))->name('soporte');
-Route::post('/soporte/contacto', function (Request $request) {
-    $validated = $request->validate([
-        'nombre'   => 'required|string|max:255',
-        'email'    => 'required|email|max:255',
-        'telefono' => 'nullable|string|max:50',
-        'mensaje'  => 'required|string|max:3000',
-    ]);
-    Mail::raw(
-        "Nombre: {$validated['nombre']}\n" .
-        "Email: {$validated['email']}\n" .
-        "Teléfono: " . ($validated['telefono'] ?? 'N/A') . "\n\n" .
-        "Mensaje:\n{$validated['mensaje']}",
-        function ($msg) use ($validated) {
-            $msg->to('contacto@sellu.co')
-                ->subject('Mensaje de contacto — ' . $validated['nombre'])
-                ->replyTo($validated['email'], $validated['nombre']);
-        }
-    );
-    return back()->with('success', '¡Mensaje enviado! Te responderemos pronto.');
-})->name('soporte.contacto');
+
+Route::prefix('pages')->group(function () {
+    Route::get('/abre-empresa', fn() => view('pages.abre-empresa'))->name('pages.abre-empresa');
+    Route::get('/contabilidad', fn() => view('pages.contabilidad'))->name('pages.contabilidad');
+    Route::get('/amazon', fn() => view('pages.amazon'))->name('pages.amazon');
+    Route::get('/marca', fn() => view('pages.marca'))->name('pages.marca');
+    Route::get('/envios', fn() => view('pages.envios'))->name('pages.envios');
+    Route::get('/sanitario', fn() => view('pages.sanitario'))->name('pages.sanitario');
+    Route::get('/soporte', fn() => view('pages.soporte'))->name('soporte');
+    Route::post('/soporte/contacto', function (Request $request) {
+        $validated = $request->validate([
+            'nombre'   => 'required|string|max:255',
+            'email'    => 'required|email|max:255',
+            'telefono' => 'nullable|string|max:50',
+            'mensaje'  => 'required|string|max:3000',
+        ]);
+        Mail::raw(
+            "Nombre: {$validated['nombre']}\n" .
+            "Email: {$validated['email']}\n" .
+            "Teléfono: " . ($validated['telefono'] ?? 'N/A') . "\n\n" .
+            "Mensaje:\n{$validated['mensaje']}",
+            function ($msg) use ($validated) {
+                $msg->to('contacto@sellu.co')
+                    ->subject('Mensaje de contacto — ' . $validated['nombre'])
+                    ->replyTo($validated['email'], $validated['nombre']);
+            }
+        );
+        return back()->with('success', '¡Mensaje enviado! Te responderemos pronto.');
+    })->name('soporte.contacto');
+});
+
+// ── Redirects 301 desde URLs antiguas (SEO) ──
+Route::permanentRedirect('/abre-empresa', '/pages/abre-empresa');
+Route::permanentRedirect('/contabilidad', '/pages/contabilidad');
+Route::permanentRedirect('/amazon', '/pages/amazon');
+Route::permanentRedirect('/marca', '/pages/marca');
+Route::permanentRedirect('/envios', '/pages/envios');
+Route::permanentRedirect('/sanitario', '/pages/sanitario');
+Route::permanentRedirect('/soporte', '/pages/soporte');
 
 // ── Auth (Breeze) ──
 require __DIR__.'/auth.php';

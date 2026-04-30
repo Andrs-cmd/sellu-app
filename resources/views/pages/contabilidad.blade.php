@@ -382,7 +382,7 @@
     .trust-logo i { color: var(--accent-500); }
 
     /* ── FOOTER ── */
-    .footer { background: var(--paper); border-top: 1px solid var(--border-default); padding: 56px 0 24px; }
+    .footer { background: var(--paper-2); border-top: 1px solid var(--border-default); padding: 56px 0 24px; }
     .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
     .footer-logo { font-family: 'Montserrat', var(--font-display); font-size: 24px; font-weight: 900; color: var(--navy-900); letter-spacing: -1px; display: block; margin-bottom: 12px; }
     .footer-logo span { color: var(--accent-500); }
