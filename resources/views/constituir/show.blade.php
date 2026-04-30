@@ -18,7 +18,8 @@
 
         .shell { display:flex; min-height:100vh; }
 
-        .sidebar { width:220px; background:var(--navy); display:flex; flex-direction:column; flex-shrink:0; }
+        /* ── SIDEBAR ── */
+        .sidebar { width:220px; background:var(--navy); display:flex; flex-direction:column; flex-shrink:0; transition:transform .25s; }
         .sidebar-logo { padding:20px 18px; border-bottom:1px solid rgba(255,255,255,.07); }
         .sidebar-logo-text { font-family:'Montserrat',sans-serif; font-size:22px; font-weight:900; color:var(--white); letter-spacing:-1px; }
         .sidebar-logo-text span { color:var(--gold); }
@@ -35,73 +36,128 @@
         .btn-logout { width:100%; padding:8px; background:rgba(255,255,255,.07); color:rgba(255,255,255,.5); border:none; border-radius:6px; font-size:12px; cursor:pointer; font-family:'Open Sans',sans-serif; }
         .btn-logout:hover { background:rgba(255,255,255,.12); color:var(--white); }
 
-        .main { flex:1; overflow:hidden; display:flex; flex-direction:column; }
-        .topbar { background:var(--white); border-bottom:1px solid var(--gray2); padding:14px 28px; display:flex; align-items:center; gap:14px; }
-        .topbar-back { color:var(--muted); font-size:13px; display:flex; align-items:center; gap:5px; }
-        .topbar-back:hover { color:var(--navy); }
-        .topbar-title { font-family:'Montserrat',sans-serif; font-size:16px; font-weight:700; color:var(--navy); }
+        /* ── OVERLAY ── */
+        .sidebar-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.5); z-index:40; }
 
-        .content { flex:1; overflow-y:auto; padding:28px; }
+        /* ── MAIN ── */
+        .main { flex:1; overflow:hidden; display:flex; flex-direction:column; min-width:0; }
+
+        /* ── TOPBAR ── */
+        .topbar { background:var(--white); border-bottom:1px solid var(--gray2); padding:12px 16px; display:flex; align-items:center; gap:10px; }
+        .topbar-back { color:var(--muted); font-size:13px; display:flex; align-items:center; gap:5px; white-space:nowrap; }
+        .topbar-back:hover { color:var(--navy); }
+        .topbar-title { font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; color:var(--navy); flex:1; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+        .btn-menu { display:none; background:none; border:none; cursor:pointer; padding:4px; color:var(--navy); flex-shrink:0; }
+        .btn-menu svg { width:22px; height:22px; }
+
+        /* ── CONTENT ── */
+        .content { flex:1; overflow-y:auto; padding:20px; }
         .content-inner { max-width:860px; margin:0 auto; }
 
-        .badge { font-size:12px; font-weight:600; padding:5px 12px; border-radius:20px; }
+        /* ── BADGES ── */
+        .badge { font-size:11px; font-weight:600; padding:4px 10px; border-radius:20px; }
         .badge-amber { background:var(--amber-bg); color:var(--amber); }
         .badge-blue { background:var(--blue-bg); color:var(--blue); }
         .badge-green { background:var(--green-bg); color:var(--green); }
         .badge-red { background:var(--red-bg); color:var(--red); }
         .badge-gray { background:var(--gray2); color:var(--muted); }
 
-        /* HERO CARD */
-        .hero-card { background:var(--navy); border-radius:14px; padding:28px 32px; margin-bottom:20px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
-        .hero-card-left h1 { font-family:'Montserrat',sans-serif; font-size:22px; font-weight:800; color:var(--white); margin-bottom:6px; }
-        .hero-card-left p { font-size:13px; color:rgba(255,255,255,.5); }
-        .hero-card-right { text-align:right; }
-        .hero-price { font-family:'Montserrat',sans-serif; font-size:32px; font-weight:900; color:var(--gold); }
-        .hero-plan { font-size:12px; color:rgba(255,255,255,.4); margin-top:4px; }
+        /* ── HERO ── */
+        .hero-card { background:var(--navy); border-radius:14px; padding:24px; margin-bottom:16px; display:flex; align-items:flex-start; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+        .hero-card-left h1 { font-family:'Montserrat',sans-serif; font-size:20px; font-weight:800; color:var(--white); margin-bottom:5px; }
+        .hero-card-left p { font-size:12px; color:rgba(255,255,255,.5); }
+        .hero-card-right { text-align:right; flex-shrink:0; }
+        .hero-price { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:900; color:var(--gold); }
+        .hero-plan { font-size:12px; color:rgba(255,255,255,.4); margin-top:3px; }
+        .hero-actions { display:flex; gap:10px; margin-top:14px; flex-wrap:wrap; }
+        .btn-docs { display:inline-flex; align-items:center; gap:6px; padding:10px 18px; background:var(--gold); color:var(--navy); border-radius:6px; font-size:13px; font-weight:700; font-family:'Montserrat',sans-serif; white-space:nowrap; }
+        .btn-docs:hover { background:var(--gold2); }
 
-        /* TIMELINE */
-        .timeline { display:flex; gap:0; margin-bottom:20px; background:var(--white); border:1px solid var(--gray2); border-radius:14px; overflow:hidden; }
-        .timeline-step { flex:1; padding:16px 12px; text-align:center; border-right:1px solid var(--gray2); position:relative; }
+        /* ── TIMELINE ── */
+        .timeline { display:flex; background:var(--white); border:1px solid var(--gray2); border-radius:14px; overflow:hidden; margin-bottom:16px; }
+        .timeline-step { flex:1; padding:14px 8px; text-align:center; border-right:1px solid var(--gray2); }
         .timeline-step:last-child { border-right:none; }
-        .timeline-dot { width:32px; height:32px; border-radius:50%; border:2px solid var(--gray2); background:var(--white); display:flex; align-items:center; justify-content:center; margin:0 auto 8px; font-size:12px; font-weight:700; color:var(--muted); transition:all .3s; }
+        .timeline-dot { width:28px; height:28px; border-radius:50%; border:2px solid var(--gray2); background:var(--white); display:flex; align-items:center; justify-content:center; margin:0 auto 6px; font-size:11px; font-weight:700; color:var(--muted); }
         .timeline-dot.done { background:var(--green); border-color:var(--green); color:var(--white); }
         .timeline-dot.active { background:var(--blue); border-color:var(--blue); color:var(--white); }
-        .timeline-label { font-size:11px; font-weight:600; color:var(--muted); }
+        .timeline-label { font-size:10px; font-weight:600; color:var(--muted); }
         .timeline-label.done { color:var(--green); }
         .timeline-label.active { color:var(--blue); font-weight:700; }
 
-        /* GRID */
-        .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
-        @media(max-width:700px) { .grid-2 { grid-template-columns:1fr; } }
+        /* ── GRID ── */
+        .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
 
-        /* CARDS */
-        .card { background:var(--white); border:1px solid var(--gray2); border-radius:12px; overflow:hidden; margin-bottom:16px; }
-        .card-header { padding:16px 20px; border-bottom:1px solid var(--gray2); display:flex; align-items:center; justify-content:space-between; }
+        /* ── CARDS ── */
+        .card { background:var(--white); border:1px solid var(--gray2); border-radius:12px; overflow:hidden; margin-bottom:14px; }
+        .card-header { padding:14px 18px; border-bottom:1px solid var(--gray2); display:flex; align-items:center; justify-content:space-between; }
         .card-header h3 { font-family:'Montserrat',sans-serif; font-size:14px; font-weight:700; color:var(--navy); margin:0; }
-        .card-body { padding:20px; }
-        .info-row { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid var(--gray2); font-size:13px; }
+        .card-body { padding:16px 18px; }
+        .info-row { display:flex; justify-content:space-between; align-items:flex-start; padding:8px 0; border-bottom:1px solid var(--gray2); font-size:13px; gap:10px; }
         .info-row:last-child { border-bottom:none; }
-        .info-label { color:var(--muted); font-weight:500; }
+        .info-label { color:var(--muted); font-weight:500; flex-shrink:0; }
         .info-value { color:var(--navy); font-weight:600; text-align:right; }
 
-        /* MEMBERS */
-        .member-item { display:flex; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid var(--gray2); }
+        /* ── MEMBERS ── */
+        .member-item { display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid var(--gray2); }
         .member-item:last-child { border-bottom:none; }
-        .member-avatar { width:36px; height:36px; border-radius:50%; background:var(--blue-bg); color:var(--blue); font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+        .member-avatar { width:34px; height:34px; border-radius:50%; background:var(--blue-bg); color:var(--blue); font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
         .member-name { font-size:13px; font-weight:600; color:var(--navy); }
         .member-dir { font-size:11px; color:var(--muted); }
 
-        /* CTA */
-        .cta-card { background:var(--gold); border-radius:12px; padding:24px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
-        .cta-card h3 { font-family:'Montserrat',sans-serif; font-size:15px; font-weight:800; color:var(--navy); margin-bottom:4px; }
-        .cta-card p { font-size:13px; color:rgba(13,27,62,.6); }
-        .btn-wa { display:inline-flex; align-items:center; gap:8px; background:var(--navy); color:var(--white); padding:10px 20px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; border:none; cursor:pointer; white-space:nowrap; }
+        /* ── CTA ── */
+        .cta-card { background:var(--gold); border-radius:12px; padding:20px; display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-bottom:14px; }
+        .cta-card h3 { font-family:'Montserrat',sans-serif; font-size:14px; font-weight:800; color:var(--navy); margin-bottom:3px; }
+        .cta-card p { font-size:12px; color:rgba(13,27,62,.6); }
+        .btn-wa { display:inline-flex; align-items:center; gap:8px; background:var(--navy); color:var(--white); padding:10px 18px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; border:none; cursor:pointer; white-space:nowrap; flex-shrink:0; }
+
+        /* ── BOTTOM NAV ── */
+        .bottom-nav { display:none; position:fixed; bottom:0; left:0; right:0; background:var(--navy); border-top:1px solid rgba(255,255,255,.1); padding:8px 0 12px; z-index:30; }
+        .bottom-nav-inner { display:flex; justify-content:space-around; }
+        .bottom-nav-item { display:flex; flex-direction:column; align-items:center; gap:3px; color:rgba(255,255,255,.5); font-size:10px; font-weight:600; text-decoration:none; padding:4px 14px; }
+        .bottom-nav-item.active { color:var(--gold); }
+        .bottom-nav-item svg { width:20px; height:20px; }
+
+        /* ── RESPONSIVE ── */
+        @media(max-width:768px) {
+            .sidebar { position:fixed; top:0; left:0; bottom:0; z-index:50; transform:translateX(-100%); }
+            .sidebar.open { transform:translateX(0); }
+            .sidebar-overlay.open { display:block; }
+            .btn-menu { display:flex; }
+            .topbar { padding:10px 12px; }
+            .content { padding:14px 14px 80px; }
+
+            /* Hero compacto */
+            .hero-card { padding:16px; }
+            .hero-card-left h1 { font-size:17px; }
+            .hero-price { font-size:22px; }
+
+            /* Timeline — labels más cortos */
+            .timeline-step { padding:12px 4px; }
+            .timeline-dot { width:24px; height:24px; font-size:10px; }
+            .timeline-label { font-size:9px; }
+
+            /* Grid en columna */
+            .grid-2 { grid-template-columns:1fr; gap:10px; }
+
+            /* CTA en columna */
+            .cta-card { flex-direction:column; }
+            .btn-wa { width:100%; justify-content:center; }
+
+            .bottom-nav { display:block; }
+        }
+
+        @media(max-width:380px) {
+            .timeline-label { display:none; }
+            .timeline-dot { width:22px; height:22px; }
+        }
     </style>
 </head>
 <body>
-<div class="shell">
 
-    <aside class="sidebar">
+<div class="sidebar-overlay" id="overlay" onclick="cerrarMenu()"></div>
+
+<div class="shell">
+    <aside class="sidebar" id="sidebar">
         <div class="sidebar-logo">
             <div class="sidebar-logo-text">Sell<span>·U</span></div>
             <div class="sidebar-logo-sub">Portal del cliente</div>
@@ -131,6 +187,9 @@
 
     <div class="main">
         <div class="topbar">
+            <button class="btn-menu" onclick="abrirMenu()">
+                <svg viewBox="0 0 22 22" fill="none"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </button>
             <a href="{{ route('dashboard') }}" class="topbar-back">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
                 Mis trámites
@@ -143,42 +202,41 @@
             <div class="content-inner">
 
                 {{-- HERO --}}
+                @php $badge = $tramite->estado_badge; @endphp
                 <div class="hero-card">
-                    <div class="hero-card-left">
+                    <div class="hero-card-left" style="flex:1;min-width:0">
                         <h1>{{ $tramite->nombre_empresa ?? 'Empresa en proceso' }}</h1>
                         <p>{{ $tramite->tipo_entidad }} · {{ $tramite->jurisdiccion }} · Iniciado {{ $tramite->created_at->format('d/m/Y') }}</p>
-                        @php $badge = $tramite->estado_badge; @endphp
-                        <span class="badge badge-{{ $badge['color'] }}" style="margin-top:10px;display:inline-block">{{ $badge['label'] }}</span>
+                        <span class="badge badge-{{ $badge['color'] }}" style="margin-top:8px;display:inline-block">{{ $badge['label'] }}</span>
+                        <div class="hero-actions">
+                            <a href="{{ route('documentos.index', $tramite) }}" class="btn-docs">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 2h6l3 3v7H3V2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M9 2v3h3" stroke="currentColor" stroke-width="1.3"/></svg>
+                                Subir documentos
+                            </a>
+                        </div>
                     </div>
-                    <div class="hero-card-right">
-                        @if($tramite->precio_plan)
-                            <div class="hero-price">${{ number_format($tramite->precio_plan, 0) }} USD</div>
+                    @if($tramite->precio_plan)
+                        <div class="hero-card-right">
+                            <div class="hero-price">${{ number_format($tramite->precio_plan,0) }} USD</div>
                             <div class="hero-plan">{{ $tramite->plan_seleccionado }}</div>
-                        @endif
-                    </div>
-                    <a href="{{ route('documentos.index', $tramite) }}"
-   style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:10px 20px;background:var(--gold);color:var(--navy);border-radius:6px;font-size:13px;font-weight:700;font-family:Montserrat,sans-serif">
-    Subir documentos
-</a>
+                        </div>
+                    @endif
                 </div>
 
                 {{-- TIMELINE --}}
                 @php
                     $etapas = ['cuenta','pago','compania','gestion','contacto','completado'];
                     $etapaActual = array_search($tramite->etapa, $etapas);
-                    $labels = ['Cuenta','Pago','Compañía','Gestión','Contacto','Completado'];
+                    $labels = ['Cuenta','Pago','Compañía','Gestión','Contacto','Listo'];
                 @endphp
                 <div class="timeline">
                     @foreach($etapas as $i => $etapa)
-                        @php
-                            $isDone = $i < $etapaActual;
-                            $isActive = $i === $etapaActual;
-                        @endphp
+                        @php $isDone = $i < $etapaActual; $isActive = $i === $etapaActual; @endphp
                         <div class="timeline-step">
-                            <div class="timeline-dot {{ $isDone ? 'done' : ($isActive ? 'active' : '') }}">
-                                @if($isDone) ✓ @else {{ $i + 1 }} @endif
+                            <div class="timeline-dot {{ $isDone?'done':($isActive?'active':'') }}">
+                                @if($isDone) ✓ @else {{ $i+1 }} @endif
                             </div>
-                            <div class="timeline-label {{ $isDone ? 'done' : ($isActive ? 'active' : '') }}">
+                            <div class="timeline-label {{ $isDone?'done':($isActive?'active':'') }}">
                                 {{ $labels[$i] }}
                             </div>
                         </div>
@@ -190,20 +248,20 @@
                     <div class="card">
                         <div class="card-header"><h3>Datos de la empresa</h3></div>
                         <div class="card-body">
-                            <div class="info-row"><span class="info-label">Tipo de entidad</span><span class="info-value">{{ $tramite->tipo_entidad }}</span></div>
+                            <div class="info-row"><span class="info-label">Tipo</span><span class="info-value">{{ $tramite->tipo_entidad }}</span></div>
                             <div class="info-row"><span class="info-label">Jurisdicción</span><span class="info-value">{{ $tramite->jurisdiccion }}</span></div>
-                            <div class="info-row"><span class="info-label">Nombre</span><span class="info-value">{{ $tramite->nombre_empresa ?? '—' }}</span></div>
-                            <div class="info-row"><span class="info-label">Plan</span><span class="info-value">{{ $tramite->plan_seleccionado ?? '—' }}</span></div>
-                            <div class="info-row"><span class="info-label">Precio</span><span class="info-value">{{ $tramite->precio_plan ? '$'.number_format($tramite->precio_plan,0).' USD' : '—' }}</span></div>
+                            <div class="info-row"><span class="info-label">Nombre</span><span class="info-value">{{ $tramite->nombre_empresa??'—' }}</span></div>
+                            <div class="info-row"><span class="info-label">Plan</span><span class="info-value">{{ $tramite->plan_seleccionado??'—' }}</span></div>
+                            <div class="info-row"><span class="info-label">Precio</span><span class="info-value">{{ $tramite->precio_plan?'$'.number_format($tramite->precio_plan,0).' USD':'—' }}</span></div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header"><h3>Configuración legal</h3></div>
                         <div class="card-body">
-                            <div class="info-row"><span class="info-label">Tipo de gestión</span><span class="info-value">{{ $tramite->tipo_gestion ?? '—' }}</span></div>
-                            <div class="info-row"><span class="info-label">Dirección física</span><span class="info-value">{{ $tramite->direccion_fisica ?? '—' }}</span></div>
-                            <div class="info-row"><span class="info-label">Dirección de envío</span><span class="info-value">{{ $tramite->direccion_envio ?? '—' }}</span></div>
-                            <div class="info-row"><span class="info-label">Copia abogado</span><span class="info-value">{{ $tramite->copia_abogado ?? '—' }}</span></div>
+                            <div class="info-row"><span class="info-label">Gestión</span><span class="info-value">{{ $tramite->tipo_gestion??'—' }}</span></div>
+                            <div class="info-row"><span class="info-label">Dir. física</span><span class="info-value">{{ $tramite->direccion_fisica??'—' }}</span></div>
+                            <div class="info-row"><span class="info-label">Dir. envío</span><span class="info-value">{{ $tramite->direccion_envio??'—' }}</span></div>
+                            <div class="info-row"><span class="info-label">Copia abogado</span><span class="info-value">{{ $tramite->copia_abogado??'—' }}</span></div>
                         </div>
                     </div>
                 </div>
@@ -215,10 +273,10 @@
                         <div class="card-body">
                             @foreach($tramite->miembros as $miembro)
                                 <div class="member-item">
-                                    <div class="member-avatar">{{ strtoupper(substr($miembro->nombre, 0, 1)) }}{{ strtoupper(substr($miembro->apellido, 0, 1)) }}</div>
+                                    <div class="member-avatar">{{ strtoupper(substr($miembro->nombre,0,1)) }}{{ strtoupper(substr($miembro->apellido,0,1)) }}</div>
                                     <div>
                                         <div class="member-name">{{ $miembro->nombre }} {{ $miembro->apellido }}</div>
-                                        <div class="member-dir">{{ $miembro->direccion }} {{ $miembro->es_entidad ? '· Entidad comercial' : '' }}</div>
+                                        <div class="member-dir">{{ $miembro->direccion }} {{ $miembro->es_entidad?'· Entidad comercial':'' }}</div>
                                     </div>
                                 </div>
                             @endforeach
@@ -232,7 +290,7 @@
                         <h3>¿Tienes preguntas sobre tu trámite?</h3>
                         <p>Nuestro equipo responde en menos de 2 horas hábiles.</p>
                     </div>
-                    <a href="https://wa.me/15551234567?text=Hola, tengo preguntas sobre mi trámite: {{ $tramite->nombre_empresa ?? 'mi empresa' }}" target="_blank" class="btn-wa">
+                    <a href="https://wa.me/15551234567?text=Hola, tengo preguntas sobre mi trámite: {{ urlencode($tramite->nombre_empresa ?? 'mi empresa') }}" target="_blank" class="btn-wa">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.4 15.6 6.7 16 8 16c4.4 0 8-3.6 8-8s-3.6-8-8-8z"/></svg>
                         Contactar asesor
                     </a>
@@ -242,5 +300,41 @@
         </div>
     </div>
 </div>
+
+{{-- BOTTOM NAV MÓVIL --}}
+<nav class="bottom-nav">
+    <div class="bottom-nav-inner">
+        <a href="{{ route('dashboard') }}" class="bottom-nav-item">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Volver
+        </a>
+        <a href="{{ route('documentos.index', $tramite) }}" class="bottom-nav-item active">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M4 2h6l4 4v8H4V2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M10 2v4h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Documentos
+        </a>
+        <a href="{{ route('tramite.create') }}" class="bottom-nav-item">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Nueva
+        </a>
+        <form method="POST" action="{{ route('logout') }}" style="display:contents">
+            @csrf
+            <button type="submit" class="bottom-nav-item" style="background:none;border:none;cursor:pointer">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M6 3H3v10h3M10 5l3 3-3 3M13 8H6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Salir
+            </button>
+        </form>
+    </div>
+</nav>
+
+<script>
+function abrirMenu() {
+    document.getElementById('sidebar').classList.add('open');
+    document.getElementById('overlay').classList.add('open');
+}
+function cerrarMenu() {
+    document.getElementById('sidebar').classList.remove('open');
+    document.getElementById('overlay').classList.remove('open');
+}
+</script>
 </body>
 </html>
