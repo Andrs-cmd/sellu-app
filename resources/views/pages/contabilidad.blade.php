@@ -449,7 +449,7 @@
                     <a href="#contacto" class="btn btn-secondary btn-lg">Agenda una consulta gratuita</a>
                 </div>
                 <div class="hero-trust">
-                    <span style="display:inline-flex;align-items:center;gap:6px"><i data-lucide="shield-check" width="14" height="14"></i> Seguridad bancaria 256-bit</span>
+                    <span style="display:inline-flex;align-items:center;gap:6px"><i data-lucide="shield-check" width="14" height="14"></i></span>
                     <span class="hero-trust-dot"></span>
                     <span></span>
                     <span class="hero-trust-dot"></span>
