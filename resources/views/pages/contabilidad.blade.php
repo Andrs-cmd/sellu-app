@@ -3,7 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contabilidad — Sell·U</title>
+    <title>Contabilidad y Taxes para LLC en USA — Sell·U</title>
+
+    <!-- ── SEO PRIMARIO ── -->
+    <meta name="description" content="Contabilidad, bookkeeping e impuestos para tu LLC en Estados Unidos. Declaración anual, reportes financieros y asesoría tributaria para latinoamericanos. Precios claros y proceso digital.">
+    <meta name="keywords" content="contabilidad LLC USA, taxes para LLC, declaración de impuestos estados unidos, bookkeeping estados unidos, contador LLC, impuestos para extranjeros USA, asesoría fiscal LATAM">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sell·U LATAM LLC">
+    <link rel="canonical" href="https://sellu.co/contabilidad">
+
+    <!-- ── OPEN GRAPH ── -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sellu.co/contabilidad">
+    <meta property="og:title" content="Contabilidad y Taxes para LLC en USA — Sell·U">
+    <meta property="og:description" content="Contabilidad, bookkeeping e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. Proceso 100% digital.">
+    <meta property="og:image" content="https://sellu.co/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Sell·U LATAM">
+
+    <!-- ── TWITTER CARD ── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contabilidad y Taxes para LLC en USA — Sell·U">
+    <meta name="twitter:description" content="Contabilidad e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. 100% digital.">
+    <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
+
+    <!-- ── STRUCTURED DATA ── -->
+    @verbatim
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AccountingService",
+        "name": "Sell·U LATAM — Contabilidad y Taxes para LLC",
+        "description": "Servicio de contabilidad, bookkeeping y declaración de impuestos para LLC y corporaciones en Estados Unidos, especializado en emprendedores latinoamericanos.",
+        "url": "https://sellu.co/contabilidad",
+        "telephone": "+19542105405",
+        "email": "contacto@sellu.co",
+        "priceRange": "$$",
+        "areaServed": ["CO","MX","AR","CL","PE","VE","EC","US"],
+        "serviceType": ["Bookkeeping", "Tax Preparation", "Financial Reporting", "Tax Advisory"]
+    }
+    </script>
+    @endverbatim
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>

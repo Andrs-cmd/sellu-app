@@ -3,7 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vende en Amazon, TikTok Shop, Etsy o Walmart — Sell·U</title>
+    <title>Vende en Amazon, TikTok Shop, Etsy y Walmart desde LATAM — Sell·U</title>
+
+    <!-- ── SEO PRIMARIO ── -->
+    <meta name="description" content="Crea tu cuenta de vendedor en Amazon, TikTok Shop, Etsy o Walmart con tu LLC americana. Te ayudamos con el registro, configuración y gestión de tu tienda desde Latinoamérica.">
+    <meta name="keywords" content="vender en Amazon desde Latinoamérica, Amazon seller account LLC, TikTok Shop vendedor, Etsy vendedor LATAM, Walmart Marketplace, cuenta Amazon para extranjeros, ecommerce USA desde LATAM">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sell·U LATAM LLC">
+    <link rel="canonical" href="https://sellu.co/amazon">
+
+    <!-- ── OPEN GRAPH ── -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sellu.co/amazon">
+    <meta property="og:title" content="Vende en Amazon, TikTok Shop, Etsy y Walmart desde LATAM — Sell·U">
+    <meta property="og:description" content="Crea tu cuenta de vendedor en Amazon, TikTok Shop, Etsy o Walmart con tu LLC americana. Registro y configuración completa desde Latinoamérica.">
+    <meta property="og:image" content="https://sellu.co/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Sell·U LATAM">
+
+    <!-- ── TWITTER CARD ── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vende en Amazon, TikTok Shop, Etsy y Walmart desde LATAM — Sell·U">
+    <meta name="twitter:description" content="Crea tu cuenta de vendedor en Amazon, TikTok Shop, Etsy o Walmart con tu LLC americana.">
+    <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
+
+    <!-- ── STRUCTURED DATA ── -->
+    @verbatim
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Sell·U LATAM — Vender en Marketplaces de USA",
+        "description": "Servicio de apertura y gestión de cuentas de vendedor en Amazon, TikTok Shop, Etsy y Walmart para emprendedores latinoamericanos con LLC americana.",
+        "url": "https://sellu.co/amazon",
+        "telephone": "+19542105405",
+        "email": "contacto@sellu.co",
+        "provider": {
+            "@type": "Organization",
+            "name": "Sell·U LATAM LLC"
+        },
+        "areaServed": ["CO","MX","AR","CL","PE","VE","EC","US"],
+        "serviceType": ["Amazon Seller Account", "TikTok Shop Setup", "Etsy Store Setup", "Walmart Marketplace Setup"]
+    }
+    </script>
+    @endverbatim
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
