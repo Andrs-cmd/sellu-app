@@ -166,12 +166,18 @@
         .stat-label { font-size:13px; color:var(--muted); font-weight:500; line-height:1.4; }
 
         /* ── CLIENTES ── */
-        .clientes { background:var(--gray); padding:52px 5%; }
+        .clientes { background:var(--gray); padding:52px 0; }
         .clientes-header { display:flex; align-items:center; justify-content:center; margin-bottom:36px; }
         .clientes-badge { background:var(--navy); color:var(--white); font-family:'Montserrat',sans-serif; font-size:12px; font-weight:700; padding:6px 18px; border-radius:20px; text-transform:uppercase; letter-spacing:.06em; }
-        .clientes-grid { display:flex; align-items:center; justify-content:center; gap:48px; flex-wrap:wrap; }
-        .cliente-logo { font-family:'Montserrat',sans-serif; font-size:18px; font-weight:800; color:var(--navy); opacity:.45; transition:opacity .2s; letter-spacing:-1px; }
-        .cliente-logo:hover { opacity:1; }
+        .clientes-track-wrap { overflow:hidden; width:100%; }
+        .clientes-track { display:flex; align-items:center; gap:64px; width:max-content; animation: scroll-logos 28s linear infinite; }
+        .clientes-track:hover { animation-play-state:paused; }
+        .cliente-logo-img { height:48px; width:auto; object-fit:contain; opacity:.55; transition:opacity .2s; filter:grayscale(100%); flex-shrink:0; }
+        .cliente-logo-img:hover { opacity:1; filter:grayscale(0%); }
+        @keyframes scroll-logos {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
 
         /* ── CTA ASESOR ── */
         .cta-asesor { background:var(--navy); display:grid; grid-template-columns:1fr 1fr; min-height:280px; }
@@ -258,8 +264,7 @@
             .footer-top { grid-template-columns:1fr; gap:32px; }
             .mision-inner { grid-template-columns:1fr; }
             .mision-img { display:none; }
-            .clientes-grid { gap:24px; }
-            .cliente-logo { font-size:14px; }
+            .cliente-logo-img { height:36px; }
         }
 
         @media(max-width:600px) {
@@ -388,12 +393,26 @@
     <div class="clientes-header">
         <span class="clientes-badge">↑ Algunos de nuestros clientes</span>
     </div>
-    <div class="clientes-grid">
-        <span class="cliente-logo">HAIKO NATURAL</span>
-        <span class="cliente-logo">BUDDY BEAUTY</span>
-        <span class="cliente-logo">Cinco Jotos</span>
-        <span class="cliente-logo">YAX SOCKS</span>
-        <span class="cliente-logo">Nutrelle.Co</span>
+    <div class="clientes-track-wrap">
+        <div class="clientes-track">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Marathon_-_Sell-U.png?v=1747491101" alt="Marathon">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Differenza_-_Sell-U.png?v=1747491101" alt="Differenza">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Sense_-_Sell-U.png?v=1747491101" alt="Sense">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Haiko_-_Sell-U.png?v=1747491101" alt="Haiko Natural">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Buddy_Beauty_-_Sell-U.png?v=1747491101" alt="Buddy Beauty">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/nutrelle.png?v=1753916443" alt="Nutrelle">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/LOGO_YAXSOCKS-actual.png?v=1753915977" alt="Yax Socks">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_D_Casa_-_Sell-U.png?v=1747491101" alt="D Casa">
+            <!-- duplicado para loop continuo -->
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Marathon_-_Sell-U.png?v=1747491101" alt="Marathon">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Differenza_-_Sell-U.png?v=1747491101" alt="Differenza">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Sense_-_Sell-U.png?v=1747491101" alt="Sense">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Haiko_-_Sell-U.png?v=1747491101" alt="Haiko Natural">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Buddy_Beauty_-_Sell-U.png?v=1747491101" alt="Buddy Beauty">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/nutrelle.png?v=1753916443" alt="Nutrelle">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/LOGO_YAXSOCKS-actual.png?v=1753915977" alt="Yax Socks">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_D_Casa_-_Sell-U.png?v=1747491101" alt="D Casa">
+        </div>
     </div>
 </section>
 
