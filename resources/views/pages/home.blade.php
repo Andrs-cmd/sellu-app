@@ -215,8 +215,7 @@
         .blog-card { background:var(--white); border-radius:10px; overflow:hidden; border:1px solid var(--gray2); transition:transform .2s; display:block; }
         .blog-card:hover { transform:translateY(-3px); }
         .blog-thumb { height:180px; display:flex; align-items:flex-end; padding:16px; position:relative; overflow:hidden; }
-        .blog-thumb-bg { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
-        .blog-thumb-bg svg { width:64px; height:64px; opacity:.12; color:white; }
+        .blog-thumb img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
         .blog-date { font-size:10px; font-weight:600; color:rgba(255,255,255,.6); text-transform:uppercase; letter-spacing:.08em; position:relative; z-index:1; }
         .blog-body { padding:20px; }
         .blog-cat { font-size:10px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; display:block; }
@@ -479,9 +478,9 @@
         </div>
         <div class="blog-grid">
             <a href="#" class="blog-card" aria-label="Artículo sobre requisitos para abrir empresa en USA">
-                <div class="blog-thumb" style="background:#1a2d5a">
-                    <div class="blog-thumb-bg" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><rect x="8" y="12" width="48" height="40" rx="4" stroke="white" stroke-width="3"/><path d="M20 28h24M20 36h16" stroke="white" stroke-width="3" stroke-linecap="round"/></svg></div>
-                    <span class="blog-date">Febrero 18, 2025 · 5 min lectura</span>
+                <div class="blog-thumb">
+                    <img src="https://sellu.co/cdn/shop/articles/crea_empresa_en_estados_unidos.jpg?v=1738199778&width=900" alt="Crear empresa en Estados Unidos">
+                    <span class="blog-date" style="position:relative;z-index:1;">Febrero 18, 2025 · 5 min lectura</span>
                 </div>
                 <div class="blog-body">
                     <span class="blog-cat">Empresa en USA</span>
@@ -490,9 +489,9 @@
                 </div>
             </a>
             <a href="#" class="blog-card" aria-label="Artículo sobre registro de marca en USA">
-                <div class="blog-thumb" style="background:#0f3d2e">
-                    <div class="blog-thumb-bg" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="20" stroke="white" stroke-width="3"/><path d="M24 32l6 6 12-12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-                    <span class="blog-date">Septiembre 27, 2025 · 5 min lectura</span>
+                <div class="blog-thumb">
+                    <img src="https://sellu.co/cdn/shop/articles/Registro_de_marca_0e55d7a4-c165-45d9-b0a1-ef77ee58c03c.jpg?v=1738477566&width=900" alt="Registro de marca en USA">
+                    <span class="blog-date" style="position:relative;z-index:1;">Septiembre 27, 2025 · 5 min lectura</span>
                 </div>
                 <div class="blog-body">
                     <span class="blog-cat">Registro de marca</span>
@@ -501,9 +500,9 @@
                 </div>
             </a>
             <a href="#" class="blog-card" aria-label="Artículo sobre registro FDA">
-                <div class="blog-thumb" style="background:#3d1a0f">
-                    <div class="blog-thumb-bg" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M12 44l10-20 10 12 8-16 12 24" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-                    <span class="blog-date">Octubre 13, 2025 · 5 min lectura</span>
+                <div class="blog-thumb">
+                    <img src="https://sellu.co/cdn/shop/articles/FDA_Blog.jpg?v=1738197116&width=900" alt="Registro FDA para alimentos">
+                    <span class="blog-date" style="position:relative;z-index:1;">Octubre 13, 2025 · 5 min lectura</span>
                 </div>
                 <div class="blog-body">
                     <span class="blog-cat">FDA</span>
