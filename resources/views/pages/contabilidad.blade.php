@@ -181,9 +181,9 @@
     .section-inverse .eyebrow { color: var(--accent-500); }
 
     /* ── SECTION HEAD ── */
-    .section-head { max-width: 720px; margin-bottom: 56px; }
+    .section-head { max-width: 1220px; margin-bottom: 56px; text-align: center;}
     .section-head h2 { margin: 0 0 16px; text-wrap: balance; }
-    .section-head p { font-size: 18px; line-height: 28px; color: var(--fg-secondary); max-width: 640px; }
+    .section-head p { font-size: 18px; line-height: 28px; color: var(--fg-secondary); max-width: 1240px; }
 
     /* ── BUTTONS ── */
     .btn {
@@ -512,7 +512,7 @@ Tus reportes contables al día · sin pendientes críticos                      
 <section class="section-pad" id="problema">
     <div class="container">
         <div class="section-head reveal">
-            <span class="eyebrow">El problema</span>
+            <!--<span class="eyebrow">El problema</span>-->
             <h2>Llevar la contabilidad de tu LLC en EE.UU. desde Latinoamérica debería ser claro, no complicado.</h2>
             <p>El IRS exige orden desde el día uno, con o sin ingresos. En Sell-U te damos la estructura y el acompañamiento para cumplir sin complicarte.</p>
         </div>
