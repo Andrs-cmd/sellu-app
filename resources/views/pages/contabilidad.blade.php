@@ -439,10 +439,10 @@
                 </h1>
                 <p class="hero-sub">Ten el control contable de tu LLC en EE.UU. en todo momento — con acompañamiento experto, sin salir de Latinoamérica.</p>
                 <div class="bullet-row">
-                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Libros al día, mes a mes</span>
-                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Sin cargos ocultos</span>
-                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Contador dedicado en español</span>
-                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Especialistas en LLC de dueños extranjeros</span>
+                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Contabilidad siempre al día</span>
+                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Cumplimiento fiscal</span>
+                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Acompañamiento experto</span>
+                    <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Especialistas en LLC</span>
                 </div>
                 <div class="cta-pair">
                     <a href="#precios" class="btn btn-primary btn-lg">Ver paquetes de contabilidad →</a>
