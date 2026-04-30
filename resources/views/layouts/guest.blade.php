@@ -8,8 +8,8 @@
         <title>{{ config('app.name', 'Sell·U') }}</title>
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196">
-        <link rel="apple-touch-icon" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196">
+        <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
+        <link rel="apple-touch-icon" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
