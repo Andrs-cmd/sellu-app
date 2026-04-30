@@ -180,9 +180,9 @@
         }
 
         /* ── CTA ASESOR ── */
-        .cta-asesor { position:relative; min-height:280px; background:url('https://cdn.shopify.com/s/files/1/0900/0674/9556/files/vende-en-amazon-eeuu-sell-u-banner-_1.webp?v=1761156168') center/cover no-repeat; display:flex; align-items:center; justify-content:center; }
-        .cta-asesor::after { content:''; position:absolute; inset:0; background:rgba(13,27,62,.65); }
-        .cta-asesor-content { position:relative; z-index:1; padding:56px 60px; display:flex; flex-direction:column; align-items:center; text-align:center; max-width:700px; }
+        .cta-asesor { display:grid; grid-template-columns:1fr 1fr; min-height:280px; }
+        .cta-asesor-img { background:url('https://cdn.shopify.com/s/files/1/0900/0674/9556/files/vende-en-amazon-eeuu-sell-u-banner-_1.webp?v=1761156168') center/cover no-repeat; min-height:280px; }
+        .cta-asesor-content { background:var(--navy); padding:56px 60px; display:flex; flex-direction:column; justify-content:center; }
         .cta-asesor h2 { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:900; color:var(--white); line-height:1.2; margin-bottom:16px; text-transform:uppercase; }
         .cta-asesor p { font-size:15px; color:rgba(255,255,255,.6); line-height:1.65; margin-bottom:32px; }
         .cta-btns { display:flex; gap:12px; flex-wrap:wrap; }
@@ -256,6 +256,8 @@
             .stat-item:nth-child(odd) { border-right:1px solid var(--gray2); }
             .stat-item:last-child { border-bottom:none; }
             .cta-asesor { grid-template-columns:1fr; }
+            .cta-asesor { grid-template-columns:1fr; }
+            .cta-asesor-img { min-height:200px; }
             .cta-asesor-content { padding:36px 24px; }
             .cta-asesor h2 { font-size:22px; }
             .blog-grid { grid-template-columns:1fr; }
@@ -416,6 +418,7 @@
 
 <!-- ── CTA ASESOR ── -->
 <section id="asesor" class="cta-asesor" aria-label="Contacta un asesor">
+    <div class="cta-asesor-img" aria-hidden="true"></div>
     <div class="cta-asesor-content">
         <h2>¿Quieres hablar con un asesor?</h2>
         <p>Contáctanos por WhatsApp y recibe atención personalizada de nuestros expertos en menos de 2 horas hábiles.</p>
