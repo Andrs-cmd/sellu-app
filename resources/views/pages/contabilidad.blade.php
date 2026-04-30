@@ -519,13 +519,13 @@ Tus reportes contables al día · sin pendientes críticos                      
         <div class="grid-3 reveal">
             <div class="card">
                 <div class="card-icon danger"><i data-lucide="banknote" width="22" height="22"></i></div>
-                <div class="card-title">Multas de USD 25,000</div>
-                <p class="card-body">El Form 5472 mal presentado o no presentado activa una multa mínima de USD 25,000 — por cada año.</p>
+                <div class="card-title">Riesgo de multas</div>
+                <p class="card-body">No llevar tu contabilidad correctamente puede generar multas significativas ante el IRS.</p>
             </div>
             <div class="card">
                 <div class="card-icon"><i data-lucide="search" width="22" height="22"></i></div>
                 <div class="card-title">Auditorías del IRS</div>
-                <p class="card-body">Una contabilidad incompleta enciende banderas. Operar como dueño extranjero exige libros impecables.</p>
+                <p class="card-body">Una contabilidad desordenada aumenta el riesgo de revisión. Mantener tus libros claros reduce fricciones con el IRS.</p>
             </div>
             <div class="card">
                 <div class="card-icon"><i data-lucide="trending-down" width="22" height="22"></i></div>
@@ -541,8 +541,8 @@ Tus reportes contables al día · sin pendientes críticos                      
             </div>
             <div class="card">
                 <div class="card-icon danger"><i data-lucide="alert-triangle" width="22" height="22"></i></div>
-                <div class="card-title">Riesgo de cumplimiento</div>
-                <p class="card-body">Reportes BOI, Form 1120, declaraciones estatales — un descuido y la LLC pierde good standing.</p>
+                <div class="card-title">Problemas legales</div>
+                <p class="card-body">Fechas y obligaciones mal gestionadas pueden afectar el estado de tu LLC. Mantener todo al día evita problemas.</p>
             </div>
         </div>
         <div class="pull-quote reveal">
