@@ -17,7 +17,10 @@
     <meta property="og:url" content="https://sellu.co/contabilidad">
     <meta property="og:title" content="Contabilidad para LLC No Residente USA — Sell·U">
     <meta property="og:description" content="Contabilidad, bookkeeping e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. Proceso 100% digital.">
-    <meta property="og:image" content="https://sellu.co/og-image.jpg">
+    <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Sell·U — Contabilidad para LLC No Residente USA">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="Sell·U LATAM">
 
@@ -25,7 +28,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contabilidad para LLC No Residente USA — Sell·U">
     <meta name="twitter:description" content="Contabilidad e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. 100% digital.">
-    <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
+    <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
 
     <!-- ── STRUCTURED DATA ── -->
     @verbatim
@@ -36,11 +39,47 @@
         "name": "Sell·U LATAM — Contabilidad y Taxes para LLC",
         "description": "Servicio de contabilidad, bookkeeping y declaración de impuestos para LLC y corporaciones en Estados Unidos, especializado en emprendedores latinoamericanos.",
         "url": "https://sellu.co/contabilidad",
+        "logo": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196",
+        "image": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008",
         "telephone": "+19542105405",
         "email": "contacto@sellu.co",
         "priceRange": "$$",
-        "areaServed": ["CO","MX","AR","CL","PE","VE","EC","US"],
-        "serviceType": ["Bookkeeping", "Tax Preparation", "Financial Reporting", "Tax Advisory"]
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Credit Card, Bank Transfer",
+        "inLanguage": "es",
+        "availableLanguage": [{"@type": "Language", "name": "Spanish"}],
+        "areaServed": [
+            {"@type": "Country", "name": "Colombia"},
+            {"@type": "Country", "name": "Mexico"},
+            {"@type": "Country", "name": "Argentina"},
+            {"@type": "Country", "name": "Chile"},
+            {"@type": "Country", "name": "Peru"},
+            {"@type": "Country", "name": "Venezuela"},
+            {"@type": "Country", "name": "Ecuador"},
+            {"@type": "Country", "name": "United States"}
+        ],
+        "serviceType": ["Bookkeeping", "Tax Preparation", "Financial Reporting", "Tax Advisory", "LLC Accounting"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Planes de Contabilidad para LLC",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {"@type": "Service", "name": "Starter — Bookkeeping básico"},
+                    "price": "179",
+                    "priceCurrency": "USD",
+                    "priceSpecification": {"@type": "UnitPriceSpecification", "unitText": "MONTH"}
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {"@type": "Service", "name": "Pro — Contabilidad completa con taxes"},
+                    "price": "299",
+                    "priceCurrency": "USD",
+                    "priceSpecification": {"@type": "UnitPriceSpecification", "unitText": "MONTH"}
+                }
+            ]
+        },
+        "sameAs": ["https://sellu.co"]
     }
     </script>
     @endverbatim
@@ -93,7 +132,7 @@
         --info-700:    #1d4f8a;
         --info-500:    #2f7dd6;
         --info-100:    #e3eefc;
-        --bg-page:     var(--paper);
+        --bg-page:     #EEF1F8;
         --fg-primary:  var(--navy-900);
         --fg-secondary: var(--ink-700);
         --fg-tertiary:  var(--ink-500);
