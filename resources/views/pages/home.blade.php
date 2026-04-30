@@ -181,8 +181,7 @@
 
         /* ── CTA ASESOR ── */
         .cta-asesor { background:var(--navy); display:grid; grid-template-columns:1fr 1fr; min-height:280px; }
-        .cta-asesor-img { background:var(--navy2); min-height:280px; display:flex; align-items:center; justify-content:center; }
-        .cta-asesor-img svg { width:80px; height:80px; opacity:.15; color:white; }
+        .cta-asesor-img { min-height:280px; background:url('https://cdn.shopify.com/s/files/1/0900/0674/9556/files/vende-en-amazon-eeuu-sell-u-banner-_1.webp?v=1761156168') center/cover no-repeat; }
         .cta-asesor-content { padding:56px 60px; display:flex; flex-direction:column; justify-content:center; }
         .cta-asesor h2 { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:900; color:var(--white); line-height:1.2; margin-bottom:16px; text-transform:uppercase; }
         .cta-asesor p { font-size:15px; color:rgba(255,255,255,.6); line-height:1.65; margin-bottom:32px; }
@@ -418,9 +417,7 @@
 
 <!-- ── CTA ASESOR ── -->
 <section id="asesor" class="cta-asesor" aria-label="Contacta un asesor">
-    <div class="cta-asesor-img" aria-hidden="true">
-        <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="16" stroke="white" stroke-width="2"/><path d="M14 72c0-14.4 11.6-26 26-26s26 11.6 26 26" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
-    </div>
+    <div class="cta-asesor-img" aria-hidden="true"></div>
     <div class="cta-asesor-content">
         <h2>¿Quieres hablar con un asesor?</h2>
         <p>Contáctanos por WhatsApp y recibe atención personalizada de nuestros expertos en menos de 2 horas hábiles.</p>
