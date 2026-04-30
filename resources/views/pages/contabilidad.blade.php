@@ -229,7 +229,7 @@
     .bullet-row { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 28px 0 32px; }
     .bullet { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--fg-secondary); font-weight: 500; }
     .bullet i { color: var(--success-500); }
-    .cta-pair { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .cta-pair { display: flex; gap: 12px; align-items: center; flex-wrap: nowrap; }
     .hero-trust { margin-top: 28px; display: flex; align-items: center; gap: 14px; font-size: 13px; color: var(--fg-tertiary); flex-wrap: wrap; }
     .hero-trust-dot { width: 4px; height: 4px; background: var(--ink-300); border-radius: 50%; }
 
