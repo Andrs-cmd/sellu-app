@@ -168,7 +168,7 @@
 
     /* ── LAYOUT ── */
     .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
-    .section-pad { padding: 96px 0; }
+    .section-pad { padding: 46px 0; }
     .section-band { background: var(--paper-2); }
     .section-inverse { background: var(--navy-900); color: var(--paper); }
 
