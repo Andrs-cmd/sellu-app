@@ -736,7 +736,7 @@ Tus reportes contables al día · sin pendientes críticos                      
                 <span class="eyebrow">Por qué nos eligen</span>
                 <h2>Por qué emprendedores latinos eligen Sell-U.</h2>
                 <p>Cinco razones concretas — no promesas vacías ni listas de adjetivos.</p>
-                <a href="#contacto" class="btn btn-primary">Habla con un contador →</a>
+                <a href="#contacto" class="btn btn-primary">Habla con un asesor →</a>
             </div>
             <div>
                 <div class="benefit-row">
@@ -878,8 +878,8 @@ Tus reportes contables al día · sin pendientes críticos                      
             <div class="faq-sticky">
                 <span class="eyebrow">Preguntas frecuentes</span>
                 <h2>Lo que importa, sin rodeos.</h2>
-                <p>¿No ves tu pregunta? Escríbenos y un contador te responde en menos de 24 horas hábiles.</p>
-                <a href="#contacto" class="btn btn-secondary">Habla con un contador</a>
+                <p>¿No ves tu pregunta? Escríbenos y un asesor te responde en menos de 24 horas hábiles.</p>
+                <a href="#contacto" class="btn btn-primary">Habla con un asesor</a>
             </div>
             <div class="faq-list">
                 <div class="faq-item">
