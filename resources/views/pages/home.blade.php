@@ -150,8 +150,8 @@
         .mision-tag { font-size:11px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:14px; display:block; }
         .mision h2 { font-family:'Montserrat',sans-serif; font-size:24px; font-weight:800; color:var(--navy); line-height:1.3; margin-bottom:16px; text-transform:uppercase; }
         .mision p { font-size:15px; color:var(--muted); line-height:1.75; }
-        .mision-img { width:180px; height:180px; border-radius:50%; overflow:hidden; flex-shrink:0; background:var(--navy2); display:flex; align-items:center; justify-content:center; }
-        .mision-img svg { width:80px; height:80px; opacity:.2; }
+        .mision-img { width:260px; height:260px; border-radius:16px; overflow:hidden; flex-shrink:0; }
+        .mision-img img { width:100%; height:100%; object-fit:cover; }
 
         /* ── STATS ── */
         .stats { background:var(--white); padding:56px 5%; border-top:1px solid var(--gray2); border-bottom:1px solid var(--gray2); }
@@ -354,8 +354,8 @@
             <h2>Cada empresa que ayudamos a crecer es una nueva historia de éxito.</h2>
             <p>En Sell·U no solo ofrecemos servicios: vivimos la emoción de convertir ideas en resultados. Cada estrategia y cada empresa que ayudamos a crecer refleja nuestro compromiso. Porque cuando tú triunfas, nosotros también lo hacemos.</p>
         </div>
-        <div class="mision-img" aria-hidden="true">
-            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="14" stroke="white" stroke-width="2"/><path d="M16 68c0-13.3 10.7-24 24-24s24 10.7 24 24" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="mision-img">
+            <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/asesoria-sell-u1.png?v=1761154374" alt="Asesoría Sell·U">
         </div>
     </div>
 </section>
