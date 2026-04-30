@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196">
+    <link rel="apple-touch-icon" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196">
 
     <!-- ── SEO PRIMARIO ── -->
     <title>Sell·U — Constituye tu LLC en USA desde Latinoamérica | Empresas en Estados Unidos</title>
