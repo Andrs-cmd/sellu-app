@@ -219,7 +219,7 @@
     .hero-h1 {
         font-family: var(--font-display); font-size: 64px; line-height: 68px;
         letter-spacing: -0.025em; font-weight: 600; color: var(--navy-900);
-        margin: 20px 0 24px; text-wrap: balance;
+        margin: 0px 0 24px; text-wrap: balance;
     }
     .hero-h1 .highlight {
         background: linear-gradient(180deg, transparent 60%, var(--accent-300) 60%);
@@ -230,6 +230,11 @@
     .bullet { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--fg-secondary); font-weight: 500; }
     .bullet i { color: var(--success-500); }
     .cta-pair { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .cta-pair .btn { flex: 1 1 auto; text-align: center; justify-content: center; white-space: nowrap; }
+    @media (max-width: 480px) {
+        .cta-pair { flex-direction: column; }
+        .cta-pair .btn { width: 100%; }
+    }
     .hero-trust { margin-top: 28px; display: flex; align-items: center; gap: 14px; font-size: 13px; color: var(--fg-tertiary); flex-wrap: wrap; }
     .hero-trust-dot { width: 4px; height: 4px; background: var(--ink-300); border-radius: 50%; }
 
@@ -445,15 +450,15 @@
                     <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Especialistas en LLC de dueños extranjeros</span>
                 </div>
                 <div class="cta-pair">
-                    <a href="#precios" class="btn btn-primary btn-lg">Ver paquetes de contabilidad →</a>
+                    <a href="#precios" class="btn btn-primary btn-lg">Ver paquetes →</a>
                     <a href="#contacto" class="btn btn-secondary btn-lg">Agenda una consulta gratuita</a>
                 </div>
-                <div class="hero-trust">
+                <!--<div class="hero-trust">
                     <span style="display:inline-flex;align-items:center;gap:6px"><i data-lucide="shield-check" width="14" height="14"></i> Seguridad bancaria 256-bit</span>
                     <span class="hero-trust-dot"></span>
                     <span>+1,200 LLCs atendidas</span>
                     <span class="hero-trust-dot"></span>
-                    <span>4.9 / 5 rating</span>
+                    <span>4.9 / 5 rating</span>-->
                 </div>
             </div>
 
