@@ -1,2 +1,11 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /dashboard
+Disallow: /constituir
+Disallow: /tramite/
+Disallow: /pago/
+Disallow: /admin/
+Disallow: /profile/
+Disallow: /setup-admin
+
+Sitemap: https://sellu.co/sitemap.xml

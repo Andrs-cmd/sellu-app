@@ -3,7 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro FDA de Alimentos — Sell·U</title>
+    <title>Registro FDA de Alimentos y Cosméticos en USA — Sell·U</title>
+
+    <!-- ── SEO PRIMARIO ── -->
+    <meta name="description" content="Registra tus productos alimenticios, cosméticos o suplementos ante la FDA de Estados Unidos. Cumplimiento sanitario y regulatorio para importadores y exportadores latinoamericanos.">
+    <meta name="keywords" content="registro FDA USA, registro sanitario estados unidos, FDA alimentos, FDA cosméticos, importar alimentos USA, cumplimiento FDA Latinoamérica, FDA bioterrorism registration, FSVP agente">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sell·U LATAM LLC">
+    <link rel="canonical" href="https://sellu.co/sanitario">
+
+    <!-- ── OPEN GRAPH ── -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sellu.co/sanitario">
+    <meta property="og:title" content="Registro FDA de Alimentos y Cosméticos en USA — Sell·U">
+    <meta property="og:description" content="Registra tus productos ante la FDA de Estados Unidos. Asesoría en cumplimiento sanitario y regulatorio para importadores y exportadores de LATAM.">
+    <meta property="og:image" content="https://sellu.co/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Sell·U LATAM">
+
+    <!-- ── TWITTER CARD ── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Registro FDA de Alimentos y Cosméticos en USA — Sell·U">
+    <meta name="twitter:description" content="Registra tus productos ante la FDA de Estados Unidos. Cumplimiento sanitario para importadores y exportadores de LATAM.">
+    <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
+
+    <!-- ── STRUCTURED DATA ── -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Sell·U LATAM — Registro FDA y Cumplimiento Sanitario",
+        "description": "Servicio de registro ante la FDA de Estados Unidos para alimentos, cosméticos y suplementos. Asesoría en cumplimiento regulatorio para importadores y exportadores latinoamericanos.",
+        "url": "https://sellu.co/sanitario",
+        "telephone": "+19542105405",
+        "email": "contacto@sellu.co",
+        "priceRange": "$$",
+        "areaServed": ["CO","MX","AR","CL","PE","VE","EC","US"],
+        "serviceType": ["FDA Food Registration", "FDA Cosmetic Registration", "FSVP Agent", "Regulatory Compliance", "Import Compliance USA"]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>

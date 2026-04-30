@@ -3,7 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abre tu Empresa en EE.UU. — Sell·U</title>
+    <title>Abre tu Empresa en EE.UU. sin ser Residente — Sell·U</title>
+
+    <!-- ── SEO PRIMARIO ── -->
+    <meta name="description" content="Constituye tu LLC o corporación en Estados Unidos sin ser residente. Agente registrado, EIN y Operating Agreement incluidos. Desde $349 USD. 100% online desde LATAM.">
+    <meta name="keywords" content="abrir empresa en USA, LLC para extranjeros, cómo abrir LLC en estados unidos, empresa en florida, incorporar empresa USA, LLC sin residencia, constituir empresa americana">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sell·U LATAM LLC">
+    <link rel="canonical" href="https://sellu.co/abre-empresa">
+
+    <!-- ── OPEN GRAPH ── -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sellu.co/abre-empresa">
+    <meta property="og:title" content="Abre tu Empresa en EE.UU. sin ser Residente — Sell·U">
+    <meta property="og:description" content="Constituye tu LLC en Estados Unidos desde LATAM. Agente registrado, EIN y Operating Agreement incluidos. Desde $349 USD. Proceso 100% online.">
+    <meta property="og:image" content="https://sellu.co/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Sell·U LATAM">
+
+    <!-- ── TWITTER CARD ── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abre tu Empresa en EE.UU. sin ser Residente — Sell·U">
+    <meta name="twitter:description" content="Constituye tu LLC en Estados Unidos desde LATAM. Desde $349 USD. Proceso 100% online.">
+    <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
+
+    <!-- ── STRUCTURED DATA ── -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Sell·U LATAM LLC — Constitución de Empresas en USA",
+        "description": "Servicio de constitución de LLC y corporaciones en Estados Unidos para emprendedores latinoamericanos no residentes. Incluye agente registrado, EIN y Operating Agreement.",
+        "url": "https://sellu.co/abre-empresa",
+        "telephone": "+19542105405",
+        "email": "contacto@sellu.co",
+        "priceRange": "$$",
+        "areaServed": ["CO","MX","AR","CL","PE","VE","EC","US"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Planes de constitución de empresa en USA",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "name": "Plan LLC Básico",
+                    "description": "Constitución de LLC con agente registrado, EIN y Operating Agreement",
+                    "priceCurrency": "USD",
+                    "price": "349"
+                }
+            ]
+        }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>

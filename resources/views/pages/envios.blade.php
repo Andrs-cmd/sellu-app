@@ -3,7 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envíos y Logística — Sell·U</title>
+    <title>Envíos y Logística Internacional para tu LLC — Sell·U</title>
+
+    <!-- ── SEO PRIMARIO ── -->
+    <meta name="description" content="Soluciones de envío y logística para tu negocio en EE.UU. desde Latinoamérica. Dirección física en USA, recepción y reenvío de paquetes, fulfillment e importaciones internacionales.">
+    <meta name="keywords" content="envíos desde USA a Latinoamérica, logística para LLC, dirección física USA, recepción de paquetes USA, fulfillment LATAM, envíos internacionales, importaciones a USA, warehousing USA">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sell·U LATAM LLC">
+    <link rel="canonical" href="https://sellu.co/envios">
+
+    <!-- ── OPEN GRAPH ── -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sellu.co/envios">
+    <meta property="og:title" content="Envíos y Logística Internacional para tu LLC — Sell·U">
+    <meta property="og:description" content="Dirección física en USA, recepción de paquetes, reenvíos y fulfillment para tu negocio en EE.UU. desde Latinoamérica.">
+    <meta property="og:image" content="https://sellu.co/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Sell·U LATAM">
+
+    <!-- ── TWITTER CARD ── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Envíos y Logística Internacional para tu LLC — Sell·U">
+    <meta name="twitter:description" content="Dirección física en USA, recepción de paquetes, reenvíos y fulfillment para tu negocio desde LATAM.">
+    <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
+
+    <!-- ── STRUCTURED DATA ── -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Sell·U LATAM — Envíos y Logística Internacional",
+        "description": "Servicios de logística, dirección física en USA, recepción y reenvío de paquetes, y fulfillment para empresas latinoamericanas con operaciones en Estados Unidos.",
+        "url": "https://sellu.co/envios",
+        "telephone": "+19542105405",
+        "email": "contacto@sellu.co",
+        "provider": {
+            "@type": "Organization",
+            "name": "Sell·U LATAM LLC"
+        },
+        "areaServed": ["CO","MX","AR","CL","PE","VE","EC","US"],
+        "serviceType": ["Package Forwarding", "Virtual Address USA", "International Shipping", "Fulfillment Services"]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>

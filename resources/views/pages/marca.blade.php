@@ -3,7 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Marca ante la USPTO — Sell·U</title>
+    <title>Registro de Marca ante la USPTO desde LATAM — Sell·U</title>
+
+    <!-- ── SEO PRIMARIO ── -->
+    <meta name="description" content="Registra tu marca en Estados Unidos ante la USPTO. Protege tu nombre comercial, logo y slogan a nivel federal. Asesoría completa para latinoamericanos. Proceso rápido y seguro.">
+    <meta name="keywords" content="registro de marca USA, USPTO trademark, registrar marca estados unidos, trademark registration LATAM, proteger marca en USA, registro marca para latinoamericanos, propiedad intelectual USA">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sell·U LATAM LLC">
+    <link rel="canonical" href="https://sellu.co/marca">
+
+    <!-- ── OPEN GRAPH ── -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sellu.co/marca">
+    <meta property="og:title" content="Registro de Marca ante la USPTO desde LATAM — Sell·U">
+    <meta property="og:description" content="Registra tu marca en Estados Unidos ante la USPTO. Protege tu nombre, logo y slogan a nivel federal. Asesoría para latinoamericanos.">
+    <meta property="og:image" content="https://sellu.co/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Sell·U LATAM">
+
+    <!-- ── TWITTER CARD ── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Registro de Marca ante la USPTO desde LATAM — Sell·U">
+    <meta name="twitter:description" content="Registra tu marca en Estados Unidos ante la USPTO. Protege tu nombre y logo a nivel federal.">
+    <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
+
+    <!-- ── STRUCTURED DATA ── -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Sell·U LATAM — Registro de Marca USPTO",
+        "description": "Servicio de registro de marcas comerciales ante la USPTO de Estados Unidos para emprendedores y empresas latinoamericanas. Protección de nombre comercial, logo y slogan.",
+        "url": "https://sellu.co/marca",
+        "telephone": "+19542105405",
+        "email": "contacto@sellu.co",
+        "priceRange": "$$",
+        "areaServed": ["CO","MX","AR","CL","PE","VE","EC","US"],
+        "serviceType": ["Trademark Registration", "USPTO Filing", "Intellectual Property", "Brand Protection"]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
