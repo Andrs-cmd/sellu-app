@@ -186,9 +186,9 @@
         .cta-asesor h2 { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:900; color:var(--white); line-height:1.2; margin-bottom:16px; text-transform:uppercase; }
         .cta-asesor p { font-size:15px; color:rgba(255,255,255,.6); line-height:1.65; margin-bottom:32px; }
         .cta-btns { display:flex; gap:12px; flex-wrap:wrap; }
-        .btn-whatsapp { display:inline-flex; align-items:center; gap:8px; background:#25D366; color:var(--white); padding:12px 24px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; transition:background .2s; }
-        .btn-whatsapp:hover { background:#1ebe5b; }
-        .btn-messenger { display:inline-flex; align-items:center; gap:8px; background:transparent; color:var(--white); padding:11px 22px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; border:2px solid rgba(255,255,255,.3); transition:border-color .2s; }
+        .btn-whatsapp { display:inline-flex; align-items:center; gap:8px; background:var(--gold); color:var(--navy); padding:12px 24px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; transition:background .2s; }
+        .btn-whatsapp:hover { background:var(--gold2); }
+        .btn-messenger { display:inline-flex; align-items:center; gap:8px; background:transparent; color:var(--white); padding:11px 22px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; border:2px solid rgba(255,255,255,.5); transition:border-color .2s; }
         .btn-messenger:hover { border-color:var(--white); }
 
         /* ── FAQ ── */
@@ -420,14 +420,13 @@
     <div class="cta-asesor-img" aria-hidden="true"></div>
     <div class="cta-asesor-content">
         <h2>¿Quieres hablar con un asesor?</h2>
-        <p>Contáctanos por WhatsApp y recibe atención personalizada de nuestros expertos en menos de 2 horas hábiles.</p>
+        <p>Contáctanos por WhatsApp o Messenger y recibe atención personalizada de nuestros expertos.</p>
         <div class="cta-btns">
             <a href="https://wa.me/19542105405?text=Hola, quiero información sobre los servicios de Sell·U" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.4 15.6 6.7 16 8 16c4.4 0 8-3.6 8-8s-3.6-8-8-8z"/></svg>
                 WhatsApp
             </a>
-            <a href="mailto:contacto@sellu.co" class="btn-messenger" aria-label="Enviar email">
-                Email
+            <a href="https://m.me/sellu.latam" class="btn-messenger" target="_blank" rel="noopener" aria-label="Contactar por Messenger">
+                Messenger
             </a>
         </div>
     </div>
