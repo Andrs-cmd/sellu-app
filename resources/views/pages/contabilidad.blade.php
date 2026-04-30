@@ -209,7 +209,7 @@
     .grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
 
     /* ── HERO ── */
-    .hero-section { padding: 56px 0 96px; position: relative; overflow: hidden; }
+    .hero-section { padding: 56px 0 0px; position: relative; overflow: hidden; }
     .hero-puzzle {
         position: absolute; right: -160px; top: 100px; width: 540px; height: 540px;
         background: var(--accent-500); opacity: 0.07; pointer-events: none;
