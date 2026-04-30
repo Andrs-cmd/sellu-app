@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\TramiteController;
 use App\Http\Controllers\DocumentoController;
 use App\Http\Controllers\Admin\DashboardController;
@@ -19,6 +21,27 @@ Route::get('/amazon', fn() => view('pages.amazon'));
 Route::get('/marca', fn() => view('pages.marca'));
 Route::get('/envios', fn() => view('pages.envios'));
 Route::get('/sanitario', fn() => view('pages.sanitario'));
+Route::get('/soporte', fn() => view('pages.soporte'))->name('soporte');
+Route::post('/soporte/contacto', function (Request $request) {
+    $validated = $request->validate([
+        'nombre'   => 'required|string|max:255',
+        'email'    => 'required|email|max:255',
+        'telefono' => 'nullable|string|max:50',
+        'mensaje'  => 'required|string|max:3000',
+    ]);
+    Mail::raw(
+        "Nombre: {$validated['nombre']}\n" .
+        "Email: {$validated['email']}\n" .
+        "Teléfono: " . ($validated['telefono'] ?? 'N/A') . "\n\n" .
+        "Mensaje:\n{$validated['mensaje']}",
+        function ($msg) use ($validated) {
+            $msg->to('contacto@sellu.co')
+                ->subject('Mensaje de contacto — ' . $validated['nombre'])
+                ->replyTo($validated['email'], $validated['nombre']);
+        }
+    );
+    return back()->with('success', '¡Mensaje enviado! Te responderemos pronto.');
+})->name('soporte.contacto');
 
 // ── Auth (Breeze) ──
 require __DIR__.'/auth.php';
