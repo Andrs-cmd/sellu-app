@@ -557,7 +557,7 @@ Tus reportes contables al día · sin pendientes críticos                      
 <section class="section-pad section-band" id="por-que">
     <div class="container">
         <div class="section-head reveal">
-            <span class="eyebrow">Por qué Sell-U</span>
+            <!--<span class="eyebrow">Por qué Sell-U</span>-->
             <h2>Contabilidad para tu LLC, clara y sin fricción desde LATAM.</h2>
             <p>No es solo llevar números. Es darte estructura, control y cumplimiento real desde el día uno — pensado para operar tu LLC correctamente desde Latinoamérica</p>
         </div>
@@ -597,7 +597,7 @@ Tus reportes contables al día · sin pendientes críticos                      
 <section class="section-pad" id="servicios">
     <div class="container">
         <div class="section-head reveal">
-            <span class="eyebrow">Servicios incluidos</span>
+            <!--<span class="eyebrow">Servicios incluidos</span>-->
             <h2>Qué incluye nuestro servicio de contabilidad LLC.</h2>
             <p>Todo lo que tu LLC necesita para mantenerse al día con el IRS, sin perseguir múltiples proveedores ni montar planillas en Excel.</p>
         </div>
@@ -618,7 +618,7 @@ Tus reportes contables al día · sin pendientes críticos                      
 <section class="section-pad section-band" id="precios">
     <div class="container">
         <div class="section-head reveal">
-            <span class="eyebrow">Precios</span>
+            <!--<span class="eyebrow">Precios</span>-->
             <h2>Paquetes de contabilidad para tu LLC.</h2>
             <p>Tarifas claras en USD, sin complicaciones ni sorpresas. Pagas por lo que necesitas, con total control.</p>
         </div>
@@ -701,7 +701,7 @@ Tus reportes contables al día · sin pendientes críticos                      
 <section class="section-pad" id="como">
     <div class="container">
         <div class="section-head reveal">
-            <span class="eyebrow">Cómo funciona</span>
+            <!--<span class="eyebrow">Cómo funciona</span>-->
             <h2>Empezar es así de simple.</h2>
             <p>Tres pasos, cero papeleo. Lo más complicado es el primer email.</p>
         </div>
@@ -733,7 +733,7 @@ Tus reportes contables al día · sin pendientes críticos                      
     <div class="container">
         <div class="benefits-grid reveal">
             <div class="benefits-sticky">
-                <span class="eyebrow">Por qué nos eligen</span>
+                <!-- <span class="eyebrow">Por qué nos eligen</span> -->
                 <h2>Por qué emprendedores latinos eligen Sell-U.</h2>
                 <p>Cinco razones concretas — no promesas vacías ni listas de adjetivos.</p>
                 <a href="#contacto" class="btn btn-primary">Habla con un asesor →</a>
@@ -837,7 +837,7 @@ Tus reportes contables al día · sin pendientes críticos                      
 <section class="section-pad" id="calendario">
     <div class="container">
         <div class="section-head reveal">
-            <span class="eyebrow">Calendario IRS · 2026</span>
+            <!--<span class="eyebrow">Calendario IRS · 2026</span>-->
             <h2>Las fechas que tu LLC no puede olvidar.</h2>
             <p>Como cliente Sell-U recibes recordatorios automáticos antes de cada deadline. Estas son las fechas más relevantes para LLCs de no residentes.</p>
         </div>
@@ -876,7 +876,7 @@ Tus reportes contables al día · sin pendientes críticos                      
     <div class="container">
         <div class="faq-grid reveal">
             <div class="faq-sticky">
-                <span class="eyebrow">Preguntas frecuentes</span>
+                <!--<span class="eyebrow">Preguntas frecuentes</span>-->
                 <h2>Lo que importa, sin rodeos.</h2>
                 <p>¿No ves tu pregunta? Escríbenos y un asesor te responde en menos de 24 horas hábiles.</p>
                 <a href="#contacto" class="btn btn-primary">Habla con un asesor</a>
@@ -948,7 +948,7 @@ Tus reportes contables al día · sin pendientes críticos                      
     <div class="container">
         <div class="final-cta-grid reveal">
             <div>
-                <span class="eyebrow">Empieza hoy</span>
+                <!--<span class="eyebrow">Empieza hoy</span>-->
                 <h2>Toma el control de las finanzas de tu LLC con la contabilidad <em class="accent-mark">experta</em> que mereces.</h2>
                 <p>No dejes que la contabilidad de tu LLC en Estados Unidos te quite el sueño. En Sell-U llevamos los números mientras tú haces crecer tu negocio.</p>
             </div>
