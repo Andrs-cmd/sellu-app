@@ -513,8 +513,8 @@ Tus reportes contables al día · sin pendientes críticos                      
     <div class="container">
         <div class="section-head reveal">
             <span class="eyebrow">El problema</span>
-            <h2>Llevar la contabilidad de tu LLC desde Latinoamérica no debería ser un dolor de cabeza.</h2>
-            <p>Eres founder, no contador. Pero el IRS no distingue: si tu LLC está en EE.UU., los libros importan desde el día uno — incluso si la empresa no facturó nada todavía.</p>
+            <h2>Llevar la contabilidad de tu LLC en EE.UU. desde Latinoamérica debería ser claro, no complicado.</h2>
+            <p>El IRS exige orden desde el día uno, con o sin ingresos. En Sell-U te damos la estructura y el acompañamiento para cumplir sin complicarte.</p>
         </div>
         <div class="grid-3 reveal">
             <div class="card">
