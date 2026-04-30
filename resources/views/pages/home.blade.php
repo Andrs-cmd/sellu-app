@@ -119,20 +119,21 @@
         .topbar-right a:hover { color:var(--white); }
 
         /* ── NAV ── */
-        .nav { background:var(--white); border-bottom:1px solid var(--gray2); padding:0 5%; display:flex; align-items:center; height:68px; position:sticky; top:0; z-index:100; gap:0; }
-        .nav-logo { display:flex; align-items:center; margin-right:36px; }
-        .nav-logo-text { font-family:'Montserrat',sans-serif; font-size:26px; font-weight:900; color:var(--navy); letter-spacing:-1px; }
+        .nav { background:var(--white); border-bottom:1px solid var(--gray2); padding:12px 5% 0; display:flex; flex-direction:column; align-items:center; position:sticky; top:0; z-index:100; }
+        .nav-logo { display:flex; align-items:center; justify-content:center; padding-bottom:10px; }
+        .nav-logo-text { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:900; color:var(--navy); letter-spacing:-1px; }
         .nav-logo-text span { color:var(--gold); }
-        .nav-links { display:flex; gap:0; flex:1; overflow:hidden; }
-        .nav-link { padding:0 14px; height:68px; display:flex; align-items:center; font-size:12px; font-weight:600; color:var(--text); border-bottom:3px solid transparent; transition:all .2s; white-space:nowrap; }
+        .nav-bottom { display:flex; align-items:center; width:100%; justify-content:center; gap:0; }
+        .nav-links { display:flex; gap:0; }
+        .nav-link { padding:0 14px; height:44px; display:flex; align-items:center; font-size:12px; font-weight:600; color:var(--text); border-bottom:3px solid transparent; transition:all .2s; white-space:nowrap; }
         .nav-link:hover { color:var(--navy); border-bottom-color:var(--gold); }
-        .nav-cta { margin-left:auto; background:var(--gold); color:var(--navy); padding:10px 22px; border-radius:6px; font-size:13px; font-weight:700; font-family:'Montserrat',sans-serif; transition:background .2s; white-space:nowrap; }
+        .nav-cta { background:var(--gold); color:var(--navy); padding:8px 20px; border-radius:6px; font-size:13px; font-weight:700; font-family:'Montserrat',sans-serif; transition:background .2s; white-space:nowrap; margin-left:16px; }
         .nav-cta:hover { background:var(--gold2); }
 
         /* ── MOBILE NAV ── */
-        .nav-hamburger { display:none; background:none; border:none; cursor:pointer; padding:4px; color:var(--navy); margin-left:auto; }
+        .nav-hamburger { display:none; background:none; border:none; cursor:pointer; padding:4px; color:var(--navy); position:absolute; right:5%; top:50%; transform:translateY(-50%); }
         .nav-hamburger svg { width:24px; height:24px; }
-        .mobile-menu { display:none; position:fixed; top:68px; left:0; right:0; background:var(--white); border-bottom:1px solid var(--gray2); z-index:99; padding:12px 0; box-shadow:0 4px 20px rgba(0,0,0,.1); }
+        .mobile-menu { display:none; position:fixed; top:64px; left:0; right:0; background:var(--white); border-bottom:1px solid var(--gray2); z-index:99; padding:12px 0; box-shadow:0 4px 20px rgba(0,0,0,.1); }
         .mobile-menu.open { display:block; }
         .mobile-menu a { display:block; padding:12px 20px; font-size:14px; font-weight:600; color:var(--text); border-bottom:1px solid var(--gray2); }
         .mobile-menu a:last-child { border-bottom:none; }
@@ -267,8 +268,9 @@
         /* ── RESPONSIVE ── */
         @media(max-width:900px) {
             .topbar-right { display:none; }
-            .nav-links { display:none; }
-            .nav-cta { display:none; }
+            .nav { flex-direction:row; justify-content:center; align-items:center; padding:0 5%; height:64px; position:relative; }
+            .nav-logo { padding-bottom:0; }
+            .nav-bottom { display:none; }
             .nav-hamburger { display:flex; }
             .hero h1 { font-size:28px; }
             .hero-content { padding:48px 5%; }
@@ -329,15 +331,17 @@
                 <span class="nav-logo-text">Sell<span>·U</span></span>
             </a>
         </div>
-        <div class="nav-links" role="menubar">
-            <a href="{{ url('/abre-empresa') }}" class="nav-link" role="menuitem">Abre tu empresa</a>
-            <a href="{{ url('/contabilidad') }}" class="nav-link" role="menuitem">Contabilidad</a>
-            <a href="{{ url('/amazon') }}" class="nav-link" role="menuitem">Vende en Amazon</a>
-            <a href="{{ url('/marca') }}" class="nav-link" role="menuitem">Registro de marca</a>
-            <a href="{{ url('/envios') }}" class="nav-link" role="menuitem">Envíos</a>
-            <a href="{{ url('/sanitario') }}" class="nav-link" role="menuitem">Reg. Sanitario</a>
+        <div class="nav-bottom">
+            <div class="nav-links" role="menubar">
+                <a href="{{ url('/abre-empresa') }}" class="nav-link" role="menuitem">Abre tu empresa</a>
+                <a href="{{ url('/contabilidad') }}" class="nav-link" role="menuitem">Contabilidad</a>
+                <a href="{{ url('/amazon') }}" class="nav-link" role="menuitem">Vende en Amazon</a>
+                <a href="{{ url('/marca') }}" class="nav-link" role="menuitem">Registro de marca</a>
+                <a href="{{ url('/envios') }}" class="nav-link" role="menuitem">Envíos</a>
+                <a href="{{ url('/sanitario') }}" class="nav-link" role="menuitem">Reg. Sanitario</a>
+            </div>
+            <a href="{{ route('register') }}" class="nav-cta" aria-label="Empezar ahora">Empezar ahora</a>
         </div>
-        <a href="{{ route('register') }}" class="nav-cta" aria-label="Empezar ahora">Empezar ahora</a>
         <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false" id="hamburger">
             <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </button>
