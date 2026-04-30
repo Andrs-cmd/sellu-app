@@ -340,7 +340,16 @@
             <span class="servicio-label">Apertura de marketplaces</span>
         </a>
     </div>
-    <div class="servicios-cta">
+    </div>
+    <div style="display:flex; justify-content:center; margin-top:16px;">
+        <a href="{{ url('/pages/sales-tax') }}" class="servicio-card" style="max-width:320px; width:100%; background:var(--navy); flex-direction:row; justify-content:center; gap:16px; padding:20px 28px;" aria-label="Consulta Sales Tax por estado">
+            <div class="servicio-icon" style="flex-shrink:0;">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M6 8h20M6 14h12M6 20h8" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="22" r="6" stroke="#F5A623" stroke-width="2"/><path d="M22 22h2v-2" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <span class="servicio-label" style="color:var(--white); font-size:13px;">🔍 Consulta Sales Tax por estado</span>
+        </a>
+    </div>
+    <div class="servicios-cta" style="margin-top:12px;">
         <a href="#asesor" class="btn-navy">Agenda tu asesoría gratuita</a>
     </div>
 </section>
