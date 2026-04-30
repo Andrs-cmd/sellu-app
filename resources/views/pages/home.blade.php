@@ -180,8 +180,8 @@
         }
 
         /* ── CTA ASESOR ── */
-        .cta-asesor { display:grid; grid-template-columns:1fr 1fr; min-height:280px; }
-        .cta-asesor-img { background:url('https://cdn.shopify.com/s/files/1/0900/0674/9556/files/vende-en-amazon-eeuu-sell-u-banner-_1.webp?v=1761156168') center/cover no-repeat; min-height:280px; }
+        .cta-asesor { display:grid; grid-template-columns:1fr 1fr; min-height:280px; background:url('https://cdn.shopify.com/s/files/1/0900/0674/9556/files/vende-en-amazon-eeuu-sell-u-banner-_1.webp?v=1761156168') center/cover no-repeat; }
+        .cta-asesor-img { min-height:280px; }
         .cta-asesor-content { background:var(--navy); padding:56px 60px; display:flex; flex-direction:column; justify-content:center; }
         .cta-asesor h2 { font-family:'Montserrat',sans-serif; font-size:28px; font-weight:900; color:var(--white); line-height:1.2; margin-bottom:16px; text-transform:uppercase; }
         .cta-asesor p { font-size:15px; color:rgba(255,255,255,.6); line-height:1.65; margin-bottom:32px; }
