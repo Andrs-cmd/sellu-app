@@ -24,6 +24,11 @@
                  alt="Sell·U"
                  style="height:44px;width:auto;display:block;object-fit:contain">
         </a>
+        {{-- Hamburger (solo móvil) --}}
+        <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menú" onclick="toggleMobileNav()">
+            <span></span><span></span><span></span>
+        </button>
+
         {{-- Botones auth en esquina derecha de la fila del logo --}}
         <div class="nav-auth">
             @auth
@@ -38,7 +43,7 @@
         </div>
     </div>
 
-    {{-- FILA 2: Menú centrado --}}
+    {{-- FILA 2: Menú centrado (desktop) --}}
     <nav class="nav-menu-row">
         <a href="{{ url('/abre-empresa') }}" class="nav-item {{ request()->is('abre-empresa') ? 'active' : '' }}">Abre tu empresa</a>
         <a href="{{ url('/contabilidad') }}" class="nav-item {{ request()->is('contabilidad') ? 'active' : '' }}">Contabilidad</a>
@@ -47,6 +52,25 @@
         <a href="{{ url('/envios') }}" class="nav-item {{ request()->is('envios') ? 'active' : '' }}">Envíos</a>
         <a href="{{ url('/sanitario') }}" class="nav-item {{ request()->is('sanitario') ? 'active' : '' }}">Registro sanitario</a>
         <a href="{{ url('/soporte') }}" class="nav-item {{ request()->is('soporte') ? 'active' : '' }}">Soporte</a>
+    </nav>
+
+    {{-- Menú móvil desplegable --}}
+    <nav class="nav-mobile-menu" id="navMobileMenu">
+        <a href="{{ url('/abre-empresa') }}" class="mobile-item {{ request()->is('abre-empresa') ? 'active' : '' }}">Abre tu empresa</a>
+        <a href="{{ url('/contabilidad') }}" class="mobile-item {{ request()->is('contabilidad') ? 'active' : '' }}">Contabilidad</a>
+        <a href="{{ url('/amazon') }}" class="mobile-item {{ request()->is('amazon') ? 'active' : '' }}">Vende en Amazon</a>
+        <a href="{{ url('/marca') }}" class="mobile-item {{ request()->is('marca') ? 'active' : '' }}">Registro de marca</a>
+        <a href="{{ url('/envios') }}" class="mobile-item {{ request()->is('envios') ? 'active' : '' }}">Envíos</a>
+        <a href="{{ url('/sanitario') }}" class="mobile-item {{ request()->is('sanitario') ? 'active' : '' }}">Registro sanitario</a>
+        <a href="{{ url('/soporte') }}" class="mobile-item {{ request()->is('soporte') ? 'active' : '' }}">Soporte</a>
+        <div class="mobile-auth">
+            @auth
+                <a href="{{ route('dashboard') }}" class="mobile-auth-btn outline">Mi panel</a>
+            @else
+                <a href="{{ route('login') }}" class="mobile-auth-btn ghost">Ingresar</a>
+                <a href="{{ route('register') }}" class="mobile-auth-btn solid">Empezar</a>
+            @endauth
+        </div>
     </nav>
 </header>
 
@@ -77,8 +101,61 @@
 .nav-item:hover { color: var(--navy, #0D1B3E); border-bottom-color: var(--gold, #F5A623); }
 .nav-item.active { color: var(--gold, #F5A623); border-bottom-color: var(--gold, #F5A623); }
 
+/* ── HAMBURGER ── */
+.nav-hamburger {
+    display: none; flex-direction: column; justify-content: center; gap: 5px;
+    width: 36px; height: 36px; background: none; border: none; cursor: pointer;
+    position: absolute; left: 5%; padding: 4px;
+}
+.nav-hamburger span {
+    display: block; height: 2px; background: #0D1B3E;
+    border-radius: 2px; transition: transform .25s, opacity .25s;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── MOBILE MENU ── */
+.nav-mobile-menu {
+    display: none; flex-direction: column;
+    background: #fff; border-top: 1px solid #E8EAF0;
+    padding: 8px 0 16px;
+}
+.nav-mobile-menu.open { display: flex; }
+.mobile-item {
+    padding: 14px 5%; font-size: 13px; font-weight: 700; color: #333A50;
+    text-decoration: none; text-transform: uppercase; letter-spacing: .04em;
+    border-left: 3px solid transparent; transition: color .2s, border-color .2s;
+}
+.mobile-item:hover, .mobile-item.active { color: #0D1B3E; border-left-color: #F5A623; }
+.mobile-auth {
+    display: flex; gap: 10px; padding: 16px 5% 4px;
+    border-top: 1px solid #E8EAF0; margin-top: 8px;
+}
+.mobile-auth-btn {
+    flex: 1; text-align: center; font-family: 'Montserrat', sans-serif;
+    font-size: 12px; font-weight: 700; padding: 10px 16px; border-radius: 6px;
+    text-decoration: none; transition: all .2s;
+}
+.mobile-auth-btn.ghost { color: #0D1B3E; border: 1.5px solid #E8EAF0; }
+.mobile-auth-btn.ghost:hover { border-color: #0D1B3E; }
+.mobile-auth-btn.solid { color: #0D1B3E; background: #F5A623; }
+.mobile-auth-btn.solid:hover { background: #E09415; }
+.mobile-auth-btn.outline { color: #0D1B3E; border: 1.5px solid #E8EAF0; }
+
 @media (max-width: 900px) {
     .nav-menu-row { display: none; }
     .nav-logo-row { padding: 12px 5%; }
+    .nav-hamburger { display: flex; }
+    .nav-auth { display: none; }
 }
 </style>
+
+<script>
+function toggleMobileNav() {
+    const menu = document.getElementById('navMobileMenu');
+    const btn  = document.getElementById('navHamburger');
+    menu.classList.toggle('open');
+    btn.classList.toggle('open');
+}
+</script>
