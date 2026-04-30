@@ -201,7 +201,7 @@
     .btn-secondary:hover { background: var(--paper-2); border-color: var(--navy-700); }
     .btn-on-dark { background: var(--paper); color: var(--navy-900); }
     .btn-on-dark:hover { background: var(--white); }
-    .btn-lg { padding: 14px 22px; font-size: 16px; line-height: 22px; border-radius: 12px; }
+    .btn-lg { padding: 14px 22px; font-size: 15px; line-height: 22px; border-radius: 12px; }
 
     /* ── GRIDS ── */
     .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
