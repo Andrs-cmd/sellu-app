@@ -28,6 +28,7 @@
     <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
 
     <!-- ── STRUCTURED DATA ── -->
+    @verbatim
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -45,6 +46,7 @@
         "serviceType": ["Package Forwarding", "Virtual Address USA", "International Shipping", "Fulfillment Services"]
     }
     </script>
+    @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">

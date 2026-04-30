@@ -28,6 +28,7 @@
     <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
 
     <!-- ── STRUCTURED DATA ── -->
+    @verbatim
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -42,6 +43,7 @@
         "serviceType": ["FDA Food Registration", "FDA Cosmetic Registration", "FSVP Agent", "Regulatory Compliance", "Import Compliance USA"]
     }
     </script>
+    @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
