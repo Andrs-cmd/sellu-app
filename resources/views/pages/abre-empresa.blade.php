@@ -435,6 +435,12 @@
                 <option value="TX">Texas</option>
                 <option value="NY">New York</option>
                 <option value="CA">California</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="CO">Colorado</option>
+                <option value="GA">Georgia</option>
+                <option value="IL">Illinois</option>
             </select>
         </div>
     </div>
@@ -637,14 +643,47 @@ const plansByState = {
         { title:'Plan Full CA',    sub:'Variedad y acompañamiento',   price:499,  list:['Todo Básico CA','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
         { title:'Plan Luxury CA',  sub:'Solución integral CA',        price:1099, list:['Todo Full CA','Asesoría contable','Página Web','Línea Telefónica'] }
     ],
+    AL: [
+        { title:'Plan Básico AL',  sub:'Inicio en Alabama',           price:349,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full AL',    sub:'Variedad y acompañamiento',   price:449,  list:['Todo Básico AL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury AL',  sub:'Solución integral AL',        price:999,  list:['Todo Full AL','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
+    AK: [
+        { title:'Plan Básico AK',  sub:'Inicio en Alaska',            price:399,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full AK',    sub:'Variedad y acompañamiento',   price:499,  list:['Todo Básico AK','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury AK',  sub:'Solución integral AK',        price:1099, list:['Todo Full AK','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
+    AZ: [
+        { title:'Plan Básico AZ',  sub:'Inicio en Arizona',           price:349,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full AZ',    sub:'Variedad y acompañamiento',   price:449,  list:['Todo Básico AZ','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury AZ',  sub:'Solución integral AZ',        price:999,  list:['Todo Full AZ','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
+    CO: [
+        { title:'Plan Básico CO',  sub:'Inicio en Colorado',          price:349,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full CO',    sub:'Variedad y acompañamiento',   price:449,  list:['Todo Básico CO','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury CO',  sub:'Solución integral CO',        price:999,  list:['Todo Full CO','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
+    GA: [
+        { title:'Plan Básico GA',  sub:'Inicio en Georgia',           price:399,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full GA',    sub:'Variedad y acompañamiento',   price:499,  list:['Todo Básico GA','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury GA',  sub:'Solución integral GA',        price:1099, list:['Todo Full GA','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
+    IL: [
+        { title:'Plan Básico IL',  sub:'Inicio en Illinois',          price:499,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full IL',    sub:'Variedad y acompañamiento',   price:599,  list:['Todo Básico IL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury IL',  sub:'Solución integral IL',        price:1199, list:['Todo Full IL','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
 };
 
 function renderPreciosPage(state) {
     const grid  = document.getElementById('preciosGrid');
     const plans = plansByState[state] || plansByState['FL'];
-    const url   = '{{ url("/constituir") }}';
+    const base  = '{{ url("/constituir") }}';
 
-    grid.innerHTML = plans.map(p => `
+    grid.innerHTML = plans.map(p => {
+        const planKey = p.title.includes('Básico') ? 'Básico' : p.title.includes('Full') ? 'Full' : 'Luxury';
+        const url = `${base}?estado=${encodeURIComponent(state)}&plan=${encodeURIComponent(planKey)}`;
+        return `
         <div class="precio-card ${p.featured ? 'featured' : ''}">
             ${p.featured ? '<span class="precio-popular">Más popular</span>' : ''}
             <p class="precio-plan">${p.title}</p>
@@ -657,8 +696,8 @@ function renderPreciosPage(state) {
             <div class="precio-btns">
                 <a href="${url}" class="btn-precio-primary" style="display:block;text-align:center;text-decoration:none;">Empezar Ya!</a>
             </div>
-        </div>
-    `).join('');
+        </div>`;
+    }).join('');
 }
 
 // Render inicial con Florida

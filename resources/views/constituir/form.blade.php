@@ -468,6 +468,12 @@ const plansByState = {
     TX: [{title:'Plan Básico TX',sub:'Inicio en Texas',price:599,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full TX',sub:'Variedad y acompañamiento',price:699,list:['Todo Básico TX','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury TX',sub:'Solución integral TX',price:1299,list:['Todo Full TX','Asesoría contable','Página Web','Línea Telefónica']}],
     NY: [{title:'Plan Básico NY',sub:'Inicio en New York',price:499,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full NY',sub:'Variedad y acompañamiento',price:599,list:['Todo Básico NY','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury NY',sub:'Solución integral NY',price:1199,list:['Todo Full NY','Asesoría contable','Página Web','Línea Telefónica']}],
     CA: [{title:'Plan Básico CA',sub:'Inicio en California',price:399,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full CA',sub:'Variedad y acompañamiento',price:499,list:['Todo Básico CA','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury CA',sub:'Solución integral CA',price:1099,list:['Todo Full CA','Asesoría contable','Página Web','Línea Telefónica']}],
+    AL: [{title:'Plan Básico AL',sub:'Inicio en Alabama',price:349,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full AL',sub:'Variedad y acompañamiento',price:449,list:['Todo Básico AL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury AL',sub:'Solución integral AL',price:999,list:['Todo Full AL','Asesoría contable','Página Web','Línea Telefónica']}],
+    AK: [{title:'Plan Básico AK',sub:'Inicio en Alaska',price:399,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full AK',sub:'Variedad y acompañamiento',price:499,list:['Todo Básico AK','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury AK',sub:'Solución integral AK',price:1099,list:['Todo Full AK','Asesoría contable','Página Web','Línea Telefónica']}],
+    AZ: [{title:'Plan Básico AZ',sub:'Inicio en Arizona',price:349,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full AZ',sub:'Variedad y acompañamiento',price:449,list:['Todo Básico AZ','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury AZ',sub:'Solución integral AZ',price:999,list:['Todo Full AZ','Asesoría contable','Página Web','Línea Telefónica']}],
+    CO: [{title:'Plan Básico CO',sub:'Inicio en Colorado',price:349,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full CO',sub:'Variedad y acompañamiento',price:449,list:['Todo Básico CO','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury CO',sub:'Solución integral CO',price:999,list:['Todo Full CO','Asesoría contable','Página Web','Línea Telefónica']}],
+    GA: [{title:'Plan Básico GA',sub:'Inicio en Georgia',price:399,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full GA',sub:'Variedad y acompañamiento',price:499,list:['Todo Básico GA','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury GA',sub:'Solución integral GA',price:1099,list:['Todo Full GA','Asesoría contable','Página Web','Línea Telefónica']}],
+    IL: [{title:'Plan Básico IL',sub:'Inicio en Illinois',price:499,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full IL',sub:'Variedad y acompañamiento',price:599,list:['Todo Básico IL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury IL',sub:'Solución integral IL',price:1199,list:['Todo Full IL','Asesoría contable','Página Web','Línea Telefónica']}],
 };
 
 function getPlans(state) { return plansByState[state] || plansByState['FL']; }
@@ -664,10 +670,32 @@ function showAlert(msg) {
 function hideAlert() { document.getElementById('alert-box').style.display = 'none'; }
 
 document.addEventListener('DOMContentLoaded', () => {
-    renderPlans('FL');
     const params = new URLSearchParams(window.location.search);
+    const estadoParam = params.get('estado');
+    const planParam   = params.get('plan');
+
+    // Pre-seleccionar estado desde URL
+    const initState = estadoParam && plansByState[estadoParam] ? estadoParam : 'FL';
+    renderPlans(initState);
+    document.getElementById('state-select-plans').value = initState;
+    const jurisdiccionSel = document.getElementById('jurisdiccion');
+    if (jurisdiccionSel.querySelector(`option[value="${initState}"]`)) {
+        jurisdiccionSel.value = initState;
+    }
+
+    // Pre-seleccionar plan desde URL (resaltar visualmente)
+    if (planParam) {
+        document.querySelectorAll('.btn-buy').forEach(btn => {
+            const card = btn.closest('.price-card');
+            if (card && card.querySelector('.price-name') && card.querySelector('.price-name').textContent.includes(planParam)) {
+                card.style.outline = '2px solid var(--gold, #c9a96e)';
+                card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+    }
+
     const step = params.get('step');
-    const tid = params.get('tramite_id');
+    const tid  = params.get('tramite_id');
     if (step && tid) {
         tramiteId = parseInt(tid);
         goStep(parseInt(step));
