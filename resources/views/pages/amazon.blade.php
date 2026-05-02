@@ -51,475 +51,1075 @@
     @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root {
-            --navy:  #0D1B3E;
-            --navy2: #122050;
-            --gold:  #F5A623;
-            --gold2: #E09415;
-            --red:   #E53935;
-            --white: #FFFFFF;
-            --gray:  #F5F6FA;
-            --gray2: #E8EAF0;
-            --text:  #333A50;
-            --muted: #6B7394;
-            --green: #25D366;
-        }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Montserrat', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
-        a { text-decoration: none; color: inherit; }
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
 
-        /* ── TOPBAR ── */
-        .topbar { background: var(--navy2); padding: 7px 5%; display: flex; justify-content: space-between; align-items: center; }
-        .topbar-left { font-size: 12px; color: rgba(255,255,255,.6); display: flex; align-items: center; gap: 6px; }
-        .topbar-right { display: flex; gap: 14px; }
-        .topbar-right a { color: rgba(255,255,255,.6); font-size: 13px; }
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap');
+        :root {
+            --navy-900: #2e3856; --navy-800: #2e3856; --navy-700: #434966;
+            --navy-600: #5b607d; --navy-500: #9499ad; --navy-400: #b3b7c5;
+            --navy-200: #e2e4ea; --navy-100: #eef0f4; --navy-50: #f6f7f9;
+            --accent-700: #c89320; --accent-500: #f6bb33; --accent-400: #f9cc66;
+            --accent-200: #fdecc2; --accent-100: #fef5dd;
+            --paper: #fbfaf7; --paper-2: #f5f3ee; --white: #ffffff;
+            --ink-900: #15161a; --ink-700: #3a3d46; --ink-500: #6b6f7a;
+            --ink-400: #9298a3; --ink-300: #c5c8d0; --ink-200: #e5e6ea;
+            --success-700: #0f6b3f; --success-500: #1aa05f; --success-100: #e3f6ec;
+            --danger-700: #99231b; --danger-500: #d6362a; --danger-100: #fbe4e2;
+            --fg-primary: var(--navy-900); --fg-secondary: var(--ink-700);
+            --fg-tertiary: var(--ink-500); --fg-muted: var(--ink-400);
+            --border-default: var(--ink-200); --border-strong: var(--ink-300);
+            --font-display: 'DM Sans', sans-serif; --font-sans: 'DM Sans', sans-serif;
+            --shadow-xs: 0 1px 2px rgba(46,56,86,0.04);
+            --shadow-sm: 0 1px 3px rgba(46,56,86,0.06);
+            --shadow-md: 0 4px 8px -2px rgba(46,56,86,0.08);
+            --shadow-lg: 0 12px 24px -8px rgba(46,56,86,0.12);
+            --shadow-xl: 0 24px 48px -12px rgba(46,56,86,0.18);
+            --ease-out: cubic-bezier(0.16,1,0.3,1);
+            --duration-base: 200ms;
+            --AMZ: #FF9900; --AMZ-soft: #FFF4E0;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { background: var(--paper); color: var(--fg-primary); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+
+        /* ── REVEAL ANIMATION ── */
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out); }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ── SECTION BAND ── */
+        .section-band { background: var(--paper-2); }
 
         /* ── NAV ── */
-        .nav { background: var(--white); border-bottom: 1px solid var(--gray2); padding: 0 5%; display: flex; align-items: center; justify-content: center; height: 68px; position: sticky; top: 0; z-index: 100; }
-        .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 900; color: var(--navy); letter-spacing: -1px; margin-right: 40px; }
-        .nav-logo span { color: var(--gold); }
-        .nav-links { display: flex; gap: 0; }
-        .nav-link { padding: 0 14px; height: 68px; display: flex; align-items: center; font-size: 12px; font-weight: 700; color: var(--text); border-bottom: 3px solid transparent; transition: all .2s; white-space: nowrap; text-transform: uppercase; letter-spacing: .04em; }
-        .nav-link:hover { color: var(--navy); border-bottom-color: var(--gold); }
-        .nav-link.active { color: var(--gold); border-bottom-color: var(--gold); }
+        .nav {
+            position: sticky; top: 0; z-index: 100;
+            background: transparent;
+            border-bottom: 1px solid transparent;
+            transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+        }
+        .nav.scrolled {
+            background: rgba(251,250,247,0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom-color: var(--border-default);
+        }
+        .nav-inner {
+            max-width: 1200px; margin: 0 auto; padding: 0 32px;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 68px;
+        }
+        .nav-logo {
+            font-size: 22px; font-weight: 800; color: var(--navy-900);
+            letter-spacing: -0.5px; flex-shrink: 0;
+        }
+        .nav-logo span { color: var(--accent-500); }
+        .nav-links {
+            display: flex; align-items: center; gap: 4px;
+            margin: 0 24px;
+        }
+        .nav-link {
+            padding: 8px 14px; font-size: 14px; font-weight: 500;
+            color: var(--fg-secondary); border-radius: 8px;
+            transition: color var(--duration-base), background var(--duration-base);
+            white-space: nowrap;
+        }
+        .nav-link:hover { color: var(--navy-900); background: var(--navy-50); }
+        .nav-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+        .btn-ghost {
+            padding: 9px 18px; font-size: 14px; font-weight: 600;
+            color: var(--navy-900); border: 1.5px solid var(--border-strong);
+            border-radius: 10px; transition: all var(--duration-base);
+        }
+        .btn-ghost:hover { border-color: var(--navy-900); background: var(--navy-50); }
+        .btn-primary {
+            padding: 9px 18px; font-size: 14px; font-weight: 600;
+            color: var(--white); background: var(--navy-900);
+            border-radius: 10px; transition: all var(--duration-base);
+        }
+        .btn-primary:hover { background: var(--navy-700); }
 
         /* ── HERO ── */
-        .hero { background: var(--gray); padding: 48px 5% 36px; text-align: center; }
-        .hero-alert { display: inline-block; background: var(--navy); color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; padding: 6px 20px; border-radius: 20px; margin-bottom: 22px; letter-spacing: .04em; }
-        .hero h1 { font-family: 'Montserrat', sans-serif; font-size: 36px; font-weight: 900; color: var(--navy); line-height: 1.15; margin-bottom: 16px; max-width: 780px; margin-left: auto; margin-right: auto; }
-        .hero h1 em { font-style: normal; color: var(--gold); }
-        .hero-garantia { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 14px; color: var(--text); margin-bottom: 28px; }
-        .hero-garantia svg { width: 16px; height: 16px; color: var(--green); flex-shrink: 0; }
-        .hero-garantia strong { color: var(--navy); }
-        .btn-red { display: inline-block; background: var(--red); color: var(--white); padding: 14px 36px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; transition: background .2s; }
-        .btn-red:hover { background: #c62828; }
-        .hero-sub { font-size: 12px; color: var(--muted); margin-top: 12px; }
-
-        /* ── SPLIT ── */
-        .split { display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 340px; }
-        .split-img {
-            position: relative; overflow: hidden; background: var(--navy);
-            display: flex; align-items: stretch;
+        .hero-section { padding: 80px 0 96px; }
+        .hero-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 64px; align-items: center;
         }
-        .split-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .split-img-placeholder { width: 100%; min-height: 340px; background: #1a2a4a; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px; }
-        .split-img-placeholder svg { width: 56px; height: 56px; opacity: .15; color: white; }
-        .split-img-label { position: absolute; top: 16px; left: 16px; background: rgba(13,27,62,.85); color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 800; padding: 8px 14px; border-radius: 6px; text-transform: uppercase; letter-spacing: .05em; }
-        .split-img-more { position: absolute; bottom: 16px; left: 16px; background: var(--navy); color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; padding: 6px 14px; border-radius: 4px; text-transform: uppercase; letter-spacing: .05em; }
-        .split-text { background: var(--gray); padding: 48px 52px; display: flex; flex-direction: column; justify-content: center; }
-        .split-tag { font-size: 11px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 14px; }
-        .split-text h2 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 800; color: var(--navy); text-transform: uppercase; margin-bottom: 14px; letter-spacing: .02em; }
-        .split-text p { font-size: 14px; color: var(--muted); line-height: 1.75; margin-bottom: 24px; }
-        .btn-navy { display: inline-block; background: var(--navy); color: var(--white); padding: 12px 28px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; transition: background .2s; }
-        .btn-navy:hover { background: var(--navy2); }
-        .split-garantia { font-size: 12px; color: var(--muted); margin-top: 12px; display: flex; align-items: center; gap: 6px; }
-        .split-garantia svg { width: 13px; height: 13px; color: var(--green); }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: var(--AMZ-soft); color: var(--AMZ);
+            font-size: 13px; font-weight: 600;
+            padding: 6px 14px; border-radius: 100px;
+            margin-bottom: 24px;
+        }
+        .hero-h1 {
+            font-size: clamp(28px, 4vw, 46px); font-weight: 800;
+            line-height: 1.15; color: var(--navy-900);
+            margin-bottom: 20px; letter-spacing: -0.5px;
+        }
+        .hero-h1 .highlight { color: var(--AMZ); }
+        .hero-sub {
+            font-size: 16px; color: var(--fg-tertiary);
+            line-height: 1.7; margin-bottom: 32px;
+            max-width: 480px;
+        }
+        .btn-hero {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--navy-900); color: var(--white);
+            font-size: 15px; font-weight: 600;
+            padding: 14px 24px; border-radius: 12px;
+            transition: background var(--duration-base);
+            margin-bottom: 28px;
+        }
+        .btn-hero:hover { background: var(--navy-700); }
+        .hero-trust { display: flex; flex-direction: column; gap: 10px; }
+        .hero-trust-item {
+            display: flex; align-items: center; gap: 8px;
+            font-size: 14px; font-weight: 500; color: var(--fg-secondary);
+        }
+        .trust-check {
+            width: 18px; height: 18px; background: var(--success-100);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .trust-check svg { width: 10px; height: 10px; color: var(--success-500); }
 
-        /* ── CTA WHATSAPP ── */
-        .cta-wa { background: var(--navy); padding: 40px 5%; text-align: center; }
-        .cta-wa h3 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: var(--white); margin-bottom: 8px; }
-        .cta-wa p { font-size: 14px; color: rgba(255,255,255,.55); margin-bottom: 20px; }
-        .btn-green { display: inline-flex; align-items: center; gap: 8px; background: var(--green); color: var(--white); padding: 12px 28px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; transition: background .2s; }
-        .btn-green:hover { background: #1ebe5b; }
+        /* ── SELLER CENTRAL MOCKUP ── */
+        .sc-card {
+            background: var(--white); border: 1px solid var(--border-default);
+            border-radius: 16px; overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+        .sc-header {
+            padding: 16px 20px; border-bottom: 1px solid var(--border-default);
+            display: flex; align-items: center; gap: 12px;
+        }
+        .sc-icon {
+            width: 32px; height: 32px; background: var(--AMZ);
+            border-radius: 8px; display: flex; align-items: center; justify-content: center;
+            font-weight: 900; font-size: 16px; color: var(--white);
+        }
+        .sc-title { font-size: 14px; font-weight: 700; color: var(--navy-900); }
+        .sc-sub { font-size: 12px; color: var(--fg-muted); }
+        .sc-badge-active {
+            margin-left: auto; display: flex; align-items: center; gap: 5px;
+            background: var(--success-100); color: var(--success-700);
+            font-size: 12px; font-weight: 600;
+            padding: 4px 10px; border-radius: 100px;
+        }
+        .sc-dot { width: 6px; height: 6px; background: var(--success-500); border-radius: 50%; }
+        .sc-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+        .sc-stat {
+            padding: 20px; border-right: 1px solid var(--border-default);
+            border-bottom: 1px solid var(--border-default);
+        }
+        .sc-stat:nth-child(2n) { border-right: 0; }
+        .sc-stat:nth-child(3), .sc-stat:nth-child(4) { border-bottom: 0; }
+        .sc-stat-label { font-size: 11px; font-weight: 600; color: var(--fg-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+        .sc-stat-value { font-size: 22px; font-weight: 800; color: var(--navy-900); margin-bottom: 4px; }
+        .sc-stat-sub { font-size: 12px; font-weight: 500; }
+        .sc-stat-up { color: var(--success-700); }
+        .sc-stat-good { color: var(--success-700); }
+        .sc-chart { padding: 16px 20px 20px; border-top: 1px solid var(--border-default); }
+        .sc-chart-label { font-size: 11px; font-weight: 600; color: var(--fg-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+        .sc-chart svg { width: 100%; height: 64px; }
 
-        /* ── CLIENTES ── */
-        .clientes { background: var(--white); padding: 44px 5%; }
-        .clientes-badge-wrap { display: flex; justify-content: center; margin-bottom: 32px; }
-        .clientes-badge { background: var(--navy); color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; padding: 6px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; }
-        .clientes-grid { display: flex; align-items: center; justify-content: center; gap: 44px; flex-wrap: wrap; }
-        .cliente-logo { font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 800; color: var(--navy); opacity: .4; transition: opacity .2s; letter-spacing: -1px; }
-        .cliente-logo:hover { opacity: 1; }
-        /* Para logos reales: <img src="URL_LOGO" alt="Cliente" height="32" style="opacity:.4;filter:grayscale(1);transition:.2s"> */
+        /* ── MARQUEE ── */
+        .marquee-section { padding: 48px 0; overflow: hidden; }
+        .marquee-badge-wrap { display: flex; justify-content: center; margin-bottom: 28px; }
+        .marquee-badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: var(--navy-900); color: var(--white);
+            font-size: 12px; font-weight: 600;
+            padding: 7px 16px; border-radius: 100px;
+        }
+        .marquee-track-wrap {
+            position: relative;
+            -webkit-mask: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+            mask: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+        }
+        .marquee-track {
+            display: flex; align-items: center; gap: 48px;
+            width: max-content;
+            animation: marquee 38s linear infinite;
+        }
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        .marquee-item {
+            font-size: 15px; font-weight: 700; color: var(--navy-600);
+            white-space: nowrap; letter-spacing: 0.02em;
+        }
+        .marquee-dot { color: var(--accent-500); font-size: 18px; }
 
-        /* ── BENEFICIOS ── */
-        .beneficios { background: var(--gray); padding: 72px 5%; }
-        .beneficios-header { text-align: center; margin-bottom: 48px; }
-        .beneficios-tag { font-size: 13px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; display: block; font-family: 'Montserrat', sans-serif; }
-        .beneficios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 900; color: var(--navy); line-height: 1.2; }
-        .beneficios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 900px; margin: 0 auto 32px; }
-        .beneficio-card { background: var(--white); border: 1px solid var(--gray2); border-radius: 10px; padding: 28px 24px; transition: border-color .2s; }
-        .beneficio-card:hover { border-color: var(--gold); }
-        .beneficio-icon { width: 52px; height: 52px; margin-bottom: 16px; }
-        .beneficio-icon svg { width: 52px; height: 52px; }
-        .beneficio-card p { font-size: 13px; color: var(--text); line-height: 1.6; }
-        .beneficio-card p strong { color: var(--navy); font-weight: 700; }
-        .beneficios-cta { text-align: center; margin-top: 8px; }
-        .btn-red-outline { display: inline-block; background: var(--red); color: var(--white); padding: 13px 32px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; transition: background .2s; }
-        .btn-red-outline:hover { background: #c62828; }
+        /* ── BENEFITS ── */
+        .benefits-section { padding: 96px 0; }
+        .section-eyebrow {
+            font-size: 12px; font-weight: 700; color: var(--AMZ);
+            text-transform: uppercase; letter-spacing: 0.1em;
+            margin-bottom: 12px; display: block;
+        }
+        .section-h2 {
+            font-size: clamp(24px, 3vw, 36px); font-weight: 800;
+            color: var(--navy-900); line-height: 1.2;
+            letter-spacing: -0.3px;
+        }
+        .section-header { margin-bottom: 56px; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .benefit-card {
+            background: var(--white); border: 1px solid var(--border-default);
+            border-radius: 16px; padding: 28px 24px;
+            transition: box-shadow var(--duration-base), border-color var(--duration-base);
+        }
+        .benefit-card:hover { box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+        .benefit-icon {
+            width: 44px; height: 44px; background: var(--AMZ-soft);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            margin-bottom: 16px;
+        }
+        .benefit-icon svg { width: 22px; height: 22px; color: var(--AMZ); }
+        .benefit-stat {
+            font-size: 28px; font-weight: 800; color: var(--navy-900);
+            margin-bottom: 4px; line-height: 1;
+        }
+        .benefit-title { font-size: 14px; font-weight: 700; color: var(--navy-900); margin-bottom: 8px; }
+        .benefit-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.6; }
 
-        /* ── POR QUÉ ── */
-        .porque { padding: 72px 5%; background: var(--white); }
-        .porque-inner { max-width: 1000px; margin: 0 auto; }
-        .porque h2 { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; color: var(--navy); text-align: center; margin-bottom: 48px; }
-        .porque-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
-        .porque-item { text-align: center; }
-        .porque-icon { width: 48px; height: 48px; margin: 0 auto 16px; background: var(--gray); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
-        .porque-icon svg { width: 24px; height: 24px; color: var(--muted); }
-        .porque-item p { font-size: 13px; color: var(--muted); line-height: 1.65; }
+        /* ── COMPARISON TABLE ── */
+        .compare-section { padding: 96px 0; }
+        .compare-table-wrap {
+            background: var(--white); border: 1px solid var(--border-default);
+            border-radius: 16px; overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        .compare-table { width: 100%; border-collapse: collapse; }
+        .compare-table th {
+            padding: 16px 24px; text-align: left;
+            font-size: 13px; font-weight: 700;
+            color: var(--fg-muted); text-transform: uppercase; letter-spacing: 0.06em;
+            background: var(--navy-50); border-bottom: 1px solid var(--border-default);
+        }
+        .compare-table th:not(:last-child) { border-right: 1px solid var(--border-default); }
+        .compare-table td {
+            padding: 16px 24px; font-size: 14px; color: var(--fg-secondary);
+            border-bottom: 1px solid var(--border-default);
+            transition: background var(--duration-base);
+        }
+        .compare-table tr:last-child td { border-bottom: 0; }
+        .compare-table tr:hover td { background: var(--paper); }
+        .compare-table td:not(:last-child) { border-right: 1px solid var(--border-default); }
+        .compare-topic { font-weight: 600; color: var(--navy-900); }
+        .compare-bad { color: var(--danger-700); font-weight: 500; }
+        .compare-good { color: var(--success-700); font-weight: 600; }
+        .icon-x { display: inline-flex; align-items: center; gap: 6px; }
+        .icon-check-inline { display: inline-flex; align-items: center; gap: 6px; }
 
         /* ── SERVICIOS ── */
-        .servicios { padding: 72px 5%; background: var(--gray); }
-        .servicios-inner { max-width: 900px; margin: 0 auto; }
-        .servicios h2 { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; color: var(--navy); text-align: center; margin-bottom: 40px; }
-        .servicios-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-        .servicio-card { background: var(--white); border: 1px solid var(--gray2); border-radius: 10px; padding: 24px; transition: border-color .2s; }
-        .servicio-card:hover { border-color: var(--navy); }
-        .servicio-card-icon { width: 40px; height: 40px; background: var(--gray); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
-        .servicio-card-icon svg { width: 20px; height: 20px; color: var(--navy); }
-        .servicio-card h3 { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-        .servicio-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
-        .servicio-tag { display: inline-block; background: var(--gray); color: var(--muted); font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; margin-top: 10px; text-transform: uppercase; letter-spacing: .04em; }
+        .servicios-section { padding: 96px 0; }
+        .servicios-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            border: 1px solid var(--border-default); border-radius: 16px;
+            overflow: hidden; background: var(--white);
+            box-shadow: var(--shadow-sm);
+        }
+        .servicio-tile {
+            padding: 32px 28px;
+            border-right: 1px solid var(--border-default);
+            border-bottom: 1px solid var(--border-default);
+            transition: background var(--duration-base);
+        }
+        .servicio-tile:hover { background: var(--navy-50); }
+        .servicio-tile:nth-child(3n) { border-right: 0; }
+        .servicio-tile:nth-child(4), .servicio-tile:nth-child(5), .servicio-tile:nth-child(6) { border-bottom: 0; }
+        .servicio-icon {
+            width: 44px; height: 44px; background: var(--AMZ-soft);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            margin-bottom: 16px;
+        }
+        .servicio-icon svg { width: 22px; height: 22px; color: var(--AMZ); }
+        .servicio-tile-title { font-size: 15px; font-weight: 700; color: var(--navy-900); margin-bottom: 8px; }
+        .servicio-tile-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.6; margin-bottom: 14px; }
+        .servicio-bullets { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+        .servicio-bullets li { font-size: 13px; color: var(--fg-secondary); display: flex; align-items: flex-start; gap: 6px; }
+        .servicio-bullets li::before { content: '✓'; color: var(--AMZ); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
 
-        /* ── FAQ ── */
-        .faq { padding: 72px 5%; background: var(--white); }
-        .faq-inner { max-width: 800px; margin: 0 auto; }
-        .faq-header { text-align: center; margin-bottom: 48px; }
-        .faq-header h2 { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
-        .faq-header p { font-size: 14px; color: var(--muted); line-height: 1.6; }
-        .faq-item { border-bottom: 1px solid var(--gray2); }
-        .faq-q { width: 100%; padding: 18px 0; text-align: left; background: none; border: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
-        .faq-q:hover { color: var(--gold2); }
-        .faq-icon { width: 22px; height: 22px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform .3s; }
-        .faq-icon svg { width: 12px; height: 12px; }
-        .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s; font-size: 14px; color: var(--muted); line-height: 1.75; }
-        .faq-item.open .faq-a { max-height: 200px; padding-bottom: 18px; }
-        .faq-item.open .faq-icon { transform: rotate(45deg); }
+        /* ── PROCESO ── */
+        .proceso-section { padding: 96px 0; }
+        .proceso-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 56px; }
+        .proceso-card {
+            background: var(--white); border: 1px solid var(--border-default);
+            border-radius: 16px; padding: 28px 24px;
+            transition: box-shadow var(--duration-base);
+        }
+        .proceso-card:hover { box-shadow: var(--shadow-md); }
+        .proceso-step {
+            font-size: 11px; font-weight: 700; color: var(--fg-muted);
+            text-transform: uppercase; letter-spacing: 0.08em;
+            margin-bottom: 16px; display: block;
+        }
+        .proceso-icon {
+            width: 44px; height: 44px; background: var(--navy-50);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            margin-bottom: 16px;
+        }
+        .proceso-icon svg { width: 22px; height: 22px; color: var(--navy-900); }
+        .proceso-title { font-size: 15px; font-weight: 700; color: var(--navy-900); margin-bottom: 8px; }
+        .proceso-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.6; }
+
+        /* ── PLANES ── */
+        .planes-section { padding: 96px 0; }
+        .planes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; }
+        .plan-card {
+            background: var(--white); border: 1px solid var(--border-default);
+            border-radius: 20px; padding: 32px 28px;
+            position: relative; transition: box-shadow var(--duration-base);
+            display: flex; flex-direction: column;
+        }
+        .plan-card:hover { box-shadow: var(--shadow-lg); }
+        .plan-card.featured {
+            background: var(--navy-900); border-color: var(--navy-900);
+            color: var(--white);
+        }
+        .plan-tag {
+            display: inline-block; font-size: 11px; font-weight: 700;
+            padding: 4px 10px; border-radius: 6px;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 20px;
+        }
+        .plan-tag-default { background: var(--navy-50); color: var(--fg-muted); }
+        .plan-tag-featured {
+            background: var(--AMZ); color: var(--white);
+            position: absolute; top: 20px; left: 20px;
+        }
+        .plan-name { font-size: 18px; font-weight: 800; color: var(--navy-900); margin-bottom: 6px; }
+        .plan-card.featured .plan-name { color: var(--white); }
+        .plan-price {
+            font-size: 36px; font-weight: 800; color: var(--navy-900);
+            margin-bottom: 4px; line-height: 1;
+        }
+        .plan-card.featured .plan-price { color: var(--white); }
+        .plan-price-prefix { font-size: 16px; font-weight: 500; vertical-align: super; }
+        .plan-price-note { font-size: 13px; color: var(--fg-muted); margin-bottom: 20px; }
+        .plan-card.featured .plan-price-note { color: rgba(255,255,255,0.55); }
+        .plan-desc { font-size: 14px; color: var(--fg-tertiary); line-height: 1.6; margin-bottom: 24px; }
+        .plan-card.featured .plan-desc { color: rgba(255,255,255,0.7); }
+        .plan-bullets { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; flex: 1; }
+        .plan-bullets li { font-size: 14px; display: flex; align-items: flex-start; gap: 8px; }
+        .plan-bullets li svg { width: 16px; height: 16px; color: var(--AMZ); flex-shrink: 0; margin-top: 2px; }
+        .plan-card.featured .plan-bullets li { color: rgba(255,255,255,0.85); }
+        .btn-plan {
+            display: block; text-align: center;
+            padding: 13px 20px; font-size: 14px; font-weight: 700;
+            border-radius: 12px; transition: all var(--duration-base);
+        }
+        .btn-plan-default {
+            background: var(--navy-50); color: var(--navy-900);
+            border: 1.5px solid var(--border-default);
+        }
+        .btn-plan-default:hover { background: var(--navy-100); border-color: var(--border-strong); }
+        .btn-plan-featured {
+            background: var(--AMZ); color: var(--white);
+        }
+        .btn-plan-featured:hover { background: #e68800; }
+
+        /* ── REQUISITOS ── */
+        .requisitos-section { padding: 96px 0; }
+        .requisitos-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+        .requisitos-left { position: sticky; top: 100px; }
+        .requisitos-desc { font-size: 15px; color: var(--fg-tertiary); line-height: 1.7; margin: 20px 0 32px; }
+        .btn-req {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--navy-900); color: var(--white);
+            font-size: 14px; font-weight: 600;
+            padding: 13px 22px; border-radius: 12px;
+            transition: background var(--duration-base);
+        }
+        .btn-req:hover { background: var(--navy-700); }
+        .requisitos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .req-tile {
+            background: var(--white); border: 1px solid var(--border-default);
+            border-radius: 14px; padding: 22px 20px;
+            transition: box-shadow var(--duration-base), border-color var(--duration-base);
+        }
+        .req-tile:hover { box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+        .req-icon {
+            width: 40px; height: 40px; background: var(--AMZ-soft);
+            border-radius: 10px; display: flex; align-items: center; justify-content: center;
+            margin-bottom: 12px;
+        }
+        .req-icon svg { width: 20px; height: 20px; color: var(--AMZ); }
+        .req-title { font-size: 14px; font-weight: 700; color: var(--navy-900); margin-bottom: 4px; }
+        .req-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.5; }
+
+        /* ── TESTIMONIO ── */
+        .testimonial-section { padding: 96px 0; }
+        .testimonial-card {
+            background: var(--navy-900); border-radius: 22px; padding: 56px 64px;
+            box-shadow: 0 0 0 1px rgba(255,153,0,0.2), 0 24px 48px -12px rgba(255,153,0,0.15);
+            max-width: 800px; margin: 0 auto;
+        }
+        .testimonial-quote-icon {
+            width: 48px; height: 48px; background: rgba(255,153,0,0.15);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            margin-bottom: 28px;
+        }
+        .testimonial-quote-icon svg { width: 24px; height: 24px; color: var(--AMZ); }
+        .testimonial-text {
+            font-size: clamp(18px, 2.5vw, 22px); font-weight: 600;
+            color: var(--white); line-height: 1.55;
+            margin-bottom: 32px;
+        }
+        .testimonial-attribution { display: flex; align-items: center; gap: 14px; }
+        .testimonial-avatar {
+            width: 44px; height: 44px; background: var(--AMZ);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 15px; font-weight: 800; color: var(--white);
+            flex-shrink: 0;
+        }
+        .testimonial-name { font-size: 15px; font-weight: 700; color: var(--white); }
+        .testimonial-role { font-size: 13px; color: rgba(255,255,255,0.55); }
+
+        /* ── CTA FINAL ── */
+        .cta-section { padding: 96px 0; }
+        .cta-inner { max-width: 880px; margin: 0 auto; text-align: center; }
+        .cta-sub { font-size: 16px; color: var(--fg-tertiary); line-height: 1.7; max-width: 560px; margin: 20px auto 36px; }
+        .cta-actions { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        .btn-cta-primary {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--navy-900); color: var(--white);
+            font-size: 15px; font-weight: 700;
+            padding: 14px 26px; border-radius: 12px;
+            transition: background var(--duration-base);
+        }
+        .btn-cta-primary:hover { background: var(--navy-700); }
+        .btn-cta-wa {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: #25D366; color: var(--white);
+            font-size: 15px; font-weight: 700;
+            padding: 14px 26px; border-radius: 12px;
+            transition: background var(--duration-base);
+        }
+        .btn-cta-wa:hover { background: #1ebe5b; }
+        .btn-cta-wa svg { width: 18px; height: 18px; }
 
         /* ── FOOTER ── */
-        .footer { background: var(--white); border-top: 1px solid var(--gray2); padding: 52px 5% 0; }
-        .footer-inner { max-width: 1100px; margin: 0 auto; }
-        .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 60px; padding-bottom: 32px; }
-        .footer-contact-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 12px; }
-        .footer-logo-text { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: var(--navy); letter-spacing: -1px; display: inline-block; margin-bottom: 14px; }
-        .footer-logo-text span { color: var(--gold); }
-        .footer-brand-title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-        .footer-brand-info { font-size: 13px; color: var(--muted); line-height: 1.9; }
-        .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 800; color: var(--navy); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 16px; }
-        .footer-col a { display: block; font-size: 13px; color: var(--muted); margin-bottom: 10px; transition: color .2s; }
-        .footer-col a:hover { color: var(--navy); }
-        .footer-payments { border-top: 1px solid var(--gray2); padding: 20px 0; display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; align-items: center; }
-        .payment-badge { background: var(--gray); border: 1px solid var(--gray2); border-radius: 4px; padding: 4px 8px; font-size: 10px; font-weight: 700; color: var(--muted); }
-        .footer-bottom { background: var(--navy2); margin: 0 -5%; padding: 20px 5%; text-align: center; }
-        .footer-bottom p { font-size: 12px; color: rgba(255,255,255,.4); line-height: 1.7; }
-        .footer-bottom strong { color: rgba(255,255,255,.6); }
+        .footer { background: var(--white); border-top: 1px solid var(--border-default); padding: 56px 0 0; }
+        .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 64px; padding-bottom: 40px; }
+        .footer-logo { font-size: 22px; font-weight: 800; color: var(--navy-900); letter-spacing: -0.5px; margin-bottom: 16px; display: inline-block; }
+        .footer-logo span { color: var(--accent-500); }
+        .footer-address { font-size: 13px; color: var(--fg-muted); line-height: 2; }
+        .footer-col-title { font-size: 11px; font-weight: 700; color: var(--navy-900); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
+        .footer-col a { display: block; font-size: 13px; color: var(--fg-muted); margin-bottom: 10px; transition: color var(--duration-base); }
+        .footer-col a:hover { color: var(--navy-900); }
+        .footer-bottom {
+            background: var(--navy-900); margin: 0;
+            padding: 18px 32px; text-align: center;
+        }
+        .footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.4); }
 
+        /* ── RESPONSIVE ── */
         @media (max-width: 900px) {
-            .hero h1 { font-size: 26px; }
-            .split { grid-template-columns: 1fr; }
-            .beneficios-grid { grid-template-columns: 1fr 1fr; }
-            .porque-grid { grid-template-columns: 1fr 1fr; }
-            .servicios-grid { grid-template-columns: 1fr; }
-            .footer-top { grid-template-columns: 1fr; gap: 32px; }
+            .container { padding: 0 20px; }
             .nav-links { display: none; }
+            .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+            .hero-h1 { font-size: 28px; }
+            .hero-sub { max-width: 100%; }
+            .benefits-grid { grid-template-columns: 1fr 1fr; }
+            .servicios-grid { grid-template-columns: 1fr 1fr; }
+            .servicio-tile:nth-child(2n) { border-right: 0; }
+            .servicio-tile:nth-child(3n) { border-right: 1px solid var(--border-default); }
+            .servicio-tile:nth-child(5), .servicio-tile:nth-child(6) { border-bottom: 0; }
+            .servicio-tile:nth-child(3) { border-bottom: 1px solid var(--border-default); }
+            .proceso-grid { grid-template-columns: 1fr 1fr; }
+            .planes-grid { grid-template-columns: 1fr; }
+            .requisitos-inner { grid-template-columns: 1fr; gap: 40px; }
+            .requisitos-left { position: static; }
+            .testimonial-card { padding: 36px 28px; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+            .compare-table { font-size: 13px; }
+            .compare-table td, .compare-table th { padding: 12px 16px; }
+        }
+        @media (max-width: 600px) {
+            .benefits-grid { grid-template-columns: 1fr; }
+            .proceso-grid { grid-template-columns: 1fr; }
+            .requisitos-grid { grid-template-columns: 1fr; }
+            .servicios-grid { grid-template-columns: 1fr; }
+            .servicio-tile { border-right: 0 !important; }
         }
     </style>
 </head>
 <body>
 
-<x-nav />
-
-{{-- HERO --}}
-<section class="hero">
-    <span class="hero-alert">No solo te ayudamos a entrar, te queremos hacerlo bien desde el inicio.</span>
-    <h1>Abre tu tienda en <em>Amazon, TikTok Shop, Etsy o Walmart</em> y empieza a vender en Estados Unidos.</h1>
-    <p class="hero-garantia">
-        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L2 3v5c0 4 2.7 7.3 6 8 3.3-.7 6-4 6-8V3L8 0z"/></svg>
-        <span>Garantía Sell-U: si no tienes tu tienda activa en <strong>30 días hábiles</strong>, te devolvemos el dinero.</span>
-    </p>
-    <a href="#servicios" class="btn-red">Reserva tu asesoría gratuita</a>
-    <p class="hero-sub">Duración: 30 Min · Cupos limitados por semana</p>
-</section>
-
-{{-- SPLIT --}}
-<section class="split">
-    <div class="split-img">
-        {{--
-            Para imagen real reemplaza el bloque split-img-placeholder con:
-            <img src="{{ asset('images/marketplace-hero.jpg') }}" alt="Apertura Marketplace">
-            O URL externa: <img src="URL_IMAGEN_AQUI" alt="Apertura Marketplace">
-        --}}
-        <div class="split-img-placeholder">
-            <svg viewBox="0 0 56 56" fill="none"><rect x="4" y="10" width="48" height="36" rx="4" stroke="white" stroke-width="2"/><path d="M4 20h48" stroke="white" stroke-width="2"/><circle cx="12" cy="15" r="2" fill="white" opacity=".4"/><circle cx="20" cy="15" r="2" fill="white" opacity=".4"/></svg>
+<!-- ── NAV ── -->
+<nav class="nav" id="main-nav">
+    <div class="nav-inner">
+        <a href="{{ url('/') }}" class="nav-logo">Sell<span>·U</span></a>
+        <div class="nav-links">
+            <a href="#servicios" class="nav-link">Servicio</a>
+            <a href="#precios" class="nav-link">Precios</a>
+            <a href="#proceso" class="nav-link">Cómo funciona</a>
+            <a href="#faq" class="nav-link">FAQ</a>
         </div>
-        <span class="split-img-label">Apertura Marketplace</span>
-        <span class="split-img-more">Ver más →</span>
-    </div>
-    <div class="split-text">
-        <p class="split-tag">¿Quieres vender en Amazon, Etsy o TikTok Shop?</p>
-        <h2>Te ayudamos a abrir tu cuenta</h2>
-        <p>Nosotros te ayudamos a abrir tu cuenta, configurarla correctamente y empezar a vender de forma segura. Evita bloqueos, rechazos y errores comunes. Te guiamos en cada paso según el marketplace que elijas.</p>
-        <a href="https://wa.me/573116473200" class="btn-navy" target="_blank">Agenda una videollamada</a>
-        <p class="split-garantia">
-            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L2 3v5c0 4 2.7 7.3 6 8 3.3-.7 6-4 6-8V3L8 0z"/></svg>
-            Garantía de devolución de dinero por 30 días si no logramos entregarte la promesa.
-        </p>
-    </div>
-</section>
-
-{{-- CTA WHATSAPP --}}
-<section class="cta-wa">
-    <h3>¿Quieres hablar con un Asesor?</h3>
-    <p>Escríbenos a nuestro WhatsApp o Messenger para hablar con un Asesor</p>
-    <a href="https://wa.me/573116473200" class="btn-green" target="_blank">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.4 15.6 6.7 16 8 16c4.4 0 8-3.6 8-8s-3.6-8-8-8zm4.1 11.2c-.2.5-1 .9-1.4 1-.4 0-.7.1-2.2-.5-1.8-.7-3-2.6-3.1-2.7-.1-.2-.9-1.2-.9-2.3 0-1.1.6-1.6.8-1.9.2-.2.4-.3.6-.3h.4c.1 0 .3 0 .4.3.2.4.7 1.6.7 1.7 0 .1 0 .3-.1.4-.1.1-.2.3-.3.4-.1.1-.2.2-.1.4.4.6.8 1.1 1.3 1.5.6.4 1.1.6 1.3.7.2.1.3 0 .5-.1.1-.2.5-.6.7-.8.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.3 0 .2-.1.6-.3 1.1z"/></svg>
-        Ir a WhatsApp
-    </a>
-</section>
-
-{{-- CLIENTES --}}
-<section class="clientes">
-    <div class="clientes-badge-wrap">
-        <span class="clientes-badge">↑ Algunos de nuestros clientes</span>
-    </div>
-    <div class="clientes-grid">
-        {{-- Para logos reales: <img src="URL_LOGO" alt="Cliente" height="28" style="opacity:.45;filter:grayscale(1)"> --}}
-        <span class="cliente-logo">Y</span>
-        <span class="cliente-logo">Cinco Jotos</span>
-        <span class="cliente-logo">Marathon</span>
-        <span class="cliente-logo">DiferencZax</span>
-        <span class="cliente-logo">SENSE</span>
-        <span class="cliente-logo">HAIKO NATURAL</span>
-    </div>
-</section>
-
-{{-- BENEFICIOS --}}
-<section class="beneficios">
-    <div class="beneficios-header">
-        <span class="beneficios-tag">Beneficios Destacados</span>
-        <h2>Por eso cada vez más latinos abren tiendas en marketplaces:</h2>
-    </div>
-    <div class="beneficios-grid">
-        <div class="beneficio-card">
-            <div class="beneficio-icon">
-                <svg viewBox="0 0 52 52" fill="none"><rect x="6" y="6" width="40" height="40" rx="8" fill="#EEF3FF"/><path d="M16 26h20M26 16v20" stroke="#1B4FD8" stroke-width="2.5" stroke-linecap="round"/><path d="M20 20l12 12M32 20L20 32" stroke="#1B4FD8" stroke-width="1.5" stroke-linecap="round" opacity=".4"/></svg>
-            </div>
-            <p><strong>✅ Apertura guiada de cuenta en Amazon, TikTok Shop, Etsy o Walmart</strong></p>
-        </div>
-        <div class="beneficio-card">
-            <div class="beneficio-icon">
-                <svg viewBox="0 0 52 52" fill="none"><rect x="6" y="6" width="40" height="40" rx="8" fill="#EEF3FF"/><rect x="14" y="18" width="24" height="18" rx="2" stroke="#1B4FD8" stroke-width="2"/><path d="M14 24h24" stroke="#1B4FD8" stroke-width="2"/><path d="M20 30h4M30 30h4" stroke="#1B4FD8" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <p><strong>✅ Configuración técnica y fiscal según tu país y estructura</strong></p>
-        </div>
-        <div class="beneficio-card">
-            <div class="beneficio-icon">
-                <svg viewBox="0 0 52 52" fill="none"><rect x="6" y="6" width="40" height="40" rx="8" fill="#EEF3FF"/><circle cx="26" cy="22" r="7" stroke="#1B4FD8" stroke-width="2"/><path d="M14 40c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="#1B4FD8" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <p><strong>✅ Acompañamiento personalizado durante los primeros 30 días</strong></p>
-        </div>
-        <div class="beneficio-card">
-            <div class="beneficio-icon">
-                <svg viewBox="0 0 52 52" fill="none"><rect x="6" y="6" width="40" height="40" rx="8" fill="#EEF3FF"/><path d="M18 26l5 5 11-10" stroke="#1B4FD8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <p><strong>✅ Asesoría en los primeros pasos y carga inicial de productos</strong></p>
-        </div>
-        <div class="beneficio-card">
-            <div class="beneficio-icon">
-                <svg viewBox="0 0 52 52" fill="none"><rect x="6" y="6" width="40" height="40" rx="8" fill="#EEF3FF"/><circle cx="26" cy="26" r="10" stroke="#1B4FD8" stroke-width="2"/><path d="M22 22l8 8M30 22l-8 8" stroke="#1B4FD8" stroke-width="2" stroke-linecap="round" opacity=".5"/><path d="M26 18v2M26 32v2M18 26h2M32 26h2" stroke="#1B4FD8" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <p><strong>✅ Soporte en español, paso a paso</strong></p>
+        <div class="nav-actions">
+            <a href="#contacto" class="btn-ghost">Consulta gratis</a>
+            <a href="#precios" class="btn-primary">Empezar</a>
         </div>
     </div>
-    <div class="beneficios-cta">
-        <a href="https://wa.me/573116473200" class="btn-red-outline" target="_blank">Quiero vender en Marketplace</a>
-    </div>
-</section>
+</nav>
 
-{{-- POR QUÉ NECESITAS ESTE SERVICIO --}}
-<section class="porque">
-    <div class="porque-inner">
-        <h2>¿Por qué necesitas este servicio?</h2>
-        <div class="porque-grid">
-            <div class="porque-item">
-                <div class="porque-icon">
-                    <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M7 12h10M7 8h10M7 16h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+<!-- ── HERO ── -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-grid">
+            <!-- Left column -->
+            <div class="reveal">
+                <div class="hero-badge">
+                    <i data-lucide="zap" style="width:14px;height:14px;"></i>
+                    Amazon US · Apertura desde LATAM
                 </div>
-                <p>Abrir una cuenta en un marketplace parece fácil, pero cometer un error puede dejarte fuera para siempre.</p>
+                <h1 class="hero-h1">
+                    Vender en Amazon desde Latinoamérica <span class="highlight">parece complicado.</span> Con Sell·U, no lo es.
+                </h1>
+                <p class="hero-sub">
+                    Abrimos tu cuenta Professional Seller, pasamos verificación de identidad y dejamos tu tienda lista con FBA, Brand Registry y listings cargados. En español, sin viajar a EE.UU., en 14 días.
+                </p>
+                <a href="#contacto" class="btn-hero">
+                    Hablar con un especialista
+                    <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </a>
+                <div class="hero-trust">
+                    <div class="hero-trust-item">
+                        <div class="trust-check">
+                            <svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        Cuenta activa en 14 días
+                    </div>
+                    <div class="hero-trust-item">
+                        <div class="trust-check">
+                            <svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        Sin viajar a EE.UU.
+                    </div>
+                    <div class="hero-trust-item">
+                        <div class="trust-check">
+                            <svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        Brand Registry incluido
+                    </div>
+                </div>
             </div>
-            <div class="porque-item">
-                <div class="porque-icon">
-                    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <!-- Right column — Seller Central mockup -->
+            <div class="reveal" style="transition-delay:0.15s;">
+                <div class="sc-card">
+                    <div class="sc-header">
+                        <div class="sc-icon">a</div>
+                        <div>
+                            <div class="sc-title">Seller Central</div>
+                            <div class="sc-sub">Acme Brand LLC</div>
+                        </div>
+                        <div class="sc-badge-active">
+                            <div class="sc-dot"></div>
+                            Activa
+                        </div>
+                    </div>
+                    <div class="sc-stats">
+                        <div class="sc-stat">
+                            <div class="sc-stat-label">Ventas hoy</div>
+                            <div class="sc-stat-value">$1,284</div>
+                            <div class="sc-stat-sub sc-stat-up">↑ +24% vs ayer</div>
+                        </div>
+                        <div class="sc-stat">
+                            <div class="sc-stat-label">Pedidos</div>
+                            <div class="sc-stat-value">47</div>
+                            <div class="sc-stat-sub sc-stat-up">↑ +8 vs ayer</div>
+                        </div>
+                        <div class="sc-stat">
+                            <div class="sc-stat-label">Buy Box</div>
+                            <div class="sc-stat-value">92%</div>
+                            <div class="sc-stat-sub sc-stat-good">Saludable</div>
+                        </div>
+                        <div class="sc-stat">
+                            <div class="sc-stat-label">Inventario FBA</div>
+                            <div class="sc-stat-value">8 SKUs</div>
+                            <div class="sc-stat-sub sc-stat-good">En stock</div>
+                        </div>
+                    </div>
+                    <div class="sc-chart">
+                        <div class="sc-chart-label">Ventas últimos 7 días</div>
+                        <svg viewBox="0 0 320 64" fill="none" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#FF9900" stop-opacity="0.18"/>
+                                    <stop offset="100%" stop-color="#FF9900" stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M0 52 L46 44 L92 38 L138 28 L184 32 L230 18 L276 10 L320 4" stroke="#FF9900" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M0 52 L46 44 L92 38 L138 28 L184 32 L230 18 L276 10 L320 4 L320 64 L0 64 Z" fill="url(#sparkGrad)"/>
+                        </svg>
+                    </div>
                 </div>
-                <p>Plataformas como Amazon y TikTok son estrictas con los datos de registro, la documentación y el uso correcto de la cuenta.</p>
-            </div>
-            <div class="porque-item">
-                <div class="porque-icon">
-                    <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </div>
-                <p>Muchas cuentas son rechazadas o bloqueadas por errores simples.</p>
-            </div>
-            <div class="porque-item">
-                <div class="porque-icon">
-                    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                </div>
-                <p>Una configuración fiscal incorrecta puede impedirte recibir pagos.</p>
-            </div>
-            <div class="porque-item">
-                <div class="porque-icon">
-                    <svg viewBox="0 0 24 24" fill="none"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                </div>
-                <p>Si no eliges bien el marketplace y el formato adecuado, pierdes tiempo y dinero.</p>
-            </div>
-            <div class="porque-item">
-                <div class="porque-icon">
-                    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                </div>
-                <p>Te acompañamos para ingresar correctamente, con claridad y acompañamiento.</p>
             </div>
         </div>
     </div>
 </section>
 
-{{-- SERVICIOS DISPONIBLES --}}
-<section id="servicios" class="servicios">
-    <div class="servicios-inner">
-        <h2>Servicios disponibles según tu necesidad</h2>
-        <div class="servicios-grid">
-            <div class="servicio-card">
-                <div class="servicio-card-icon">
-                    <svg viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 9h8M6 12h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                </div>
-                <h3>Apertura de cuenta en marketplace</h3>
-                <p>Amazon / TikTok / Etsy / Walmart. Configura tu cuenta correctamente desde el primer día.</p>
-                {{-- Reemplazar con precio real --}}
-                <span class="servicio-tag">Desde $199 USD</span>
+<!-- ── MARQUEE ── -->
+<div class="marquee-section">
+    <div class="marquee-badge-wrap">
+        <div class="marquee-badge">
+            <i data-lucide="zap" style="width:12px;height:12px;"></i>
+            Marcas latinas que ya venden con Sell-U
+        </div>
+    </div>
+    <div class="marquee-track-wrap">
+        <div class="marquee-track">
+            <span class="marquee-item">FFERENZA LAB</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">SENSE®</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">HAIKO Natural</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">BUDDY Beauty Works</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">D'Casa Juice</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">M A R</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">NORDA</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">Verdé Co.</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">CASTOR</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">Lumière</span><span class="marquee-dot">·</span>
+            <!-- duplicate for seamless loop -->
+            <span class="marquee-item">FFERENZA LAB</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">SENSE®</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">HAIKO Natural</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">BUDDY Beauty Works</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">D'Casa Juice</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">M A R</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">NORDA</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">Verdé Co.</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">CASTOR</span><span class="marquee-dot">·</span>
+            <span class="marquee-item">Lumière</span>
+        </div>
+    </div>
+</div>
+
+<!-- ── BENEFITS ── -->
+<section class="benefits-section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-eyebrow">Por qué Amazon</span>
+            <h2 class="section-h2">El marketplace más grande del mundo,<br><strong>al alcance de tu marca.</strong></h2>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i data-lucide="globe"></i></div>
+                <div class="benefit-stat">300M+</div>
+                <div class="benefit-title">Compradores activos en EE.UU.</div>
+                <div class="benefit-desc">Accede al mercado de consumo más grande del mundo desde tu país sin moverte.</div>
             </div>
-            <div class="servicio-card">
-                <div class="servicio-card-icon">
-                    <svg viewBox="0 0 20 20" fill="none"><path d="M4 4h12v12H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M4 8h12M8 8v8" stroke="currentColor" stroke-width="1.5"/></svg>
-                </div>
-                <h3>Asistencia de creación de listings</h3>
-                <p>Crea productos que cumplan con los requisitos técnicos de cada marketplace para evitar rechazos.</p>
-                <span class="servicio-tag">Desde $149 USD</span>
+            <div class="benefit-card reveal" style="transition-delay:0.08s;">
+                <div class="benefit-icon"><i data-lucide="package"></i></div>
+                <div class="benefit-stat">FBA</div>
+                <div class="benefit-title">Logística delegada a Amazon</div>
+                <div class="benefit-desc">Amazon almacena, empaca y envía por ti. Tú te enfocas en hacer crecer tu marca.</div>
             </div>
-            <div class="servicio-card">
-                <div class="servicio-card-icon">
-                    <svg viewBox="0 0 20 20" fill="none"><path d="M10 2l2.4 5H18l-4.5 3.3 1.7 5.2L10 12.5l-5.2 3 1.7-5.2L2 7h5.6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-                </div>
-                <h3>Diseño de contenido A+ y tienda online</h3>
-                <p>Imágenes, descripciones y contenido optimizado para convertir y destacar dentro del marketplace.</p>
-                <span class="servicio-tag">Desde $299 USD</span>
+            <div class="benefit-card reveal" style="transition-delay:0.16s;">
+                <div class="benefit-icon"><i data-lucide="crown"></i></div>
+                <div class="benefit-stat">Prime</div>
+                <div class="benefit-title">Entrega en 1–2 días que vende</div>
+                <div class="benefit-desc">El badge Prime aumenta conversión hasta 3x. Con FBA lo obtienes automáticamente.</div>
             </div>
-            <div class="servicio-card">
-                <div class="servicio-card-icon">
-                    <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </div>
-                <h3>Campañas de pago por clic (PPC)</h3>
-                <p>Gestión de anuncios pagados dentro de Amazon y otros marketplaces para aumentar ventas desde el inicio.</p>
-                <span class="servicio-tag">Desde $399 USD / mes</span>
+            <div class="benefit-card reveal" style="transition-delay:0.24s;">
+                <div class="benefit-icon"><i data-lucide="shield-check"></i></div>
+                <div class="benefit-stat">Brand</div>
+                <div class="benefit-title">Brand Registry protege tu marca</div>
+                <div class="benefit-desc">Registra tu marca y protégela de imitadores. También desbloquea contenido A+.</div>
             </div>
         </div>
     </div>
 </section>
 
-{{-- FAQ --}}
-<section class="faq">
-    <div class="faq-inner">
-        <div class="faq-header">
-            <span style="font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.12em;display:block;margin-bottom:10px">Preguntas frecuentes</span>
-            <h2>¿Tienes dudas? Aquí encuentras respuestas claras.</h2>
-            <p>Sabemos que vender en EE.UU. puede generar buenas preguntas. Por eso no solo te guiamos, también te explicamos. Paso a paso. Sin tecnicismos.</p>
+<!-- ── COMPARISON ── -->
+<section class="compare-section section-band">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2 class="section-h2">Lo que cambia cuando tienes a alguien<br>que ya lo hizo cien veces.</h2>
         </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">¿Qué marketplaces entran en este servicio?<span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
-            <div class="faq-a">Trabajamos con Amazon (Seller Central), TikTok Shop, Etsy y Walmart Marketplace. También podemos asesorarte en otros marketplaces según tu producto.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">¿Necesito una empresa en EE.UU. para abrir una cuenta?<span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
-            <div class="faq-a">Para Amazon y Walmart generalmente sí, se recomienda tener una LLC o Corporation. Para TikTok Shop y Etsy hay alternativas. En la asesoría gratuita te indicamos el camino correcto según tu caso.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">¿Puedo vender desde Latinoamérica (Amazon)?<span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
-            <div class="faq-a">Sí. Puedes vender en Amazon USA desde cualquier país de LATAM sin necesidad de vivir en EE.UU. Te ayudamos con toda la estructura necesaria.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">¿Qué necesito tener listo antes de iniciar?<span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
-            <div class="faq-a">Idealmente: documento de identidad, correo electrónico dedicado, número de teléfono y los datos de tu empresa (si ya la tienes). En la asesoría te decimos exactamente qué necesitas según el marketplace.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">¿Si ya tengo carga de producción, ayudan?<span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
-            <div class="faq-a">Sí. Podemos ayudarte a subir tu catálogo de productos, optimizar tus listings y preparar tu cuenta para la carga masiva desde el inicio.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">¿Qué pasa si el marketplace rechaza mi cuenta?<span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
-            <div class="faq-a">Nuestra garantía cubre justamente eso. Si seguimos el proceso correcto y aun así hay un rechazo injustificado, te acompañamos en la apelación o te devolvemos el dinero.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">¿Cuánto tiempo tarda en activarse mi cuenta en estos marketplaces?<span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
-            <div class="faq-a">Depende del marketplace. Amazon puede tomar de 3 a 15 días. TikTok Shop entre 5 y 10 días. Etsy es más rápido, generalmente 1-3 días. Te informamos el tiempo estimado desde la asesoría.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">¿Cuál es la plataforma indicada para abrir en varios marketplaces a la vez?<span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></span></button>
-            <div class="faq-a">Si quieres vender en varios canales al mismo tiempo, te recomendamos empezar con uno y escalar. Sin embargo, tenemos un paquete multicanal que te permite abrir en 2 o más marketplaces con descuento.</div>
+        <div class="compare-table-wrap reveal">
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Por tu cuenta</th>
+                        <th>Con Sell·U</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="compare-topic">Tiempo en activar cuenta</td>
+                        <td class="compare-bad"><span class="icon-x">❌ 4–8 semanas</span></td>
+                        <td class="compare-good"><span class="icon-check-inline">✓ 14 días</span></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-topic">Verificación de identidad</td>
+                        <td class="compare-bad"><span class="icon-x">❌ Rechazos frecuentes sin guía</span></td>
+                        <td class="compare-good"><span class="icon-check-inline">✓ Proceso guiado paso a paso</span></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-topic">Estructura legal</td>
+                        <td class="compare-bad"><span class="icon-x">❌ Confusión sobre qué entidad usar</span></td>
+                        <td class="compare-good"><span class="icon-check-inline">✓ LLC + EIN configurados</span></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-topic">Brand Registry</td>
+                        <td class="compare-bad"><span class="icon-x">❌ Proceso largo y complejo</span></td>
+                        <td class="compare-good"><span class="icon-check-inline">✓ Incluido en el servicio</span></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-topic">Listings</td>
+                        <td class="compare-bad"><span class="icon-x">❌ Rechazados por errores técnicos</span></td>
+                        <td class="compare-good"><span class="icon-check-inline">✓ Optimizados y cargados</span></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-topic">Soporte</td>
+                        <td class="compare-bad"><span class="icon-x">❌ Documentación en inglés</span></td>
+                        <td class="compare-good"><span class="icon-check-inline">✓ Equipo en español siempre</span></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </section>
 
-{{-- FOOTER --}}
+<!-- ── SERVICIOS INCLUIDOS ── -->
+<section class="servicios-section" id="servicios">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-eyebrow">Servicios incluidos</span>
+            <h2 class="section-h2">Todo lo que necesitas para vender en Amazon,<br>en un solo equipo.</h2>
+        </div>
+        <div class="servicios-grid reveal">
+            <div class="servicio-tile">
+                <div class="servicio-icon"><i data-lucide="user-plus"></i></div>
+                <div class="servicio-tile-title">Apertura cuenta Professional</div>
+                <div class="servicio-tile-desc">Creamos y configuramos tu cuenta Amazon Seller Central correctamente desde el inicio.</div>
+                <ul class="servicio-bullets">
+                    <li>Registro con tu LLC</li>
+                    <li>Verificación de identidad guiada</li>
+                    <li>Configuración de pagos USD</li>
+                </ul>
+            </div>
+            <div class="servicio-tile">
+                <div class="servicio-icon"><i data-lucide="shield"></i></div>
+                <div class="servicio-tile-title">Brand Registry</div>
+                <div class="servicio-tile-desc">Registramos tu marca en Amazon Brand Registry para protegerla y desbloquear funciones premium.</div>
+                <ul class="servicio-bullets">
+                    <li>Registro de trademark USPTO</li>
+                    <li>Acceso a contenido A+</li>
+                    <li>Protección anti-imitadores</li>
+                </ul>
+            </div>
+            <div class="servicio-tile">
+                <div class="servicio-icon"><i data-lucide="package"></i></div>
+                <div class="servicio-tile-title">FBA configurado</div>
+                <div class="servicio-tile-desc">Configuramos Fulfillment by Amazon para que Amazon maneje tu logística completa.</div>
+                <ul class="servicio-bullets">
+                    <li>Plan de envío a warehouse</li>
+                    <li>Labels y prep requirements</li>
+                    <li>Badge Prime activado</li>
+                </ul>
+            </div>
+            <div class="servicio-tile">
+                <div class="servicio-icon"><i data-lucide="list-checks"></i></div>
+                <div class="servicio-tile-title">Listings optimizados</div>
+                <div class="servicio-tile-desc">Creamos listings con keywords de alto volumen, imágenes optimizadas y copy que convierte.</div>
+                <ul class="servicio-bullets">
+                    <li>Keyword research en inglés</li>
+                    <li>Título, bullets y descripción</li>
+                    <li>Contenido A+ si aplica</li>
+                </ul>
+            </div>
+            <div class="servicio-tile">
+                <div class="servicio-icon"><i data-lucide="megaphone"></i></div>
+                <div class="servicio-tile-title">Lanzamiento PPC</div>
+                <div class="servicio-tile-desc">Activamos campañas de Sponsored Products para generar ventas desde el día del lanzamiento.</div>
+                <ul class="servicio-bullets">
+                    <li>Campañas automáticas y manuales</li>
+                    <li>Bid strategy inicial</li>
+                    <li>Reporte mensual</li>
+                </ul>
+            </div>
+            <div class="servicio-tile">
+                <div class="servicio-icon"><i data-lucide="banknote"></i></div>
+                <div class="servicio-tile-title">Payouts en USD</div>
+                <div class="servicio-tile-desc">Te ayudamos a configurar cómo recibir tus pagos de Amazon en dólares americanos desde LATAM.</div>
+                <ul class="servicio-bullets">
+                    <li>Cuenta bancaria US vinculada</li>
+                    <li>Configuración fiscal</li>
+                    <li>Retiro a tu país</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── PROCESO ── -->
+<section class="proceso-section section-band" id="proceso">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-eyebrow">Cómo trabajamos</span>
+            <h2 class="section-h2">14 días, 4 pasos, una cuenta lista para vender.</h2>
+        </div>
+        <div class="proceso-grid">
+            <div class="proceso-card reveal">
+                <span class="proceso-step">01 / 04</span>
+                <div class="proceso-icon"><i data-lucide="phone-call"></i></div>
+                <div class="proceso-title">Diagnóstico inicial</div>
+                <div class="proceso-desc">Analizamos tu situación, producto y estructura legal para diseñar el mejor camino de entrada a Amazon.</div>
+            </div>
+            <div class="proceso-card reveal" style="transition-delay:0.08s;">
+                <span class="proceso-step">02 / 04</span>
+                <div class="proceso-icon"><i data-lucide="file-text"></i></div>
+                <div class="proceso-title">Preparamos documentación</div>
+                <div class="proceso-desc">Recopilamos y revisamos todos los documentos necesarios: LLC, EIN, identificación y cuenta bancaria.</div>
+            </div>
+            <div class="proceso-card reveal" style="transition-delay:0.16s;">
+                <span class="proceso-step">03 / 04</span>
+                <div class="proceso-icon"><i data-lucide="video"></i></div>
+                <div class="proceso-title">Verificación con Amazon</div>
+                <div class="proceso-desc">Te guiamos en la videollamada de verificación de identidad. El paso más crítico — lo manejamos contigo.</div>
+            </div>
+            <div class="proceso-card reveal" style="transition-delay:0.24s;">
+                <span class="proceso-step">04 / 04</span>
+                <div class="proceso-icon"><i data-lucide="rocket"></i></div>
+                <div class="proceso-title">Lanzamiento</div>
+                <div class="proceso-desc">Cargamos listings, configuramos FBA, activamos PPC y dejamos tu tienda lista para su primer venta.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── PLANES ── -->
+<section class="planes-section" id="precios">
+    <div class="container">
+        <div class="section-header reveal" style="text-align:center;">
+            <span class="section-eyebrow">Planes</span>
+            <h2 class="section-h2">Tres formas de empezar. Tú eliges hasta dónde llegamos.</h2>
+        </div>
+        <div class="planes-grid">
+            <!-- Plan 1 -->
+            <div class="plan-card reveal">
+                <span class="plan-tag plan-tag-default">One-time</span>
+                <div class="plan-name">Apertura de cuenta</div>
+                <div class="plan-price"><span class="plan-price-prefix">desde $</span>199</div>
+                <div class="plan-price-note">pago único</div>
+                <div class="plan-desc">Todo lo necesario para tener tu cuenta Amazon Professional activa y verificada.</div>
+                <ul class="plan-bullets">
+                    <li><i data-lucide="check"></i> Apertura cuenta Professional Seller</li>
+                    <li><i data-lucide="check"></i> Verificación de identidad guiada</li>
+                    <li><i data-lucide="check"></i> Configuración de pagos USD</li>
+                    <li><i data-lucide="check"></i> Soporte en español</li>
+                </ul>
+                <a href="#contacto" class="btn-plan btn-plan-default">Empezar ahora →</a>
+            </div>
+            <!-- Plan 2 (featured) -->
+            <div class="plan-card featured reveal" style="transition-delay:0.1s;">
+                <span class="plan-tag plan-tag-featured">Más popular</span>
+                <div style="margin-top:40px;">
+                    <div class="plan-name">Apertura + Listings</div>
+                    <div class="plan-price"><span class="plan-price-prefix">desde $</span>349</div>
+                    <div class="plan-price-note">pago único</div>
+                    <div class="plan-desc">Cuenta activa más tus primeros productos cargados y optimizados listos para vender.</div>
+                    <ul class="plan-bullets">
+                        <li><i data-lucide="check"></i> Todo lo del plan Apertura</li>
+                        <li><i data-lucide="check"></i> Hasta 5 listings optimizados</li>
+                        <li><i data-lucide="check"></i> Keyword research incluido</li>
+                        <li><i data-lucide="check"></i> FBA configurado</li>
+                        <li><i data-lucide="check"></i> Acompañamiento 30 días</li>
+                    </ul>
+                    <a href="#contacto" class="btn-plan btn-plan-featured">Empezar ahora →</a>
+                </div>
+            </div>
+            <!-- Plan 3 -->
+            <div class="plan-card reveal" style="transition-delay:0.2s;">
+                <span class="plan-tag plan-tag-default">Full setup</span>
+                <div class="plan-name">Lanzamiento completo</div>
+                <div class="plan-price"><span class="plan-price-prefix">desde $</span>699</div>
+                <div class="plan-price-note">pago único</div>
+                <div class="plan-desc">De cero a tu primera venta. Incluye todo más Brand Registry y campaña PPC inicial.</div>
+                <ul class="plan-bullets">
+                    <li><i data-lucide="check"></i> Todo lo del plan Apertura + Listings</li>
+                    <li><i data-lucide="check"></i> Brand Registry gestionado</li>
+                    <li><i data-lucide="check"></i> Contenido A+ básico</li>
+                    <li><i data-lucide="check"></i> Campaña PPC de lanzamiento</li>
+                    <li><i data-lucide="check"></i> Payouts en USD configurados</li>
+                </ul>
+                <a href="#contacto" class="btn-plan btn-plan-default">Empezar ahora →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── REQUISITOS ── -->
+<section class="requisitos-section section-band">
+    <div class="container">
+        <div class="requisitos-inner">
+            <div class="requisitos-left reveal">
+                <span class="section-eyebrow">Requisitos previos</span>
+                <h2 class="section-h2">Lo que necesitas tener antes de empezar.</h2>
+                <p class="requisitos-desc">Para abrir tu cuenta Amazon Professional desde LATAM necesitas contar con estos elementos básicos. No te preocupes — si aún no los tienes, también te ayudamos a conseguirlos.</p>
+                <a href="#contacto" class="btn-req">
+                    Verificar si estoy listo
+                    <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </a>
+            </div>
+            <div class="requisitos-grid reveal" style="transition-delay:0.15s;">
+                <div class="req-tile">
+                    <div class="req-icon"><i data-lucide="building"></i></div>
+                    <div class="req-title">LLC en EE.UU.</div>
+                    <div class="req-desc">Empresa registrada en Estados Unidos, idealmente en Wyoming o Florida.</div>
+                </div>
+                <div class="req-tile">
+                    <div class="req-icon"><i data-lucide="hash"></i></div>
+                    <div class="req-title">EIN del IRS</div>
+                    <div class="req-desc">Número de identificación fiscal otorgado por el IRS a tu empresa.</div>
+                </div>
+                <div class="req-tile">
+                    <div class="req-icon"><i data-lucide="credit-card"></i></div>
+                    <div class="req-title">Cuenta bancaria US</div>
+                    <div class="req-desc">Cuenta bancaria americana para recibir tus pagos de Amazon en dólares.</div>
+                </div>
+                <div class="req-tile">
+                    <div class="req-icon"><i data-lucide="badge-check"></i></div>
+                    <div class="req-title">Identificación oficial</div>
+                    <div class="req-desc">Pasaporte o documento de identidad vigente para verificación Amazon.</div>
+                </div>
+                <div class="req-tile">
+                    <div class="req-icon"><i data-lucide="package-2"></i></div>
+                    <div class="req-title">Producto listo</div>
+                    <div class="req-desc">Producto definido con proveedor o inventario disponible para FBA.</div>
+                </div>
+                <div class="req-tile">
+                    <div class="req-icon"><i data-lucide="image"></i></div>
+                    <div class="req-title">Activos de marca</div>
+                    <div class="req-desc">Logo, nombre de marca y fotos de producto en fondo blanco (1500x1500px).</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── TESTIMONIO ── -->
+<section class="testimonial-section">
+    <div class="container">
+        <div class="testimonial-card reveal">
+            <div class="testimonial-quote-icon">
+                <i data-lucide="quote"></i>
+            </div>
+            <p class="testimonial-text">
+                "Llevaba 6 meses intentando abrir cuenta de Amazon por mi cuenta. Con Sell·U estuvo lista en 12 días. Hoy vendemos $40k/mes y duplicamos catálogo."
+            </p>
+            <div class="testimonial-attribution">
+                <div class="testimonial-avatar">MS</div>
+                <div>
+                    <div class="testimonial-name">Mariana Sandoval</div>
+                    <div class="testimonial-role">Fundadora · HAIKO Natural · Bogotá</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CTA FINAL ── -->
+<section class="cta-section section-band" id="contacto">
+    <div class="container">
+        <div class="cta-inner reveal">
+            <span class="section-eyebrow">Empieza hoy</span>
+            <h2 class="section-h2">Tu cuenta de Amazon US, <strong>activa en 14 días.</strong></h2>
+            <p class="cta-sub">Habla hoy con uno de nuestros especialistas. Sin compromiso, en español, desde donde estés en LATAM.</p>
+            <div class="cta-actions">
+                <a href="https://wa.me/573116473200" class="btn-cta-primary" target="_blank">
+                    Hablar con un especialista →
+                </a>
+                <a href="https://wa.me/573116473200" class="btn-cta-wa" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── FOOTER ── -->
 <footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-top">
+    <div class="container">
+        <div class="footer-grid">
             <div>
-                <p class="footer-contact-label">Contacto</p>
-                <span class="footer-logo-text">Sell<span>·U</span></span>
-                <p class="footer-brand-title">Oficina Principal Estados Unidos</p>
-                <div class="footer-brand-info">
-                    Ubicación: Spring Hill, Florida, Zipcode 34609<br>
-                    Email: contacto@sellu.co<br>
-                    Teléfono: +1 954 210 8455<br>
-                    Horario de atención:<br>
-                    Lunes - Sábado: 9:00 am – 6:00 pm EST
+                <a href="{{ url('/') }}" class="footer-logo">Sell<span>·U</span></a>
+                <div class="footer-address">
+                    Spring Hill, Florida 34609<br>
+                    contacto@sellu.co<br>
+                    +1 954 210 5405<br>
+                    Lunes–Sábado 9am–9pm EST
                 </div>
             </div>
             <div class="footer-col">
-                <p class="footer-col-title">Menú Principal</p>
+                <p class="footer-col-title">Menú principal</p>
                 <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}">Abre tu empresa</a>
-<a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
-<a href="{{ url('/pages/apertura-marketplace') }}">Vende en Amazon</a>
-<a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}">Registro de marca</a>
-<a href="{{ url('/pages/almacenamiento-y-logistica') }}">Envíos</a>
-<a href="{{ url('/pages/registro-fda-de-alimentos') }}">Registro Sanitario</a>
-<a href="{{ url('/pages/canales-de-atencion') }}">Soporte</a>
+                <a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
+                <a href="{{ url('/pages/apertura-marketplace') }}">Vende en Amazon</a>
+                <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}">Registro de marca</a>
+                <a href="{{ url('/pages/almacenamiento-y-logistica') }}">Envíos</a>
+                <a href="{{ url('/pages/registro-fda-de-alimentos') }}">Registro Sanitario</a>
+                <a href="{{ url('/pages/canales-de-atencion') }}">Soporte</a>
             </div>
             <div class="footer-col">
-                <p class="footer-col-title">Información Legal</p>
+                <p class="footer-col-title">Información legal</p>
                 <a href="{{ url('/pages/terminos-de-servicio') }}">Términos de Servicio</a>
                 <a href="{{ url('/pages/politica-de-privacidad') }}">Política de privacidad</a>
                 <a href="{{ url('/pages/politica-de-garantia') }}">Política de Garantía</a>
             </div>
         </div>
-        <div class="footer-payments">
-            <span class="payment-badge">AMEX</span>
-            <span class="payment-badge">Apple Pay</span>
-            <span class="payment-badge">Diners</span>
-            <span class="payment-badge">Discover</span>
-            <span class="payment-badge">Google Pay</span>
-            <span class="payment-badge">Mastercard</span>
-            <span class="payment-badge">PayPal</span>
-            <span class="payment-badge">Shop Pay</span>
-            <span class="payment-badge">Venmo</span>
-            <span class="payment-badge">Visa</span>
-        </div>
     </div>
     <div class="footer-bottom">
-        <p>
-            Hecho con <strong>♥</strong> por el equipo de Sell·U LATAM LLC<br>
-            © {{ date('Y') }} Empresa registrada en el estado de Florida, EE.UU. EIN: 84-3781816. Este sitio tiene fines<br>
-            informativos y no constituye asesoría legal o fiscal directa. Trabajamos con profesionales aliados debidamente autorizados.
-        </p>
+        <p>© {{ date('Y') }} Empresa registrada en Florida, EE.UU. EIN: 84-3761818.</p>
     </div>
 </footer>
 
+<!-- ── SCRIPTS ── -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <script>
-function toggleFaq(btn) {
-    const item = btn.parentElement;
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-}
+document.addEventListener('DOMContentLoaded', function () {
+    // Init Lucide icons
+    lucide.createIcons();
+
+    // Nav scroll effect
+    var nav = document.getElementById('main-nav');
+    function handleNavScroll() {
+        if (window.scrollY > 24) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    }
+    window.addEventListener('scroll', handleNavScroll, { passive: true });
+    handleNavScroll();
+
+    // Reveal on scroll
+    var revealEls = document.querySelectorAll('.reveal');
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(function (el) {
+        observer.observe(el);
+    });
+});
 </script>
 </body>
 </html>
