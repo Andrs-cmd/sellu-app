@@ -235,13 +235,39 @@
                 <span class="tt"><button type="button" class="tt-btn" onclick="tt(this)">?</button><div class="tt-box">Los precios varían según el estado porque cada uno tiene diferentes tarifas de registro gubernamentales. El precio mostrado incluye todos los costos estatales.</div></span>
             </label>
             <select id="state-select-plans" onchange="renderPlans(this.value)">
-                <option value="FL" selected>Florida</option>
-                <option value="AL">Alabama</option><option value="AK">Alaska</option>
-                <option value="AZ">Arizona</option><option value="CA">California</option>
-                <option value="CO">Colorado</option><option value="DE">Delaware</option>
-                <option value="GA">Georgia</option><option value="IL">Illinois</option>
-                <option value="NY">New York</option><option value="TX">Texas</option>
-                <option value="WY">Wyoming</option>
+                <optgroup label="Más populares">
+                    <option value="FL" selected>Florida</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="DE">Delaware</option>
+                    <option value="TX">Texas</option>
+                    <option value="NY">New York</option>
+                    <option value="CA">California</option>
+                    <option value="NV">Nevada</option>
+                </optgroup>
+                <optgroup label="Todos los estados">
+                    <option value="AL">Alabama</option><option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option><option value="AR">Arkansas</option>
+                    <option value="CO">Colorado</option><option value="CT">Connecticut</option>
+                    <option value="GA">Georgia</option><option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option><option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option><option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option><option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option><option value="ME">Maine</option>
+                    <option value="MD">Maryland</option><option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option><option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option><option value="MO">Missouri</option>
+                    <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                    <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option><option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option><option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option><option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option><option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option><option value="UT">Utah</option>
+                    <option value="VT">Vermont</option><option value="VA">Virginia</option>
+                    <option value="WA">Washington</option><option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                </optgroup>
             </select>
         </div>
         <div class="pricing-grid" id="plans-container"></div>
@@ -460,23 +486,27 @@ document.addEventListener('click', e => {
     }
 });
 
-// ── PLANES ──
-const plansByState = {
-    FL: [{title:'Plan Básico FL',sub:'Inicio en Florida',price:399,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full FL',sub:'Variedad y acompañamiento',price:499,list:['Todo Básico FL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury FL',sub:'Solución integral FL',price:1099,list:['Todo Full FL','Asesoría contable','Página Web','Línea Telefónica']}],
-    DE: [{title:'Plan Básico DE',sub:'Inicio en Delaware',price:449,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full DE',sub:'Variedad y acompañamiento',price:549,list:['Todo Básico DE','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury DE',sub:'Solución integral DE',price:1199,list:['Todo Full DE','Asesoría contable','Página Web','Línea Telefónica']}],
-    WY: [{title:'Plan Básico WY',sub:'Inicio en Wyoming',price:349,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full WY',sub:'Variedad y acompañamiento',price:449,list:['Todo Básico WY','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury WY',sub:'Solución integral WY',price:999,list:['Todo Full WY','Asesoría contable','Página Web','Línea Telefónica']}],
-    TX: [{title:'Plan Básico TX',sub:'Inicio en Texas',price:599,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full TX',sub:'Variedad y acompañamiento',price:699,list:['Todo Básico TX','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury TX',sub:'Solución integral TX',price:1299,list:['Todo Full TX','Asesoría contable','Página Web','Línea Telefónica']}],
-    NY: [{title:'Plan Básico NY',sub:'Inicio en New York',price:499,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full NY',sub:'Variedad y acompañamiento',price:599,list:['Todo Básico NY','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury NY',sub:'Solución integral NY',price:1199,list:['Todo Full NY','Asesoría contable','Página Web','Línea Telefónica']}],
-    CA: [{title:'Plan Básico CA',sub:'Inicio en California',price:399,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full CA',sub:'Variedad y acompañamiento',price:499,list:['Todo Básico CA','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury CA',sub:'Solución integral CA',price:1099,list:['Todo Full CA','Asesoría contable','Página Web','Línea Telefónica']}],
-    AL: [{title:'Plan Básico AL',sub:'Inicio en Alabama',price:349,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full AL',sub:'Variedad y acompañamiento',price:449,list:['Todo Básico AL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury AL',sub:'Solución integral AL',price:999,list:['Todo Full AL','Asesoría contable','Página Web','Línea Telefónica']}],
-    AK: [{title:'Plan Básico AK',sub:'Inicio en Alaska',price:399,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full AK',sub:'Variedad y acompañamiento',price:499,list:['Todo Básico AK','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury AK',sub:'Solución integral AK',price:1099,list:['Todo Full AK','Asesoría contable','Página Web','Línea Telefónica']}],
-    AZ: [{title:'Plan Básico AZ',sub:'Inicio en Arizona',price:349,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full AZ',sub:'Variedad y acompañamiento',price:449,list:['Todo Básico AZ','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury AZ',sub:'Solución integral AZ',price:999,list:['Todo Full AZ','Asesoría contable','Página Web','Línea Telefónica']}],
-    CO: [{title:'Plan Básico CO',sub:'Inicio en Colorado',price:349,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full CO',sub:'Variedad y acompañamiento',price:449,list:['Todo Básico CO','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury CO',sub:'Solución integral CO',price:999,list:['Todo Full CO','Asesoría contable','Página Web','Línea Telefónica']}],
-    GA: [{title:'Plan Básico GA',sub:'Inicio en Georgia',price:399,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full GA',sub:'Variedad y acompañamiento',price:499,list:['Todo Básico GA','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury GA',sub:'Solución integral GA',price:1099,list:['Todo Full GA','Asesoría contable','Página Web','Línea Telefónica']}],
-    IL: [{title:'Plan Básico IL',sub:'Inicio en Illinois',price:499,list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement']},{title:'Plan Full IL',sub:'Variedad y acompañamiento',price:599,list:['Todo Básico IL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'],featured:true},{title:'Plan Luxury IL',sub:'Solución integral IL',price:1199,list:['Todo Full IL','Asesoría contable','Página Web','Línea Telefónica']}],
+// ── PLANES (misma tabla de precios que abre-empresa) ──
+const statePrices = {
+    FL:399, WY:349, DE:449, TX:599, NY:499, CA:399, NV:349,
+    AL:349, AK:399, AZ:349, AR:349, CO:349, CT:449, GA:399,
+    HI:449, ID:349, IL:499, IN:399, IA:349, KS:349, KY:349,
+    LA:399, ME:349, MD:449, MA:449, MI:399, MN:399, MS:349,
+    MO:349, MT:349, NE:349, NH:349, NJ:499, NM:349, NC:399,
+    ND:349, OH:399, OK:349, OR:399, PA:449, RI:449, SC:399,
+    SD:349, TN:349, UT:349, VT:349, VA:399, WA:449, WV:349, WI:399
 };
 
-function getPlans(state) { return plansByState[state] || plansByState['FL']; }
+function getPlans(state) {
+    const base = statePrices[state] || 399;
+    const full = base + 100;
+    const lux  = base <= 349 ? 999 : base <= 399 ? 1099 : base <= 449 ? 1199 : 1299;
+    return [
+        { title:`Plan Básico ${state}`, sub:'Inicio rápido',             price:base, list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:`Plan Full ${state}`,   sub:'Variedad y acompañamiento', price:full, list:[`Todo Básico ${state}`,'Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:`Plan Luxury ${state}`, sub:'Solución integral',         price:lux,  list:[`Todo Full ${state}`,'Asesoría contable','Página Web','Línea Telefónica'] }
+    ];
+}
 
 function renderPlans(state) {
     const container = document.getElementById('plans-container');

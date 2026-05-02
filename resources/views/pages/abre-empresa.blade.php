@@ -177,34 +177,37 @@
         .paso p { font-size: 12px; color: var(--muted); line-height: 1.65; }
 
         /* ── PRECIOS ── */
-        .precios { padding: 72px 5%; background: var(--white); }
-        .precios-header { text-align: center; margin-bottom: 36px; }
-        .precios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 800; color: var(--navy); margin-bottom: 24px; }
-        .estado-select-wrap { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 40px; }
-        .estado-select-wrap label { font-size: 14px; font-weight: 600; color: var(--text); }
-        .estado-select { border: 1px solid var(--gray2); border-radius: 6px; padding: 9px 16px; font-family: 'Montserrat', sans-serif; font-size: 14px; color: var(--text); background: var(--white); cursor: pointer; outline: none; }
-        .precios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto 40px; }
-        .precio-card { border: 1px solid var(--gray2); border-radius: 12px; padding: 28px 24px; position: relative; transition: all .2s; }
-        .precio-card:hover { border-color: var(--navy); }
-        .precio-card.featured { border-color: var(--navy); background: var(--navy); }
-        .precio-popular { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--gold); color: var(--navy); font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 800; padding: 4px 16px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; white-space: nowrap; }
-        .precio-plan { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
-        .precio-card.featured .precio-plan { color: var(--white); }
-        .precio-subtitle { font-size: 12px; color: var(--muted); margin-bottom: 20px; }
-        .precio-card.featured .precio-subtitle { color: rgba(255,255,255,.5); }
-        .precio-amount { font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: 900; color: var(--gold); line-height: 1; margin-bottom: 6px; }
-        .precio-period { font-size: 12px; color: var(--muted); margin-bottom: 24px; }
+        .precios { padding: 80px 5%; background: var(--gray); }
+        .precios-header { text-align: center; margin-bottom: 48px; }
+        .precios-tag { display: inline-block; background: var(--gold); color: var(--navy); font-size: 11px; font-weight: 800; padding: 5px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 16px; }
+        .precios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; font-weight: 900; color: var(--navy); margin-bottom: 10px; line-height: 1.2; }
+        .precios-header p { font-size: 15px; color: var(--muted); margin-bottom: 28px; }
+        .estado-select-wrap { display: inline-flex; align-items: center; gap: 10px; background: var(--white); border: 1.5px solid var(--gray2); border-radius: 10px; padding: 10px 18px; }
+        .estado-select-wrap label { font-size: 13px; font-weight: 700; color: var(--navy); white-space: nowrap; }
+        .estado-select { border: none; outline: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); background: transparent; cursor: pointer; min-width: 160px; }
+        .precios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 980px; margin: 0 auto; align-items: start; }
+        .precio-card { background: var(--white); border: 1.5px solid var(--gray2); border-radius: 16px; padding: 32px 28px; position: relative; display: flex; flex-direction: column; transition: box-shadow .25s, transform .25s, border-color .25s; }
+        .precio-card:hover { box-shadow: 0 8px 32px rgba(13,27,62,.08); border-color: #c8ccda; }
+        .precio-card.featured { background: var(--navy); border-color: var(--navy); box-shadow: 0 16px 48px rgba(13,27,62,.22); transform: translateY(-10px); }
+        .precio-popular { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--gold); color: var(--navy); font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 800; padding: 4px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; }
+        .precio-plan { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 4px; text-transform: uppercase; letter-spacing: .04em; }
+        .precio-card.featured .precio-plan { color: rgba(255,255,255,.7); }
+        .precio-subtitle { font-size: 12px; color: var(--muted); margin-bottom: 18px; }
+        .precio-card.featured .precio-subtitle { color: rgba(255,255,255,.45); }
+        .precio-amount { font-family: 'Montserrat', sans-serif; font-size: 52px; font-weight: 900; color: var(--gold); line-height: 1; letter-spacing: -2px; }
+        .precio-amount-sym { font-size: 26px; vertical-align: super; font-weight: 700; letter-spacing: 0; }
+        .precio-period { font-size: 12px; color: var(--muted); margin-top: 6px; margin-bottom: 24px; }
         .precio-card.featured .precio-period { color: rgba(255,255,255,.4); }
-        .precio-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
-        .precio-features li { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--text); }
-        .precio-card.featured .precio-features li { color: rgba(255,255,255,.8); }
-        .precio-check { color: var(--gold); font-weight: 800; flex-shrink: 0; }
-        .precio-btns { display: flex; flex-direction: column; gap: 8px; }
-        .btn-precio-primary { width: 100%; padding: 12px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; cursor: pointer; background: var(--gold); color: var(--navy); border: none; transition: background .2s; }
-        .btn-precio-primary:hover { background: var(--gold2); }
-        .btn-precio-secondary { width: 100%; padding: 11px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; cursor: pointer; background: transparent; border: 1.5px solid var(--gray2); color: var(--muted); transition: all .2s; }
-        .precio-card.featured .btn-precio-secondary { border-color: rgba(255,255,255,.2); color: rgba(255,255,255,.6); }
-        .btn-precio-secondary:hover { border-color: var(--navy); color: var(--navy); }
+        .precio-divider { height: 1px; background: var(--gray2); margin-bottom: 20px; }
+        .precio-card.featured .precio-divider { background: rgba(255,255,255,.12); }
+        .precio-features { list-style: none; display: flex; flex-direction: column; gap: 11px; margin-bottom: 28px; flex: 1; }
+        .precio-features li { display: flex; align-items: flex-start; gap: 9px; font-size: 13px; color: var(--text); line-height: 1.45; }
+        .precio-card.featured .precio-features li { color: rgba(255,255,255,.82); }
+        .precio-check { color: var(--gold); font-weight: 900; flex-shrink: 0; margin-top: 1px; }
+        .btn-precio-primary { display: block; width: 100%; padding: 13px; border-radius: 8px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; text-align: center; text-decoration: none; background: var(--gold); color: var(--navy); border: none; transition: background .2s, transform .15s; }
+        .btn-precio-primary:hover { background: var(--gold2); transform: translateY(-1px); }
+        .precio-card.featured .btn-precio-primary { background: var(--white); color: var(--navy); }
+        .precio-card.featured .btn-precio-primary:hover { background: var(--gray); }
 
         /* ── DUDAS CTA ── */
         .dudas-cta { background: var(--gray); padding: 48px 5%; text-align: center; }
@@ -262,6 +265,8 @@
             .pasos-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
             .pasos-line { display: none; }
             .precios-grid { grid-template-columns: 1fr; }
+            .precio-card.featured { transform: none; }
+            .precio-amount { font-size: 44px; }
             .servicios-lista-grid { grid-template-columns: 1fr 1fr; }
             .footer-top { grid-template-columns: 1fr; gap: 32px; }
             .nav-links { display: none; }
@@ -425,22 +430,66 @@
 {{-- PRECIOS --}}
 <section id="precios" class="precios">
     <div class="precios-header">
-        <h2>Consulta el precio según el estado.</h2>
+        <span class="precios-tag">Planes de constitución</span>
+        <h2>Elige tu estado y comienza hoy</h2>
+        <p>Precio único sin sorpresas. Incluye todos los trámites y tarifas estatales.</p>
         <div class="estado-select-wrap">
-            <label>Selecciona tu estado:</label>
+            <label>📍 Estado:</label>
             <select class="estado-select" id="estadoSelect" onchange="renderPreciosPage(this.value)">
-                <option value="FL">Florida</option>
-                <option value="WY">Wyoming</option>
-                <option value="DE">Delaware</option>
-                <option value="TX">Texas</option>
-                <option value="NY">New York</option>
-                <option value="CA">California</option>
-                <option value="AL">Alabama</option>
-                <option value="AK">Alaska</option>
-                <option value="AZ">Arizona</option>
-                <option value="CO">Colorado</option>
-                <option value="GA">Georgia</option>
-                <option value="IL">Illinois</option>
+                <optgroup label="Más populares">
+                    <option value="FL">Florida</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="DE">Delaware</option>
+                    <option value="TX">Texas</option>
+                    <option value="NY">New York</option>
+                    <option value="CA">California</option>
+                    <option value="NV">Nevada</option>
+                </optgroup>
+                <optgroup label="Todos los estados">
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                </optgroup>
             </select>
         </div>
     </div>
@@ -611,91 +660,52 @@ function toggleVideo(card) {
     }
 }
 
-// ── PLANES POR ESTADO (sincronizado con el formulario de constitución) ──
-const plansByState = {
-    FL: [
-        { title:'Plan Básico FL',  sub:'Inicio en Florida',           price:399,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full FL',    sub:'Variedad y acompañamiento',   price:499,  list:['Todo Básico FL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury FL',  sub:'Solución integral FL',        price:1099, list:['Todo Full FL','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    WY: [
-        { title:'Plan Básico WY',  sub:'Inicio en Wyoming',           price:349,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full WY',    sub:'Variedad y acompañamiento',   price:449,  list:['Todo Básico WY','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury WY',  sub:'Solución integral WY',        price:999,  list:['Todo Full WY','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    DE: [
-        { title:'Plan Básico DE',  sub:'Inicio en Delaware',          price:449,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full DE',    sub:'Variedad y acompañamiento',   price:549,  list:['Todo Básico DE','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury DE',  sub:'Solución integral DE',        price:1199, list:['Todo Full DE','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    TX: [
-        { title:'Plan Básico TX',  sub:'Inicio en Texas',             price:599,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full TX',    sub:'Variedad y acompañamiento',   price:699,  list:['Todo Básico TX','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury TX',  sub:'Solución integral TX',        price:1299, list:['Todo Full TX','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    NY: [
-        { title:'Plan Básico NY',  sub:'Inicio en New York',          price:499,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full NY',    sub:'Variedad y acompañamiento',   price:599,  list:['Todo Básico NY','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury NY',  sub:'Solución integral NY',        price:1199, list:['Todo Full NY','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    CA: [
-        { title:'Plan Básico CA',  sub:'Inicio en California',        price:399,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full CA',    sub:'Variedad y acompañamiento',   price:499,  list:['Todo Básico CA','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury CA',  sub:'Solución integral CA',        price:1099, list:['Todo Full CA','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    AL: [
-        { title:'Plan Básico AL',  sub:'Inicio en Alabama',           price:349,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full AL',    sub:'Variedad y acompañamiento',   price:449,  list:['Todo Básico AL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury AL',  sub:'Solución integral AL',        price:999,  list:['Todo Full AL','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    AK: [
-        { title:'Plan Básico AK',  sub:'Inicio en Alaska',            price:399,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full AK',    sub:'Variedad y acompañamiento',   price:499,  list:['Todo Básico AK','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury AK',  sub:'Solución integral AK',        price:1099, list:['Todo Full AK','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    AZ: [
-        { title:'Plan Básico AZ',  sub:'Inicio en Arizona',           price:349,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full AZ',    sub:'Variedad y acompañamiento',   price:449,  list:['Todo Básico AZ','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury AZ',  sub:'Solución integral AZ',        price:999,  list:['Todo Full AZ','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    CO: [
-        { title:'Plan Básico CO',  sub:'Inicio en Colorado',          price:349,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full CO',    sub:'Variedad y acompañamiento',   price:449,  list:['Todo Básico CO','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury CO',  sub:'Solución integral CO',        price:999,  list:['Todo Full CO','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    GA: [
-        { title:'Plan Básico GA',  sub:'Inicio en Georgia',           price:399,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full GA',    sub:'Variedad y acompañamiento',   price:499,  list:['Todo Básico GA','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury GA',  sub:'Solución integral GA',        price:1099, list:['Todo Full GA','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
-    IL: [
-        { title:'Plan Básico IL',  sub:'Inicio en Illinois',          price:499,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
-        { title:'Plan Full IL',    sub:'Variedad y acompañamiento',   price:599,  list:['Todo Básico IL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { title:'Plan Luxury IL',  sub:'Solución integral IL',        price:1199, list:['Todo Full IL','Asesoría contable','Página Web','Línea Telefónica'] }
-    ],
+// ── PLANES POR ESTADO ──
+// Tier A ($349): estados con tarifas bajas
+// Tier B ($399): estados con tarifas medias
+// Tier C ($449): estados con tarifas medianas-altas
+// Tier D ($499): estados con tarifas altas
+// Tier E ($599): Texas (tarifa especial)
+const statePrices = {
+    FL:399, WY:349, DE:449, TX:599, NY:499, CA:399, NV:349,
+    AL:349, AK:399, AZ:349, AR:349, CO:349, CT:449, GA:399,
+    HI:449, ID:349, IL:499, IN:399, IA:349, KS:349, KY:349,
+    LA:399, ME:349, MD:449, MA:449, MI:399, MN:399, MS:349,
+    MO:349, MT:349, NE:349, NH:349, NJ:499, NM:349, NC:399,
+    ND:349, OH:399, OK:349, OR:399, PA:449, RI:449, SC:399,
+    SD:349, TN:349, UT:349, VT:349, VA:399, WA:449, WV:349, WI:399
 };
+
+function getPlansForState(state) {
+    const base  = statePrices[state] || 399;
+    const full  = base + 100;
+    const lux   = base <= 349 ? 999 : base <= 399 ? 1099 : base <= 449 ? 1199 : 1299;
+    return [
+        { tier:'Básico', sub:'Inicio rápido',              price:base, list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { tier:'Full',   sub:'Variedad y acompañamiento',  price:full, list:[`Todo Plan Básico ${state}`,'Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { tier:'Luxury', sub:'Solución integral',          price:lux,  list:[`Todo Plan Full ${state}`,'Asesoría contable','Página Web','Línea Telefónica'] }
+    ];
+}
 
 function renderPreciosPage(state) {
     const grid  = document.getElementById('preciosGrid');
-    const plans = plansByState[state] || plansByState['FL'];
+    const plans = getPlansForState(state);
     const base  = '{{ url("/constituir") }}';
 
     grid.innerHTML = plans.map(p => {
-        const planKey = p.title.includes('Básico') ? 'Básico' : p.title.includes('Full') ? 'Full' : 'Luxury';
-        const url = `${base}?estado=${encodeURIComponent(state)}&plan=${encodeURIComponent(planKey)}`;
+        const url = `${base}?estado=${encodeURIComponent(state)}&plan=${encodeURIComponent(p.tier)}`;
         return `
         <div class="precio-card ${p.featured ? 'featured' : ''}">
-            ${p.featured ? '<span class="precio-popular">Más popular</span>' : ''}
-            <p class="precio-plan">${p.title}</p>
-            <p class="precio-subtitle" ${p.featured ? 'style="color:rgba(255,255,255,.5)"' : ''}>${p.sub}</p>
-            <div class="precio-amount">$${p.price.toLocaleString('en-US')}</div>
-            <p class="precio-period" ${p.featured ? 'style="color:rgba(255,255,255,.4)"' : ''}>USD · pago único</p>
+            ${p.featured ? '<span class="precio-popular">⭐ Más popular</span>' : ''}
+            <p class="precio-plan">Plan ${p.tier}</p>
+            <p class="precio-subtitle">${p.sub}</p>
+            <div class="precio-amount"><span class="precio-amount-sym">$</span>${p.price.toLocaleString('en-US')}</div>
+            <p class="precio-period">USD · pago único</p>
+            <div class="precio-divider"></div>
             <ul class="precio-features">
-                ${p.list.map(f => `<li><span class="precio-check">✓</span> ${f}</li>`).join('')}
+                ${p.list.map(f => `<li><span class="precio-check">✓</span>${f}</li>`).join('')}
             </ul>
-            <div class="precio-btns">
-                <a href="${url}" class="btn-precio-primary" style="display:block;text-align:center;text-decoration:none;">Empezar Ya!</a>
-            </div>
+            <a href="${url}" class="btn-precio-primary">Empezar Ya →</a>
         </div>`;
     }).join('');
 }
