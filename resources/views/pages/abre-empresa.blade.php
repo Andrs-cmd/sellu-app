@@ -587,7 +587,7 @@
             <div class="footer-col">
                 <p class="footer-col-title">Información legal</p>
                 <a href="{{ url('/pages/terminos-de-servicio') }}">Términos de Servicio</a>
-                <a href="#">Políticas de privacidad</a>
+                <a href="{{ url('/pages/politica-de-privacidad') }}">Política de privacidad</a>
                 <a href="#">Política de Garantía</a>
             </div>
         </div>
