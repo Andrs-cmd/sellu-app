@@ -333,46 +333,21 @@
             {{-- Testimonio 3 --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
-                    src="https://cdn.shopify.com/videos/c/o/v/c932db14e024455492f56db7dccf565d.mp4"
+                    src="https://cdn.shopify.com/videos/c/o/v/c4f4283276574e319c927bda4f9d07ee.mp4"
                     preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
-                <!--<div class="testimonio-overlay">
-                    <strong>Ignacio Carbonatti</strong>
-                    <span>Fundador de</span>
-                    <span class="testimonio-tag">ProATeam</span>
-                </div>-->
             </div>
 
             {{-- Testimonio 4 --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
-                    src="https://cdn.shopify.com/videos/c/o/v/b19d02a96c404924b148259181fed7fa.mp4"
+                    src="https://cdn.shopify.com/videos/c/o/v/91a6533ec6d2463c89bbc451f024f644.mp4"
                     preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
-                <!--<div class="testimonio-overlay">
-                    <strong>Cliente Sellu</strong>
-                    <span>Fundador de</span>
-                    <span class="testimonio-tag">Su empresa en USA</span>
-                </div>-->
-            </div>
-
-            {{-- Testimonio 5 --}}
-            <div class="testimonio-card" onclick="toggleVideo(this)">
-                <video class="testimonio-video"
-                    src="https://cdn.shopify.com/videos/c/o/v/6fed3fa6b24441229dd0107d42c59994.mp4"
-                    preload="metadata" playsinline loop></video>
-                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
-                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
-                </button>
-                <!--<div class="testimonio-overlay">
-                    <strong>Cliente Sellu</strong>
-                    <span>Fundador de</span>
-                    <span class="testimonio-tag">Su empresa en USA</span>
-                </div>-->
             </div>
 
         </div>
