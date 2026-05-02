@@ -303,11 +303,11 @@
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
-                <div class="testimonio-overlay">
+                <!--<div class="testimonio-overlay">
                     <strong>Doris Serrano</strong>
                     <span>Fundadora de</span>
                     <span class="testimonio-tag">Nutrelle.CO</span>
-                </div>
+                </div>-->
             </div>
 
             {{-- Testimonio 2 --}}
@@ -318,11 +318,11 @@
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
-                <div class="testimonio-overlay">
+                <!--<div class="testimonio-overlay">
                     <strong>Valentina</strong>
                     <span>Fundadora de</span>
                     <span class="testimonio-tag">Balenne</span>
-                </div>
+                </div>-->
             </div>
 
             {{-- Testimonio 3 --}}
@@ -333,11 +333,11 @@
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
-                <div class="testimonio-overlay">
+                <!--<div class="testimonio-overlay">
                     <strong>Ignacio Carbonatti</strong>
                     <span>Fundador de</span>
                     <span class="testimonio-tag">ProATeam</span>
-                </div>
+                </div>-->
             </div>
 
             {{-- Testimonio 4 --}}
@@ -348,11 +348,11 @@
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
-                <div class="testimonio-overlay">
+                <!--<div class="testimonio-overlay">
                     <strong>Cliente Sellu</strong>
                     <span>Fundador de</span>
                     <span class="testimonio-tag">Su empresa en USA</span>
-                </div>
+                </div>-->
             </div>
 
             {{-- Testimonio 5 --}}
@@ -363,11 +363,11 @@
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
-                <div class="testimonio-overlay">
+                <!--<div class="testimonio-overlay">
                     <strong>Cliente Sellu</strong>
                     <span>Fundador de</span>
                     <span class="testimonio-tag">Su empresa en USA</span>
-                </div>
+                </div>-->
             </div>
 
         </div>
