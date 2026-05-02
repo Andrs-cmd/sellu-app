@@ -428,68 +428,17 @@
         <h2>Consulta el precio según el estado.</h2>
         <div class="estado-select-wrap">
             <label>Selecciona tu estado:</label>
-            <select class="estado-select" onchange="cambiarEstado(this.value)">
-                <option value="florida">Florida</option>
-                <option value="wyoming">Wyoming</option>
-                <option value="delaware">Delaware</option>
-                <option value="texas">Texas</option>
-                <option value="nevada">Nevada</option>
+            <select class="estado-select" id="estadoSelect" onchange="renderPreciosPage(this.value)">
+                <option value="FL">Florida</option>
+                <option value="WY">Wyoming</option>
+                <option value="DE">Delaware</option>
+                <option value="TX">Texas</option>
+                <option value="NY">New York</option>
+                <option value="CA">California</option>
             </select>
         </div>
     </div>
-    <div class="precios-grid" id="preciosGrid">
-        <div class="precio-card">
-            <p class="precio-plan" id="planBasicoNombre">Plan Básico FL</p>
-            <p class="precio-subtitle">Inicio en Florida</p>
-            <div class="precio-amount" id="planBasicoPrecio">$399</div>
-            <p class="precio-period">USD · pago único</p>
-            <ul class="precio-features">
-                <li><span class="precio-check">✓</span> Registro LLC</li>
-                <li><span class="precio-check">✓</span> Agente registrado</li>
-                <li><span class="precio-check">✓</span> Dirección fiscal empresarial</li>
-                <li><span class="precio-check">✓</span> EIN</li>
-                <li><span class="precio-check">✓</span> Tarifas estatales</li>
-                <li><span class="precio-check">✓</span> Operating Agreement</li>
-            </ul>
-            <div class="precio-btns">
-                <button class="btn-precio-primary">Empezar Ya!</button>
-                <button class="btn-precio-secondary">Ver Detalles</button>
-            </div>
-        </div>
-        <div class="precio-card featured">
-            <span class="precio-popular">Más popular</span>
-            <p class="precio-plan" id="planFullNombre">Plan Full FL</p>
-            <p class="precio-subtitle" style="color:rgba(255,255,255,.5)">Variedad y acompañamiento</p>
-            <div class="precio-amount" id="planFullPrecio">$499</div>
-            <p class="precio-period" style="color:rgba(255,255,255,.4)">USD · pago único</p>
-            <ul class="precio-features">
-                <li><span class="precio-check">✓</span> Todo Básico FL</li>
-                <li><span class="precio-check">✓</span> Cuenta Bancaria en Mercury o Relay</li>
-                <li><span class="precio-check">✓</span> Stripe configurado e integrado</li>
-                <li><span class="precio-check">✓</span> Asesoría básica</li>
-            </ul>
-            <div class="precio-btns">
-                <button class="btn-precio-primary">Empezar Ya!</button>
-                <button class="btn-precio-secondary">Ver Detalles</button>
-            </div>
-        </div>
-        <div class="precio-card">
-            <p class="precio-plan" id="planLuxuryNombre">Plan Luxury FL</p>
-            <p class="precio-subtitle">Solución integral FL</p>
-            <div class="precio-amount" id="planLuxuryPrecio">$1,099</div>
-            <p class="precio-period">USD · pago único</p>
-            <ul class="precio-features">
-                <li><span class="precio-check">✓</span> Todo Full FL</li>
-                <li><span class="precio-check">✓</span> Asesoría contable</li>
-                <li><span class="precio-check">✓</span> Página Web</li>
-                <li><span class="precio-check">✓</span> Línea Telefónica</li>
-            </ul>
-            <div class="precio-btns">
-                <button class="btn-precio-primary">Empezar Ya!</button>
-                <button class="btn-precio-secondary">Ver Detalles</button>
-            </div>
-        </div>
-    </div>
+    <div class="precios-grid" id="preciosGrid"></div>
 </section>
 
 {{-- DUDAS CTA --}}
@@ -656,23 +605,64 @@ function toggleVideo(card) {
     }
 }
 
-const precios = {
-    florida:  { basico: ['Plan Básico FL', '$399'], full: ['Plan Full FL', '$499'], luxury: ['Plan Luxury FL', '$1,099'] },
-    wyoming:  { basico: ['Plan Básico WY', '$349'], full: ['Plan Full WY', '$449'], luxury: ['Plan Luxury WY', '$999']  },
-    delaware: { basico: ['Plan Básico DE', '$449'], full: ['Plan Full DE', '$549'], luxury: ['Plan Luxury DE', '$1,199'] },
-    texas:    { basico: ['Plan Básico TX', '$399'], full: ['Plan Full TX', '$499'], luxury: ['Plan Luxury TX', '$1,099'] },
-    nevada:   { basico: ['Plan Básico NV', '$449'], full: ['Plan Full NV', '$549'], luxury: ['Plan Luxury NV', '$1,199'] },
+// ── PLANES POR ESTADO (sincronizado con el formulario de constitución) ──
+const plansByState = {
+    FL: [
+        { title:'Plan Básico FL',  sub:'Inicio en Florida',           price:399,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full FL',    sub:'Variedad y acompañamiento',   price:499,  list:['Todo Básico FL','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury FL',  sub:'Solución integral FL',        price:1099, list:['Todo Full FL','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
+    WY: [
+        { title:'Plan Básico WY',  sub:'Inicio en Wyoming',           price:349,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full WY',    sub:'Variedad y acompañamiento',   price:449,  list:['Todo Básico WY','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury WY',  sub:'Solución integral WY',        price:999,  list:['Todo Full WY','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
+    DE: [
+        { title:'Plan Básico DE',  sub:'Inicio en Delaware',          price:449,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full DE',    sub:'Variedad y acompañamiento',   price:549,  list:['Todo Básico DE','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury DE',  sub:'Solución integral DE',        price:1199, list:['Todo Full DE','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
+    TX: [
+        { title:'Plan Básico TX',  sub:'Inicio en Texas',             price:599,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full TX',    sub:'Variedad y acompañamiento',   price:699,  list:['Todo Básico TX','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury TX',  sub:'Solución integral TX',        price:1299, list:['Todo Full TX','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
+    NY: [
+        { title:'Plan Básico NY',  sub:'Inicio en New York',          price:499,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full NY',    sub:'Variedad y acompañamiento',   price:599,  list:['Todo Básico NY','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury NY',  sub:'Solución integral NY',        price:1199, list:['Todo Full NY','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
+    CA: [
+        { title:'Plan Básico CA',  sub:'Inicio en California',        price:399,  list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
+        { title:'Plan Full CA',    sub:'Variedad y acompañamiento',   price:499,  list:['Todo Básico CA','Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
+        { title:'Plan Luxury CA',  sub:'Solución integral CA',        price:1099, list:['Todo Full CA','Asesoría contable','Página Web','Línea Telefónica'] }
+    ],
 };
-function cambiarEstado(estado) {
-    const p = precios[estado];
-    if (!p) return;
-    document.getElementById('planBasicoNombre').textContent  = p.basico[0];
-    document.getElementById('planBasicoPrecio').textContent  = p.basico[1];
-    document.getElementById('planFullNombre').textContent    = p.full[0];
-    document.getElementById('planFullPrecio').textContent    = p.full[1];
-    document.getElementById('planLuxuryNombre').textContent  = p.luxury[0];
-    document.getElementById('planLuxuryPrecio').textContent  = p.luxury[1];
+
+function renderPreciosPage(state) {
+    const grid  = document.getElementById('preciosGrid');
+    const plans = plansByState[state] || plansByState['FL'];
+    const url   = '{{ url("/constituir") }}';
+
+    grid.innerHTML = plans.map(p => `
+        <div class="precio-card ${p.featured ? 'featured' : ''}">
+            ${p.featured ? '<span class="precio-popular">Más popular</span>' : ''}
+            <p class="precio-plan">${p.title}</p>
+            <p class="precio-subtitle" ${p.featured ? 'style="color:rgba(255,255,255,.5)"' : ''}>${p.sub}</p>
+            <div class="precio-amount">$${p.price.toLocaleString('en-US')}</div>
+            <p class="precio-period" ${p.featured ? 'style="color:rgba(255,255,255,.4)"' : ''}>USD · pago único</p>
+            <ul class="precio-features">
+                ${p.list.map(f => `<li><span class="precio-check">✓</span> ${f}</li>`).join('')}
+            </ul>
+            <div class="precio-btns">
+                <a href="${url}" class="btn-precio-primary" style="display:block;text-align:center;text-decoration:none;">Empezar Ya!</a>
+            </div>
+        </div>
+    `).join('');
 }
+
+// Render inicial con Florida
+renderPreciosPage('FL');
 </script>
 
 </body>
