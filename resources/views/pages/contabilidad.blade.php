@@ -1024,7 +1024,7 @@
             </div>
             <div class="cta-buttons">
                 <a href="{{ route('register') }}" class="btn btn-accent btn-lg" style="justify-content:center">Empezar ahora →</a>
-                <a href="https://wa.me/19542105405" target="_blank" class="btn btn-on-dark btn-lg" style="justify-content:center">Habla con un asesor</a>
+                <a href="https://wa.me/573116473200" target="_blank" class="btn btn-on-dark btn-lg" style="justify-content:center">Habla con un asesor</a>
                 <!--<p class="cta-note">Consulta gratuita · Sin tarjeta · Respondemos en 24 h hábiles</p>-->
             </div>
         </div>
@@ -1064,9 +1064,9 @@
             <div>
                 <div class="footer-col-title">Empresa</div>
                 <div class="footer-col">
-                    <a href="#">Nosotros</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Soporte</a>
+                    <a href="{{ url('/') }}">Nosotros</a>
+                    <a href="{{ url('/') }}">Blog</a>
+                    <a href="{{ url('/pages/canales-de-atencion') }}">Soporte</a>
                 </div>
             </div>
             <div>
@@ -1074,7 +1074,7 @@
                 <div class="footer-col">
                     <a href="mailto:contacto@sellu.co">contacto@sellu.co</a>
                     <a href="tel:+19542105405">+1 954 210 5405</a>
-                    <a href="https://wa.me/19542105405" target="_blank">WhatsApp</a>
+                    <a href="https://wa.me/573116473200" target="_blank">WhatsApp</a>
                 </div>
             </div>
         </div>

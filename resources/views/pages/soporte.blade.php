@@ -177,7 +177,7 @@
             <a href="https://facebook.com/sellu.latam" target="_blank" rel="noopener" class="channel-btn">
                 Facebook
             </a>
-            <a href="https://wa.me/19542105405" target="_blank" rel="noopener" class="channel-btn">
+            <a href="https://wa.me/573116473200" target="_blank" rel="noopener" class="channel-btn">
                 WhatsApp
             </a>
             <a href="mailto:contacto@sellu.co" class="channel-btn">

@@ -290,7 +290,7 @@
                         <h3>¿Tienes preguntas sobre tu trámite?</h3>
                         <p>Nuestro equipo responde en menos de 2 horas hábiles.</p>
                     </div>
-                    <a href="https://wa.me/15551234567?text=Hola, tengo preguntas sobre mi trámite: {{ urlencode($tramite->nombre_empresa ?? 'mi empresa') }}" target="_blank" class="btn-wa">
+                    <a href="https://wa.me/573116473200?text=Hola, tengo preguntas sobre mi trámite: {{ urlencode($tramite->nombre_empresa ?? 'mi empresa') }}" target="_blank" class="btn-wa">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.4 15.6 6.7 16 8 16c4.4 0 8-3.6 8-8s-3.6-8-8-8z"/></svg>
                         Contactar asesor
                     </a>

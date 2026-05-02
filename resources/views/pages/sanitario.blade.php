@@ -222,7 +222,7 @@
         <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L2 3v5c0 4 2.7 7.3 6 8 3.3-.7 6-4 6-8V3L8 0z"/></svg>
         Garantía Sell-U: si no tienes tu registro en <strong>10 días hábiles</strong>, te devolvemos el dinero.
     </p>
-    <a href="https://wa.me/15551234567" class="btn-red" target="_blank">Reserva tu asesoría gratuita</a>
+    <a href="https://wa.me/573116473200" class="btn-red" target="_blank">Reserva tu asesoría gratuita</a>
     <p class="hero-sub">Duración: 30 min · Cupos limitados por semana</p>
 </section>
 
@@ -237,7 +237,7 @@
             <li>cumplimiento normativo completo.</li>
         </ul>
         <p>Te guiamos paso a paso para que ingreses legalmente tus productos al mercado norteamericano. Sin errores, sin sanciones, sin complicaciones.</p>
-        <a href="https://wa.me/15551234567" class="btn-navy" target="_blank">Agenda una videollamada →</a>
+        <a href="https://wa.me/573116473200" class="btn-navy" target="_blank">Agenda una videollamada →</a>
         <p class="split-garantia">
             <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L2 3v5c0 4 2.7 7.3 6 8 3.3-.7 6-4 6-8V3L8 0z"/></svg>
             Garantía de devolución de dinero por 30 días si no logramos entregarte la promesa.
@@ -267,7 +267,7 @@
 <section class="cta-wa">
     <h3>¿Quieres hablar con un Asesor?</h3>
     <p>Escríbenos a nuestro WhatsApp o Messenger para hablar con un Asesor</p>
-    <a href="https://wa.me/15551234567" class="btn-green" target="_blank">
+    <a href="https://wa.me/573116473200" class="btn-green" target="_blank">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.4 15.6 6.7 16 8 16c4.4 0 8-3.6 8-8s-3.6-8-8-8zm4.1 11.2c-.2.5-1 .9-1.4 1-.4 0-.7.1-2.2-.5-1.8-.7-3-2.6-3.1-2.7-.1-.2-.9-1.2-.9-2.3 0-1.1.6-1.6.8-1.9.2-.2.4-.3.6-.3h.4c.1 0 .3 0 .4.3.2.4.7 1.6.7 1.7 0 .1 0 .3-.1.4-.1.1-.2.3-.3.4-.1.1-.2.2-.1.4.4.6.8 1.1 1.3 1.5.6.4 1.1.6 1.3.7.2.1.3 0 .5-.1.1-.2.5-.6.7-.8.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.3 0 .2-.1.6-.3 1.1z"/></svg>
         Ir a WhatsApp
     </a>

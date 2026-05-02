@@ -58,7 +58,7 @@
         "areaServed": ["CO","MX","AR","CL","PE","VE","EC","US"],
         "priceRange": "$$$",
         "sameAs": [
-            "https://wa.me/19542105405"
+            "https://wa.me/573116473200"
         ]
     }
     </script>
@@ -422,7 +422,7 @@
         <h2>¿Quieres hablar con un asesor?</h2>
         <p>Contáctanos por WhatsApp o Messenger y recibe atención personalizada de nuestros expertos.</p>
         <div class="cta-btns">
-            <a href="https://wa.me/19542105405?text=Hola, quiero información sobre los servicios de Sell·U" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+            <a href="https://wa.me/573116473200?text=Hola, quiero información sobre los servicios de Sell·U" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
                 WhatsApp
             </a>
             <a href="https://m.me/sellu.latam" class="btn-messenger" target="_blank" rel="noopener" aria-label="Contactar por Messenger">
@@ -557,7 +557,7 @@
 </footer>
 
 <!-- ── WHATSAPP FLOTANTE ── -->
-<a href="https://wa.me/19542105405?text=Hola, quiero información sobre los servicios de Sell·U"
+<a href="https://wa.me/573116473200?text=Hola, quiero información sobre los servicios de Sell·U"
    class="wa-float" target="_blank" rel="noopener"
    aria-label="Contactar por WhatsApp">
     <svg viewBox="0 0 28 28" fill="white"><path d="M14 0C6.3 0 0 6.3 0 14c0 2.5.7 4.8 1.8 6.9L0 28l7.4-1.9C9.4 27.3 11.6 28 14 28c7.7 0 14-6.3 14-14S21.7 0 14 0z"/></svg>
