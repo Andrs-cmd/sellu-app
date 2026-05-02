@@ -24,6 +24,7 @@ Route::prefix('pages')->group(function () {
     Route::get('/almacenamiento-y-logistica', fn() => view('pages.envios'))->name('pages.almacenamiento-y-logistica');
     Route::get('/registro-fda-de-alimentos', fn() => view('pages.sanitario'))->name('pages.registro-fda-de-alimentos');
     Route::get('/canales-de-atencion', fn() => view('pages.soporte'))->name('pages.canales-de-atencion');
+    Route::get('/terminos-de-servicio', fn() => view('pages.terminos'))->name('pages.terminos');
     Route::get('/sales-tax', fn() => view('pages.sales-tax'))->name('pages.sales-tax');
     Route::post('/canales-de-atencion/contacto', function (Request $request) {
         $validated = $request->validate([
