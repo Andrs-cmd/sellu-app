@@ -102,11 +102,12 @@
             gap: 64px; align-items: center;
         }
         .hero-badge {
-            display: inline-flex; align-items: center; gap: 6px;
-            background: var(--AMZ-soft); color: var(--AMZ);
-            font-size: 13px; font-weight: 600;
-            padding: 6px 14px; border-radius: 100px;
-            margin-bottom: 24px;
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 8px 16px; border-radius: 999px;
+            background: var(--AMZ-soft); color: #A24E00;
+            font-size: 12px; font-weight: 700;
+            letter-spacing: 0.1em; text-transform: uppercase;
+            margin-bottom: 22px;
         }
         .hero-h1 {
             font-size: clamp(28px, 4vw, 46px); font-weight: 800;
@@ -123,15 +124,14 @@
             display: inline-flex; align-items: center; gap: 8px;
             background: var(--navy-900); color: var(--white);
             font-size: 15px; font-weight: 600;
-            padding: 14px 24px; border-radius: 12px;
+            padding: 16px 28px; border-radius: 12px;
             transition: background var(--duration-base);
             margin-bottom: 28px;
         }
         .btn-hero:hover { background: var(--navy-700); }
-        .hero-trust { display: flex; flex-direction: column; gap: 10px; }
+        .hero-trust { display: flex; gap: 28px; flex-wrap: wrap; font-size: 13px; color: var(--fg-secondary); }
         .hero-trust-item {
-            display: flex; align-items: center; gap: 8px;
-            font-size: 14px; font-weight: 500; color: var(--fg-secondary);
+            display: inline-flex; align-items: center; gap: 8px;
         }
         .trust-check {
             width: 18px; height: 18px; background: var(--success-100);
@@ -204,8 +204,9 @@
             to { transform: translateX(-50%); }
         }
         .marquee-item {
-            font-size: 15px; font-weight: 700; color: var(--navy-600);
-            white-space: nowrap; letter-spacing: 0.02em;
+            font-size: 28px; line-height: 32px; color: var(--navy-900);
+            opacity: 0.78; flex: none; user-select: none;
+            white-space: nowrap;
         }
         .marquee-dot { color: var(--accent-500); font-size: 18px; }
 
@@ -242,60 +243,39 @@
         .benefit-title { font-size: 14px; font-weight: 700; color: var(--navy-900); margin-bottom: 8px; }
         .benefit-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.6; }
 
-        /* ── COMPARISON TABLE ── */
+        /* ── COMPARISON GRID ── */
         .compare-section { padding: 96px 0; }
-        .compare-table-wrap {
-            background: var(--white); border: 1px solid var(--border-default);
-            border-radius: 16px; overflow: hidden;
-            box-shadow: var(--shadow-sm);
-        }
-        .compare-table { width: 100%; border-collapse: collapse; }
-        .compare-table th {
-            padding: 16px 24px; text-align: left;
-            font-size: 13px; font-weight: 700;
-            color: var(--fg-muted); text-transform: uppercase; letter-spacing: 0.06em;
-            background: var(--navy-50); border-bottom: 1px solid var(--border-default);
-        }
-        .compare-table th:not(:last-child) { border-right: 1px solid var(--border-default); }
-        .compare-table td {
-            padding: 16px 24px; font-size: 14px; color: var(--fg-secondary);
-            border-bottom: 1px solid var(--border-default);
-            transition: background var(--duration-base);
-        }
-        .compare-table tr:last-child td { border-bottom: 0; }
-        .compare-table tr:hover td { background: var(--paper); }
-        .compare-table td:not(:last-child) { border-right: 1px solid var(--border-default); }
-        .compare-topic { font-weight: 600; color: var(--navy-900); }
-        .compare-bad { color: var(--danger-700); font-weight: 500; }
-        .compare-good { color: var(--success-700); font-weight: 600; }
-        .icon-x { display: inline-flex; align-items: center; gap: 6px; }
-        .icon-check-inline { display: inline-flex; align-items: center; gap: 6px; }
+        .compare-wrap { background: var(--white); border-radius: 18px; border: 1px solid var(--border-default); overflow: hidden; }
+        .compare-head { display: grid; grid-template-columns: 1.2fr 1fr 1fr; padding: 18px 24px; background: var(--navy-50); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-muted); gap: 20px; }
+        .compare-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr; padding: 20px 24px; border-top: 1px solid var(--border-default); align-items: flex-start; gap: 20px; }
+        .compare-row:hover { background: var(--paper); }
+        .compare-topic { font-weight: 700; color: var(--navy-900); font-size: 14px; line-height: 1.4; }
+        .compare-bad { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--fg-secondary); justify-content: center; }
+        .compare-bad svg, .compare-bad i { color: #dc2626; flex-shrink: 0; margin-top: 2px; width: 14px; height: 14px; }
+        .compare-good { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--navy-900); font-weight: 600; justify-content: center; }
+        .compare-good svg, .compare-good i { color: var(--success-500); flex-shrink: 0; margin-top: 2px; width: 14px; height: 14px; }
 
         /* ── SERVICIOS ── */
         .servicios-section { padding: 96px 0; }
         .servicios-grid {
             display: grid; grid-template-columns: repeat(3, 1fr);
-            border: 1px solid var(--border-default); border-radius: 16px;
-            overflow: hidden; background: var(--white);
-            box-shadow: var(--shadow-sm);
+            gap: 1px; background: var(--border-default);
+            border-radius: 18px; overflow: hidden; border: 1px solid var(--border-default);
         }
         .servicio-tile {
-            padding: 32px 28px;
-            border-right: 1px solid var(--border-default);
-            border-bottom: 1px solid var(--border-default);
+            padding: 32px 28px; background: var(--white);
+            display: flex; flex-direction: column; gap: 14px;
+            min-height: 280px;
             transition: background var(--duration-base);
         }
         .servicio-tile:hover { background: var(--navy-50); }
-        .servicio-tile:nth-child(3n) { border-right: 0; }
-        .servicio-tile:nth-child(4), .servicio-tile:nth-child(5), .servicio-tile:nth-child(6) { border-bottom: 0; }
         .servicio-icon {
             width: 44px; height: 44px; background: var(--AMZ-soft);
             border-radius: 12px; display: flex; align-items: center; justify-content: center;
-            margin-bottom: 16px;
         }
         .servicio-icon svg { width: 22px; height: 22px; color: var(--AMZ); }
-        .servicio-tile-title { font-size: 15px; font-weight: 700; color: var(--navy-900); margin-bottom: 8px; }
-        .servicio-tile-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.6; margin-bottom: 14px; }
+        .servicio-tile-title { font-size: 15px; font-weight: 700; color: var(--navy-900); }
+        .servicio-tile-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.6; }
         .servicio-bullets { list-style: none; display: flex; flex-direction: column; gap: 6px; }
         .servicio-bullets li { font-size: 13px; color: var(--fg-secondary); display: flex; align-items: flex-start; gap: 6px; }
         .servicio-bullets li::before { content: '✓'; color: var(--AMZ); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
@@ -392,20 +372,24 @@
             transition: background var(--duration-base);
         }
         .btn-req:hover { background: var(--navy-700); }
-        .requisitos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-        .req-tile {
-            background: var(--white); border: 1px solid var(--border-default);
-            border-radius: 14px; padding: 22px 20px;
-            transition: box-shadow var(--duration-base), border-color var(--duration-base);
+        .requisitos-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 1px; background: var(--border-default);
+            border-radius: 16px; overflow: hidden; border: 1px solid var(--border-default);
         }
-        .req-tile:hover { box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+        .req-tile {
+            padding: 22px; background: var(--white);
+            display: flex; flex-direction: column; gap: 10px;
+            min-height: 140px;
+            transition: background var(--duration-base);
+        }
+        .req-tile:hover { background: var(--navy-50); }
         .req-icon {
             width: 40px; height: 40px; background: var(--AMZ-soft);
             border-radius: 10px; display: flex; align-items: center; justify-content: center;
-            margin-bottom: 12px;
         }
         .req-icon svg { width: 20px; height: 20px; color: var(--AMZ); }
-        .req-title { font-size: 14px; font-weight: 700; color: var(--navy-900); margin-bottom: 4px; }
+        .req-title { font-size: 14px; font-weight: 700; color: var(--navy-900); }
         .req-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.5; }
 
         /* ── TESTIMONIO ── */
@@ -414,13 +398,10 @@
             background: var(--navy-900); border-radius: 22px; padding: 56px 64px;
             box-shadow: 0 0 0 1px rgba(255,153,0,0.2), 0 24px 48px -12px rgba(255,153,0,0.15);
             max-width: 800px; margin: 0 auto;
+            position: relative; overflow: hidden;
         }
-        .testimonial-quote-icon {
-            width: 48px; height: 48px; background: rgba(255,153,0,0.15);
-            border-radius: 12px; display: flex; align-items: center; justify-content: center;
-            margin-bottom: 28px;
-        }
-        .testimonial-quote-icon svg { width: 24px; height: 24px; color: var(--AMZ); }
+        .testimonial-quote-icon { margin-bottom: 16px; }
+        .testimonial-quote-icon i, .testimonial-quote-icon svg { width: 36px; height: 36px; color: var(--AMZ); }
         .testimonial-text {
             font-size: clamp(18px, 2.5vw, 22px); font-weight: 600;
             color: var(--white); line-height: 1.55;
@@ -483,25 +464,19 @@
             .hero-sub { max-width: 100%; }
             .benefits-grid { grid-template-columns: 1fr 1fr; }
             .servicios-grid { grid-template-columns: 1fr 1fr; }
-            .servicio-tile:nth-child(2n) { border-right: 0; }
-            .servicio-tile:nth-child(3n) { border-right: 1px solid var(--border-default); }
-            .servicio-tile:nth-child(5), .servicio-tile:nth-child(6) { border-bottom: 0; }
-            .servicio-tile:nth-child(3) { border-bottom: 1px solid var(--border-default); }
             .proceso-grid { grid-template-columns: 1fr 1fr; }
             .planes-grid { grid-template-columns: 1fr; }
             .requisitos-inner { grid-template-columns: 1fr; gap: 40px; }
             .requisitos-left { position: static; }
             .testimonial-card { padding: 36px 28px; }
             .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-            .compare-table { font-size: 13px; }
-            .compare-table td, .compare-table th { padding: 12px 16px; }
+            .compare-head, .compare-row { font-size: 13px; padding: 14px 16px; }
         }
         @media (max-width: 600px) {
             .benefits-grid { grid-template-columns: 1fr; }
             .proceso-grid { grid-template-columns: 1fr; }
             .requisitos-grid { grid-template-columns: 1fr; }
             .servicios-grid { grid-template-columns: 1fr; }
-            .servicio-tile { border-right: 0 !important; }
         }
     </style>
 </head>
@@ -615,27 +590,27 @@
     </div>
     <div class="marquee-track-wrap">
         <div class="marquee-track">
-            <span class="marquee-item">FFERENZA LAB</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">SENSE®</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">HAIKO Natural</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">BUDDY Beauty Works</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">D'Casa Juice</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">M A R</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">NORDA</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">Verdé Co.</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">CASTOR</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">Lumière</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:800;letter-spacing:0.04em;">FFERENZA LAB</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:700;letter-spacing:0.18em;font-style:italic;">SENSE®</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:800;letter-spacing:0.06em;">HAIKO Natural</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:600;letter-spacing:0.08em;font-style:italic;">BUDDY · Beauty Works</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:800;letter-spacing:0.02em;">D'Casa Juice</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:300;letter-spacing:0.4em;">M A R</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:800;letter-spacing:0.16em;">NORDA</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:600;letter-spacing:0.04em;font-style:italic;">Verdé Co.</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:700;letter-spacing:0.22em;">CASTOR</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:500;letter-spacing:0.04em;font-style:italic;">Lumière</span><span class="marquee-dot">·</span>
             <!-- duplicate for seamless loop -->
-            <span class="marquee-item">FFERENZA LAB</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">SENSE®</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">HAIKO Natural</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">BUDDY Beauty Works</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">D'Casa Juice</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">M A R</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">NORDA</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">Verdé Co.</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">CASTOR</span><span class="marquee-dot">·</span>
-            <span class="marquee-item">Lumière</span>
+            <span class="marquee-item" style="font-weight:800;letter-spacing:0.04em;">FFERENZA LAB</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:700;letter-spacing:0.18em;font-style:italic;">SENSE®</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:800;letter-spacing:0.06em;">HAIKO Natural</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:600;letter-spacing:0.08em;font-style:italic;">BUDDY · Beauty Works</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:800;letter-spacing:0.02em;">D'Casa Juice</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:300;letter-spacing:0.4em;">M A R</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:800;letter-spacing:0.16em;">NORDA</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:600;letter-spacing:0.04em;font-style:italic;">Verdé Co.</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:700;letter-spacing:0.22em;">CASTOR</span><span class="marquee-dot">·</span>
+            <span class="marquee-item" style="font-weight:500;letter-spacing:0.04em;font-style:italic;">Lumière</span>
         </div>
     </div>
 </div>
@@ -682,48 +657,42 @@
         <div class="section-header reveal">
             <h2 class="section-h2">Lo que cambia cuando tienes a alguien<br>que ya lo hizo cien veces.</h2>
         </div>
-        <div class="compare-table-wrap reveal">
-            <table class="compare-table">
-                <thead>
-                    <tr>
-                        <th>Aspecto</th>
-                        <th>Por tu cuenta</th>
-                        <th>Con Sell·U</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="compare-topic">Tiempo en activar cuenta</td>
-                        <td class="compare-bad"><span class="icon-x">❌ 4–8 semanas</span></td>
-                        <td class="compare-good"><span class="icon-check-inline">✓ 14 días</span></td>
-                    </tr>
-                    <tr>
-                        <td class="compare-topic">Verificación de identidad</td>
-                        <td class="compare-bad"><span class="icon-x">❌ Rechazos frecuentes sin guía</span></td>
-                        <td class="compare-good"><span class="icon-check-inline">✓ Proceso guiado paso a paso</span></td>
-                    </tr>
-                    <tr>
-                        <td class="compare-topic">Estructura legal</td>
-                        <td class="compare-bad"><span class="icon-x">❌ Confusión sobre qué entidad usar</span></td>
-                        <td class="compare-good"><span class="icon-check-inline">✓ LLC + EIN configurados</span></td>
-                    </tr>
-                    <tr>
-                        <td class="compare-topic">Brand Registry</td>
-                        <td class="compare-bad"><span class="icon-x">❌ Proceso largo y complejo</span></td>
-                        <td class="compare-good"><span class="icon-check-inline">✓ Incluido en el servicio</span></td>
-                    </tr>
-                    <tr>
-                        <td class="compare-topic">Listings</td>
-                        <td class="compare-bad"><span class="icon-x">❌ Rechazados por errores técnicos</span></td>
-                        <td class="compare-good"><span class="icon-check-inline">✓ Optimizados y cargados</span></td>
-                    </tr>
-                    <tr>
-                        <td class="compare-topic">Soporte</td>
-                        <td class="compare-bad"><span class="icon-x">❌ Documentación en inglés</span></td>
-                        <td class="compare-good"><span class="icon-check-inline">✓ Equipo en español siempre</span></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="compare-wrap reveal">
+            <div class="compare-head">
+                <div></div>
+                <div style="text-align:center;">Por tu cuenta</div>
+                <div style="text-align:center;color:var(--AMZ);">Con Sell·U</div>
+            </div>
+            <div class="compare-row">
+                <div class="compare-topic">Tiempo en activar la cuenta</div>
+                <div class="compare-bad"><i data-lucide="x" style="width:14px;height:14px;"></i><span>2–4 meses (con prueba y error)</span></div>
+                <div class="compare-good"><i data-lucide="check" style="width:14px;height:14px;"></i><span>14 días, en español</span></div>
+            </div>
+            <div class="compare-row">
+                <div class="compare-topic">Verificación de identidad</div>
+                <div class="compare-bad"><i data-lucide="x" style="width:14px;height:14px;"></i><span>Rechazos frecuentes sin guía</span></div>
+                <div class="compare-good"><i data-lucide="check" style="width:14px;height:14px;"></i><span>Acompañamiento paso a paso en español</span></div>
+            </div>
+            <div class="compare-row">
+                <div class="compare-topic">Estructura legal en EE.UU.</div>
+                <div class="compare-bad"><i data-lucide="x" style="width:14px;height:14px;"></i><span>Confusión sobre qué entidad usar</span></div>
+                <div class="compare-good"><i data-lucide="check" style="width:14px;height:14px;"></i><span>LLC + EIN configurados y orientados</span></div>
+            </div>
+            <div class="compare-row">
+                <div class="compare-topic">Brand Registry</div>
+                <div class="compare-bad"><i data-lucide="x" style="width:14px;height:14px;"></i><span>Proceso largo, complejo, en inglés</span></div>
+                <div class="compare-good"><i data-lucide="check" style="width:14px;height:14px;"></i><span>Incluido y gestionado por el equipo</span></div>
+            </div>
+            <div class="compare-row">
+                <div class="compare-topic">Listings que convierten</div>
+                <div class="compare-bad"><i data-lucide="x" style="width:14px;height:14px;"></i><span>Copy genérico, rechazados por errores técnicos</span></div>
+                <div class="compare-good"><i data-lucide="check" style="width:14px;height:14px;"></i><span>Optimizados con keywords y A+ Content</span></div>
+            </div>
+            <div class="compare-row">
+                <div class="compare-topic">Soporte cuando algo falla</div>
+                <div class="compare-bad"><i data-lucide="x" style="width:14px;height:14px;"></i><span>Inglés, foros confusos, semanas de espera</span></div>
+                <div class="compare-good"><i data-lucide="check" style="width:14px;height:14px;"></i><span>Equipo en español, respuesta la misma semana</span></div>
+            </div>
         </div>
     </div>
 </section>
@@ -963,6 +932,7 @@
                     <div class="testimonial-role">Fundadora · HAIKO Natural · Bogotá</div>
                 </div>
             </div>
+            <div aria-hidden style="position:absolute;right:-60px;bottom:-80px;width:280px;height:280px;background:var(--AMZ);opacity:0.16;border-radius:50%;filter:blur(40px);pointer-events:none;"></div>
         </div>
     </div>
 </section>
