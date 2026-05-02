@@ -396,6 +396,73 @@
     .reveal { opacity: 0; transform: translateY(12px); transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out); }
     .reveal.in { opacity: 1; transform: translateY(0); }
 
+    /* ── DASHBOARD MOCK ANIMATIONS ── */
+
+    /* Float wrapper — bobbing levitation */
+    .dash-float-wrap {
+        animation: dashFloat 5s ease-in-out infinite;
+        will-change: transform;
+    }
+    @keyframes dashFloat {
+        0%, 100% { transform: translateY(0px); }
+        50%       { transform: translateY(-8px); }
+    }
+
+    /* Frame entry — slides up from below on load */
+    .dash-frame {
+        animation: dashEntry 0.85s var(--ease-out) both;
+    }
+    @keyframes dashEntry {
+        from { opacity: 0; transform: translateY(36px) scale(0.97); box-shadow: none; }
+        to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* KPI cards — staggered fade in */
+    .kpi-card:nth-child(1) { animation: kpiFadeUp 0.5s 0.55s var(--ease-out) both; }
+    .kpi-card:nth-child(2) { animation: kpiFadeUp 0.5s 0.70s var(--ease-out) both; }
+    .kpi-chart            { animation: kpiFadeUp 0.5s 0.82s var(--ease-out) both; }
+    @keyframes kpiFadeUp {
+        from { opacity: 0; transform: translateY(8px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* "Al día" badge — soft pulse ring */
+    .dash-badge {
+        animation: badgePulse 3s 1.8s ease-in-out infinite;
+    }
+    @keyframes badgePulse {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(26,160,95,.35); }
+        55%       { box-shadow: 0 0 0 8px rgba(26,160,95,.0); }
+    }
+
+    /* Alert bar — slides up last */
+    .dash-alert {
+        animation: alertSlideIn 0.55s 1.3s var(--ease-out) both;
+    }
+    @keyframes alertSlideIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* KPI value flash on cycle update */
+    @keyframes kpiFlash {
+        0%   { opacity: 1; transform: scale(1); }
+        35%  { opacity: 0.25; transform: scale(0.96); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+    .kpi-flash { animation: kpiFlash 0.45s var(--ease-out); }
+
+    /* Percentage pop on update */
+    @keyframes pctPop {
+        0%   { transform: scale(1); }
+        45%  { transform: scale(1.22); }
+        100% { transform: scale(1); }
+    }
+    .pct-pop { animation: pctPop 0.45s var(--ease-out); }
+
+    /* Chart bars — always animated via JS; add smooth base transition */
+    .chart-bar { transition: height 0.55s var(--ease-out); }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 1000px) {
         .hero-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -458,6 +525,7 @@
             </div>
 
             <!-- Dashboard mock -->
+            <div class="dash-float-wrap">
             <div class="dash-frame">
                 <div class="dash-window">
                     <div class="dash-titlebar">
@@ -470,40 +538,42 @@
                         <div class="dash-header">
                             <div>
                                 <div class="dash-title-label">Acme Holdings LLC · WY</div>
-                                <div class="dash-title-main">Resumen · Marzo 2026</div>
+                                <div class="dash-title-main" id="dash-month">Resumen · Marzo 2026</div>
                             </div>
                             <span class="dash-badge"><i data-lucide="check-circle-2" width="12" height="12"></i> Al día</span>
                         </div>
                         <div class="kpi-grid">
                             <div class="kpi-card">
                                 <div class="kpi-eyebrow">Ingresos MTD</div>
-                                <div class="kpi-value">$48,250</div>
+                                <div class="kpi-value" id="kpi-ingresos">$0</div>
                             </div>
                             <div class="kpi-card">
                                 <div class="kpi-eyebrow">Utilidad neta</div>
-                                <div class="kpi-value success">$21,180</div>
+                                <div class="kpi-value success" id="kpi-utilidad">$0</div>
                             </div>
                         </div>
                         <div class="kpi-chart">
                             <div class="kpi-chart-header">
                                 <span class="kpi-eyebrow">P&amp;L · 6 meses</span>
-                                <span class="kpi-chart-pct">+18%</span>
+                                <span class="kpi-chart-pct" id="dash-pct">+18%</span>
                             </div>
                             <div class="chart-bars">
-                                <div class="chart-bar" style="height:36%"></div>
-                                <div class="chart-bar" style="height:48%"></div>
-                                <div class="chart-bar" style="height:42%"></div>
-                                <div class="chart-bar" style="height:64%"></div>
-                                <div class="chart-bar" style="height:58%"></div>
-                                <div class="chart-bar active" style="height:72%"></div>
+                                <div class="chart-bar" style="height:0"></div>
+                                <div class="chart-bar" style="height:0"></div>
+                                <div class="chart-bar" style="height:0"></div>
+                                <div class="chart-bar" style="height:0"></div>
+                                <div class="chart-bar" style="height:0"></div>
+                                <div class="chart-bar active" style="height:0"></div>
                             </div>
                         </div>
-                        <div class="dash-alert">
+                        <div class="dash-alert" id="dash-alert">
                             <i data-lucide="bell" width="14" height="14"></i>
-Tus reportes contables al día · sin pendientes críticos                        </div>
+                            <span class="dash-alert-text">Tus reportes contables al día · sin pendientes críticos</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            </div>{{-- /dash-float-wrap --}}
         </div>
     </div>
 </section>
@@ -1049,6 +1119,135 @@ const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
 }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ── DASHBOARD MOCK LIVE ANIMATION ──
+(function() {
+    const states = [
+        {
+            month:    'Marzo 2026',
+            ingresos: 48250,
+            utilidad: 21180,
+            bars:     [36, 48, 42, 64, 58, 72],
+            pct:      '+18%',
+            alert:    'Tus reportes contables al día · sin pendientes críticos'
+        },
+        {
+            month:    'Abril 2026',
+            ingresos: 52800,
+            utilidad: 24100,
+            bars:     [48, 42, 64, 58, 72, 85],
+            pct:      '+22%',
+            alert:    '2 transacciones pendientes de clasificar'
+        },
+        {
+            month:    'Mayo 2026',
+            ingresos: 61400,
+            utilidad: 28750,
+            bars:     [42, 64, 58, 72, 85, 96],
+            pct:      '+26%',
+            alert:    'Declaración 5472 · Vence en 45 días'
+        }
+    ];
+
+    let idx = 0;
+
+    const monthEl  = document.getElementById('dash-month');
+    const ingEl    = document.getElementById('kpi-ingresos');
+    const utilEl   = document.getElementById('kpi-utilidad');
+    const pctEl    = document.getElementById('dash-pct');
+    const alertEl  = document.getElementById('dash-alert');
+    const alertTxt = alertEl ? alertEl.querySelector('.dash-alert-text') : null;
+    const bars     = document.querySelectorAll('.chart-bar');
+
+    function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+    function animateCounter(el, from, to, duration) {
+        const start = performance.now();
+        (function tick(now) {
+            const p = Math.min((now - start) / duration, 1);
+            el.textContent = '$' + Math.round(from + (to - from) * easeOutCubic(p)).toLocaleString('en-US');
+            if (p < 1) requestAnimationFrame(tick);
+        })(start);
+    }
+
+    function animateBars(state, staggerDelay) {
+        bars.forEach((bar, i) => {
+            setTimeout(() => { bar.style.height = state.bars[i] + '%'; }, staggerDelay + i * 65);
+        });
+    }
+
+    function applyState(state, isInitial) {
+        const prevIng  = parseInt((ingEl.textContent  || '0').replace(/\D/g, '')) || 0;
+        const prevUtil = parseInt((utilEl.textContent || '0').replace(/\D/g, '')) || 0;
+
+        if (isInitial) {
+            // First load — just animate everything in
+            animateCounter(ingEl,  0, state.ingresos, 1300);
+            animateCounter(utilEl, 0, state.utilidad, 1300);
+            animateBars(state, 750);
+        } else {
+            // Cycle — smooth transition between states
+
+            // Month label cross-fade
+            monthEl.style.transition = 'opacity .22s ease, transform .22s ease';
+            monthEl.style.opacity = '0';
+            monthEl.style.transform = 'translateY(-5px)';
+            setTimeout(() => {
+                monthEl.textContent = 'Resumen · ' + state.month;
+                monthEl.style.transform = 'translateY(5px)';
+                setTimeout(() => {
+                    monthEl.style.opacity = '1';
+                    monthEl.style.transform = 'translateY(0)';
+                }, 20);
+            }, 240);
+
+            // KPI flash + counter
+            [ingEl, utilEl].forEach(el => {
+                el.classList.remove('kpi-flash');
+                void el.offsetWidth;
+                el.classList.add('kpi-flash');
+            });
+            setTimeout(() => {
+                animateCounter(ingEl,  prevIng,  state.ingresos, 900);
+                animateCounter(utilEl, prevUtil, state.utilidad, 900);
+            }, 120);
+
+            // Percentage pop
+            setTimeout(() => {
+                pctEl.classList.remove('pct-pop');
+                void pctEl.offsetWidth;
+                pctEl.textContent = state.pct;
+                pctEl.classList.add('pct-pop');
+            }, 200);
+
+            // Alert fade
+            if (alertEl && alertTxt) {
+                alertEl.style.transition = 'opacity .25s ease';
+                alertEl.style.opacity = '0';
+                setTimeout(() => {
+                    alertTxt.textContent = state.alert;
+                    alertEl.style.opacity = '1';
+                }, 300);
+            }
+
+            // Bars — reset to near-zero then grow
+            bars.forEach(b => { b.style.transition = 'none'; b.style.height = '4px'; });
+            setTimeout(() => {
+                bars.forEach(b => { b.style.transition = 'height 0.55s cubic-bezier(0.16,1,0.3,1)'; });
+                animateBars(state, 0);
+            }, 180);
+        }
+    }
+
+    // Boot
+    applyState(states[0], true);
+
+    // Auto-cycle every 4.5 s
+    setInterval(() => {
+        idx = (idx + 1) % states.length;
+        applyState(states[idx], false);
+    }, 4500);
+})();
 </script>
 
 </body>
