@@ -95,54 +95,6 @@
         /* ── SECTION BAND ── */
         .section-band { background: var(--paper-2); }
 
-        /* ── NAV ── */
-        .nav {
-            position: sticky; top: 0; z-index: 100;
-            background: transparent;
-            border-bottom: 1px solid transparent;
-            transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
-        }
-        .nav.scrolled {
-            background: rgba(251,250,247,0.88);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom-color: var(--border-default);
-        }
-        .nav-inner {
-            max-width: 1200px; margin: 0 auto; padding: 0 32px;
-            display: flex; align-items: center; justify-content: space-between;
-            height: 68px;
-        }
-        .nav-logo {
-            font-size: 22px; font-weight: 800; color: var(--navy-900);
-            letter-spacing: -0.5px; flex-shrink: 0;
-        }
-        .nav-logo span { color: var(--accent-500); }
-        .nav-links {
-            display: flex; align-items: center; gap: 4px;
-            margin: 0 24px;
-        }
-        .nav-link {
-            padding: 8px 14px; font-size: 14px; font-weight: 500;
-            color: var(--fg-secondary); border-radius: 8px;
-            transition: color var(--duration-base), background var(--duration-base);
-            white-space: nowrap;
-        }
-        .nav-link:hover { color: var(--navy-900); background: var(--navy-50); }
-        .nav-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
-        .btn-ghost {
-            padding: 9px 18px; font-size: 14px; font-weight: 600;
-            color: var(--navy-900); border: 1.5px solid var(--border-strong);
-            border-radius: 10px; transition: all var(--duration-base);
-        }
-        .btn-ghost:hover { border-color: var(--navy-900); background: var(--navy-50); }
-        .btn-primary {
-            padding: 9px 18px; font-size: 14px; font-weight: 600;
-            color: var(--white); background: var(--navy-900);
-            border-radius: 10px; transition: all var(--duration-base);
-        }
-        .btn-primary:hover { background: var(--navy-700); }
-
         /* ── HERO ── */
         .hero-section { padding: 80px 0 96px; }
         .hero-grid {
@@ -555,22 +507,7 @@
 </head>
 <body>
 
-<!-- ── NAV ── -->
-<nav class="nav" id="main-nav">
-    <div class="nav-inner">
-        <a href="{{ url('/') }}" class="nav-logo">Sell<span>·U</span></a>
-        <div class="nav-links">
-            <a href="#servicios" class="nav-link">Servicio</a>
-            <a href="#precios" class="nav-link">Precios</a>
-            <a href="#proceso" class="nav-link">Cómo funciona</a>
-            <a href="#faq" class="nav-link">FAQ</a>
-        </div>
-        <div class="nav-actions">
-            <a href="#contacto" class="btn-ghost">Consulta gratis</a>
-            <a href="#precios" class="btn-primary">Empezar</a>
-        </div>
-    </div>
-</nav>
+<x-nav />
 
 <!-- ── HERO ── -->
 <section class="hero-section">
@@ -1092,18 +1029,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Init Lucide icons
     lucide.createIcons();
-
-    // Nav scroll effect
-    var nav = document.getElementById('main-nav');
-    function handleNavScroll() {
-        if (window.scrollY > 24) {
-            nav.classList.add('scrolled');
-        } else {
-            nav.classList.remove('scrolled');
-        }
-    }
-    window.addEventListener('scroll', handleNavScroll, { passive: true });
-    handleNavScroll();
 
     // Reveal on scroll
     var revealEls = document.querySelectorAll('.reveal');
