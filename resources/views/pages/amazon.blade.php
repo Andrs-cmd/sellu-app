@@ -180,35 +180,36 @@
         .sc-chart-label { font-size: 11px; font-weight: 600; color: var(--fg-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
         .sc-chart svg { width: 100%; height: 64px; }
 
-        /* ── MARQUEE ── */
-        .marquee-section { padding: 48px 0; overflow: hidden; }
-        .marquee-badge-wrap { display: flex; justify-content: center; margin-bottom: 28px; }
+        /* ── MARQUEE (logos) ── */
+        .marquee-section { padding: 52px 0; overflow: hidden; }
+        .marquee-badge-wrap { display: flex; justify-content: center; margin-bottom: 36px; }
         .marquee-badge {
             display: inline-flex; align-items: center; gap: 6px;
             background: var(--navy-900); color: var(--white);
-            font-size: 12px; font-weight: 600;
-            padding: 7px 16px; border-radius: 100px;
+            font-size: 12px; font-weight: 700;
+            padding: 6px 18px; border-radius: 100px;
+            text-transform: uppercase; letter-spacing: 0.06em;
         }
         .marquee-track-wrap {
-            position: relative;
-            -webkit-mask: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
-            mask: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+            overflow: hidden; width: 100%;
         }
         .marquee-track {
-            display: flex; align-items: center; gap: 48px;
+            display: flex; align-items: center; gap: 64px;
             width: max-content;
-            animation: marquee 38s linear infinite;
+            animation: marquee 28s linear infinite;
         }
+        .marquee-track:hover { animation-play-state: paused; }
         @keyframes marquee {
             from { transform: translateX(0); }
             to { transform: translateX(-50%); }
         }
-        .marquee-item {
-            font-size: 28px; line-height: 32px; color: var(--navy-900);
-            opacity: 0.78; flex: none; user-select: none;
-            white-space: nowrap;
+        .cliente-logo-img {
+            height: 48px; width: auto; object-fit: contain;
+            opacity: 0.55; transition: opacity 0.2s;
+            filter: grayscale(100%); flex-shrink: 0;
         }
-        .marquee-dot { color: var(--accent-500); font-size: 18px; }
+        .cliente-logo-img:hover { opacity: 1; filter: grayscale(0%); }
+        @media (max-width: 600px) { .cliente-logo-img { height: 36px; } }
 
         /* ── BENEFITS ── */
         .benefits-section { padding: 96px 0; }
@@ -580,37 +581,30 @@
     </div>
 </section>
 
-<!-- ── MARQUEE ── -->
+<!-- ── CLIENTES (logos) ── -->
 <div class="marquee-section">
     <div class="marquee-badge-wrap">
-        <div class="marquee-badge">
-            <i data-lucide="zap" style="width:12px;height:12px;"></i>
-            Marcas latinas que ya venden con Sell-U
-        </div>
+        <div class="marquee-badge">↑ Algunos de nuestros clientes</div>
     </div>
     <div class="marquee-track-wrap">
         <div class="marquee-track">
-            <span class="marquee-item" style="font-weight:800;letter-spacing:0.04em;">FFERENZA LAB</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:700;letter-spacing:0.18em;font-style:italic;">SENSE®</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:800;letter-spacing:0.06em;">HAIKO Natural</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:600;letter-spacing:0.08em;font-style:italic;">BUDDY · Beauty Works</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:800;letter-spacing:0.02em;">D'Casa Juice</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:300;letter-spacing:0.4em;">M A R</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:800;letter-spacing:0.16em;">NORDA</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:600;letter-spacing:0.04em;font-style:italic;">Verdé Co.</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:700;letter-spacing:0.22em;">CASTOR</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:500;letter-spacing:0.04em;font-style:italic;">Lumière</span><span class="marquee-dot">·</span>
-            <!-- duplicate for seamless loop -->
-            <span class="marquee-item" style="font-weight:800;letter-spacing:0.04em;">FFERENZA LAB</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:700;letter-spacing:0.18em;font-style:italic;">SENSE®</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:800;letter-spacing:0.06em;">HAIKO Natural</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:600;letter-spacing:0.08em;font-style:italic;">BUDDY · Beauty Works</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:800;letter-spacing:0.02em;">D'Casa Juice</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:300;letter-spacing:0.4em;">M A R</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:800;letter-spacing:0.16em;">NORDA</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:600;letter-spacing:0.04em;font-style:italic;">Verdé Co.</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:700;letter-spacing:0.22em;">CASTOR</span><span class="marquee-dot">·</span>
-            <span class="marquee-item" style="font-weight:500;letter-spacing:0.04em;font-style:italic;">Lumière</span>
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Marathon_-_Sell-U.png?v=1747491101" alt="Marathon">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Differenza_-_Sell-U.png?v=1747491101" alt="Differenza">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Sense_-_Sell-U.png?v=1747491101" alt="Sense">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Haiko_-_Sell-U.png?v=1747491101" alt="Haiko Natural">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Buddy_Beauty_-_Sell-U.png?v=1747491101" alt="Buddy Beauty">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/nutrelle.png?v=1753916443" alt="Nutrelle">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/LOGO_YAXSOCKS-actual.png?v=1753915977" alt="Yax Socks">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_D_Casa_-_Sell-U.png?v=1747491101" alt="D Casa">
+            <!-- duplicado para loop continuo -->
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Marathon_-_Sell-U.png?v=1747491101" alt="Marathon">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Differenza_-_Sell-U.png?v=1747491101" alt="Differenza">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Sense_-_Sell-U.png?v=1747491101" alt="Sense">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Haiko_-_Sell-U.png?v=1747491101" alt="Haiko Natural">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Buddy_Beauty_-_Sell-U.png?v=1747491101" alt="Buddy Beauty">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/nutrelle.png?v=1753916443" alt="Nutrelle">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/LOGO_YAXSOCKS-actual.png?v=1753915977" alt="Yax Socks">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_D_Casa_-_Sell-U.png?v=1747491101" alt="D Casa">
         </div>
     </div>
 </div>
