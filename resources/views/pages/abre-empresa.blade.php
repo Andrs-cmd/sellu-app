@@ -185,7 +185,7 @@
         .estado-select-wrap { display: inline-flex; align-items: center; gap: 10px; background: var(--white); border: 1.5px solid var(--gray2); border-radius: 10px; padding: 10px 18px; }
         .estado-select-wrap label { font-size: 13px; font-weight: 700; color: var(--navy); white-space: nowrap; }
         .estado-select { border: none; outline: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); background: transparent; cursor: pointer; min-width: 160px; }
-        .precios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 980px; margin: 0 auto; align-items: start; }
+        .precios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 980px; margin: 0 auto; align-items: stretch; }
         .precio-card { background: var(--white); border: 1.5px solid var(--gray2); border-radius: 16px; padding: 32px 28px; position: relative; display: flex; flex-direction: column; transition: box-shadow .25s, transform .25s, border-color .25s; }
         .precio-card:hover { box-shadow: 0 8px 32px rgba(13,27,62,.08); border-color: #c8ccda; }
         .precio-card.featured { background: var(--navy); border-color: var(--navy); box-shadow: 0 16px 48px rgba(13,27,62,.22); transform: translateY(-10px); }
