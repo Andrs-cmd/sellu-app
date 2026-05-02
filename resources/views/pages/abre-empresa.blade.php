@@ -127,24 +127,26 @@
         .testimonios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 800; color: var(--navy); }
         .carousel-wrap { position: relative; overflow: hidden; }
         .carousel-track { display: flex; gap: 16px; transition: transform .4s ease; }
-        .testimonio-card { flex: 0 0 calc(25% - 12px); border-radius: 10px; overflow: hidden; background: var(--navy); position: relative; min-height: 280px; }
-        .testimonio-img {
+        .testimonio-card { flex: 0 0 calc(25% - 12px); border-radius: 10px; overflow: hidden; background: var(--navy); position: relative; min-height: 280px; cursor: pointer; }
+        .testimonio-video {
             width: 100%; height: 280px; object-fit: cover; display: block;
-            background: var(--navy2);
+            background: #0D1B3E;
         }
-        /* Placeholder para imagen de testimonio */
-        .testimonio-placeholder {
-            width: 100%; height: 280px; background: var(--navy2);
-            display: flex; align-items: center; justify-content: center;
-        }
-        .testimonio-placeholder svg { width: 56px; height: 56px; opacity: .2; color: white; }
-        .testimonio-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px; background: linear-gradient(to top, rgba(13,27,62,.95) 0%, transparent 100%); }
+        .testimonio-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px; background: linear-gradient(to top, rgba(13,27,62,.95) 0%, transparent 100%); pointer-events: none; }
         .testimonio-overlay strong { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 800; color: var(--white); display: block; text-transform: uppercase; letter-spacing: .04em; }
         .testimonio-overlay span { font-size: 11px; color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
         .testimonio-tag { font-size: 10px; color: rgba(255,255,255,.6); display: block; margin-top: 2px; }
-        .testimonio-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 44px; height: 44px; background: rgba(255,255,255,.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
-        .testimonio-play svg { width: 18px; height: 18px; margin-left: 3px; }
-        .testimonio-duration { position: absolute; bottom: 82px; left: 12px; font-size: 10px; color: rgba(255,255,255,.6); }
+        .testimonio-play {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+            width: 52px; height: 52px; background: rgba(255,255,255,.22);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            backdrop-filter: blur(6px); border: none; cursor: pointer;
+            transition: opacity .25s ease, transform .25s ease;
+            pointer-events: auto;
+        }
+        .testimonio-play:hover { background: rgba(255,255,255,.35); transform: translate(-50%,-50%) scale(1.1); }
+        .testimonio-play svg { width: 20px; height: 20px; margin-left: 3px; }
+        .testimonio-play.hidden { opacity: 0; pointer-events: none; transform: translate(-50%,-50%) scale(0.85); }
         .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; background: var(--white); border-radius: 50%; border: 1px solid var(--gray2); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; }
         .carousel-btn.prev { left: -8px; }
         .carousel-btn.next { right: -8px; }
@@ -292,70 +294,82 @@
             <svg viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="carousel-track" id="carouselTrack">
-            {{-- Testimonio 1: reemplaza src con URL de imagen/video --}}
-            <div class="testimonio-card">
-                <div class="testimonio-placeholder">
-                    {{-- Reemplazar con: <img src="URL_IMAGEN_TESTIMONIO_1" alt="Doris Serrano" class="testimonio-img"> --}}
-                    <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="20" r="10" stroke="white" stroke-width="2"/><path d="M8 52c0-11 9-20 20-20s20 9 20 20" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
-                </div>
-                <div class="testimonio-play">
+
+            {{-- Testimonio 1 --}}
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://cdn.shopify.com/videos/c/o/v/ca063c7dbc7546c39e42655d4146c02c.mp4"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
-                </div>
-                <span class="testimonio-duration">0:00 / 2:38</span>
+                </button>
                 <div class="testimonio-overlay">
                     <strong>Doris Serrano</strong>
                     <span>Fundadora de</span>
                     <span class="testimonio-tag">Nutrelle.CO</span>
                 </div>
             </div>
+
             {{-- Testimonio 2 --}}
-            <div class="testimonio-card">
-                <div class="testimonio-placeholder">
-                    {{-- Reemplazar con: <img src="URL_IMAGEN_TESTIMONIO_2" alt="Valentina" class="testimonio-img"> --}}
-                    <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="20" r="10" stroke="white" stroke-width="2"/><path d="M8 52c0-11 9-20 20-20s20 9 20 20" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
-                </div>
-                <div class="testimonio-play">
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://cdn.shopify.com/videos/c/o/v/9af3e2f3d59f4a67a27be999b6c29e0c.mp4"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
-                </div>
-                <span class="testimonio-duration">0:00 / 2:46</span>
+                </button>
                 <div class="testimonio-overlay">
                     <strong>Valentina</strong>
                     <span>Fundadora de</span>
                     <span class="testimonio-tag">Balenne</span>
                 </div>
             </div>
+
             {{-- Testimonio 3 --}}
-            <div class="testimonio-card">
-                <div class="testimonio-placeholder">
-                    {{-- Reemplazar con: <img src="URL_IMAGEN_TESTIMONIO_3" alt="Ignacio Carbonatti" class="testimonio-img"> --}}
-                    <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="20" r="10" stroke="white" stroke-width="2"/><path d="M8 52c0-11 9-20 20-20s20 9 20 20" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
-                </div>
-                <div class="testimonio-play">
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://cdn.shopify.com/videos/c/o/v/c932db14e024455492f56db7dccf565d.mp4"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
-                </div>
-                <span class="testimonio-duration">0:00 / 1:15</span>
+                </button>
                 <div class="testimonio-overlay">
                     <strong>Ignacio Carbonatti</strong>
                     <span>Fundador de</span>
                     <span class="testimonio-tag">ProATeam</span>
                 </div>
             </div>
+
             {{-- Testimonio 4 --}}
-            <div class="testimonio-card">
-                <div class="testimonio-placeholder">
-                    {{-- Reemplazar con: <img src="URL_IMAGEN_TESTIMONIO_4" alt="Testimonio 4" class="testimonio-img"> --}}
-                    <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="20" r="10" stroke="white" stroke-width="2"/><path d="M8 52c0-11 9-20 20-20s20 9 20 20" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
-                </div>
-                <div class="testimonio-play">
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://cdn.shopify.com/videos/c/o/v/b19d02a96c404924b148259181fed7fa.mp4"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
-                </div>
-                <span class="testimonio-duration">0:00 / 0:48</span>
+                </button>
                 <div class="testimonio-overlay">
                     <strong>Cliente Sellu</strong>
                     <span>Fundador de</span>
                     <span class="testimonio-tag">Su empresa en USA</span>
                 </div>
             </div>
+
+            {{-- Testimonio 5 --}}
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://cdn.shopify.com/videos/c/o/v/6fed3fa6b24441229dd0107d42c59994.mp4"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
+                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
+                </button>
+                <div class="testimonio-overlay">
+                    <strong>Cliente Sellu</strong>
+                    <span>Fundador de</span>
+                    <span class="testimonio-tag">Su empresa en USA</span>
+                </div>
+            </div>
+
         </div>
         <button class="carousel-btn next" onclick="moverCarousel(1)">
             <svg viewBox="0 0 14 14" fill="none"><path d="M5 2l5 5-5 5" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -618,6 +632,28 @@ function moverCarousel(dir) {
     carouselPos = Math.max(0, Math.min(maxPos, carouselPos + dir));
     const cardWidth = cards[0].offsetWidth + 16;
     track.style.transform = `translateX(-${carouselPos * cardWidth}px)`;
+}
+
+// ── VIDEO TESTIMONIOS ──
+function toggleVideo(card) {
+    const video = card.querySelector('.testimonio-video');
+    const btn   = card.querySelector('.testimonio-play');
+
+    if (video.paused) {
+        // Pausa todos los demás videos
+        document.querySelectorAll('.testimonio-card').forEach(c => {
+            if (c !== card) {
+                const v = c.querySelector('.testimonio-video');
+                const b = c.querySelector('.testimonio-play');
+                if (!v.paused) { v.pause(); b.classList.remove('hidden'); }
+            }
+        });
+        video.play();
+        btn.classList.add('hidden');
+    } else {
+        video.pause();
+        btn.classList.remove('hidden');
+    }
 }
 
 const precios = {
