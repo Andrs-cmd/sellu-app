@@ -350,6 +350,16 @@
                 </button>
             </div>
 
+            {{-- Testimonio 5 --}}
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://cdn.shopify.com/videos/c/o/v/6fed3fa6b24441229dd0107d42c59994.mp4"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
+                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
+                </button>
+            </div>
+
         </div>
         <button class="carousel-btn next" onclick="moverCarousel(1)">
             <svg viewBox="0 0 14 14" fill="none"><path d="M5 2l5 5-5 5" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
