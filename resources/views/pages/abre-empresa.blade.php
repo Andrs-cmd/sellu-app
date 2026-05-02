@@ -127,9 +127,9 @@
         .testimonios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 800; color: var(--navy); }
         .carousel-wrap { position: relative; overflow: hidden; }
         .carousel-track { display: flex; gap: 16px; transition: transform .4s ease; }
-        .testimonio-card { flex: 0 0 calc(25% - 12px); border-radius: 10px; overflow: hidden; background: var(--navy); position: relative; min-height: 280px; cursor: pointer; }
+        .testimonio-card { flex: 0 0 calc(25% - 12px); border-radius: 14px; overflow: hidden; background: var(--navy); position: relative; min-height: 420px; cursor: pointer; }
         .testimonio-video {
-            width: 100%; height: 280px; object-fit: cover; display: block;
+            width: 100%; height: 420px; object-fit: cover; display: block;
             background: #0D1B3E;
         }
         .testimonio-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px; background: linear-gradient(to top, rgba(13,27,62,.95) 0%, transparent 100%); pointer-events: none; }
