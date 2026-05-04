@@ -46,7 +46,30 @@
     {{-- FILA 2: Menú centrado (desktop) --}}
     <nav class="nav-menu-row">
         <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}" class="nav-item {{ request()->is('pages/crear-empresa-en-estados-unidos') ? 'active' : '' }}">Abre tu empresa</a>
-        <a href="{{ url('/pages/contabilidad') }}" class="nav-item {{ request()->is('pages/contabilidad') ? 'active' : '' }}">Contabilidad</a>
+        <div class="nav-dropdown {{ request()->is('pages/contabilidad') ? 'active' : '' }}">
+            <a href="{{ url('/pages/contabilidad') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/contabilidad') ? 'active' : '' }}">
+                Contabilidad
+                <svg class="nav-chevron" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <div class="nav-submenu">
+                <a href="{{ url('/pages/contabilidad') }}#bookkeeping" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M3 2h7l3 3v9H3V2z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M10 2v3h3" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M5 8h6M5 11h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    Bookkeeping
+                </a>
+                <a href="{{ url('/pages/contabilidad') }}#impuestos" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M5 8h6M5 5.5h2M9 10.5h2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    Presentación de impuestos
+                </a>
+                <a href="{{ url('/pages/contabilidad') }}#itin" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="6" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M2 14c0-3 2.686-5 6-5s6 2 6 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    ITIN Number
+                </a>
+                <a href="{{ url('/pages/contabilidad') }}#revendedor" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M2 4h12v9a1 1 0 01-1 1H3a1 1 0 01-1-1V4z" stroke="currentColor" stroke-width="1.2"/><path d="M5 4V3a3 3 0 016 0v1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    Certificado de revendedor
+                </a>
+            </div>
+        </div>
         <a href="{{ url('/pages/apertura-marketplace') }}" class="nav-item {{ request()->is('pages/apertura-marketplace') ? 'active' : '' }}">Vende en Amazon</a>
         <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="nav-item {{ request()->is('pages/registro-de-marca-ante-la-uspto') ? 'active' : '' }}">Registro de marca</a>
         <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="nav-item {{ request()->is('pages/almacenamiento-y-logistica') ? 'active' : '' }}">Envíos</a>
@@ -57,7 +80,18 @@
     {{-- Menú móvil desplegable --}}
     <nav class="nav-mobile-menu" id="navMobileMenu">
         <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}" class="mobile-item {{ request()->is('pages/crear-empresa-en-estados-unidos') ? 'active' : '' }}">Abre tu empresa</a>
-        <a href="{{ url('/pages/contabilidad') }}" class="mobile-item {{ request()->is('pages/contabilidad') ? 'active' : '' }}">Contabilidad</a>
+        <div class="mobile-accordion {{ request()->is('pages/contabilidad') ? 'open' : '' }}">
+            <button class="mobile-item mobile-accordion-trigger" onclick="toggleAccordion(this)">
+                Contabilidad
+                <svg class="mobile-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="mobile-subitems">
+                <a href="{{ url('/pages/contabilidad') }}#bookkeeping" class="mobile-subitem">Bookkeeping</a>
+                <a href="{{ url('/pages/contabilidad') }}#impuestos" class="mobile-subitem">Presentación de impuestos</a>
+                <a href="{{ url('/pages/contabilidad') }}#itin" class="mobile-subitem">ITIN Number</a>
+                <a href="{{ url('/pages/contabilidad') }}#revendedor" class="mobile-subitem">Certificado de revendedor</a>
+            </div>
+        </div>
         <a href="{{ url('/pages/apertura-marketplace') }}" class="mobile-item {{ request()->is('pages/apertura-marketplace') ? 'active' : '' }}">Vende en Amazon</a>
         <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="mobile-item {{ request()->is('pages/registro-de-marca-ante-la-uspto') ? 'active' : '' }}">Registro de marca</a>
         <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="mobile-item {{ request()->is('pages/almacenamiento-y-logistica') ? 'active' : '' }}">Envíos</a>
@@ -101,6 +135,36 @@
 .nav-item:hover { color: var(--navy, #0D1B3E); border-bottom-color: var(--gold, #F5A623); }
 .nav-item.active { color: var(--gold, #F5A623); border-bottom-color: var(--gold, #F5A623); }
 
+/* ── DROPDOWN CONTABILIDAD ── */
+.nav-dropdown { position: relative; display: flex; align-items: center; }
+.nav-dropdown-trigger { display: flex; align-items: center; gap: 5px; }
+.nav-chevron { width: 10px; height: 10px; transition: transform .2s; flex-shrink: 0; }
+.nav-dropdown:hover .nav-chevron { transform: rotate(180deg); }
+
+.nav-submenu {
+    position: absolute; top: calc(100% + 1px); left: 50%; transform: translateX(-50%);
+    background: #fff; border: 1px solid #E8EAF0; border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(13,27,62,0.10); padding: 8px;
+    min-width: 220px; z-index: 200;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transform: translateX(-50%) translateY(6px);
+    transition: opacity .18s, transform .18s, visibility .18s;
+}
+.nav-dropdown:hover .nav-submenu {
+    opacity: 1; visibility: visible; pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+.nav-subitem {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 12px; border-radius: 8px;
+    font-size: 12px; font-weight: 600; color: #333A50;
+    text-decoration: none; text-transform: uppercase; letter-spacing: .03em;
+    transition: background .15s, color .15s; white-space: nowrap;
+}
+.nav-subitem svg { width: 15px; height: 15px; flex-shrink: 0; color: #9299ad; transition: color .15s; }
+.nav-subitem:hover { background: #F6F7FB; color: #0D1B3E; }
+.nav-subitem:hover svg { color: #F5A623; }
+
 /* ── HAMBURGER ── */
 .nav-hamburger {
     display: none; flex-direction: column; justify-content: center; gap: 5px;
@@ -128,6 +192,29 @@
     border-left: 3px solid transparent; transition: color .2s, border-color .2s;
 }
 .mobile-item:hover, .mobile-item.active { color: #0D1B3E; border-left-color: #F5A623; }
+/* ── MÓVIL ACORDEÓN CONTABILIDAD ── */
+.mobile-accordion-trigger {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    background: none; border: none; cursor: pointer; text-align: left;
+    padding: 14px 5%; font-size: 13px; font-weight: 700; color: #333A50;
+    text-transform: uppercase; letter-spacing: .04em;
+    border-left: 3px solid transparent; transition: color .2s, border-color .2s;
+}
+.mobile-accordion-trigger:hover,
+.mobile-accordion.open .mobile-accordion-trigger { color: #0D1B3E; border-left-color: #F5A623; }
+.mobile-chevron { width: 12px; height: 12px; flex-shrink: 0; transition: transform .2s; }
+.mobile-accordion.open .mobile-chevron { transform: rotate(180deg); }
+
+.mobile-subitems { display: none; flex-direction: column; background: #F6F7FB; }
+.mobile-accordion.open .mobile-subitems { display: flex; }
+.mobile-subitem {
+    padding: 11px 5% 11px calc(5% + 20px);
+    font-size: 12px; font-weight: 600; color: #5b607d;
+    text-decoration: none; text-transform: uppercase; letter-spacing: .04em;
+    border-left: 3px solid transparent; transition: color .2s, border-color .2s;
+}
+.mobile-subitem:hover { color: #0D1B3E; border-left-color: #F5A623; }
+
 .mobile-auth {
     display: flex; gap: 10px; padding: 16px 5% 4px;
     border-top: 1px solid #E8EAF0; margin-top: 8px;
@@ -157,5 +244,8 @@ function toggleMobileNav() {
     const btn  = document.getElementById('navHamburger');
     menu.classList.toggle('open');
     btn.classList.toggle('open');
+}
+function toggleAccordion(btn) {
+    btn.closest('.mobile-accordion').classList.toggle('open');
 }
 </script>
