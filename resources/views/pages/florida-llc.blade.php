@@ -139,6 +139,8 @@
         .faq-answer { padding: 0 0 22px; font-size: 15px; line-height: 24px; color: var(--fg-secondary); max-width: 720px; display: none; }
         .faq-answer.open { display: block; }
         .faq-cta-row { margin-top: 56px; display: flex; gap: 14px; flex-wrap: wrap; }
+        #cta-final { display: none; }
+        #cta-final.visible { display: block; }
 
         /* ── CTA FINAL ── */
         .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
@@ -529,10 +531,10 @@
         </div>
         <div class="faq-cta-row">
             <a href="#cta-final" class="btn-primary" style="padding:18px 28px;font-size:16px;">Quiero mi LLC ya →</a>
-            <a href="https://wa.me/19542108455?text=Hola,%20quiero%20abrir%20mi%20LLC%20en%20Florida" target="_blank" rel="noopener" class="btn-outline-white" style="color:var(--ink-900);border-color:var(--ink-300);background:var(--white);padding:18px 28px;font-size:16px;">
+            <button onclick="mostrarFormulario()" class="btn-outline-white" style="color:var(--ink-900);border-color:var(--ink-300);background:var(--white);padding:18px 28px;font-size:16px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;border-radius:12px;display:inline-flex;align-items:center;gap:8px;">
                 <i data-lucide="phone" style="width:18px;height:18px"></i>
                 Quiero que me llamen
-            </a>
+            </button>
         </div>
     </div>
 </section>
@@ -605,6 +607,12 @@
 
 <script>
     lucide.createIcons();
+
+    function mostrarFormulario() {
+        const section = document.getElementById('cta-final');
+        section.classList.add('visible');
+        setTimeout(() => section.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+    }
 
     function toggleFaq(btn) {
         const expanded = btn.getAttribute('aria-expanded') === 'true';
