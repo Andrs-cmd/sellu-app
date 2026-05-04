@@ -110,14 +110,14 @@
             margin-bottom: 22px;
         }
         .hero-h1 {
-            font-size: clamp(28px, 4vw, 46px); font-weight: 800;
-            line-height: 1.15; color: var(--navy-900);
-            margin-bottom: 20px; letter-spacing: -0.5px;
+            font-family: var(--font-display); font-size: 64px; line-height: 68px;
+            letter-spacing: -0.025em; font-weight: 600; color: var(--navy-900);
+            margin-bottom: 20px;
         }
         .hero-h1 .highlight { color: var(--AMZ); }
         .hero-sub {
-            font-size: 16px; color: var(--fg-tertiary);
-            line-height: 1.7; margin-bottom: 32px;
+            font-size: 19px; line-height: 28px; letter-spacing: -0.005em;
+            color: var(--fg-secondary); margin-bottom: 32px;
             max-width: 480px;
         }
         .btn-hero {
@@ -461,8 +461,8 @@
             .container { padding: 0 20px; }
             .nav-links { display: none; }
             .hero-grid { grid-template-columns: 1fr; gap: 40px; }
-            .hero-h1 { font-size: 28px; }
-            .hero-sub { max-width: 100%; }
+            .hero-h1 { font-size: 36px; line-height: 42px; }
+            .hero-sub { max-width: 100%; font-size: 17px; }
             .benefits-grid { grid-template-columns: 1fr 1fr; }
             .servicios-grid { grid-template-columns: 1fr 1fr; }
             .proceso-grid { grid-template-columns: 1fr 1fr; }
