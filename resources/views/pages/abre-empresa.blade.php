@@ -182,7 +182,7 @@
         @media (max-width: 600px) { .cliente-logo-img { height: 36px; } }
 
         /* ── 4 PASOS ── */
-        .pasos { background: var(--gray); padding: 64px 2% 36px; border-top: 1px solid var(--gray2); }
+        .pasos { background: var(--gray); padding: 64px 2% 1px; border-top: 1px solid var(--gray2); }
         .pasos-header { text-align: center; margin-bottom: 48px; }
         .pasos-header h2 { font-family: 'Montserrat', sans-serif; font-size: 34px; font-weight: 800; color: var(--navy); }
         .pasos-header h2 em { font-style: normal; color: var(--gold); }
