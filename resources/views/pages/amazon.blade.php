@@ -491,10 +491,10 @@
         <div class="hero-grid">
             <!-- Left column -->
             <div class="reveal">
-                <div class="hero-badge">
+                <!-- <div class="hero-badge">
                     <i data-lucide="zap" style="width:14px;height:14px;"></i>
                     Amazon US · Apertura desde LATAM
-                </div>
+                </div> -->
                 <h1 class="hero-h1">
                     Vender en Amazon desde Latinoamérica <span class="highlight">parece complicado.</span> Con Sell·U, no lo es.
                 </h1>
@@ -613,7 +613,7 @@
 <section class="benefits-section">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-eyebrow">Por qué Amazon</span>
+            <!--<span class="section-eyebrow">Por qué Amazon</span>-->
             <h2 class="section-h2">El marketplace más grande del mundo,<br><strong>al alcance de tu marca.</strong></h2>
         </div>
         <div class="benefits-grid">
@@ -695,7 +695,7 @@
 <section class="servicios-section" id="servicios">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-eyebrow">Servicios incluidos</span>
+            <!--<span class="section-eyebrow">Servicios incluidos</span>-->
             <h2 class="section-h2">Todo lo que necesitas para vender en Amazon,<br>en un solo equipo.</h2>
         </div>
         <div class="servicios-grid reveal">
@@ -767,7 +767,7 @@
 <section class="proceso-section section-band" id="proceso">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-eyebrow">Cómo trabajamos</span>
+            <!--<span class="section-eyebrow">Cómo trabajamos</span>-->
             <h2 class="section-h2">14 días, 4 pasos, una cuenta lista para vender.</h2>
         </div>
         <div class="proceso-grid">
@@ -803,7 +803,7 @@
 <section class="planes-section" id="precios">
     <div class="container">
         <div class="section-header reveal" style="text-align:center;">
-            <span class="section-eyebrow">Planes</span>
+            <!--<span class="section-eyebrow">Planes</span>-->
             <h2 class="section-h2">Tres formas de empezar. Tú eliges hasta dónde llegamos.</h2>
         </div>
         <div class="planes-grid">
@@ -865,7 +865,7 @@
     <div class="container">
         <div class="requisitos-inner">
             <div class="requisitos-left reveal">
-                <span class="section-eyebrow">Requisitos previos</span>
+                <!--<span class="section-eyebrow">Requisitos previos</span>-->
                 <h2 class="section-h2">Lo que necesitas tener antes de empezar.</h2>
                 <p class="requisitos-desc">Para abrir tu cuenta Amazon Professional desde LATAM necesitas contar con estos elementos básicos. No te preocupes — si aún no los tienes, también te ayudamos a conseguirlos.</p>
                 <a href="#contacto" class="btn-req">
@@ -935,7 +935,7 @@
 <section class="cta-section section-band" id="contacto">
     <div class="container">
         <div class="cta-inner reveal">
-            <span class="section-eyebrow">Empieza hoy</span>
+            <!--<span class="section-eyebrow">Empieza hoy</span>-->
             <h2 class="section-h2">Tu cuenta de Amazon US, <strong>activa en 14 días.</strong></h2>
             <p class="cta-sub">Habla hoy con uno de nuestros especialistas. Sin compromiso, en español, desde donde estés en LATAM.</p>
             <div class="cta-actions">
