@@ -600,7 +600,7 @@ Sin complicaciones y con acompañamiento en cada paso.
 </section>
 
 <!-- ── COMPARISON ── -->
-<section class="compare-section section-band">
+<!--<section class="compare-section section-band">
     <div class="container">
         <div class="section-header reveal">
             <h2 class="section-h2">Lo que cambia cuando tienes a alguien<br>que ya lo hizo cien veces.</h2>
@@ -643,7 +643,7 @@ Sin complicaciones y con acompañamiento en cada paso.
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- ── SERVICIOS INCLUIDOS ── -->
 <section class="servicios-section" id="servicios">
