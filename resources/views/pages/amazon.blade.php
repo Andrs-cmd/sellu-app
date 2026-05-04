@@ -395,27 +395,25 @@
 
         /* ── TESTIMONIO ── */
         .testimonial-section { padding: 96px 0; }
-        .testimonial-card {
-            background: var(--navy-900); border-radius: 22px;
-            box-shadow: 0 0 0 1px rgba(255,153,0,0.2), 0 24px 48px -12px rgba(255,153,0,0.15);
+        .testimonial-wrap {
             max-width: 960px; margin: 0 auto;
-            position: relative; overflow: hidden;
-            display: grid; grid-template-columns: 1fr 1fr; align-items: stretch;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;
         }
-        .testimonial-content { padding: 56px 56px 56px 64px; display: flex; flex-direction: column; justify-content: center; }
+        .testimonial-card {
+            background: var(--navy-900); border-radius: 22px; padding: 56px 56px 56px 64px;
+            box-shadow: 0 0 0 1px rgba(255,153,0,0.2), 0 24px 48px -12px rgba(255,153,0,0.15);
+            position: relative; overflow: hidden;
+        }
         .testimonial-quote-icon { margin-bottom: 16px; }
         .testimonial-quote-icon i, .testimonial-quote-icon svg { width: 36px; height: 36px; color: var(--AMZ); }
         .testimonial-text {
             font-size: clamp(18px, 2.2vw, 22px); font-weight: 600;
             color: var(--white); line-height: 1.55;
         }
-        .testimonial-image { position: relative; min-height: 320px; }
-        .testimonial-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 0 22px 22px 0; }
+        .testimonial-image img { width: 100%; border-radius: 18px; display: block; object-fit: cover; }
         @media (max-width: 768px) {
-            .testimonial-card { grid-template-columns: 1fr; }
-            .testimonial-content { padding: 36px 28px; }
-            .testimonial-image { min-height: 240px; }
-            .testimonial-image img { border-radius: 0 0 22px 22px; position: relative; height: 240px; }
+            .testimonial-wrap { grid-template-columns: 1fr; gap: 24px; }
+            .testimonial-card { padding: 36px 28px; }
         }
 
         /* ── CTA FINAL ── */
@@ -866,8 +864,8 @@ Sin complicaciones y con acompañamiento en cada paso.
 <!-- ── TESTIMONIO ── -->
 <section class="testimonial-section">
     <div class="container">
-        <div class="testimonial-card reveal">
-            <div class="testimonial-content">
+        <div class="testimonial-wrap reveal">
+            <div class="testimonial-card">
                 <div class="testimonial-quote-icon">
                     <i data-lucide="quote"></i>
                 </div>
