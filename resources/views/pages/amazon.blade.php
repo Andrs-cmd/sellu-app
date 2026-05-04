@@ -186,7 +186,7 @@
         .marquee-badge {
             display: inline-flex; align-items: center; gap: 6px;
             background: transparent; color: var(--navy-900);
-            font-size: 16px; font-weight: 700;
+            font-size: 18px; font-weight: 700;
             padding: 6px 18px; border-radius: 100px;
             text-transform: uppercase; letter-spacing: 0.06em;
         }
