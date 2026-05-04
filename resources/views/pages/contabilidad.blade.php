@@ -625,7 +625,7 @@
                 <div class="pull-quote-author">— Equipo contable Sell-U</div>
             </div>
             <div class="pull-quote-person">
-                <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777915241/SELL-U_50_svevfm.png" alt="Equipo contable Sell-U">
+                <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777915242/SELL-U_49_dtwtgc.png" alt="Equipo contable Sell-U">
             </div>
         </div>
     </div>
