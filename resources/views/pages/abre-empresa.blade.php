@@ -182,20 +182,20 @@
         @media (max-width: 600px) { .cliente-logo-img { height: 36px; } }
 
         /* ── 4 PASOS ── */
-        .pasos { background: var(--gray); padding: 64px 5%; border-top: 1px solid var(--gray2); }
+        .pasos { background: var(--gray); padding: 64px 2% 36px; border-top: 1px solid var(--gray2); }
         .pasos-header { text-align: center; margin-bottom: 48px; }
-        .pasos-header h2 { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; color: var(--navy); }
+        .pasos-header h2 { font-family: 'Montserrat', sans-serif; font-size: 34px; font-weight: 800; color: var(--navy); }
         .pasos-header h2 em { font-style: normal; color: var(--gold); }
-        .pasos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1000px; margin: 0 auto; position: relative; }
+        .pasos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; max-width: 1400px; margin: 0 auto; position: relative; }
         .pasos-line { position: absolute; top: 20px; left: calc(12.5% + 10px); right: calc(12.5% + 10px); height: 2px; background: var(--gray2); z-index: 0; }
-        .paso { text-align: center; position: relative; z-index: 1; padding: 0 8px; }
+        .paso { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
         .paso-num { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 800; color: var(--white); border: 3px solid var(--white); }
         .paso-num.n1 { background: #1B4FD8; }
         .paso-num.n2 { background: var(--gold); color: var(--navy); }
         .paso-num.n3 { background: #1B4FD8; }
         .paso-num.n4 { background: var(--gold); color: var(--navy); }
-        .paso h3 { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-        .paso p { font-size: 12px; color: var(--muted); line-height: 1.65; }
+        .paso h3 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+        .paso p { font-size: 13px; color: var(--muted); line-height: 1.65; }
 
         /* ── PRECIOS ── */
         .precios { padding: 80px 5%; background: var(--gray); }
