@@ -266,9 +266,9 @@
     .card-body { font-size: 14px; line-height: 22px; color: var(--fg-secondary); margin: 0; }
     .pull-quote-wrap { position: relative; margin-top: 64px; border-radius: 20px; overflow: hidden; }
     .pull-quote-wrap img.pq-bg { width: 100%; height: auto; display: block; }
-    .pull-quote { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 52px 64px; }
-    .pull-quote q { font-family: var(--font-display); font-size: 26px; line-height: 36px; letter-spacing: -0.015em; font-weight: 500; font-style: normal; quotes: none; display: block; color: #fff; max-width: 680px; }
-    .pull-quote-author { margin-top: 20px; font-size: 13px; color: rgba(255,255,255,0.65); letter-spacing: 0.04em; }
+    .pull-quote { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 36px 56px; }
+    .pull-quote q { font-family: var(--font-display); font-size: 18px; line-height: 26px; letter-spacing: -0.01em; font-weight: 500; font-style: normal; quotes: none; display: block; color: #fff; max-width: 600px; }
+    .pull-quote-author { margin-top: 10px; font-size: 12px; color: rgba(255,255,255,0.6); letter-spacing: 0.04em; }
 
     /* ── DIFFERENTIATORS ── */
     .diff-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 16px; padding: 32px 28px; transition: all var(--duration-base) var(--ease-out); }
