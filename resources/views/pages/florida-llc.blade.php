@@ -280,7 +280,7 @@
             <div class="hero-eyebrow">Estado del Sol · Florida</div>
             <h1>Cómo abrir una LLC en <span class="gold">Florida</span> desde el extranjero</h1>
             <p class="hero-sub">Constituye tu empresa en 5–15 días. Sin viajar, sin SSN. Sell·U se encarga de todo.</p>
-            <a href="#cta-final" class="btn-primary">Abrir mi LLC en Florida →</a>
+            <a href="{{ url('/constituir?estado=FL') }}" class="btn-primary">Abrir mi LLC en Florida →</a>
             <div class="hero-badges">
                 <div class="hero-badge">
                     <div class="val">$499</div>
