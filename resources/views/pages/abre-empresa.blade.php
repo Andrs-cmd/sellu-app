@@ -190,9 +190,9 @@
         .pasos-line { position: absolute; top: 20px; left: calc(12.5% + 10px); right: calc(12.5% + 10px); height: 2px; background: var(--gray2); z-index: 0; }
         .paso { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
         .paso-num { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 800; color: var(--white); border: 3px solid var(--white); }
-        .paso-num.n1 { background: #1B4FD8; }
+        .paso-num.n1 { background: #0D1B3E; }
         .paso-num.n2 { background: var(--gold); color: var(--navy); }
-        .paso-num.n3 { background: #1B4FD8; }
+        .paso-num.n3 { background: #0D1B3E; }
         .paso-num.n4 { background: var(--gold); color: var(--navy); }
         .paso h3 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
         .paso p { font-size: 13px; color: var(--muted); line-height: 1.65; }
