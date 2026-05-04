@@ -100,7 +100,7 @@
         body { font-family: 'Montserrat', sans-serif; font-weight: 400; color: var(--ink-700); background: var(--white); line-height: 1.55; -webkit-font-smoothing: antialiased; }
         h1, h2, h3, h4, h5 { font-family: 'Montserrat', sans-serif; color: var(--navy); margin: 0; line-height: 1.15; letter-spacing: -0.02em; }
         h1 { font-size: clamp(36px, 5.6vw, 64px); font-weight: 800; }
-        h2 { font-size: clamp(28px, 3.6vw, 44px); font-weight: 700; letter-spacing: -0.022em; }
+        h2 { font-size: clamp(28px, 3.6vw, 43px); font-weight: 700; letter-spacing: -0.022em; }
         h3 { font-size: clamp(20px, 2vw, 24px); font-weight: 700; }
         h4 { font-size: 18px; font-weight: 600; }
         p { margin: 0; }
