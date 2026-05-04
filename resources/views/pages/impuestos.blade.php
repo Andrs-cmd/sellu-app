@@ -170,7 +170,7 @@
         .section-head { max-width: 760px; margin-bottom: 56px; }
         .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
         .section-head .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue); margin-bottom: 16px; display: block; }
-        .section-head p { font-size: 18px; color: var(--ink-500); margin-top: 16px; line-height: 1.6; }
+        .section-head p { font-size: 18px; color: var(--white); margin-top: 16px; line-height: 1.6; }
 
         /* COMPARE */
         .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); overflow: hidden; border: 1px solid var(--ink-200); }
