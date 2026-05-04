@@ -82,7 +82,7 @@
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
-        body { background: var(--paper); color: var(--fg-primary); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; line-height: 1.6; }
+        body { background: #eef1f8; color: var(--fg-primary); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; line-height: 1.6; }
         a { text-decoration: none; color: inherit; }
         img { max-width: 100%; display: block; }
 
@@ -93,7 +93,7 @@
         .reveal.visible { opacity: 1; transform: translateY(0); }
 
         /* ── SECTION BAND ── */
-        .section-band { background: var(--paper-2); }
+        .section-band { background: #fff; }
 
         /* ── HERO ── */
         .hero-section { padding: 80px 0 96px; }
