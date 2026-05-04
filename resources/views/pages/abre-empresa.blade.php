@@ -152,13 +152,34 @@
         .carousel-btn.next { right: -8px; }
         .carousel-btn svg { width: 14px; height: 14px; }
 
-        /* ── CLIENTES ── */
-        .clientes { background: var(--gray); padding: 44px 5%; }
-        .clientes-header { display: flex; align-items: center; justify-content: center; margin-bottom: 32px; }
-        .clientes-badge { background: var(--navy); color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; padding: 6px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; }
-        .clientes-grid { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
-        .cliente-logo { font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 800; color: var(--navy); opacity: .4; transition: opacity .2s; letter-spacing: -1px; }
-        .cliente-logo:hover { opacity: 1; }
+        /* ── CLIENTES MARQUEE ── */
+        .clientes { background: #fff; padding: 52px 0; overflow: hidden; }
+        .clientes-header { display: flex; justify-content: center; margin-bottom: 36px; }
+        .clientes-badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: transparent; color: var(--navy);
+            font-size: 18px; font-weight: 700;
+            padding: 6px 18px; border-radius: 100px;
+            text-transform: uppercase; letter-spacing: 0.06em;
+        }
+        .marquee-track-wrap { overflow: hidden; width: 100%; }
+        .marquee-track {
+            display: flex; align-items: center; gap: 64px;
+            width: max-content;
+            animation: marqueeScroll 28s linear infinite;
+        }
+        .marquee-track:hover { animation-play-state: paused; }
+        @keyframes marqueeScroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        .cliente-logo-img {
+            height: 48px; width: auto; object-fit: contain;
+            opacity: 0.55; transition: opacity 0.2s;
+            filter: grayscale(100%); flex-shrink: 0;
+        }
+        .cliente-logo-img:hover { opacity: 1; filter: grayscale(0%); }
+        @media (max-width: 600px) { .cliente-logo-img { height: 36px; } }
 
         /* ── 4 PASOS ── */
         .pasos { background: var(--gray); padding: 64px 5%; border-top: 1px solid var(--gray2); }
@@ -430,15 +451,28 @@
 {{-- CLIENTES --}}
 <section class="clientes">
     <div class="clientes-header">
-        <span class="clientes-badge">↑ Algunos de nuestros clientes</span>
+        <span class="clientes-badge">↑ Algunos de <span style="color:#F5A623;">nuestros</span> clientes</span>
     </div>
-    <div class="clientes-grid">
-        {{-- Reemplazar con logos reales: <img src="URL_LOGO_NUTRELLE" alt="Nutrelle.Co" height="32"> --}}
-        <span class="cliente-logo">Nutrelle.Co</span>
-        <span class="cliente-logo">Marathon</span>
-        <span class="cliente-logo">DiferencZax</span>
-        <span class="cliente-logo">Sense</span>
-        <span class="cliente-logo">HAIKO NATURAL</span>
+    <div class="marquee-track-wrap">
+        <div class="marquee-track">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Marathon_-_Sell-U.png?v=1747491101" alt="Marathon">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Differenza_-_Sell-U.png?v=1747491101" alt="Differenza">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Sense_-_Sell-U.png?v=1747491101" alt="Sense">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Haiko_-_Sell-U.png?v=1747491101" alt="Haiko Natural">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Buddy_Beauty_-_Sell-U.png?v=1747491101" alt="Buddy Beauty">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/nutrelle.png?v=1753916443" alt="Nutrelle">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/LOGO_YAXSOCKS-actual.png?v=1753915977" alt="Yax Socks">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_D_Casa_-_Sell-U.png?v=1747491101" alt="D Casa">
+            <!-- duplicado para loop continuo -->
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Marathon_-_Sell-U.png?v=1747491101" alt="Marathon">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Differenza_-_Sell-U.png?v=1747491101" alt="Differenza">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Sense_-_Sell-U.png?v=1747491101" alt="Sense">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Haiko_-_Sell-U.png?v=1747491101" alt="Haiko Natural">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Buddy_Beauty_-_Sell-U.png?v=1747491101" alt="Buddy Beauty">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/nutrelle.png?v=1753916443" alt="Nutrelle">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/LOGO_YAXSOCKS-actual.png?v=1753915977" alt="Yax Socks">
+            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_D_Casa_-_Sell-U.png?v=1747491101" alt="D Casa">
+        </div>
     </div>
 </section>
 
