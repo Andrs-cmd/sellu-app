@@ -56,7 +56,7 @@
                     <svg viewBox="0 0 16 16" fill="none"><path d="M3 2h7l3 3v9H3V2z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M10 2v3h3" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M5 8h6M5 11h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
                     Bookkeeping
                 </a>
-                <a href="{{ url('/pages/contabilidad') }}#impuestos" class="nav-subitem">
+                <a href="{{ url('/pages/presentacion-de-impuestos') }}" class="nav-subitem">
                     <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M5 8h6M5 5.5h2M9 10.5h2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
                     Presentación de impuestos
                 </a>
@@ -128,7 +128,7 @@
             </button>
             <div class="mobile-subitems">
                 <a href="{{ url('/pages/contabilidad') }}#bookkeeping" class="mobile-subitem">Bookkeeping</a>
-                <a href="{{ url('/pages/contabilidad') }}#impuestos" class="mobile-subitem">Presentación de impuestos</a>
+                <a href="{{ url('/pages/presentacion-de-impuestos') }}" class="mobile-subitem">Presentación de impuestos</a>
                 <a href="{{ url('/pages/contabilidad') }}#itin" class="mobile-subitem">ITIN Number</a>
                 <a href="{{ url('/pages/contabilidad') }}#revendedor" class="mobile-subitem">Certificado de revendedor</a>
             </div>
