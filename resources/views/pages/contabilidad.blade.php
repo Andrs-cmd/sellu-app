@@ -266,8 +266,8 @@
     .card-body { font-size: 14px; line-height: 22px; color: var(--fg-secondary); margin: 0; }
     .pull-quote-wrap { position: relative; margin-top: 64px; border-radius: 20px; overflow: hidden; }
     .pull-quote-wrap img.pq-bg { width: 100%; height: auto; display: block; }
-    .pull-quote { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 36px 56px; }
-    .pull-quote q { font-family: var(--font-display); font-size: 18px; line-height: 26px; letter-spacing: -0.01em; font-weight: 500; font-style: normal; quotes: none; display: block; color: #fff; max-width: 600px; }
+    .pull-quote { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 0 8% 6%; width: 62%; }
+    .pull-quote q { font-family: var(--font-display); font-size: 17px; line-height: 25px; letter-spacing: -0.01em; font-weight: 500; font-style: normal; quotes: none; display: block; color: #fff; }
     .pull-quote-author { margin-top: 10px; font-size: 12px; color: rgba(255,255,255,0.6); letter-spacing: 0.04em; }
 
     /* ── DIFFERENTIATORS ── */
