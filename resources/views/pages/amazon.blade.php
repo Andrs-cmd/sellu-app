@@ -51,10 +51,9 @@
     @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap');
         :root {
             --navy-900: #2e3856; --navy-800: #2e3856; --navy-700: #434966;
             --navy-600: #5b607d; --navy-500: #9499ad; --navy-400: #b3b7c5;
@@ -69,7 +68,7 @@
             --fg-primary: var(--navy-900); --fg-secondary: var(--ink-700);
             --fg-tertiary: var(--ink-500); --fg-muted: var(--ink-400);
             --border-default: var(--ink-200); --border-strong: var(--ink-300);
-            --font-display: 'DM Sans', sans-serif; --font-sans: 'DM Sans', sans-serif;
+            --font-display: 'Montserrat', sans-serif; --font-sans: 'Montserrat', sans-serif;
             --shadow-xs: 0 1px 2px rgba(46,56,86,0.04);
             --shadow-sm: 0 1px 3px rgba(46,56,86,0.06);
             --shadow-md: 0 4px 8px -2px rgba(46,56,86,0.08);

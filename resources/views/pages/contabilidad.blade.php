@@ -89,7 +89,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -141,9 +141,9 @@
         --border-default: var(--ink-200);
         --border-strong:  var(--ink-300);
         --border-subtle:  var(--ink-100);
-        --font-display: 'Inter Tight', 'Inter', ui-sans-serif, system-ui, sans-serif;
-        --font-sans:    'Inter', ui-sans-serif, system-ui, sans-serif;
-        --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+        --font-display: 'Montserrat', sans-serif;
+        --font-sans:    'Montserrat', sans-serif;
+        --font-mono:    'Montserrat', sans-serif;
         --shadow-xs: 0 1px 2px rgba(46,56,86,.04);
         --shadow-sm: 0 1px 2px rgba(46,56,86,.05), 0 1px 3px rgba(46,56,86,.04);
         --shadow-md: 0 4px 8px -2px rgba(46,56,86,.06), 0 2px 4px -2px rgba(46,56,86,.04);
