@@ -96,7 +96,7 @@
         .section-band { background: #fff; }
 
         /* ── HERO ── */
-        .hero-section { padding: 80px 0 96px; }
+        .hero-section { padding: 80px 0 0px; }
         .hero-grid {
             display: grid; grid-template-columns: 1fr 1.2fr;
             gap: 48px; align-items: center;
@@ -212,7 +212,7 @@
         @media (max-width: 600px) { .cliente-logo-img { height: 36px; } }
 
         /* ── BENEFITS ── */
-        .benefits-section { padding: 96px 0; }
+        .benefits-section { padding: 26px 0; }
         .section-eyebrow {
             font-size: 12px; font-weight: 700; color: var(--AMZ);
             text-transform: uppercase; letter-spacing: 0.1em;
@@ -305,7 +305,7 @@
         .proceso-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.6; }
 
         /* ── PLANES ── */
-        .planes-section { padding: 96px 0; }
+        .planes-section { padding: 26px 0; }
         .planes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; }
         .plan-card {
             background: var(--white); border: 1px solid var(--border-default);
