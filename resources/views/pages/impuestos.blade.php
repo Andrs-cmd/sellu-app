@@ -106,8 +106,8 @@
         p { margin: 0; }
         a { color: inherit; text-decoration: none; }
         .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
-        section { padding: 96px 0; position: relative; }
-        @media (max-width: 768px) { section { padding: 72px 0; } }
+        section { padding: 56px 0; position: relative; }
+        @media (max-width: 768px) { section { padding: 40px 0; } }
 
         .bg-white { background: var(--white); }
         .bg-light { background: var(--light); }
@@ -298,16 +298,6 @@
         .price-card .extra-note { font-size: 13px; color: var(--blue); font-weight: 600; background: var(--blue-soft); padding: 10px 14px; border-radius: var(--radius-sm); }
         .price-card .btn { width: 100%; justify-content: center; margin-top: auto; }
 
-        /* FAQ */
-        .faqs { max-width: 820px; margin: 0 auto; display: grid; gap: 12px; }
-        .faq-item { background: var(--white); border-radius: var(--radius-md); border: 1px solid var(--ink-200); overflow: hidden; transition: box-shadow .25s var(--ease); }
-        .faq-item.open { box-shadow: var(--shadow-md); border-color: var(--ink-300); }
-        .faq-q { width: 100%; padding: 20px 24px; background: none; border: 0; cursor: pointer; text-align: left; font-family: 'Montserrat', sans-serif; font-size: 16.5px; font-weight: 600; color: var(--navy); display: flex; justify-content: space-between; align-items: center; gap: 16px; }
-        .faq-q .plus { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--light); color: var(--navy); display: grid; place-items: center; font-size: 18px; font-weight: 700; transition: transform .35s var(--ease), background .25s var(--ease); }
-        .faq-item.open .faq-q .plus { transform: rotate(45deg); background: var(--yellow); }
-        .faq-a { max-height: 0; overflow: hidden; transition: max-height .4s var(--ease); }
-        .faq-a-inner { padding: 0 24px 22px; color: var(--ink-700); font-size: 15px; line-height: 1.65; }
-
         /* FORM TRIGGER */
         .form-trigger-wrap { text-align: center; margin-bottom: 32px; }
         .form-trigger-wrap .btn { padding: 18px 36px; font-size: 17px; }
@@ -442,7 +432,6 @@
 <section class="bg-white">
     <div class="container">
         <div class="section-head reveal">
-            <span class="eyebrow">Tipos de LLC</span>
             <h2>Single Member LLC vs. Multi-Member LLC: dos rutas fiscales distintas</h2>
         </div>
         <div class="twocol">
@@ -484,7 +473,6 @@
 <section class="bg-light">
     <div class="container">
         <div class="section-head reveal">
-            <span class="eyebrow">Formularios</span>
             <h2>Los formularios de tu LLC: no son tantos ni tan complicados</h2>
             <p>Dependiendo de tu caso, probablemente solo te aplican uno o dos.</p>
         </div>
@@ -579,7 +567,6 @@
 <section class="bg-white">
     <div class="container">
         <div class="section-head reveal">
-            <span class="eyebrow">Errores comunes</span>
             <h2>5 errores comunes al manejar impuestos de una LLC siendo latino</h2>
             <p>Conocerlos con anticipación puede ahorrarte tiempo, dinero y multas.</p>
         </div>
@@ -677,7 +664,6 @@
 <section class="bg-dark" id="precios">
     <div class="container">
         <div class="section-head center reveal">
-            <span class="eyebrow" style="color:var(--yellow)">Planes Sell·U</span>
             <h2>Planes Sell·U para el cumplimiento fiscal de tu LLC</h2>
             <p style="color:rgba(255,255,255,.75)">Sin sorpresas. Sin letra pequeña. Solo lo que tu LLC necesita.</p>
         </div>
@@ -735,22 +721,10 @@
     </div>
 </section>
 
-{{-- ── FAQ ── --}}
-<section class="bg-white">
-    <div class="container">
-        <div class="section-head center reveal">
-            <span class="eyebrow">Preguntas frecuentes</span>
-            <h2>Lo que importa, sin rodeos.</h2>
-        </div>
-        <div class="faqs" id="faqs"></div>
-    </div>
-</section>
-
 {{-- ── FORMULARIO ── --}}
 <section class="bg-light" id="contacto">
     <div class="container">
         <div class="section-head center reveal">
-            <span class="eyebrow">Habla con un asesor</span>
             <h2>Habla con Sell·U y entiende tu situación fiscal en una sola sesión</h2>
             <p>Cuéntanos sobre tu LLC. En menos de 24 horas te contactamos.</p>
         </div>
@@ -988,29 +962,6 @@ function renderResult() {
 }
 backBtn.addEventListener('click', () => { if (currentStep > 0) { currentStep--; renderStep(); } });
 renderStep();
-
-// FAQ
-const faqsData = [
-    ['¿Cuánto paga de impuesto una LLC si soy de Colombia, México o Argentina?', 'Para la mayoría de no residentes con negocios digitales, la respuesta es <strong>$0 en impuestos federales</strong>. Lo que sí debes hacer es presentar una declaración informativa (Form 5472 o 1065) y declarar tus ingresos en tu país de residencia.'],
-    ['¿Puedo tener una LLC en EE.UU. sin vivir allá?', 'Sí. La ley estadounidense permite que cualquier extranjero sea propietario de una LLC sin visa, ciudadanía ni número de seguro social. Puedes constituirla desde tu país y operarla completamente en remoto.'],
-    ['¿Qué pasa si no declaro los impuestos de mi LLC?', 'El IRS puede imponer multas desde <strong>$25,000 USD</strong> por no presentar el Form 5472, incluso si no debes dinero. Además tu LLC puede quedar en estado de incumplimiento, afectando tu credibilidad bancaria y comercial en EE.UU.'],
-    ['¿Una LLC de un solo miembro paga impuestos?', 'Depende. Si eres no residente y tu negocio no tiene presencia física en EE.UU. (no es ETBUS), no pagas impuestos federales. Solo presentas formularios informativos. Si eres residente o tienes ETBUS, sí hay obligación de pago.'],
-    ['¿Cuál es la diferencia entre EIN e ITIN?', '<strong>EIN</strong> es el número fiscal de tu empresa — lo necesitas para abrir cuentas bancarias y operar. <strong>ITIN</strong> es el número fiscal personal para no residentes y solo lo necesitas si tienes ingresos conectados a EE.UU. que requieran declaración personal.'],
-    ['¿Cuándo es la fecha límite para declarar los impuestos de mi LLC?', 'Single Member LLC (Form 5472 + 1120): <strong>15 de abril</strong>. Multi-Member LLC (Form 1065): <strong>15 de marzo</strong>. Es posible solicitar extensiones de 6 meses en ambos casos.'],
-    ['¿Debo declarar también en mi país si tengo una LLC en EE.UU.?', 'Sí, en la mayoría de países latinoamericanos. Tener una LLC en EE.UU. no elimina tus obligaciones fiscales locales. Los ingresos deben reportarse según la normativa de Colombia, México, Argentina u otro país de residencia.'],
-    ['¿Sell·U puede gestionar toda la declaración por mí?', 'Sí. Nos encargamos de identificar tu escenario, preparar los formularios correctos y presentarlos ante el IRS en los tiempos correspondientes. <a href="#contacto" style="color:var(--blue);text-decoration:underline">Agenda una primera llamada sin costo aquí abajo.</a>']
-];
-const faqsEl = document.getElementById('faqs');
-faqsEl.innerHTML = faqsData.map((f, i) => `<div class="faq-item" data-idx="${i}"><button class="faq-q"><span>${f[0]}</span><span class="plus">+</span></button><div class="faq-a"><div class="faq-a-inner">${f[1]}</div></div></div>`).join('');
-faqsEl.querySelectorAll('.faq-item').forEach(item => {
-    const q = item.querySelector('.faq-q');
-    const a = item.querySelector('.faq-a');
-    q.addEventListener('click', () => {
-        const open = item.classList.contains('open');
-        faqsEl.querySelectorAll('.faq-item').forEach(other => { other.classList.remove('open'); other.querySelector('.faq-a').style.maxHeight = null; });
-        if (!open) { item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
-    });
-});
 
 // Toggle buttons
 document.querySelectorAll('.toggle-group').forEach(group => {
