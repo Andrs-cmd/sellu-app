@@ -393,7 +393,7 @@
         .req-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.5; }
 
         /* ── TESTIMONIO ── */
-        .testimonial-section { padding: 96px 0; }
+        .testimonial-section { padding: 0px 0; }
         .testimonial-wrap {
             max-width: 960px; margin: 0 auto;
             display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;

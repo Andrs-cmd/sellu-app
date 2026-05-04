@@ -48,7 +48,7 @@
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
-        body { background: var(--paper); color: var(--fg-primary); font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.6; }
+        body { background: #EEF1F8 ; color: var(--fg-primary); font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.6; }
         a { text-decoration: none; color: inherit; }
         img { max-width: 100%; display: block; }
 

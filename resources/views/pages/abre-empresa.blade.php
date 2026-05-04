@@ -232,7 +232,7 @@
 
         /* ── DUDAS CTA ── */
         /* ── ESTADOS GUÍA ── */
-        .estados-guia { background: #fbfaf7; padding: 80px 5%; position: relative; overflow: hidden; }
+        .estados-guia { background: #fff; padding: 80px 5%; position: relative; overflow: hidden; }
         .estados-guia-glow { position: absolute; inset: -32px; background: radial-gradient(60% 50% at 70% 30%, rgba(246,187,51,0.10), transparent 70%); pointer-events: none; }
         .estados-guia-container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.05fr 1fr; gap: 80px; align-items: center; position: relative; }
         .estados-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px; }
