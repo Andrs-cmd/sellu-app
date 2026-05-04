@@ -257,7 +257,7 @@
         .compare-good svg, .compare-good i { color: var(--success-500); flex-shrink: 0; margin-top: 2px; width: 14px; height: 14px; }
 
         /* ── SERVICIOS ── */
-        .servicios-section { padding: 96px 0; }
+        .servicios-section { padding: 50px 0; }
         .servicios-grid {
             display: grid; grid-template-columns: repeat(3, 1fr);
             gap: 1px; background: var(--border-default);
