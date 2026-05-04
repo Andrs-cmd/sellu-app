@@ -100,7 +100,7 @@
         </div>
         <div class="nav-dropdown {{ request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">
             <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">
-                Registros de marca
+                Registros legales
                 <svg class="nav-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
             <div class="nav-submenu">
@@ -148,7 +148,7 @@
         </div>
         <div class="mobile-accordion {{ request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'open' : '' }}">
             <button class="mobile-item mobile-accordion-trigger" onclick="toggleAccordion(this)">
-                Registros de marca
+                Registros legales
                 <svg class="mobile-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="mobile-subitems">
