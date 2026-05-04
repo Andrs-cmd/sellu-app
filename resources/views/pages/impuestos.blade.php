@@ -148,7 +148,7 @@
         .hero h1 em::after { content: ''; position: absolute; left: 0; right: 0; bottom: 4px; height: 10px; background: rgba(246,187,51,.18); z-index: -1; border-radius: 2px; }
         .hero-sub { font-size: 18px; color: rgba(255,255,255,.78); margin-top: 22px; max-width: 560px; line-height: 1.55; }
         .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-top: 32px; }
-        .hero-stat { margin-top: 48px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.65); font-size: 14px; }
+        .hero-stat { margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.65); font-size: 14px; }
         .hero-stat strong { color: var(--white); font-weight: 700; }
         .hero-visual { position: relative; min-height: 420px; max-width: 440px; margin-left: auto; width: 100%; }
         .hero-card { position: absolute; background: var(--white); border-radius: var(--radius-lg); padding: 22px 24px; box-shadow: var(--shadow-lg); color: var(--navy); min-width: 260px; }
@@ -348,7 +348,7 @@
             <h1>Impuestos de LLC en EE.UU.: la guía <em>clara</em> que necesitabas</h1>
             <p class="hero-sub">Descubre cuánto paga de impuesto una LLC, cuándo no pagas nada y qué formularios aplican a tu caso. Sin tecnicismos.</p>
             <div class="hero-actions">
-                <a href="#contacto" class="btn btn-primary btn-lg">Hablar con Sell·U →</a>
+                <a href="#contacto" class="btn btn-primary btn-lg">Empezar ahora →</a>
             </div>
             <div class="hero-stat">
                 Más de <strong>500 emprendedores latinos</strong> ya estructuraron su negocio con Sell·U
