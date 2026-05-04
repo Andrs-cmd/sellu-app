@@ -4,10 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
-    <title>Cómo abrir una LLC en Florida desde el extranjero — Sell·U</title>
-    <meta name="description" content="Guía completa para constituir tu LLC en Florida desde Latinoamérica. Sin SSN, sin viajar. 5–15 días hábiles. Sell·U se encarga de todo.">
+    <title>Cómo abrir una LLC en Florida desde Latinoamérica — Sell·U</title>
+
+    <!-- ── SEO PRIMARIO ── -->
+    <meta name="description" content="Guía completa para constituir tu LLC en Florida desde Latinoamérica o España. Sin SSN, sin viajar. 5–15 días hábiles. Agente registrado, EIN y Operating Agreement incluidos.">
+    <meta name="keywords" content="LLC Florida extranjero, abrir LLC Florida desde latinoamerica, LLC Florida sin SSN, constituir empresa Florida, LLC Miami LATAM, agente registrado Florida, EIN Florida, abrir empresa Florida Colombia Mexico Argentina">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Sell·U LATAM LLC">
     <link rel="canonical" href="https://sellu.co/pages/crear-llc-en-florida">
+
+    <!-- ── OPEN GRAPH ── -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sellu.co/pages/crear-llc-en-florida">
+    <meta property="og:title" content="Cómo abrir una LLC en Florida desde Latinoamérica — Sell·U">
+    <meta property="og:description" content="Constituye tu LLC en Florida en 5–15 días. Sin viajar, sin SSN. 0% income tax estatal. Hub LATAM en Miami. Sell·U se encarga de todo.">
+    <meta property="og:image" content="https://sellu.co/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Sell·U LATAM">
+
+    <!-- ── TWITTER CARD ── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cómo abrir una LLC en Florida desde Latinoamérica — Sell·U">
+    <meta name="twitter:description" content="LLC en Florida en 5–15 días. Sin viajar, sin SSN. 0% income tax estatal. Sell·U se encarga de todo.">
+    <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
+
+    <!-- ── STRUCTURED DATA ── -->
+    @verbatim
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Cómo abrir una LLC en Florida desde el extranjero",
+        "description": "Guía completa para constituir una LLC en Florida desde Latinoamérica o España sin SSN ni residencia en EE.UU. Incluye pasos, costos, impuestos y obligaciones anuales.",
+        "url": "https://sellu.co/pages/crear-llc-en-florida",
+        "inLanguage": "es",
+        "author": {
+            "@type": "Organization",
+            "name": "Sell·U LATAM LLC",
+            "url": "https://sellu.co"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Sell·U LATAM LLC",
+            "url": "https://sellu.co",
+            "logo": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196"
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sellu.co" },
+                { "@type": "ListItem", "position": 2, "name": "Abre tu empresa", "item": "https://sellu.co/pages/crear-empresa-en-estados-unidos" },
+                { "@type": "ListItem", "position": 3, "name": "Elige tu estado", "item": "https://sellu.co/pages/cual-es-el-mejor-estado-para-formar-una-llc" },
+                { "@type": "ListItem", "position": 4, "name": "LLC en Florida", "item": "https://sellu.co/pages/crear-llc-en-florida" }
+            ]
+        },
+        "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Necesito un SSN o vivir en EE.UU. para abrir mi LLC en Florida?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "No. Puedes constituir tu LLC en Florida desde cualquier país de Latinoamérica o España, sin SSN, sin ITIN y sin viajar. Solo necesitas un agente registrado con dirección física en Florida, tu pasaporte y una dirección de correspondencia." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿En cuánto tiempo tendré mi LLC operativa?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "La radicación de los Articles of Organization toma 5–15 días hábiles. El EIN para founders sin SSN tarda 4–8 semanas adicionales. Con Sell·U el proceso completo suele cerrarse en 4–6 semanas." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Tendré que pagar impuestos en EE.UU. y también en mi país?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "La LLC de Florida es por defecto pass-through: no paga impuesto corporativo en EE.UU. si no operas físicamente allá. Como dueño debes presentar el formulario 5472 + 1120 cada año y declarar los ingresos en tu país de residencia." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Puedo abrir cuenta bancaria de la LLC sin viajar a EE.UU.?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Sí. Bancos digitales como Mercury, Relay y Wise Business aceptan founders sin SSN siempre que tengas LLC activa, EIN y pasaporte. El proceso es 100% remoto." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Por qué Florida y no Delaware o Wyoming?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Florida es la opción más práctica si tu cliente o equipo está en LATAM: Miami concentra bancos, abogados y CPAs bilingües. Delaware tiene sentido si planeas levantar inversión institucional. Wyoming es la opción más barata si solo necesitas un holding privado." }
+                }
+            ]
+        }
+    }
+    </script>
+    @endverbatim
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>

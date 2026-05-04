@@ -4,10 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
-    <title>Elige tu estado para formar tu LLC — Sell·U</title>
-    <meta name="description" content="Compara los 50 estados de EE.UU. para formar tu LLC. Delaware, Wyoming, Florida o Texas: conoce costos, privacidad e impuestos antes de decidir.">
+    <title>Elige tu estado para formar tu LLC en EE.UU. — Sell·U</title>
+
+    <!-- ── SEO PRIMARIO ── -->
+    <meta name="description" content="Compara los 50 estados de EE.UU. para formar tu LLC. Delaware, Wyoming, Florida o Texas: conoce costos, privacidad e impuestos antes de decidir. Desde LATAM, sin viajar.">
+    <meta name="keywords" content="mejor estado para LLC, abrir LLC en USA, LLC Delaware, LLC Wyoming, LLC Florida, LLC Texas, constituir empresa estados unidos, elegir estado LLC extranjero, LLC desde latinoamerica">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Sell·U LATAM LLC">
     <link rel="canonical" href="https://sellu.co/pages/cual-es-el-mejor-estado-para-formar-una-llc">
+
+    <!-- ── OPEN GRAPH ── -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sellu.co/pages/cual-es-el-mejor-estado-para-formar-una-llc">
+    <meta property="og:title" content="Elige tu estado para formar tu LLC en EE.UU. — Sell·U">
+    <meta property="og:description" content="Compara Delaware, Wyoming, Florida y Texas para tu LLC. Costos, privacidad e impuestos explicados en español para emprendedores latinoamericanos.">
+    <meta property="og:image" content="https://sellu.co/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Sell·U LATAM">
+
+    <!-- ── TWITTER CARD ── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elige tu estado para formar tu LLC en EE.UU. — Sell·U">
+    <meta name="twitter:description" content="Compara Delaware, Wyoming, Florida y Texas para tu LLC. Costos, privacidad e impuestos en español.">
+    <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
+
+    <!-- ── STRUCTURED DATA ── -->
+    @verbatim
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Elige tu estado para formar tu LLC en EE.UU.",
+        "description": "Comparador de los 50 estados de EE.UU. para la constitución de LLC. Incluye Delaware, Wyoming, Florida y Texas con costos, privacidad e impuestos.",
+        "url": "https://sellu.co/pages/cual-es-el-mejor-estado-para-formar-una-llc",
+        "inLanguage": "es",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Sell·U LATAM LLC",
+            "url": "https://sellu.co",
+            "logo": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196"
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sellu.co" },
+                { "@type": "ListItem", "position": 2, "name": "Abre tu empresa", "item": "https://sellu.co/pages/crear-empresa-en-estados-unidos" },
+                { "@type": "ListItem", "position": 3, "name": "Elige tu estado", "item": "https://sellu.co/pages/cual-es-el-mejor-estado-para-formar-una-llc" }
+            ]
+        }
+    }
+    </script>
+    @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
