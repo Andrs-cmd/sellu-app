@@ -98,8 +98,8 @@
         /* ── HERO ── */
         .hero-section { padding: 80px 0 96px; }
         .hero-grid {
-            display: grid; grid-template-columns: 1fr 1fr;
-            gap: 64px; align-items: center;
+            display: grid; grid-template-columns: 1fr 1.2fr;
+            gap: 48px; align-items: center;
         }
         .hero-badge {
             display: inline-flex; align-items: center; gap: 8px;
@@ -527,56 +527,9 @@ Sin complicaciones y con acompañamiento en cada paso.
                     </div>-->
                 </div>
             </div>
-            <!-- Right column — Seller Central mockup -->
+            <!-- Right column — Hero image -->
             <div class="reveal" style="transition-delay:0.15s;">
-                <div class="sc-card">
-                    <div class="sc-header">
-                        <div class="sc-icon">a</div>
-                        <div>
-                            <div class="sc-title">Seller Central</div>
-                            <div class="sc-sub">Acme Brand LLC</div>
-                        </div>
-                        <div class="sc-badge-active">
-                            <div class="sc-dot"></div>
-                            Activa
-                        </div>
-                    </div>
-                    <div class="sc-stats">
-                        <div class="sc-stat">
-                            <div class="sc-stat-label">Ventas hoy</div>
-                            <div class="sc-stat-value">$1,284</div>
-                            <div class="sc-stat-sub sc-stat-up">↑ +24% vs ayer</div>
-                        </div>
-                        <div class="sc-stat">
-                            <div class="sc-stat-label">Pedidos</div>
-                            <div class="sc-stat-value">47</div>
-                            <div class="sc-stat-sub sc-stat-up">↑ +8 vs ayer</div>
-                        </div>
-                        <div class="sc-stat">
-                            <div class="sc-stat-label">Buy Box</div>
-                            <div class="sc-stat-value">92%</div>
-                            <div class="sc-stat-sub sc-stat-good">Saludable</div>
-                        </div>
-                        <div class="sc-stat">
-                            <div class="sc-stat-label">Inventario FBA</div>
-                            <div class="sc-stat-value">8 SKUs</div>
-                            <div class="sc-stat-sub sc-stat-good">En stock</div>
-                        </div>
-                    </div>
-                    <div class="sc-chart">
-                        <div class="sc-chart-label">Ventas últimos 7 días</div>
-                        <svg viewBox="0 0 320 64" fill="none" preserveAspectRatio="none">
-                            <defs>
-                                <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
-                                    <stop offset="0%" stop-color="#FF9900" stop-opacity="0.18"/>
-                                    <stop offset="100%" stop-color="#FF9900" stop-opacity="0"/>
-                                </linearGradient>
-                            </defs>
-                            <path d="M0 52 L46 44 L92 38 L138 28 L184 32 L230 18 L276 10 L320 4" stroke="#FF9900" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                            <path d="M0 52 L46 44 L92 38 L138 28 L184 32 L230 18 L276 10 L320 4 L320 64 L0 64 Z" fill="url(#sparkGrad)"/>
-                        </svg>
-                    </div>
-                </div>
+                <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777910232/ImagenSell-U_ewj8sz.png" alt="Sell·U — Dashboard" style="width:115%;height:auto;display:block;margin-left:-8%;">
             </div>
         </div>
     </div>
