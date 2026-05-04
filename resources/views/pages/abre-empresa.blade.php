@@ -231,6 +231,40 @@
         .precio-card.featured .btn-precio-primary:hover { background: var(--gray); }
 
         /* ── DUDAS CTA ── */
+        /* ── ESTADOS GUÍA ── */
+        .estados-guia { background: #fbfaf7; padding: 80px 5%; position: relative; overflow: hidden; }
+        .estados-guia-glow { position: absolute; inset: -32px; background: radial-gradient(60% 50% at 70% 30%, rgba(246,187,51,0.10), transparent 70%); pointer-events: none; }
+        .estados-guia-container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.05fr 1fr; gap: 80px; align-items: center; position: relative; }
+        .estados-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px; }
+        .estados-dot { width: 6px; height: 6px; border-radius: 999px; background: var(--gold); display: inline-block; }
+        .estados-h2 { font-family: 'Montserrat', sans-serif; font-size: clamp(28px, 3.5vw, 44px); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; color: var(--navy); margin-bottom: 20px; }
+        .estados-desc { font-size: 17px; line-height: 1.7; color: var(--muted); max-width: 500px; margin-bottom: 36px; }
+        .estados-points { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; max-width: 500px; }
+        .estados-point { display: flex; gap: 14px; align-items: flex-start; }
+        .estados-point-icon { flex-shrink: 0; width: 36px; height: 36px; border-radius: 10px; background: #fef5dd; color: #c89320; display: inline-flex; align-items: center; justify-content: center; }
+        .estados-point-title { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; color: var(--navy); margin-bottom: 4px; }
+        .estados-point-body { font-size: 13px; line-height: 1.6; color: var(--muted); }
+        .estados-cta { display: inline-flex; align-items: center; gap: 8px; }
+        .estados-cards { display: flex; flex-direction: column; gap: 12px; position: relative; }
+        .estado-card { background: var(--white); border: 1px solid var(--gray2); border-radius: 14px; padding: 22px 26px; display: grid; grid-template-columns: 64px 1fr auto; align-items: center; gap: 20px; box-shadow: 0 1px 3px rgba(13,27,62,0.06); }
+        .estado-card--featured { box-shadow: 0 4px 12px rgba(13,27,62,0.10); }
+        .estado-card--shifted { transform: translateX(20px); }
+        .estado-card-code { width: 64px; height: 64px; border-radius: 14px; background: #f0f1f5; color: var(--navy); display: inline-flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -0.02em; flex-shrink: 0; }
+        .estado-card-code--gold { background: var(--gold); }
+        .estado-card-name { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 18px; color: var(--navy); letter-spacing: -0.01em; }
+        .estado-card-tag { font-size: 12px; font-weight: 600; color: var(--muted); margin-top: 2px; }
+        .estado-card-note { font-size: 13px; line-height: 1.55; color: #4a4f60; margin-top: 7px; max-width: 300px; }
+        .estado-card-arrow { color: #9298a3; flex-shrink: 0; }
+        @media (max-width: 900px) {
+            .estados-guia-container { grid-template-columns: 1fr; gap: 48px; }
+            .estado-card--shifted { transform: none; }
+            .estados-points { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .estado-card { grid-template-columns: 48px 1fr auto; gap: 14px; }
+            .estado-card-code { width: 48px; height: 48px; font-size: 16px; border-radius: 10px; }
+        }
+
         .dudas-cta { background: var(--gray); padding: 48px 5%; text-align: center; }
         .dudas-cta h3 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
         .dudas-cta p { font-size: 15px; color: var(--muted); margin-bottom: 24px; }
@@ -573,6 +607,81 @@
         </div>
     </div>
     <div class="precios-grid" id="preciosGrid"></div>
+</section>
+
+{{-- ESTADOS GUÍA --}}
+<section class="estados-guia">
+    <div aria-hidden class="estados-guia-glow"></div>
+    <div class="estados-guia-container">
+
+        {{-- LEFT: copy --}}
+        <div class="estados-guia-left">
+            <span class="estados-eyebrow">
+                <span class="estados-dot"></span>
+                Guía estratégica
+            </span>
+            <h2 class="estados-h2">¿Cuál es el mejor estado para formar tu LLC?</h2>
+            <p class="estados-desc">Cada estado en EE.UU. tiene reglas, costos e implicaciones distintas. Esta guía te ayuda a elegir el estado ideal según tu modelo de negocio, tu operación y tus objetivos.</p>
+
+            <div class="estados-points">
+                <div class="estados-point">
+                    <div class="estados-point-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+                    </div>
+                    <div>
+                        <div class="estados-point-title">Comparativa por estado</div>
+                        <div class="estados-point-body">Impuestos, privacidad y reportes anuales en una sola vista.</div>
+                    </div>
+                </div>
+                <div class="estados-point">
+                    <div class="estados-point-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M14 8H8"/><path d="M16 12H8"/><path d="M13 16H8"/></svg>
+                    </div>
+                    <div>
+                        <div class="estados-point-title">Costos y requisitos</div>
+                        <div class="estados-point-body">Tarifas oficiales, agente registrado y mantenimiento.</div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="{{ url('/pages/cual-es-el-mejor-estado-para-formar-una-llc') }}" class="btn-navy estados-cta">
+                Lee la guía completa
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+        </div>
+
+        {{-- RIGHT: state cards --}}
+        <div class="estados-cards">
+            <article class="estado-card estado-card--featured">
+                <div class="estado-card-code estado-card-code--gold">DE</div>
+                <div class="estado-card-info">
+                    <div class="estado-card-name">Delaware</div>
+                    <div class="estado-card-tag">Estándar corporativo</div>
+                    <div class="estado-card-note">Cortes especializadas, ideal para startups con inversionistas.</div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="estado-card-arrow"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </article>
+            <article class="estado-card estado-card--shifted">
+                <div class="estado-card-code">WY</div>
+                <div class="estado-card-info">
+                    <div class="estado-card-name">Wyoming</div>
+                    <div class="estado-card-tag">Privacidad + bajo costo</div>
+                    <div class="estado-card-note">Sin impuesto estatal, anonimato del propietario, anualidad ligera.</div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="estado-card-arrow"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </article>
+            <article class="estado-card">
+                <div class="estado-card-code">FL</div>
+                <div class="estado-card-info">
+                    <div class="estado-card-name">Florida</div>
+                    <div class="estado-card-tag">Operación local</div>
+                    <div class="estado-card-note">Mejor si vas a operar, contratar o tener clientes en EE.UU.</div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="estado-card-arrow"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </article>
+        </div>
+
+    </div>
 </section>
 
 {{-- DUDAS CTA --}}
