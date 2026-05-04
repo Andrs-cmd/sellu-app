@@ -264,15 +264,18 @@
     .card-icon.danger { background: var(--danger-100); color: var(--danger-700); border-color: transparent; }
     .card-title { font-family: var(--font-display); font-size: 18px; line-height: 24px; letter-spacing: -0.01em; font-weight: 600; color: var(--navy-900); margin: 0 0 8px; }
     .card-body { font-size: 14px; line-height: 22px; color: var(--fg-secondary); margin: 0; }
-    .pull-quote-wrap { position: relative; margin-top: 64px; padding: 0 0 0 60px; }
-    .pull-quote-quotes { position: absolute; left: -10px; top: -28px; width: 90px; z-index: 2; }
-    .pull-quote { background: var(--navy-900); color: var(--paper); border-radius: 20px; padding: 52px 56px 52px 64px; position: relative; overflow: visible; display: grid; grid-template-columns: 1fr 280px; align-items: center; gap: 0; }
-    .pull-quote-text { position: relative; z-index: 2; }
-    .pull-quote q { font-family: var(--font-display); font-size: 26px; line-height: 36px; letter-spacing: -0.015em; font-weight: 500; font-style: normal; quotes: none; display: block; }
+    /* pull-quote: persona detrás, card encima, comillas al frente */
+    .pull-quote-wrap { position: relative; margin-top: 64px; padding-right: 200px; }
+    /* sellu50: persona, z=0 — detrás de todo */
+    .pull-quote-person { position: absolute; right: -20px; bottom: -20px; width: 280px; z-index: 0; pointer-events: none; }
+    /* card navy: z=1 — encima de la persona */
+    .pull-quote { background: var(--navy-900); color: var(--paper); border-radius: 20px; padding: 52px 64px; position: relative; z-index: 1; overflow: visible; }
+    .pull-quote q { font-family: var(--font-display); font-size: 26px; line-height: 36px; letter-spacing: -0.015em; font-weight: 500; font-style: normal; quotes: none; display: block; max-width: 680px; }
     .pull-quote-author { margin-top: 20px; font-size: 13px; color: rgba(251,250,247,0.6); letter-spacing: 0.04em; }
-    .pull-quote-person { position: relative; display: flex; align-items: flex-end; justify-content: center; }
-    .pull-quote-person img { width: 260px; object-fit: contain; margin-bottom: -52px; position: relative; z-index: 3; }
-    .pull-quote-blob { position: absolute; top: -80px; right: -40px; width: 220px; opacity: 0.95; z-index: 1; pointer-events: none; }
+    /* sellu49: comillas principales, z=2 — encima del card */
+    .pull-quote-quotes { position: absolute; left: -30px; top: -36px; width: 88px; z-index: 2; pointer-events: none; }
+    /* sellu48: blob pequeño, z=2 — a un lado arriba derecha */
+    .pull-quote-blob { position: absolute; top: -60px; right: 160px; width: 110px; z-index: 2; pointer-events: none; }
 
     /* ── DIFFERENTIATORS ── */
     .diff-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 16px; padding: 32px 28px; transition: all var(--duration-base) var(--ease-out); }
@@ -485,11 +488,12 @@
         .section-pad { padding: 64px 0; }
         .container { padding: 0 20px; }
         .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-        .pull-quote-wrap { padding: 0; }
-        .pull-quote { padding: 32px 28px; grid-template-columns: 1fr; }
+        .pull-quote-wrap { padding-right: 0; }
+        .pull-quote { padding: 32px 28px; }
         .pull-quote q { font-size: 20px; line-height: 28px; }
         .pull-quote-person { display: none; }
         .pull-quote-blob { display: none; }
+        .pull-quote-quotes { width: 60px; left: -16px; top: -24px; }
         .irs-row { grid-template-columns: 64px 1fr; gap: 16px; padding: 18px; }
         .irs-row > .irs-tag { grid-column: 2; justify-self: start; margin-top: 4px; }
         .final-cta-grid h2 { font-size: 36px; line-height: 42px; }
@@ -624,17 +628,17 @@
             </div>
         </div>
         <div class="pull-quote-wrap reveal">
-            <img class="pull-quote-quotes" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777915242/SELL-U_49_dtwtgc.png" alt="">
+            {{-- sellu50: persona — detrás de todo (z=0) --}}
+            <img class="pull-quote-person" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777915241/SELL-U_50_svevfm.png" alt="Equipo contable Sell-U">
+            {{-- card navy (z=1) --}}
             <div class="pull-quote">
-                <div class="pull-quote-text">
-                    <q>La mayoría de emprendedores latinos solo descubren lo importante que es una contabilidad limpia cuando ya están en modo pánico.</q>
-                    <div class="pull-quote-author">— Equipo contable Sell-U</div>
-                </div>
-                <div class="pull-quote-person">
-                    <img class="pull-quote-blob" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777915242/SELL-U_48_lci2jm.png" alt="">
-                    <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777915241/SELL-U_50_svevfm.png" alt="Equipo contable Sell-U">
-                </div>
+                <q>La mayoría de emprendedores latinos solo descubren lo importante que es una contabilidad limpia cuando ya están en modo pánico.</q>
+                <div class="pull-quote-author">— Equipo contable Sell-U</div>
             </div>
+            {{-- sellu49: comillas principales — encima del card (z=2) --}}
+            <img class="pull-quote-quotes" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777915242/SELL-U_49_dtwtgc.png" alt="">
+            {{-- sellu48: blob pequeño — a un lado (z=2) --}}
+            <img class="pull-quote-blob" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777915242/SELL-U_48_lci2jm.png" alt="">
         </div>
     </div>
 </section>
