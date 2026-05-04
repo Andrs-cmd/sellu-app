@@ -181,12 +181,12 @@
         .sc-chart svg { width: 100%; height: 64px; }
 
         /* ── MARQUEE (logos) ── */
-        .marquee-section { padding: 52px 0; overflow: hidden; }
+        .marquee-section { padding: 52px 0; overflow: hidden; background: #fff; }
         .marquee-badge-wrap { display: flex; justify-content: center; margin-bottom: 36px; }
         .marquee-badge {
             display: inline-flex; align-items: center; gap: 6px;
-            background: var(--navy-900); color: var(--white);
-            font-size: 12px; font-weight: 700;
+            background: transparent; color: var(--navy-900);
+            font-size: 16px; font-weight: 700;
             padding: 6px 18px; border-radius: 100px;
             text-transform: uppercase; letter-spacing: 0.06em;
         }
@@ -538,7 +538,7 @@ Sin complicaciones y con acompañamiento en cada paso.
 <!-- ── CLIENTES (logos) ── -->
 <div class="marquee-section">
     <div class="marquee-badge-wrap">
-        <div class="marquee-badge">↑ Algunos de nuestros clientes</div>
+        <div class="marquee-badge">↑ Algunos de <span style="color:#F5A623;">nuestros</span> clientes</div>
     </div>
     <div class="marquee-track-wrap">
         <div class="marquee-track">
