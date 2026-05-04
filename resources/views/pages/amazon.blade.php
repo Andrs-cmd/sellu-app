@@ -566,7 +566,7 @@ Sin complicaciones y con acompañamiento en cada paso.
 <!-- ── BENEFITS ── -->
 <section class="benefits-section">
     <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" style="text-align:center;">
             <!--<span class="section-eyebrow">Por qué Amazon</span>-->
             <h2 class="section-h2">El marketplace más grande del mundo,<br><strong>al alcance de tu marca.</strong></h2>
         </div>
@@ -648,7 +648,7 @@ Sin complicaciones y con acompañamiento en cada paso.
 <!-- ── SERVICIOS INCLUIDOS ── -->
 <section class="servicios-section" id="servicios">
     <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" style="text-align:center;">
             <!--<span class="section-eyebrow">Servicios incluidos</span>-->
             <h2 class="section-h2">Todo lo que necesitas para vender en Amazon,<br>en un solo equipo.</h2>
         </div>
