@@ -140,7 +140,7 @@
         .reveal.visible { opacity: 1; transform: translateY(0); }
 
         /* HERO */
-        .hero { padding: 80px 0 100px; overflow: hidden; }
+        .hero { padding: 60px 0 20px; overflow: hidden; }
         .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
         @media (max-width: 960px) { .hero-grid { grid-template-columns: 1fr; gap: 48px; } }
         .hero h1 { color: var(--white); margin-top: -60px; }
