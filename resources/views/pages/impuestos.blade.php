@@ -541,7 +541,7 @@
 </section>
 
 {{-- ── CALCULADORA ── --}}
-<section class="bg-white" id="calculadora">
+<section style="background:#EEF1F8" id="calculadora">
     <div class="container">
         <div class="section-head center reveal">
             <h2>Calcula cómo funcionan los taxes de tu LLC en EE.UU.</h2>
