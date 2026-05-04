@@ -396,27 +396,27 @@
         /* ── TESTIMONIO ── */
         .testimonial-section { padding: 96px 0; }
         .testimonial-card {
-            background: var(--navy-900); border-radius: 22px; padding: 56px 64px;
+            background: var(--navy-900); border-radius: 22px;
             box-shadow: 0 0 0 1px rgba(255,153,0,0.2), 0 24px 48px -12px rgba(255,153,0,0.15);
-            max-width: 800px; margin: 0 auto;
+            max-width: 960px; margin: 0 auto;
             position: relative; overflow: hidden;
+            display: grid; grid-template-columns: 1fr 1fr; align-items: stretch;
         }
+        .testimonial-content { padding: 56px 56px 56px 64px; display: flex; flex-direction: column; justify-content: center; }
         .testimonial-quote-icon { margin-bottom: 16px; }
         .testimonial-quote-icon i, .testimonial-quote-icon svg { width: 36px; height: 36px; color: var(--AMZ); }
         .testimonial-text {
-            font-size: clamp(18px, 2.5vw, 22px); font-weight: 600;
+            font-size: clamp(18px, 2.2vw, 22px); font-weight: 600;
             color: var(--white); line-height: 1.55;
-            margin-bottom: 32px;
         }
-        .testimonial-attribution { display: flex; align-items: center; gap: 14px; }
-        .testimonial-avatar {
-            width: 44px; height: 44px; background: var(--AMZ);
-            border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-size: 15px; font-weight: 800; color: var(--white);
-            flex-shrink: 0;
+        .testimonial-image { position: relative; min-height: 320px; }
+        .testimonial-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 0 22px 22px 0; }
+        @media (max-width: 768px) {
+            .testimonial-card { grid-template-columns: 1fr; }
+            .testimonial-content { padding: 36px 28px; }
+            .testimonial-image { min-height: 240px; }
+            .testimonial-image img { border-radius: 0 0 22px 22px; position: relative; height: 240px; }
         }
-        .testimonial-name { font-size: 15px; font-weight: 700; color: var(--white); }
-        .testimonial-role { font-size: 13px; color: rgba(255,255,255,0.55); }
 
         /* ── CTA FINAL ── */
         .cta-section { padding: 96px 0; }
@@ -867,20 +867,17 @@ Sin complicaciones y con acompañamiento en cada paso.
 <section class="testimonial-section">
     <div class="container">
         <div class="testimonial-card reveal">
-            <div class="testimonial-quote-icon">
-                <i data-lucide="quote"></i>
-            </div>
-            <p class="testimonial-text">
-                "Llevaba 6 meses intentando abrir cuenta de Amazon por mi cuenta. Con Sell·U estuvo lista en 12 días. Hoy vendemos $40k/mes y duplicamos catálogo."
-            </p>
-            <div class="testimonial-attribution">
-                <div class="testimonial-avatar">MS</div>
-                <div>
-                    <div class="testimonial-name">Mariana Sandoval</div>
-                    <div class="testimonial-role">Fundadora · HAIKO Natural · Bogotá</div>
+            <div class="testimonial-content">
+                <div class="testimonial-quote-icon">
+                    <i data-lucide="quote"></i>
                 </div>
+                <p class="testimonial-text">
+                    "Entrar a Amazon no es solo abrir una cuenta. Es acceder a un mercado global con una estructura lista para escalar y vender de forma profesional."
+                </p>
             </div>
-            <div aria-hidden style="position:absolute;right:-60px;bottom:-80px;width:280px;height:280px;background:var(--AMZ);opacity:0.16;border-radius:50%;filter:blur(40px);pointer-events:none;"></div>
+            <div class="testimonial-image">
+                <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777924700/SELL-U_55_bjrmlu.png" alt="">
+            </div>
         </div>
     </div>
 </section>
