@@ -257,7 +257,7 @@
             <span class="featured-card-meta">Ideal para freelancers y e-commerce.</span>
             <span class="featured-card-price">Desde $199 USD + tasas</span>
         </a>
-        <a class="featured-card" href="{{ url('/pages/crear-empresa-en-estados-unidos') }}?estado=FL">
+        <a class="featured-card" href="{{ url('/pages/crear-llc-en-florida') }}">
             <div class="featured-card-row">
                 <span class="featured-card-name">Florida</span>
                 <span class="featured-card-tag">LATAM</span>
@@ -324,8 +324,12 @@
     ];
 
     const STATE_CODES = {
-        "Delaware":"DE","Wyoming":"WY","Florida":"FL","Texas":"TX",
+        "Delaware":"DE","Wyoming":"WY","Texas":"TX",
         "California":"CA","Nueva York":"NY","Nevada":"NV","Colorado":"CO"
+    };
+
+    const STATE_URLS = {
+        "Florida": "{{ url('/pages/crear-llc-en-florida') }}"
     };
 
     const POPULAR = new Set(["Delaware","Wyoming","Florida","Texas"]);
@@ -352,7 +356,7 @@
         } else {
             filtered.forEach(name => {
                 const code = STATE_CODES[name] || "";
-                const url  = "{{ url('/pages/crear-empresa-en-estados-unidos') }}" + (code ? "?estado=" + code : "");
+                const url  = STATE_URLS[name] || ("{{ url('/pages/crear-empresa-en-estados-unidos') }}" + (code ? "?estado=" + code : ""));
 
                 const a = document.createElement("a");
                 a.href = url;
