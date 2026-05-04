@@ -181,11 +181,11 @@
         .sc-chart svg { width: 100%; height: 64px; }
 
         /* ── MARQUEE (logos) ── */
-        .marquee-section { padding: 52px 0; overflow: hidden; background: #fff; }
+        .marquee-section { padding: 52px 0; overflow: hidden; }
         .marquee-badge-wrap { display: flex; justify-content: center; margin-bottom: 36px; }
         .marquee-badge {
             display: inline-flex; align-items: center; gap: 6px;
-            background: transparent; color: var(--navy-900);
+            background: var(--navy-900); color: var(--white);
             font-size: 12px; font-weight: 700;
             padding: 6px 18px; border-radius: 100px;
             text-transform: uppercase; letter-spacing: 0.06em;
@@ -507,29 +507,76 @@ Sin complicaciones y con acompañamiento en cada paso.
                     <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                 </a>
                 <div class="hero-trust">
-                    <div class="hero-trust-item">
+                    <!--<div class="hero-trust-item">
                         <div class="trust-check">
                             <svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                         Cuenta activa en 14 días
-                    </div>
-                    <div class="hero-trust-item">
+                    </div>-->
+                    <!--<div class="hero-trust-item">
                         <div class="trust-check">
                             <svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                         Sin viajar a EE.UU.
-                    </div>
-                    <div class="hero-trust-item">
+                    </div>-->
+                    <!--<div class="hero-trust-item">
                         <div class="trust-check">
                             <svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </div>
                         Brand Registry incluido
-                    </div>
+                    </div>-->
                 </div>
             </div>
-            <!-- Right column — Hero image -->
+            <!-- Right column — Seller Central mockup -->
             <div class="reveal" style="transition-delay:0.15s;">
-                <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777910232/ImagenSell-U_ewj8sz.png" alt="Sell·U — Seller Central Dashboard" style="width:100%;height:auto;display:block;">
+                <div class="sc-card">
+                    <div class="sc-header">
+                        <div class="sc-icon">a</div>
+                        <div>
+                            <div class="sc-title">Seller Central</div>
+                            <div class="sc-sub">Acme Brand LLC</div>
+                        </div>
+                        <div class="sc-badge-active">
+                            <div class="sc-dot"></div>
+                            Activa
+                        </div>
+                    </div>
+                    <div class="sc-stats">
+                        <div class="sc-stat">
+                            <div class="sc-stat-label">Ventas hoy</div>
+                            <div class="sc-stat-value">$1,284</div>
+                            <div class="sc-stat-sub sc-stat-up">↑ +24% vs ayer</div>
+                        </div>
+                        <div class="sc-stat">
+                            <div class="sc-stat-label">Pedidos</div>
+                            <div class="sc-stat-value">47</div>
+                            <div class="sc-stat-sub sc-stat-up">↑ +8 vs ayer</div>
+                        </div>
+                        <div class="sc-stat">
+                            <div class="sc-stat-label">Buy Box</div>
+                            <div class="sc-stat-value">92%</div>
+                            <div class="sc-stat-sub sc-stat-good">Saludable</div>
+                        </div>
+                        <div class="sc-stat">
+                            <div class="sc-stat-label">Inventario FBA</div>
+                            <div class="sc-stat-value">8 SKUs</div>
+                            <div class="sc-stat-sub sc-stat-good">En stock</div>
+                        </div>
+                    </div>
+                    <div class="sc-chart">
+                        <div class="sc-chart-label">Ventas últimos 7 días</div>
+                        <svg viewBox="0 0 320 64" fill="none" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#FF9900" stop-opacity="0.18"/>
+                                    <stop offset="100%" stop-color="#FF9900" stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M0 52 L46 44 L92 38 L138 28 L184 32 L230 18 L276 10 L320 4" stroke="#FF9900" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M0 52 L46 44 L92 38 L138 28 L184 32 L230 18 L276 10 L320 4 L320 64 L0 64 Z" fill="url(#sparkGrad)"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -538,7 +585,7 @@ Sin complicaciones y con acompañamiento en cada paso.
 <!-- ── CLIENTES (logos) ── -->
 <div class="marquee-section">
     <div class="marquee-badge-wrap">
-        <div class="marquee-badge">↑ Algunos de <span style="color:#F5A623;">nuestros</span> clientes</div>
+        <div class="marquee-badge">↑ Algunos de nuestros clientes</div>
     </div>
     <div class="marquee-track-wrap">
         <div class="marquee-track">
