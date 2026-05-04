@@ -143,7 +143,7 @@
         .hero { padding: 80px 0 100px; overflow: hidden; }
         .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
         @media (max-width: 960px) { .hero-grid { grid-template-columns: 1fr; gap: 48px; } }
-        .hero h1 { color: var(--white); margin-top: 20px; }
+        .hero h1 { color: var(--white); margin-top: 0px; }
         .hero h1 em { font-style: normal; color: var(--yellow); font-weight: 800; position: relative; }
         .hero h1 em::after { content: ''; position: absolute; left: 0; right: 0; bottom: 4px; height: 10px; background: rgba(246,187,51,.18); z-index: -1; border-radius: 2px; }
         .hero-sub { font-size: 18px; color: rgba(255,255,255,.78); margin-top: 22px; max-width: 560px; line-height: 1.55; }
