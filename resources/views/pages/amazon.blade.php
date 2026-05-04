@@ -363,7 +363,7 @@
         /* ── REQUISITOS ── */
         .requisitos-section { padding: 96px 0; }
         .requisitos-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
-        .requisitos-left { position: sticky; top: 100px; }
+        .requisitos-left { position: static; }
         .requisitos-desc { font-size: 15px; color: var(--fg-tertiary); line-height: 1.7; margin: 20px 0 32px; }
         .btn-req {
             display: inline-flex; align-items: center; gap: 8px;
