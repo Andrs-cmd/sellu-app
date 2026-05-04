@@ -28,6 +28,7 @@ Route::prefix('pages')->group(function () {
     Route::get('/politica-de-privacidad', fn() => view('pages.privacidad'))->name('pages.privacidad');
     Route::get('/politica-de-garantia', fn() => view('pages.garantia'))->name('pages.garantia');
     Route::get('/sales-tax', fn() => view('pages.sales-tax'))->name('pages.sales-tax');
+    Route::get('/cual-es-el-mejor-estado-para-formar-una-llc', fn() => view('pages.estados-llc'))->name('pages.estados-llc');
     Route::post('/canales-de-atencion/contacto', function (Request $request) {
         $validated = $request->validate([
             'nombre'   => 'required|string|max:255',
