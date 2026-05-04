@@ -70,7 +70,34 @@
                 </a>
             </div>
         </div>
-        <a href="{{ url('/pages/apertura-marketplace') }}" class="nav-item {{ request()->is('pages/apertura-marketplace') ? 'active' : '' }}">Vende en Amazon</a>
+        <div class="nav-dropdown {{ request()->is('pages/apertura-marketplace') ? 'active' : '' }}">
+            <a href="{{ url('/pages/apertura-marketplace') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/apertura-marketplace') ? 'active' : '' }}">
+                Vende en Marketplace
+                <svg class="nav-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <div class="nav-submenu">
+                <a href="{{ url('/pages/apertura-marketplace') }}" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M5 8h6M8 5v6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    Amazon
+                </a>
+                <a href="{{ url('/pages/apertura-marketplace') }}#walmart" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="8" cy="8" r="2" stroke="currentColor" stroke-width="1.2"/></svg>
+                    Walmart
+                </a>
+                <a href="{{ url('/pages/apertura-marketplace') }}#tiktok" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M10 2a3 3 0 003 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13 5v1a6 6 0 01-3-1v5a4 4 0 11-4-4h1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    TikTok
+                </a>
+                <a href="{{ url('/pages/apertura-marketplace') }}#faire" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 4V3a3 3 0 016 0v1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    Faire
+                </a>
+                <a href="{{ url('/pages/apertura-marketplace') }}#cisco" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M2 8c0-3.314 2.686-6 6-6s6 2.686 6 6-2.686 6-6 6-6-2.686-6-6z" stroke="currentColor" stroke-width="1.2"/><path d="M8 5v3l2 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Cisco
+                </a>
+            </div>
+        </div>
         <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="nav-item {{ request()->is('pages/registro-de-marca-ante-la-uspto') ? 'active' : '' }}">Registro de marca</a>
         <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="nav-item {{ request()->is('pages/almacenamiento-y-logistica') ? 'active' : '' }}">Envíos</a>
         <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="nav-item {{ request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">Registro sanitario</a>
@@ -92,7 +119,19 @@
                 <a href="{{ url('/pages/contabilidad') }}#revendedor" class="mobile-subitem">Certificado de revendedor</a>
             </div>
         </div>
-        <a href="{{ url('/pages/apertura-marketplace') }}" class="mobile-item {{ request()->is('pages/apertura-marketplace') ? 'active' : '' }}">Vende en Amazon</a>
+        <div class="mobile-accordion {{ request()->is('pages/apertura-marketplace') ? 'open' : '' }}">
+            <button class="mobile-item mobile-accordion-trigger" onclick="toggleAccordion(this)">
+                Vende en Marketplace
+                <svg class="mobile-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="mobile-subitems">
+                <a href="{{ url('/pages/apertura-marketplace') }}" class="mobile-subitem">Amazon</a>
+                <a href="{{ url('/pages/apertura-marketplace') }}#walmart" class="mobile-subitem">Walmart</a>
+                <a href="{{ url('/pages/apertura-marketplace') }}#tiktok" class="mobile-subitem">TikTok</a>
+                <a href="{{ url('/pages/apertura-marketplace') }}#faire" class="mobile-subitem">Faire</a>
+                <a href="{{ url('/pages/apertura-marketplace') }}#cisco" class="mobile-subitem">Cisco</a>
+            </div>
+        </div>
         <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="mobile-item {{ request()->is('pages/registro-de-marca-ante-la-uspto') ? 'active' : '' }}">Registro de marca</a>
         <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="mobile-item {{ request()->is('pages/almacenamiento-y-logistica') ? 'active' : '' }}">Envíos</a>
         <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="mobile-item {{ request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">Registro sanitario</a>
