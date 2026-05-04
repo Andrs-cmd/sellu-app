@@ -147,7 +147,7 @@
         /* ── SECTIONS ── */
         .sx { padding: 96px 0; }
         .sx-white { background: var(--white); }
-        .sx-band { background: var(--paper-2); }
+        .sx-band { background: #EEF1F8; }
         .sx-navy { background: var(--navy-900); color: var(--paper); position: relative; overflow: hidden; }
         .sx-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-700); display: inline-flex; align-items: center; gap: 8px; margin-bottom: 16px; }
         .sx-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--accent-500); }
