@@ -143,6 +143,7 @@
         .hero { padding: 60px 0 20px; overflow: hidden; }
         .multi { font-size: clamp(28px, 3.6vw, 33px); }
         .white { color: var(--white); }
+        .enmiendas {font-size: clamp(28px, 3.6vw, 38px);}
         .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
         @media (max-width: 960px) { .hero-grid { grid-template-columns: 1fr; gap: 48px; } }
         .hero h1 { color: var(--white); margin-top: -60px; }
@@ -620,7 +621,7 @@
 <section class="bg-light">
     <div class="container">
         <div class="section-head reveal">
-            <h2>¿Te pasaste de la fecha o necesitas corregir una declaración? <em style="font-style:normal;color:var(--yellow)">Te ayudamos.</em></h2>
+            <h2 class="enmiendas">¿Te pasaste de la fecha o necesitas corregir una declaración? <em style="font-style:normal;color:var(--yellow)">Te ayudamos.</em></h2>
             <p>No estás solo. Muchos emprendedores latinos descubren su LLC tarde o presentan información que necesita corregirse. Sell·U también atiende estos casos.</p>
         </div>
         <div class="twocol">
