@@ -145,7 +145,7 @@
         .hero-deco { position: absolute; right: -120px; bottom: -160px; width: 480px; height: 480px; border-radius: 50%; background: rgba(246,187,51,0.06); pointer-events: none; }
 
         /* ── SECTIONS ── */
-        .sx { padding: 96px 0; }
+        .sx { padding: 56px 0; }
         .sx-white { background: var(--white); }
         .sx-band { background: #EEF1F8; }
         .sx-navy { background: var(--navy-900); color: var(--paper); position: relative; overflow: hidden; }
@@ -258,7 +258,7 @@
             .faq-sticky { position: static; }
             .cta-grid { grid-template-columns: 1fr; gap: 48px; }
             .banner-renew { grid-template-columns: 1fr; gap: 20px; }
-            .sx { padding: 64px 0; }
+            .sx { padding: 40px 0; }
         }
         @media (max-width: 720px) {
             .container { padding: 0 20px; }
