@@ -98,9 +98,23 @@
                 </a>
             </div>
         </div>
-        <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="nav-item {{ request()->is('pages/registro-de-marca-ante-la-uspto') ? 'active' : '' }}">Registro de marca</a>
+        <div class="nav-dropdown {{ request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">
+            <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">
+                Registros de marca
+                <svg class="nav-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <div class="nav-submenu">
+                <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M8 2l1.5 3 3.5.5-2.5 2.5.5 3.5L8 10l-3 1.5.5-3.5L3 5.5l3.5-.5L8 2z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                    Marca
+                </a>
+                <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="nav-subitem">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M3 2h10v12H3z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M5 6h6M5 9h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    FDA
+                </a>
+            </div>
+        </div>
         <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="nav-item {{ request()->is('pages/almacenamiento-y-logistica') ? 'active' : '' }}">Envíos</a>
-        <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="nav-item {{ request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">Registro sanitario</a>
         <a href="{{ url('/pages/canales-de-atencion') }}" class="nav-item {{ request()->is('pages/canales-de-atencion') ? 'active' : '' }}">Soporte</a>
     </nav>
 
@@ -132,9 +146,17 @@
                 <a href="{{ url('/pages/apertura-marketplace') }}#cisco" class="mobile-subitem">Cisco</a>
             </div>
         </div>
-        <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="mobile-item {{ request()->is('pages/registro-de-marca-ante-la-uspto') ? 'active' : '' }}">Registro de marca</a>
+        <div class="mobile-accordion {{ request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'open' : '' }}">
+            <button class="mobile-item mobile-accordion-trigger" onclick="toggleAccordion(this)">
+                Registros de marca
+                <svg class="mobile-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="mobile-subitems">
+                <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="mobile-subitem">Marca</a>
+                <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="mobile-subitem">FDA</a>
+            </div>
+        </div>
         <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="mobile-item {{ request()->is('pages/almacenamiento-y-logistica') ? 'active' : '' }}">Envíos</a>
-        <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="mobile-item {{ request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">Registro sanitario</a>
         <a href="{{ url('/pages/canales-de-atencion') }}" class="mobile-item {{ request()->is('pages/canales-de-atencion') ? 'active' : '' }}">Soporte</a>
         <div class="mobile-auth">
             @auth
