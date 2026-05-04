@@ -127,9 +127,9 @@
         .testimonios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 800; color: var(--navy); }
         .carousel-wrap { position: relative; overflow: hidden; }
         .carousel-track { display: flex; gap: 16px; transition: transform .4s ease; }
-        .testimonio-card { flex: 0 0 calc(25% - 12px); border-radius: 14px; overflow: hidden; background: var(--navy); position: relative; min-height: 420px; cursor: pointer; }
+        .testimonio-card { flex: 0 0 calc(25% - 12px); border-radius: 14px; overflow: hidden; background: var(--navy); position: relative; min-height: 560px; cursor: pointer; }
         .testimonio-video {
-            width: 100%; height: 420px; object-fit: cover; display: block;
+            width: 100%; height: 560px; object-fit: cover; display: block;
             background: #0D1B3E;
         }
         .testimonio-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px; background: linear-gradient(to top, rgba(13,27,62,.95) 0%, transparent 100%); pointer-events: none; }
@@ -354,6 +354,66 @@
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://cdn.shopify.com/videos/c/o/v/6fed3fa6b24441229dd0107d42c59994.mp4"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
+                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
+                </button>
+            </div>
+
+            {{-- Testimonio 6 --}}
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926598/Testimonio_William_yvcop2.mov"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
+                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
+                </button>
+            </div>
+
+            {{-- Testimonio 7 --}}
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926529/Heneyser_mbms5k.mov"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
+                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
+                </button>
+            </div>
+
+            {{-- Testimonio 8 --}}
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926506/Juan_Manuel_Gonzalez_teldge.mp4"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
+                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
+                </button>
+            </div>
+
+            {{-- Testimonio 9 --}}
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926484/Fausto_s4ihnc.mp4"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
+                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
+                </button>
+            </div>
+
+            {{-- Testimonio 10 --}}
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926439/Testimonio_Dani_gc8tgw.mp4"
+                    preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
+                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
+                </button>
+            </div>
+
+            {{-- Testimonio 11 --}}
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926389/juan_diego_lnuthm.mp4"
                     preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
