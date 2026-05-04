@@ -100,7 +100,7 @@
         /* ── HERO PRECIO ── */
         .hero-precio { background: #EEF1F8; padding: 52px 5%; text-align: center; }
         .hero-alert { display: inline-block; background: var(--gold); color: var(--navy); font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; padding: 6px 20px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 20px; }
-        .hero-precio h1 { font-family: 'Montserrat', sans-serif; font-size: 40px; font-weight: 900; color: var(--navy); line-height: 1.15; margin-bottom: 16px; }
+        .hero-precio h1 { font-family: 'Montserrat', sans-serif; font-size: 40px; color: var(--navy); line-height: 1.15; margin-bottom: 16px; }
         .hero-precio h1 em { font-style: normal; color: var(--gold); }
         .hero-precio-sub { font-size: 15px; color: var(--muted); margin-bottom: 6px; line-height: 1.6; }
         .hero-precio-sub strong { color: var(--gold); }
