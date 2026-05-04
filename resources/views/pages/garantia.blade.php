@@ -189,54 +189,7 @@
 
 </div>
 
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-top">
-            <div>
-                <a href="{{ url('/') }}" class="footer-logo">
-                    <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/sell-u-logo.png?v=1738199563" alt="Sell-U LATAM">
-                </a>
-                <p class="footer-brand-title">SELL-U LATAM LLC</p>
-                <p class="footer-brand-info">
-                    Spring Hill, Florida 34609<br>
-                    EIN registrado en EE. UU.<br>
-                    <a href="mailto:contacto@sellu.co">contacto@sellu.co</a><br>
-                    <a href="tel:+19542108455">+1 954 210 8455</a>
-                </p>
-            </div>
-            <div>
-                <p class="footer-col-title">Servicios</p>
-                <div class="footer-col">
-                    <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}">Crear empresa en EE. UU.</a>
-                    <a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
-                    <a href="{{ url('/pages/apertura-marketplace') }}">Apertura Marketplace</a>
-                    <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}">Registro de marca USPTO</a>
-                    <a href="{{ url('/pages/almacenamiento-y-logistica') }}">Almacenamiento y logística</a>
-                    <a href="{{ url('/pages/registro-fda-de-alimentos') }}">Registro FDA</a>
-                </div>
-            </div>
-            <div>
-                <p class="footer-col-title">Información Legal</p>
-                <div class="footer-col">
-                    <a href="{{ url('/pages/terminos-de-servicio') }}">Términos de Servicio</a>
-                    <a href="{{ url('/pages/politica-de-privacidad') }}">Política de privacidad</a>
-                    <a href="{{ url('/pages/politica-de-garantia') }}" style="color:var(--gold);font-weight:700;">Política de Garantía</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-payments">
-            <span class="pay-badge">VISA</span>
-            <span class="pay-badge">Mastercard</span>
-            <span class="pay-badge">Amex</span>
-            <span class="pay-badge">PayPal</span>
-            <span class="pay-badge">Stripe</span>
-        </div>
-        <div class="footer-bottom">
-            <p class="footer-made">Hecho con ❤️ para latinoamericanos que conquistan EE. UU.</p>
-            <p class="footer-legal-text">© {{ date('Y') }} SELL-U LATAM LLC. Todos los derechos reservados. Los servicios ofrecidos no constituyen asesoría legal ni contable. Consulte siempre a un profesional certificado.</p>
-        </div>
-    </div>
-</footer>
+<x-footer />
 
 </body>
 </html>

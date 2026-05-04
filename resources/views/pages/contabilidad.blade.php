@@ -1043,47 +1043,7 @@
 </section>
 
 <!-- ══════════════════════ FOOTER ══════════════════════ -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div>
-                <span class="footer-logo">Sell<span>·U</span></span>
-                <p class="footer-desc">Tu aliado para constituir, operar y crecer en Estados Unidos desde Latinoamérica.</p>
-            </div>
-            <div>
-                <div class="footer-col-title">Servicios</div>
-                <div class="footer-col">
-                    <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}">Abre tu empresa</a>
-                    <a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
-                    <a href="{{ url('/pages/apertura-marketplace') }}">Vende en Amazon</a>
-                    <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}">Registro de marca</a>
-                    <a href="{{ url('/pages/almacenamiento-y-logistica') }}">Envíos</a>
-                    <a href="{{ url('/pages/registro-fda-de-alimentos') }}">Reg. Sanitario</a>
-                </div>
-            </div>
-            <div>
-                <div class="footer-col-title">Empresa</div>
-                <div class="footer-col">
-                    <a href="{{ url('/') }}">Nosotros</a>
-                    <a href="{{ url('/') }}">Blog</a>
-                    <a href="{{ url('/pages/canales-de-atencion') }}">Soporte</a>
-                </div>
-            </div>
-            <div>
-                <div class="footer-col-title">Contacto</div>
-                <div class="footer-col">
-                    <a href="mailto:contacto@sellu.co">contacto@sellu.co</a>
-                    <a href="tel:+19542105405">+1 954 210 5405</a>
-                    <a href="https://wa.me/573116473200" target="_blank">WhatsApp</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <span>© 2026 Sell·U LATAM LLC. Todos los derechos reservados.</span>
-            <span>Spring Hill, Florida, USA</span>
-        </div>
-    </div>
-</footer>
+<x-footer />
 
 <script>
 // Lucide icons

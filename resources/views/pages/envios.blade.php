@@ -368,59 +368,7 @@
 </section>
 
 {{-- FOOTER --}}
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-top">
-            <div>
-                <p class="footer-contact-label">Contacto</p>
-                <span class="footer-logo-text">Sell<span>·U</span></span>
-                <p class="footer-brand-title">Oficina Principal Estados Unidos</p>
-                <div class="footer-brand-info">
-                    Ubicación: Spring Hill, Florida, Zipcode 34609<br>
-                    Email: contacto@sellu.co<br>
-                    Teléfono: +1 954 210 8455<br>
-                    Horario de atención:<br>
-                    Lunes - Sábado: 9:00 am – 6:00 pm EST
-                </div>
-            </div>
-            <div class="footer-col">
-                <p class="footer-col-title">Menú Principal</p>
-                <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}">Abre tu empresa</a>
-<a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
-<a href="{{ url('/pages/apertura-marketplace') }}">Vende en Amazon</a>
-<a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}">Registro de marca</a>
-<a href="{{ url('/pages/almacenamiento-y-logistica') }}">Envíos</a>
-<a href="{{ url('/pages/registro-fda-de-alimentos') }}">Registro Sanitario</a>
-<a href="{{ url('/pages/canales-de-atencion') }}">Soporte</a>
-            </div>
-            <div class="footer-col">
-                <p class="footer-col-title">Información Legal</p>
-                <a href="{{ url('/pages/terminos-de-servicio') }}">Términos de Servicio</a>
-                <a href="{{ url('/pages/politica-de-privacidad') }}">Política de privacidad</a>
-                <a href="{{ url('/pages/politica-de-garantia') }}">Política de Garantía</a>
-            </div>
-        </div>
-        <div class="footer-payments">
-            <span class="payment-badge">AMEX</span>
-            <span class="payment-badge">Apple Pay</span>
-            <span class="payment-badge">Diners</span>
-            <span class="payment-badge">Discover</span>
-            <span class="payment-badge">Google Pay</span>
-            <span class="payment-badge">Mastercard</span>
-            <span class="payment-badge">PayPal</span>
-            <span class="payment-badge">Shop Pay</span>
-            <span class="payment-badge">Venmo</span>
-            <span class="payment-badge">Visa</span>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>
-            Hecho con <strong>♥</strong> por el equipo de Sell·U LATAM LLC<br>
-            © {{ date('Y') }} Empresa registrada en el estado de Florida, EE.UU. EIN: 84-3781816. Este sitio tiene fines<br>
-            informativos y no constituye asesoría legal o fiscal directa. Trabajamos con profesionales aliados debidamente autorizados.
-        </p>
-    </div>
-</footer>
+<x-footer />
 
 <script>
 function toggleFaq(btn) {

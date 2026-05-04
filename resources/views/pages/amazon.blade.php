@@ -906,40 +906,7 @@ Sin complicaciones y con acompañamiento en cada paso.
 </section>
 
 <!-- ── FOOTER ── -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div>
-                <a href="{{ url('/') }}" class="footer-logo">Sell<span>·U</span></a>
-                <div class="footer-address">
-                    Spring Hill, Florida 34609<br>
-                    contacto@sellu.co<br>
-                    +1 954 210 5405<br>
-                    Lunes–Sábado 9am–9pm EST
-                </div>
-            </div>
-            <div class="footer-col">
-                <p class="footer-col-title">Menú principal</p>
-                <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}">Abre tu empresa</a>
-                <a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
-                <a href="{{ url('/pages/apertura-marketplace') }}">Vende en Amazon</a>
-                <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}">Registro de marca</a>
-                <a href="{{ url('/pages/almacenamiento-y-logistica') }}">Envíos</a>
-                <a href="{{ url('/pages/registro-fda-de-alimentos') }}">Registro Sanitario</a>
-                <a href="{{ url('/pages/canales-de-atencion') }}">Soporte</a>
-            </div>
-            <div class="footer-col">
-                <p class="footer-col-title">Información legal</p>
-                <a href="{{ url('/pages/terminos-de-servicio') }}">Términos de Servicio</a>
-                <a href="{{ url('/pages/politica-de-privacidad') }}">Política de privacidad</a>
-                <a href="{{ url('/pages/politica-de-garantia') }}">Política de Garantía</a>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© {{ date('Y') }} Empresa registrada en Florida, EE.UU. EIN: 84-3761818.</p>
-    </div>
-</footer>
+<x-footer />
 
 <!-- ── SCRIPTS ── -->
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>

@@ -564,46 +564,7 @@
 </section>
 
 {{-- FOOTER --}}
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-top">
-            <div>
-                <span class="footer-logo-text">Sell<span>·U</span></span>
-                <p class="footer-brand-title">Oficina Principal Estados Unidos</p>
-                <div class="footer-brand-info">
-                    Ubicación: Spring Hill, Florida, Zipcode 34609<br>
-                    Email: <a href="mailto:contacto@sellu.co">contacto@sellu.co</a><br>
-                    Teléfono: +1 954 210 5405<br>
-                    Horario: Lunes – Sábado: 9:00 am – 9:00 pm EST
-                </div>
-            </div>
-            <div class="footer-col">
-                <p class="footer-col-title">Menú principal</p>
-                <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}">Abre tu empresa</a>
-<a href="{{ url('/pages/contabilidad') }}">Contabilidad</a>
-<a href="{{ url('/pages/apertura-marketplace') }}">Vende en Amazon</a>
-<a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}">Registro de marca</a>
-<a href="{{ url('/pages/almacenamiento-y-logistica') }}">Envíos</a>
-<a href="{{ url('/pages/registro-fda-de-alimentos') }}">Registro Sanitario</a>
-<a href="{{ url('/pages/canales-de-atencion') }}">Soporte</a>
-            </div>
-            <div class="footer-col">
-                <p class="footer-col-title">Información legal</p>
-                <a href="{{ url('/pages/terminos-de-servicio') }}">Términos de Servicio</a>
-                <a href="{{ url('/pages/politica-de-privacidad') }}">Política de privacidad</a>
-                <a href="{{ url('/pages/politica-de-garantia') }}">Política de Garantía</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Hecho con ♥ por el equipo de Sell·U LATAM LLC</p>
-            <div class="footer-legal">
-                <a href="#">Términos</a>
-                <a href="#">Privacidad</a>
-            </div>
-            <p>© {{ date('Y') }} Empresa registrada en Florida, EE.UU. EIN: 84-3761818.</p>
-        </div>
-    </div>
-</footer>
+<x-footer />
 
 <script>
 function toggleFaq(btn) {
