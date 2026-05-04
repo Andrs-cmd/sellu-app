@@ -496,7 +496,7 @@
                     Amazon US · Apertura desde LATAM
                 </div> -->
                 <h1 class="hero-h1">
-                    Vender en Amazon desde Latinoamérica <span class="highlight">parece complicado.</span> Con Sell·U, no lo es.
+                    Vender en Amazon desde <span class="highlight">LATAM</span> , sin complicaciones.
                 </h1>
                 <p class="hero-sub">
                     Abrimos tu cuenta, gestionamos la verificación y dejamos tu tienda lista con FBA, Brand Registry y listings.
