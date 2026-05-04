@@ -481,8 +481,10 @@
         .section-pad { padding: 64px 0; }
         .container { padding: 0 20px; }
         .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-        .pull-quote { padding: 28px 28px; }
-        .pull-quote q { font-size: 18px; line-height: 26px; }
+        .pq-bg { display: none; }
+        .pull-quote { position: static; width: 100%; background: var(--navy-900); border-radius: 20px; padding: 32px 28px; }
+        .pull-quote q { font-size: 18px; line-height: 26px; color: #fff; }
+        .pull-quote-author { color: rgba(255,255,255,0.6); }
         .irs-row { grid-template-columns: 64px 1fr; gap: 16px; padding: 18px; }
         .irs-row > .irs-tag { grid-column: 2; justify-self: start; margin-top: 4px; }
         .final-cta-grid h2 { font-size: 36px; line-height: 42px; }
