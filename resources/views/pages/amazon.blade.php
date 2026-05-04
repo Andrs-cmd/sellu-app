@@ -529,7 +529,7 @@ Sin complicaciones y con acompañamiento en cada paso.
             </div>
             <!-- Right column — Hero image -->
             <div class="reveal" style="transition-delay:0.15s;">
-                <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777910232/ImagenSell-U_ewj8sz.png" alt="Sell·U — Dashboard" style="width:115%;height:auto;display:block;margin-left:-8%;">
+                <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777910232/ImagenSell-U_ewj8sz.png" alt="Sell·U — Dashboard" style="width:115%;height:auto;display:block;margin-left:4%;">
             </div>
         </div>
     </div>
