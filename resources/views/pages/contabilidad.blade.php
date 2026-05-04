@@ -264,12 +264,11 @@
     .card-icon.danger { background: var(--danger-100); color: var(--danger-700); border-color: transparent; }
     .card-title { font-family: var(--font-display); font-size: 18px; line-height: 24px; letter-spacing: -0.01em; font-weight: 600; color: var(--navy-900); margin: 0 0 8px; }
     .card-body { font-size: 14px; line-height: 22px; color: var(--fg-secondary); margin: 0; }
-    .pull-quote-wrap { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0; margin-top: 64px; background: var(--navy-900); border-radius: 20px; overflow: hidden; }
-    .pull-quote { color: var(--paper); padding: 52px 64px; }
-    .pull-quote q { font-family: var(--font-display); font-size: 26px; line-height: 36px; letter-spacing: -0.015em; font-weight: 500; font-style: normal; quotes: none; display: block; }
-    .pull-quote-author { margin-top: 20px; font-size: 13px; color: rgba(251,250,247,0.6); letter-spacing: 0.04em; }
-    .pull-quote-person { height: 100%; display: flex; align-items: flex-end; }
-    .pull-quote-person img { height: 320px; width: auto; object-fit: contain; display: block; }
+    .pull-quote-wrap { position: relative; margin-top: 64px; border-radius: 20px; overflow: hidden; }
+    .pull-quote-wrap img.pq-bg { width: 100%; height: auto; display: block; }
+    .pull-quote { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 52px 64px; }
+    .pull-quote q { font-family: var(--font-display); font-size: 26px; line-height: 36px; letter-spacing: -0.015em; font-weight: 500; font-style: normal; quotes: none; display: block; color: #fff; max-width: 680px; }
+    .pull-quote-author { margin-top: 20px; font-size: 13px; color: rgba(255,255,255,0.65); letter-spacing: 0.04em; }
 
     /* ── DIFFERENTIATORS ── */
     .diff-card { background: var(--white); border: 1px solid var(--border-default); border-radius: 16px; padding: 32px 28px; transition: all var(--duration-base) var(--ease-out); }
@@ -482,10 +481,8 @@
         .section-pad { padding: 64px 0; }
         .container { padding: 0 20px; }
         .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-        .pull-quote-wrap { grid-template-columns: 1fr; }
-        .pull-quote { padding: 32px 28px; }
-        .pull-quote q { font-size: 20px; line-height: 28px; }
-        .pull-quote-person { display: none; }
+        .pull-quote { padding: 28px 28px; }
+        .pull-quote q { font-size: 18px; line-height: 26px; }
         .irs-row { grid-template-columns: 64px 1fr; gap: 16px; padding: 18px; }
         .irs-row > .irs-tag { grid-column: 2; justify-self: start; margin-top: 4px; }
         .final-cta-grid h2 { font-size: 36px; line-height: 42px; }
@@ -620,12 +617,10 @@
             </div>
         </div>
         <div class="pull-quote-wrap reveal">
+            <img class="pq-bg" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777922190/Sell-U_56_jwlueh.png" alt="">
             <div class="pull-quote">
                 <q>La mayoría de emprendedores latinos solo descubren lo importante que es una contabilidad limpia cuando ya están en modo pánico.</q>
                 <div class="pull-quote-author">— Equipo contable Sell-U</div>
-            </div>
-            <div class="pull-quote-person">
-                <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777915242/SELL-U_49_dtwtgc.png" alt="Equipo contable Sell-U">
             </div>
         </div>
     </div>
