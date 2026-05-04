@@ -98,7 +98,7 @@
     <style>
         :root {
             --navy-900: #2e3856; --navy-800: #3a4568; --navy-700: #434966;
-            --accent-500: #F6BB33; --accent-400: #f9cc66; --accent-100: #fef5dd; --accent-700: #c89320;
+            --accent-500: #F6BB33; --accent-400: #f9cc66; --accent-100: #EEF1F8; --accent-700: #c89320;
             --paper: #fbfaf7; --paper-2: #f5f3ee; --white: #ffffff;
             --ink-900: #15161a; --ink-700: #3a3d46; --ink-500: #6b6f7a; --ink-400: #9298a3;
             --ink-300: #c5c8d0; --ink-200: #e5e6ea; --ink-100: #f0f0f2;
@@ -206,7 +206,7 @@
         .tax-card p { font-size: 13px; line-height: 20px; color: var(--fg-secondary); }
 
         /* ── OBLIG TABLE ── */
-        .banner-renew { background: var(--accent-100); border: 1px solid #f9cc66; border-radius: 14px; padding: 28px 32px; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; margin-top: 32px; }
+        .banner-renew { background: var(--accent-100); border: 1px solid #EEF1F8; border-radius: 14px; padding: 28px 32px; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; margin-top: 32px; }
         .banner-renew h3 { font-size: 22px; font-weight: 800; letter-spacing: -0.015em; color: var(--ink-900); margin: 6px 0 8px; }
         .banner-renew p { font-size: 14px; line-height: 22px; color: var(--fg-secondary); max-width: 580px; }
         .banner-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-700); }
