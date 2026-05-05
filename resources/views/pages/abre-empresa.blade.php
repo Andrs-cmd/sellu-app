@@ -371,15 +371,6 @@
                 </div>-->
             </div>
 
-            {{-- Testimonio 3 --}}
-            <div class="testimonio-card" onclick="toggleVideo(this)">
-                <video class="testimonio-video"
-                    src="https://cdn.shopify.com/videos/c/o/v/c4f4283276574e319c927bda4f9d07ee.mp4"
-                    poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777994566/TESTIMONIO_SELL_U_10_wahigm.png" preload="metadata" playsinline loop></video>
-                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
-                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
-                </button>
-            </div>
 
             {{-- Testimonio 4 --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
@@ -406,16 +397,6 @@
                 <video class="testimonio-video"
                     src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926598/Testimonio_William_yvcop2.mov"
                     poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777994568/TESTIMONIO_SELL_U_2_d52cbz.png" preload="metadata" playsinline loop></video>
-                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
-                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
-                </button>
-            </div>
-
-            {{-- Testimonio 7 — Heneyser | poster="URL_IMAGEN_HENEYSER" --}}
-            <div class="testimonio-card" onclick="toggleVideo(this)">
-                <video class="testimonio-video"
-                    src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926529/Heneyser_mbms5k.mov"
-                    poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777994561/TESTIMONIO_SELL_U_3_ibxztv.png" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
