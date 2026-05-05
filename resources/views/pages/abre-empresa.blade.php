@@ -340,7 +340,7 @@
     <p class="hero-precio-note">El proceso más simple para emprender en EE. UU.</p>
     <div class="hero-btns">
         <a href="#precios" class="btn-navy">Ver precios</a>
-        <a href="#pasos" class="btn-gold">Requisitos</a>
+        <a href="#pasos" class="btn-gold">Como funciona</a>
     </div>
 </section>
 

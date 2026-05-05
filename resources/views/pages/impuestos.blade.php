@@ -741,8 +741,8 @@
         <div class="contact-split">
             <div class="contact-split-left">
                 <div class="section-head reveal">
-                    <h2>Habla con Sell·U y entiende tu situación fiscal en una sola sesión</h2>
-                    <p>Cuéntanos sobre tu LLC. En menos de 24 horas te contactamos.</p>
+                    <h2>Casos reales de cumplimiento fiscal en EE.UU.</h2>
+                    <p>Empresas y emprendedores que pasaron de la incertidumbre a cumplir correctamente con sus obligaciones ante el IRS, con procesos claros y acompañamiento adecuado.</p>
                 </div>
                 <div class="form-trigger-wrap reveal" id="formTriggerWrap">
                     <button type="button" class="btn btn-primary btn-lg" id="openFormBtn">Quiero que me llamen →</button>
