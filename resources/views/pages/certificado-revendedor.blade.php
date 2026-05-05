@@ -152,21 +152,6 @@
     .anim-d2 { animation-delay: .16s; }
     .anim-d3 { animation-delay: .24s; }
 
-    /* ---- Nav ---- */
-    .nav {
-        position: sticky; top: 0; z-index: 100;
-        padding: 0 32px; height: 64px;
-        display: flex; align-items: center; justify-content: space-between;
-        transition: background var(--duration-base) var(--ease-out),
-                    box-shadow var(--duration-base) var(--ease-out);
-    }
-    .nav.scrolled { background: rgba(251,250,247,.92); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--border-default); }
-    .nav-logo img { height: 32px; display: block; }
-    .nav-links { display: flex; align-items: center; gap: 28px; }
-    .nav-links a { font-size: 14px; font-weight: 500; color: var(--fg-secondary); text-decoration: none; }
-    .nav-links a:hover { color: var(--navy-900); }
-    .nav-actions { display: flex; align-items: center; gap: 10px; }
-
     /* ---- Hero ---- */
     .hero { padding: 56px 0 96px; position: relative; overflow: hidden; }
     .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 72px; align-items: center; }
@@ -394,35 +379,11 @@
     /* ---- Divider ---- */
     .divider { height: 1px; background: var(--border-default); }
 
-    /* ---- Footer ---- */
-    .footer { background: var(--navy-900); color: rgba(251,250,247,.7); padding: 64px 0 40px; }
-    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
-    .footer-col h5 { font-size: 13px; font-weight: 600; color: var(--paper); margin-bottom: 16px; }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-col ul a { font-size: 14px; color: rgba(251,250,247,.65); text-decoration: none; }
-    .footer-col ul a:hover { color: var(--paper); }
-    .footer-bottom { padding-top: 28px; border-top: 1px solid rgba(255,255,255,.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-    .footer-bottom p { font-size: 13px; color: rgba(251,250,247,.45); }
     </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="nav" id="nav">
-    <a href="/" class="nav-logo">
-        <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/sellu-logo-full.png?v=1738200788" alt="Sell-U">
-    </a>
-    <div class="nav-links">
-        <a href="/#servicios">Producto</a>
-        <a href="/#precios">Precios</a>
-        <a href="/#recursos">Recursos</a>
-        <a href="/pages/canales-de-atencion">Contacto</a>
-    </div>
-    <div class="nav-actions">
-        <a href="/login" class="btn btn-secondary" style="font-size:13px;padding:8px 14px;">Iniciar sesión</a>
-        <a href="/#servicios" class="btn btn-primary" style="font-size:13px;padding:8px 14px;">Comenzar →</a>
-    </div>
-</nav>
+<x-nav />
 
 <!-- HERO -->
 <section class="hero">
@@ -1093,60 +1054,10 @@
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div>
-                <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/sellu-logo-full.png?v=1738200788" alt="Sell-U" style="height:28px;filter:brightness(0) invert(1);opacity:.9;margin-bottom:16px;display:block;">
-                <p style="font-size:14px;line-height:22px;color:rgba(251,250,247,.6);max-width:260px;">Sell-U LATAM LLC — Servicios de formación de empresas y cumplimiento fiscal para emprendedores de Latinoamérica.</p>
-            </div>
-            <div class="footer-col">
-                <h5>Servicios</h5>
-                <ul>
-                    <li><a href="/pages/crear-empresa-en-estados-unidos">Crear LLC en EE.UU.</a></li>
-                    <li><a href="/pages/itin-number">ITIN Number</a></li>
-                    <li><a href="/pages/certificado-revendedor">Reseller Certificate</a></li>
-                    <li><a href="/pages/sales-tax">Sales Tax</a></li>
-                    <li><a href="/pages/registro-fda-de-alimentos">Registro FDA</a></li>
-                    <li><a href="/pages/registro-de-marca-ante-la-uspto">Marca USPTO</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Recursos</h5>
-                <ul>
-                    <li><a href="/pages/cual-es-el-mejor-estado-para-formar-una-llc">Mejor estado para LLC</a></li>
-                    <li><a href="/pages/crear-llc-en-florida">LLC en Florida</a></li>
-                    <li><a href="/pages/presentacion-de-impuestos">Impuestos</a></li>
-                    <li><a href="/pages/apertura-marketplace">Amazon / Marketplace</a></li>
-                    <li><a href="/pages/contabilidad">Contabilidad</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Empresa</h5>
-                <ul>
-                    <li><a href="/pages/canales-de-atencion">Contacto</a></li>
-                    <li><a href="/pages/politica-de-garantia">Garantía</a></li>
-                    <li><a href="/pages/terminos-de-servicio">Términos de servicio</a></li>
-                    <li><a href="/pages/politica-de-privacidad">Privacidad</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Sell-U LATAM LLC. Todos los derechos reservados.</p>
-            <p>No somos abogados ni CPA. Nuestros servicios son de asistencia administrativa.</p>
-        </div>
-    </div>
-</footer>
+<x-footer />
 
 <script>
 (function() {
-    // Nav scroll
-    var nav = document.getElementById('nav');
-    window.addEventListener('scroll', function() {
-        nav.classList.toggle('scrolled', window.scrollY > 10);
-    }, { passive: true });
-
     // FAQ accordion
     document.querySelectorAll('.faq-btn').forEach(function(btn) {
         btn.addEventListener('click', function() {
