@@ -31,6 +31,7 @@ Route::prefix('pages')->group(function () {
     Route::get('/cual-es-el-mejor-estado-para-formar-una-llc', fn() => view('pages.estados-llc'))->name('pages.estados-llc');
     Route::get('/crear-llc-en-florida', fn() => view('pages.florida-llc'))->name('pages.florida-llc');
     Route::get('/presentacion-de-impuestos', fn() => view('pages.impuestos'))->name('pages.impuestos');
+    Route::get('/itin-number', fn() => view('pages.itin'))->name('pages.itin');
     Route::post('/canales-de-atencion/contacto', function (Request $request) {
         $validated = $request->validate([
             'nombre'   => 'required|string|max:255',
