@@ -355,21 +355,7 @@
         </button>
         <div class="carousel-track" id="carouselTrack">
 
-            {{-- Testimonio 1 --}}
-            <div class="testimonio-card" onclick="toggleVideo(this)">
-                <video class="testimonio-video"
-                    src="https://cdn.shopify.com/videos/c/o/v/ca063c7dbc7546c39e42655d4146c02c.mp4"
-                    poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777990396/valentina_ierlsz.png" preload="metadata" playsinline loop></video>
-                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
-                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
-                </button>
-                <!--<div class="testimonio-overlay">
-                    <strong>Doris Serrano</strong>
-                    <span>Fundadora de</span>
-                    <span class="testimonio-tag">Nutrelle.CO</span>
-                </div>-->
-            </div>
-
+            
             {{-- Testimonio 2 --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
@@ -458,11 +444,16 @@
             {{-- Testimonio 10 — Dani | poster="URL_IMAGEN_DANI" --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
-                    src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926439/Testimonio_Dani_gc8tgw.mp4"
-                    poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777994564/TESTIMONIO_SELL_U_5_e5rkfq.png" preload="metadata" playsinline loop></video>
+                    src="https://cdn.shopify.com/videos/c/o/v/ca063c7dbc7546c39e42655d4146c02c.mp4"
+                    poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777990396/valentina_ierlsz.png" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
+                <!--<div class="testimonio-overlay">
+                    <strong>Doris Serrano</strong>
+                    <span>Fundadora de</span>
+                    <span class="testimonio-tag">Nutrelle.CO</span>
+                </div>-->
             </div>
 
         </div>
@@ -806,13 +797,13 @@ function toggleVideo(card) {
 // Tier D ($499): estados con tarifas altas
 // Tier E ($599): Texas (tarifa especial)
 const statePrices = {
-    FL:399, WY:349, DE:449, TX:599, NY:499, CA:399, NV:349,
-    AL:349, AK:399, AZ:349, AR:349, CO:349, CT:449, GA:399,
-    HI:449, ID:349, IL:499, IN:399, IA:349, KS:349, KY:349,
-    LA:399, ME:349, MD:449, MA:449, MI:399, MN:399, MS:349,
-    MO:349, MT:349, NE:349, NH:349, NJ:499, NM:349, NC:399,
-    ND:349, OH:399, OK:349, OR:399, PA:449, RI:449, SC:399,
-    SD:349, TN:349, UT:349, VT:349, VA:399, WA:449, WV:349, WI:399
+    FL:399, WY:349, DE:499, TX:499, NY:499, CA:399, NV:399,
+    AL:399, AK:399, AZ:399, AR:399, CO:399, CT:499, GA:399,
+    HI:499, ID:399, IL:499, IN:399, IA:399, KS:399, KY:399,
+    LA:399, ME:399, MD:499, MA:499, MI:399, MN:399, MS:399,
+    MO:399, MT:399, NE:399, NH:399, NJ:499, NM:399, NC:399,
+    ND:399, OH:399, OK:399, OR:399, PA:499, RI:499, SC:399,
+    SD:399, TN:399, UT:399, VT:399, VA:399, WA:499, WV:399, WI:399
 };
 
 function getPlansForState(state) {
