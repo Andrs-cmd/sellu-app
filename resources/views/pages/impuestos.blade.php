@@ -115,7 +115,8 @@
 
         /* ── CONTACT SPLIT GRID ── */
         .contact-split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
-        .contact-split-right { display: flex; flex-direction: column; gap: 20px; }
+        .contact-split-right { display: flex; flex-direction: row; gap: 16px; align-items: flex-start; }
+        .contact-split-right .vid-card { flex: 1; min-width: 0; }
         .vid-card { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(13,27,62,.10); background: #000; }
         .vid-card img { width: 100%; height: auto; display: block; }
         @media (max-width: 900px) {
