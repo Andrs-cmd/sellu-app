@@ -231,6 +231,66 @@
         .compare .no      { color: #99231b; font-weight: 700; }
         .compare .neutral { color: #6b6f7a; }
 
+        /* ── HERO CARD ANIMATIONS ── */
+        @keyframes cardEntrance {
+            from { opacity: 0; transform: translateX(48px) rotate(1deg); }
+            to   { opacity: 1; transform: translateX(0)    rotate(1deg); }
+        }
+        @keyframes cardFloat {
+            0%, 100% { transform: rotate(1deg) translateY(0px); }
+            50%       { transform: rotate(1deg) translateY(-8px); }
+        }
+        @keyframes badgePulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(26,160,95,0); }
+            60%       { box-shadow: 0 0 0 6px rgba(26,160,95,.18); }
+        }
+        @keyframes stepIn {
+            from { opacity: 0; transform: translateX(-14px); }
+            to   { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes activeRowPulse {
+            0%, 100% { background: #fff;    border-color: #e5e6ea; }
+            50%       { background: #fffdf0; border-color: rgba(246,187,51,.55); }
+        }
+        @keyframes dotRing {
+            0%   { box-shadow: 0 0 0 0   rgba(246,187,51,.7); }
+            70%  { box-shadow: 0 0 0 8px rgba(246,187,51,0); }
+            100% { box-shadow: 0 0 0 0   rgba(246,187,51,0); }
+        }
+        @keyframes encursoFlicker {
+            0%, 100% { opacity: 1; }
+            50%       { opacity: .3; }
+        }
+        @keyframes cursorBlink {
+            0%, 100% { opacity: 1; }
+            50%       { opacity: 0; }
+        }
+        @keyframes itinReveal {
+            from { opacity: 0; letter-spacing: .18em; }
+            to   { opacity: 1; letter-spacing: .04em; }
+        }
+
+        /* aplicar animaciones */
+        .itin-hero-card {
+            animation: cardEntrance .75s cubic-bezier(.16,1,.3,1) .25s both,
+                       cardFloat    4.5s ease-in-out              1.2s infinite;
+        }
+        .itin-badge { animation: badgePulse 2.5s ease-in-out 1.6s infinite; }
+        .itin-number-display { animation: itinReveal .7s ease .9s both; }
+        .itin-cursor { animation: cursorBlink 1s step-end 1.6s infinite; color: #F6BB33; font-weight:700; }
+        .itin-step-row { animation: stepIn .5s cubic-bezier(.16,1,.3,1) both; opacity:0; }
+        .itin-step-row:nth-child(1) { animation-delay: .55s; }
+        .itin-step-row:nth-child(2) { animation-delay: .72s; }
+        .itin-step-row:nth-child(3) { animation-delay: .89s; }
+        .itin-step-row:nth-child(4) { animation-delay: 1.06s; }
+        .itin-step-active {
+            animation: stepIn .5s cubic-bezier(.16,1,.3,1) .89s both,
+                       activeRowPulse 2.8s ease-in-out 1.9s infinite;
+            opacity: 0;
+        }
+        .itin-dot-active { animation: dotRing 2s ease 1.9s infinite; }
+        .itin-encurso    { animation: encursoFlicker 1.6s ease-in-out 1.9s infinite; }
+
         /* ── WHO CARDS ── */
         .who-card { background: #fff; border: 1px solid #e5e6ea; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 14px; transition: box-shadow .2s; }
         .who-card:hover { box-shadow: 0 4px 12px rgba(46,56,86,.10); }
@@ -395,39 +455,39 @@
             </div>
 
             {{-- IRS Form card --}}
-            <div class="itin-hero-card" style="background:#0D1B3E; border-radius:28px; padding:20px; box-shadow:0 24px 48px -12px rgba(13,27,62,.30); transform:rotate(1deg);">
+            <div class="itin-hero-card" style="background:#0D1B3E; border-radius:28px; padding:20px; box-shadow:0 24px 48px -12px rgba(13,27,62,.30);">
                 <div style="background:#fff; border-radius:16px; overflow:hidden; border:1px solid #e5e6ea;">
                     <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid #e5e6ea; background:#f5f3ee;">
-                        <span style="font-size:12px; font-family:'Montserrat',sans-serif; color:#6b6f7a;">Form W-7 · Sell·U</span>
-                        <span style="font-size:11px; font-weight:700; color:#0f6b3f; background:#e3f6ec; padding:4px 10px; border-radius:999px; letter-spacing:.04em;">EN PROCESO</span>
+                        <span style="font-size:12px; color:#6b6f7a;">Form W-7 · Sell·U</span>
+                        <span class="itin-badge" style="font-size:11px; font-weight:700; color:#0f6b3f; background:#e3f6ec; padding:4px 10px; border-radius:999px; letter-spacing:.04em;">EN PROCESO</span>
                     </div>
                     <div style="padding:28px;">
                         <p style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#6b6f7a; margin-bottom:8px;">Tu ITIN</p>
-                        <div style="font-family:'Montserrat',sans-serif; font-size:28px; line-height:32px; font-weight:500; margin-bottom:22px; color:#434966; letter-spacing:.04em;">
-                            9XX&nbsp;–&nbsp;73&nbsp;–&nbsp;<span style="color:#c5c8d0;">____</span>
+                        <div class="itin-number-display" style="font-size:28px; line-height:32px; font-weight:700; margin-bottom:22px; color:#434966; letter-spacing:.04em;">
+                            9XX&nbsp;–&nbsp;73&nbsp;–&nbsp;<span style="color:#c5c8d0;">__</span><span class="itin-cursor">|</span><span style="color:#c5c8d0;">__</span>
                         </div>
                         <div style="display:flex; flex-direction:column; gap:10px;">
-                            <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#434966;">
+                            <div class="itin-step-row" style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#434966;">
                                 <span style="width:18px; height:18px; border-radius:999px; background:#1aa05f; color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; flex-shrink:0;">✓</span>
                                 <span style="flex:1;">Evaluación de caso</span>
                             </div>
-                            <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#434966;">
+                            <div class="itin-step-row" style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#434966;">
                                 <span style="width:18px; height:18px; border-radius:999px; background:#1aa05f; color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; flex-shrink:0;">✓</span>
                                 <span style="flex:1;">Documentos recopilados</span>
                             </div>
-                            <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#434966;">
-                                <span style="width:18px; height:18px; border-radius:999px; background:#F6BB33; display:inline-flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; flex-shrink:0;"></span>
+                            <div class="itin-step-active" style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#434966;">
+                                <span class="itin-dot-active" style="width:18px; height:18px; border-radius:999px; background:#F6BB33; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;"></span>
                                 <span style="flex:1;">Formulario W-7 enviado</span>
-                                <span style="font-size:11px; color:#c89320; font-weight:700; letter-spacing:.04em;">EN CURSO</span>
+                                <span class="itin-encurso" style="font-size:11px; color:#c89320; font-weight:700; letter-spacing:.04em;">EN CURSO</span>
                             </div>
-                            <div style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#6b6f7a;">
+                            <div class="itin-step-row" style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#6b6f7a;">
                                 <span style="width:18px; height:18px; border-radius:999px; border:1.5px solid #c5c8d0; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;"></span>
                                 <span style="flex:1;">Aprobación del IRS</span>
                             </div>
                         </div>
                         <div style="margin-top:18px; padding:12px 14px; background:#f5f3ee; border-radius:8px; font-size:12px; color:#6b6f7a; display:flex; justify-content:space-between;">
                             <span>Tiempo estimado restante</span>
-                            <span style="font-family:'Montserrat',sans-serif; color:#434966; font-weight:500;">6–9 semanas</span>
+                            <span style="color:#434966; font-weight:600;">6–9 semanas</span>
                         </div>
                     </div>
                 </div>
