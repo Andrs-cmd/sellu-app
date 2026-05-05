@@ -568,7 +568,7 @@
             </p>
         </div>
 
-        <table class="compare">
+        <!--<table class="compare">
             <thead>
                 <tr>
                     <th></th>
@@ -609,7 +609,7 @@
                     <td><span class="yes">Sí</span>, para la empresa</td>
                 </tr>
             </tbody>
-        </table>
+        </table>-->
 
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:36px;" class="grid-2col">
             <div style="background:#fff; border-radius:14px; padding:28px; border:1px solid #e5e6ea;">
@@ -673,8 +673,8 @@
 ════════════════════════════════════════════════ -->
 <section class="sx sx-band" id="casos">
     <div class="container">
-        <div style="max-width:720px; margin-bottom:44px;">
-            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;">
+        <div style="max-width:1020px; margin-bottom:44px;">
+            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;text-align-last: center;">
                 Cuándo exactamente necesitas tu ITIN.
             </h2>
         </div>
@@ -850,7 +850,7 @@
     <div class="container">
         <div style="max-width:720px; margin-bottom:48px;">
             <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;">
-                Requisitos y tiempos estimados.
+                Requisitos estimados.
             </h2>
         </div>
 
@@ -880,7 +880,7 @@
         </div>
 
         {{-- Tiempos --}}
-        <div>
+        <!--<div>
             <h3 style="font-size:22px; font-weight:700; color:#0D1B3E; margin-bottom:22px;">Tiempo estimado del proceso</h3>
 
             <div class="timeline-bar">
@@ -912,7 +912,7 @@
             <p style="font-size:13px; color:#9298a3; margin-top:20px; font-style:italic;">
                 Los tiempos del IRS pueden variar dependiendo del volumen de solicitudes. Sell·U hace seguimiento activo durante todo el proceso.
             </p>
-        </div>
+        </div>-->
     </div>
 </section>
 
@@ -1023,9 +1023,9 @@
                     <button class="btn btn-accent btn-lg" onclick="document.getElementById('itin-form-wrap').classList.toggle('visible'); this.style.display='none';">
                         Tramitar mi ITIN con Sell·U →
                     </button>
-                    <a href="https://wa.me/19542105405" target="_blank" class="btn btn-on-dark btn-lg">
+                    <!--<a href="https://wa.me/19542105405" target="_blank" class="btn btn-on-dark btn-lg">
                         Tengo dudas, quiero hablar con alguien
-                    </a>
+                    </a>-->
                 </div>
 
                 <div id="itin-form-wrap">
