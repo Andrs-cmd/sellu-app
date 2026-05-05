@@ -5,43 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
     <link rel="apple-touch-icon" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
-    <title>ITIN Number sin SSN para no residentes — Sell·U</title>
+    <title>ITIN Number sin SSN: Trámite para No Residentes con LLC — Sell·U</title>
 
     <!-- ── SEO PRIMARIO ── -->
-    <meta name="description" content="Tramita tu ITIN Number sin SSN desde LATAM. Sell·U gestiona el formulario W-7, hace seguimiento con el IRS y te acompaña en español. 100% remoto.">
-    <meta name="keywords" content="ITIN number, ITIN sin SSN, tramitar ITIN, formulario W-7, ITIN para LLC, ITIN no residente, ITIN latinoamerica, ITIN colombia mexico argentina">
-    <meta name="robots" content="index, follow">
+    <meta name="description" content="Tramita tu ITIN Number sin SSN desde Colombia, México o Argentina. Sell·U prepara el formulario W-7, gestiona documentos y hace seguimiento con el IRS por ti. Proceso 100% remoto y en español.">
+    <meta name="keywords" content="ITIN number, ITIN sin SSN, tramitar ITIN number, formulario W-7, ITIN para LLC, ITIN no residente, ITIN latinoamerica, ITIN colombia, ITIN mexico, ITIN argentina, obtener ITIN, qué es el ITIN, ITIN vs SSN vs EIN, ITIN para extranjeros">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="author" content="Sell·U LATAM LLC">
+    <meta name="theme-color" content="#0D1B3E">
     <link rel="canonical" href="https://sellu.co/pages/itin-number">
 
+    <!-- ── HREFLANG ── -->
+    <link rel="alternate" hreflang="es" href="https://sellu.co/pages/itin-number">
+    <link rel="alternate" hreflang="es-419" href="https://sellu.co/pages/itin-number">
+    <link rel="alternate" hreflang="x-default" href="https://sellu.co/pages/itin-number">
+
     <!-- ── OPEN GRAPH ── -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <meta property="og:url" content="https://sellu.co/pages/itin-number">
-    <meta property="og:title" content="ITIN Number sin SSN para no residentes — Sell·U">
-    <meta property="og:description" content="Tramita tu ITIN Number sin SSN desde LATAM. Proceso 100% remoto, en español. Sell·U gestiona el W-7 y hace seguimiento con el IRS por ti.">
+    <meta property="og:title" content="ITIN Number sin SSN: Trámite para No Residentes con LLC — Sell·U">
+    <meta property="og:description" content="Tramita tu ITIN Number sin SSN desde LATAM. Sell·U prepara el W-7, gestiona documentos y hace seguimiento con el IRS. Proceso 100% remoto y en español.">
     <meta property="og:image" content="https://sellu.co/og-image.jpg">
-    <meta property="og:locale" content="es_ES">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ITIN Number para no residentes — Sell·U LATAM">
+    <meta property="og:locale" content="es_419">
+    <meta property="og:locale:alternate" content="es_ES">
     <meta property="og:site_name" content="Sell·U LATAM">
+    <meta property="article:published_time" content="2025-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-05T00:00:00+00:00">
+    <meta property="article:author" content="Sell·U LATAM LLC">
+    <meta property="article:section" content="Contabilidad">
+    <meta property="article:tag" content="ITIN Number">
+    <meta property="article:tag" content="Impuestos USA">
+    <meta property="article:tag" content="LLC no residente">
 
     <!-- ── TWITTER CARD ── -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ITIN Number sin SSN para no residentes — Sell·U">
+    <meta name="twitter:site" content="@sellulatam">
+    <meta name="twitter:title" content="ITIN Number sin SSN: Trámite para No Residentes con LLC — Sell·U">
     <meta name="twitter:description" content="Tramita tu ITIN Number sin SSN desde LATAM. Proceso 100% remoto y en español con Sell·U.">
     <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
+    <meta name="twitter:image:alt" content="ITIN Number para no residentes — Sell·U LATAM">
 
     <!-- ── STRUCTURED DATA ── -->
     @verbatim
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "ITIN Number sin SSN: cómo tramitarlo desde LATAM",
-        "description": "Guía completa para obtener el ITIN Number como no residente con LLC en EE.UU. Incluye proceso con Sell·U, requisitos, tiempos y preguntas frecuentes.",
+        "@type": "Service",
+        "name": "Tramitación de ITIN Number para no residentes",
+        "description": "Sell·U gestiona el trámite completo del ITIN Number para emprendedores latinoamericanos con LLC en EE.UU. Incluye preparación del formulario W-7, gestión de documentos, envío al IRS y seguimiento activo hasta la aprobación.",
         "url": "https://sellu.co/pages/itin-number",
-        "author": { "@type": "Organization", "name": "Sell·U LATAM LLC" },
-        "publisher": { "@type": "Organization", "name": "Sell·U LATAM", "url": "https://sellu.co" },
-        "datePublished": "2025-01-01",
-        "inLanguage": "es"
+        "serviceType": "ITIN Number — Trámite fiscal para no residentes",
+        "areaServed": ["CO","MX","AR","CL","PE","VE","EC","DO","US"],
+        "availableLanguage": { "@type": "Language", "name": "Spanish" },
+        "provider": {
+            "@type": "Organization",
+            "name": "Sell·U LATAM LLC",
+            "url": "https://sellu.co",
+            "logo": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196",
+            "telephone": "+19542105405",
+            "email": "contacto@sellu.co",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "US",
+                "addressRegion": "FL"
+            },
+            "sameAs": [
+                "https://www.instagram.com/sellulatam",
+                "https://www.facebook.com/sellulatam"
+            ]
+        },
+        "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "priceCurrency": "USD",
+            "seller": { "@type": "Organization", "name": "Sell·U LATAM LLC" }
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Puedo tener una LLC en EE.UU. sin tener ITIN?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, puedes constituir una LLC sin ITIN. Pero en la mayoría de los casos, necesitarás uno para presentar tus obligaciones fiscales ante el IRS como dueño no residente. Operar sin ITIN puede generarte multas y complicaciones con el IRS más adelante."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿El ITIN reemplaza al EIN?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Son dos números diferentes con funciones distintas. El EIN identifica a tu empresa ante el IRS. El ITIN te identifica a ti como individuo. Si tienes una LLC como no residente, probablemente necesitas ambos."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto tarda el proceso de obtención del ITIN?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El IRS tarda entre 7 y 11 semanas en procesar la solicitud una vez recibida. Con Sell·U, la preparación y envío toma entre 3 y 5 días hábiles adicionales. El tiempo total estimado es de 8 a 12 semanas."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué pasa si presento mis impuestos sin ITIN?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No podrás completar tu declaración correctamente. El IRS puede rechazar la presentación, aplicar penalizaciones o retener devoluciones. Es un riesgo que vale la pena evitar desde el inicio."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿El ITIN me da algún estatus migratorio en EE.UU.?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. El ITIN es exclusivamente un número fiscal. No te autoriza a vivir, trabajar ni residir en EE.UU. Solo te permite cumplir con tus obligaciones tributarias ante el IRS como no residente."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo tramitar el ITIN yo mismo sin un agente?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, técnicamente puedes hacerlo. Pero el proceso implica dominar el formulario W-7 en inglés, gestionar documentación apostillada y comunicarte directamente con el IRS. Cualquier error puede retrasar el proceso semanas o meses. Tramitarlo con expertos reduce ese riesgo considerablemente."
+                }
+            }
+        ]
     }
     </script>
     <script type="application/ld+json">
@@ -49,9 +146,9 @@
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sellu.co/" },
+            { "@type": "ListItem", "position": 1, "name": "Inicio",       "item": "https://sellu.co/" },
             { "@type": "ListItem", "position": 2, "name": "Contabilidad", "item": "https://sellu.co/pages/contabilidad" },
-            { "@type": "ListItem", "position": 3, "name": "ITIN Number", "item": "https://sellu.co/pages/itin-number" }
+            { "@type": "ListItem", "position": 3, "name": "ITIN Number",  "item": "https://sellu.co/pages/itin-number" }
         ]
     }
     </script>
