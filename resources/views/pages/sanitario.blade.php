@@ -323,10 +323,10 @@
     <div class="hero-bg"></div>
     <div class="container hero-grid">
         <div>
-            <div class="hero-chips">
+            <!--<div class="hero-chips">
                 <span class="chip chip-accent"><span style="width:6px;height:6px;border-radius:999px;background:var(--accent);display:inline-block"></span>Servicio especializado</span>
                 <span class="chip">FDA · 21 CFR Part 1</span>
-            </div>
+            </div>-->
             <h1>Registra tu producto ante la <mark>FDA</mark> y exporta a EE.UU.</h1>
             <p class="hero-lead">Alimentos, suplementos, cosméticos y dispositivos médicos. Te asignamos un U.S. Agent, registramos tus instalaciones y obtenemos tu FFR Number — listo en 10 días hábiles.</p>
             <div class="hero-btns">
