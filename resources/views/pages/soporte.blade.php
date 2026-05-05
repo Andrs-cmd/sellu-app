@@ -28,7 +28,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@@latest/dist/umd/lucide.js"></script>
 
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -81,7 +81,7 @@
         .btn-on-dark:hover { background: var(--accent-500); }
 
         /* Typing dots */
-        @keyframes pulse { 0%,100% { opacity:.3; transform:scale(1); } 50% { opacity:1; transform:scale(1.2); } }
+        @@keyframes pulse { 0%,100% { opacity:.3; transform:scale(1); } 50% { opacity:1; transform:scale(1.2); } }
         .dot { width:6px; height:6px; border-radius:50%; background:var(--ink-400); display:inline-block; animation: pulse 1.4s ease-in-out infinite; }
         .dot:nth-child(2) { animation-delay:.2s; }
         .dot:nth-child(3) { animation-delay:.4s; }
@@ -128,6 +128,7 @@
         .hor-row { display:grid; grid-template-columns:1.4fr 1.2fr 1.4fr; padding:20px 24px; border-top:1px solid var(--border-default); align-items:center; }
     </style>
 
+    @verbatim
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -163,6 +164,7 @@
       ]
     }
     </script>
+    @endverbatim
 </head>
 <body>
 
@@ -474,7 +476,7 @@
                     </div>
                     <div>
                         <label style="display:block; font-size:13px; font-weight:600; color:var(--navy-900); margin-bottom:8px;">Correo electrónico <span style="color:var(--danger-500);">*</span></label>
-                        <input id="f-email" type="email" class="f-input" placeholder="tucorreo@ejemplo.com" required>
+                        <input id="f-email" type="email" class="f-input" placeholder="tucorreo@@ejemplo.com" required>
                         <div style="font-size:12px; color:var(--fg-tertiary); margin-top:6px;">Aquí recibirás nuestra respuesta.</div>
                     </div>
                 </div>
@@ -709,9 +711,9 @@
                 <div style="display:flex; align-items:center; justify-content:space-between; padding-top:20px; border-top:1px solid var(--border-default);">
                     <a href="https://www.instagram.com/sellu.us" target="_blank" rel="noopener" class="btn btn-secondary">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-                        <span>Seguir a @sellu.us</span>
+                        <span>Seguir a @@sellu.us</span>
                     </a>
-                    <span style="font-size:13px; color:var(--fg-tertiary);">@sellu.us</span>
+                    <span style="font-size:13px; color:var(--fg-tertiary);">@@sellu.us</span>
                 </div>
             </div>
 
@@ -737,11 +739,11 @@
                     <li style="display:flex; align-items:flex-start; gap:10px; font-size:14px; line-height:20px; color:var(--fg-secondary);"><i data-lucide="check" style="width:14px;height:14px;flex:none;margin-top:3px;color:var(--accent-700);"></i><span>Cambios regulatorios en EE.UU.</span></li>
                 </ul>
                 <div style="display:flex; align-items:center; justify-content:space-between; padding-top:20px; border-top:1px solid var(--border-default);">
-                    <a href="https://www.youtube.com/@SellU" target="_blank" rel="noopener" class="btn btn-secondary">
+                    <a href="https://www.youtube.com/@@SellU" target="_blank" rel="noopener" class="btn btn-secondary">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.5 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1c.4-1.9.5-3.8.5-3.8s-.1-1.9-.5-3.8z"/><polygon points="10,9.2 15.5,12 10,14.8" fill="currentColor" stroke="none"/></svg>
                         <span>Ver canal Sell-U</span>
                     </a>
-                    <span style="font-size:13px; color:var(--fg-tertiary);">@SellU</span>
+                    <span style="font-size:13px; color:var(--fg-tertiary);">@@SellU</span>
                 </div>
             </div>
         </div>
@@ -860,6 +862,7 @@
 <!-- ═══════════════════════════════════════════════════════════════
      SCRIPTS
 ═══════════════════════════════════════════════════════════════ -->
+@verbatim
 <script>
 // ── Lucide init ──────────────────────────────────────────────
 lucide.createIcons();
@@ -1112,5 +1115,6 @@ function setFaqFilter(tag) {
 
 renderFaq();
 </script>
+@endverbatim
 </body>
 </html>
