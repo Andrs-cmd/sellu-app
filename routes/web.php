@@ -33,6 +33,7 @@ Route::prefix('pages')->group(function () {
     Route::get('/presentacion-de-impuestos', fn() => view('pages.impuestos'))->name('pages.impuestos');
     Route::get('/itin-number', fn() => view('pages.itin'))->name('pages.itin');
     Route::get('/certificado-revendedor', fn() => view('pages.certificado-revendedor'))->name('pages.certificado-revendedor');
+    Route::get('/walmart', fn() => view('pages.walmart'))->name('pages.walmart');
     Route::post('/canales-de-atencion/contacto', function (Request $request) {
         $validated = $request->validate([
             'nombre'   => 'required|string|max:255',
