@@ -112,6 +112,16 @@
         .bg-white { background: var(--white); }
         .bg-light { background: var(--light); }
         .bg-light-2 { background: var(--light-2); }
+
+        /* ── CONTACT SPLIT GRID ── */
+        .contact-split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+        .contact-split-right { display: flex; flex-direction: column; gap: 20px; }
+        .vid-card { border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(13,27,62,.10); background: #000; }
+        .vid-card img { width: 100%; height: auto; display: block; }
+        @media (max-width: 900px) {
+            .contact-split { grid-template-columns: 1fr; }
+            .contact-split-right { order: -1; }
+        }
         .bg-dark { background: var(--navy); color: #e9ebf2; }
         .bg-dark h2, .bg-dark h3, .bg-dark h4 { color: var(--white); }
         .bg-dark p { color: rgba(255,255,255,.78); }
@@ -727,13 +737,15 @@
 {{-- ── FORMULARIO ── --}}
 <section class="bg-light" id="contacto">
     <div class="container">
-        <div class="section-head center reveal">
-            <h2>Habla con Sell·U y entiende tu situación fiscal en una sola sesión</h2>
-            <p>Cuéntanos sobre tu LLC. En menos de 24 horas te contactamos.</p>
-        </div>
-        <div class="form-trigger-wrap reveal" id="formTriggerWrap">
-            <button type="button" class="btn btn-primary btn-lg" id="openFormBtn">Quiero que me llamen →</button>
-        </div>
+        <div class="contact-split">
+            <div class="contact-split-left">
+                <div class="section-head reveal">
+                    <h2>Habla con Sell·U y entiende tu situación fiscal en una sola sesión</h2>
+                    <p>Cuéntanos sobre tu LLC. En menos de 24 horas te contactamos.</p>
+                </div>
+                <div class="form-trigger-wrap reveal" id="formTriggerWrap">
+                    <button type="button" class="btn btn-primary btn-lg" id="openFormBtn">Quiero que me llamen →</button>
+                </div>
         <div class="form-wrap reveal" id="formWrap">
             <form id="contactForm" novalidate>
                 <div class="form-block">
@@ -883,6 +895,27 @@
                 <p>En menos de 24 horas un asesor de Sell·U te contactará por WhatsApp o correo para darte un análisis inicial de tu caso.</p>
             </div>
         </div>
+            </div>{{-- /contact-split-left --}}
+
+            <div class="contact-split-right">
+                <div class="vid-card">
+                    <img
+                        src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777994561/TESTIMONIO_SELL_U_3_ibxztv.png"
+                        alt="Testimonio Sell·U"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="vid-card">
+                    <video
+                        src="https://cdn.shopify.com/videos/c/o/v/c4f4283276574e319c927bda4f9d07ee.mp4"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        style="width:100%;display:block"
+                    ></video>
+                </div>
+            </div>
+        </div>{{-- /contact-split --}}
     </div>
 </section>
 
