@@ -95,7 +95,7 @@
         .section-band { background: #fff; }
 
         /* ── HERO ── */
-        .hero-section { padding: 80px 0 0px; }
+        .hero-section { padding: 80px 0 0px; background-color: white;}
         .hero-grid {
             display: grid; grid-template-columns: 1fr 1.2fr;
             gap: 48px; align-items: center;
