@@ -435,7 +435,7 @@
 
         <div class="itin-hero-grid">
             <div>
-                <h1 style="font-family:'Montserrat',sans-serif; font-size:52px; line-height:60px; letter-spacing:-.025em; font-weight:800; margin-bottom:20px; color:#0D1B3E;">
+                <h1 style="font-family:'Montserrat',sans-serif; font-size:52px; line-height:60px; letter-spacing:-.025em; margin-bottom:20px; color:#0D1B3E;">
                     Tramita tu ITIN Number sin SSN y opera tu LLC en
                     <span style="background:linear-gradient(180deg,transparent 60%,#F6BB33 60%); padding:0 4px; white-space:nowrap;">EE.UU.</span>
                     legalmente.
