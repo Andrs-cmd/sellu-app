@@ -34,11 +34,39 @@
         "name": "Sell·U LATAM — Registro de Marca USPTO",
         "description": "Servicio de registro de marcas comerciales ante la USPTO de Estados Unidos para emprendedores y empresas latinoamericanas.",
         "url": "https://sellu.co/pages/registro-de-marca-ante-la-uspto",
-        "telephone": "+19542105405",
+        "telephone": "+573116473200",
         "email": "contacto@sellu.co",
         "priceRange": "$$",
         "areaServed": ["CO","MX","AR","CL","PE","VE","EC","US"],
         "serviceType": ["Trademark Registration", "USPTO Filing", "Intellectual Property", "Brand Protection"]
+    }
+    </script>
+    @endverbatim
+
+    @verbatim
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "¿Necesito tener una LLC para registrar mi marca?", "acceptedAnswer": {"@type": "Answer", "text": "No es obligatorio, pero sí recomendable. Puedes registrar como persona física, aunque tener tu LLC primero te da mejor protección legal y separa los activos del negocio de los personales."}},
+            {"@type": "Question", "name": "¿Qué pasa si alguien ya registró un nombre parecido?", "acceptedAnswer": {"@type": "Answer", "text": "En la búsqueda preliminar revisamos similitudes fonéticas, visuales y de mercado. Si hay un conflicto real, te lo decimos antes de aplicar y te ayudamos a iterar el nombre o la presentación."}},
+            {"@type": "Question", "name": "¿Puedo registrar mi logo y mi nombre en una sola aplicación?", "acceptedAnswer": {"@type": "Answer", "text": "Son dos aplicaciones separadas. Cada una protege algo distinto. Si tu presupuesto es ajustado, normalmente recomendamos empezar por el word mark (el nombre) y luego el design mark (el logo)."}},
+            {"@type": "Question", "name": "¿Tengo que vender en EE.UU. para registrar?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, debes tener uso comercial real o intención clara de uso (filing 1B). Si todavía no vendes, podemos archivar Intent-to-Use y completar el especimen cuando empieces a operar."}},
+            {"@type": "Question", "name": "¿Y si recibo una Office Action?", "acceptedAnswer": {"@type": "Answer", "text": "Está incluida. Respondemos hasta dos Office Actions sin costo adicional. Si el examinador requiere argumentación legal extensa, te avisamos antes y te damos un presupuesto transparente."}},
+            {"@type": "Question", "name": "¿La marca registrada en EE.UU. me protege en México o LATAM?", "acceptedAnswer": {"@type": "Answer", "text": "No automáticamente. El registro es territorial. Pero tu fecha de aplicación en EE.UU. te da prioridad para registrar en otros países dentro de 6 meses, gracias al Convenio de París."}}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sellu.co"},
+            {"@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://sellu.co/#servicios"},
+            {"@type": "ListItem", "position": 3, "name": "Registro de Marca USPTO", "item": "https://sellu.co/pages/registro-de-marca-ante-la-uspto"}
+        ]
     }
     </script>
     @endverbatim
