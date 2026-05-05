@@ -862,7 +862,6 @@
 <!-- ═══════════════════════════════════════════════════════════════
      SCRIPTS
 ═══════════════════════════════════════════════════════════════ -->
-@verbatim
 <script>
 // ── Lucide init ──────────────────────────────────────────────
 lucide.createIcons();
@@ -890,8 +889,8 @@ const channels = [
         when: 'Necesitas adjuntar documentos, hacer una consulta detallada, o necesitas un hilo de conversación por escrito.',
         expect: 'Respuesta dentro de las próximas 24 horas hábiles. Si requiere revisión de documentos, hasta 48 horas.',
         micro: 'En el asunto, escribe el servicio sobre el que consultas (ej: "Consulta LLC"). Nos ayuda a responderte más rápido.',
-        cta: 'hola@sell-u.com', meta: '< 24 h hábiles',
-        href: 'mailto:hola@sell-u.com?subject=Consulta%20Sell-U'
+        cta: 'hola@@sell-u.com', meta: '< 24 h hábiles',
+        href: 'mailto:hola@@sell-u.com?subject=Consulta%20Sell-U'
     },
     {
         id: 'form', icon: 'list-checks', accent: '#434966',
@@ -1115,6 +1114,5 @@ function setFaqFilter(tag) {
 
 renderFaq();
 </script>
-@endverbatim
 </body>
 </html>
