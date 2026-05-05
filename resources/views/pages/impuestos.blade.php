@@ -899,15 +899,17 @@
 
             <div class="contact-split-right">
                 <div class="vid-card">
-                    <img
-                        src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777994561/TESTIMONIO_SELL_U_3_ibxztv.png"
-                        alt="Testimonio Sell·U"
-                        loading="lazy"
-                    >
+                    <video
+                        src="https://cdn.shopify.com/videos/c/o/v/c4f4283276574e319c927bda4f9d07ee.mp4"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        style="width:100%;display:block"
+                    ></video>
                 </div>
                 <div class="vid-card">
                     <video
-                        src="https://cdn.shopify.com/videos/c/o/v/c4f4283276574e319c927bda4f9d07ee.mp4"
+                        src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_mp4/v1777991319/Heneyser_lgzh9p.mov"
                         controls
                         playsinline
                         preload="metadata"
