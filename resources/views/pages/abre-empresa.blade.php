@@ -359,7 +359,7 @@
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://cdn.shopify.com/videos/c/o/v/ca063c7dbc7546c39e42655d4146c02c.mp4"
-                    preload="metadata" playsinline loop></video>
+                    poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777990396/valentina_ierlsz.png" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
@@ -374,7 +374,7 @@
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://cdn.shopify.com/videos/c/o/v/9af3e2f3d59f4a67a27be999b6c29e0c.mp4"
-                    preload="metadata" playsinline loop></video>
+                    poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777990396/dorisserrano_lydlp5.png" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
@@ -389,7 +389,7 @@
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://cdn.shopify.com/videos/c/o/v/c4f4283276574e319c927bda4f9d07ee.mp4"
-                    preload="metadata" playsinline loop></video>
+                    poster="" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
@@ -399,7 +399,7 @@
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://cdn.shopify.com/videos/c/o/v/91a6533ec6d2463c89bbc451f024f644.mp4"
-                    preload="metadata" playsinline loop></video>
+                    poster="" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
@@ -409,67 +409,57 @@
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://cdn.shopify.com/videos/c/o/v/6fed3fa6b24441229dd0107d42c59994.mp4"
-                    preload="metadata" playsinline loop></video>
+                    poster="" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
             </div>
 
-            {{-- Testimonio 6 --}}
+            {{-- Testimonio 6 — William | poster="URL_IMAGEN_WILLIAM" --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926598/Testimonio_William_yvcop2.mov"
-                    preload="metadata" playsinline loop></video>
+                    poster="" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
             </div>
 
-            {{-- Testimonio 7 --}}
+            {{-- Testimonio 7 — Heneyser | poster="URL_IMAGEN_HENEYSER" --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926529/Heneyser_mbms5k.mov"
-                    preload="metadata" playsinline loop></video>
+                    poster="" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
             </div>
 
-            {{-- Testimonio 8 --}}
+            {{-- Testimonio 8 — Juan Manuel | poster="URL_IMAGEN_JUAN_MANUEL" --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926506/Juan_Manuel_Gonzalez_teldge.mp4"
-                    preload="metadata" playsinline loop></video>
+                    poster="" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
             </div>
 
-            {{-- Testimonio 9 --}}
+            {{-- Testimonio 9 — Fausto | poster="URL_IMAGEN_FAUSTO" --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926484/Fausto_s4ihnc.mp4"
-                    preload="metadata" playsinline loop></video>
+                    poster="" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
             </div>
 
-            {{-- Testimonio 10 --}}
+            {{-- Testimonio 10 — Dani | poster="URL_IMAGEN_DANI" --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
                 <video class="testimonio-video"
                     src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926439/Testimonio_Dani_gc8tgw.mp4"
-                    preload="metadata" playsinline loop></video>
-                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
-                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
-                </button>
-            </div>
-
-            {{-- Testimonio 11 --}}
-            <div class="testimonio-card" onclick="toggleVideo(this)">
-                <video class="testimonio-video"
-                    src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1777926389/juan_diego_lnuthm.mp4"
-                    preload="metadata" playsinline loop></video>
+                    poster="" preload="metadata" playsinline loop></video>
                 <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
                     <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
                 </button>
