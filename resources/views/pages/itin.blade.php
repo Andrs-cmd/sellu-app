@@ -155,7 +155,7 @@
     @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -258,7 +258,7 @@
         /* ── DOC CARDS ── */
         .doc-card { background: #fff; border: 1px solid #e5e6ea; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 10px; transition: box-shadow .2s, border-color .2s; }
         .doc-card:hover { box-shadow: 0 4px 12px rgba(46,56,86,.10); border-color: #c5c8d0; }
-        .doc-num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c89320; letter-spacing: .04em; }
+        .doc-num { font-family: 'Montserrat', sans-serif; font-size: 12px; color: #c89320; letter-spacing: .04em; }
 
         /* ── TIMELINE ── */
         .timeline-bar { display: grid; grid-template-columns: 1fr 6fr 1fr; gap: 0; border-radius: 14px; overflow: hidden; border: 1px solid #e5e6ea; }
@@ -306,7 +306,7 @@
         .step-node { display: flex; flex-direction: column; gap: 16px; position: relative; }
         .step-bubble {
             width: 48px; height: 48px; border-radius: 999px;
-            font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500;
+            font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500;
             display: flex; align-items: center; justify-content: center;
             border: 1.5px solid rgba(255,255,255,.2);
         }
@@ -398,12 +398,12 @@
             <div class="itin-hero-card" style="background:#0D1B3E; border-radius:28px; padding:20px; box-shadow:0 24px 48px -12px rgba(13,27,62,.30); transform:rotate(1deg);">
                 <div style="background:#fff; border-radius:16px; overflow:hidden; border:1px solid #e5e6ea;">
                     <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid #e5e6ea; background:#f5f3ee;">
-                        <span style="font-size:12px; font-family:'JetBrains Mono',monospace; color:#6b6f7a;">Form W-7 · Sell·U</span>
+                        <span style="font-size:12px; font-family:'Montserrat',sans-serif; color:#6b6f7a;">Form W-7 · Sell·U</span>
                         <span style="font-size:11px; font-weight:700; color:#0f6b3f; background:#e3f6ec; padding:4px 10px; border-radius:999px; letter-spacing:.04em;">EN PROCESO</span>
                     </div>
                     <div style="padding:28px;">
                         <p style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#6b6f7a; margin-bottom:8px;">Tu ITIN</p>
-                        <div style="font-family:'JetBrains Mono',monospace; font-size:28px; line-height:32px; font-weight:500; margin-bottom:22px; color:#434966; letter-spacing:.04em;">
+                        <div style="font-family:'Montserrat',sans-serif; font-size:28px; line-height:32px; font-weight:500; margin-bottom:22px; color:#434966; letter-spacing:.04em;">
                             9XX&nbsp;–&nbsp;73&nbsp;–&nbsp;<span style="color:#c5c8d0;">____</span>
                         </div>
                         <div style="display:flex; flex-direction:column; gap:10px;">
@@ -427,7 +427,7 @@
                         </div>
                         <div style="margin-top:18px; padding:12px 14px; background:#f5f3ee; border-radius:8px; font-size:12px; color:#6b6f7a; display:flex; justify-content:space-between;">
                             <span>Tiempo estimado restante</span>
-                            <span style="font-family:'JetBrains Mono',monospace; color:#434966; font-weight:500;">6–9 semanas</span>
+                            <span style="font-family:'Montserrat',sans-serif; color:#434966; font-weight:500;">6–9 semanas</span>
                         </div>
                     </div>
                 </div>
@@ -462,23 +462,23 @@
                     <p style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#6b6f7a; margin-bottom:18px;">¿Para qué sirve el ITIN?</p>
                     <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:14px;">
                         <li style="display:flex; gap:16px; align-items:flex-start; padding-bottom:14px; border-bottom:1px solid #e5e6ea;">
-                            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c89320; min-width:24px; font-weight:500;">01</span>
+                            <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; min-width:24px; font-weight:500;">01</span>
                             <span style="font-size:15px; line-height:24px; color:#434966;">Presentar declaraciones de impuestos en EE.UU.</span>
                         </li>
                         <li style="display:flex; gap:16px; align-items:flex-start; padding-bottom:14px; border-bottom:1px solid #e5e6ea;">
-                            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c89320; min-width:24px; font-weight:500;">02</span>
+                            <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; min-width:24px; font-weight:500;">02</span>
                             <span style="font-size:15px; line-height:24px; color:#434966;">Operar una LLC como dueño no residente</span>
                         </li>
                         <li style="display:flex; gap:16px; align-items:flex-start; padding-bottom:14px; border-bottom:1px solid #e5e6ea;">
-                            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c89320; min-width:24px; font-weight:500;">03</span>
+                            <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; min-width:24px; font-weight:500;">03</span>
                             <span style="font-size:15px; line-height:24px; color:#434966;">Abrir ciertas cuentas bancarias comerciales</span>
                         </li>
                         <li style="display:flex; gap:16px; align-items:flex-start; padding-bottom:14px; border-bottom:1px solid #e5e6ea;">
-                            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c89320; min-width:24px; font-weight:500;">04</span>
+                            <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; min-width:24px; font-weight:500;">04</span>
                             <span style="font-size:15px; line-height:24px; color:#434966;">Recibir ingresos desde EE.UU. de forma formal</span>
                         </li>
                         <li style="display:flex; gap:16px; align-items:flex-start;">
-                            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c89320; min-width:24px; font-weight:500;">05</span>
+                            <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; min-width:24px; font-weight:500;">05</span>
                             <span style="font-size:15px; line-height:24px; color:#434966;">Cumplir con los requisitos del IRS y evitar penalizaciones</span>
                         </li>
                     </ul>
@@ -659,19 +659,19 @@
 
                 <ol style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;">
                     <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#f5f3ee; border-radius:10px;">
-                        <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">01</span>
+                        <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">01</span>
                         <span style="font-size:15px; line-height:22px; color:#434966;">Completar el formulario W-7 en inglés.</span>
                     </li>
                     <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#f5f3ee; border-radius:10px;">
-                        <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">02</span>
+                        <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">02</span>
                         <span style="font-size:15px; line-height:22px; color:#434966;">Adjuntar documentos de identidad originales o certificados (pasaporte, entre otros).</span>
                     </li>
                     <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#f5f3ee; border-radius:10px;">
-                        <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">03</span>
+                        <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">03</span>
                         <span style="font-size:15px; line-height:22px; color:#434966;">Enviar todo por correo al IRS o entregar en persona en un CAA (Certifying Acceptance Agent).</span>
                     </li>
                     <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#f5f3ee; border-radius:10px;">
-                        <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">04</span>
+                        <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">04</span>
                         <span style="font-size:15px; line-height:22px; color:#434966;">Esperar respuesta del IRS.</span>
                     </li>
                 </ol>
@@ -846,7 +846,7 @@
                 <div style="width:78%; background:#434966;"></div>
                 <div style="width:14%; background:#f5f3ee;"></div>
             </div>
-            <div style="margin-top:10px; display:flex; justify-content:space-between; font-size:12px; font-family:'JetBrains Mono',monospace; color:#9298a3;">
+            <div style="margin-top:10px; display:flex; justify-content:space-between; font-size:12px; font-family:'Montserrat',sans-serif; color:#9298a3;">
                 <span>Semana 0</span><span>Semana 4</span><span>Semana 8</span><span>Semana 12</span>
             </div>
             <p style="font-size:13px; color:#9298a3; margin-top:20px; font-style:italic;">
@@ -1020,7 +1020,7 @@
                 </ul>
                 <div style="margin-top:22px; padding-top:18px; border-top:1.5px dashed #c5c8d0; display:flex; justify-content:space-between; align-items:baseline;">
                     <span style="font-size:13px; color:#9298a3;">Tiempo estimado total</span>
-                    <span style="font-family:'JetBrains Mono',monospace; font-size:14px; color:#434966; font-weight:600;">8–12 semanas</span>
+                    <span style="font-family:'Montserrat',sans-serif; font-size:14px; color:#434966; font-weight:600;">8–12 semanas</span>
                 </div>
             </div>
         </div>
