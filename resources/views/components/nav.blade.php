@@ -46,8 +46,8 @@
     {{-- FILA 2: Menú centrado (desktop) --}}
     <nav class="nav-menu-row">
         <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}" class="nav-item {{ request()->is('pages/crear-empresa-en-estados-unidos') ? 'active' : '' }}">Abre tu empresa</a>
-        <div class="nav-dropdown {{ request()->is('pages/contabilidad') ? 'active' : '' }}">
-            <a href="{{ url('/pages/contabilidad') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/contabilidad') ? 'active' : '' }}">
+        <div class="nav-dropdown {{ request()->is('pages/contabilidad') || request()->is('pages/certificado-revendedor') || request()->is('pages/presentacion-de-impuestos') || request()->is('pages/itin-number') ? 'active' : '' }}">
+            <a href="{{ url('/pages/contabilidad') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/contabilidad') || request()->is('pages/certificado-revendedor') || request()->is('pages/presentacion-de-impuestos') || request()->is('pages/itin-number') ? 'active' : '' }}">
                 Contabilidad
                 <svg class="nav-chevron" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -64,7 +64,7 @@
                     <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="6" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M2 14c0-3 2.686-5 6-5s6 2 6 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
                     ITIN Number
                 </a>
-                <a href="{{ url('/pages/contabilidad') }}#revendedor" class="nav-subitem">
+                <a href="{{ url('/pages/certificado-revendedor') }}" class="nav-subitem {{ request()->is('pages/certificado-revendedor') ? 'active' : '' }}">
                     <svg viewBox="0 0 16 16" fill="none"><path d="M2 4h12v9a1 1 0 01-1 1H3a1 1 0 01-1-1V4z" stroke="currentColor" stroke-width="1.2"/><path d="M5 4V3a3 3 0 016 0v1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
                     Certificado de revendedor
                 </a>
@@ -121,7 +121,7 @@
     {{-- Menú móvil desplegable --}}
     <nav class="nav-mobile-menu" id="navMobileMenu">
         <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}" class="mobile-item {{ request()->is('pages/crear-empresa-en-estados-unidos') ? 'active' : '' }}">Abre tu empresa</a>
-        <div class="mobile-accordion {{ request()->is('pages/contabilidad') ? 'open' : '' }}">
+        <div class="mobile-accordion {{ request()->is('pages/contabilidad') || request()->is('pages/certificado-revendedor') || request()->is('pages/presentacion-de-impuestos') || request()->is('pages/itin-number') ? 'open' : '' }}">
             <button class="mobile-item mobile-accordion-trigger" onclick="toggleAccordion(this)">
                 Contabilidad
                 <svg class="mobile-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -130,7 +130,7 @@
                 <a href="{{ url('/pages/contabilidad') }}#bookkeeping" class="mobile-subitem">Bookkeeping</a>
                 <a href="{{ url('/pages/presentacion-de-impuestos') }}" class="mobile-subitem">Presentación de impuestos</a>
                 <a href="{{ url('/pages/itin-number') }}" class="mobile-subitem">ITIN Number</a>
-                <a href="{{ url('/pages/contabilidad') }}#revendedor" class="mobile-subitem">Certificado de revendedor</a>
+                <a href="{{ url('/pages/certificado-revendedor') }}" class="mobile-subitem {{ request()->is('pages/certificado-revendedor') ? 'active' : '' }}">Certificado de revendedor</a>
             </div>
         </div>
         <div class="mobile-accordion {{ request()->is('pages/apertura-marketplace') ? 'open' : '' }}">
