@@ -195,7 +195,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 .hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 72px; align-items: center; }
 .hero h1 {
     font-family: var(--font-display); font-size: 68px; line-height: 1.04;
-    letter-spacing: -0.025em; font-weight: 700; color: var(--navy-900); margin: 18px 0 24px;
+    letter-spacing: -0.025em; font-weight: 200; color: var(--navy-900); margin: 18px 0 24px;
 }
 .hero h1 .line { display: block; overflow: hidden; }
 .hero h1 .line > span {
@@ -575,7 +575,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 <section class="hero" id="hero">
     <div class="container hero-grid">
         <div>
-            <span class="eyebrow">Trademark · USPTO · Sell·U</span>
+            <!--<span class="eyebrow">Trademark · USPTO · Sell·U</span>-->
             <h1>
                 <span class="line"><span>Tu marca,</span></span>
                 <span class="line"><span>protegida en</span></span>
