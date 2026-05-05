@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
-    <title>Registro FDA para Latinoamérica — Sell·U</title>
+    <link rel="apple-touch-icon" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
+    <title>Registro FDA para Latinoamérica — U.S. Agent incluido — Sell·U</title>
 
     <meta name="description" content="Registra tu producto de alimentos, cosméticos o dispositivos médicos ante la FDA de EE.UU. U.S. Agent incluido. FFR Number en 10 días hábiles. Servicio en español para LATAM.">
     <meta name="keywords" content="registro FDA latinoamerica, FDA food facility registration, U.S. Agent FDA, FFR Number, registro alimentos FDA, cosméticos MoCRA, exportar a estados unidos FDA">
@@ -23,6 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Registro FDA para Latinoamérica — Sell·U">
     <meta name="twitter:description" content="Registra tu producto ante la FDA. U.S. Agent incluido. FFR Number en 10 días hábiles.">
+    <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
 
     @verbatim
     <script type="application/ld+json">
@@ -41,8 +43,38 @@
     </script>
     @endverbatim
 
+    @verbatim
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "¿Necesito una LLC en Estados Unidos para registrarme con la FDA?", "acceptedAnswer": {"@type": "Answer", "text": "No. La FDA acepta empresas extranjeras siempre que designen un U.S. Agent. Sell·U te asigna ese agente como parte del servicio. Si además quieres tu LLC, podemos hacer ambos trámites en paralelo."}},
+            {"@type": "Question", "name": "¿Cuánto tiempo dura mi registro FDA?", "acceptedAnswer": {"@type": "Answer", "text": "Food Facility se renueva cada 2 años (oct-dic de años pares). Cosméticos (MoCRA) requieren actualización anual. Dispositivos y medicamentos pagan User Fee anual."}},
+            {"@type": "Question", "name": "¿Qué es un FFR Number y un U.S. Agent?", "acceptedAnswer": {"@type": "Answer", "text": "El FFR Number es tu identificador oficial ante la FDA. El U.S. Agent es una persona o empresa con dirección en EE.UU., autorizada para recibir comunicaciones de la FDA en tu nombre. Obligatorio para empresas extranjeras."}},
+            {"@type": "Question", "name": "¿La FDA puede inspeccionar mi planta en Latinoamérica?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Las inspecciones son posibles bajo FSMA para alimentos de alto riesgo. Te preparamos con documentación, traducción y simulacros antes de cualquier visita."}},
+            {"@type": "Question", "name": "¿Sell·U garantiza la aprobación de la FDA?", "acceptedAnswer": {"@type": "Answer", "text": "Garantizamos la radicación correcta y completa. La FDA no aprueba en estas categorías, registra. Lo que garantizamos es 100% de aceptación del registro y cero rechazos por errores nuestros."}},
+            {"@type": "Question", "name": "¿Qué pasa si mi producto es rechazado en aduana?", "acceptedAnswer": {"@type": "Answer", "text": "Si el rechazo es por error nuestro en la radicación, lo corregimos sin costo y cubrimos re-embarque hasta $5,000 USD."}},
+            {"@type": "Question", "name": "¿Aplica para Health Canada o COFEPRIS?", "acceptedAnswer": {"@type": "Answer", "text": "No, es exclusivo para FDA (EE.UU.). Tenemos partners para Canadá y México y podemos referirte sin costo."}},
+            {"@type": "Question", "name": "¿Puedo cancelar el U.S. Agent si cambio de proveedor?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, con 30 días de aviso para coordinar el traspaso correcto y evitar que tu registro quede inactivo."}}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sellu.co"},
+            {"@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://sellu.co/#servicios"},
+            {"@type": "ListItem", "position": 3, "name": "Registro FDA", "item": "https://sellu.co/pages/registro-fda-de-alimentos"}
+        ]
+    }
+    </script>
+    @endverbatim
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -67,12 +99,12 @@
     }
 
     html { scroll-behavior: smooth; }
-    body { font-family: 'Poppins', sans-serif; background: var(--paper); color: var(--navy); -webkit-font-smoothing: antialiased; }
+    body { font-family: 'Montserrat', sans-serif; background: var(--paper); color: var(--navy); -webkit-font-smoothing: antialiased; }
     a { text-decoration: none; color: inherit; }
 
     .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
 
-    .btn { display: inline-flex; align-items: center; gap: 8px; font-family: 'Poppins',sans-serif; font-weight: 600; font-size: 14px; padding: 10px 18px; border-radius: 10px; border: 1px solid transparent; cursor: pointer; line-height: 20px; text-decoration: none; transition: background .2s, box-shadow .2s, border-color .2s; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; font-family: 'Montserrat',sans-serif; font-weight: 600; font-size: 14px; padding: 10px 18px; border-radius: 10px; border: 1px solid transparent; cursor: pointer; line-height: 20px; text-decoration: none; transition: background .2s, box-shadow .2s, border-color .2s; }
     .btn-primary { background: var(--navy); color: var(--paper); box-shadow: var(--shadow-sm); }
     .btn-primary:hover { background: var(--navy2); box-shadow: var(--shadow-md); }
     .btn-accent { background: var(--accent); color: var(--navy); }
@@ -140,7 +172,7 @@
 
     /* CATEGORIES */
     .cat-tabs { display: flex; gap: 8px; margin-bottom: 32px; flex-wrap: wrap; }
-    .cat-tab { padding: 10px 18px; border-radius: 999px; border: 1px solid var(--border); background: var(--white); font-family: 'Poppins',sans-serif; font-size: 13px; font-weight: 600; color: var(--navy); cursor: pointer; transition: all .2s; }
+    .cat-tab { padding: 10px 18px; border-radius: 999px; border: 1px solid var(--border); background: var(--white); font-family: 'Montserrat',sans-serif; font-size: 13px; font-weight: 600; color: var(--navy); cursor: pointer; transition: all .2s; }
     .cat-tab:hover { border-color: var(--navy); }
     .cat-tab.active { background: var(--navy); color: var(--paper); border-color: var(--navy); }
     .cat-panel { display: none; }
@@ -185,7 +217,7 @@
     .calc-label { font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink500); margin-bottom: 10px; display: block; }
     .calc-btn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .calc-btn-grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; }
-    .calc-btn { padding: 12px 14px; border-radius: 10px; background: var(--white); border: 1px solid var(--border); font-family: 'Poppins',sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; color: var(--navy); text-align: left; transition: all .2s; }
+    .calc-btn { padding: 12px 14px; border-radius: 10px; background: var(--white); border: 1px solid var(--border); font-family: 'Montserrat',sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; color: var(--navy); text-align: left; transition: all .2s; }
     .calc-btn.active { background: var(--navy); color: var(--paper); border-color: var(--navy); }
     .calc-result { font-family: 'JetBrains Mono',monospace; font-size: 48px; font-weight: 600; color: var(--navy); letter-spacing: -.025em; line-height: 1; }
     .calc-line { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 10px; color: var(--ink700); }
@@ -231,7 +263,7 @@
     .faq-sticky { position: sticky; top: 120px; }
     .faq-list { border-top: 1px solid var(--border); }
     .faq-item { border-bottom: 1px solid var(--border); }
-    .faq-q { width: 100%; text-align: left; padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: transparent; border: none; cursor: pointer; font-family: 'Poppins',sans-serif; font-size: 16px; line-height: 1.4; font-weight: 600; color: var(--navy); }
+    .faq-q { width: 100%; text-align: left; padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: transparent; border: none; cursor: pointer; font-family: 'Montserrat',sans-serif; font-size: 16px; line-height: 1.4; font-weight: 600; color: var(--navy); }
     .faq-q svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--ink500); }
     .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease,padding .3s; font-size: 15px; line-height: 1.7; color: var(--ink700); }
     .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
@@ -244,7 +276,7 @@
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     .form-group { margin-bottom: 18px; }
     .f-label { font-size: 13px; font-weight: 500; color: var(--navy); margin-bottom: 8px; display: block; }
-    .f-input { width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; font-family: 'Poppins',sans-serif; font-size: 14px; color: var(--navy); background: var(--white); transition: border-color .2s,box-shadow .2s; }
+    .f-input { width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; font-family: 'Montserrat',sans-serif; font-size: 14px; color: var(--navy); background: var(--white); transition: border-color .2s,box-shadow .2s; }
     .f-input:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 4px rgba(67,73,102,.1); }
     .f-select { appearance: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6f7a' stroke-width='2'><polyline points='6 9 12 15 18 9'/></svg>"); background-repeat: no-repeat; background-position: right 14px center; }
     .form-perks { list-style: none; display: flex; flex-direction: column; gap: 14px; position: relative; margin-top: 32px; }
