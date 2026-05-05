@@ -331,7 +331,7 @@
             <p class="hero-lead">Alimentos, suplementos, cosméticos y dispositivos médicos. Te asignamos un U.S. Agent, registramos tus instalaciones y obtenemos tu FFR Number — listo en 10 días hábiles.</p>
             <div class="hero-btns">
                 <a href="#cotiza" class="btn btn-primary btn-lg">Inicia tu registro FDA →</a>
-                <a href="#precios" class="btn btn-secondary btn-lg">Ver tarifas</a>
+                <!--<a href="#precios" class="btn btn-secondary btn-lg">Ver tarifas</a>-->
             </div>
             <div class="hero-stats">
                 <div><div class="stat-num">10</div><div class="stat-lbl">días hábiles</div></div>
