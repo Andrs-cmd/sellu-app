@@ -70,7 +70,7 @@
 
         /* ── SECTIONS ── */
         .sx      { padding: 56px 0; }
-        .sx-band { background: #f5f3ee; }
+        .sx-band { background: #EEF1F8 ; }
         .sx-blue { background: #EEF1F8; }
         .sx-navy { background: #0D1B3E; color: #fff; }
 
