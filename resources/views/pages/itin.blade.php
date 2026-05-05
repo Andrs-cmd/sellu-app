@@ -425,13 +425,13 @@
     <div aria-hidden class="itin-puzzle" style="right:-180px; top:60px; width:520px; height:520px; clip-path:path('M260 0 C 320 0, 360 40, 360 100 L 360 180 C 400 180, 440 200, 440 240 C 440 280, 400 300, 360 300 L 360 380 C 360 440, 320 480, 260 480 L 80 480 C 40 480, 0 440, 0 380 L 0 260 C 40 260, 80 240, 80 200 C 80 160, 40 140, 0 140 L 0 80 C 0 40, 40 0, 80 0 Z');"></div>
     <div class="container" style="position:relative;">
         {{-- Breadcrumb --}}
-        <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:#6b6f7a; margin-bottom:28px;">
+        <!--<div style="display:flex; align-items:center; gap:8px; font-size:13px; color:#6b6f7a; margin-bottom:28px;">
             <a href="{{ url('/') }}" style="color:#6b6f7a;">Inicio</a>
             <span style="opacity:.5;">/</span>
             <a href="{{ url('/pages/contabilidad') }}" style="color:#6b6f7a;">Contabilidad</a>
             <span style="opacity:.5;">/</span>
             <span style="color:#434966; font-weight:600;">ITIN Number</span>
-        </div>
+        </div>-->
 
         <div class="itin-hero-grid">
             <div>
