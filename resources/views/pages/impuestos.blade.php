@@ -142,7 +142,7 @@
         /* HERO */
         .hero { padding: 60px 0 20px; overflow: hidden; }
         .multi { font-size: clamp(28px, 3.6vw, 33px); }
-        .white { color: var(--white); }
+        .white { color: var(--white)!important; }
         .enmiendas {font-size: clamp(28px, 3.6vw, 38px);}
         .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
         @media (max-width: 960px) { .hero-grid { grid-template-columns: 1fr; gap: 48px; } }
