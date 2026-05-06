@@ -113,7 +113,7 @@
         img { max-width:100%; height:auto; }
 
         /* ── HERO ── */
-        .hero { background:#EEF1F8; min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
+        .hero { background:#122050; min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
         .hero-inner { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:48px; max-width:1200px; margin:0 auto; padding:72px 5%; width:100%; }
         .hero-content { max-width:560px; }
         .hero-eyebrow { font-size:12px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:20px; }
