@@ -178,7 +178,7 @@
         .tbl .cell-fl { background: var(--accent-100); color: var(--ink-900); font-weight: 600; }
         .tag { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 999px; font-size: 11px; font-weight: 500; }
         .tag-best { background: var(--accent-100); color: var(--accent-700); }
-        .tag-mid  { background: var(--info-100); color: var(--info-700); }
+        .tag-mid  { background: #F5A623; color: var(--info-700); }
         .tag-warn { background: var(--danger-100); color: var(--danger-700); }
         .tag-ok   { background: var(--success-100); color: var(--success-700); }
 
