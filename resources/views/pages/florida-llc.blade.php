@@ -178,7 +178,8 @@
         .tbl .cell-fl { background: var(--accent-100); color: var(--ink-900); font-weight: 600; }
         .tag { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 999px; font-size: 11px; font-weight: 500; }
         .tag-best { background: var(--accent-100); color: var(--accent-700); }
-        .tag-mid  { background: #F5A623; color: var(--info-700); }
+        .tag-mid  { background: var(--info-100); color: var(--info-700); }
+        .tag-mid-o{background: #F5A623; color: var(--info-700);}
         .tag-warn { background: var(--danger-100); color: var(--danger-700); }
         .tag-ok   { background: var(--success-100); color: var(--success-700); }
 
@@ -467,7 +468,7 @@
                     <tr><td class="col-key">Agente registrado</td><td>Servicio anual obligatorio para LLCs sin oficina física en Florida.</td><td class="num">$125</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">Annual Report</td><td>Reporte anual obligatorio. Vence el 1 de mayo de cada año.</td><td class="num">$138.75</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">Impuestos y cumplimiento fiscal</td><td>Presentación de impuestos y obligaciones informativas de tu LLC ante el IRS, según el tipo de estructura y actividad.</td><td class="num">Desde $150</td><td><span class="tag tag-mid">Anual</span></td></tr>
-                    <tr><td class="col-key">Sales Tax (Florida)</td><td>Solo aplica si tu LLC vende productos físicos o servicios gravables en Florida. Registro gratuito ante el Dept. of Revenue. Si no vendes en Florida, no aplica.</td><td class="num">$0</td><td><span class="tag tag-mid">No aplica</span></td></tr>
+                    <tr><td class="col-key">Sales Tax (Florida)</td><td>Depende del tipo de actividad y si tu LLC vende dentro de Florida. Puede aplicar o no según tu caso. Te orientamos para identificar si tienes esta obligación.</td><td class="num">Según el caso</td><td><span class="tag tag-mid-o">Depende</span></td></tr>
                     <!--<tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + annual report + EIN.</td><td class="num">$364–600</td><td>—</td></tr>-->
                 </tbody>
             </table>
