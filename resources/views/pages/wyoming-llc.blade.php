@@ -16,18 +16,26 @@
   <meta name="twitter:title" content="Cómo abrir una LLC en Wyoming desde Latinoamérica — Sell·U" />
   <meta name="twitter:description" content="Constituye tu LLC en Wyoming de forma inmediata. Sin viajar, sin SSN. 0% income tax estatal. Privacidad de owners. Filing fee $100." />
 
+  @verbatim
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@type": "Article",
+    "headline": "Cómo abrir una LLC en Wyoming desde el extranjero",
+    "description": "Guía completa para constituir una LLC en Wyoming desde Latinoamérica o España sin SSN ni residencia en EE.UU.",
+    "url": "https://sellu.co/pages/crear-llc-en-wyoming",
+    "inLanguage": "es",
+    "author": { "@type": "Organization", "name": "Sell·U LATAM LLC", "url": "https://sellu.co" },
+    "publisher": { "@type": "Organization", "name": "Sell·U LATAM LLC", "url": "https://sellu.co", "logo": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196" },
+    "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sellu.co" },
-      { "@type": "ListItem", "position": 2, "name": "Recursos", "item": "https://sellu.co/pages/recursos" },
-      { "@type": "ListItem", "position": 3, "name": "Crear LLC en EE.UU.", "item": "https://sellu.co/pages/crear-llc-en-usa" },
+      { "@type": "ListItem", "position": 2, "name": "Abre tu empresa", "item": "https://sellu.co/pages/crear-empresa-en-estados-unidos" },
+      { "@type": "ListItem", "position": 3, "name": "Elige tu estado", "item": "https://sellu.co/pages/cual-es-el-mejor-estado-para-formar-una-llc" },
       { "@type": "ListItem", "position": 4, "name": "LLC en Wyoming", "item": "https://sellu.co/pages/crear-llc-en-wyoming" }
-    ]
+    ]}
   }
   </script>
+  @endverbatim
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
