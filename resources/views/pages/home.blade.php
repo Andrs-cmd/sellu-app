@@ -150,7 +150,7 @@
         .pull-quote-section .inner { max-width:1100px; margin:0 auto; }
         .pull-quote-wrap { position:relative; border-radius:20px; overflow:hidden; }
         .pull-quote-wrap img.pq-bg { width:100%; height:auto; display:block; }
-        .pull-quote { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding:0 0 8% 10%; width:62%; }
+        .pull-quote { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding:0 0 5% 15%; width:62%; }
         .pull-quote q { font-family:'Montserrat',sans-serif; font-size:17px; line-height:25px; font-weight:600; font-style:normal; quotes:none; display:block; color:#fff; }
         .pull-quote-author { margin-top:10px; font-size:12px; color:rgba(255,255,255,0.6); letter-spacing:.04em; }
 
