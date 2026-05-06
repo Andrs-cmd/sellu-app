@@ -485,7 +485,7 @@
                     <h1 class="tt-hero-h1 tt-fade-in-up" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:56px;line-height:1.05;letter-spacing:-0.025em;margin-top:18px;margin-bottom:22px;color:var(--t-dark);animation-delay:50ms;">
                         <span style="display:block;">Tu producto</span>
                         <span style="display:block;">en el feed de</span>
-                        <span style="display:block;color:var(--tt-yellow);">150 millones</span>
+                        <span style="display:block;color:#f6bb33;">150 millones</span>
                         <span style="display:block;">de compradores.</span>
                     </h1>
                     <p style="font-size:18px;line-height:1.65;color:#555;max-width:500px;margin-bottom:32px;font-weight:400;">
@@ -493,8 +493,8 @@
                     </p>
                     <div class="tt-hero-ctas" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
                         <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vender%20en%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-yellow">Empezar ahora →</a>
-                        <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vender%20en%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-pink">▶ Vender en TikTok Shop</a>
-                        <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20sobre%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-od">Hablar con un asesor</a>
+                        <!--<a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vender%20en%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-pink">▶ Vender en TikTok Shop</a>
+                        <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20sobre%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-od">Hablar con un asesor</a>-->
                     </div>
                     <p style="margin-top:22px;font-size:12px;color:#9298a3;font-weight:500;">
                         Sin compromiso · En español · Desde cualquier país de LATAM
