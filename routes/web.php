@@ -34,6 +34,7 @@ Route::prefix('pages')->group(function () {
     Route::get('/itin-number', fn() => view('pages.itin'))->name('pages.itin');
     Route::get('/certificado-revendedor', fn() => view('pages.certificado-revendedor'))->name('pages.certificado-revendedor');
     Route::get('/walmart', fn() => view('pages.walmart'))->name('pages.walmart');
+    Route::get('/tiktok-shop', fn() => view('pages.tiktok-shop'))->name('pages.tiktok-shop');
     Route::post('/canales-de-atencion/contacto', function (Request $request) {
         $validated = $request->validate([
             'nombre'   => 'required|string|max:255',
