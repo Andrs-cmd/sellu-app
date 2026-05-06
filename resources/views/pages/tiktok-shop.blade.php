@@ -578,7 +578,7 @@
     </section>
 
     {{-- ===== MARQUEE ===== --}}
-    <section style="background:var(--tt-black);padding:36px 0;overflow:hidden;">
+    <!--<section style="background:var(--tt-black);padding:36px 0;overflow:hidden;">
         <div class="tt-container" style="text-align:center;margin-bottom:18px;">
             <span style="font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.4);">Marcas que ya venden con Sell-U</span>
         </div>
@@ -590,7 +590,7 @@
                 <span class="tt-client-pill">Marathon</span><span class="tt-client-pill">Differenza</span><span class="tt-client-pill">Sense</span><span class="tt-client-pill">Haiko Natural</span><span class="tt-client-pill">Buddy Beauty</span><span class="tt-client-pill">Nutrelle</span><span class="tt-client-pill">Yax Socks</span><span class="tt-client-pill">D Casa</span>
             </div>
         </div>
-    </section>
+    </section>-->
 
     {{-- ===== WHY TIKTOK SHOP ===== --}}
     <section class="tt-section">
@@ -626,7 +626,7 @@
     </section>
 
     {{-- ===== LIVE SHOPPING ===== --}}
-    <section class="tt-section tt-section-dark" style="overflow:hidden;position:relative;">
+    <!--<section class="tt-section tt-section-dark" style="overflow:hidden;position:relative;">
         <div aria-hidden style="position:absolute;top:-160px;left:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(254,44,85,0.18),transparent 60%);pointer-events:none;"></div>
         <div aria-hidden style="position:absolute;bottom:-180px;right:-120px;width:460px;height:460px;background:radial-gradient(circle,rgba(37,244,238,0.12),transparent 60%);pointer-events:none;"></div>
         <div class="tt-container" style="position:relative;">
@@ -718,7 +718,7 @@
 
             </div>
         </div>
-    </section>
+    </section>-->
 
     {{-- ===== SERVICES ===== --}}
     <section class="tt-section tt-section-gray">
