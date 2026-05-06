@@ -154,17 +154,19 @@
         .pull-quote q { font-family:'Montserrat',sans-serif; font-size:17px; line-height:25px; font-weight:600; font-style:normal; quotes:none; display:block; color:#fff; }
         .pull-quote-author { margin-top:10px; font-size:12px; color:rgba(255,255,255,0.6); letter-spacing:.04em; }
 
-        /* ── STATS ── */
-        .stats { background:var(--white); padding:56px 5%; border-top:1px solid var(--gray2); border-bottom:1px solid var(--gray2); }
-        .stats-inner { display:grid; grid-template-columns:repeat(4,1fr); max-width:1000px; margin:0 auto; }
-        .stat-item { text-align:center; padding:20px; border-right:1px solid var(--gray2); }
-        .stat-item:last-child { border-right:none; }
-        .stat-num { font-family:'Montserrat',sans-serif; font-size:52px; font-weight:900; color:var(--navy); line-height:1; margin-bottom:8px; }
-        .stat-num.gold { color:var(--gold); }
-        .stat-icon { margin-bottom:8px; }
-        .stat-icon svg { width:36px; height:36px; color:var(--navy); }
-        .stat-icon img { width:48px; height:48px; object-fit:contain; }
-        .stat-label { font-size:13px; color:var(--muted); font-weight:500; line-height:1.4; }
+        /* ── WHO CARDS ── */
+        .who-section { background:var(--white); padding:72px 5%; border-top:1px solid var(--gray2); border-bottom:1px solid var(--gray2); }
+        .who-section-inner { max-width:1100px; margin:0 auto; }
+        .who-section-head { max-width:720px; margin-bottom:44px; }
+        .who-section-head h2 { font-family:'Montserrat',sans-serif; font-size:36px; line-height:1.2; font-weight:800; color:var(--navy); margin-bottom:14px; }
+        .who-section-head p { font-size:16px; line-height:1.7; color:var(--muted); }
+        .who-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+        .who-card { background:#fff; border:1px solid #e5e6ea; border-radius:14px; padding:32px; display:flex; flex-direction:column; gap:14px; transition:box-shadow .2s; }
+        .who-card:hover { box-shadow:0 4px 12px rgba(46,56,86,.10); }
+        .who-icon { width:44px; height:44px; background:#EEF1F8; color:var(--navy); border-radius:10px; display:inline-flex; align-items:center; justify-content:center; }
+        .who-icon svg { width:22px; height:22px; }
+        .who-card h3 { font-family:'Montserrat',sans-serif; font-size:20px; line-height:27px; font-weight:700; color:var(--navy); margin:0; }
+        .who-card p { font-size:15px; line-height:24px; color:var(--muted); margin:0; }
 
         /* ── CLIENTES ── */
         .clientes { background:var(--gray); padding:52px 0; }
@@ -253,10 +255,7 @@
             .hero-image img { max-width:320px; margin:0 auto; }
             .hero h1 { font-size:28px; }
             .servicios-grid { grid-template-columns:repeat(2,1fr); }
-            .stats-inner { grid-template-columns:repeat(2,1fr); }
-            .stat-item { border-right:none; border-bottom:1px solid var(--gray2); }
-            .stat-item:nth-child(odd) { border-right:1px solid var(--gray2); }
-            .stat-item:last-child { border-bottom:none; }
+            .who-grid { grid-template-columns:1fr; }
             .cta-asesor { grid-template-columns:1fr; }
             .cta-asesor { grid-template-columns:1fr; }
             .cta-asesor-img { min-height:200px; }
@@ -377,24 +376,35 @@
     </div>
 </section>
 
-<!-- ── STATS ── -->
-<section class="stats" aria-label="Estadísticas">
-    <div class="stats-inner">
-        <div class="stat-item">
-            <div class="stat-icon"><img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/mqwnQi_tif.png?v=1761155258" alt="Años de experiencia"></div>
-            <div class="stat-label">Años de experiencia</div>
+<!-- ── WHO CARDS ── -->
+<section class="who-section" aria-label="¿Quién necesita nuestros servicios?">
+    <div class="who-section-inner">
+        <div class="who-section-head">
+            <h2>¿Quién necesita nuestros servicios?</h2>
+            <p>Si estás en alguno de estos casos, Sell·U tiene el servicio exacto para ti.</p>
         </div>
-        <div class="stat-item">
-            <div class="stat-icon"><img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/VFTAIQ_tif.png?v=1761155258" alt="Servicios personalizados"></div>
-            <div class="stat-label">Servicios personalizados</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-icon"><img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/zygw1K_tif.png?v=1761155258" alt="Red de contactos estratégicos"></div>
-            <div class="stat-label">Red de contactos estratégicos</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-icon"><img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Q6Fjwp.png?v=1761155258" alt="Éxito comprobado"></div>
-            <div class="stat-label">Éxito comprobado</div>
+        <div class="who-grid">
+            <div class="who-card">
+                <div class="who-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3>Emprendedores que quieren abrir empresa en EE.UU.</h3>
+                <p>¿Quieres operar en el mercado americano desde LATAM? Constituimos tu LLC o corporación con todo lo necesario: EIN, agente registrado, dirección física y Operating Agreement.</p>
+            </div>
+            <div class="who-card">
+                <div class="who-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+                </div>
+                <h3>Freelancers y prestadores de servicios con clientes en USA</h3>
+                <p>¿Tus clientes en EE.UU. te piden formularios W-8BEN o necesitan reportar los pagos? Te ayudamos con el ITIN, la estructura legal y la contabilidad para operar correctamente.</p>
+            </div>
+            <div class="who-card">
+                <div class="who-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                </div>
+                <h3>Sellers en Amazon, Walmart, TikTok o Faire</h3>
+                <p>Las plataformas americanas tienen requisitos legales y fiscales específicos. Te abrimos la cuenta, optimizamos tu catálogo y gestionamos todo el proceso desde LATAM.</p>
+            </div>
         </div>
     </div>
 </section>
