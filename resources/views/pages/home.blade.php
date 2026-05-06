@@ -113,9 +113,9 @@
         img { max-width:100%; height:auto; }
 
         /* ── HERO ── */
-        .hero { background:var(--navy) url('https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008') center/cover no-repeat; min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
-        .hero::before { content:''; position:absolute; inset:0; background:rgba(13,27,62,.55); z-index:1; }
-        .hero-content { position:relative; z-index:2; padding:72px 5%; max-width:580px; }
+        .hero { background:var(--navy); min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
+        .hero-inner { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:48px; max-width:1200px; margin:0 auto; padding:72px 5%; width:100%; }
+        .hero-content { max-width:560px; }
         .hero-eyebrow { font-size:12px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:20px; }
         .hero h1 { font-family:'Montserrat',sans-serif; font-size:42px; font-weight:900; line-height:1.1; color:var(--white); margin-bottom:20px; letter-spacing:-.5px; }
         .hero h1 em { font-style:normal; color:var(--gold); }
@@ -124,7 +124,8 @@
         .hero-btn:hover { background:var(--gold2); }
         .hero-badge { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15); border-radius:20px; padding:6px 14px; font-size:12px; color:rgba(255,255,255,.7); margin-bottom:20px; }
         .hero-badge span { background:var(--gold); color:var(--navy); font-size:10px; font-weight:800; padding:2px 8px; border-radius:10px; }
-.hero::before{background: transparent!important;}
+        .hero-image { display:flex; align-items:center; justify-content:center; }
+        .hero-image img { width:100%; max-width:520px; height:auto; display:block; object-fit:contain; }
 
         /* ── SERVICIOS ── */
         .servicios { padding:72px 5%; background:var(--white); }
@@ -247,8 +248,10 @@
 
         /* ── RESPONSIVE ── */
         @media(max-width:900px) {
+            .hero-inner { grid-template-columns:1fr; gap:32px; padding:48px 5%; }
+            .hero-image { order:-1; }
+            .hero-image img { max-width:320px; margin:0 auto; }
             .hero h1 { font-size:28px; }
-            .hero-content { padding:48px 5%; }
             .servicios-grid { grid-template-columns:repeat(2,1fr); }
             .stats-inner { grid-template-columns:repeat(2,1fr); }
             .stat-item { border-right:none; border-bottom:1px solid var(--gray2); }
@@ -268,6 +271,8 @@
 
         @media(max-width:600px) {
             .topbar { display:none; }
+            .hero-inner { padding:36px 5%; }
+            .hero-image img { max-width:260px; }
             .hero h1 { font-size:24px; }
             .hero p { font-size:14px; }
             .servicios-grid { grid-template-columns:repeat(2,1fr); gap:10px; }
@@ -294,12 +299,19 @@
 <!-- ── HERO ── -->
 <main>
 <section class="hero" aria-label="Bienvenida">
-    <div class="hero-content">
-        <div class="hero-badge"><span>NUEVO</span> Ahora con panel de seguimiento en tiempo real</div>
-        <p class="hero-eyebrow">Tu aliado para operar, vender y crecer</p>
-        <h1>La forma más <em>fácil</em> y profesional de establecer tu empresa en USA</h1>
-        <p>Nos encargamos de lo legal, contable y logístico para que tú te enfoques en lo más importante: crecer.</p>
-        <a href="{{ route('register') }}" class="hero-btn">Empezar ahora</a>
+    <div class="hero-inner">
+        <div class="hero-content">
+            <div class="hero-badge"><span>NUEVO</span> Ahora con panel de seguimiento en tiempo real</div>
+            <p class="hero-eyebrow">Tu aliado para operar, vender y crecer</p>
+            <h1>La forma más <em>fácil</em> y profesional de establecer tu empresa en USA</h1>
+            <p>Nos encargamos de lo legal, contable y logístico para que tú te enfoques en lo más importante: crecer.</p>
+            <a href="{{ route('register') }}" class="hero-btn">Empezar ahora</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778085038/Disen%CC%83o_sin_ti%CC%81tulo_10_pr2qbo.png"
+                 alt="Sell·U — Establece tu empresa en USA"
+                 loading="eager">
+        </div>
     </div>
 </section>
 
