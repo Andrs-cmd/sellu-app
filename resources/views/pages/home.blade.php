@@ -117,9 +117,9 @@
         .hero-inner { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:48px; max-width:1200px; margin:0 auto; padding:72px 5%; width:100%; }
         .hero-content { max-width:560px; }
         .hero-eyebrow { font-size:12px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:20px; }
-        .hero h1 { font-family:'Montserrat',sans-serif; font-size:42px; font-weight:900; line-height:1.1; color:var(--white); margin-bottom:20px; letter-spacing:-.5px; }
+        .hero h1 { font-family:'Montserrat',sans-serif; font-size:42px; font-weight:900; line-height:1.1; color:rgba(26, 23, 64, 0.7); margin-bottom:20px; letter-spacing:-.5px; }
         .hero h1 em { font-style:normal; color:var(--gold); }
-        .hero p { font-size:16px; color:rgba(255,255,255,.7); line-height:1.7; margin-bottom:36px; max-width:460px; }
+        .hero p { font-size:16px; color:rgba(26, 23, 64, 0.7); line-height:1.7; margin-bottom:36px; max-width:460px; }
         .hero-btn { display:inline-block; background:var(--gold); color:var(--navy); padding:14px 32px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:14px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; transition:background .2s; }
         .hero-btn:hover { background:var(--gold2); }
         .hero-badge { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15); border-radius:20px; padding:6px 14px; font-size:12px; color:rgba(255,255,255,.7); margin-bottom:20px; }
