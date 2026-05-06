@@ -145,14 +145,14 @@
         .btn-navy { display:inline-block; background:var(--navy); color:var(--white); padding:13px 36px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; transition:background .2s; }
         .btn-navy:hover { background:var(--navy2); }
 
-        /* ── MISIÓN ── */
-        .mision { background:var(--gray); padding:72px 5%; }
-        .mision-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr auto; gap:60px; align-items:center; }
-        .mision-tag { font-size:11px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:14px; display:block; }
-        .mision h2 { font-family:'Montserrat',sans-serif; font-size:24px; font-weight:800; color:var(--navy); line-height:1.3; margin-bottom:16px; text-transform:uppercase; }
-        .mision p { font-size:15px; color:var(--muted); line-height:1.75; }
-        .mision-img { width:260px; height:260px; border-radius:16px; overflow:hidden; flex-shrink:0; }
-        .mision-img img { width:100%; height:100%; object-fit:cover; }
+        /* ── PULL QUOTE ── */
+        .pull-quote-section { background:var(--white); padding:64px 5%; }
+        .pull-quote-section .inner { max-width:1100px; margin:0 auto; }
+        .pull-quote-wrap { position:relative; border-radius:20px; overflow:hidden; }
+        .pull-quote-wrap img.pq-bg { width:100%; height:auto; display:block; }
+        .pull-quote { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding:0 0 8% 10%; width:62%; }
+        .pull-quote q { font-family:'Montserrat',sans-serif; font-size:17px; line-height:25px; font-weight:600; font-style:normal; quotes:none; display:block; color:#fff; }
+        .pull-quote-author { margin-top:10px; font-size:12px; color:rgba(255,255,255,0.6); letter-spacing:.04em; }
 
         /* ── STATS ── */
         .stats { background:var(--white); padding:56px 5%; border-top:1px solid var(--gray2); border-bottom:1px solid var(--gray2); }
@@ -264,8 +264,9 @@
             .cta-asesor h2 { font-size:22px; }
             .blog-grid { grid-template-columns:1fr; }
             .footer-top { grid-template-columns:1fr; gap:32px; }
-            .mision-inner { grid-template-columns:1fr; }
-            .mision-img { display:none; }
+            .pull-quote-wrap img.pq-bg { display:none; }
+            .pull-quote { position:static; width:100%; background:var(--navy); border-radius:20px; padding:32px 28px; }
+            .pull-quote q { font-size:16px; line-height:26px; }
             .cliente-logo-img { height:36px; }
         }
 
@@ -363,16 +364,15 @@
     </div>
 </section>
 
-<!-- ── MISIÓN ── -->
-<section class="mision" aria-label="Nuestra misión">
-    <div class="mision-inner">
-        <div>
-            <span class="mision-tag">Nuestra misión</span>
-            <h2>Cada empresa que ayudamos a crecer es una nueva historia de éxito.</h2>
-            <p>En Sell·U no solo ofrecemos servicios: vivimos la emoción de convertir ideas en resultados. Cada estrategia y cada empresa que ayudamos a crecer refleja nuestro compromiso. Porque cuando tú triunfas, nosotros también lo hacemos.</p>
-        </div>
-        <div class="mision-img">
-            <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/asesoria-sell-u1.png?v=1761154374" alt="Asesoría Sell·U">
+<!-- ── PULL QUOTE ── -->
+<section class="pull-quote-section" aria-label="Frase destacada">
+    <div class="inner">
+        <div class="pull-quote-wrap">
+            <img class="pq-bg" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777922190/Sell-U_56_jwlueh.png" alt="">
+            <div class="pull-quote">
+                <q>La mayoría de emprendedores latinos solo descubren lo importante que es una contabilidad limpia cuando ya están en modo pánico.</q>
+                <div class="pull-quote-author">— Equipo contable Sell-U</div>
+            </div>
         </div>
     </div>
 </section>
