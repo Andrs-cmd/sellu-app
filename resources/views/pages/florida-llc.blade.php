@@ -221,7 +221,7 @@
         .faq-trigger[aria-expanded="true"] .faq-icon { background: var(--accent-500); border-color: var(--accent-500); }
         .faq-answer { padding: 0 0 22px; font-size: 15px; line-height: 24px; color: var(--fg-secondary); max-width: 720px; display: none; }
         .faq-answer.open { display: block; }
-        .faq-cta-row { margin-top: 56px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+        .faq-cta-row { margin-bottom: 56px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
         #cta-final { display: none; }
         #cta-final.visible { display: block; }
 
@@ -568,6 +568,13 @@
 {{-- ── FAQ ── --}}
 <section id="faq" class="sx sx-band">
     <div class="container">
+        <div class="faq-cta-row">
+            <a href="#cta-final" class="btn-primary" style="padding:18px 28px;font-size:16px;">Quiero mi LLC ya →</a>
+            <button onclick="mostrarFormulario()" class="btn-outline-white" style="color:var(--ink-900);border-color:var(--ink-300);background:var(--white);padding:18px 28px;font-size:16px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;border-radius:12px;display:inline-flex;align-items:center;gap:8px;">
+                <i data-lucide="phone" style="width:18px;height:18px"></i>
+                Quiero que me llamen
+            </button>
+        </div>
         <div class="faq-wrap">
             <div class="faq-sticky">
                 <div class="sx-eyebrow">Preguntas frecuentes</div>
@@ -611,13 +618,6 @@
                     <div class="faq-answer">Florida es la opción más práctica si tu cliente o equipo está en LATAM: Miami concentra bancos, abogados y CPAs bilingües. Delaware tiene sentido si planeas levantar inversión institucional. Wyoming es la opción más barata si solo necesitas un holding privado.</div>
                 </div>
             </div>
-        </div>
-        <div class="faq-cta-row">
-            <a href="#cta-final" class="btn-primary" style="padding:18px 28px;font-size:16px;">Quiero mi LLC ya →</a>
-            <button onclick="mostrarFormulario()" class="btn-outline-white" style="color:var(--ink-900);border-color:var(--ink-300);background:var(--white);padding:18px 28px;font-size:16px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;border-radius:12px;display:inline-flex;align-items:center;gap:8px;">
-                <i data-lucide="phone" style="width:18px;height:18px"></i>
-                Quiero que me llamen
-            </button>
         </div>
     </div>
 </section>
