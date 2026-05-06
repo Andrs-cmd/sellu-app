@@ -36,16 +36,23 @@
         --t-gray:       #f2f2f2;
     }
 
-    .tt-page * { box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        background: #fff;
+        color: #434966;
+    }
+    a  { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
     .tt-page {
         font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
         color: var(--t-dark);
         background: #fff;
         -webkit-font-smoothing: antialiased;
     }
-    .tt-page a  { color: inherit; text-decoration: none; }
     .tt-page button { font-family: inherit; cursor: pointer; border: none; background: none; }
-    .tt-page img { max-width: 100%; display: block; }
 
     .tt-container {
         max-width: 1200px;
