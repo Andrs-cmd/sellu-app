@@ -642,7 +642,7 @@
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="estado-card-arrow"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
             </a>
-            <article class="estado-card estado-card--shifted">
+            <a href="{{ url('/pages/crear-llc-en-new-mexico') }}" class="estado-card estado-card--shifted" style="text-decoration:none;color:inherit;">
                 <div class="estado-card-code">NM</div>
                 <div class="estado-card-info">
                     <div class="estado-card-name">New Mexico</div>
@@ -650,7 +650,7 @@
                     <div class="estado-card-note">Única LLC sin reporte anual obligatorio. Bajo costo y alta privacidad.</div>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="estado-card-arrow"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            </article>
+            </a>
         </div>
 
     </div>
