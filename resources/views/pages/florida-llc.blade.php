@@ -222,7 +222,7 @@
         .faq-trigger[aria-expanded="true"] .faq-icon { background: var(--accent-500); border-color: var(--accent-500); }
         .faq-answer { padding: 0 0 22px; font-size: 15px; line-height: 24px; color: var(--fg-secondary); max-width: 720px; display: none; }
         .faq-answer.open { display: block; }
-        .faq-cta-row { margin-top: 56px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+        .faq-cta-row { margin-bottom: 56px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
         #cta-final { display: none; }
         #cta-final.visible { display: block; }
 
@@ -620,7 +620,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 </section>
 
