@@ -145,7 +145,7 @@
         .btn-navy:hover { background:var(--navy2); }
 
         /* ── MISIÓN ── */
-        .mision { background:var(--gray); padding:72px 5%; }
+        .mision { background:#EEF1F8 ; padding:72px 5%; }
         .mision-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr auto; gap:60px; align-items:center; }
         .mision-tag { font-size:11px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:14px; display:block; }
         .mision h2 { font-family:'Montserrat',sans-serif; font-size:24px; font-weight:800; color:var(--navy); line-height:1.3; margin-bottom:16px; text-transform:uppercase; }
@@ -166,7 +166,7 @@
         .stat-label { font-size:13px; color:var(--muted); font-weight:500; line-height:1.4; }
 
         /* ── CLIENTES ── */
-        .clientes { background:var(--gray); padding:52px 0; }
+        .clientes { background:#EEF1F8; padding:52px 0; }
         .clientes-header { display:flex; align-items:center; justify-content:center; margin-bottom:36px; }
         .clientes-badge { background:var(--navy); color:var(--white); font-family:'Montserrat',sans-serif; font-size:12px; font-weight:700; padding:6px 18px; border-radius:20px; text-transform:uppercase; letter-spacing:.06em; }
         .clientes-track-wrap { overflow:hidden; width:100%; }
