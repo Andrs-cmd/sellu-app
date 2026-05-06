@@ -343,7 +343,7 @@
             </div>
         </div>
 
-        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
+        <!--<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
             <h3 style="font-size:26px;font-weight:800;color:var(--ink-900);letter-spacing:-0.015em;">Florida vs Delaware vs Wyoming</h3>
             <span style="font-size:13px;color:var(--fg-tertiary);">Datos 2026 · USD</span>
         </div>
@@ -366,7 +366,7 @@
                     <tr><td class="col-key">Ideal para</td><td class="cell-fl">E-commerce, agencias, freelancers LATAM</td><td>Startups con inversión institucional</td><td>Asset holding, máxima privacidad</td></tr>
                 </tbody>
             </table>
-        </div>
+        </div>-->
     </div>
 </section>
 
@@ -450,7 +450,7 @@
     <div class="container">
         <div class="sx-header">
             <div class="sx-eyebrow">Costos reales</div>
-            <h2>Lo que pagarás —de verdad— en el año 1.</h2>
+            <h2>Lo que pagarás por tu LLC el próximo año.</h2>
             <p class="sx-lead">Sin tarifas ocultas. Estos son los costos oficiales y los rangos de mercado para servicios complementarios.</p>
         </div>
         <div class="tbl-wrap">
