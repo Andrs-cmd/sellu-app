@@ -468,7 +468,7 @@
                     <tr><td class="col-key">Annual Report</td><td>Reporte anual obligatorio. Vence el 1 de mayo de cada año.</td><td class="num">$138.75</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">Impuestos y cumplimiento fiscal</td><td>Presentación de impuestos y obligaciones informativas de tu LLC ante el IRS, según el tipo de estructura y actividad.</td><td class="num">Desde $150</td><td><span class="tag tag-mid">Anual</span></td></tr>
                     <tr><td class="col-key">Operating Agreement</td><td>Documento interno que define cómo opera tu LLC. Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
-                    <tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + annual report + EIN.</td><td class="num">$364–600</td><td>—</td></tr>
+                    <!--<tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + annual report + EIN.</td><td class="num">$364–600</td><td>—</td></tr>-->
                 </tbody>
             </table>
         </div>
