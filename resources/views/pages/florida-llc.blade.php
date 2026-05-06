@@ -277,7 +277,7 @@
     <div class="hero-deco"></div>
     <div class="container hero-grid">
         <div>
-            <div class="hero-eyebrow">Estado del Sol · Florida</div>
+            <!--<div class="hero-eyebrow">Estado del Sol · Florida</div>-->
             <h1>Cómo abrir una LLC en <span class="gold">Florida</span> desde el extranjero</h1>
             <p class="hero-sub">Constituye tu empresa en 5–15 días. Sin viajar, sin SSN. Sell·U se encarga de todo.</p>
             <a href="{{ url('/constituir?estado=FL') }}" class="btn-primary">Abrir mi LLC en Florida →</a>
@@ -293,7 +293,7 @@
             </div>
         </div>
         <div class="hero-card">
-            <div class="hero-card-eyebrow">Estado del Sol</div>
+            <!--<div class="hero-card-eyebrow">Estado del Sol</div>-->
             <div class="hero-card-title">¿Por qué Florida para tu LLC?</div>
             <ul class="hero-card-list">
                 <li>
@@ -321,7 +321,7 @@
 <section id="por-que" class="sx sx-white">
     <div class="container">
         <div class="sx-header">
-            <div class="sx-eyebrow">¿Por qué Florida?</div>
+            <!--<div class="sx-eyebrow">¿Por qué Florida?</div>-->
             <h2>¿Por qué Florida?</h2>
             <p class="sx-lead">Florida combina un costo razonable, cero impuesto estatal sobre la renta y la mayor concentración de profesionales bilingües del país. Si tu cliente o tu equipo vive en LATAM, este es el estado más práctico.</p>
         </div>
@@ -374,7 +374,7 @@
 <section id="pasos" class="sx sx-band">
     <div class="container">
         <div class="sx-header">
-            <div class="sx-eyebrow">El proceso</div>
+            <!--<div class="sx-eyebrow">El proceso</div>-->
             <h2>Cómo abrir tu LLC en Florida: paso a paso</h2>
             <p class="sx-lead">Puedes hacer todo el proceso por tu cuenta. Los pasos 2 y 4 son los que más se atascan a los founders extranjeros — ahí Sell·U se encarga por ti.</p>
         </div>
@@ -449,7 +449,7 @@
 <section id="costos" class="sx sx-white">
     <div class="container">
         <div class="sx-header">
-            <div class="sx-eyebrow">Costos reales</div>
+            <!-- <div class="sx-eyebrow">Costos reales</div> -->
             <h2>Lo que pagarás por tu LLC el próximo año.</h2>
             <p class="sx-lead">Sin tarifas ocultas. Estos son los costos oficiales y los rangos de mercado para servicios complementarios.</p>
         </div>
@@ -467,7 +467,7 @@
                     <tr><td class="col-key">Agente registrado</td><td>Servicio anual obligatorio para LLCs sin oficina física en Florida.</td><td class="num">$125</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">Annual Report</td><td>Reporte anual obligatorio. Vence el 1 de mayo de cada año.</td><td class="num">$138.75</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">Impuestos y cumplimiento fiscal</td><td>Presentación de impuestos y obligaciones informativas de tu LLC ante el IRS, según el tipo de estructura y actividad.</td><td class="num">Desde $150</td><td><span class="tag tag-mid">Anual</span></td></tr>
-                    <tr><td class="col-key">Operating Agreement</td><td>Documento interno que define cómo opera tu LLC. Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
+                    <tr><td class="col-key">Sales Tax (Florida)</td><td>Solo aplica si tu LLC vende productos físicos o servicios gravables en Florida. Registro gratuito ante el Dept. of Revenue. Si no vendes en Florida, no aplica.</td><td class="num">$0</td><td><span class="tag tag-mid"><span style="color:yellow">No aplica</span></span></td></tr>
                     <!--<tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + annual report + EIN.</td><td class="num">$364–600</td><td>—</td></tr>-->
                 </tbody>
             </table>
@@ -480,7 +480,7 @@
 <section class="sx sx-band">
     <div class="container">
         <div class="sx-header">
-            <div class="sx-eyebrow">Impuestos</div>
+            <!--<div class="sx-eyebrow">Impuestos</div>-->
             <h2>Por qué Florida es tax-friendly.</h2>
             <p class="sx-lead">Tres números que importan a la hora de decidir el estado. Las LLCs en Florida son por defecto pass-through.</p>
         </div>
@@ -512,7 +512,7 @@
 <section class="sx sx-white">
     <div class="container">
         <div class="sx-header">
-            <div class="sx-eyebrow">Obligaciones anuales</div>
+            <!--<div class="sx-eyebrow">Obligaciones anuales</div>-->
             <h2>Lo que vence cada año (y las multas si lo olvidas).</h2>
             <p class="sx-lead">Constituir la LLC es solo el principio. Estas son las fechas que tienes que tener marcadas.</p>
         </div>
@@ -556,7 +556,7 @@
         </div>
         <div class="banner-renew">
             <div>
-                <div class="banner-eyebrow">Servicio de renovación</div>
+                <!--<div class="banner-eyebrow">Servicio de renovación</div>-->
                 <h3>Olvídate de las fechas. Sell·U las gestiona por ti.</h3>
                 <p>Annual Report, agente registrado, BOI y recordatorios fiscales. Te avisamos 60 días antes de cada vencimiento.</p>
             </div>
@@ -564,9 +564,15 @@
         </div>
     </div>
 </section>
-
+ <div class="faq-cta-row">
+            <a href="#cta-final" class="btn-primary" style="padding:18px 28px;font-size:16px;">Quiero mi LLC ya →</a>
+            <button onclick="mostrarFormulario()" class="btn-outline-white" style="color:var(--ink-900);border-color:var(--ink-300);background:var(--white);padding:18px 28px;font-size:16px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;border-radius:12px;display:inline-flex;align-items:center;gap:8px;">
+                <i data-lucide="phone" style="width:18px;height:18px"></i>
+                Quiero que me llamen
+            </button>
+        </div>
 {{-- ── FAQ ── --}}
-<section id="faq" class="sx sx-band">
+<!--<section id="faq" class="sx sx-band">
     <div class="container">
         <div class="faq-wrap">
             <div class="faq-sticky">
@@ -612,15 +618,9 @@
                 </div>
             </div>
         </div>
-        <div class="faq-cta-row">
-            <a href="#cta-final" class="btn-primary" style="padding:18px 28px;font-size:16px;">Quiero mi LLC ya →</a>
-            <button onclick="mostrarFormulario()" class="btn-outline-white" style="color:var(--ink-900);border-color:var(--ink-300);background:var(--white);padding:18px 28px;font-size:16px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;border-radius:12px;display:inline-flex;align-items:center;gap:8px;">
-                <i data-lucide="phone" style="width:18px;height:18px"></i>
-                Quiero que me llamen
-            </button>
-        </div>
+       
     </div>
-</section>
+</section>-->
 
 {{-- ── CTA FINAL ── --}}
 <section id="cta-final" class="sx sx-navy">
@@ -628,7 +628,7 @@
     <div class="container" style="position:relative;">
         <div class="cta-grid">
             <div class="cta-copy">
-                <div class="hero-eyebrow">Empieza hoy</div>
+                <!--<div class="hero-eyebrow">Empieza hoy</div>-->
                 <h2>Tu LLC en <span>Florida,</span><br>lista en 5–15 días.</h2>
                 <p>Cuéntanos sobre tu negocio. Un especialista te contactará en menos de 24 horas con un plan a tu medida y precios cerrados.</p>
                 <ul class="cta-perks">
