@@ -481,12 +481,12 @@
 
                 {{-- Left --}}
                 <div>
-                    <span class="tt-eyebrow tt-fade-in-up" style="animation-delay:0ms;">TikTok Shop · Social Commerce USA</span>
+                    <!--<span class="tt-eyebrow tt-fade-in-up" style="animation-delay:0ms;">TikTok Shop · Social Commerce USA</span>-->
                     <h1 class="tt-hero-h1 tt-fade-in-up" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:56px;line-height:1.05;letter-spacing:-0.025em;margin-top:18px;margin-bottom:22px;color:var(--t-dark);animation-delay:50ms;">
                         <span style="display:block;">Tu producto</span>
                         <span style="display:block;">en el feed de</span>
-                        <span style="display:block;color:var(--tt-pink);">150 millones</span>
-                        <span style="display:block;color:var(--tt-cyan-deep);text-shadow:0 0 24px rgba(37,244,238,0.15);">de compradores.</span>
+                        <span style="display:block;color:var(--tt-yellow);">150 millones</span>
+                        <span style="display:block;">de compradores.</span>
                     </h1>
                     <p style="font-size:18px;line-height:1.65;color:#555;max-width:500px;margin-bottom:32px;font-weight:400;">
                         TikTok Shop convierte videos en ventas. Abrimos tu cuenta, configuramos tu tienda y dejamos todo listo para que tu producto aparezca en el feed de EE.UU. desde LATAM.
