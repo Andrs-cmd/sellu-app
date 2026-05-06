@@ -467,12 +467,12 @@
                     <tr><td class="col-key">Agente registrado</td><td>Servicio anual obligatorio para LLCs sin oficina física en Florida.</td><td class="num">$125</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">Annual Report</td><td>Reporte anual obligatorio. Vence el 1 de mayo de cada año.</td><td class="num">$138.75</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">Impuestos y cumplimiento fiscal</td><td>Presentación de impuestos y obligaciones informativas de tu LLC ante el IRS, según el tipo de estructura y actividad.</td><td class="num">Desde $150</td><td><span class="tag tag-mid">Anual</span></td></tr>
-                    <tr><td class="col-key">Sales Tax (Florida)</td><td>Solo aplica si tu LLC vende productos físicos o servicios gravables en Florida. Registro gratuito ante el Dept. of Revenue. Si no vendes en Florida, no aplica.</td><td class="num">$0</td><td><span class="tag tag-mid"><span style="color:yellow">No aplica</span></span></td></tr>
+                    <tr><td class="col-key">Sales Tax (Florida)</td><td>Solo aplica si tu LLC vende productos físicos o servicios gravables en Florida. Registro gratuito ante el Dept. of Revenue. Si no vendes en Florida, no aplica.</td><td class="num">$0</td><td><span class="tag tag-mid">No aplica</span></td></tr>
                     <!--<tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + annual report + EIN.</td><td class="num">$364–600</td><td>—</td></tr>-->
                 </tbody>
             </table>
         </div>
-        <p style="font-size:13px;color:var(--fg-tertiary);margin-top:14px;">Sell·U incluye EIN y Operating Agreement en tu paquete de constitución. Solo pagas las renovaciones anuales obligatorias.</p>
+        <!--<p style="font-size:13px;color:var(--fg-tertiary);margin-top:14px;">Sell·U incluye EIN y Operating Agreement en tu paquete de constitución. Solo pagas las renovaciones anuales obligatorias.</p>-->
     </div>
 </section>
 
@@ -564,16 +564,17 @@
         </div>
     </div>
 </section>
- <div class="faq-cta-row">
+
+{{-- ── FAQ ── --}}
+<section id="faq" class="sx sx-band">
+    <div class="container">
+        <div class="faq-cta-row">
             <a href="#cta-final" class="btn-primary" style="padding:18px 28px;font-size:16px;">Quiero mi LLC ya →</a>
             <button onclick="mostrarFormulario()" class="btn-outline-white" style="color:var(--ink-900);border-color:var(--ink-300);background:var(--white);padding:18px 28px;font-size:16px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;border-radius:12px;display:inline-flex;align-items:center;gap:8px;">
                 <i data-lucide="phone" style="width:18px;height:18px"></i>
                 Quiero que me llamen
             </button>
         </div>
-{{-- ── FAQ ── --}}
-<!--<section id="faq" class="sx sx-band">
-    <div class="container">
         <div class="faq-wrap">
             <div class="faq-sticky">
                 <div class="sx-eyebrow">Preguntas frecuentes</div>
@@ -618,9 +619,9 @@
                 </div>
             </div>
         </div>
-       
+        
     </div>
-</section>-->
+</section>
 
 {{-- ── CTA FINAL ── --}}
 <section id="cta-final" class="sx sx-navy">
