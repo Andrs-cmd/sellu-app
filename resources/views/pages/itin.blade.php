@@ -919,7 +919,7 @@
 <!-- ═══════════════════════════════════════════════
      FAQ
 ════════════════════════════════════════════════ -->
-<section class="sx" id="faq">
+<!--<section class="sx" id="faq">
     <div class="container">
         <div style="display:grid; grid-template-columns:1fr 1.6fr; gap:80px; align-items:start;" class="faq-layout grid-2col">
             <div class="faq-sticky" style="position:sticky; top:96px;">
@@ -1001,7 +1001,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- ═══════════════════════════════════════════════
      CTA FINAL
