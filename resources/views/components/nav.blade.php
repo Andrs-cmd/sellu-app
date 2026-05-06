@@ -70,8 +70,8 @@
                 </a>
             </div>
         </div>
-        <div class="nav-dropdown {{ request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') ? 'active' : '' }}">
-            <a href="{{ url('/pages/apertura-marketplace') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') ? 'active' : '' }}">
+        <div class="nav-dropdown {{ request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') || request()->is('pages/faire') || request()->is('pages/sysco') ? 'active' : '' }}">
+            <a href="{{ url('/pages/apertura-marketplace') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') || request()->is('pages/faire') || request()->is('pages/sysco') ? 'active' : '' }}">
                 Vende en Marketplace
                 <svg class="nav-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -88,13 +88,13 @@
                     <svg viewBox="0 0 16 16" fill="none"><path d="M10 2a3 3 0 003 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13 5v1a6 6 0 01-3-1v5a4 4 0 11-4-4h1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     TikTok
                 </a>
-                <a href="{{ url('/pages/apertura-marketplace') }}#faire" class="nav-subitem">
+                <a href="{{ url('/pages/faire') }}" class="nav-subitem {{ request()->is('pages/faire') ? 'active' : '' }}">
                     <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 4V3a3 3 0 016 0v1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
                     Faire
                 </a>
-                <a href="{{ url('/pages/apertura-marketplace') }}#cisco" class="nav-subitem">
+                <a href="{{ url('/pages/sysco') }}" class="nav-subitem {{ request()->is('pages/sysco') ? 'active' : '' }}">
                     <svg viewBox="0 0 16 16" fill="none"><path d="M2 8c0-3.314 2.686-6 6-6s6 2.686 6 6-2.686 6-6 6-6-2.686-6-6z" stroke="currentColor" stroke-width="1.2"/><path d="M8 5v3l2 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    Cisco
+                    Sysco
                 </a>
             </div>
         </div>
@@ -133,7 +133,7 @@
                 <a href="{{ url('/pages/certificado-revendedor') }}" class="mobile-subitem {{ request()->is('pages/certificado-revendedor') ? 'active' : '' }}">Certificado de revendedor</a>
             </div>
         </div>
-        <div class="mobile-accordion {{ request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') ? 'open' : '' }}">
+        <div class="mobile-accordion {{ request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') || request()->is('pages/faire') || request()->is('pages/sysco') ? 'open' : '' }}">
             <button class="mobile-item mobile-accordion-trigger" onclick="toggleAccordion(this)">
                 Vende en Marketplace
                 <svg class="mobile-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -142,8 +142,8 @@
                 <a href="{{ url('/pages/apertura-marketplace') }}" class="mobile-subitem">Amazon</a>
                 <a href="{{ url('/pages/walmart') }}" class="mobile-subitem {{ request()->is('pages/walmart') ? 'active' : '' }}">Walmart</a>
                 <a href="{{ url('/pages/tiktok-shop') }}" class="mobile-subitem {{ request()->is('pages/tiktok-shop') ? 'active' : '' }}">TikTok</a>
-                <a href="{{ url('/pages/apertura-marketplace') }}#faire" class="mobile-subitem">Faire</a>
-                <a href="{{ url('/pages/apertura-marketplace') }}#cisco" class="mobile-subitem">Cisco</a>
+                <a href="{{ url('/pages/faire') }}" class="mobile-subitem {{ request()->is('pages/faire') ? 'active' : '' }}">Faire</a>
+                <a href="{{ url('/pages/sysco') }}" class="mobile-subitem {{ request()->is('pages/sysco') ? 'active' : '' }}">Sysco</a>
             </div>
         </div>
         <div class="mobile-accordion {{ request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'open' : '' }}">
