@@ -615,7 +615,7 @@
 
         {{-- RIGHT: state cards --}}
         <div class="estados-cards">
-            <article class="estado-card estado-card--featured">
+            <a href="{{ url('/pages/crear-llc-en-delaware') }}" class="estado-card estado-card--featured" style="text-decoration:none;color:inherit;">
                 <div class="estado-card-code estado-card-code--gold">DE</div>
                 <div class="estado-card-info">
                     <div class="estado-card-name">Delaware</div>
@@ -623,7 +623,7 @@
                     <div class="estado-card-note">Cortes especializadas, ideal para startups con inversionistas.</div>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="estado-card-arrow"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            </article>
+            </a>
             <article class="estado-card estado-card--shifted">
                 <div class="estado-card-code">WY</div>
                 <div class="estado-card-info">

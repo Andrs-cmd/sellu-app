@@ -37,6 +37,7 @@ Route::prefix('pages')->group(function () {
     Route::get('/tiktok-shop', fn() => view('pages.tiktok-shop'))->name('pages.tiktok-shop');
     Route::get('/faire', fn() => view('pages.faire'))->name('pages.faire');
     Route::get('/sysco', fn() => view('pages.sysco'))->name('pages.sysco');
+    Route::get('/crear-llc-en-delaware', fn() => view('pages.delaware-llc'))->name('pages.delaware-llc');
     Route::post('/canales-de-atencion/contacto', function (Request $request) {
         $validated = $request->validate([
             'nombre'   => 'required|string|max:255',
