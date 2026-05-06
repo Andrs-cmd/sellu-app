@@ -113,19 +113,19 @@
         img { max-width:100%; height:auto; }
 
         /* ── HERO ── */
-        .hero { background:#122050; min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
-        .hero-inner { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:48px; max-width:1200px; margin:0 auto; padding:72px 5%; width:100%; }
+        /* ── HERO ── */
+        .hero { background:url('https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778097926/Sell-U_Latam_-_Banner_No_1_1_r0qjgd.webp') center/cover no-repeat; min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
+        .hero::before { content:''; position:absolute; inset:0; background:rgba(13,27,62,.55); }
+        .hero-inner { position:relative; z-index:1; max-width:1200px; margin:0 auto; padding:80px 5%; width:100%; }
         .hero-content { max-width:560px; }
         .hero-eyebrow { font-size:12px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:20px; }
-        .hero h1 { font-family:'Montserrat',sans-serif; font-size:42px; font-weight:900; line-height:1.1; color:rgb(255, 255, 255); margin-bottom:20px; letter-spacing:-.5px; }
+        .hero h1 { font-family:'Montserrat',sans-serif; font-size:42px; font-weight:900; line-height:1.1; color:var(--white); margin-bottom:20px; letter-spacing:-.5px; }
         .hero h1 em { font-style:normal; color:var(--gold); }
-        .hero p { font-size:16px; color:rgba(255, 255, 255, 0.99); line-height:1.7; margin-bottom:36px; max-width:460px; }
+        .hero p { font-size:16px; color:rgba(255,255,255,.75); line-height:1.7; margin-bottom:36px; max-width:460px; }
         .hero-btn { display:inline-block; background:var(--gold); color:var(--navy); padding:14px 32px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:14px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; transition:background .2s; }
         .hero-btn:hover { background:var(--gold2); }
         .hero-badge { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15); border-radius:20px; padding:6px 14px; font-size:12px; color:rgba(255,255,255,.7); margin-bottom:20px; }
         .hero-badge span { background:var(--gold); color:var(--navy); font-size:10px; font-weight:800; padding:2px 8px; border-radius:10px; }
-        .hero-image { display:flex; align-items:center; justify-content:center; }
-        .hero-image img { width:100%; max-width:520px; height:auto; display:block; object-fit:contain; }
 
         /* ── SERVICIOS ── */
         .servicios { padding:72px 5%; background:var(--white); }
@@ -150,7 +150,7 @@
         .pull-quote-section .inner { max-width:1100px; margin:0 auto; }
         .pull-quote-wrap { position:relative; border-radius:20px; overflow:hidden; }
         .pull-quote-wrap img.pq-bg { width:100%; height:auto; display:block; }
-        .pull-quote { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding:0 0 5% 15%; width:62%; }
+        .pull-quote { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding:0 0 8% 10%; width:62%; }
         .pull-quote q { font-family:'Montserrat',sans-serif; font-size:17px; line-height:25px; font-weight:600; font-style:normal; quotes:none; display:block; color:#fff; }
         .pull-quote-author { margin-top:10px; font-size:12px; color:rgba(255,255,255,0.6); letter-spacing:.04em; }
 
@@ -249,9 +249,7 @@
 
         /* ── RESPONSIVE ── */
         @media(max-width:900px) {
-            .hero-inner { grid-template-columns:1fr; gap:32px; padding:48px 5%; }
-            .hero-image { order:-1; }
-            .hero-image img { max-width:320px; margin:0 auto; }
+            .hero-inner { padding:60px 5%; }
             .hero h1 { font-size:28px; }
             .servicios-grid { grid-template-columns:repeat(2,1fr); }
             .who-grid { grid-template-columns:1fr; }
@@ -302,11 +300,6 @@
             <h1>La forma más <em>fácil</em> y profesional de establecer tu empresa en USA</h1>
             <p>Nos encargamos de lo legal, contable y logístico para que tú te enfoques en lo más importante: crecer.</p>
             <a href="{{ route('register') }}" class="hero-btn">Empezar ahora</a>
-        </div>
-        <div class="hero-image">
-            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778085038/Disen%CC%83o_sin_ti%CC%81tulo_10_pr2qbo.png"
-                 alt="Sell·U — Establece tu empresa en USA"
-                 loading="eager">
         </div>
     </div>
 </section>
@@ -363,7 +356,7 @@
 <section class="pull-quote-section" aria-label="Frase destacada">
     <div class="inner">
         <div class="pull-quote-wrap">
-            <img class="pq-bg" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778090414/Inicio_nqpg9x.png" alt="">
+            <img class="pq-bg" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777922190/Sell-U_56_jwlueh.png" alt="">
             <div class="pull-quote">
                 <q>La mayoría de emprendedores latinos solo descubren lo importante que es una contabilidad limpia cuando ya están en modo pánico.</q>
                 <div class="pull-quote-author">— Equipo contable Sell-U</div>
@@ -450,10 +443,10 @@
     </div>
 </section>
 
-<!-- ── FAQ BANNER ── 
+<!-- ── FAQ BANNER ── -->
 <div style="width:100%; height:130px; overflow:hidden; line-height:0;">
     <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/2151306056_1.png?v=1761170724" alt="" style="width:100%; height:130px; object-fit:cover; object-position:center top; display:block;">
-</div>-->
+</div>
 
 <!-- ── FAQ ── -->
 <section id="faq" class="faq" aria-label="Preguntas frecuentes">
@@ -496,7 +489,7 @@
         <div class="blog-grid">
             <a href="#" class="blog-card" aria-label="Artículo sobre requisitos para abrir empresa en USA">
                 <div class="blog-thumb">
-                    <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778093620/crea_empresa_en_estados_unidos_of3esj.jpg" alt="Crear empresa en Estados Unidos">
+                    <img src="https://sellu.co/cdn/shop/articles/crea_empresa_en_estados_unidos.jpg?v=1738199778&width=900" alt="Crear empresa en Estados Unidos">
                     <span class="blog-date" style="position:relative;z-index:1;">Febrero 18, 2025 · 5 min lectura</span>
                 </div>
                 <div class="blog-body">
@@ -507,7 +500,7 @@
             </a>
             <a href="#" class="blog-card" aria-label="Artículo sobre registro de marca en USA">
                 <div class="blog-thumb">
-                    <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778093620/Registro_de_marca_ihf8x0.jpg" alt="Registro de marca en USA">
+                    <img src="https://sellu.co/cdn/shop/articles/Registro_de_marca_0e55d7a4-c165-45d9-b0a1-ef77ee58c03c.jpg?v=1738477566&width=900" alt="Registro de marca en USA">
                     <span class="blog-date" style="position:relative;z-index:1;">Septiembre 27, 2025 · 5 min lectura</span>
                 </div>
                 <div class="blog-body">
@@ -518,7 +511,7 @@
             </a>
             <a href="#" class="blog-card" aria-label="Artículo sobre registro FDA">
                 <div class="blog-thumb">
-                    <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778093619/FDA_Blog_lrnfkc.jpg" alt="Registro FDA para alimentos">
+                    <img src="https://sellu.co/cdn/shop/articles/FDA_Blog.jpg?v=1738197116&width=900" alt="Registro FDA para alimentos">
                     <span class="blog-date" style="position:relative;z-index:1;">Octubre 13, 2025 · 5 min lectura</span>
                 </div>
                 <div class="blog-body">
