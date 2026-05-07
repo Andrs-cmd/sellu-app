@@ -100,7 +100,7 @@
         /* ── HERO PRECIO ── */
         .hero-precio { background: #EEF1F8; padding: 52px 5%; text-align: center; }
         .hero-alert { display: inline-block; background: var(--gold); color: var(--navy); font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; padding: 6px 20px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 20px; }
-        .hero-precio h1 { font-family: 'Montserrat', sans-serif; font-size: 40px; color: var(--navy); line-height: 1.15; margin-bottom: 16px; }
+        .hero-precio h1 { font-family: 'Montserrat', sans-serif; font-size: 40px; font-weight: 600; color: var(--navy); line-height: 1.15; margin-bottom: 16px; }
         .hero-precio h1 em { font-style: normal; color: var(--gold); }
         .hero-precio-sub { font-size: 15px; color: var(--muted); margin-bottom: 6px; line-height: 1.6; }
         .hero-precio-sub strong { color: var(--gold); }
@@ -117,14 +117,14 @@
 
         /* ── SECTION HELPERS ── */
         .section-tag { font-size: 11px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 10px; display: block; text-align: center; }
-        .section-title { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; color: var(--navy); text-align: center; margin-bottom: 10px; }
+        .section-title { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 600; color: var(--navy); text-align: center; margin-bottom: 10px; }
         .section-sub { font-size: 15px; color: var(--muted); text-align: center; margin-bottom: 48px; line-height: 1.6; }
         .section-title em { font-style: normal; color: var(--gold); }
 
         /* ── TESTIMONIOS ── */
         .testimonios { padding: 64px 5%; background: var(--white); }
         .testimonios-header { text-align: center; margin-bottom: 36px; }
-        .testimonios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 800; color: var(--navy); }
+        .testimonios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 600; color: var(--navy); }
         .carousel-wrap { position: relative; overflow: hidden; }
         .carousel-track { display: flex; gap: 16px; transition: transform .4s ease; }
         .testimonio-card { flex: 0 0 calc(25% - 12px); border-radius: 14px; overflow: hidden; background: var(--navy); position: relative; min-height: 560px; cursor: pointer; }
@@ -170,7 +170,7 @@
         /* ── 4 PASOS ── */
         .pasos { background: var(--gray); padding: 64px 2% 1px; border-top: 1px solid var(--gray2); }
         .pasos-header { text-align: center; margin-bottom: 48px; }
-        .pasos-header h2 { font-family: 'Montserrat', sans-serif; font-size: 34px; font-weight: 800; color: var(--navy); }
+        .pasos-header h2 { font-family: 'Montserrat', sans-serif; font-size: 34px; font-weight: 600; color: var(--navy); }
         .pasos-header h2 em { font-style: normal; color: var(--gold); }
         .pasos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; max-width: 1400px; margin: 0 auto; position: relative; }
         .pasos-line { position: absolute; top: 20px; left: calc(12.5% + 10px); right: calc(12.5% + 10px); height: 2px; background: var(--gray2); z-index: 0; }
@@ -187,7 +187,7 @@
         .precios { padding: 80px 5%; background: var(--gray); }
         .precios-header { text-align: center; margin-bottom: 48px; }
         .precios-tag { display: inline-block; background: var(--gold); color: var(--navy); font-size: 11px; font-weight: 800; padding: 5px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 16px; }
-        .precios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; font-weight: 900; color: var(--navy); margin-bottom: 10px; line-height: 1.2; }
+        .precios-header h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.2; }
         .precios-header p { font-size: 15px; color: var(--muted); margin-bottom: 28px; }
         .estado-select-wrap { display: inline-flex; align-items: center; gap: 10px; background: var(--white); border: 1.5px solid var(--gray2); border-radius: 10px; padding: 10px 18px; }
         .estado-select-wrap label { font-size: 13px; font-weight: 700; color: var(--navy); white-space: nowrap; }
@@ -223,7 +223,7 @@
         .estados-guia-container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.05fr 1fr; gap: 80px; align-items: center; position: relative; }
         .estados-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px; }
         .estados-dot { width: 6px; height: 6px; border-radius: 999px; background: var(--gold); display: inline-block; }
-        .estados-h2 { font-family: 'Montserrat', sans-serif; font-size: clamp(28px, 3.5vw, 44px); line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; color: var(--navy); margin-bottom: 20px; }
+        .estados-h2 { font-family: 'Montserrat', sans-serif; font-size: clamp(28px, 3.5vw, 44px); line-height: 1.15; letter-spacing: -0.02em; font-weight: 600; color: var(--navy); margin-bottom: 20px; }
         .estados-desc { font-size: 17px; line-height: 1.7; color: var(--muted); max-width: 500px; margin-bottom: 36px; }
         .estados-points { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; max-width: 500px; }
         .estados-point { display: flex; gap: 14px; align-items: flex-start; }
@@ -252,7 +252,7 @@
         }
 
         .dudas-cta { background: var(--gray); padding: 48px 5%; text-align: center; }
-        .dudas-cta h3 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+        .dudas-cta h3 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
         .dudas-cta p { font-size: 15px; color: var(--muted); margin-bottom: 24px; }
 
         /* ── SERVICIOS LISTA ── */
@@ -264,14 +264,14 @@
 
         /* ── CTA ASESOR ── */
         .cta-asesor { background: var(--navy2); padding: 60px 5%; text-align: center; }
-        .cta-asesor h2 { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 900; color: var(--white); margin-bottom: 10px; text-transform: uppercase; }
+        .cta-asesor h2 { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 600; color: var(--white); margin-bottom: 10px; text-transform: uppercase; }
         .cta-asesor p { font-size: 15px; color: rgba(255,255,255,.55); margin-bottom: 28px; }
 
         /* ── FAQ ── */
         .faq { padding: 80px 5%; background: var(--white); }
         .faq-inner { max-width: 800px; margin: 0 auto; }
         .faq-header { text-align: center; margin-bottom: 48px; }
-        .faq-header h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 800; color: var(--navy); line-height: 1.25; margin-bottom: 10px; }
+        .faq-header h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 600; color: var(--navy); line-height: 1.25; margin-bottom: 10px; }
         .faq-header p { font-size: 14px; color: var(--muted); line-height: 1.6; }
         .faq-item { border-bottom: 1px solid var(--gray2); }
         .faq-q { width: 100%; padding: 18px 0; text-align: left; background: none; border: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
