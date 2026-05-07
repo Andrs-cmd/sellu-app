@@ -141,7 +141,6 @@ img{max-width:100%;height:auto}
   </div>
   <div class="f-container" style="position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;min-height:560px" class="f-hero-grid">
     <div>
-      <span class="f-eyebrow reveal">Sell·U × Faire · LATAM → EE.UU.</span>
       <h1 class="f-hero-h1 reveal" style="font-family:var(--font-display);font-size:64px;line-height:70px;letter-spacing:-.025em;font-weight:600;margin-top:22px;margin-bottom:26px;color:var(--navy-900)">
         Lleva tus productos a tiendas de EE.UU. a través de Faire.</span>.
       </h1>
@@ -216,7 +215,6 @@ img{max-width:100%;height:auto}
   <div class="f-container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:flex-start" class="f-2col">
       <div class="reveal reveal-left">
-        <span class="f-eyebrow">¿Qué es Faire?</span>
         <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900)">El marketplace B2B que reemplazó las ferias de comercio.</h2>
         <p style="font-size:18px;line-height:30px;color:var(--fg-secondary);margin-bottom:18px">Faire es una plataforma de comercio mayorista B2B que conecta marcas independientes directamente con retailers que buscan inventario único para sus tiendas. Fundada en 2017 con una idea simple: darle a las marcas pequeñas la distribución que antes solo estaba al alcance de las grandes corporaciones.</p>
         <p style="font-size:16px;line-height:26px;color:var(--fg-secondary);margin-bottom:24px">Antes de Faire, una marca de LATAM que quisiera vender en EE.UU. necesitaba asistir a ferias que costaban entre <strong style="color:var(--navy-900)">$5,000 y $20,000 USD</strong>, contratar representantes locales o hacer outreach manual tienda por tienda. Faire digitalizó esa experiencia.</p>
@@ -279,8 +277,7 @@ img{max-width:100%;height:auto}
 <!--<section id="comparacion" class="f-section f-band">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:48px">
-      <span class="f-eyebrow reveal">Faire vs Amazon</span>
-      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900)">Faire no es Amazon: es un canal completamente diferente.</h2>
+      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-bottom:16px;color:var(--navy-900)">Faire no es Amazon: es un canal completamente diferente.</h2>
       <p class="reveal" style="font-size:18px;line-height:28px;color:var(--fg-secondary)">Muchos emprendedores de LATAM conocen Amazon. Pocos conocen Faire. Esa diferencia es exactamente la oportunidad. Vender en Amazon te hace visible en una pantalla. Vender en Faire te pone en la estantería de una boutique en Brooklyn.</p>
     </div>
     <div class="reveal" style="background:var(--white);border:1px solid var(--border-default);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm)">
@@ -315,8 +312,7 @@ img{max-width:100%;height:auto}
 <section id="quien" class="f-section">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:56px">
-      <span class="f-eyebrow reveal">¿Quién debería vender en Faire?</span>
-      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900)">Marcas con identidad propia, producto terminado y capacidad de despacho.</h2>
+      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-bottom:16px;color:var(--navy-900)">Marcas con identidad propia, producto terminado y capacidad de despacho.</h2>
       <p class="reveal" style="font-size:18px;line-height:28px;color:var(--fg-secondary)">Faire prioriza marcas con historia y propósito. Los retailers buscan exactamente eso: algo que no encuentran en distribuidores masivos. Si tu marca tiene un porqué claro detrás del producto, este es tu canal.</p>
     </div>
     <div style="font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-tertiary);margin-bottom:14px">Categorías que funcionan bien</div>
@@ -355,8 +351,7 @@ img{max-width:100%;height:auto}
 <section id="proceso" class="f-section f-band">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:56px">
-      <span class="f-eyebrow reveal">Cómo funciona</span>
-      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-top:16px;color:var(--navy-900)">Cómo funciona el proceso de venta en Faire.</h2>
+      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;color:var(--navy-900)">Cómo funciona el proceso de venta en Faire.</h2>
     </div>
     <div id="proceso-steps" style="position:relative;max-width:880px;margin:0 auto">
       <div style="position:absolute;left:27px;top:24px;bottom:24px;width:2px;background:var(--ink-200);border-radius:2px"><div id="proceso-rail" style="position:absolute;left:0;top:0;right:0;background:var(--navy-900);border-radius:2px;height:0%;transition:height 600ms var(--ease-out)"></div></div>
@@ -384,8 +379,7 @@ img{max-width:100%;height:auto}
 <!--<section id="requisitos" class="f-section">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:48px">
-      <span class="f-eyebrow reveal">Requisitos para LATAM</span>
-      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-top:16px;color:var(--navy-900)">Lo que necesitas para vender en Faire desde tu país.</h2>
+      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;color:var(--navy-900)">Lo que necesitas para vender en Faire desde tu país.</h2>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px" class="f-2col">
       <div class="f-card reveal reveal-left" style="display:flex;flex-direction:column">
@@ -436,8 +430,7 @@ img{max-width:100%;height:auto}
 <section id="precios" class="f-section f-band">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:56px">
-      <span class="f-eyebrow reveal">Costos y comisiones</span>
-      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-top:16px;color:var(--navy-900)">Lo que necesitas saber antes de fijar tus precios.</h2>
+      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;color:var(--navy-900)">Lo que necesitas saber antes de fijar tus precios.</h2>
       <p class="reveal" style="font-size:18px;line-height:28px;color:var(--fg-secondary);margin-top:16px">Faire tiene un modelo de comisiones que debes entender bien antes de entrar. Si lo ignoras, tus márgenes no van a funcionar. La buena noticia: solo pagas cuando vendes.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px" class="f-3col">
@@ -485,8 +478,7 @@ img{max-width:100%;height:auto}
 <!--<section class="f-section">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:48px">
-      <span class="f-eyebrow reveal">Lo que arruina una marca en Faire</span>
-      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-top:16px;color:var(--navy-900)">Los errores que vemos una y otra vez.</h2>
+      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;color:var(--navy-900)">Los errores que vemos una y otra vez.</h2>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px" class="f-2col">
       <div class="f-card reveal" style="display:flex;gap:18px;padding:28px;align-items:flex-start">
@@ -513,8 +505,7 @@ img{max-width:100%;height:auto}
 <section id="sell-u" class="f-section f-band">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:56px">
-      <span class="f-eyebrow reveal">Cómo Sell·U te posiciona</span>
-      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-top:16px;color:var(--navy-900)">No te damos acceso a la plataforma y te dejamos solo.</h2>
+      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;color:var(--navy-900)">No te damos acceso a la plataforma y te dejamos solo.</h2>
       <p class="reveal" style="font-size:18px;line-height:28px;color:var(--fg-secondary);margin-top:16px">Sell·U construye tu presencia en Faire de forma estratégica — desde el perfil hasta la estrategia de precios y el posicionamiento dentro del algoritmo. Todo el proceso es remoto, en español, contigo desde LATAM.</p>
     </div>
     <div id="sellu-steps" style="position:relative;max-width:880px;margin:0 auto">
@@ -532,8 +523,7 @@ img{max-width:100%;height:auto}
 <section class="f-section">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:48px">
-      <span class="f-eyebrow reveal">Beneficios</span>
-      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-top:16px;color:var(--navy-900)">Beneficios de entrar a Faire con Sell·U.</h2>
+      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;color:var(--navy-900)">Beneficios de entrar a Faire con Sell·U.</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px" class="f-3col">
       <div class="f-card reveal"><div style="display:inline-flex;width:48px;height:48px;border-radius:10px;background:var(--accent-100);align-items:center;justify-content:center;margin-bottom:16px"><i data-lucide="compass" style="width:22px;height:22px;color:var(--accent-700)"></i></div><h4 style="font-family:var(--font-display);font-size:20px;font-weight:600;color:var(--navy-900);margin-bottom:10px">Entrada estratégica, no improvisada</h4><p style="font-size:14px;line-height:22px;color:var(--fg-secondary)">Faire tiene más de 100,000 marcas. Entrar sin estrategia es desaparecer en ese mar. Sell·U te posiciona desde el inicio con un perfil que el algoritmo favorece.</p></div>
@@ -549,8 +539,7 @@ img{max-width:100%;height:auto}
 <!--<section class="f-section f-band">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:56px">
-      <span class="f-eyebrow reveal">Requisitos y tiempos estimados</span>
-      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;margin-top:16px;color:var(--navy-900)">De cero a operativo en Faire en 3 a 5 semanas.</h2>
+      <h2 class="reveal" style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-.02em;font-weight:600;color:var(--navy-900)">De cero a operativo en Faire en 3 a 5 semanas.</h2>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:32px;align-items:flex-start" class="f-2col">
       <div class="f-card reveal reveal-left" style="padding:32px">
@@ -595,8 +584,7 @@ img{max-width:100%;height:auto}
   <div class="f-container" style="display:grid;grid-template-columns:1fr 1.6fr;gap:80px;align-items:flex-start" class="faq-grid">
     <div style="position:sticky;top:120px" class="faq-sticky">
       <div class="reveal reveal-left">
-        <span class="f-eyebrow">Preguntas frecuentes</span>
-        <h2 style="font-family:var(--font-display);font-size:40px;line-height:48px;letter-spacing:-.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900)">Lo que importa, sin rodeos.</h2>
+        <h2 style="font-family:var(--font-display);font-size:40px;line-height:48px;letter-spacing:-.02em;font-weight:600;margin-bottom:16px;color:var(--navy-900)">Lo que importa, sin rodeos.</h2>
         <p style="font-size:16px;line-height:24px;color:var(--fg-secondary);margin-bottom:24px">¿No ves tu pregunta? Escríbenos y un especialista te responde en menos de 24 horas.</p>
         <a href="https://wa.me/573116473200?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20Faire" target="_blank" class="f-btn f-btn-secondary">Habla con un especialista</a>
       </div>
@@ -637,8 +625,7 @@ img{max-width:100%;height:auto}
   </div>
   <div class="f-container" style="position:relative;display:grid;grid-template-columns:1.4fr 1fr;gap:80px;align-items:center" class="cta-final-grid">
     <div>
-      <span class="f-eyebrow reveal" style="color:var(--accent-500)">Empieza hoy</span>
-      <h2 class="reveal" style="font-family:var(--font-display);font-size:56px;line-height:64px;letter-spacing:-.02em;font-weight:600;margin-top:16px;color:var(--paper)">Tu marca puede estar en tiendas físicas de EE.UU. <em style="font-style:normal;color:var(--accent-500)">antes de lo que crees</em>.</h2>
+      <h2 class="reveal" style="font-family:var(--font-display);font-size:56px;line-height:64px;letter-spacing:-.02em;font-weight:600;color:var(--paper)">Tu marca puede estar en tiendas físicas de EE.UU. <em style="font-style:normal;color:var(--accent-500)">antes de lo que crees</em>.</h2>
       <p class="reveal" style="font-size:18px;line-height:28px;margin-top:24px;color:rgba(251,250,247,.78);max-width:580px">Faire es el acceso más directo que existe hoy para que una marca de LATAM llegue al retail físico americano. Sin ferias, sin intermediarios, sin necesidad de mudarte. Solo tu producto, tu historia y la red de distribución mayorista más grande del mundo.</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:12px">
