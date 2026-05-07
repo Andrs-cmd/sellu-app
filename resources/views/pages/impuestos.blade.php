@@ -322,8 +322,7 @@
         /* FORM */
         .form-wrap { max-width: 760px; margin: 0 auto; background: var(--white); color: var(--ink-700); border-radius: var(--radius-xl); padding: 48px; box-shadow: var(--shadow-lg); border: 1px solid var(--ink-200); }
         @media (max-width: 640px) { .form-wrap { padding: 28px 20px; } }
-        .form-block { margin-bottom: 36px; }
-        .form-block-title { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--ink-100); }
+        .form-block { margin-bottom: 28px; }
         .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
         .form-row.col-1 { grid-template-columns: 1fr; }
         @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
@@ -347,6 +346,19 @@
         .form-success .check-big { width: 80px; height: 80px; border-radius: 50%; background: var(--yellow); color: var(--navy); display: grid; place-items: center; margin: 0 auto 24px; font-size: 36px; font-weight: 800; }
         .form-success h3 { font-size: 28px; color: var(--navy); margin-bottom: 12px; }
         .form-success p { color: var(--ink-500); font-size: 16px; line-height: 1.6; max-width: 520px; margin: 0 auto; }
+
+        /* WIZARD */
+        .wizard-progress { display: flex; gap: 0; margin-bottom: 36px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--ink-200); }
+        .wiz-tab { flex: 1; padding: 12px 8px; font-size: 11.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; text-align: center; background: var(--light); color: var(--ink-500); border-right: 1px solid var(--ink-200); transition: background .25s, color .25s; }
+        .wiz-tab:last-child { border-right: 0; }
+        .wiz-tab.active { background: var(--navy); color: var(--white); }
+        .wiz-tab.done { background: var(--blue-soft); color: var(--blue); }
+        .wiz-panel { display: none; }
+        .wiz-panel.active { display: block; animation: fadeUp .4s var(--ease); }
+        .wiz-nav { display: flex; gap: 12px; align-items: center; margin-top: 28px; }
+        .wiz-back { background: none; border: 1.5px solid var(--ink-200); color: var(--ink-500); font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 13px; padding: 13px 20px; border-radius: var(--radius-md); cursor: pointer; transition: all .2s; }
+        .wiz-back:hover { border-color: var(--navy); color: var(--navy); }
+        .wiz-next { flex: 1; }
     </style>
 </head>
 <body>
@@ -750,131 +762,148 @@
                 </div>
         <div class="form-wrap reveal" id="formWrap">
             <form id="contactForm" novalidate>
-                <div class="form-block">
-                    <div class="form-block-title">01 · Datos de contacto</div>
-                    <div class="form-row">
-                        <div class="field">
-                            <label>Nombre completo <span class="req">*</span></label>
-                            <input type="text" name="nombre" required>
-                            <span class="err-msg">Por favor ingresa tu nombre.</span>
+
+                {{-- PROGRESS TABS --}}
+                <div class="wizard-progress" role="tablist">
+                    <div class="wiz-tab active" id="wiz-tab-1">01 · Contacto</div>
+                    <div class="wiz-tab"        id="wiz-tab-2">02 · Tu LLC</div>
+                    <div class="wiz-tab"        id="wiz-tab-3">03 · Situación</div>
+                </div>
+
+                {{-- PASO 1: DATOS DE CONTACTO --}}
+                <div class="wiz-panel active" id="wiz-panel-1">
+                    <div class="form-block">
+                        <div class="form-row">
+                            <div class="field">
+                                <label>Nombre completo <span class="req">*</span></label>
+                                <input type="text" name="nombre" required>
+                                <span class="err-msg">Por favor ingresa tu nombre.</span>
+                            </div>
+                            <div class="field">
+                                <label>Correo electrónico <span class="req">*</span></label>
+                                <input type="email" name="email" required>
+                                <span class="err-msg">Ingresa un correo válido.</span>
+                            </div>
                         </div>
-                        <div class="field">
-                            <label>Correo electrónico <span class="req">*</span></label>
-                            <input type="email" name="email" required>
-                            <span class="err-msg">Ingresa un correo válido.</span>
+                        <div class="form-row">
+                            <div class="field">
+                                <label>WhatsApp con código de país <span class="req">*</span></label>
+                                <input type="tel" name="whatsapp" placeholder="+57 300 000 0000" required>
+                                <span class="err-msg">Incluye tu WhatsApp con código de país.</span>
+                            </div>
+                            <div class="field">
+                                <label>País de residencia <span class="req">*</span></label>
+                                <select name="pais" required>
+                                    <option value="">Selecciona…</option>
+                                    <option>Colombia</option><option>México</option><option>Argentina</option>
+                                    <option>Chile</option><option>Perú</option><option>Venezuela</option>
+                                    <option>Ecuador</option><option>España</option><option>Otro</option>
+                                </select>
+                                <span class="err-msg">Selecciona tu país.</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="field">
-                            <label>WhatsApp con código de país <span class="req">*</span></label>
-                            <input type="tel" name="whatsapp" placeholder="+57 300 000 0000" required>
-                            <span class="err-msg">Incluye tu WhatsApp con código de país.</span>
-                        </div>
-                        <div class="field">
-                            <label>País de residencia <span class="req">*</span></label>
-                            <select name="pais" required>
-                                <option value="">Selecciona…</option>
-                                <option>Colombia</option><option>México</option><option>Argentina</option>
-                                <option>Chile</option><option>Perú</option><option>Venezuela</option>
-                                <option>Ecuador</option><option>España</option><option>Otro</option>
-                            </select>
-                            <span class="err-msg">Selecciona tu país.</span>
-                        </div>
+                    <div class="wiz-nav">
+                        <button type="button" class="btn btn-primary wiz-next" data-next="2">Continuar →</button>
                     </div>
                 </div>
-                <div class="form-block">
-                    <div class="form-block-title">02 · Situación de tu LLC</div>
-                    <div class="field" style="margin-bottom:20px">
-                        <label>¿Ya tienes una LLC activa en EE.UU.? <span class="req">*</span></label>
-                        <div class="toggle-group" data-toggle="llc-status" data-required="true">
-                            <button type="button" class="toggle-btn" data-value="si">Sí, ya tengo una LLC</button>
-                            <button type="button" class="toggle-btn" data-value="proceso">En proceso de abrirla</button>
-                            <button type="button" class="toggle-btn" data-value="no">Todavía no</button>
+
+                {{-- PASO 2: TU LLC --}}
+                <div class="wiz-panel" id="wiz-panel-2">
+                    <div class="form-block">
+                        <div class="field" style="margin-bottom:20px">
+                            <label>¿Ya tienes una LLC activa en EE.UU.? <span class="req">*</span></label>
+                            <div class="toggle-group" data-toggle="llc-status" data-required="true">
+                                <button type="button" class="toggle-btn" data-value="si">Sí, ya tengo una LLC</button>
+                                <button type="button" class="toggle-btn" data-value="proceso">En proceso de abrirla</button>
+                                <button type="button" class="toggle-btn" data-value="no">Todavía no</button>
+                            </div>
+                            <input type="hidden" name="llc_status" required>
+                            <span class="err-msg">Selecciona una opción.</span>
                         </div>
-                        <input type="hidden" name="llc_status" required>
-                        <span class="err-msg">Selecciona una opción.</span>
-                    </div>
-                    <div class="field" style="margin-bottom:20px">
-                        <label>¿Cuántos miembros tiene tu LLC?</label>
-                        <div class="toggle-group" data-toggle="llc-members">
-                            <button type="button" class="toggle-btn" data-value="single">Solo yo — Single Member</button>
-                            <button type="button" class="toggle-btn" data-value="multi">Dos o más socios — Multi-Member</button>
+                        <div class="field" style="margin-bottom:20px">
+                            <label>¿Cuántos miembros tiene tu LLC?</label>
+                            <div class="toggle-group" data-toggle="llc-members">
+                                <button type="button" class="toggle-btn" data-value="single">Solo yo — Single Member</button>
+                                <button type="button" class="toggle-btn" data-value="multi">Dos o más socios — Multi-Member</button>
+                            </div>
+                            <input type="hidden" name="llc_members">
                         </div>
-                        <input type="hidden" name="llc_members">
-                    </div>
-                    <div class="field">
-                        <label>¿En qué estado está registrada tu LLC?</label>
-                        <select name="llc_estado">
-                            <option value="">Selecciona…</option>
-                            <option>Wyoming</option><option>Delaware</option><option>Florida</option>
-                            <option>New Mexico</option><option>Texas</option><option>California</option>
-                            <option>Otro</option><option>No sé</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-block">
-                    <div class="form-block-title">03 · Modelo de negocio</div>
-                    <div class="field" style="margin-bottom:20px">
-                        <label>¿Cuál es el modelo principal de tu negocio? <span class="req">*</span></label>
-                        <select name="modelo" required>
-                            <option value="">Selecciona…</option>
-                            <option>Servicios digitales (agencia, consultoría, marketing, diseño)</option>
-                            <option>Desarrollo de software / SaaS / Apps</option>
-                            <option>Educación online / cursos / coaching</option>
-                            <option>E-commerce de productos físicos (sin Amazon)</option>
-                            <option>Venta en Amazon FBA / Marketplace</option>
-                            <option>Importación / Exportación</option>
-                            <option>Contenido digital / Creador de contenido</option>
-                            <option>Inversiones o bienes raíces</option>
-                            <option>Otro</option>
-                        </select>
-                        <span class="err-msg">Selecciona el modelo de tu negocio.</span>
-                    </div>
-                    <div class="field">
-                        <label>¿Tu negocio opera con presencia física en EE.UU.? <span class="req">*</span></label>
-                        <div class="toggle-group" data-toggle="presencia" data-required="true">
-                            <button type="button" class="toggle-btn" data-value="no">No — completamente remoto</button>
-                            <button type="button" class="toggle-btn" data-value="si">Sí, tengo presencia en EE.UU.</button>
-                            <button type="button" class="toggle-btn" data-value="duda">No estoy seguro/a</button>
-                        </div>
-                        <input type="hidden" name="presencia" required>
-                        <span class="err-msg">Selecciona una opción.</span>
-                    </div>
-                </div>
-                <div class="form-block">
-                    <div class="form-block-title">04 · Situación fiscal</div>
-                    <div class="form-row col-1">
-                        <div class="field">
-                            <label>¿Cuál es la situación fiscal actual de tu LLC? <span class="req">*</span></label>
-                            <select name="fiscal" required>
-                                <option value="">Selecciona…</option>
-                                <option>Nunca hemos declarado (LLC nueva o en incumplimiento)</option>
-                                <option>Ya declaramos pero queremos cambiar de asesor</option>
-                                <option>Queremos declarar por primera vez este año</option>
-                                <option>Queremos verificar si estamos pagando lo correcto</option>
-                                <option>Tenemos una notificación o problema con el IRS</option>
-                            </select>
-                            <span class="err-msg">Selecciona tu situación fiscal.</span>
+                        <div class="form-row">
+                            <div class="field">
+                                <label>Estado de registro</label>
+                                <select name="llc_estado">
+                                    <option value="">Selecciona…</option>
+                                    <option>Wyoming</option><option>Delaware</option><option>Florida</option>
+                                    <option>New Mexico</option><option>Texas</option><option>California</option>
+                                    <option>Otro</option><option>No sé</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label>Modelo de negocio <span class="req">*</span></label>
+                                <select name="modelo" required>
+                                    <option value="">Selecciona…</option>
+                                    <option>Servicios digitales (agencia, consultoría, marketing, diseño)</option>
+                                    <option>Desarrollo de software / SaaS / Apps</option>
+                                    <option>Educación online / cursos / coaching</option>
+                                    <option>E-commerce de productos físicos (sin Amazon)</option>
+                                    <option>Venta en Amazon FBA / Marketplace</option>
+                                    <option>Importación / Exportación</option>
+                                    <option>Contenido digital / Creador de contenido</option>
+                                    <option>Inversiones o bienes raíces</option>
+                                    <option>Otro</option>
+                                </select>
+                                <span class="err-msg">Selecciona el modelo de tu negocio.</span>
+                            </div>
                         </div>
                         <div class="field">
-                            <label>¿Cuál es el ingreso anual estimado de tu LLC? <span style="color:var(--ink-400);font-weight:400">(opcional)</span></label>
-                            <select name="ingreso">
-                                <option value="">Selecciona…</option>
-                                <option>Prefiero no decirlo</option>
-                                <option>Aún no tenemos ingresos</option>
-                                <option>Menos de $30,000 USD</option>
-                                <option>Entre $30,000 y $100,000 USD</option>
-                                <option>Entre $100,000 y $300,000 USD</option>
-                                <option>Más de $300,000 USD</option>
-                            </select>
+                            <label>¿Presencia física en EE.UU.? <span class="req">*</span></label>
+                            <div class="toggle-group" data-toggle="presencia" data-required="true">
+                                <button type="button" class="toggle-btn" data-value="no">No — completamente remoto</button>
+                                <button type="button" class="toggle-btn" data-value="si">Sí, tengo presencia en EE.UU.</button>
+                                <button type="button" class="toggle-btn" data-value="duda">No estoy seguro/a</button>
+                            </div>
+                            <input type="hidden" name="presencia" required>
+                            <span class="err-msg">Selecciona una opción.</span>
                         </div>
                     </div>
+                    <div class="wiz-nav">
+                        <button type="button" class="wiz-back" data-back="1">← Atrás</button>
+                        <button type="button" class="btn btn-primary wiz-next" data-next="3">Continuar →</button>
+                    </div>
                 </div>
-                <div class="form-block">
-                    <div class="form-block-title">05 · Contexto</div>
-                    <div class="form-row col-1">
-                        <div class="field">
-                            <label>¿Qué es lo que más te preocupa sobre los impuestos de tu LLC?</label>
+
+                {{-- PASO 3: SITUACIÓN FISCAL --}}
+                <div class="wiz-panel" id="wiz-panel-3">
+                    <div class="form-block">
+                        <div class="form-row">
+                            <div class="field">
+                                <label>Situación fiscal actual <span class="req">*</span></label>
+                                <select name="fiscal" required>
+                                    <option value="">Selecciona…</option>
+                                    <option>Nunca hemos declarado (LLC nueva o en incumplimiento)</option>
+                                    <option>Ya declaramos pero queremos cambiar de asesor</option>
+                                    <option>Queremos declarar por primera vez este año</option>
+                                    <option>Queremos verificar si estamos pagando lo correcto</option>
+                                    <option>Tenemos una notificación o problema con el IRS</option>
+                                </select>
+                                <span class="err-msg">Selecciona tu situación fiscal.</span>
+                            </div>
+                            <div class="field">
+                                <label>Ingreso anual estimado <span style="color:var(--ink-400);font-weight:400">(opcional)</span></label>
+                                <select name="ingreso">
+                                    <option value="">Selecciona…</option>
+                                    <option>Prefiero no decirlo</option>
+                                    <option>Aún no tenemos ingresos</option>
+                                    <option>Menos de $30,000 USD</option>
+                                    <option>Entre $30,000 y $100,000 USD</option>
+                                    <option>Entre $100,000 y $300,000 USD</option>
+                                    <option>Más de $300,000 USD</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field" style="margin-bottom:16px">
+                            <label>¿Qué es lo que más te preocupa?</label>
                             <textarea name="preocupa" placeholder="Cuéntanos brevemente tu situación o duda principal. Esto nos ayuda a preparar mejor la llamada."></textarea>
                         </div>
                         <div class="field">
@@ -886,10 +915,12 @@
                             </select>
                         </div>
                     </div>
+                    <div class="wiz-nav">
+                        <button type="button" class="wiz-back" data-back="2">← Atrás</button>
+                        <button type="submit" class="btn btn-primary btn-lg wiz-next">Quiero que me llamen →</button>
+                    </div>
                 </div>
-                <div class="submit-row">
-                    <button type="submit" class="btn btn-primary btn-lg">Quiero que me llamen →</button>
-                </div>
+
             </form>
             <div class="form-success" id="formSuccess">
                 <div class="check-big">✓</div>
@@ -1030,13 +1061,14 @@ document.querySelectorAll('a[href="#contacto"]').forEach(link => {
     link.addEventListener('click', () => { if (!formWrap.classList.contains('open')) setTimeout(openContactForm, 50); });
 });
 
-// Form validation & submit
-const form = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-form.addEventListener('submit', e => {
-    e.preventDefault();
+// Wizard navigation
+let currentStep = 1;
+const TOTAL_STEPS = 3;
+
+function validatePanel(stepNum) {
+    const panel = document.getElementById('wiz-panel-' + stepNum);
     let valid = true;
-    form.querySelectorAll('[required]').forEach(el => {
+    panel.querySelectorAll('[required]').forEach(el => {
         const field = el.closest('.field');
         if (!field) return;
         const val = (el.value || '').trim();
@@ -1045,7 +1077,40 @@ form.addEventListener('submit', e => {
         if (!ok) { field.classList.add('error'); valid = false; }
         else field.classList.remove('error');
     });
-    if (!valid) { const firstErr = form.querySelector('.field.error'); if (firstErr) firstErr.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+    if (!valid) {
+        const firstErr = panel.querySelector('.field.error');
+        if (firstErr) firstErr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    return valid;
+}
+
+function goToStep(n) {
+    document.getElementById('wiz-panel-' + currentStep).classList.remove('active');
+    document.getElementById('wiz-tab-' + currentStep).classList.remove('active');
+    if (n > currentStep) document.getElementById('wiz-tab-' + currentStep).classList.add('done');
+    else document.getElementById('wiz-tab-' + currentStep).classList.remove('done');
+    currentStep = n;
+    document.getElementById('wiz-panel-' + currentStep).classList.add('active');
+    document.getElementById('wiz-tab-' + currentStep).classList.add('active');
+    formWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.querySelectorAll('.wiz-next[data-next]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const next = parseInt(btn.dataset.next);
+        if (validatePanel(currentStep)) goToStep(next);
+    });
+});
+document.querySelectorAll('.wiz-back[data-back]').forEach(btn => {
+    btn.addEventListener('click', () => goToStep(parseInt(btn.dataset.back)));
+});
+
+// Form submit (step 3)
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    if (!validatePanel(3)) return;
     form.style.display = 'none';
     formSuccess.classList.add('visible');
     formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
