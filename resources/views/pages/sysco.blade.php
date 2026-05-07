@@ -358,7 +358,7 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 <!-- ═══════════════ CONTRAST SECTION ═══════════════ -->
 <section class="contrast-section">
   <div class="container">
-    <div style="text-align:center;max-width:720px;margin:0 auto 56px" class="reveal">
+    <div style="text-align:center;max-width:1000px;margin:0 auto 56px" class="reveal">
       <!-- <span class="eyebrow" style="color:var(--yellow)">Por qué Sysco es diferente</span> -->
       <h2 class="h2" style="color:#fff;margin:16px 0 20px">
         No vendes a consumidores.<br>
