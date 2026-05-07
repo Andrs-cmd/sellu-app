@@ -559,7 +559,7 @@
 ════════════════════════════════════════════════ -->
 <section class="sx sx-band" id="comparativa">
     <div class="container">
-        <div style="max-width:720px; margin-bottom:44px;">
+        <div style="max-width:490px; margin-bottom:44px;">
             <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;">
                 ITIN vs SSN vs EIN: ¿cuál necesitas tú?
             </h2>
@@ -635,10 +635,10 @@
     <div class="container">
         <div style="max-width:720px; margin-bottom:44px;">
             <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;">
-                ¿Quién necesita un ITIN Number?
+                ¿Quién NO necesita un ITIN Number?
             </h2>
             <p style="font-size:17px; line-height:28px; color:#6b6f7a;">
-                No todos los extranjeros necesitan un ITIN, pero si estás en alguno de estos casos, casi seguro lo necesitas.
+                No todos los extranjeros necesitan un ITIN. Si estás en alguno de estos casos, probablemente puedes operar sin uno.
             </p>
         </div>
 
@@ -647,22 +647,22 @@
                 <div class="who-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                 </div>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Dueños de LLC constituidas en EE.UU.</h3>
-                <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Si eres el miembro de una LLC de un solo dueño y eres no residente, el IRS te va a requerir un ITIN para presentar tus obligaciones fiscales personales asociadas a esa empresa.</p>
+                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Personas con SSN (Social Security Number)</h3>
+                <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Si ya tienes un número de seguro social emitido por EE.UU., no necesitas un ITIN. El SSN cumple la misma función de identificación ante el IRS.</p>
             </div>
             <div class="who-card">
                 <div class="who-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
                 </div>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Freelancers y prestadores de servicios</h3>
-                <p style="font-size:15px; line-height:24px; color:#6b6f7a;">¿Tienes clientes en EE.UU. que te piden un formulario W-8BEN o que necesitan reportar los pagos que te hacen? El ITIN es lo que necesitas para completar ese proceso correctamente.</p>
+                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">LLCs con múltiples miembros o con EIN</h3>
+                <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Si tu empresa ya cuenta con un EIN (Employer Identification Number) y no tienes obligaciones fiscales personales en EE.UU., generalmente no se requiere un ITIN.</p>
             </div>
             <div class="who-card">
                 <div class="who-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
                 </div>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Sellers en Amazon, Etsy o Shopify</h3>
-                <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Las plataformas de venta en EE.UU. están sujetas a regulaciones del IRS. Si vendes en marketplaces americanos y superas ciertos umbrales, el ITIN es el camino para no residentes.</p>
+                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Quienes no tienen actividad ni ingresos en EE.UU.</h3>
+                <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Si no vendes, no prestas servicios ni recibes pagos de fuentes estadounidenses, el IRS no te exige un ITIN porque no hay obligación fiscal que reportar.</p>
             </div>
         </div>
     </div>
@@ -777,17 +777,17 @@
             <div class="step-node">
                 <div class="step-bubble first">01</div>
                 <h4 style="font-size:17px; line-height:24px; font-weight:700; color:#fff;">Evaluamos tu caso</h4>
-                <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Te explicamos si efectivamente necesitas un ITIN, qué tipo de tramitación aplica y qué documentos vamos a necesitar. Sin sorpresas.</p>
+                <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Te explicamos si necesitas un ITIN, qué tipo de tramitación aplica y qué documentos vamos a requerir: pasaporte, visa (si aplica) y los formularios W-7 y 2848. Sin sorpresas.</p>
             </div>
             <div class="step-node">
                 <div class="step-bubble rest">02</div>
                 <h4 style="font-size:17px; line-height:24px; font-weight:700; color:#fff;">Recopilamos tus documentos</h4>
-                <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Te decimos exactamente qué necesitas, cómo debe estar apostillado o certificado, y lo revisamos antes de enviarlo. Cero errores por documentación incompleta.</p>
+                <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Te indicamos cómo escanear tu pasaporte correctamente: formato PDF, escáner plano a 300 dpi mínimo, sin reflejos ni sombras, con las cuatro esquinas visibles. Cero errores por documentación incompleta.</p>
             </div>
             <div class="step-node">
                 <div class="step-bubble rest">03</div>
                 <h4 style="font-size:17px; line-height:24px; font-weight:700; color:#fff;">Preparamos y enviamos tu W-7</h4>
-                <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Llenamos el formulario correctamente, lo cruzamos con tus documentos y lo enviamos al IRS bajo el protocolo correcto.</p>
+                <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Te enviamos el W-7 prellenado para que lo imprimas, firmes en el espacio indicado y nos lo reenvíes escaneado. También gestionamos el formulario 2848 que nos autoriza a actuar ante el IRS en tu nombre.</p>
             </div>
             <div class="step-node">
                 <div class="step-bubble rest">04</div>
