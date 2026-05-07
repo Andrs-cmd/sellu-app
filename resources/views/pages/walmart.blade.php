@@ -51,7 +51,7 @@
     @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
     <style>
@@ -61,7 +61,7 @@
         --w-dark:   #434966;
         --w-blue:   #072ac8;
         --w-yellow: #f6bb33;
-        --w-gray:   #f2f2f2;
+        --w-gray:   #eef1f8;
         --w-paper:  #fbfaf7;
         --w-white:  #ffffff;
         --w-ink-2:  #5b607d;
@@ -76,11 +76,11 @@
 
     html, body {
         background: var(--w-white); color: var(--w-dark);
-        font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+        font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
         font-size: 16px; line-height: 1.5;
         -webkit-font-smoothing: antialiased;
     }
-    h1,h2,h3,h4 { font-family: 'Poppins', sans-serif; margin: 0; }
+    h1,h2,h3,h4 { font-family: 'Montserrat', sans-serif; font-weight: 600 !important; margin: 0; }
     p { margin: 0; }
     a { color: inherit; text-decoration: none; }
     ::selection { background: rgba(246,187,51,.3); color: var(--w-dark); }
@@ -90,7 +90,7 @@
     /* Buttons */
     .w-btn {
         display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-        font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 15px; line-height: 1;
+        font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; line-height: 1;
         padding: 14px 26px; border-radius: 12px; border: 1.5px solid transparent;
         cursor: pointer; text-decoration: none;
         transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease, color .18s ease;
@@ -120,7 +120,7 @@
     .w-eyebrow-yellow { color: var(--w-yellow); }
 
     /* Hero */
-    .w-hero-h1 { font-weight: 800; font-size: 60px; line-height: 1.08; letter-spacing: -.025em; color: var(--w-dark); margin: 16px 0 24px; }
+    .w-hero-h1 { font-weight: 600; font-size: 60px; line-height: 1.08; letter-spacing: -.025em; color: var(--w-dark); margin: 16px 0 24px; }
     .w-hero-sub { font-size: 18px; line-height: 1.65; color: var(--w-ink-3); max-width: 500px; margin: 0 0 32px; font-weight: 400; }
     .w-blue  { color: var(--w-blue); }
     .w-yellow-hl {
@@ -129,7 +129,7 @@
     }
 
     /* H2 */
-    .w-h2 { font-weight: 800; font-size: 44px; line-height: 1.15; letter-spacing: -.022em; color: var(--w-dark); margin: 0; }
+    .w-h2 { font-weight: 600; font-size: 44px; line-height: 1.15; letter-spacing: -.022em; color: var(--w-dark); margin: 0; }
     .w-section-dark .w-h2, .w-section-blue .w-h2 { color: #fff; }
     .w-section-intro { font-size: 17px; line-height: 1.65; color: var(--w-ink-3); max-width: 620px; margin: 16px auto 0; text-align: center; }
 
@@ -156,15 +156,15 @@
     /* Stat cards */
     .w-stat-card { background: var(--w-gray); border-radius: 18px; padding: 32px 28px; display: flex; flex-direction: column; gap: 6px; transition: transform .2s ease, background .2s ease; }
     .w-stat-card:hover { background: #ebebee; transform: translateY(-2px); }
-    .w-stat-num { font-weight: 800; font-size: 48px; line-height: 1; letter-spacing: -.03em; color: var(--w-blue); }
-    .w-stat-label { font-weight: 700; font-size: 15px; color: var(--w-dark); margin-top: 4px; }
+    .w-stat-num { font-weight: 600; font-size: 48px; line-height: 1; letter-spacing: -.03em; color: var(--w-blue); }
+    .w-stat-label { font-weight: 600; font-size: 15px; color: var(--w-dark); margin-top: 4px; }
     .w-stat-desc { font-size: 13px; line-height: 1.55; color: var(--w-ink-3); margin-top: 6px; }
 
     /* Service cards */
     .w-svc-card { background: var(--w-white); border: 1.5px solid var(--w-line); border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
     .w-svc-card:hover { transform: translateY(-4px); box-shadow: var(--w-shadow-card-hv); border-color: var(--w-blue); }
     .w-svc-icon { width: 44px; height: 44px; border-radius: 12px; background: #eef2ff; color: var(--w-blue); display: inline-flex; align-items: center; justify-content: center; }
-    .w-svc-title { font-weight: 700; font-size: 17px; color: var(--w-dark); letter-spacing: -.01em; }
+    .w-svc-title { font-weight: 600; font-size: 17px; color: var(--w-dark); letter-spacing: -.01em; }
     .w-svc-desc { font-size: 14px; line-height: 1.6; color: var(--w-ink-3); }
     .w-svc-bullets { list-style: none; padding: 0; margin: 4px 0 0; display: flex; flex-direction: column; gap: 8px; }
     .w-svc-bullets li { font-size: 13.5px; line-height: 1.5; color: #555; display: flex; gap: 10px; align-items: flex-start; }
@@ -182,7 +182,7 @@
     .w-step-num { width: 60px; height: 60px; border-radius: 50%; background: var(--w-blue); color: #fff; font-weight: 800; font-size: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 16px -4px rgba(7,42,200,.4); }
     .w-step-line { flex: 1; width: 2px; background: linear-gradient(180deg, var(--w-blue) 0%, rgba(7,42,200,.15) 100%); margin-top: 8px; margin-bottom: -32px; min-height: 60px; }
     .w-step-frac { font-size: 11px; font-weight: 600; letter-spacing: .1em; color: var(--w-ink-4); }
-    .w-step-title { font-weight: 700; font-size: 22px; color: var(--w-dark); margin: 4px 0 8px; letter-spacing: -.015em; }
+    .w-step-title { font-weight: 600; font-size: 22px; color: var(--w-dark); margin: 4px 0 8px; letter-spacing: -.015em; }
     .w-step-desc { font-size: 15px; line-height: 1.65; color: var(--w-ink-3); max-width: 560px; }
 
     /* Pricing */
@@ -235,7 +235,7 @@
 
     <div class="w-container" style="display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center;position:relative;">
         <div>
-            <span class="w-eyebrow">Walmart Marketplace</span>
+            <!--<span class="w-eyebrow">Walmart Marketplace</span>-->
             <h1 class="w-hero-h1">
                 Vender en <span class="w-blue">Walmart</span><br>
                 desde LATAM,<br>
@@ -360,27 +360,31 @@
 </section>
 
 <!-- LOGO STRIP / CLIENTES -->
+<style>
+.cliente-logo-img { height: 130px; width: 130px; object-fit: contain; filter: grayscale(100%); opacity: .7; transition: filter .2s ease, opacity .2s ease; }
+.cliente-logo-img:hover { filter: grayscale(0%); opacity: 1; }
+</style>
 <section style="background:#f9f9f9;padding:32px 0;border-top:1px solid var(--w-line);border-bottom:1px solid var(--w-line);">
-    <div style="text-align:center;font-size:12px;color:var(--w-ink-4);font-weight:600;letter-spacing:.06em;margin-bottom:20px;">↑ Algunos de nuestros clientes</div>
+    <div style="text-align:center;font-size:12px;color:var(--w-ink-4);font-weight:600;letter-spacing:.06em;margin-bottom:20px;">Algunos de nuestros clientes</div>
     <div class="w-marquee" style="overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);">
         <div class="w-marquee-track">
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Marathon</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Differenza</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Sense</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Haiko Natural</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Buddy Beauty</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Nutrelle</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Yax Socks</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>D Casa</span>
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/2_uxodya.png" alt="Cliente 2">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/3_xvpwlc.png" alt="Cliente 3">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/4_jlqkzp.png" alt="Cliente 4">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/5_eqmvhs.png" alt="Cliente 5">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/6_fkbpnd.png" alt="Cliente 6">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/7_qcutxe.png" alt="Cliente 7">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/8_y7etnz.png" alt="Cliente 8">
             <!-- duplicado para loop continuo -->
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Marathon</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Differenza</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Sense</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Haiko Natural</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Buddy Beauty</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Nutrelle</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>Yax Socks</span>
-            <span class="w-client-pill"><span style="width:6px;height:6px;border-radius:3px;background:var(--w-yellow);"></span>D Casa</span>
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/2_uxodya.png" alt="Cliente 2">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/3_xvpwlc.png" alt="Cliente 3">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/4_jlqkzp.png" alt="Cliente 4">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/5_eqmvhs.png" alt="Cliente 5">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/6_fkbpnd.png" alt="Cliente 6">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/7_qcutxe.png" alt="Cliente 7">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/8_y7etnz.png" alt="Cliente 8">
         </div>
     </div>
 </section>
@@ -389,8 +393,7 @@
 <section class="w-section" style="background:#fff;">
     <div class="w-container">
         <div style="text-align:center;max-width:720px;margin:0 auto 56px;">
-            <span class="w-eyebrow">¿Por qué Walmart?</span>
-            <h2 class="w-h2" style="margin-top:14px;">Walmart: el marketplace donde<br>tu producto <span class="w-blue">todavía puede destacar</span>.</h2>
+            <h2 class="w-h2">Walmart: el marketplace donde<br>tu producto <span class="w-blue">todavía puede destacar</span>.</h2>
         </div>
         <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
             <div class="w-stat-card">
@@ -421,8 +424,7 @@
 <section class="w-section" style="background:#fff;padding-top:0;">
     <div class="w-container">
         <div style="text-align:center;max-width:760px;margin:0 auto 56px;">
-            <span class="w-eyebrow">Servicios incluidos</span>
-            <h2 class="w-h2" style="margin-top:14px;">Todo lo que necesitas para vender en Walmart, <span class="w-blue">en un solo equipo</span>.</h2>
+            <h2 class="w-h2">Todo lo que necesitas para vender en Walmart, <span class="w-blue">en un solo equipo</span>.</h2>
         </div>
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
             <article class="w-svc-card">
@@ -494,8 +496,7 @@
     <div aria-hidden="true" style="position:absolute;right:-180px;top:-120px;width:480px;height:480px;border-radius:50%;background:var(--w-yellow);opacity:.06;filter:blur(20px);"></div>
     <div class="w-container" style="position:relative;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
         <div>
-            <span class="w-eyebrow w-eyebrow-yellow">Por qué Walmart es diferente</span>
-            <h2 class="w-h2" style="margin-top:14px;color:#fff;">
+            <h2 class="w-h2" style="color:#fff;">
                 Ser aprobado por Walmart<br>
                 no es un filtro.<br>
                 <span style="color:var(--w-yellow);">Es tu credencial.</span>
@@ -526,166 +527,11 @@
     </div>
 </section>
 
-<!-- PROCESS -->
-<section class="w-section w-section-gray">
-    <div class="w-container">
-        <div style="text-align:center;max-width:800px;margin:0 auto 64px;">
-            <span class="w-eyebrow">Proceso</span>
-            <h2 class="w-h2" style="margin-top:14px;">3 semanas, 5 pasos,<br>tu cuenta Walmart <span class="w-blue">aprobada y lista</span> para vender.</h2>
-        </div>
-        <div style="max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:32px;">
-            <div class="w-step">
-                <div class="w-step-num-wrap">
-                    <div class="w-step-num">01</div>
-                    <div class="w-step-line"></div>
-                </div>
-                <div style="padding-top:6px;">
-                    <div class="w-step-frac">PASO 01 / 05</div>
-                    <h3 class="w-step-title">Diagnóstico de elegibilidad</h3>
-                    <p class="w-step-desc">Evaluamos tu LLC, producto, categoría y perfil para confirmar que cumples los criterios de aplicación de Walmart Marketplace antes de presentar.</p>
-                </div>
-            </div>
-            <div class="w-step">
-                <div class="w-step-num-wrap">
-                    <div class="w-step-num">02</div>
-                    <div class="w-step-line"></div>
-                </div>
-                <div style="padding-top:6px;">
-                    <div class="w-step-frac">PASO 02 / 05</div>
-                    <h3 class="w-step-title">Preparación de la aplicación</h3>
-                    <p class="w-step-desc">Construimos tu perfil de aplicación completo: empresa, productos, historial, fulfillment y estrategia de precio competitivo.</p>
-                </div>
-            </div>
-            <div class="w-step">
-                <div class="w-step-num-wrap">
-                    <div class="w-step-num">03</div>
-                    <div class="w-step-line"></div>
-                </div>
-                <div style="padding-top:6px;">
-                    <div class="w-step-frac">PASO 03 / 05</div>
-                    <h3 class="w-step-title">Envío y seguimiento de aprobación</h3>
-                    <p class="w-step-desc">Presentamos la aplicación y gestionamos el seguimiento con el equipo de onboarding de Walmart durante el período de revisión (2–4 semanas).</p>
-                </div>
-            </div>
-            <div class="w-step">
-                <div class="w-step-num-wrap">
-                    <div class="w-step-num">04</div>
-                    <div class="w-step-line"></div>
-                </div>
-                <div style="padding-top:6px;">
-                    <div class="w-step-frac">PASO 04 / 05</div>
-                    <h3 class="w-step-title">Configuración y carga de catálogo</h3>
-                    <p class="w-step-desc">Con la cuenta aprobada, configuramos Seller Center, cargamos listings optimizados y activamos WFS para logística delegada.</p>
-                </div>
-            </div>
-            <div class="w-step">
-                <div class="w-step-num-wrap">
-                    <div class="w-step-num">05</div>
-                </div>
-                <div style="padding-top:6px;">
-                    <div class="w-step-frac">PASO 05 / 05</div>
-                    <h3 class="w-step-title">Lanzamiento y primera campaña</h3>
-                    <p class="w-step-desc">Activamos Walmart Connect con campañas de Sponsored Products para generar las primeras ventas desde el día del lanzamiento.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PRICING -->
-<section class="w-section" style="background:#fff;">
-    <div class="w-container">
-        <div style="text-align:center;max-width:760px;margin:0 auto 72px;">
-            <span class="w-eyebrow">Planes y precios</span>
-            <h2 class="w-h2" style="margin-top:14px;">Tres formas de entrar a Walmart.<br><span class="w-blue">Tú decides hasta dónde llegamos.</span></h2>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch;">
-            <!-- Plan 1 -->
-            <div class="w-price-card">
-                <div>
-                    <div class="w-price-tier">Plan 1</div>
-                    <div class="w-price-name">Apertura y aprobación</div>
-                </div>
-                <div>
-                    <div class="w-price-amount">
-                        <span class="w-price-from">desde</span>
-                        <span class="w-price-num">$249</span>
-                    </div>
-                    <div class="w-price-once">pago único</div>
-                </div>
-                <ul class="w-price-features">
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Aplicación a Walmart Marketplace gestionada</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Seguimiento del proceso de aprobación</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Configuración de Seller Center</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Integración de pagos USD</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Soporte en español</span></li>
-                </ul>
-                <a href="#contacto" class="w-btn w-btn-yellow" style="margin-top:auto;width:100%;justify-content:center;">
-                    Empezar ahora
-                    <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
-                </a>
-            </div>
-            <!-- Plan 2 (popular) -->
-            <div class="w-price-card is-popular">
-                <div class="w-price-badge">Más popular</div>
-                <div>
-                    <div class="w-price-tier">Plan 2</div>
-                    <div class="w-price-name">Apertura + Catálogo</div>
-                </div>
-                <div>
-                    <div class="w-price-amount">
-                        <span class="w-price-from">desde</span>
-                        <span class="w-price-num">$449</span>
-                    </div>
-                    <div class="w-price-once">pago único</div>
-                </div>
-                <ul class="w-price-features">
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Todo lo del plan Apertura</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Hasta 5 listings optimizados para Walmart</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Keyword research incluido</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>WFS configurado</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Acompañamiento 30 días post-aprobación</span></li>
-                </ul>
-                <a href="#contacto" class="w-btn w-btn-yellow" style="margin-top:auto;width:100%;justify-content:center;">
-                    Empezar ahora
-                    <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
-                </a>
-            </div>
-            <!-- Plan 3 -->
-            <div class="w-price-card">
-                <div>
-                    <div class="w-price-tier">Plan 3</div>
-                    <div class="w-price-name">Lanzamiento completo</div>
-                </div>
-                <div>
-                    <div class="w-price-amount">
-                        <span class="w-price-from">desde</span>
-                        <span class="w-price-num">$799</span>
-                    </div>
-                    <div class="w-price-once">pago único</div>
-                </div>
-                <ul class="w-price-features">
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Todo lo del plan Apertura + Catálogo</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Walmart Brand Portal gestionado</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Campaña Walmart Connect de lanzamiento</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Configuración WFS avanzada</span></li>
-                    <li><i data-lucide="check" style="width:16px;height:16px;"></i><span>Payouts en USD configurados</span></li>
-                </ul>
-                <a href="#contacto" class="w-btn w-btn-yellow" style="margin-top:auto;width:100%;justify-content:center;">
-                    Empezar ahora
-                    <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- REQUIREMENTS -->
 <section class="w-section w-section-gray">
     <div class="w-container">
         <div style="text-align:center;max-width:720px;margin:0 auto 16px;">
-            <span class="w-eyebrow">Requisitos previos</span>
-            <h2 class="w-h2" style="margin-top:14px;">Lo que Walmart requiere<br>para <span class="w-blue">aprobar tu cuenta</span> de vendedor.</h2>
+            <h2 class="w-h2">Lo que Walmart requiere<br>para <span class="w-blue">aprobar tu cuenta</span> de vendedor.</h2>
             <p class="w-section-intro">Para aplicar a Walmart Marketplace desde LATAM necesitas estos elementos. No te preocupes — si aún no los tienes, también te ayudamos a conseguirlos.</p>
             <div style="margin-top:28px;">
                 <a href="#contacto" class="w-btn w-btn-outline-blue">
