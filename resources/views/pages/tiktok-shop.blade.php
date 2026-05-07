@@ -863,9 +863,9 @@
                 <p style="font-size:16px;line-height:1.65;color:#666;max-width:580px;margin:20px auto 0;">
                     Para abrir tu TikTok Shop desde LATAM necesitas estos elementos. Si aún no tienes alguno, también te ayudamos.
                 </p>
-                <div style="margin-top:24px;">
+                <!--<div style="margin-top:24px;">
                     <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20verificar%20si%20estoy%20listo%20para%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-op">Verificar si estoy listo →</a>
-                </div>
+                </div>-->
             </div>
             <div class="tt-req-grid" style="margin-top:32px;">
 
