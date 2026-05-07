@@ -140,6 +140,9 @@
         .servicio-num { font-family:'Montserrat',sans-serif; font-size:38px; font-weight:700; color:var(--navy); letter-spacing:-0.03em; line-height:1; margin-bottom:8px; }
         .servicio-label { font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; color:var(--navy); line-height:1.3; margin-bottom:10px; }
         .servicio-desc { font-family:'Montserrat',sans-serif; font-size:13px; line-height:1.65; color:#6b6f7a; }
+        .servicio-ver-mas { font-family:'Montserrat',sans-serif; font-size:13px; font-weight:600; color:var(--navy); margin-top:auto; padding-top:16px; display:inline-flex; align-items:center; gap:4px; }
+        .servicio-ver-mas::after { content:'→'; }
+        .servicio-card:hover .servicio-ver-mas { text-decoration:underline; }
         .servicios-cta { display:flex; justify-content:center; margin-top:8px; }
         .btn-navy { display:inline-block; background:var(--navy); color:var(--white); padding:13px 36px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; transition:background .2s; }
         .btn-navy:hover { background:var(--navy2); }
@@ -315,6 +318,7 @@
             <div class="servicio-num">LLC</div>
             <div class="servicio-label">Constituye tu empresa en EE.UU.</div>
             <p class="servicio-desc">Abrimos tu LLC en 5–15 días desde cualquier país de LATAM. Sin viajar, sin SSN. EIN incluido.</p>
+            <span class="servicio-ver-mas">Ver más </span>
         </a>
         <a href="{{ url('/pages/contabilidad') }}" class="servicio-card" aria-label="Contabilidad e impuestos">
             <div class="servicio-icon">
@@ -323,6 +327,7 @@
             <div class="servicio-num">Tax</div>
             <div class="servicio-label">Contabilidad e impuestos</div>
             <p class="servicio-desc">Presentamos tus impuestos federales y estatales. Tu empresa siempre en regla ante el IRS.</p>
+            <span class="servicio-ver-mas">Ver más </span>
         </a>
         <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="servicio-card" aria-label="Registro de marca USPTO">
             <div class="servicio-icon">
@@ -331,6 +336,7 @@
             <div class="servicio-num">®</div>
             <div class="servicio-label">Registro de marca ante la USPTO</div>
             <p class="servicio-desc">Protege tu marca en EE.UU. y bloquea imitadores. Gestionamos todo el proceso ante la USPTO.</p>
+            <span class="servicio-ver-mas">Ver más </span>
         </a>
         <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="servicio-card" aria-label="Registro sanitario FDA">
             <div class="servicio-icon">
@@ -339,6 +345,7 @@
             <div class="servicio-num">FDA</div>
             <div class="servicio-label">Registro sanitario FDA</div>
             <p class="servicio-desc">Habilitamos tu empresa para exportar alimentos y suplementos al mercado americano legalmente.</p>
+            <span class="servicio-ver-mas">Ver más </span>
         </a>
         <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="servicio-card" aria-label="Logística y envíos">
             <div class="servicio-icon">
@@ -347,6 +354,7 @@
             <div class="servicio-num">3PL</div>
             <div class="servicio-label">Logística y almacenamiento</div>
             <p class="servicio-desc">Almacenamos, empacamos y enviamos tus productos. Tú te enfocas en vender, nosotros en la logística.</p>
+            <span class="servicio-ver-mas">Ver más </span>
         </a>
         <a href="{{ url('/pages/apertura-marketplace') }}" class="servicio-card" aria-label="Vende en Amazon">
             <div class="servicio-icon">
@@ -355,6 +363,7 @@
             <div class="servicio-num">Seller</div>
             <div class="servicio-label">Apertura de marketplaces</div>
             <p class="servicio-desc">Te abrimos en Amazon, Walmart, TikTok Shop y más desde tu país. Sin moverte de LATAM.</p>
+            <span class="servicio-ver-mas">Ver más </span>
         </a>
     </div>
     <div class="servicios-cta">
