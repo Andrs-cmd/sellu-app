@@ -12,7 +12,7 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Poppins',ui-sans-serif,system-ui,sans-serif;background:#fbfaf7;color:#434966;-webkit-font-smoothing:antialiased}
+body{font-family:'Poppins',ui-sans-serif,system-ui,sans-serif;background:#ffffff;color:#434966;-webkit-font-smoothing:antialiased}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;height:auto}
 
@@ -20,7 +20,7 @@ img{max-width:100%;height:auto}
 :root{
   --navy:#434966; --navy-700:#434966; --navy-900:#434966;
   --accent:#f6bb33; --accent-100:#fef5dd; --accent-300:#fbdd95; --accent-500:#f6bb33; --accent-700:#c89320;
-  --paper:#fbfaf7; --paper-2:#f5f3ee;
+  --paper:#ffffff; --paper-2:#eef1f8;
   --white:#ffffff;
   --ink-200:#e5e6ea; --ink-300:#c5c8d0; --ink-500:#6b6f7a; --ink-700:#3a3d46;
   --success-100:#e3f6ec; --success-500:#1aa05f; --success-700:#0f6b3f;
@@ -133,7 +133,7 @@ img{max-width:100%;height:auto}
 <x-nav />
 
 <!-- ══ HERO ══ -->
-<section style="padding-top:56px;padding-bottom:96px;position:relative;overflow:hidden;background:var(--paper)">
+<section style="padding-top:56px;padding-bottom:96px;position:relative;overflow:hidden;background:#eef1f8">
   <div class="puzzle-bg" aria-hidden="true">
     <svg width="640" height="640" viewBox="0 0 640 640" fill="none">
       <path d="M340 40 c46 0 80 30 80 76 v52 c46 0 76 22 76 56 c0 34 -30 54 -76 54 v68 c46 0 76 22 76 56 c0 34 -30 56 -76 56 v52 c0 46 -34 76 -80 76 H160 c-40 0 -76 -30 -76 -76 V406 c46 0 76 -22 76 -56 c0 -34 -30 -56 -76 -56 v-58 c0 -46 36 -76 76 -76 h180 z" fill="var(--accent-500)"/>
