@@ -116,7 +116,7 @@
         /* ── HERO ── */
         .hero { background:url('https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778097926/Sell-U_Latam_-_Banner_No_1_1_r0qjgd.webp') center/cover no-repeat; min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
         .hero::before { content:''; position:absolute; inset:0; background:rgba(13,27,62,.55); }
-        .hero-inner { position:relative; z-index:1; max-width:1200px; margin:0 auto; padding:80px 5%; width:100%; }
+        .hero-inner { position:relative; z-index:1; padding:80px 5%; width:100%; }
         .hero-content { max-width:560px; }
         .hero-eyebrow { font-size:12px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:20px; }
         .hero h1 { font-family:'Montserrat',sans-serif; font-size:42px; font-weight:900; line-height:1.1; color:var(--white); margin-bottom:20px; letter-spacing:-.5px; }
