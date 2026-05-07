@@ -619,7 +619,7 @@
             </div>
         </div>
         <div class="pull-quote-wrap reveal">
-            <img class="pq-bg" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777922190/Sell-U_56_jwlueh.png" alt="">
+            <img class="pq-bg" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778186448/Inicio_2_xtyiun.png" alt="">
             <div class="pull-quote">
                 <q>La mayoría de emprendedores latinos solo descubren lo importante que es una contabilidad limpia cuando ya están en modo pánico.</q>
                 <div class="pull-quote-author">— Equipo contable Sell-U</div>
