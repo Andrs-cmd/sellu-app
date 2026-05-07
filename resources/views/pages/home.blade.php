@@ -128,19 +128,18 @@
         .hero-badge span { background:var(--gold); color:var(--navy); font-size:10px; font-weight:800; padding:2px 8px; border-radius:10px; }
 
         /* ── SERVICIOS ── */
-        .servicios { padding:72px 5%; background:var(--white); }
+        .servicios { padding:72px 5%; background:#EEF1F8; }
         .section-tag { font-size:11px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:10px; display:block; text-align:center; }
         .section-title { font-family:'Montserrat',sans-serif; font-size:26px; font-weight:800; color:var(--navy); text-align:center; margin-bottom:10px; text-transform:uppercase; }
         .section-sub { font-size:15px; color:var(--muted); text-align:center; margin-bottom:48px; line-height:1.6; max-width:600px; margin-left:auto; margin-right:auto; }
-        .servicios-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; max-width:860px; margin:0 auto 32px; }
-        .servicio-card { background:var(--gold); border-radius:8px; padding:28px 20px; display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center; cursor:pointer; transition:transform .2s; text-decoration:none; }
-        .servicio-card:hover { transform:translateY(-3px); }
-        .servicio-card.dark { background:var(--navy); }
-        .servicio-icon { width:56px; height:56px; display:flex; align-items:center; justify-content:center; }
-        .servicio-icon svg { width:32px; height:32px; }
-        .servicio-icon img { width:56px; height:56px; object-fit:contain; }
-        .servicio-label { font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:var(--navy); text-transform:uppercase; letter-spacing:.03em; line-height:1.3; }
-        .servicio-card.dark .servicio-label { color:var(--white); }
+        .servicios-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; max-width:1100px; margin:0 auto 40px; }
+        .servicio-card { background:#fff; border-radius:14px; padding:28px; display:flex; flex-direction:column; text-decoration:none; border:1px solid #e5e6ea; transition:box-shadow 200ms,transform 200ms; }
+        .servicio-card:hover { box-shadow:0 8px 24px -6px rgba(46,56,86,0.12); transform:translateY(-2px); }
+        .servicio-icon { width:44px; height:44px; border-radius:10px; background:rgba(246,187,51,0.18); color:#c89320; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0; }
+        .servicio-icon svg { width:22px; height:22px; }
+        .servicio-num { font-family:'Montserrat',sans-serif; font-size:38px; font-weight:700; color:var(--navy); letter-spacing:-0.03em; line-height:1; margin-bottom:8px; }
+        .servicio-label { font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; color:var(--navy); line-height:1.3; margin-bottom:10px; }
+        .servicio-desc { font-family:'Montserrat',sans-serif; font-size:13px; line-height:1.65; color:#6b6f7a; }
         .servicios-cta { display:flex; justify-content:center; margin-top:8px; }
         .btn-navy { display:inline-block; background:var(--navy); color:var(--white); padding:13px 36px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; transition:background .2s; }
         .btn-navy:hover { background:var(--navy2); }
@@ -269,11 +268,10 @@
             .hero-image img { max-width:260px; }
             .hero h1 { font-size:24px; }
             .hero p { font-size:14px; }
-            .servicios-grid { grid-template-columns:repeat(2,1fr); gap:10px; }
-            .servicio-card { padding:20px 12px; gap:8px; }
-            .servicio-icon { width:36px; height:36px; }
-            .servicio-icon svg { width:24px; height:24px; }
-            .servicio-label { font-size:11px; }
+            .servicios-grid { grid-template-columns:1fr; gap:10px; }
+            .servicio-card { padding:20px; }
+            .servicio-num { font-size:28px; }
+            .servicio-label { font-size:14px; }
             .section-title { font-size:20px; }
             .stats-inner { grid-template-columns:repeat(2,1fr); }
             .stat-num { font-size:36px; }
@@ -312,39 +310,51 @@
     <div class="servicios-grid">
         <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}" class="servicio-card" aria-label="Crea tu empresa en USA">
             <div class="servicio-icon">
-                <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/9gUbhS.png?v=1760736865" alt="Creamos tu empresa">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
             </div>
-            <span class="servicio-label">Creamos tu empresa</span>
+            <div class="servicio-num">LLC</div>
+            <div class="servicio-label">Constituye tu empresa en EE.UU.</div>
+            <p class="servicio-desc">Abrimos tu LLC en 5–15 días desde cualquier país de LATAM. Sin viajar, sin SSN. EIN incluido.</p>
         </a>
         <a href="{{ url('/pages/contabilidad') }}" class="servicio-card" aria-label="Contabilidad e impuestos">
             <div class="servicio-icon">
-                <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Group_129.png?v=1760736865" alt="Contabilidad e impuestos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
             </div>
-            <span class="servicio-label">Contabilidad e impuestos</span>
+            <div class="servicio-num">Tax</div>
+            <div class="servicio-label">Contabilidad e impuestos</div>
+            <p class="servicio-desc">Presentamos tus impuestos federales y estatales. Tu empresa siempre en regla ante el IRS.</p>
         </a>
         <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="servicio-card" aria-label="Registro de marca USPTO">
             <div class="servicio-icon">
-                <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/lSSNPo_tif.png?v=1760736865" alt="Registro de marca USPTO">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <span class="servicio-label">Registro de marca (USPTO)</span>
+            <div class="servicio-num">®</div>
+            <div class="servicio-label">Registro de marca ante la USPTO</div>
+            <p class="servicio-desc">Protege tu marca en EE.UU. y bloquea imitadores. Gestionamos todo el proceso ante la USPTO.</p>
         </a>
-        <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="servicio-card dark" aria-label="Registro sanitario FDA">
+        <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="servicio-card" aria-label="Registro sanitario FDA">
             <div class="servicio-icon">
-                <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Group.png?v=1760736865" alt="Registro sanitario FDA">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
             </div>
-            <span class="servicio-label">Registro sanitario (FDA)</span>
+            <div class="servicio-num">FDA</div>
+            <div class="servicio-label">Registro sanitario FDA</div>
+            <p class="servicio-desc">Habilitamos tu empresa para exportar alimentos y suplementos al mercado americano legalmente.</p>
         </a>
-        <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="servicio-card dark" aria-label="Logística y envíos">
+        <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="servicio-card" aria-label="Logística y envíos">
             <div class="servicio-icon">
-                <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/cmjAVG_tif.png?v=1760736865" alt="Logística y almacenamiento">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
             </div>
-            <span class="servicio-label">Logística y almacenamiento</span>
+            <div class="servicio-num">3PL</div>
+            <div class="servicio-label">Logística y almacenamiento</div>
+            <p class="servicio-desc">Almacenamos, empacamos y enviamos tus productos. Tú te enfocas en vender, nosotros en la logística.</p>
         </a>
-        <a href="{{ url('/pages/apertura-marketplace') }}" class="servicio-card dark" aria-label="Vende en Amazon">
+        <a href="{{ url('/pages/apertura-marketplace') }}" class="servicio-card" aria-label="Vende en Amazon">
             <div class="servicio-icon">
-                <img src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/CvYwxz.png?v=1760736865" alt="Apertura de marketplaces">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
             </div>
-            <span class="servicio-label">Apertura de marketplaces</span>
+            <div class="servicio-num">Seller</div>
+            <div class="servicio-label">Apertura de marketplaces</div>
+            <p class="servicio-desc">Te abrimos en Amazon, Walmart, TikTok Shop y más desde tu país. Sin moverte de LATAM.</p>
         </a>
     </div>
     <div class="servicios-cta">
