@@ -361,30 +361,42 @@
 
 <!-- LOGO STRIP / CLIENTES -->
 <style>
-.cliente-logo-img { height: 70px; width: auto; max-width: 140px; object-fit: contain; filter: grayscale(100%); opacity: .65; transition: filter .2s ease, opacity .2s ease; }
-.cliente-logo-img:hover { filter: grayscale(0%); opacity: 1; }
+.wm-clientes { background: var(--w-gray); padding: 52px 0; border-top: 1px solid var(--w-line); border-bottom: 1px solid var(--w-line); }
+.wm-clientes-header { display: flex; align-items: center; justify-content: center; margin-bottom: 36px; }
+.wm-clientes-badge { background: var(--w-dark); color: #fff; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; padding: 6px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; }
+.wm-clientes-track-wrap { overflow: hidden; width: 100%; }
+.wm-clientes-track { display: flex; align-items: center; gap: 56px; animation: wm-scroll-logos 30s linear infinite; will-change: transform; }
+.wm-clientes-track:hover { animation-play-state: paused; }
+.wm-cliente-logo { height: 130px; width: 130px; object-fit: contain; opacity: .55; transition: opacity .2s; filter: grayscale(100%); flex-shrink: 0; }
+.wm-cliente-logo:hover { opacity: 1; filter: grayscale(0%); }
+@keyframes wm-scroll-logos {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(calc(-130px * 8 - 56px * 8)); }
+}
 </style>
-<section style="background:#f9f9f9;padding:40px 0;border-top:1px solid var(--w-line);border-bottom:1px solid var(--w-line);">
-    <div style="text-align:center;font-size:11px;color:var(--w-ink-4);font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:24px;">Algunos de nuestros clientes</div>
-    <div class="w-marquee" style="overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);">
-        <div class="w-marquee-track" style="gap:48px;align-items:center;">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/2_uxodya.png" alt="Cliente 2">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/3_xvpwlc.png" alt="Cliente 3">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/4_jlqkzp.png" alt="Cliente 4">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/5_eqmvhs.png" alt="Cliente 5">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/6_fkbpnd.png" alt="Cliente 6">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/7_qcutxe.png" alt="Cliente 7">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/8_y7etnz.png" alt="Cliente 8">
+<section class="wm-clientes" aria-label="Nuestros clientes">
+    <div class="wm-clientes-header">
+        <span class="wm-clientes-badge">↑ Algunos de nuestros clientes</span>
+    </div>
+    <div class="wm-clientes-track-wrap">
+        <div class="wm-clientes-track">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164051/2_xwdg8n.png" alt="Cliente 2">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/3_f4mirm.png" alt="Cliente 3">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/4_gpf3oy.png" alt="Cliente 4">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/6_tgelw3.png" alt="Cliente 5">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/5_pjbzbt.png" alt="Cliente 6">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/7_knt0gq.png" alt="Cliente 7">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164049/8_y7etnz.png" alt="Cliente 8">
             <!-- duplicado para loop continuo -->
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/2_uxodya.png" alt="Cliente 2">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/3_xvpwlc.png" alt="Cliente 3">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/4_jlqkzp.png" alt="Cliente 4">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/5_eqmvhs.png" alt="Cliente 5">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/6_fkbpnd.png" alt="Cliente 6">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/7_qcutxe.png" alt="Cliente 7">
-            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/8_y7etnz.png" alt="Cliente 8">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164051/2_xwdg8n.png" alt="Cliente 2">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/3_f4mirm.png" alt="Cliente 3">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/4_gpf3oy.png" alt="Cliente 4">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/6_tgelw3.png" alt="Cliente 5">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/5_pjbzbt.png" alt="Cliente 6">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/7_knt0gq.png" alt="Cliente 7">
+            <img class="wm-cliente-logo" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164049/8_y7etnz.png" alt="Cliente 8">
         </div>
     </div>
 </section>
