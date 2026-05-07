@@ -247,7 +247,7 @@
             <a href="{{ url('/constituir?estado=WY') }}" class="btn-primary">Abrir mi LLC en Wyoming →</a>
             <div class="hero-badges">
                 <div class="hero-badge">
-                    <div class="val">$100</div>
+                    <div class="val">$499</div>
                     <div class="lbl">Costo filing oficial</div>
                 </div>
                 <div class="hero-badge">
