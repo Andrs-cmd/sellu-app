@@ -137,7 +137,7 @@
         letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-tertiary);
     }
     .section { padding: 96px 0; }
-    .section-band { background: var(--paper-2); }
+    .section-band { background: #F5F6FA; }
     .section-inverse { background: var(--navy-900); color: var(--paper); }
     .section-inverse .eyebrow { color: var(--accent-500); }
     .section-inverse h2 { color: var(--paper); }
