@@ -49,7 +49,7 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 .revealed{opacity:1!important;transform:none!important}
 
 /* ──── HERO ──── */
-.hero{position:relative;overflow:hidden;padding:64px 0 96px;min-height:90vh;display:flex;align-items:center;background:#fff}
+.hero{position:relative;overflow:hidden;padding:64px 0 96px;min-height:30vh;display:flex;align-items:center;background:#fff}
 .hero-glow-tr{position:absolute;top:-120px;right:-160px;width:540px;height:540px;background:radial-gradient(circle,rgba(246,233,184,.55) 0%,rgba(246,233,184,0) 65%);pointer-events:none}
 .hero-glow-bl{position:absolute;bottom:-80px;left:-100px;width:320px;height:320px;background:radial-gradient(circle,rgba(67,73,102,.05) 0%,rgba(67,73,102,0) 70%);pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center;width:100%}
@@ -197,17 +197,14 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
   <div class="container">
     <div class="hero-grid">
       <div class="reveal-left">
-        <span class="eyebrow hero-eyebrow">Sysco Marketplace · B2B Foodservice USA</span>
+        <!--<span class="eyebrow hero-eyebrow">Sysco Marketplace · B2B Foodservice USA</span>-->
         <h1 class="h1 hero-title">
           Tu producto latino<br>
           en los mejores<br>
           <span class="blue">restaurantes de EE.UU.</span>
         </h1>
         <p style="font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.7;color:#666;max-width:500px;margin:0 0 32px">
-          Sysco es el mayor distribuidor de foodservice de Estados Unidos.
-          A través de su Marketplace, tus productos llegan directamente a
-          +329,000 restaurantes, hoteles, hospitales y escuelas — sin
-          intermediarios. Sell-U gestiona todo el proceso de onboarding.
+          Accede a Sysco y conecta tus productos con restaurantes, hoteles y negocios en EE.UU. Sell-U gestiona el proceso de onboarding.
         </p>
         <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
           <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vender%20en%20Sysco" class="btn btn-primary" target="_blank" rel="noopener">Hablar con un asesor →</a>
@@ -258,7 +255,7 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 <!-- ═══════════════ WHY SYSCO ═══════════════ -->
 <section class="section" style="background:#fff">
   <div class="container">
-    <h2 class="h2 reveal" style="text-align:center;max-width:720px;margin:0 auto 56px">
+    <h2 class="h2 reveal" style="text-align:center;max-width:780px;margin:0 auto 56px">
       El canal B2B de foodservice más grande<br>
       de Estados Unidos, <span style="color:var(--blue)">abierto a tu marca.</span>
     </h2>
@@ -362,7 +359,7 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 <section class="contrast-section">
   <div class="container">
     <div style="text-align:center;max-width:720px;margin:0 auto 56px" class="reveal">
-      <span class="eyebrow" style="color:var(--yellow)">Por qué Sysco es diferente</span>
+      <!-- <span class="eyebrow" style="color:var(--yellow)">Por qué Sysco es diferente</span> -->
       <h2 class="h2" style="color:#fff;margin:16px 0 20px">
         No vendes a consumidores.<br>
         Vendes a negocios que compran<br>semana a semana.
