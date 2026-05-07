@@ -555,6 +555,100 @@ a:hover { text-decoration-color: var(--navy-800); }
 .stagger.in > *:nth-child(5) { transition-delay: 400ms; }
 .stagger.in > *:nth-child(6) { transition-delay: 500ms; }
 
+/* ── TM Loop Animation ── */
+.tm-loop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 56px 32px;
+}
+.tm-mark {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.tm-mark svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+.tm-ring {
+    fill: none;
+    stroke: var(--navy-900);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-dasharray: 691.15;
+    stroke-dashoffset: 691.15;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    animation: tmRingDraw 5400ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.tm-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: var(--navy-900);
+    line-height: 1;
+    opacity: 0;
+    transform: scale(0.75);
+    padding-bottom: 6px;
+    animation: tmTextFade 5400ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.tm-pills {
+    display: flex;
+    gap: 12px;
+}
+.tm-pill {
+    padding: 10px 24px;
+    border: 1.5px solid var(--navy-900);
+    border-radius: 999px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: var(--navy-900);
+    background: transparent;
+    font-family: var(--font-sans);
+    font-weight: 500;
+}
+.tm-pill-idea { animation: tmPillIdea 5400ms steps(1, end) infinite; }
+.tm-pill-tm   { animation: tmPillTm   5400ms steps(1, end) infinite; }
+@keyframes tmRingDraw {
+    0%       { stroke-dashoffset: 691.15; }
+    22.222%  { stroke-dashoffset: 0; }
+    75%      { stroke-dashoffset: 0; }
+    87.963%  { stroke-dashoffset: 691.15; }
+    100%     { stroke-dashoffset: 691.15; }
+}
+@keyframes tmTextFade {
+    0%, 44.444% { opacity: 0; transform: scale(0.75); }
+    52.778%     { opacity: 1; transform: scale(1); }
+    75%         { opacity: 1; transform: scale(1); }
+    83.333%     { opacity: 0; transform: scale(1); }
+    100%        { opacity: 0; transform: scale(0.75); }
+}
+@keyframes tmPillIdea {
+    0%       { background-color: var(--navy-900); color: #fff; }
+    44.443%  { background-color: var(--navy-900); color: #fff; }
+    44.444%  { background-color: transparent; color: var(--navy-900); }
+    100%     { background-color: transparent; color: var(--navy-900); }
+}
+@keyframes tmPillTm {
+    0%       { background-color: transparent; color: var(--navy-900); }
+    44.443%  { background-color: transparent; color: var(--navy-900); }
+    44.444%  { background-color: var(--navy-900); color: #fff; }
+    96.296%  { background-color: var(--navy-900); color: #fff; }
+    96.297%  { background-color: transparent; color: var(--navy-900); }
+    100%     { background-color: transparent; color: var(--navy-900); }
+}
+
 /* ── Responsive ── */
 @media (max-width: 960px) {
     .hero-grid, .split-2, .uspto-grid, .req-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -642,17 +736,16 @@ a:hover { text-decoration-color: var(--navy-800); }
 <section class="section" id="trademark">
     <div class="container split-2">
         <div class="anim scale">
-            <div class="r-builder">
-                <svg class="r-symbol" viewBox="0 0 200 200" fill="none">
-                    <circle cx="100" cy="100" r="86" stroke="var(--navy-900)" stroke-width="3" style="--len:600"/>
-                    <path d="M70 60 L70 140 M70 60 L114 60 C 132 60 132 96 114 96 L70 96 M104 96 L132 140"
-                        stroke="var(--navy-900)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
-                        style="--len:400"/>
-                </svg>
-                <div class="r-stages">
-                    <span>Idea</span>
-                    <span>™</span>
-                    <span class="active">®</span>
+            <div class="tm-loop" aria-hidden="true">
+                <div class="tm-mark">
+                    <svg viewBox="0 0 240 240">
+                        <circle class="tm-ring" cx="120" cy="120" r="110" />
+                    </svg>
+                    <div class="tm-text">TM</div>
+                </div>
+                <div class="tm-pills">
+                    <div class="tm-pill tm-pill-idea">Idea</div>
+                    <div class="tm-pill tm-pill-tm">TM</div>
                 </div>
             </div>
         </div>
