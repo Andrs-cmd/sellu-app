@@ -368,8 +368,8 @@
         <div class="pull-quote-wrap">
             <img class="pq-bg" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778090414/Inicio_nqpg9x.png" alt="">
             <div class="pull-quote">
-                <q>La mayoría de emprendedores latinos solo descubren lo importante que es una contabilidad limpia cuando ya están en modo pánico.</q>
-                <div class="pull-quote-author">— Equipo contable Sell-U</div>
+                <q>LCADA EMPRESA QUE AYUDAMOS A CRECER ES UNA NUEVA HISTORIA DE EXITO</q>
+                <div class="pull-quote-author">—En Sell-U no solo ofrecemos servicios: vivimos la emoción de convertir ideas en resultados. Cada estrategia y cada empresa que ayudamos a crecer refleja nuestro compromiso. Porque cuando tu triunfas, nosotros también lo hacemos</div>
             </div>
         </div>
     </div>
