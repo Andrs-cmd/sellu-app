@@ -161,6 +161,7 @@
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
         body { font-family: 'Montserrat', sans-serif; color: #3a3d46; background: #ffffff; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4 { font-weight: 600 !important; }
         a { text-decoration: none; color: inherit; }
 
         .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
@@ -444,7 +445,7 @@
                     Si tienes una LLC en Estados Unidos pero no tienes número de seguro social, necesitas un ITIN. Sin él, no puedes declarar impuestos, abrir cuenta bancaria ni recibir pagos de forma legal. Nosotros lo tramitamos por ti, sin complicaciones.
                 </p>
                 <div style="display:flex; gap:12px; flex-wrap:wrap;">
-                    <a href="#cta" class="btn btn-primary btn-lg">Quiero tramitar mi ITIN →</a>
+                    <a href="https://wa.me/19542105405" target="_blank" class="btn btn-primary btn-lg">Quiero tramitar mi ITIN →</a>
                     <a href="https://wa.me/19542105405" target="_blank" class="btn btn-secondary btn-lg">Hablar con un asesor primero</a>
                 </div>
                 <div class="trust-row">
@@ -503,7 +504,7 @@
     <div class="container">
         <div style="display:grid; grid-template-columns:1fr 1.2fr; gap:80px; align-items:start;" class="grid-2col">
             <div>
-                <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:16px;">
+                <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:600; color:#0D1B3E; margin-bottom:16px;">
                     ¿Qué es el ITIN Number y para qué sirve?
                 </h2>
                 <h3 style="font-size:17px; font-weight:700; color:#434966; margin-bottom:12px;">
@@ -560,7 +561,7 @@
 <section class="sx sx-band" id="comparativa">
     <div class="container">
         <div style="max-width:490px; margin-bottom:44px;">
-            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;">
+            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:600; color:#0D1B3E; margin-bottom:14px;">
                 ITIN vs SSN vs EIN: ¿cuál necesitas tú?
             </h2>
             <p style="font-size:17px; line-height:28px; color:#6b6f7a;">
@@ -634,7 +635,7 @@
 <section class="sx" id="quien">
     <div class="container">
         <div style="max-width:720px; margin-bottom:44px;">
-            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;">
+            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:600; color:#0D1B3E; margin-bottom:14px;">
                 ¿Quién NO necesita un ITIN Number?
             </h2>
             <p style="font-size:17px; line-height:28px; color:#6b6f7a;">
@@ -674,7 +675,7 @@
 <section class="sx sx-band" id="casos">
     <div class="container">
         <div style="max-width:1020px; margin-bottom:44px;">
-            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;text-align-last: center;">
+            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:600; color:#0D1B3E; margin-bottom:14px;text-align-last: center;">
                 Cuándo exactamente necesitas tu ITIN.
             </h2>
         </div>
@@ -710,7 +711,7 @@
     <div class="container">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:start;" class="grid-2col">
             <div>
-                <h2 style="font-size:38px; line-height:46px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:16px;">
+                <h2 style="font-size:38px; line-height:46px; letter-spacing:-.02em; font-weight:600; color:#0D1B3E; margin-bottom:16px;">
                     Cómo se tramita el ITIN: el proceso tradicional.
                 </h2>
                 <p style="font-size:16px; line-height:27px; color:#6b6f7a; margin-bottom:24px;">
@@ -765,7 +766,7 @@
 <section class="sx sx-navy" id="proceso-sellu">
     <div class="container">
         <div style="max-width:720px; margin-bottom:48px;">
-            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#fff; margin-bottom:14px;">
+            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:600; color:#fff; margin-bottom:14px;">
                 Cómo Sell·U tramita tu ITIN por ti.
             </h2>
             <p style="font-size:17px; line-height:28px; color:rgba(255,255,255,.75); max-width:580px;">
@@ -814,7 +815,7 @@
 <section class="sx" id="beneficios">
     <div class="container">
         <div style="max-width:720px; margin-bottom:44px;">
-            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;">
+            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:600; color:#0D1B3E; margin-bottom:14px;">
                 Beneficios de tramitar con Sell·U.
             </h2>
         </div>
@@ -849,7 +850,7 @@
 <section class="sx sx-band" id="requisitos">
     <div class="container">
         <div style="max-width:720px; margin-bottom:48px;">
-            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;">
+            <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:600; color:#0D1B3E; margin-bottom:14px;">
                 Requisitos estimados.
             </h2>
         </div>
@@ -923,7 +924,7 @@
     <div class="container">
         <div style="display:grid; grid-template-columns:1fr 1.6fr; gap:80px; align-items:start;" class="faq-layout grid-2col">
             <div class="faq-sticky" style="position:sticky; top:96px;">
-                <h2 style="font-size:36px; line-height:44px; letter-spacing:-.02em; font-weight:800; color:#0D1B3E; margin-bottom:14px;">
+                <h2 style="font-size:36px; line-height:44px; letter-spacing:-.02em; font-weight:600; color:#0D1B3E; margin-bottom:14px;">
                     Preguntas frecuentes sobre el ITIN.
                 </h2>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a; margin-bottom:24px;">
@@ -1010,7 +1011,7 @@
     <div class="container">
         <div style="display:grid; grid-template-columns:1.3fr 1fr; gap:80px; align-items:center;" class="cta-layout grid-2col">
             <div>
-                <h2 style="font-size:48px; line-height:56px; letter-spacing:-.025em; font-weight:800; color:#fff; margin-bottom:18px;">
+                <h2 style="font-size:48px; line-height:56px; letter-spacing:-.025em; font-weight:600; color:#fff; margin-bottom:18px;">
                     ¿Listo para operar tu LLC sin problemas con el IRS?
                 </h2>
                 <p style="font-size:17px; line-height:28px; color:rgba(255,255,255,.75); margin-bottom:12px; max-width:520px;">
@@ -1020,12 +1021,12 @@
                     Sell·U se encarga del proceso completo, en español, de forma remota y con acompañamiento real.
                 </p>
                 <div style="display:flex; gap:12px; flex-wrap:wrap;">
-                    <button class="btn btn-accent btn-lg" onclick="document.getElementById('itin-form-wrap').classList.toggle('visible'); this.style.display='none';">
+                    <a href="https://wa.me/19542105405" target="_blank" class="btn btn-accent btn-lg">
                         Tramitar mi ITIN con Sell·U →
-                    </button>
-                    <!--<a href="https://wa.me/19542105405" target="_blank" class="btn btn-on-dark btn-lg">
+                    </a>
+                    <a href="https://wa.me/19542105405" target="_blank" class="btn btn-on-dark btn-lg">
                         Tengo dudas, quiero hablar con alguien
-                    </a>-->
+                    </a>
                 </div>
 
                 <div id="itin-form-wrap">
@@ -1053,7 +1054,7 @@
                     <p style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#6b6f7a;">Servicio ITIN</p>
                     <span style="font-size:11px; font-weight:700; color:#0f6b3f; background:#e3f6ec; padding:4px 10px; border-radius:999px; letter-spacing:.04em;">DISPONIBLE</span>
                 </div>
-                <div style="font-size:24px; line-height:32px; font-weight:800; letter-spacing:-.02em; color:#0D1B3E; margin-bottom:20px;">
+                <div style="font-size:24px; line-height:32px; font-weight:600; letter-spacing:-.02em; color:#0D1B3E; margin-bottom:20px;">
                     Tramitación de ITIN para no residentes
                 </div>
                 <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
