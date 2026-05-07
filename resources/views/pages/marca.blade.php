@@ -788,7 +788,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 </section>
 
 <!-- ── Section 3 — Marca vs Marca registrada ── -->
-<section class="section section-band">
+<!--<section class="section section-band">
     <div class="container">
         <div style="max-width:720px;margin-bottom:48px">
             <span class="eyebrow">Marca vs Marca registrada</span>
@@ -843,7 +843,7 @@ a:hover { text-decoration-color: var(--navy-800); }
             </table>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- ── Section 4 — USPTO ── -->
 <section class="section">
@@ -1047,7 +1047,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 </section>
 
 <!-- ── Section 7 — Precios ── -->
-<section class="section" id="precios">
+<!--<section class="section" id="precios">
     <div class="container">
         <div style="max-width:720px;margin-bottom:48px">
             <span class="eyebrow">¿Cuánto cuesta?</span>
@@ -1079,7 +1079,7 @@ a:hover { text-decoration-color: var(--navy-800); }
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- ── Section 8 — Timeline de registro ── -->
 <section class="section section-band" id="proceso">
@@ -1202,7 +1202,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 </section>
 
 <!-- ── Section 10 — Cómo Sell·U lo hace ── -->
-<section class="section section-inverse">
+<!--<section class="section section-inverse">
     <div class="container">
         <div style="max-width:720px;margin-bottom:64px">
             <span class="eyebrow">Cómo Sell·U lo hace</span>
@@ -1268,10 +1268,10 @@ a:hover { text-decoration-color: var(--navy-800); }
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- ── Section 11 — Requisitos y tiempos ── -->
-<section class="section">
+<!--<section class="section">
     <div class="container">
         <div style="max-width:720px;margin-bottom:48px">
             <span class="eyebrow">Requisitos y tiempos</span>
@@ -1339,7 +1339,7 @@ a:hover { text-decoration-color: var(--navy-800); }
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- ── Section 12 — FAQ ── -->
 <section class="section section-band" id="recursos">
