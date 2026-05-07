@@ -546,7 +546,7 @@
 <!-- WHAT IT DOES -->
 <section class="section section-band">
     <div class="container">
-        <div style="max-width:720px;margin-bottom:56px;" class="anim">
+        <div style="max-width:800px;margin-bottom:56px;" class="anim">
             <span class="eyebrow">Para qué sirve realmente</span>
             <h2 style="font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900);">Tres usos concretos. Uno se traduce en dinero en cada compra.</h2>
             <p style="font-size:18px;line-height:28px;color:var(--fg-secondary);">Para un negocio que compra <strong style="color:var(--navy-900);font-weight:600;">USD 50,000</strong> en inventario al año, el certificado puede representar entre <strong style="color:var(--navy-900);font-weight:600;">USD 3,500 y 5,000</strong> que dejas de pagar innecesariamente.</p>
