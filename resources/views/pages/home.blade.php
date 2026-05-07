@@ -172,13 +172,13 @@
         .clientes-header { display:flex; align-items:center; justify-content:center; margin-bottom:36px; }
         .clientes-badge { background:var(--navy); color:var(--white); font-family:'Montserrat',sans-serif; font-size:12px; font-weight:700; padding:6px 18px; border-radius:20px; text-transform:uppercase; letter-spacing:.06em; }
         .clientes-track-wrap { overflow:hidden; width:100%; }
-        .clientes-track { display:flex; align-items:center; gap:64px; width:max-content; animation: scroll-logos 28s linear infinite; }
+        .clientes-track { display:flex; align-items:center; gap:56px; animation: scroll-logos 30s linear infinite; will-change:transform; }
         .clientes-track:hover { animation-play-state:paused; }
-        .cliente-logo-img { height:48px; width:auto; object-fit:contain; opacity:.55; transition:opacity .2s; filter:grayscale(100%); flex-shrink:0; }
+        .cliente-logo-img { height:44px; width:130px; object-fit:contain; opacity:.55; transition:opacity .2s; filter:grayscale(100%); flex-shrink:0; }
         .cliente-logo-img:hover { opacity:1; filter:grayscale(0%); }
         @keyframes scroll-logos {
             0%   { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            100% { transform: translateX(calc(-130px * 8 - 56px * 8)); }
         }
 
         /* ── CTA ASESOR ── */
