@@ -115,7 +115,22 @@
             </div>
         </div>
         <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="nav-item {{ request()->is('pages/almacenamiento-y-logistica') ? 'active' : '' }}">Envíos</a>
-        <a href="{{ url('/pages/canales-de-atencion') }}" class="nav-item {{ request()->is('pages/canales-de-atencion') ? 'active' : '' }}">Soporte</a>
+        <div class="nav-dropdown {{ request()->is('pages/canales-de-atencion') || request()->is('pages/sobre-nosotros') ? 'active' : '' }}">
+            <a href="{{ url('/pages/canales-de-atencion') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/canales-de-atencion') || request()->is('pages/sobre-nosotros') ? 'active' : '' }}">
+                Soporte
+                <svg class="nav-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <div class="nav-submenu">
+                <a href="{{ url('/pages/sobre-nosotros') }}" class="nav-subitem {{ request()->is('pages/sobre-nosotros') ? 'active' : '' }}">
+                    <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="6" r="2.5" stroke="currentColor" stroke-width="1.2"/><path d="M3 13c0-2.761 2.239-4 5-4s5 1.239 5 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    Sobre nosotros
+                </a>
+                <a href="{{ url('/pages/canales-de-atencion') }}" class="nav-subitem {{ request()->is('pages/canales-de-atencion') ? 'active' : '' }}">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M13 8A5 5 0 113 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M3 8H2a1 1 0 000 2v1a1 1 0 001 1h.5M13 8h1a1 1 0 010 2v1a1 1 0 01-1 1h-.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    Preguntas frecuentes
+                </a>
+            </div>
+        </div>
     </nav>
 
     {{-- Menú móvil desplegable --}}
@@ -157,7 +172,16 @@
             </div>
         </div>
         <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="mobile-item {{ request()->is('pages/almacenamiento-y-logistica') ? 'active' : '' }}">Envíos</a>
-        <a href="{{ url('/pages/canales-de-atencion') }}" class="mobile-item {{ request()->is('pages/canales-de-atencion') ? 'active' : '' }}">Soporte</a>
+        <div class="mobile-accordion {{ request()->is('pages/canales-de-atencion') || request()->is('pages/sobre-nosotros') ? 'open' : '' }}">
+            <button class="mobile-item mobile-accordion-trigger" onclick="toggleAccordion(this)">
+                Soporte
+                <svg class="mobile-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="mobile-subitems">
+                <a href="{{ url('/pages/sobre-nosotros') }}" class="mobile-subitem {{ request()->is('pages/sobre-nosotros') ? 'active' : '' }}">Sobre nosotros</a>
+                <a href="{{ url('/pages/canales-de-atencion') }}" class="mobile-subitem {{ request()->is('pages/canales-de-atencion') ? 'active' : '' }}">Preguntas frecuentes</a>
+            </div>
+        </div>
         <div class="mobile-auth">
             @auth
                 <a href="{{ route('dashboard') }}" class="mobile-auth-btn outline">Mi panel</a>
