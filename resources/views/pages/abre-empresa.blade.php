@@ -153,33 +153,19 @@
         .carousel-btn svg { width: 14px; height: 14px; }
 
         /* ── CLIENTES MARQUEE ── */
-        .clientes { background: #fff; padding: 52px 0; overflow: hidden; }
-        .clientes-header { display: flex; justify-content: center; margin-bottom: 36px; }
-        .clientes-badge {
-            display: inline-flex; align-items: center; gap: 6px;
-            background: transparent; color: var(--navy);
-            font-size: 18px; font-weight: 700;
-            padding: 6px 18px; border-radius: 100px;
-            text-transform: uppercase; letter-spacing: 0.06em;
-        }
-        .marquee-track-wrap { overflow: hidden; width: 100%; }
-        .marquee-track {
-            display: flex; align-items: center; gap: 64px;
-            width: max-content;
-            animation: marqueeScroll 28s linear infinite;
-        }
-        .marquee-track:hover { animation-play-state: paused; }
-        @keyframes marqueeScroll {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
-        }
-        .cliente-logo-img {
-            height: 48px; width: auto; object-fit: contain;
-            opacity: 0.55; transition: opacity 0.2s;
-            filter: grayscale(100%); flex-shrink: 0;
-        }
+        .clientes { background: var(--gray); padding: 52px 0; }
+        .clientes-header { display: flex; align-items: center; justify-content: center; margin-bottom: 36px; }
+        .clientes-badge { background: var(--navy); color: #fff; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; padding: 6px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; }
+        .clientes-track-wrap { overflow: hidden; width: 100%; }
+        .clientes-track { display: flex; align-items: center; gap: 56px; animation: scroll-logos 30s linear infinite; will-change: transform; }
+        .clientes-track:hover { animation-play-state: paused; }
+        .cliente-logo-img { height: 44px; width: 130px; object-fit: contain; opacity: .55; transition: opacity .2s; filter: grayscale(100%); flex-shrink: 0; }
         .cliente-logo-img:hover { opacity: 1; filter: grayscale(0%); }
-        @media (max-width: 600px) { .cliente-logo-img { height: 36px; } }
+        @keyframes scroll-logos {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(calc(-130px * 8 - 56px * 8)); }
+        }
+        @media (max-width: 600px) { .cliente-logo-img { height: 36px; width: 100px; } }
 
         /* ── 4 PASOS ── */
         .pasos { background: var(--gray); padding: 64px 2% 1px; border-top: 1px solid var(--gray2); }
@@ -459,29 +445,29 @@
 </section>
 
 {{-- CLIENTES --}}
-<section class="clientes">
+<section class="clientes" aria-label="Nuestros clientes">
     <div class="clientes-header">
-        <span class="clientes-badge">↑ Algunos de <span style="color:#F5A623;">nuestros</span> clientes</span>
+        <span class="clientes-badge">↑ Algunos de nuestros clientes</span>
     </div>
-    <div class="marquee-track-wrap">
-        <div class="marquee-track">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Marathon_-_Sell-U.png?v=1747491101" alt="Marathon">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Differenza_-_Sell-U.png?v=1747491101" alt="Differenza">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Sense_-_Sell-U.png?v=1747491101" alt="Sense">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Haiko_-_Sell-U.png?v=1747491101" alt="Haiko Natural">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Buddy_Beauty_-_Sell-U.png?v=1747491101" alt="Buddy Beauty">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/nutrelle.png?v=1753916443" alt="Nutrelle">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/LOGO_YAXSOCKS-actual.png?v=1753915977" alt="Yax Socks">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_D_Casa_-_Sell-U.png?v=1747491101" alt="D Casa">
+    <div class="clientes-track-wrap">
+        <div class="clientes-track">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164051/2_xwdg8n.png" alt="Cliente 2">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/3_f4mirm.png" alt="Cliente 3">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/4_gpf3oy.png" alt="Cliente 4">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/6_tgelw3.png" alt="Cliente 5">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/5_pjbzbt.png" alt="Cliente 6">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/7_knt0gq.png" alt="Cliente 7">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164049/8_y7etnz.png" alt="Cliente 8">
             <!-- duplicado para loop continuo -->
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Marathon_-_Sell-U.png?v=1747491101" alt="Marathon">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Differenza_-_Sell-U.png?v=1747491101" alt="Differenza">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Sense_-_Sell-U.png?v=1747491101" alt="Sense">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Haiko_-_Sell-U.png?v=1747491101" alt="Haiko Natural">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Buddy_Beauty_-_Sell-U.png?v=1747491101" alt="Buddy Beauty">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/nutrelle.png?v=1753916443" alt="Nutrelle">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/LOGO_YAXSOCKS-actual.png?v=1753915977" alt="Yax Socks">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_D_Casa_-_Sell-U.png?v=1747491101" alt="D Casa">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164051/2_xwdg8n.png" alt="Cliente 2">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/3_f4mirm.png" alt="Cliente 3">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/4_gpf3oy.png" alt="Cliente 4">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/6_tgelw3.png" alt="Cliente 5">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/5_pjbzbt.png" alt="Cliente 6">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/7_knt0gq.png" alt="Cliente 7">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164049/8_y7etnz.png" alt="Cliente 8">
         </div>
     </div>
 </section>
