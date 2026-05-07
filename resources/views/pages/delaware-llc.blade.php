@@ -176,7 +176,7 @@
         .faq-trigger[aria-expanded="true"] .faq-icon { background: var(--accent-500); border-color: var(--accent-500); }
         .faq-answer { padding: 0 0 22px; font-size: 15px; line-height: 24px; color: var(--fg-secondary); max-width: 720px; display: none; }
         .faq-answer.open { display: block; }
-        .faq-cta-row { margin-top: 56px; display: flex; gap: 14px; flex-wrap: wrap; }
+        .faq-cta-row { margin-bottom: 56px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
         #cta-final { display: none; }
         #cta-final.visible { display: block; }
         .cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
@@ -280,6 +280,10 @@
             </div>
         </div>
 
+        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
+            <h3 style="font-size:26px;font-weight:600;color:var(--ink-900);letter-spacing:-0.015em;">Delaware vs Florida vs Wyoming</h3>
+            <span style="font-size:13px;color:var(--fg-tertiary);">Datos 2026 · USD</span>
+        </div>
         <div class="tbl-wrap">
             <table class="tbl">
                 <thead>
@@ -587,15 +591,15 @@
 <!-- FAQ -->
 <section id="faq" class="sx sx-band">
     <div class="container">
+        <div class="faq-cta-row">
+            <a href="#cta-final" onclick="mostrarFormulario()" class="btn-primary" style="padding:18px 28px;font-size:16px;">Quiero mi LLC ya →</a>
+            <button class="btn-outline-white" style="color:var(--ink-900);border-color:var(--ink-300);background:var(--white);padding:18px 28px;font-size:16px;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;border-radius:12px;display:inline-flex;align-items:center;gap:8px;" onclick="window.open('https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20abrir%20LLC%20en%20Delaware','_blank')"><i data-lucide="phone" style="width:18px;height:18px"></i> Quiero que me llamen</button>
+        </div>
         <div class="faq-wrap">
             <div class="faq-sticky">
-                <div class="sx-eyebrow">FAQ</div>
+                <div class="sx-eyebrow">Preguntas frecuentes</div>
                 <h2>Lo que importa, sin rodeos.</h2>
-                <p class="sx-lead" style="margin-top:12px;">Preguntas frecuentes sobre cómo abrir y mantener tu LLC en Delaware desde el extranjero.</p>
-                <div class="faq-cta-row">
-                    <a href="#cta-final" onclick="mostrarFormulario()" class="btn-primary">Quiero mi LLC ya →</a>
-                    <button class="btn-outline-white" style="color:var(--navy-900);border-color:var(--ink-300);" onclick="window.open('https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20abrir%20LLC%20en%20Delaware','_blank')">Quiero que me llamen</button>
-                </div>
+                <p style="font-size:15px;line-height:24px;color:var(--fg-secondary);margin-top:16px;">¿No ves tu pregunta? Escríbenos y un especialista te responde en menos de 24 horas, en español.</p>
             </div>
 
             <div class="faq-list">
