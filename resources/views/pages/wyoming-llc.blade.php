@@ -414,7 +414,7 @@
     <div class="container">
         <div class="sx-header">
             <div class="sx-eyebrow">Costos reales</div>
-            <h2>Lo que pagarás —de verdad— en el año 1.</h2>
+            <h2>Lo que pagarás por tu LLC el próximo año.</h2>
             <p class="sx-lead">Sin tarifas ocultas. Wyoming tiene los costos recurrentes más bajos de todos los estados populares.</p>
         </div>
         <div class="tbl-wrap">
