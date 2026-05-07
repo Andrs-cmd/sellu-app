@@ -7,13 +7,13 @@
 <meta name="description" content="Lleva tus productos latinos a +329,000 restaurantes, hoteles y hospitales en EE.UU. a través de Sysco Marketplace. Sell-U gestiona todo el onboarding.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 :root{
-  --navy:#002B5B;
-  --blue:#072ac8;
+  --navy:#434966;
+  --blue:#434966;
   --yellow:#f6bb33;
   --orange:#E8501A;
   --gray:#f2f2f2;
@@ -26,7 +26,7 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
 .section{padding:96px 0}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins',sans-serif;font-weight:700;font-size:16px;padding:16px 28px;border-radius:12px;border:2px solid transparent;cursor:pointer;line-height:1;text-decoration:none;white-space:nowrap;transition:transform 150ms,background 200ms,box-shadow 200ms,border-color 200ms,color 200ms}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;padding:16px 28px;border-radius:12px;border:2px solid transparent;cursor:pointer;line-height:1;text-decoration:none;white-space:nowrap;transition:transform 150ms,background 200ms,box-shadow 200ms,border-color 200ms,color 200ms}
 .btn:active{transform:scale(.98)}
 .btn-primary{background:var(--yellow);color:var(--fg);box-shadow:0 6px 14px rgba(246,187,51,.32)}
 .btn-primary:hover{background:#f9cc66;box-shadow:0 10px 22px rgba(246,187,51,.38)}
@@ -37,9 +37,9 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
 .btn-sm{padding:10px 18px;font-size:14px;border-radius:10px}
 
 /* Typography */
-.h1{font-family:'Poppins',sans-serif;font-weight:800;font-size:56px;line-height:1.08;color:var(--fg);letter-spacing:-.025em;margin:20px 0 24px}
-.h2{font-family:'Poppins',sans-serif;font-weight:700;font-size:38px;line-height:1.2;color:var(--fg);letter-spacing:-.02em}
-.eyebrow{font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.h1{font-family:'Montserrat',sans-serif;font-weight:600;font-size:56px;line-height:1.08;color:var(--fg);letter-spacing:-.025em;margin:20px 0 24px}
+.h2{font-family:'Montserrat',sans-serif;font-weight:600;font-size:38px;line-height:1.2;color:var(--fg);letter-spacing:-.02em}
+.eyebrow{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
 
 /* Reveal */
 .reveal,.reveal-left,.reveal-right{opacity:0;transition:opacity .6s ease,transform .6s ease}
@@ -51,19 +51,19 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
 /* ──── HERO ──── */
 .hero{position:relative;overflow:hidden;padding:64px 0 96px;min-height:90vh;display:flex;align-items:center;background:#fff}
 .hero-glow-tr{position:absolute;top:-120px;right:-160px;width:540px;height:540px;background:radial-gradient(circle,rgba(246,233,184,.55) 0%,rgba(246,233,184,0) 65%);pointer-events:none}
-.hero-glow-bl{position:absolute;bottom:-80px;left:-100px;width:320px;height:320px;background:radial-gradient(circle,rgba(7,42,200,.05) 0%,rgba(7,42,200,0) 70%);pointer-events:none}
+.hero-glow-bl{position:absolute;bottom:-80px;left:-100px;width:320px;height:320px;background:radial-gradient(circle,rgba(67,73,102,.05) 0%,rgba(67,73,102,0) 70%);pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center;width:100%}
 .hero-eyebrow{color:var(--orange)}
-.hero-title .blue{color:var(--blue)}
+.hero-title .blue{color:var(--yellow)}
 
 /* ──── PIPELINE CARD ──── */
 .pipeline-wrap{position:relative;width:100%;max-width:420px;padding:28px 0;margin:0 auto}
 .chip{position:absolute;font-size:11px;font-weight:700;padding:7px 14px;border-radius:999px;box-shadow:0 8px 20px rgba(0,0,0,.18);white-space:nowrap;z-index:2}
 .chip-animate{animation:floatChip 3s ease-in-out infinite alternate}
-.pipeline-card{background:var(--navy);border-radius:24px;padding:28px 26px;box-shadow:0 24px 60px rgba(0,43,91,.35);position:relative;overflow:hidden}
+.pipeline-card{background:var(--navy);border-radius:24px;padding:28px 26px;box-shadow:0 24px 60px rgba(67,73,102,.35);position:relative;overflow:hidden}
 .pipeline-blob{position:absolute;top:-60px;right:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(246,187,51,.18) 0%,transparent 70%);pointer-events:none}
 .pipeline-header{display:flex;align-items:center;gap:10px;margin-bottom:22px;position:relative}
-.pipeline-brand{font-family:'Poppins',sans-serif;font-weight:800;font-size:18px;color:#fff;letter-spacing:-.02em}
+.pipeline-brand{font-family:'Montserrat',sans-serif;font-weight:800;font-size:18px;color:#fff;letter-spacing:-.02em}
 .pipeline-dot{display:inline-block;width:14px;height:14px;background:var(--orange);border-radius:2px}
 .pipeline-sub{font-size:11px;color:rgba(255,255,255,.55);margin-left:4px}
 .pipeline-live{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;color:#22c55e;letter-spacing:.1em;background:rgba(34,197,94,.12);padding:4px 10px;border-radius:999px;border:1px solid rgba(34,197,94,.3)}
@@ -81,7 +81,7 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
 .pipe-line.active{background:linear-gradient(to bottom,var(--yellow) 0%,var(--yellow) 30%,var(--blue) 70%,var(--blue) 100%);background-size:100% 200%;animation:lineFlow 1.8s linear infinite}
 .pipe-line.inactive{background:rgba(255,255,255,.1)}
 .pipeline-metrics{margin-top:24px;padding:16px;background:rgba(255,255,255,.06);border-radius:14px;border-top:1px solid rgba(255,255,255,.1);display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.metric-num{font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;color:#fff;line-height:1.1}
+.metric-num{font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:#fff;line-height:1.1}
 .metric-label{font-size:11px;color:rgba(255,255,255,.55);margin-top:4px}
 .metric-right{border-left:1px solid rgba(255,255,255,.1);padding-left:12px}
 
@@ -90,25 +90,25 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
 .strip-label{text-align:center;font-size:12px;color:#999;margin-bottom:20px;letter-spacing:.05em}
 .marquee-outer{overflow:hidden;mask-image:linear-gradient(90deg,transparent 0%,#000 12%,#000 88%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 12%,#000 88%,transparent 100%)}
 .marquee-track{display:flex;gap:16px;width:max-content;animation:marquee 32s linear infinite}
-.marquee-tag{display:inline-flex;align-items:center;padding:10px 22px;border-radius:999px;background:#fff;border:1px solid var(--border);font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;color:var(--fg);white-space:nowrap}
+.marquee-tag{display:inline-flex;align-items:center;padding:10px 22px;border-radius:999px;background:#fff;border:1px solid var(--border);font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;color:var(--fg);white-space:nowrap}
 
 /* ──── WHY SYSCO ──── */
 .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .why-card{background:var(--gray);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:12px}
-.why-stat{font-family:'Poppins',sans-serif;font-weight:800;font-size:44px;color:var(--navy);line-height:1;letter-spacing:-.02em}
-.why-label{font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;color:var(--fg)}
+.why-stat{font-family:'Montserrat',sans-serif;font-weight:800;font-size:44px;color:var(--navy);line-height:1;letter-spacing:-.02em}
+.why-label{font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;color:var(--fg)}
 .why-desc{font-size:13px;color:var(--fg2);line-height:1.5}
 
 /* ──── SERVICES ──── */
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .svc-card{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:28px;transition:transform .2s,border-color .2s,box-shadow .2s}
-.svc-card:hover{transform:translateY(-4px);border-color:var(--blue);box-shadow:0 18px 36px -12px rgba(7,42,200,.18)}
+.svc-card:hover{transform:translateY(-4px);border-color:var(--yellow);box-shadow:0 18px 36px -12px rgba(246,187,51,.18)}
 .svc-icon{width:52px;height:52px;border-radius:14px;background:#fef5dd;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px}
-.svc-h{font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;color:var(--fg);margin:0 0 10px;letter-spacing:-.01em}
+.svc-h{font-family:'Montserrat',sans-serif;font-weight:700;font-size:18px;color:var(--fg);margin:0 0 10px;letter-spacing:-.01em}
 .svc-p{font-size:14px;line-height:1.6;color:var(--fg2);margin:0 0 16px}
 .svc-bullets{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
 .svc-bullets li{font-size:13px;color:var(--fg);display:flex;gap:10px;align-items:flex-start}
-.svc-bullets li span.dot{color:var(--blue);font-weight:700;flex:none}
+.svc-bullets li span.dot{color:var(--yellow);font-weight:700;flex:none}
 
 /* ──── CONTRAST ──── */
 .contrast-section{background:#434966;padding:96px 0}
@@ -125,21 +125,21 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
 .process-line{position:absolute;left:23px;top:24px;bottom:24px;width:2px;background:linear-gradient(to bottom,var(--navy) 0%,var(--yellow) 100%);opacity:.25}
 .process-step{display:flex;gap:24px;align-items:flex-start;margin-bottom:32px;position:relative}
 .process-step:last-child{margin-bottom:0}
-.process-num{width:48px;height:48px;border-radius:999px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;flex:none;box-shadow:0 6px 16px rgba(0,43,91,.25);z-index:1}
+.process-num{width:48px;height:48px;border-radius:999px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:700;font-size:18px;flex:none;box-shadow:0 6px 16px rgba(67,73,102,.25);z-index:1}
 .process-body{background:#fff;border-radius:14px;padding:24px;flex:1;border:1px solid var(--border);box-shadow:0 2px 6px rgba(67,73,102,.04)}
-.process-h{font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;color:var(--fg);margin:0 0 8px;letter-spacing:-.01em}
+.process-h{font-family:'Montserrat',sans-serif;font-weight:700;font-size:18px;color:var(--fg);margin:0 0 8px;letter-spacing:-.01em}
 .process-p{font-size:14px;line-height:1.6;color:var(--fg2);margin:0}
 
 /* ──── PRICING ──── */
 .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
 .price-card{background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:20px;transition:transform .2s,box-shadow .2s}
-.price-card.popular{border-color:var(--blue);border-width:2px;box-shadow:0 24px 48px -16px rgba(7,42,200,.20);transform:scale(1.03);position:relative}
-.popular-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:999px;white-space:nowrap}
-.price-name{font-family:'Poppins',sans-serif;font-weight:700;font-size:16px;color:var(--fg)}
-.price-num{font-family:'Poppins',sans-serif;font-weight:800;font-size:44px;color:var(--fg);line-height:1;letter-spacing:-.025em}
+.price-card.popular{border-color:var(--yellow);border-width:2px;box-shadow:0 24px 48px -16px rgba(246,187,51,.20);transform:scale(1.03);position:relative}
+.popular-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:999px;white-space:nowrap}
+.price-name{font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;color:var(--fg)}
+.price-num{font-family:'Montserrat',sans-serif;font-weight:800;font-size:44px;color:var(--fg);line-height:1;letter-spacing:-.025em}
 .price-items{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;flex:1}
 .price-items li{display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.5;color:var(--fg)}
-.price-check{color:var(--blue);font-weight:700;flex:none}
+.price-check{color:var(--yellow);font-weight:700;flex:none}
 
 /* ──── REQUIREMENTS ──── */
 .req-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -147,15 +147,15 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
 .req-card.accent-orange{border-left:4px solid var(--orange)}
 .req-card.accent-yellow{border-left:4px solid var(--yellow)}
 .req-icon{width:44px;height:44px;border-radius:12px;background:var(--gray);display:flex;align-items:center;justify-content:center;font-size:22px}
-.req-h{font-family:'Poppins',sans-serif;font-weight:700;font-size:16px;color:var(--fg);letter-spacing:-.01em}
+.req-h{font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;color:var(--fg);letter-spacing:-.01em}
 .req-p{font-size:13px;line-height:1.6;color:var(--fg2);margin:0}
 .req-badge{align-self:flex-start;font-size:11px;font-weight:700;padding:5px 10px;border-radius:999px;margin-top:4px}
 
 /* ──── QUOTE ──── */
 .quote-section{background:#434966;padding:96px 0}
-.quote-mark{font-family:'Poppins',sans-serif;font-weight:800;font-size:140px;color:var(--yellow);opacity:.25;line-height:.6;margin-bottom:-20px;user-select:none}
-.quote-text{font-family:'Poppins',sans-serif;font-weight:700;font-size:24px;line-height:1.5;color:#fff;font-style:italic;margin:0 0 32px;letter-spacing:-.01em}
-.quote-avatar{width:60px;height:60px;border-radius:999px;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;color:var(--fg)}
+.quote-mark{font-family:'Montserrat',sans-serif;font-weight:800;font-size:140px;color:var(--yellow);opacity:.25;line-height:.6;margin-bottom:-20px;user-select:none}
+.quote-text{font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;line-height:1.5;color:#fff;font-style:italic;margin:0 0 32px;letter-spacing:-.01em}
+.quote-avatar{width:60px;height:60px;border-radius:999px;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:700;font-size:22px;color:var(--fg)}
 
 /* ──── FINAL CTA ──── */
 .cta-section{background:var(--navy);padding:120px 0}
@@ -203,7 +203,7 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
           en los mejores<br>
           <span class="blue">restaurantes de EE.UU.</span>
         </h1>
-        <p style="font-family:'Poppins',sans-serif;font-size:18px;line-height:1.7;color:#666;max-width:500px;margin:0 0 32px">
+        <p style="font-family:'Montserrat',sans-serif;font-size:18px;line-height:1.7;color:#666;max-width:500px;margin:0 0 32px">
           Sysco es el mayor distribuidor de foodservice de Estados Unidos.
           A través de su Marketplace, tus productos llegan directamente a
           +329,000 restaurantes, hoteles, hospitales y escuelas — sin
@@ -211,7 +211,6 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
         </p>
         <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
           <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vender%20en%20Sysco" class="btn btn-primary" target="_blank" rel="noopener">Hablar con un asesor →</a>
-          <a href="#proceso" class="btn btn-outline">Ver cómo funciona ↓</a>
         </div>
         <p style="font-size:12px;color:#999;margin-top:20px">Sin compromiso · En español · Disponible para toda LATAM</p>
       </div>
@@ -252,16 +251,6 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════ CLIENT STRIP ═══════════════ -->
-<section class="client-strip">
-  <div class="strip-label">↑ Marcas que ya venden con Sell-U</div>
-  <div class="marquee-outer">
-    <div class="marquee-track" id="marqueeTrack">
-      <!-- JS duplicated -->
     </div>
   </div>
 </section>
@@ -415,120 +404,6 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
   </div>
 </section>
 
-<!-- ═══════════════ PROCESS ═══════════════ -->
-<section class="section" id="proceso" style="background:var(--gray)">
-  <div class="container">
-    <h2 class="h2 reveal" style="text-align:center;max-width:760px;margin:0 auto 56px">
-      4 semanas, 5 pasos,<br>
-      tus productos en la plataforma <span style="color:var(--navy)">Sysco</span>.
-    </h2>
-    <div class="process-wrap">
-      <div class="process-line" aria-hidden="true"></div>
-      <div class="process-step reveal">
-        <div class="process-num">1</div>
-        <div class="process-body">
-          <h3 class="process-h">Diagnóstico de elegibilidad</h3>
-          <p class="process-p">Evaluamos tu empresa, producto, categoría y cumplimiento regulatorio para confirmar que cumples los requisitos de Sysco Marketplace antes de iniciar el proceso.</p>
-        </div>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">2</div>
-        <div class="process-body">
-          <h3 class="process-h">Preparación de documentación</h3>
-          <p class="process-p">Preparamos tu perfil de proveedor, seguro de responsabilidad, fichas técnicas, certificaciones y toda la documentación requerida por Sysco.</p>
-        </div>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">3</div>
-        <div class="process-body">
-          <h3 class="process-h">Registro y aprobación como supplier</h3>
-          <p class="process-p">Registramos tu empresa en el portal de proveedores de Sysco y gestionamos el seguimiento de aprobación con el equipo de onboarding.</p>
-        </div>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">4</div>
-        <div class="process-body">
-          <h3 class="process-h">Configuración del Marketplace</h3>
-          <p class="process-p">Con la cuenta aprobada, cargamos tus productos en Sysco Shop, configuramos drop-ship, precios y pack sizes.</p>
-        </div>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">5</div>
-        <div class="process-body">
-          <h3 class="process-h">Activación y primer pedido</h3>
-          <p class="process-p">Tu catálogo queda disponible para los +329,000 clientes de Sysco en EE.UU. Te acompañamos hasta el primer pedido recibido.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════ PRICING ═══════════════ -->
-<section class="section" style="background:#fff">
-  <div class="container">
-    <h2 class="h2 reveal" style="text-align:center;max-width:720px;margin:0 auto 56px">
-      Tres formas de entrar a Sysco.<br>Tú decides hasta dónde llegamos.
-    </h2>
-    <div class="pricing-grid">
-      <div class="price-card reveal">
-        <div>
-          <div class="price-name">Registro y onboarding</div>
-          <div style="margin-top:12px;display:flex;align-items:baseline;gap:6px">
-            <span style="font-size:14px;color:#999">desde</span>
-            <span class="price-num">$299</span>
-          </div>
-          <div style="font-size:13px;color:#999;margin-top:4px">pago único · USD</div>
-        </div>
-        <ul class="price-items">
-          <li><span class="price-check">✓</span><span>Registro como supplier Sysco gestionado</span></li>
-          <li><span class="price-check">✓</span><span>Seguimiento del proceso de aprobación</span></li>
-          <li><span class="price-check">✓</span><span>Onboarding en Sysco Marketplace</span></li>
-          <li><span class="price-check">✓</span><span>Configuración de cuenta básica</span></li>
-          <li><span class="price-check">✓</span><span>Soporte en español</span></li>
-        </ul>
-        <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20el%20plan%20de%20registro%20Sysco" class="btn btn-primary" style="justify-content:center" target="_blank" rel="noopener">Empezar ahora →</a>
-      </div>
-      <div class="price-card popular reveal">
-        <span class="popular-badge">Más popular</span>
-        <div>
-          <div class="price-name">Onboarding + Catálogo</div>
-          <div style="margin-top:12px;display:flex;align-items:baseline;gap:6px">
-            <span style="font-size:14px;color:#999">desde</span>
-            <span class="price-num">$549</span>
-          </div>
-          <div style="font-size:13px;color:#999;margin-top:4px">pago único · USD</div>
-        </div>
-        <ul class="price-items">
-          <li><span class="price-check">✓</span><span>Todo lo del plan Registro</span></li>
-          <li><span class="price-check">✓</span><span>Hasta 5 productos cargados y optimizados</span></li>
-          <li><span class="price-check">✓</span><span>Fichas técnicas completas</span></li>
-          <li><span class="price-check">✓</span><span>Drop-ship configurado</span></li>
-          <li><span class="price-check">✓</span><span>Acompañamiento 30 días post-aprobación</span></li>
-        </ul>
-        <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20el%20plan%20onboarding%20Sysco" class="btn btn-primary" style="justify-content:center" target="_blank" rel="noopener">Empezar ahora →</a>
-      </div>
-      <div class="price-card reveal">
-        <div>
-          <div class="price-name">Setup completo</div>
-          <div style="margin-top:12px;display:flex;align-items:baseline;gap:6px">
-            <span style="font-size:14px;color:#999">desde</span>
-            <span class="price-num">$999</span>
-          </div>
-          <div style="font-size:13px;color:#999;margin-top:4px">pago único · USD</div>
-        </div>
-        <ul class="price-items">
-          <li><span class="price-check">✓</span><span>Todo lo del plan Onboarding + Catálogo</span></li>
-          <li><span class="price-check">✓</span><span>Hasta 15 productos cargados</span></li>
-          <li><span class="price-check">✓</span><span>Orientación en certificaciones FDA/orgánico</span></li>
-          <li><span class="price-check">✓</span><span>Configuración logística avanzada</span></li>
-          <li><span class="price-check">✓</span><span>Payouts USD configurados</span></li>
-        </ul>
-        <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20el%20setup%20completo%20Sysco" class="btn btn-primary" style="justify-content:center" target="_blank" rel="noopener">Empezar ahora →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ═══════════════ REQUIREMENTS ═══════════════ -->
 <section class="section" style="background:var(--gray)">
   <div class="container">
@@ -592,7 +467,7 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
     <div style="display:flex;align-items:center;justify-content:center;gap:14px">
       <div class="quote-avatar">SU</div>
       <div style="text-align:left">
-        <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:16px;color:var(--yellow)">Equipo Sell-U Marketplace</div>
+        <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;color:var(--yellow)">Equipo Sell-U Marketplace</div>
         <div style="font-size:13px;color:rgba(255,255,255,.6);margin-top:2px">Especialistas en distribución B2B de alimentos en EE.UU. desde LATAM</div>
       </div>
     </div>
@@ -611,7 +486,6 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
     </p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
       <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vender%20en%20Sysco" class="btn btn-primary" target="_blank" rel="noopener">Hablar con un asesor →</a>
-      <a href="https://wa.me/573116473200?text=Hola%2C%20quisiera%20agendar%20una%20llamada%20sobre%20Sysco" class="btn btn-on-dark" target="_blank" rel="noopener">Agendar una llamada</a>
     </div>
   </div>
 </section>
@@ -673,17 +547,6 @@ html,body{background:#fff;color:#434966;font-family:'Poppins',ui-sans-serif,syst
 
   render();
   setInterval(function(){ active = (active + 1) % 4; render(); }, 1800);
-})();
-
-/* ── Marquee ── */
-(function(){
-  const clients = ['Marathon','Differenza','Sense','Haiko Natural','Buddy Beauty','Nutrelle','Yax Socks','D Casa'];
-  const all = [...clients, ...clients];
-  const track = document.getElementById('marqueeTrack');
-  if (!track) return;
-  track.innerHTML = all.map(function(c){
-    return '<span class="marquee-tag">'+c+'</span>';
-  }).join('');
 })();
 
 /* ── Scroll reveal ── */
