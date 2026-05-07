@@ -138,7 +138,7 @@
     }
     .section { padding: 96px 0; }
     .section-band { background: #F5F6FA; }
-    .section-band-1 { background: #F5F6FA; }
+    .section-band-1 { background: #fff; }
     .section-inverse { background: var(--navy-900); color: var(--paper); }
     .section-inverse .eyebrow { color: var(--accent-500); }
     .section-inverse h2 { color: var(--paper); }
