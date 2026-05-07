@@ -898,7 +898,7 @@ function toggleVideo(card) {
 // Tier D ($499): estados con tarifas altas
 // Tier E ($599): Texas (tarifa especial)
 const statePrices = {
-    FL:399, WY:349, DE:499, TX:499, NY:499, CA:399, NV:399,
+    FL:399, WY:399, DE:499, TX:499, NY:499, CA:399, NV:399,
     AL:399, AK:399, AZ:399, AR:399, CO:399, CT:499, GA:399,
     HI:499, ID:399, IL:499, IN:399, IA:399, KS:399, KY:399,
     LA:399, ME:399, MD:499, MA:499, MI:399, MN:399, MS:399,
