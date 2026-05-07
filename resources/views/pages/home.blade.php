@@ -307,7 +307,7 @@
 
 <!-- ── SERVICIOS ── -->
 <section id="servicios" class="servicios" aria-label="Nuestros servicios">
-    <span class="section-tag">Lo que hacemos</span>
+    <!--<span class="section-tag">Lo que hacemos</span>-->
     <h2 class="section-title">Servicios clave para tu empresa en Estados Unidos</h2>
     <p class="section-sub">Simplificamos los procesos para que tu empresa crezca sin límites.</p>
     <div class="servicios-grid">
@@ -501,7 +501,7 @@
 <section class="blog" aria-label="Artículos de interés">
     <div class="blog-inner">
         <div class="blog-header">
-            <span class="blog-tag">Artículos de interés</span>
+            <!--<span class="blog-tag">Artículos de interés</span>-->
             <h2>Conoce las Claves para Exportar.</h2>
             <p>Explora nuestros artículos más recientes sobre registro de marca, normatividad FDA, estrategias de exportación y consejos para destacar en marketplaces como Amazon y Walmart.</p>
         </div>
