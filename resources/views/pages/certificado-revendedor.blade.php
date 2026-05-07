@@ -462,8 +462,7 @@
 <div class="divider"></div>
 
 <!-- WHAT IS -->
-<section class="section" style="
-    background: white;>
+<section class="section" style="background: white;">
     <div class="container">
         <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:96px;align-items:flex-start;">
             <div class="sticky-left anim">
