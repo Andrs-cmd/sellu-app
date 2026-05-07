@@ -913,7 +913,7 @@
     </div>
 </section>
 
-<!-- MISTAKES -->
+<!-- MISTAKES 
 <section class="section">
     <div class="container">
         <div style="max-width:760px;margin-bottom:56px;" class="anim">
@@ -947,9 +947,9 @@
             <p style="font-size:14px;line-height:22px;">Los auditores pueden solicitar hasta tres facturas de muestra durante una auditoría para verificar tu documentación de exención. Si alguna no tiene un certificado válido, puedes ser responsable por el impuesto no pagado más penalizaciones.</p>
         </div>
     </div>
-</section>
+</section>-->
 
-<!-- PROCESS -->
+<!-- PROCESS 
 <section class="section section-band">
     <div class="container">
         <div style="max-width:760px;margin-bottom:56px;" class="anim">
@@ -996,7 +996,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- FAQ -->
 <section class="section">
