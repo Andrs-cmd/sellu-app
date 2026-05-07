@@ -362,7 +362,7 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
       <!-- <span class="eyebrow" style="color:var(--yellow)">Por qué Sysco es diferente</span> -->
       <h2 class="h2" style="color:#fff;margin:16px 0 20px">
         No vendes a consumidores.<br>
-        Vendes a negocios que compran<br>semana a semana.
+        Vendes a negocios que compran semana a semana.
       </h2>
       <p style="font-size:16px;line-height:1.7;color:rgba(255,255,255,.7);max-width:640px;margin:0 auto">
         En Amazon o Walmart compites con miles de sellers por el mismo comprador individual. En Sysco Marketplace vendes a restaurantes, hoteles y cadenas de hospitalidad que realizan pedidos recurrentes y en volumen. Una cuenta activada puede valer $8,000–$50,000 al año.
