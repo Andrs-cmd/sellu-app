@@ -508,7 +508,7 @@
         <div class="blog-grid">
             <a href="#" class="blog-card" aria-label="Artículo sobre requisitos para abrir empresa en USA">
                 <div class="blog-thumb">
-                    <img src="https://sellu.co/cdn/shop/articles/crea_empresa_en_estados_unidos.jpg?v=1738199778&width=900" alt="Crear empresa en Estados Unidos">
+                    <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164719/Crear_una_LLC_vs0uxg.png" alt="Crear empresa en Estados Unidos">
                     <span class="blog-date" style="position:relative;z-index:1;">Febrero 18, 2025 · 5 min lectura</span>
                 </div>
                 <div class="blog-body">
@@ -519,7 +519,7 @@
             </a>
             <a href="#" class="blog-card" aria-label="Artículo sobre registro de marca en USA">
                 <div class="blog-thumb">
-                    <img src="https://sellu.co/cdn/shop/articles/Registro_de_marca_0e55d7a4-c165-45d9-b0a1-ef77ee58c03c.jpg?v=1738477566&width=900" alt="Registro de marca en USA">
+                    <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164719/Registro_de_marca_USPTO_qa1kwr.png" alt="Registro de marca en USA">
                     <span class="blog-date" style="position:relative;z-index:1;">Septiembre 27, 2025 · 5 min lectura</span>
                 </div>
                 <div class="blog-body">
@@ -530,7 +530,7 @@
             </a>
             <a href="#" class="blog-card" aria-label="Artículo sobre registro FDA">
                 <div class="blog-thumb">
-                    <img src="https://sellu.co/cdn/shop/articles/FDA_Blog.jpg?v=1738197116&width=900" alt="Registro FDA para alimentos">
+                    <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164717/FDA_vyuyt8.png" alt="Registro FDA para alimentos">
                     <span class="blog-date" style="position:relative;z-index:1;">Octubre 13, 2025 · 5 min lectura</span>
                 </div>
                 <div class="blog-body">
