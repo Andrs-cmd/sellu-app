@@ -602,22 +602,22 @@
             </div>
             <div class="tt-metrics-grid">
                 <div class="tt-metric-card">
-                    <div class="tt-metric-num tt-count" data-target="150" data-suffix="M+" style="color:var(--tt-pink);">150M+</div>
+                    <div class="tt-metric-num tt-count" data-target="150" data-suffix="M+" style="color:#f6bb33;">150M+</div>
                     <div class="tt-metric-label">Usuarios activos en EE.UU.</div>
                     <div class="tt-metric-desc">La audiencia más joven y más comprometida del mundo digital.</div>
                 </div>
                 <div class="tt-metric-card">
-                    <div class="tt-metric-num tt-count" data-target="26.2" data-prefix="$" data-suffix="B" data-decimals="1" style="color:var(--tt-cyan-deep);">$26.2B</div>
+                    <div class="tt-metric-num tt-count" data-target="26.2" data-prefix="$" data-suffix="B" data-decimals="1" style="color:#434966;">$26.2B</div>
                     <div class="tt-metric-label">GMV global · H1 2025</div>
                     <div class="tt-metric-desc">Casi el doble del año completo 2024. El canal de mayor crecimiento en e-commerce.</div>
                 </div>
                 <div class="tt-metric-card">
-                    <div class="tt-metric-num tt-count" data-target="6" data-suffix="%" style="color:#072ac8;">6%</div>
+                    <div class="tt-metric-num tt-count" data-target="6" data-suffix="%" style="color:#f6bb33;">6%</div>
                     <div class="tt-metric-label">Fee por venta</div>
                     <div class="tt-metric-desc">Sin cuota mensual. Solo pagas cuando vendes. Amazon cobra hasta 15%.</div>
                 </div>
                 <div class="tt-metric-card">
-                    <div class="tt-metric-num" style="color:var(--t-dark);">3–5</div>
+                    <div class="tt-metric-num" style="color:#434966;">3–5</div>
                     <div class="tt-metric-label">Días para estar activo</div>
                     <div class="tt-metric-desc">El proceso de aprobación más rápido entre los marketplaces de EE.UU.</div>
                 </div>
@@ -809,7 +809,7 @@
             <div style="text-align:center;max-width:800px;margin:0 auto 64px;">
                 <h2 class="tt-section-h2" style="font-family:'Poppins',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
                     <span style="color:var(--tt-pink);">3–5 días</span>, 4 pasos,<br>
-                    tu tienda TikTok Shop activa y vendiendo.
+                    para tener tu tienda TikTok Shop activa y vendiendo.
                 </h2>
             </div>
             <div class="tt-process-grid">
