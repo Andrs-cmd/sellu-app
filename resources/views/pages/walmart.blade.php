@@ -361,7 +361,7 @@
 
 <!-- LOGO STRIP / CLIENTES -->
 <style>
-.wm-clientes { background: var(--w-gray); padding: 52px 0; border-top: 1px solid var(--w-line); border-bottom: 1px solid var(--w-line); }
+.wm-clientes { background: #fff; padding: 52px 0; border-top: 1px solid var(--w-line); border-bottom: 1px solid var(--w-line); }
 .wm-clientes-header { display: flex; align-items: center; justify-content: center; margin-bottom: 36px; }
 .wm-clientes-badge { background: var(--w-dark); color: #fff; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; padding: 6px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; }
 .wm-clientes-track-wrap { overflow: hidden; width: 100%; }
