@@ -1062,11 +1062,10 @@ document.querySelectorAll('a[href="#contacto"]').forEach(link => {
 });
 
 // Wizard navigation
-let currentStep = 1;
-const TOTAL_STEPS = 3;
+let wizStep = 1;
 
-function validatePanel(stepNum) {
-    const panel = document.getElementById('wiz-panel-' + stepNum);
+function validatePanel(panelStep) {
+    const panel = document.getElementById('wiz-panel-' + panelStep);
     let valid = true;
     panel.querySelectorAll('[required]').forEach(el => {
         const field = el.closest('.field');
@@ -1085,20 +1084,20 @@ function validatePanel(stepNum) {
 }
 
 function goToStep(n) {
-    document.getElementById('wiz-panel-' + currentStep).classList.remove('active');
-    document.getElementById('wiz-tab-' + currentStep).classList.remove('active');
-    if (n > currentStep) document.getElementById('wiz-tab-' + currentStep).classList.add('done');
-    else document.getElementById('wiz-tab-' + currentStep).classList.remove('done');
-    currentStep = n;
-    document.getElementById('wiz-panel-' + currentStep).classList.add('active');
-    document.getElementById('wiz-tab-' + currentStep).classList.add('active');
+    document.getElementById('wiz-panel-' + wizStep).classList.remove('active');
+    document.getElementById('wiz-tab-' + wizStep).classList.remove('active');
+    if (n > wizStep) document.getElementById('wiz-tab-' + wizStep).classList.add('done');
+    else document.getElementById('wiz-tab-' + wizStep).classList.remove('done');
+    wizStep = n;
+    document.getElementById('wiz-panel-' + wizStep).classList.add('active');
+    document.getElementById('wiz-tab-' + wizStep).classList.add('active');
     formWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 document.querySelectorAll('.wiz-next[data-next]').forEach(btn => {
     btn.addEventListener('click', () => {
         const next = parseInt(btn.dataset.next);
-        if (validatePanel(currentStep)) goToStep(next);
+        if (validatePanel(wizStep)) goToStep(next);
     });
 });
 document.querySelectorAll('.wiz-back[data-back]').forEach(btn => {
