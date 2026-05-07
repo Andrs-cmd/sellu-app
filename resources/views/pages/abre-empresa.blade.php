@@ -159,13 +159,13 @@
         .clientes-track-wrap { overflow: hidden; width: 100%; }
         .clientes-track { display: flex; align-items: center; gap: 56px; animation: scroll-logos 30s linear infinite; will-change: transform; }
         .clientes-track:hover { animation-play-state: paused; }
-        .cliente-logo-img { height: 44px; width: 130px; object-fit: contain; opacity: .55; transition: opacity .2s; filter: grayscale(100%); flex-shrink: 0; }
+        .cliente-logo-img { height: 64px; width: 180px; object-fit: contain; opacity: .55; transition: opacity .2s; filter: grayscale(100%); flex-shrink: 0; }
         .cliente-logo-img:hover { opacity: 1; filter: grayscale(0%); }
         @keyframes scroll-logos {
             0%   { transform: translateX(0); }
-            100% { transform: translateX(calc(-130px * 8 - 56px * 8)); }
+            100% { transform: translateX(calc(-180px * 8 - 56px * 8)); }
         }
-        @media (max-width: 600px) { .cliente-logo-img { height: 36px; width: 100px; } }
+        @media (max-width: 600px) { .cliente-logo-img { height: 48px; width: 130px; } }
 
         /* ── 4 PASOS ── */
         .pasos { background: var(--gray); padding: 64px 2% 1px; border-top: 1px solid var(--gray2); }
