@@ -82,6 +82,7 @@
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
         body { background: #eef1f8; color: var(--fg-primary); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; line-height: 1.6; }
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); font-weight: 600 !important; }
         a { text-decoration: none; color: inherit; }
         img { max-width: 100%; display: block; }
 
@@ -218,7 +219,7 @@
             margin-bottom: 12px; display: block;
         }
         .section-h2 {
-            font-size: clamp(24px, 3vw, 36px); font-weight: 800;
+            font-size: clamp(24px, 3vw, 36px); font-weight: 600;
             color: var(--navy-900); line-height: 1.2;
             letter-spacing: -0.3px;
         }
@@ -237,10 +238,10 @@
         }
         .benefit-icon svg { width: 22px; height: 22px; color: var(--AMZ); }
         .benefit-stat {
-            font-size: 28px; font-weight: 800; color: var(--navy-900);
+            font-size: 28px; font-weight: 600; color: var(--navy-900);
             margin-bottom: 4px; line-height: 1;
         }
-        .benefit-title { font-size: 14px; font-weight: 700; color: var(--navy-900); margin-bottom: 8px; }
+        .benefit-title { font-size: 14px; font-weight: 600; color: var(--navy-900); margin-bottom: 8px; }
         .benefit-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.6; }
 
         /* ── COMPARISON GRID ── */
@@ -274,7 +275,7 @@
             border-radius: 12px; display: flex; align-items: center; justify-content: center;
         }
         .servicio-icon svg { width: 22px; height: 22px; color: var(--AMZ); }
-        .servicio-tile-title { font-size: 15px; font-weight: 700; color: var(--navy-900); }
+        .servicio-tile-title { font-size: 15px; font-weight: 600; color: var(--navy-900); }
         .servicio-tile-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.6; }
         .servicio-bullets { list-style: none; display: flex; flex-direction: column; gap: 6px; }
         .servicio-bullets li { font-size: 13px; color: var(--fg-secondary); display: flex; align-items: flex-start; gap: 6px; }
@@ -300,7 +301,7 @@
             margin-bottom: 16px;
         }
         .proceso-icon svg { width: 22px; height: 22px; color: var(--navy-900); }
-        .proceso-title { font-size: 15px; font-weight: 700; color: var(--navy-900); margin-bottom: 8px; }
+        .proceso-title { font-size: 15px; font-weight: 600; color: var(--navy-900); margin-bottom: 8px; }
         .proceso-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.6; }
 
         /* ── PLANES ── */
@@ -328,7 +329,7 @@
             background: var(--AMZ); color: var(--white);
             position: absolute; top: 20px; left: 20px;
         }
-        .plan-name { font-size: 18px; font-weight: 800; color: var(--navy-900); margin-bottom: 6px; }
+        .plan-name { font-size: 18px; font-weight: 600; color: var(--navy-900); margin-bottom: 6px; }
         .plan-card.featured .plan-name { color: var(--white); }
         .plan-price {
             font-size: 36px; font-weight: 800; color: var(--navy-900);
@@ -389,7 +390,7 @@
             border-radius: 10px; display: flex; align-items: center; justify-content: center;
         }
         .req-icon svg { width: 20px; height: 20px; color: var(--AMZ); }
-        .req-title { font-size: 14px; font-weight: 700; color: var(--navy-900); }
+        .req-title { font-size: 14px; font-weight: 600; color: var(--navy-900); }
         .req-desc { font-size: 13px; color: var(--fg-tertiary); line-height: 1.5; }
 
         /* ── TESTIMONIO ── */
