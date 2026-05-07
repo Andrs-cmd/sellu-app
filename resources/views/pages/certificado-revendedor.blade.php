@@ -101,7 +101,7 @@
     }
 
     html, body {
-        background: var(--paper); color: var(--fg-primary);
+        background: #EEF1F8 ; color: var(--fg-primary);
         font-family: var(--font-sans); font-size: 16px; line-height: 1.5;
         -webkit-font-smoothing: antialiased;
     }
