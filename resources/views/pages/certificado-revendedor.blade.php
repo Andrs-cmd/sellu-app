@@ -546,7 +546,7 @@
 <section class="section section-band">
     <div class="container">
         <div style="max-width:800px;margin-bottom:56px;" class="anim">
-            <span class="eyebrow">Para qué sirve realmente</span>
+            <!-- <span class="eyebrow">Para qué sirve realmente</span> -->
             <h2 style="font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900);">Tres usos concretos. Uno se traduce en dinero en cada compra.</h2>
             <p style="font-size:18px;line-height:28px;color:var(--fg-secondary);">Para un negocio que compra <strong style="color:var(--navy-900);font-weight:600;">USD 50,000</strong> en inventario al año, el certificado puede representar entre <strong style="color:var(--navy-900);font-weight:600;">USD 3,500 y 5,000</strong> que dejas de pagar innecesariamente.</p>
         </div>
@@ -653,7 +653,7 @@
 <section class="section section-band">
     <div class="container">
         <div style="max-width:760px;margin-bottom:56px;" class="anim">
-            <span class="eyebrow">Quién lo necesita</span>
+           <!-- <span class="eyebrow">Quién lo necesita</span>-->
             <h2 style="font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900);">Si compras inventario en EE.UU. para revender, esto te aplica.</h2>
         </div>
         <div class="personas-grid">
@@ -698,7 +698,7 @@
     <div class="container">
         <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:flex-start;">
             <div class="sticky-left anim">
-                <span class="eyebrow">Casos concretos</span>
+                <!--<span class="eyebrow">Casos concretos</span>-->
                 <h2 style="font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900);">¿En qué momentos lo usas?</h2>
                 <p style="font-size:16px;line-height:26px;color:var(--fg-secondary);">No es un trámite genérico. El certificado entra en juego en cada transacción específica donde compras para revender.</p>
             </div>
@@ -738,7 +738,7 @@
                     <div class="savings-circle" aria-hidden="true"></div>
                     <div class="savings-grid">
                         <div>
-                            <div class="savings-eyebrow">Ejemplo concreto</div>
+                            <!--<div class="savings-eyebrow">Ejemplo concreto</div>-->
                             <div class="savings-body">Un negocio que compra <strong>USD 100,000</strong> en inventario al año en un estado con 8% de sales tax, sin certificado, está pagando dinero que debió quedarse en su negocio.</div>
                         </div>
                         <div>
@@ -757,7 +757,7 @@
 <section class="section section-band">
     <div class="container">
         <div style="max-width:760px;margin-bottom:56px;" class="anim">
-            <span class="eyebrow">Cómo funciona en la práctica</span>
+            <!--<span class="eyebrow">Cómo funciona en la práctica</span>-->
             <h2 style="font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900);">Así se usa, una vez lo tienes.</h2>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px;">
@@ -810,7 +810,7 @@
 <section class="section">
     <div class="container">
         <div style="max-width:760px;margin-bottom:56px;" class="anim">
-            <span class="eyebrow">Beneficios de obtenerlo con Sell-U</span>
+           <!-- <span class="eyebrow">Beneficios de obtenerlo con Sell-U</span>-->
             <h2 style="font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900);">Lo que significa tenerlo bien gestionado.</h2>
         </div>
         <div class="benefits-grid">
@@ -1001,7 +1001,7 @@
 <section class="section">
     <div class="container" style="display:grid;grid-template-columns:1fr 1.6fr;gap:80px;align-items:flex-start;">
         <div class="sticky-left anim">
-            <span class="eyebrow">Preguntas frecuentes</span>
+            <!--<span class="eyebrow">Preguntas frecuentes</span>-->
             <h2 style="font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900);">Lo que importa, sin rodeos.</h2>
             <p style="font-size:16px;line-height:24px;color:var(--fg-secondary);margin-bottom:24px;">¿No ves tu pregunta? Escríbenos y un especialista te responde en menos de 24 horas.</p>
             <a href="https://wa.me/19542105405" target="_blank" class="btn btn-secondary">Habla con un especialista</a>
@@ -1041,7 +1041,7 @@
     <div class="container">
         <div class="cta-grid">
             <div class="anim">
-                <span class="eyebrow">Empieza hoy</span>
+                <!--<span class="eyebrow">Empieza hoy</span>-->
                 <h2 style="font-size:56px;line-height:64px;letter-spacing:-0.02em;font-weight:600;margin-top:16px;color:var(--paper);">Cada compra sin certificado es <em style="font-style:normal;color:var(--accent-500);">dinero</em> que no debería salir de tu negocio.</h2>
                 <p style="font-size:17px;line-height:28px;color:rgba(251,250,247,.78);margin-top:20px;max-width:600px;">Sell-U analiza tu operación, identifica qué certificados necesitas y los gestiona correctamente desde el inicio. Sin errores de estado, sin confusión entre documentos y sin pagar impuestos que no te corresponden.</p>
             </div>
