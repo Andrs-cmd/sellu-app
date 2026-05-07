@@ -714,11 +714,11 @@ Sin complicaciones y con acompañamiento en cada paso.
     </div>
 </section>
 
-<!-- ── PROCESO ── -->
+<!-- ── PROCESO ── 
 <section class="proceso-section section-band" id="proceso">
     <div class="container">
         <div class="section-header reveal">
-            <!--<span class="section-eyebrow">Cómo trabajamos</span>-->
+            <span class="section-eyebrow">Cómo trabajamos</span>
             <h2 class="section-h2">14 días, 4 pasos, una cuenta lista para vender.</h2>
         </div>
         <div class="proceso-grid">
@@ -748,17 +748,17 @@ Sin complicaciones y con acompañamiento en cada paso.
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
-<!-- ── PLANES ── -->
+<!-- ── PLANES ── 
 <section class="planes-section" id="precios">
     <div class="container">
         <div class="section-header reveal" style="text-align:center;">
-            <!--<span class="section-eyebrow">Planes</span>-->
+            <span class="section-eyebrow">Planes</span>
             <h2 class="section-h2">Tres formas de empezar. Tú eliges hasta dónde llegamos.</h2>
         </div>
         <div class="planes-grid">
-            <!-- Plan 1 -->
+             Plan 1 
             <div class="plan-card reveal">
                 <span class="plan-tag plan-tag-default">One-time</span>
                 <div class="plan-name">Apertura de cuenta</div>
@@ -773,7 +773,7 @@ Sin complicaciones y con acompañamiento en cada paso.
                 </ul>
                 <a href="#contacto" class="btn-plan btn-plan-default">Empezar ahora →</a>
             </div>
-            <!-- Plan 2 (featured) -->
+             Plan 2 (featured)
             <div class="plan-card featured reveal" style="transition-delay:0.1s;">
                 <span class="plan-tag plan-tag-featured">Más popular</span>
                 <div style="margin-top:40px;">
@@ -791,7 +791,7 @@ Sin complicaciones y con acompañamiento en cada paso.
                     <a href="#contacto" class="btn-plan btn-plan-featured">Empezar ahora →</a>
                 </div>
             </div>
-            <!-- Plan 3 -->
+             Plan 3
             <div class="plan-card reveal" style="transition-delay:0.2s;">
                 <span class="plan-tag plan-tag-default">Full setup</span>
                 <div class="plan-name">Lanzamiento completo</div>
@@ -809,7 +809,7 @@ Sin complicaciones y con acompañamiento en cada paso.
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- ── REQUISITOS ── -->
 <section class="requisitos-section section-band">
