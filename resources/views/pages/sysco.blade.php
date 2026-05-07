@@ -474,10 +474,10 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 <!-- ═══════════════ FINAL CTA ═══════════════ -->
 <section class="cta-section" id="contacto">
   <div class="container" style="text-align:center;max-width:820px" class="reveal">
-    <h2 class="h2" style="font-size:46px;font-weight:800;color:#000;margin:0 0 20px;letter-spacing:-.025em">
+    <h2 class="h2" style="font-size:46px;font-weight:800;color:#434966;margin:0 0 20px;letter-spacing:-.025em">
       Tus productos en restaurantes y negocios de EE.UU.
     </h2>
-    <p style="font-size:18px;line-height:1.7;color:rgba(0, 0, 0, 0.8);max-width:600px;margin:0 auto 36px">
+    <p style="font-size:18px;line-height:1.7;color:#434966;max-width:600px;margin:0 auto 36px">
       Habla hoy con uno de nuestros especialistas en distribución foodservice. Sin compromiso y en español desde cualquier país de LATAM.
     </p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
