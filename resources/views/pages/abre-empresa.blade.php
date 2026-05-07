@@ -106,13 +106,13 @@
         .hero-text { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
         .hero-badge {
             display: inline-block; background: var(--gold); color: var(--navy);
-            font-family: 'Montserrat', sans-serif; font-size: 11px; line-height: 1.45;
+            font-family: 'Montserrat', sans-serif; font-size: 9px; line-height: 1.45;
             font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
             padding: 10px 16px; border-radius: 999px; max-width: 560px;
             margin-bottom: 32px; box-shadow: 0 1px 2px rgba(46,56,86,.06);
         }
         .hero-h1 {
-            font-family: 'Montserrat', sans-serif; font-weight: 800;
+            font-family: 'Montserrat', sans-serif; font-weight: 600;
             font-size: 64px; line-height: 1.05; letter-spacing: -.025em;
             color: var(--navy); margin: 0 0 28px; max-width: 640px;
         }
