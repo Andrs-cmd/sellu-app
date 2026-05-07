@@ -115,7 +115,7 @@
         /* ── HERO ── */
         /* ── HERO ── */
         .hero { background:url('https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778097926/Sell-U_Latam_-_Banner_No_1_1_r0qjgd.webp') center/cover no-repeat; min-height:520px; position:relative; overflow:hidden; display:flex; align-items:center; }
-        .hero::before { content:''; position:absolute; inset:0; background:rgba(13,27,62,.55); }
+        .hero::before { content:''; position:absolute; inset:0; }
         .hero-inner { position:relative; z-index:1; padding:80px 8%; width:100%; }
         .hero-content { max-width:560px; }
         .hero-eyebrow { font-size:12px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:20px; }
@@ -368,7 +368,7 @@
         <div class="pull-quote-wrap">
             <img class="pq-bg" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778090414/Inicio_nqpg9x.png" alt="">
             <div class="pull-quote">
-                <q>LCADA EMPRESA QUE AYUDAMOS A CRECER ES UNA NUEVA HISTORIA DE EXITO</q>
+                <q>CADA EMPRESA QUE AYUDAMOS A CRECER ES UNA NUEVA HISTORIA DE EXITO</q>
                 <div class="pull-quote-author">—En Sell-U no solo ofrecemos servicios: vivimos la emoción de convertir ideas en resultados. Cada estrategia y cada empresa que ayudamos a crecer refleja nuestro compromiso. Porque cuando tu triunfas, nosotros también lo hacemos</div>
             </div>
         </div>
