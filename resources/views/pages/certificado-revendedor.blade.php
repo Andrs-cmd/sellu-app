@@ -65,7 +65,7 @@
     @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
     <style>
@@ -89,8 +89,8 @@
         --fg-tertiary: var(--ink-500); --fg-muted: var(--ink-400);
         --bg-subtle: var(--paper-2); --border-default: var(--ink-200);
         --border-strong: var(--ink-300); --border-subtle: var(--ink-100);
-        --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
-        --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+        --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+        --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
         --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
         --shadow-sm: 0 1px 2px rgba(46,56,86,.05),0 1px 3px rgba(46,56,86,.04);
         --shadow-md: 0 4px 8px -2px rgba(46,56,86,.06),0 2px 4px -2px rgba(46,56,86,.04);
@@ -105,7 +105,7 @@
         font-family: var(--font-sans); font-size: 16px; line-height: 1.5;
         -webkit-font-smoothing: antialiased;
     }
-    h1,h2,h3,h4,h5 { font-family: var(--font-display); margin: 0; }
+    h1,h2,h3,h4,h5 { font-family: var(--font-display); margin: 0; font-weight: 600; }
     p { margin: 0; color: var(--fg-secondary); }
     a { color: var(--navy-900); }
     ::selection { background: var(--accent-200); color: var(--navy-900); }
@@ -395,8 +395,8 @@
                 <h1>Compra inventario en <span class="hl">EE.UU.</span> sin pagar impuestos de reventa.</h1>
                 <p class="hero-sub">Si compras productos para reventa en EE.UU., el Reseller Certificate puede ayudarte a evitar el sales tax en tus compras. Sell-U lo gestiona por ti, desde LATAM y en español.</p>
                 <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
-                    <a href="/#servicios" class="btn btn-primary btn-lg">Obtener mi Reseller Certificate →</a>
-                    <a href="/pages/canales-de-atencion" class="btn btn-secondary btn-lg">Evaluar si lo necesito</a>
+                    <a href="https://wa.me/19542105405" target="_blank" class="btn btn-primary btn-lg">Obtener mi Reseller Certificate →</a>
+                    <a href="https://wa.me/19542105405" target="_blank" class="btn btn-secondary btn-lg">Evaluar si lo necesito</a>
                 </div>
                 <div class="hero-trust">
                     <span class="trust-item"><i data-lucide="check" width="16" height="16"></i> Proceso 100% remoto</span>
@@ -1005,7 +1005,7 @@
             <span class="eyebrow">Preguntas frecuentes</span>
             <h2 style="font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900);">Lo que importa, sin rodeos.</h2>
             <p style="font-size:16px;line-height:24px;color:var(--fg-secondary);margin-bottom:24px;">¿No ves tu pregunta? Escríbenos y un especialista te responde en menos de 24 horas.</p>
-            <a href="/pages/canales-de-atencion" class="btn btn-secondary">Habla con un especialista</a>
+            <a href="https://wa.me/19542105405" target="_blank" class="btn btn-secondary">Habla con un especialista</a>
         </div>
         <div style="border-top:1px solid var(--border-default);" class="anim anim-d1">
             <div class="faq-item open">
@@ -1047,8 +1047,8 @@
                 <p style="font-size:17px;line-height:28px;color:rgba(251,250,247,.78);margin-top:20px;max-width:600px;">Sell-U analiza tu operación, identifica qué certificados necesitas y los gestiona correctamente desde el inicio. Sin errores de estado, sin confusión entre documentos y sin pagar impuestos que no te corresponden.</p>
             </div>
             <div class="cta-actions anim anim-d1">
-                <a href="/#servicios" class="btn btn-accent btn-lg" style="justify-content:center;">Obtener mi Reseller Certificate →</a>
-                <a href="/pages/canales-de-atencion" class="btn btn-on-dark btn-lg" style="justify-content:center;">Quiero que evalúen mi caso primero</a>
+                <a href="https://wa.me/19542105405" target="_blank" class="btn btn-accent btn-lg" style="justify-content:center;">Obtener mi Reseller Certificate →</a>
+                <a href="https://wa.me/19542105405" target="_blank" class="btn btn-on-dark btn-lg" style="justify-content:center;">Quiero que evalúen mi caso primero</a>
                 <p class="cta-disc">Evaluación inicial sin compromiso. Te decimos qué certificados necesitas según tu operación antes de iniciar cualquier proceso.</p>
             </div>
         </div>
