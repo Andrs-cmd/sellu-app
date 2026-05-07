@@ -457,41 +457,9 @@
 
             {{-- IRS Form card --}}
             <div class="itin-hero-card" style="background:#0D1B3E; border-radius:28px; padding:20px; box-shadow:0 24px 48px -12px rgba(13,27,62,.30);">
-                <div style="background:#fff; border-radius:16px; overflow:hidden; border:1px solid #e5e6ea;">
-                    <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid #e5e6ea; background:#f5f3ee;">
-                        <span style="font-size:12px; color:#6b6f7a;">Form W-7 · Sell·U</span>
-                        <span class="itin-badge" style="font-size:11px; font-weight:700; color:#0f6b3f; background:#e3f6ec; padding:4px 10px; border-radius:999px; letter-spacing:.04em;">EN PROCESO</span>
-                    </div>
-                    <div style="padding:28px;">
-                        <p style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#6b6f7a; margin-bottom:8px;">Tu ITIN</p>
-                        <div class="itin-number-display" style="font-size:28px; line-height:32px; font-weight:700; margin-bottom:22px; color:#434966; letter-spacing:.04em;">
-                            9XX&nbsp;–&nbsp;73&nbsp;–&nbsp;<span style="color:#c5c8d0;">__</span><span class="itin-cursor">|</span><span style="color:#c5c8d0;">__</span>
-                        </div>
-                        <div style="display:flex; flex-direction:column; gap:10px;">
-                            <div class="itin-step-row" style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#434966;">
-                                <span style="width:18px; height:18px; border-radius:999px; background:#1aa05f; color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; flex-shrink:0;">✓</span>
-                                <span style="flex:1;">Evaluación de caso</span>
-                            </div>
-                            <div class="itin-step-row" style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#434966;">
-                                <span style="width:18px; height:18px; border-radius:999px; background:#1aa05f; color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; flex-shrink:0;">✓</span>
-                                <span style="flex:1;">Documentos recopilados</span>
-                            </div>
-                            <div class="itin-step-active" style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#434966;">
-                                <span class="itin-dot-active" style="width:18px; height:18px; border-radius:999px; background:#F6BB33; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;"></span>
-                                <span style="flex:1;">Formulario W-7 enviado</span>
-                                <span class="itin-encurso" style="font-size:11px; color:#c89320; font-weight:700; letter-spacing:.04em;">EN CURSO</span>
-                            </div>
-                            <div class="itin-step-row" style="display:flex; align-items:center; gap:12px; padding:12px 14px; border:1px solid #e5e6ea; border-radius:10px; font-size:14px; color:#6b6f7a;">
-                                <span style="width:18px; height:18px; border-radius:999px; border:1.5px solid #c5c8d0; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;"></span>
-                                <span style="flex:1;">Aprobación del IRS</span>
-                            </div>
-                        </div>
-                        <div style="margin-top:18px; padding:12px 14px; background:#f5f3ee; border-radius:8px; font-size:12px; color:#6b6f7a; display:flex; justify-content:space-between;">
-                            <span>Tiempo estimado restante</span>
-                            <span style="color:#434966; font-weight:600;">6–9 semanas</span>
-                        </div>
-                    </div>
-                </div>
+                <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778180837/ITIN_Number_bx2r05.png"
+                     alt="ITIN Number — Sell·U"
+                     style="width:100%; height:auto; display:block; border-radius:12px;">
             </div>
         </div>
     </div>
