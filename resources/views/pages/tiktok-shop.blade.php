@@ -798,7 +798,7 @@
 
             </div>
             <div style="text-align:center;margin-top:48px;">
-                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20empezar%20a%20vender%20en%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-pink">Empezar ahora →</a>
+                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20empezar%20a%20vender%20en%20TikTok%20Shop" target="_blank" class="tt-btn --t-yellow">Empezar ahora →</a>
             </div>
         </div>
     </section>
