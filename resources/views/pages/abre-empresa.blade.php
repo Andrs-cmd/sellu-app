@@ -97,23 +97,91 @@
         .nav-cta { margin-left: auto; background: var(--gold); color: var(--navy); padding: 10px 22px; border-radius: 6px; font-size: 13px; font-weight: 700; font-family: 'Montserrat', sans-serif; transition: background .2s; white-space: nowrap; }
         .nav-cta:hover { background: var(--gold2); }
 
-        /* ── HERO PRECIO ── */
-        .hero-precio { background: #EEF1F8; padding: 52px 5%; text-align: center; }
-        .hero-alert { display: inline-block; background: var(--gold); color: var(--navy); font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 800; padding: 6px 20px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 20px; }
-        .hero-precio h1 { font-family: 'Montserrat', sans-serif; font-size: 40px; font-weight: 600; color: var(--navy); line-height: 1.15; margin-bottom: 16px; }
-        .hero-precio h1 em { font-style: normal; color: var(--gold); }
-        .hero-precio-sub { font-size: 15px; color: var(--muted); margin-bottom: 6px; line-height: 1.6; }
-        .hero-precio-sub strong { color: var(--gold); }
-        .hero-precio-note { font-size: 14px; color: var(--muted); margin-bottom: 32px; }
-        .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-        .btn-navy { display: inline-block; background: var(--navy); color: var(--white); padding: 13px 32px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; transition: background .2s; }
-        .btn-navy:hover { background: var(--navy2); }
-        .btn-gold { display: inline-block; background: var(--gold); color: var(--navy); padding: 13px 32px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; transition: background .2s; }
-        .btn-gold:hover { background: var(--gold2); }
+        /* ── HERO ── */
+        .hero-section { background: #EEF1F8; padding: 64px 5%; }
+        .hero-grid {
+            width: 100%; max-width: 1240px; margin: 0 auto;
+            display: grid; grid-template-columns: 1.05fr 1fr; gap: 80px; align-items: center;
+        }
+        .hero-text { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+        .hero-badge {
+            display: inline-block; background: var(--gold); color: var(--navy);
+            font-family: 'Montserrat', sans-serif; font-size: 11px; line-height: 1.45;
+            font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+            padding: 10px 16px; border-radius: 999px; max-width: 560px;
+            margin-bottom: 32px; box-shadow: 0 1px 2px rgba(46,56,86,.06);
+        }
+        .hero-h1 {
+            font-family: 'Montserrat', sans-serif; font-weight: 800;
+            font-size: 64px; line-height: 1.05; letter-spacing: -.025em;
+            color: var(--navy); margin: 0 0 28px; max-width: 640px;
+        }
+        .hero-h1 .price { color: var(--gold); font-weight: 800; white-space: nowrap; }
+        .hero-checkline {
+            display: flex; align-items: center; gap: 10px; font-size: 14px;
+            line-height: 1.4; color: var(--navy); font-weight: 500; margin-bottom: 10px;
+        }
+        .hero-checkline .chk {
+            flex: none; width: 18px; height: 18px; display: inline-flex;
+            align-items: center; justify-content: center; color: var(--gold);
+        }
+        .hero-checkline .sep { color: var(--muted); margin: 0 4px; }
+        .hero-secondary { font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 1.55; color: var(--muted); margin: 0 0 36px; }
+        .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn-navy {
+            appearance: none; border: 1px solid transparent; cursor: pointer;
+            font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px;
+            letter-spacing: .08em; text-transform: uppercase; padding: 16px 28px;
+            border-radius: 6px; text-decoration: none; display: inline-flex;
+            align-items: center; justify-content: center; gap: 10px;
+            background: var(--navy); color: var(--white);
+            transition: background .2s, box-shadow .2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,.12);
+        }
+        .btn-navy:hover { background: var(--navy2); box-shadow: 0 4px 12px rgba(0,0,0,.18); }
+        .btn-gold {
+            appearance: none; border: 1px solid transparent; cursor: pointer;
+            font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px;
+            letter-spacing: .08em; text-transform: uppercase; padding: 16px 28px;
+            border-radius: 6px; text-decoration: none; display: inline-flex;
+            align-items: center; justify-content: center; gap: 10px;
+            background: var(--gold); color: var(--navy);
+            transition: background .2s, box-shadow .2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,.12);
+        }
+        .btn-gold:hover { background: var(--gold2); box-shadow: 0 4px 12px rgba(0,0,0,.18); }
         .btn-green { display: inline-flex; align-items: center; gap: 8px; background: var(--green); color: var(--white); padding: 13px 32px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; transition: background .2s; }
         .btn-green:hover { background: #1ebe5b; }
         .btn-outline { display: inline-block; background: transparent; color: var(--navy); padding: 12px 30px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; border: 2px solid var(--navy); transition: all .2s; }
         .btn-outline:hover { background: var(--navy); color: var(--white); }
+
+        /* ── MAP STAGE ── */
+        .map-stage {
+            position: relative; display: flex; align-items: center;
+            justify-content: center; min-height: 460px;
+        }
+        .map-stage::before, .map-stage::after {
+            content: ""; position: absolute; background: #fff;
+            border-radius: 56px; z-index: 0;
+            box-shadow: 0 1px 2px rgba(46,56,86,.03);
+        }
+        .map-stage::before { width: 360px; height: 280px; top: -10px; left: 0; opacity: .85; }
+        .map-stage::after  { width: 320px; height: 240px; bottom: 10px; right: 0; opacity: .75; }
+        .map-blob { position: absolute; background: #fff; border-radius: 999px; z-index: 0; opacity: .9; }
+        .map-blob-1 { width: 90px; height: 60px; top: 40px; right: 28%; }
+        .map-blob-2 { width: 70px; height: 48px; bottom: 70px; left: 36%; }
+        #usa-map {
+            position: relative; width: 100%; max-width: 560px; height: auto; z-index: 1;
+            filter: drop-shadow(0 18px 24px rgba(46,56,86,.12));
+            opacity: 0; transition: opacity 600ms ease;
+        }
+        #usa-map.ready { opacity: 1; }
+        #usa-map .state { stroke: #fff; stroke-width: .8; stroke-linejoin: round; transition: fill 1200ms cubic-bezier(.16,1,.3,1); }
+        #usa-map .tone-a { fill: #434966; }
+        #usa-map .tone-b { fill: #5b6585; }
+        #usa-map .tone-c { fill: #6e789a; }
+        #usa-map .tone-d { fill: #3a4060; }
+        #usa-map .state.is-active { fill: #F6BB33 !important; filter: drop-shadow(0 4px 10px rgba(246,187,51,.45)); }
 
         /* ── SECTION HELPERS ── */
         .section-tag { font-size: 11px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 10px; display: block; text-align: center; }
@@ -300,8 +368,18 @@
         .footer-legal a { font-size: 12px; color: var(--muted); transition: color .2s; }
         .footer-legal a:hover { color: var(--navy); }
 
+        @media (max-width: 980px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+            .hero-h1 { font-size: 44px; }
+            .map-stage { min-height: 320px; }
+        }
+        @media (max-width: 540px) {
+            .hero-h1 { font-size: 36px; }
+            .hero-badge { font-size: 10px; padding: 8px 14px; }
+            .hero-cta .btn-navy, .hero-cta .btn-gold { width: 100%; }
+            .hero-cta { flex-direction: column; align-items: stretch; }
+        }
         @media (max-width: 900px) {
-            .hero-precio h1 { font-size: 28px; }
             .carousel-track .testimonio-card { flex: 0 0 calc(50% - 8px); }
             .pasos-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
             .pasos-line { display: none; }
@@ -318,16 +396,49 @@
 
 <x-nav />
 
-{{-- HERO PRECIO --}}
-<section class="hero-precio">
-    <span class="hero-alert">No necesitas miles de dólares ni viajar a EE.UU. para tener tu empresa legal</span>
-    <h1>Creamos tu empresa en EE.UU. Desde <em>$399 USD</em></h1>
-    <p class="hero-precio-sub"><strong>✓ Asesoría sin compromiso</strong> | Te explicamos todo antes de tomar decisión.</p>
-    <p class="hero-precio-note">El proceso más simple para emprender en EE. UU.</p>
-    <div class="hero-btns">
+{{-- HERO --}}
+<section class="hero-section">
+  <div class="hero-grid">
+
+    {{-- LEFT: TEXT --}}
+    <div class="hero-text">
+      <span class="hero-badge">
+        No necesitas miles de dólares ni viajar a EE.UU. para tener tu empresa legal
+      </span>
+
+      <h1 class="hero-h1">
+        Creamos tu empresa en EE.UU. Desde <span class="price">$399&nbsp;USD</span>
+      </h1>
+
+      <div class="hero-checkline">
+        <span class="chk" aria-hidden="true">
+          <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 10.5 L8.2 14.5 L16 6.5" />
+          </svg>
+        </span>
+        <span>Asesoría sin compromiso</span>
+        <span class="sep">|</span>
+        <span>Te explicamos todo antes de tomar decisión.</span>
+      </div>
+
+      <p class="hero-secondary">El proceso más simple para emprender en EE.UU.</p>
+
+      <div class="hero-cta">
         <a href="#precios" class="btn-navy">Ver precios</a>
-        <a href="#pasos" class="btn-gold">Como funciona</a>
+        <a href="#pasos" class="btn-gold">Cómo funciona</a>
+      </div>
     </div>
+
+    {{-- RIGHT: USA MAP --}}
+    <div class="map-stage" aria-label="Mapa de Estados Unidos">
+      <span class="map-blob map-blob-1"></span>
+      <span class="map-blob map-blob-2"></span>
+      <svg id="usa-map" viewBox="0 0 960 600" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <g id="states-group"></g>
+      </svg>
+    </div>
+
+  </div>
 </section>
 
 {{-- TESTIMONIOS --}}
@@ -819,6 +930,58 @@ function renderPreciosPage(state) {
 
 // Render inicial con Florida
 renderPreciosPage('FL');
+</script>
+
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+(async function renderUSAMap() {
+  const svg = document.getElementById('usa-map');
+  const group = document.getElementById('states-group');
+  if (!svg || !group) return;
+  try {
+    const res = await fetch('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json');
+    const us = await res.json();
+    const states = topojson.feature(us, us.objects.states).features;
+    const projection = d3.geoAlbersUsa().scale(1180).translate([480, 300]);
+    const path = d3.geoPath(projection);
+    const tones = ['tone-a', 'tone-b', 'tone-c', 'tone-d'];
+    states.forEach((feat, i) => {
+      const d = path(feat);
+      if (!d) return;
+      const el = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      el.setAttribute('d', d);
+      const seed = (parseInt(String(feat.id || i), 10) || i) % tones.length;
+      el.setAttribute('class', 'state ' + tones[seed]);
+      el.dataset.name = (feat.properties && feat.properties.name) || '';
+      group.appendChild(el);
+    });
+    svg.classList.add('ready');
+    const allStates = Array.from(group.querySelectorAll('.state'));
+    if (!allStates.length) return;
+    const featured = ['California','Texas','Florida','New York','Illinois',
+                      'Washington','Colorado','Georgia','Massachusetts',
+                      'Arizona','Pennsylvania','Michigan'];
+    const featuredEls = featured.map(n => allStates.find(s => s.dataset.name === n)).filter(Boolean);
+    let activeSet = new Set();
+    const ACTIVE_COUNT = 4;
+    let idx = 0;
+    function tick() {
+      const toRemove = [];
+      activeSet.forEach(el => { if (Math.random() < 0.45) toRemove.push(el); });
+      toRemove.forEach(el => { el.classList.remove('is-active'); activeSet.delete(el); });
+      while (activeSet.size < ACTIVE_COUNT) {
+        const next = featuredEls[idx % featuredEls.length];
+        idx++;
+        if (!activeSet.has(next)) { next.classList.add('is-active'); activeSet.add(next); }
+      }
+    }
+    for (let i = 0; i < ACTIVE_COUNT; i++) tick();
+    setInterval(tick, 1600);
+  } catch (err) {
+    console.error('Failed to load US map:', err);
+  }
+})();
 </script>
 
 </body>
