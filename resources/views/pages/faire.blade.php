@@ -143,7 +143,7 @@ img{max-width:100%;height:auto}
     <div>
       <span class="f-eyebrow reveal">Sell·U × Faire · LATAM → EE.UU.</span>
       <h1 class="f-hero-h1 reveal" style="font-family:var(--font-display);font-size:64px;line-height:70px;letter-spacing:-.025em;font-weight:600;margin-top:22px;margin-bottom:26px;color:var(--navy-900)">
-        Vende tus productos<br>en tiendas físicas<br>de Estados Unidos a<br>través de <span style="background:linear-gradient(180deg,transparent 62%,var(--accent-300) 62%);padding:0 6px">Faire</span>.
+        Lleva tus productos a tiendas de EE.UU. a través de Faire.</span>.
       </h1>
       <p class="reveal" style="font-size:19px;line-height:30px;color:var(--fg-secondary);max-width:560px;margin-bottom:32px">
         Faire conecta marcas independientes con más de <strong style="color:var(--navy-900)">700,000 tiendas físicas</strong> y boutiques en EE.UU. y el mundo. Sin ferias, sin intermediarios, sin estar en el país. Sell·U te ayuda a entrar, posicionarte y vender.
