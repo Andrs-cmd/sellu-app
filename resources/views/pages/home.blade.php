@@ -157,7 +157,7 @@
         .pull-quote-author { margin-top:10px; font-size:12px; color:rgba(255,255,255,0.6); letter-spacing:.04em; }
 
         /* ── WHO CARDS ── */
-        .who-section { background:var(--navy); padding:72px 5%; }
+        .who-section { background:#122050; padding:72px 5%; }
         .who-section-inner { max-width:1100px; margin:0 auto; }
         .who-section-head { max-width:720px; margin-bottom:44px; }
         .who-section-head h2 { font-family:'Montserrat',sans-serif; font-size:36px; line-height:1.2; font-weight:800; color:#fff; margin-bottom:14px; }
