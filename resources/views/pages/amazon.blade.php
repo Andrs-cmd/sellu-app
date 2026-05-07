@@ -885,7 +885,7 @@ Sin complicaciones y con acompañamiento en cada paso.
     <div class="container">
         <div class="cta-inner reveal">
             <!--<span class="section-eyebrow">Empieza hoy</span>-->
-            <h2 class="section-h2">Tu cuenta de Amazon US, <strong>activa en 14 días.</strong></h2>
+            <h2 class="section-h2">Tu cuenta de Amazon US, <strong>lista para vender.</strong></h2>
             <p class="cta-sub">Habla hoy con uno de nuestros especialistas. Sin compromiso, en español, desde donde estés en LATAM.</p>
             <div class="cta-actions">
                 <a href="https://wa.me/573116473200" class="btn-cta-primary" target="_blank">
