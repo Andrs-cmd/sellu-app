@@ -177,7 +177,7 @@
         .clientes-track-wrap { overflow:hidden; width:100%; }
         .clientes-track { display:flex; align-items:center; gap:56px; animation: scroll-logos 30s linear infinite; will-change:transform; }
         .clientes-track:hover { animation-play-state:paused; }
-        .cliente-logo-img { height:44px; width:130px; object-fit:contain; opacity:.55; transition:opacity .2s; filter:grayscale(100%); flex-shrink:0; }
+        .cliente-logo-img { height:130px; width:130px; object-fit:contain; opacity:.55; transition:opacity .2s; filter:grayscale(100%); flex-shrink:0; }
         .cliente-logo-img:hover { opacity:1; filter:grayscale(0%); }
         @keyframes scroll-logos {
             0%   { transform: translateX(0); }
