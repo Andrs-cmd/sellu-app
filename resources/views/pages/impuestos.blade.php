@@ -665,6 +665,7 @@
                     <span>✓ Estrategia de mitigación</span>
                     <span>✓ Acompañamiento ante el IRS</span>
                 </div>
+                <a href="#contacto" class="btn btn-primary" style="margin-top:24px;display:inline-block">Regularizar mi situación →</a>
             </div>
         </div>
         <div class="errors-cta reveal" style="margin-top:48px">
