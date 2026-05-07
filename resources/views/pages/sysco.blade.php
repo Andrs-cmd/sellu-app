@@ -404,7 +404,7 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 <!-- ═══════════════ REQUIREMENTS ═══════════════ -->
 <section class="section" style="background:var(--gray)">
   <div class="container">
-    <div style="text-align:center;max-width:640px;margin:0 auto 40px" class="reveal">
+    <div style="text-align:center;max-width:940px;margin:0 auto 40px" class="reveal">
       <h2 class="h2" style="margin:0 0 16px">
         Lo que Sysco requiere<br>para aprobar tu cuenta de proveedor.
       </h2>
@@ -474,7 +474,7 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 <!-- ═══════════════ FINAL CTA ═══════════════ -->
 <section class="cta-section" id="contacto">
   <div class="container" style="text-align:center;max-width:820px" class="reveal">
-    <h2 class="h2" style="font-size:46px;font-weight:800;color:#434966;margin:0 0 20px;letter-spacing:-.025em">
+    <h2 class="h2" style="font-size:46px;font-weight:600;color:#434966;margin:0 0 20px;letter-spacing:-.025em">
       Tus productos en restaurantes y negocios de EE.UU.
     </h2>
     <p style="font-size:18px;line-height:1.7;color:#434966;max-width:600px;margin:0 auto 36px">
