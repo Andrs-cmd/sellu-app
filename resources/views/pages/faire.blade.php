@@ -276,7 +276,7 @@ img{max-width:100%;height:auto}
 </section>
 
 <!-- ══ FAIRE VS AMAZON ══ -->
-<section id="comparacion" class="f-section f-band">
+<!--<section id="comparacion" class="f-section f-band">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:48px">
       <span class="f-eyebrow reveal">Faire vs Amazon</span>
@@ -309,7 +309,7 @@ img{max-width:100%;height:auto}
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 <!-- ══ QUIÉN DEBERÍA VENDER ══ -->
 <section id="quien" class="f-section">
@@ -381,7 +381,7 @@ img{max-width:100%;height:auto}
 </section>
 
 <!-- ══ REQUISITOS ══ -->
-<section id="requisitos" class="f-section">
+<!--<section id="requisitos" class="f-section">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:48px">
       <span class="f-eyebrow reveal">Requisitos para LATAM</span>
@@ -430,7 +430,7 @@ img{max-width:100%;height:auto}
       <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20estructurar%20mi%20LLC%20para%20vender%20en%20Faire" target="_blank" class="f-btn f-btn-primary" style="white-space:nowrap">Estructurar mi base →</a>
     </div>
   </div>
-</section>
+</section>-->
 
 <!-- ══ COSTOS ══ -->
 <section id="precios" class="f-section f-band">
@@ -482,7 +482,7 @@ img{max-width:100%;height:auto}
 </section>
 
 <!-- ══ ERRORES COMUNES ══ -->
-<section class="f-section">
+<!--<section class="f-section">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:48px">
       <span class="f-eyebrow reveal">Lo que arruina una marca en Faire</span>
@@ -507,7 +507,7 @@ img{max-width:100%;height:auto}
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 <!-- ══ SELL-U STEPPER ══ -->
 <section id="sell-u" class="f-section f-band">
@@ -546,7 +546,7 @@ img{max-width:100%;height:auto}
 </section>
 
 <!-- ══ TIEMPOS ══ -->
-<section class="f-section f-band">
+<!--<section class="f-section f-band">
   <div class="f-container">
     <div style="max-width:760px;margin-bottom:56px">
       <span class="f-eyebrow reveal">Requisitos y tiempos estimados</span>
@@ -588,7 +588,7 @@ img{max-width:100%;height:auto}
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 <!-- ══ FAQ ══ -->
 <section id="faq" class="f-section">
