@@ -307,7 +307,7 @@
             </div>
         </div>
 
-        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
+        <!--<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
             <h3 style="font-size:26px;font-weight:800;color:var(--ink-900);letter-spacing:-0.015em;">New Mexico vs Delaware vs Wyoming</h3>
             <span style="font-size:13px;color:var(--fg-tertiary);">Datos 2026 · USD</span>
         </div>
@@ -330,7 +330,7 @@
                     <tr><td class="col-key">Ideal para</td><td class="cell-fl">Founders que priorizan privacidad y costo bajo</td><td>Startups con inversión institucional</td><td>Asset holding, máxima privacidad</td></tr>
                 </tbody>
             </table>
-        </div>
+        </div>-->
     </div>
 </section>
 
@@ -414,7 +414,7 @@
     <div class="container">
         <div class="sx-header">
             <div class="sx-eyebrow">Costos reales</div>
-            <h2>Lo que pagarás —de verdad— en el año 1.</h2>
+            <h2>Lo que pagarás por tu LLC el próximo año.</h2>
             <p class="sx-lead">Sin tarifas ocultas. New Mexico destaca por no tener Annual Report — el costo recurrente más bajo del país.</p>
         </div>
         <div class="tbl-wrap">
@@ -433,8 +433,8 @@
                     <tr><td class="col-key">Annual Report</td><td>New Mexico no requiere Annual Report para LLCs.</td><td class="num">$0</td><td>No aplica</td></tr>
                     <tr><td class="col-key">Impuestos federales</td><td>1 socio: formularios 5472 + 1120. 2 o más: declaración de partnership + K-1 por cada socio.</td><td class="num">Desde $200</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">EIN (IRS)</td><td>Número de identificación fiscal. Lo gestionamos por ti.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
-                    <tr><td class="col-key">Operating Agreement</td><td>Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
-                    <tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + impuestos federales + EIN.</td><td class="num">$375–$500</td><td>—</td></tr>
+                    <!--<tr><td class="col-key">Operating Agreement</td><td>Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
+                    <tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + impuestos federales + EIN.</td><td class="num">$375–$500</td><td>—</td></tr>-->
                 </tbody>
             </table>
         </div>

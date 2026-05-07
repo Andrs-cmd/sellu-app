@@ -247,7 +247,7 @@
             <a href="{{ url('/constituir?estado=DE') }}" class="btn-primary">Abrir mi LLC en Delaware →</a>
             <div class="hero-badges">
                 <div class="hero-badge">
-                    <div class="val">$110</div>
+                    <div class="val">$599</div>
                     <div class="lbl">Costo filing oficial</div>
                 </div>
                 <div class="hero-badge">
@@ -307,7 +307,7 @@
             </div>
         </div>
 
-        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
+        <!--<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
             <h3 style="font-size:26px;font-weight:800;color:var(--ink-900);letter-spacing:-0.015em;">Delaware vs Florida vs Wyoming</h3>
             <span style="font-size:13px;color:var(--fg-tertiary);">Datos 2026 · USD</span>
         </div>
@@ -330,7 +330,7 @@
                     <tr><td class="col-key">Ideal para</td><td class="cell-fl">Startups con inversión institucional</td><td>E-commerce, agencias, freelancers LATAM</td><td>Asset holding, máxima privacidad</td></tr>
                 </tbody>
             </table>
-        </div>
+        </div>-->
     </div>
 </section>
 
@@ -414,7 +414,7 @@
     <div class="container">
         <div class="sx-header">
             <div class="sx-eyebrow">Costos reales</div>
-            <h2>Lo que pagarás —de verdad— en el año 1.</h2>
+            <h2>Lo que pagarás por tu LLC el proximo año</h2>
             <p class="sx-lead">Sin tarifas ocultas. Estos son los costos oficiales y los rangos de mercado para servicios complementarios.</p>
         </div>
         <div class="tbl-wrap">
@@ -432,8 +432,8 @@
                     <tr><td class="col-key">Annual Franchise Tax</td><td>Reporte anual obligatorio. Vence el 1 de junio de cada año.</td><td class="num">$300</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">Impuestos federales</td><td>1 socio: declaración individual. 2 o más: declaración de partnership + K-1 por cada socio.</td><td class="num">Desde $200</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">EIN (IRS)</td><td>Número de identificación fiscal de tu LLC ante el IRS. Lo gestionamos por ti.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
-                    <tr><td class="col-key">Operating Agreement</td><td>Documento interno que define cómo opera tu LLC. Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
-                    <tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + franchise tax + impuestos federales + EIN.</td><td class="num">$735–1,000</td><td>—</td></tr>
+                    <!--<tr><td class="col-key">Operating Agreement</td><td>Documento interno que define cómo opera tu LLC. Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
+                    <tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + franchise tax + impuestos federales + EIN.</td><td class="num">$735–1,000</td><td>—</td></tr>-->
                 </tbody>
             </table>
         </div>

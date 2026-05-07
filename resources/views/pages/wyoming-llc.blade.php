@@ -307,7 +307,7 @@
             </div>
         </div>
 
-        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
+        <!--<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
             <h3 style="font-size:26px;font-weight:800;color:var(--ink-900);letter-spacing:-0.015em;">Wyoming vs Delaware vs Florida</h3>
             <span style="font-size:13px;color:var(--fg-tertiary);">Datos 2026 · USD</span>
         </div>
@@ -330,7 +330,7 @@
                     <tr><td class="col-key">Ideal para</td><td class="cell-fl">Asset holding, máxima privacidad</td><td>Startups con inversión institucional</td><td>E-commerce, agencias, freelancers LATAM</td></tr>
                 </tbody>
             </table>
-        </div>
+        </div>-->
     </div>
 </section>
 
@@ -433,8 +433,8 @@
                     <tr><td class="col-key">Annual Report (License Tax)</td><td>Reporte anual obligatorio. Vence el 1er día del mes de aniversario de tu LLC.</td><td class="num">$60/año (mín.)</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">Impuestos federales</td><td>1 socio: formularios 5472 + 1120. 2 o más: declaración de partnership + K-1 por cada socio.</td><td class="num">Desde $200</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">EIN (IRS)</td><td>Número de identificación fiscal. Lo gestionamos por ti.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
-                    <tr><td class="col-key">Operating Agreement</td><td>Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
-                    <tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + annual report + impuestos federales + EIN.</td><td class="num">$485–$700</td><td>—</td></tr>
+                    <!--<tr><td class="col-key">Operating Agreement</td><td>Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
+                    <tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + annual report + impuestos federales + EIN.</td><td class="num">$485–$700</td><td>—</td></tr>-->
                 </tbody>
             </table>
         </div>
