@@ -583,7 +583,7 @@
     </div>
 </section>
 
-<!-- VS PERMIT -->
+<!-- VS PERMIT 
 <section class="section">
     <div class="container">
         <div style="max-width:760px;margin-bottom:48px;" class="anim">
@@ -648,7 +648,7 @@
             <p style="margin:0;font-size:15px;line-height:24px;color:rgba(251,250,247,.9);">En la mayoría de los casos, si vendes productos físicos en EE.UU., <strong style="color:var(--paper);font-weight:600;">necesitas ambos</strong>: el Permit para cobrar el impuesto a tus clientes y el Certificate para no pagarlo cuando compras tu inventario.</p>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- AUDIENCE -->
 <section class="section section-band">
