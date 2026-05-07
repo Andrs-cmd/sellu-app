@@ -415,23 +415,23 @@
     </div>
     <div class="clientes-track-wrap">
         <div class="clientes-track">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Marathon_-_Sell-U.png?v=1747491101" alt="Marathon">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Differenza_-_Sell-U.png?v=1747491101" alt="Differenza">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Sense_-_Sell-U.png?v=1747491101" alt="Sense">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Haiko_-_Sell-U.png?v=1747491101" alt="Haiko Natural">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Buddy_Beauty_-_Sell-U.png?v=1747491101" alt="Buddy Beauty">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/nutrelle.png?v=1753916443" alt="Nutrelle">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/LOGO_YAXSOCKS-actual.png?v=1753915977" alt="Yax Socks">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_D_Casa_-_Sell-U.png?v=1747491101" alt="D Casa">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164051/2_xwdg8n.png" alt="Cliente 2">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/3_f4mirm.png" alt="Cliente 3">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/4_gpf3oy.png" alt="Cliente 4">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/6_tgelw3.png" alt="Cliente 5">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/5_pjbzbt.png" alt="Cliente 6">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/7_knt0gq.png" alt="Cliente 7">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164049/8_y7etnz.png" alt="Cliente 8">
             <!-- duplicado para loop continuo -->
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Marathon_-_Sell-U.png?v=1747491101" alt="Marathon">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Differenza_-_Sell-U.png?v=1747491101" alt="Differenza">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Sense_-_Sell-U.png?v=1747491101" alt="Sense">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Haiko_-_Sell-U.png?v=1747491101" alt="Haiko Natural">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_Buddy_Beauty_-_Sell-U.png?v=1747491101" alt="Buddy Beauty">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/nutrelle.png?v=1753916443" alt="Nutrelle">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/LOGO_YAXSOCKS-actual.png?v=1753915977" alt="Yax Socks">
-            <img class="cliente-logo-img" src="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Logo_D_Casa_-_Sell-U.png?v=1747491101" alt="D Casa">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164051/2_xwdg8n.png" alt="Cliente 2">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/3_f4mirm.png" alt="Cliente 3">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/4_gpf3oy.png" alt="Cliente 4">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/6_tgelw3.png" alt="Cliente 5">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/5_pjbzbt.png" alt="Cliente 6">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164050/7_knt0gq.png" alt="Cliente 7">
+            <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164049/8_y7etnz.png" alt="Cliente 8">
         </div>
     </div>
 </section>
