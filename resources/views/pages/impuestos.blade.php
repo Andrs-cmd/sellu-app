@@ -934,6 +934,7 @@
                 <div class="vid-card">
                     <video
                         src="https://cdn.shopify.com/videos/c/o/v/c4f4283276574e319c927bda4f9d07ee.mp4"
+                        poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777994566/TESTIMONIO_SELL_U_10_wahigm.png"
                         controls
                         playsinline
                         preload="metadata"
@@ -943,6 +944,7 @@
                 <div class="vid-card">
                     <video
                         src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_mp4/v1777991319/Heneyser_lgzh9p.mov"
+                        poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777994561/TESTIMONIO_SELL_U_3_ibxztv.png"
                         controls
                         playsinline
                         preload="metadata"
