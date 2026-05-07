@@ -981,15 +981,15 @@
                 DISPONIBLE AHORA
             </div>
             <h2 class="tt-final-h2" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:56px;line-height:1.1;letter-spacing:-0.025em;color:var(--t-dark);margin:24px 0 22px;">
-                Tu tienda TikTok Shop,<br>activa en <span style="color:var(--tt-pink);">3–5 días</span>.
+                Tu tienda TikTok Shop,<br>lista para <span style="color:var(--tt-pink);">vender</span>.
             </h2>
             <p style="font-size:18px;line-height:1.6;color:#6b6f7a;margin:0 auto;max-width:640px;">
                 Habla hoy con uno de nuestros especialistas en social commerce. Sin compromiso, en español, desde donde estés en LATAM.
             </p>
             <div style="margin-top:40px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
                 <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20empezar%20a%20vender%20en%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-yellow" style="padding:16px 28px;font-size:16px;">Empezar ahora →</a>
-                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vender%20en%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-pink" style="padding:16px 28px;font-size:16px;">▶ Vender en TikTok Shop</a>
-                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20sobre%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-od" style="padding:16px 28px;font-size:16px;">Hablar con un asesor</a>
+                <!--<a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vender%20en%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-pink" style="padding:16px 28px;font-size:16px;">▶ Vender en TikTok Shop</a>
+                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20sobre%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-od" style="padding:16px 28px;font-size:16px;">Hablar con un asesor</a>-->
             </div>
         </div>
     </section>
