@@ -157,18 +157,18 @@
         .pull-quote-author { margin-top:10px; font-size:12px; color:rgba(255,255,255,0.6); letter-spacing:.04em; }
 
         /* ── WHO CARDS ── */
-        .who-section { background:var(--white); padding:72px 5%; border-top:1px solid var(--gray2); border-bottom:1px solid var(--gray2); }
+        .who-section { background:var(--navy); padding:72px 5%; }
         .who-section-inner { max-width:1100px; margin:0 auto; }
         .who-section-head { max-width:720px; margin-bottom:44px; }
-        .who-section-head h2 { font-family:'Montserrat',sans-serif; font-size:36px; line-height:1.2; font-weight:800; color:var(--navy); margin-bottom:14px; }
-        .who-section-head p { font-size:16px; line-height:1.7; color:var(--muted); }
+        .who-section-head h2 { font-family:'Montserrat',sans-serif; font-size:36px; line-height:1.2; font-weight:800; color:#fff; margin-bottom:14px; }
+        .who-section-head p { font-size:16px; line-height:1.7; color:rgba(255,255,255,.65); }
         .who-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-        .who-card { background:#fff; border:1px solid #e5e6ea; border-radius:14px; padding:32px; display:flex; flex-direction:column; gap:14px; transition:box-shadow .2s; }
-        .who-card:hover { box-shadow:0 4px 12px rgba(46,56,86,.10); }
-        .who-icon { width:44px; height:44px; background:#EEF1F8; color:var(--navy); border-radius:10px; display:inline-flex; align-items:center; justify-content:center; }
+        .who-card { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:32px; display:flex; flex-direction:column; gap:14px; transition:background .2s,box-shadow .2s; }
+        .who-card:hover { background:rgba(255,255,255,.11); box-shadow:0 4px 20px rgba(0,0,0,.25); }
+        .who-icon { width:44px; height:44px; background:rgba(246,187,51,.18); color:#F5A623; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; }
         .who-icon svg { width:22px; height:22px; }
-        .who-card h3 { font-family:'Montserrat',sans-serif; font-size:20px; line-height:27px; font-weight:700; color:var(--navy); margin:0; }
-        .who-card p { font-size:15px; line-height:24px; color:var(--muted); margin:0; }
+        .who-card h3 { font-family:'Montserrat',sans-serif; font-size:20px; line-height:27px; font-weight:700; color:#fff; margin:0; }
+        .who-card p { font-size:15px; line-height:24px; color:rgba(255,255,255,.65); margin:0; }
 
         /* ── CLIENTES ── */
         .clientes { background:var(--gray); padding:52px 0; }
