@@ -969,27 +969,27 @@
     </section>
 
     {{-- ===== FINAL CTA ===== --}}
-    <section class="tt-section tt-section-dark" style="padding-top:120px;padding-bottom:120px;position:relative;overflow:hidden;">
+    <section class="tt-section" style="padding-top:120px;padding-bottom:120px;position:relative;overflow:hidden;background:#fff;">
         <div aria-hidden style="position:absolute;top:-40px;right:-60px;opacity:0.04;transform:rotate(8deg);pointer-events:none;">
             <svg width="520" height="680" viewBox="0 0 64 84">
-                <path d="M 38 6 C 38 6, 46 22, 60 24 L 60 38 C 50 38, 42 34, 38 30 L 38 56 C 38 71, 25 80, 14 80 C 6 80, 0 73, 0 64 C 0 54, 8 47, 18 47 C 21 47, 23 47.5, 24 48 L 24 62 C 23 61, 21 60, 19 60 C 16 60, 13 62.5, 13 66 C 13 69, 16 71, 19 71 C 23 71, 26 68, 26 63 L 26 6 Z" fill="#fff"/>
+                <path d="M 38 6 C 38 6, 46 22, 60 24 L 60 38 C 50 38, 42 34, 38 30 L 38 56 C 38 71, 25 80, 14 80 C 6 80, 0 73, 0 64 C 0 54, 8 47, 18 47 C 21 47, 23 47.5, 24 48 L 24 62 C 23 61, 21 60, 19 60 C 16 60, 13 62.5, 13 66 C 13 69, 16 71, 19 71 C 23 71, 26 68, 26 63 L 26 6 Z" fill="#010101"/>
             </svg>
         </div>
         <div class="tt-container" style="position:relative;text-align:center;">
-            <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(254,44,85,0.15);border:1px solid rgba(254,44,85,0.3);color:var(--tt-pink);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:0.06em;">
+            <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(254,44,85,0.10);border:1px solid rgba(254,44,85,0.25);color:var(--tt-pink);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:0.06em;">
                 <span class="tt-live-dot"></span>
                 DISPONIBLE AHORA
             </div>
-            <h2 class="tt-final-h2" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:56px;line-height:1.1;letter-spacing:-0.025em;color:#fff;margin:24px 0 22px;">
+            <h2 class="tt-final-h2" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:56px;line-height:1.1;letter-spacing:-0.025em;color:var(--t-dark);margin:24px 0 22px;">
                 Tu tienda TikTok Shop,<br>activa en <span style="color:var(--tt-pink);">3–5 días</span>.
             </h2>
-            <p style="font-size:18px;line-height:1.6;color:rgba(255,255,255,0.7);margin:0 auto;max-width:640px;">
+            <p style="font-size:18px;line-height:1.6;color:#6b6f7a;margin:0 auto;max-width:640px;">
                 Habla hoy con uno de nuestros especialistas en social commerce. Sin compromiso, en español, desde donde estés en LATAM.
             </p>
             <div style="margin-top:40px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
                 <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20empezar%20a%20vender%20en%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-yellow" style="padding:16px 28px;font-size:16px;">Empezar ahora →</a>
                 <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vender%20en%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-pink" style="padding:16px 28px;font-size:16px;">▶ Vender en TikTok Shop</a>
-                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20sobre%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-ow" style="padding:16px 28px;font-size:16px;">Hablar con un asesor</a>
+                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20sobre%20TikTok%20Shop" target="_blank" class="tt-btn tt-btn-od" style="padding:16px 28px;font-size:16px;">Hablar con un asesor</a>
             </div>
         </div>
     </section>
