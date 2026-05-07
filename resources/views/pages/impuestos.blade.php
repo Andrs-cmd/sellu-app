@@ -99,7 +99,7 @@
         html { scroll-behavior: smooth; }
         body { font-family: 'Montserrat', sans-serif; font-weight: 400; color: var(--ink-700); background: var(--white); line-height: 1.55; -webkit-font-smoothing: antialiased; }
         h1, h2, h3, h4, h5 { font-family: 'Montserrat', sans-serif; color: var(--navy); margin: 0; line-height: 1.15; letter-spacing: -0.02em; }
-        h1 { font-size: clamp(36px, 5.6vw, 64px); font-weight: 800; }
+        h1 { font-size: clamp(36px, 5.6vw, 64px); font-weight: 600; }
         h2 { font-size: clamp(28px, 3.6vw, 43px); font-weight: 700; letter-spacing: -0.022em; }
         h3 { font-size: clamp(20px, 2vw, 24px); font-weight: 700; }
         h4 { font-size: 18px; font-weight: 600; }
@@ -675,7 +675,7 @@
 </section>
 
 {{-- ── PRECIOS ── --}}
-<section class="bg-dark" id="precios">
+<!--<section class="bg-dark" id="precios">
     <div class="container">
         <div class="section-head center reveal">
             <h2>Planes Sell·U para el cumplimiento fiscal de tu LLC</h2>
@@ -733,7 +733,7 @@
         </div>
         <p style="font-size:14px;color:rgba(255,255,255,.55);text-align:center;margin-top:32px">Precios orientativos. El costo final depende del análisis de tu caso. Agenda una llamada sin costo para obtener una cotización exacta.</p>
     </div>
-</section>
+</section>-->
 
 {{-- ── FORMULARIO ── --}}
 <section class="bg-light" id="contacto">
