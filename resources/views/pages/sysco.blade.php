@@ -158,7 +158,7 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 .quote-avatar{width:60px;height:60px;border-radius:999px;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:700;font-size:22px;color:var(--fg)}
 
 /* ──── FINAL CTA ──── */
-.cta-section{background:var(--navy);padding:120px 0}
+.cta-section{background:#fff;padding:120px 0}
 
 /* ──── Keyframes ──── */
 @keyframes floatChip{0%{transform:translateY(-8px)}100%{transform:translateY(8px)}}
@@ -474,12 +474,11 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 <!-- ═══════════════ FINAL CTA ═══════════════ -->
 <section class="cta-section" id="contacto">
   <div class="container" style="text-align:center;max-width:820px" class="reveal">
-    <h2 class="h2" style="font-size:46px;font-weight:800;color:#fff;margin:0 0 20px;letter-spacing:-.025em">
-      Tus productos en los restaurantes<br>de EE.UU. en 4 semanas.
+    <h2 class="h2" style="font-size:46px;font-weight:800;color:#000;margin:0 0 20px;letter-spacing:-.025em">
+      Tus productos en restaurantes y negocios de EE.UU.
     </h2>
-    <p style="font-size:18px;line-height:1.7;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto 36px">
-      Habla hoy con uno de nuestros especialistas en distribución foodservice.
-      Sin compromiso, en español, desde cualquier país de LATAM.
+    <p style="font-size:18px;line-height:1.7;color:rgba(0, 0, 0, 0.8);max-width:600px;margin:0 auto 36px">
+      Habla hoy con uno de nuestros especialistas en distribución foodservice. Sin compromiso y en español desde cualquier país de LATAM.
     </p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
       <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vender%20en%20Sysco" class="btn btn-primary" target="_blank" rel="noopener">Hablar con un asesor →</a>
