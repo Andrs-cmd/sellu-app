@@ -849,7 +849,7 @@
     </div>
 </section>
 
-<!-- REQUIREMENTS -->
+<!-- REQUIREMENTS 
 <section class="section section-band">
     <div class="container">
         <div style="max-width:760px;margin-bottom:56px;" class="anim">
@@ -911,7 +911,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- MISTAKES 
 <section class="section">
