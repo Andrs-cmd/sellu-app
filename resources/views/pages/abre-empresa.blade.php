@@ -370,7 +370,20 @@
                     <span class="testimonio-tag">Balenne</span>
                 </div>-->
             </div>
-
+{{-- Testimonio 2 --}}
+            <div class="testimonio-card" onclick="toggleVideo(this)">
+                <video class="testimonio-video"
+                    src="https://res.cloudinary.com/dq5tsivzq/video/upload/q_auto/f_auto/v1778166063/Testimonio_Nacho_1_hib78c.mov"
+                    poster="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1777994570/TESTIMONIO_SELL_U_1_cdm7x5.png" preload="metadata" playsinline loop></video>
+                <button class="testimonio-play" onclick="event.stopPropagation(); toggleVideo(this.closest('.testimonio-card'))">
+                    <svg viewBox="0 0 18 18" fill="white"><path d="M5 3l12 6-12 6V3z"/></svg>
+                </button>
+                <!--<div class="testimonio-overlay">
+                    <strong>Valentina</strong>
+                    <span>Fundadora de</span>
+                    <span class="testimonio-tag">Balenne</span>
+                </div>-->
+            </div>
 
             {{-- Testimonio 4 --}}
             <div class="testimonio-card" onclick="toggleVideo(this)">
