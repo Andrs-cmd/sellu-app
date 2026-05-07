@@ -239,10 +239,10 @@
             <h1 class="w-hero-h1">
                 Vender en <span class="w-blue">Walmart</span><br>
                 desde LATAM,<br>
-                con tu LLC y <span class="w-yellow-hl">sin el caos</span><br>
+                con tu LLC y <span class="w-yellow-hl">sin complicaciones.</span><br>
                 <span class="w-yellow-hl">del proceso solo</span>.
             </h1>
-            <p class="w-hero-sub">Gestionamos tu aplicación, hacemos el seguimiento de aprobación y dejamos tu cuenta lista con WFS, listings optimizados y tu primera campaña activa. Con acompañamiento en cada paso.</p>
+            <p class="w-hero-sub">Gestionamos tu aplicación y dejamos tu cuenta lista para operar con WFS, listings configurados y acompañamiento en cada etapa.</p>
             <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
                 <a href="#contacto" class="w-btn w-btn-yellow w-btn-lg">
                     Hablar con un asesor
