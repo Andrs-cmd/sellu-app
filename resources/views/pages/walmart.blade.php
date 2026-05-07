@@ -59,7 +59,7 @@
 
     :root {
         --w-dark:   #434966;
-        --w-blue:   #072ac8;
+        --w-blue:   #434966;
         --w-yellow: #f6bb33;
         --w-gray:   #eef1f8;
         --w-paper:  #fbfaf7;
@@ -122,7 +122,7 @@
     /* Hero */
     .w-hero-h1 { font-weight: 600; font-size: 60px; line-height: 1.08; letter-spacing: -.025em; color: var(--w-dark); margin: 16px 0 24px; }
     .w-hero-sub { font-size: 18px; line-height: 1.65; color: var(--w-ink-3); max-width: 500px; margin: 0 0 32px; font-weight: 400; }
-    .w-blue  { color: var(--w-blue); }
+    .w-blue  { color: var(--w-yellow); }
     .w-yellow-hl {
         background-image: linear-gradient(180deg, transparent 62%, var(--w-yellow) 62%, var(--w-yellow) 92%, transparent 92%);
         padding: 0 4px; color: var(--w-dark);
@@ -156,14 +156,14 @@
     /* Stat cards */
     .w-stat-card { background: var(--w-gray); border-radius: 18px; padding: 32px 28px; display: flex; flex-direction: column; gap: 6px; transition: transform .2s ease, background .2s ease; }
     .w-stat-card:hover { background: #ebebee; transform: translateY(-2px); }
-    .w-stat-num { font-weight: 600; font-size: 48px; line-height: 1; letter-spacing: -.03em; color: var(--w-blue); }
+    .w-stat-num { font-weight: 600; font-size: 48px; line-height: 1; letter-spacing: -.03em; color: var(--w-yellow); }
     .w-stat-label { font-weight: 600; font-size: 15px; color: var(--w-dark); margin-top: 4px; }
     .w-stat-desc { font-size: 13px; line-height: 1.55; color: var(--w-ink-3); margin-top: 6px; }
 
     /* Service cards */
     .w-svc-card { background: var(--w-white); border: 1.5px solid var(--w-line); border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
     .w-svc-card:hover { transform: translateY(-4px); box-shadow: var(--w-shadow-card-hv); border-color: var(--w-blue); }
-    .w-svc-icon { width: 44px; height: 44px; border-radius: 12px; background: #eef2ff; color: var(--w-blue); display: inline-flex; align-items: center; justify-content: center; }
+    .w-svc-icon { width: 44px; height: 44px; border-radius: 12px; background: #fff8e1; color: var(--w-dark); display: inline-flex; align-items: center; justify-content: center; }
     .w-svc-title { font-weight: 600; font-size: 17px; color: var(--w-dark); letter-spacing: -.01em; }
     .w-svc-desc { font-size: 14px; line-height: 1.6; color: var(--w-ink-3); }
     .w-svc-bullets { list-style: none; padding: 0; margin: 4px 0 0; display: flex; flex-direction: column; gap: 8px; }
@@ -204,7 +204,7 @@
     .w-req-card { background: var(--w-white); border: 1.5px solid var(--w-line); border-radius: 16px; padding: 22px; display: flex; gap: 16px; align-items: flex-start; transition: transform .2s ease, box-shadow .2s ease; }
     .w-req-card:hover { transform: translateY(-2px); box-shadow: var(--w-shadow-card); }
     .w-req-card.is-exclusive { border-left: 4px solid var(--w-yellow); background: linear-gradient(90deg, rgba(246,187,51,.06), transparent 40%); }
-    .w-req-icon { width: 48px; height: 48px; border-radius: 12px; background: #eef2ff; color: var(--w-blue); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .w-req-icon { width: 48px; height: 48px; border-radius: 12px; background: #fff8e1; color: var(--w-dark); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .w-req-card.is-exclusive .w-req-icon { background: #fff8e1; color: var(--w-yellow); }
     .w-req-title { font-weight: 700; font-size: 15px; color: var(--w-dark); margin-bottom: 4px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .w-req-only-badge { background: #fff8e1; color: #c89320; font-size: 10.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; }
@@ -314,28 +314,28 @@
                         <svg viewBox="0 0 240 50" style="width:100%;height:50px;margin-top:12px;">
                             <defs>
                                 <linearGradient id="spark-fill" x1="0" x2="0" y1="0" y2="1">
-                                    <stop offset="0%" stop-color="#072ac8" stop-opacity="0.18"/>
-                                    <stop offset="100%" stop-color="#072ac8" stop-opacity="0"/>
+                                    <stop offset="0%" stop-color="#f6bb33" stop-opacity="0.28"/>
+                                    <stop offset="100%" stop-color="#f6bb33" stop-opacity="0"/>
                                 </linearGradient>
                             </defs>
                             <path d="M0 38 L24 32 L48 36 L72 26 L96 30 L120 22 L144 24 L168 16 L192 20 L216 10 L240 14 L240 50 L0 50 Z" fill="url(#spark-fill)"/>
-                            <path d="M0 38 L24 32 L48 36 L72 26 L96 30 L120 22 L144 24 L168 16 L192 20 L216 10 L240 14" fill="none" stroke="#072ac8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0 38 L24 32 L48 36 L72 26 L96 30 L120 22 L144 24 L168 16 L192 20 L216 10 L240 14" fill="none" stroke="#f6bb33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <!-- Progress -->
                     <div style="margin-top:14px;">
                         <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
                             <span style="font-size:13px;font-weight:600;color:var(--w-dark);">Cuenta configurada</span>
-                            <span style="font-size:13px;font-weight:700;color:var(--w-blue);">100%</span>
+                            <span style="font-size:13px;font-weight:700;color:var(--w-yellow);">100%</span>
                         </div>
                         <div style="height:8px;background:var(--w-line-2);border-radius:999px;overflow:hidden;">
-                            <div style="width:100%;height:100%;background:linear-gradient(90deg,#072ac8,#3d5cdb);border-radius:999px;"></div>
+                            <div style="width:100%;height:100%;background:linear-gradient(90deg,#f6bb33,#f4c655);border-radius:999px;"></div>
                         </div>
                     </div>
                     <!-- Tiles row -->
                     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;">
                         <div style="border:1px solid var(--w-line);border-radius:12px;padding:12px;display:flex;gap:10px;align-items:center;">
-                            <div style="width:30px;height:30px;border-radius:8px;background:#eef2ff;color:var(--w-blue);display:flex;align-items:center;justify-content:center;">
+                            <div style="width:30px;height:30px;border-radius:8px;background:#fff8e1;color:var(--w-dark);display:flex;align-items:center;justify-content:center;">
                                 <i data-lucide="list" style="width:15px;height:15px;"></i>
                             </div>
                             <div>
@@ -344,7 +344,7 @@
                             </div>
                         </div>
                         <div style="border:1px solid var(--w-line);border-radius:12px;padding:12px;display:flex;gap:10px;align-items:center;">
-                            <div style="width:30px;height:30px;border-radius:8px;background:#eef2ff;color:var(--w-blue);display:flex;align-items:center;justify-content:center;">
+                            <div style="width:30px;height:30px;border-radius:8px;background:#fff8e1;color:var(--w-dark);display:flex;align-items:center;justify-content:center;">
                                 <i data-lucide="truck" style="width:15px;height:15px;"></i>
                             </div>
                             <div>
@@ -361,13 +361,13 @@
 
 <!-- LOGO STRIP / CLIENTES -->
 <style>
-.cliente-logo-img { height: 130px; width: 130px; object-fit: contain; filter: grayscale(100%); opacity: .7; transition: filter .2s ease, opacity .2s ease; }
+.cliente-logo-img { height: 70px; width: auto; max-width: 140px; object-fit: contain; filter: grayscale(100%); opacity: .65; transition: filter .2s ease, opacity .2s ease; }
 .cliente-logo-img:hover { filter: grayscale(0%); opacity: 1; }
 </style>
-<section style="background:#f9f9f9;padding:32px 0;border-top:1px solid var(--w-line);border-bottom:1px solid var(--w-line);">
-    <div style="text-align:center;font-size:12px;color:var(--w-ink-4);font-weight:600;letter-spacing:.06em;margin-bottom:20px;">Algunos de nuestros clientes</div>
+<section style="background:#f9f9f9;padding:40px 0;border-top:1px solid var(--w-line);border-bottom:1px solid var(--w-line);">
+    <div style="text-align:center;font-size:11px;color:var(--w-ink-4);font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:24px;">Algunos de nuestros clientes</div>
     <div class="w-marquee" style="overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);">
-        <div class="w-marquee-track">
+        <div class="w-marquee-track" style="gap:48px;align-items:center;">
             <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/1_slcoiy.png" alt="Cliente 1">
             <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/2_uxodya.png" alt="Cliente 2">
             <img class="cliente-logo-img" src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778164053/3_xvpwlc.png" alt="Cliente 3">
@@ -534,7 +534,7 @@
             <h2 class="w-h2">Lo que Walmart requiere<br>para <span class="w-blue">aprobar tu cuenta</span> de vendedor.</h2>
             <p class="w-section-intro">Para aplicar a Walmart Marketplace desde LATAM necesitas estos elementos. No te preocupes — si aún no los tienes, también te ayudamos a conseguirlos.</p>
             <div style="margin-top:28px;">
-                <a href="#contacto" class="w-btn w-btn-outline-blue">
+                <a href="#contacto" class="w-btn w-btn-yellow">
                     Verificar si estoy listo
                     <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                 </a>
