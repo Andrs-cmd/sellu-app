@@ -5,389 +5,1220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
     <link rel="apple-touch-icon" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
-    <title>Envíos y Logística Internacional para tu LLC — Sell·U</title>
+    <title>Envíos y Logística LATAM → EE.UU. — Sell·U</title>
 
-    <!-- ── SEO PRIMARIO ── -->
-    <meta name="description" content="Soluciones de envío y logística para tu negocio en EE.UU. desde Latinoamérica. Dirección física en USA, recepción y reenvío de paquetes, fulfillment e importaciones internacionales.">
-    <meta name="keywords" content="envíos desde USA a Latinoamérica, logística para LLC, dirección física USA, recepción de paquetes USA, fulfillment LATAM, envíos internacionales, importaciones a USA, warehousing USA">
+    <meta name="description" content="Lleva tus productos a EE.UU. con una logística estructurada desde el inicio. Courier, flete aéreo, marítimo LCL/FCL. Asesoría en aduana, documentación y costos reales desde LATAM.">
+    <meta name="keywords" content="envíos a EE.UU. desde LATAM, logística internacional latinoamerica, flete aéreo Colombia USA, importar a Estados Unidos, Amazon FBA desde Colombia, landed cost, agente aduanal USA">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
     <link rel="canonical" href="https://sellu.co/pages/almacenamiento-y-logistica">
 
-    <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sellu.co/pages/almacenamiento-y-logistica">
-    <meta property="og:title" content="Envíos y Logística Internacional para tu LLC — Sell·U">
-    <meta property="og:description" content="Dirección física en USA, recepción de paquetes, reenvíos y fulfillment para tu negocio en EE.UU. desde Latinoamérica.">
+    <meta property="og:title" content="Envíos y Logística LATAM → EE.UU. — Sell·U">
+    <meta property="og:description" content="Courier, flete aéreo, LCL y FCL. Acompañamiento en aduana, documentación y costos reales. Sell·U estructura tu logística desde LATAM.">
     <meta property="og:image" content="https://sellu.co/og-image.jpg">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="Sell·U LATAM">
 
-    <!-- ── TWITTER CARD ── -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Envíos y Logística Internacional para tu LLC — Sell·U">
-    <meta name="twitter:description" content="Dirección física en USA, recepción de paquetes, reenvíos y fulfillment para tu negocio desde LATAM.">
+    <meta name="twitter:title" content="Envíos y Logística LATAM → EE.UU. — Sell·U">
+    <meta name="twitter:description" content="Courier, flete aéreo, LCL y FCL. Asesoría en aduana y costos reales desde LATAM.">
     <meta name="twitter:image" content="https://sellu.co/og-image.jpg">
 
-    <!-- ── STRUCTURED DATA ── -->
     @verbatim
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Sell·U LATAM — Envíos y Logística Internacional",
-        "description": "Servicios de logística, dirección física en USA, recepción y reenvío de paquetes, y fulfillment para empresas latinoamericanas con operaciones en Estados Unidos.",
+        "name": "Sell·U — Logística Internacional LATAM → EE.UU.",
+        "description": "Asesoría en métodos de envío, documentación aduanera y estructura logística para emprendedores latinoamericanos que venden en Estados Unidos.",
         "url": "https://sellu.co/pages/almacenamiento-y-logistica",
-        "telephone": "+19542105405",
-        "email": "contacto@sellu.co",
-        "provider": {
-            "@type": "Organization",
-            "name": "Sell·U LATAM LLC"
-        },
+        "provider": { "@type": "Organization", "name": "Sell·U LATAM LLC", "url": "https://sellu.co" },
         "areaServed": ["CO","MX","AR","CL","PE","VE","EC","US"],
-        "serviceType": ["Package Forwarding", "Virtual Address USA", "International Shipping", "Fulfillment Services"]
+        "serviceType": ["International Freight", "Customs Brokerage", "Amazon FBA Logistics", "Landed Cost Analysis"]
     }
     </script>
     @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
         :root {
-            --navy:  #0D1B3E;
-            --navy2: #122050;
-            --gold:  #F5A623;
-            --gold2: #E09415;
-            --red:   #E53935;
-            --white: #FFFFFF;
-            --gray:  #F5F6FA;
-            --gray2: #E8EAF0;
-            --text:  #333A50;
-            --muted: #6B7394;
-            --green: #25D366;
+            --navy-900: #2e3856; --navy-800: #3a4568; --navy-700: #434966;
+            --accent-500: #F6BB33; --accent-400: #f9cc66; --accent-300: #fbdd95;
+            --accent-100: #EEF1F8; --accent-700: #c89320;
+            --paper: #fbfaf7; --paper-2: #f5f3ee; --white: #ffffff;
+            --ink-900: #15161a; --ink-700: #3a3d46; --ink-500: #6b6f7a;
+            --ink-400: #9298a3; --ink-300: #c5c8d0; --ink-200: #e5e6ea; --ink-100: #f0f0f2;
+            --success-500: #1aa05f; --success-100: #e3f6ec;
+            --fg-primary: var(--navy-900); --fg-secondary: var(--ink-700);
+            --fg-tertiary: var(--ink-500); --fg-muted: var(--ink-400);
+            --border-default: var(--ink-200); --border-subtle: var(--ink-100); --border-strong: var(--ink-300);
+            --shadow-xs: 0 1px 2px rgba(46,56,86,0.04);
+            --shadow-sm: 0 1px 2px rgba(46,56,86,0.05), 0 1px 3px rgba(46,56,86,0.04);
+            --shadow-md: 0 4px 8px -2px rgba(46,56,86,0.06), 0 2px 4px -2px rgba(46,56,86,0.04);
+            --shadow-lg: 0 12px 24px -8px rgba(46,56,86,0.10), 0 4px 8px -4px rgba(46,56,86,0.06);
+            --shadow-xl: 0 24px 48px -12px rgba(46,56,86,0.16), 0 8px 16px -8px rgba(46,56,86,0.08);
+            --ease-out: cubic-bezier(0.16,1,0.3,1);
+            --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+            --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+            --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
         }
+
         html { scroll-behavior: smooth; }
-        body { font-family: 'Montserrat', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--font-sans); background: var(--paper); color: var(--fg-primary); -webkit-font-smoothing: antialiased; }
         a { text-decoration: none; color: inherit; }
 
-        /* ── TOPBAR ── */
-        .topbar { background: var(--navy2); padding: 7px 5%; display: flex; justify-content: space-between; align-items: center; }
-        .topbar-left { font-size: 12px; color: rgba(255,255,255,.6); display: flex; align-items: center; gap: 6px; }
-        .topbar-right { display: flex; gap: 14px; }
-        .topbar-right a { color: rgba(255,255,255,.6); font-size: 13px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+        .section { padding: 96px 0; }
+        .section-band { background: var(--paper-2); }
+        .section-inverse { background: var(--navy-900); }
 
-        /* ── NAV ── */
-        .nav { background: var(--white); border-bottom: 1px solid var(--gray2); padding: 0 5%; display: flex; align-items: center; justify-content: center; height: 68px; position: sticky; top: 0; z-index: 100; }
-        .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 900; color: var(--navy); letter-spacing: -1px; margin-right: 40px; }
-        .nav-logo span { color: var(--gold); }
-        .nav-links { display: flex; gap: 0; }
-        .nav-link { padding: 0 14px; height: 68px; display: flex; align-items: center; font-size: 12px; font-weight: 700; color: var(--text); border-bottom: 3px solid transparent; transition: all .2s; white-space: nowrap; text-transform: uppercase; letter-spacing: .04em; }
-        .nav-link:hover { color: var(--navy); border-bottom-color: var(--gold); }
-        .nav-link.active { color: var(--gold); border-bottom-color: var(--gold); }
+        .eyebrow {
+            font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+            letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-tertiary);
+            display: block; margin-bottom: 0;
+        }
+
+        /* ── BUTTONS ── */
+        .btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            font-family: var(--font-sans); font-weight: 600; font-size: 14px;
+            padding: 10px 18px; border-radius: 10px; border: 1px solid transparent;
+            cursor: pointer; line-height: 20px; letter-spacing: -0.005em; text-decoration: none;
+            transition: background 200ms var(--ease-out), box-shadow 200ms var(--ease-out), border-color 200ms;
+        }
+        .btn-primary { background: var(--navy-900); color: var(--paper); box-shadow: var(--shadow-sm); }
+        .btn-primary:hover { background: var(--navy-800); box-shadow: var(--shadow-md); }
+        .btn-accent { background: var(--accent-500); color: var(--navy-900); box-shadow: var(--shadow-sm); }
+        .btn-accent:hover { background: var(--accent-400); box-shadow: var(--shadow-md); }
+        .btn-secondary { background: var(--white); color: var(--navy-900); border-color: var(--border-strong); }
+        .btn-secondary:hover { background: var(--paper-2); border-color: var(--navy-700); }
+        .btn-on-dark { background: var(--paper); color: var(--navy-900); }
+        .btn-on-dark:hover { background: var(--white); }
+        .btn-lg { padding: 14px 22px; font-size: 15px; line-height: 22px; border-radius: 12px; }
 
         /* ── HERO ── */
-        .hero { background: var(--gray); padding: 48px 5% 40px; text-align: center; }
-        .hero-alert { display: inline-flex; align-items: center; gap: 8px; background: var(--navy); color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; padding: 7px 20px; border-radius: 20px; margin-bottom: 24px; letter-spacing: .04em; text-transform: uppercase; }
-        .hero-alert svg { width: 14px; height: 14px; color: var(--gold); flex-shrink: 0; }
-        .hero h1 { font-family: 'Montserrat', sans-serif; font-size: 36px; font-weight: 900; line-height: 1.15; margin-bottom: 18px; max-width: 700px; margin-left: auto; margin-right: auto; color: var(--navy); }
-        .hero h1 em { font-style: normal; color: var(--red); }
-        .hero-desc { font-size: 15px; color: var(--text); line-height: 1.7; margin-bottom: 8px; max-width: 600px; margin-left: auto; margin-right: auto; }
-        .hero-desc strong { color: var(--navy); font-weight: 700; }
-        .hero-desc a { color: var(--gold2); font-weight: 700; }
-        .hero-only { font-size: 13px; color: var(--muted); margin-bottom: 28px; display: flex; align-items: center; justify-content: center; gap: 6px; }
-        .hero-only svg { width: 14px; height: 14px; color: var(--gold); }
-        .btn-red { display: inline-block; background: var(--red); color: var(--white); padding: 14px 36px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; transition: background .2s; }
-        .btn-red:hover { background: #c62828; }
-        .hero-sub { font-size: 12px; color: var(--muted); margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 5px; }
-        .hero-sub svg { width: 13px; height: 13px; color: var(--gold); }
-
-        /* ── OTROS SERVICIOS ── */
-        .otros { padding: 72px 5%; background: var(--white); }
-        .otros-inner { max-width: 1100px; margin: 0 auto; }
-        .otros h2 { font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 800; color: var(--navy); text-align: center; margin-bottom: 40px; line-height: 1.3; }
-        .carousel-wrap { position: relative; }
-        .carousel-track { display: flex; gap: 16px; transition: transform .4s ease; overflow: hidden; }
-        .servicio-slide { flex: 0 0 calc(33.333% - 11px); border-radius: 10px; overflow: hidden; position: relative; min-height: 300px; cursor: pointer; }
-        .servicio-slide-img {
-            width: 100%; height: 300px; object-fit: cover; display: block;
-            background: var(--navy2);
+        .hero-section {
+            padding: 48px 0 72px;
+            position: relative; overflow: hidden;
+            background: var(--paper);
         }
-        /* Placeholder para imagen del slide */
-        .slide-placeholder { width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; }
-        .slide-placeholder svg { width: 56px; height: 56px; opacity: .15; color: white; }
-        .slide-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,27,62,.9) 30%, rgba(13,27,62,.3) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 20px; }
-        .slide-label { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 900; color: var(--white); text-transform: uppercase; letter-spacing: .04em; line-height: 1.3; }
-        .slide-more { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; color: rgba(255,255,255,.7); text-transform: uppercase; letter-spacing: .06em; display: flex; align-items: center; gap: 6px; }
-        .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; background: var(--white); border-radius: 50%; border: 1px solid var(--gray2); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; }
-        .carousel-btn.prev { left: -8px; }
-        .carousel-btn.next { right: -8px; }
-        .carousel-btn svg { width: 14px; height: 14px; }
+        .hero-section::before {
+            content: ''; position: absolute; inset: 0; pointer-events: none;
+            background:
+                radial-gradient(1200px 600px at 85% 20%, rgba(246,187,51,0.12), transparent 60%),
+                radial-gradient(900px 500px at 10% 80%, rgba(67,73,102,0.07), transparent 60%);
+        }
+        .hero-grid {
+            position: relative;
+            display: grid; grid-template-columns: 1fr 1.05fr;
+            gap: 48px; align-items: center;
+        }
+        .hero-h1 {
+            font-family: var(--font-display); font-size: 52px; line-height: 60px;
+            letter-spacing: -0.025em; font-weight: 700;
+            margin-top: 18px; margin-bottom: 22px; color: var(--navy-900);
+        }
+        .hero-h1 .hl {
+            background: linear-gradient(180deg, transparent 62%, var(--accent-300) 62%);
+            padding: 0 4px;
+        }
+        .hero-lead {
+            font-size: 17px; line-height: 28px; letter-spacing: -0.005em;
+            color: var(--fg-secondary); margin-bottom: 30px;
+        }
+        .hero-btns { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+        .hero-checks { margin-top: 28px; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: var(--fg-secondary); }
+        .hero-check { display: inline-flex; align-items: center; gap: 10px; }
 
-        /* ── CTA ASESOR ── */
-        .cta-asesor { background: var(--navy); padding: 56px 5%; text-align: center; }
-        .cta-tag { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 14px; display: block; }
-        .cta-asesor h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 900; color: var(--white); margin-bottom: 12px; }
-        .cta-asesor p { font-size: 15px; color: rgba(255,255,255,.55); margin-bottom: 28px; max-width: 440px; margin-left: auto; margin-right: auto; line-height: 1.6; }
-        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-        .btn-wa-outline { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--white); padding: 12px 28px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; border: 2px solid rgba(255,255,255,.35); transition: border-color .2s; }
-        .btn-wa-outline:hover { border-color: var(--white); }
-        .btn-messenger-outline { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--white); padding: 12px 28px; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; border: 2px solid rgba(255,255,255,.35); transition: border-color .2s; }
-        .btn-messenger-outline:hover { border-color: var(--white); }
+        /* ── MAP CARD ── */
+        .map-card {
+            background: linear-gradient(160deg, #fff 0%, var(--paper) 100%);
+            border-radius: 24px; border: 1px solid var(--border-default);
+            box-shadow: var(--shadow-xl); padding: 24px 28px 22px;
+            position: relative; overflow: hidden;
+        }
+        .map-card-header {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 12px; position: relative; z-index: 2;
+        }
+        .status-dot {
+            width: 8px; height: 8px; border-radius: 50%; background: var(--success-500);
+            box-shadow: 0 0 0 0 rgba(26,160,95,0.5);
+            animation: status-pulse 1.8s ease-out infinite; flex-shrink: 0;
+        }
+        .map-card-footer {
+            margin-top: 8px; display: flex; align-items: center; justify-content: space-between;
+            font-size: 11px; color: var(--fg-muted); font-family: var(--font-mono);
+            letter-spacing: 0.05em; position: relative; z-index: 2;
+        }
 
-        /* ── CLIENTES ── */
-        .clientes { background: var(--white); padding: 52px 5%; }
-        .clientes-badge-wrap { display: flex; justify-content: center; margin-bottom: 36px; }
-        .clientes-badge { background: var(--navy); color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; padding: 6px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; }
-        .clientes-grid { display: flex; align-items: center; justify-content: center; gap: 44px; flex-wrap: wrap; }
-        .cliente-logo { font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 800; color: var(--navy); opacity: .4; transition: opacity .2s; letter-spacing: -1px; }
-        .cliente-logo:hover { opacity: 1; }
+        @keyframes status-pulse {
+            0%   { box-shadow: 0 0 0 0 rgba(26,160,95,0.55); }
+            100% { box-shadow: 0 0 0 8px rgba(26,160,95,0); }
+        }
+        @keyframes arc-draw {
+            0%   { stroke-dashoffset: 100; opacity: 0; }
+            15%  { opacity: 1; }
+            70%  { stroke-dashoffset: 0; opacity: 1; }
+            100% { stroke-dashoffset: 0; opacity: 0.35; }
+        }
+        @keyframes sellu-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(2.4); opacity: 0; }
+        }
+        @keyframes sellu-receive {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.6); opacity: 0; }
+        }
+        @keyframes packet-fade {
+            0%   { opacity: 0; }
+            10%  { opacity: 1; }
+            85%  { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .status-dot, svg path, svg circle, .pipeline-fill, .process-fill { animation: none !important; }
+        }
+
+        /* ── PIPELINE DIAGRAM ── */
+        .pipeline-wrap { position: relative; margin-bottom: 80px; }
+        .pipeline-rail { position: absolute; left: 6%; right: 6%; top: 60px; height: 2px; background: var(--border-default); z-index: 0; }
+        .pipeline-fill {
+            position: absolute; left: 6%; top: 60px; height: 2px; background: var(--navy-900);
+            width: 0%; transition: width 1400ms var(--ease-out) 200ms; z-index: 0;
+        }
+        .pipeline-fill.active { width: 88%; }
+        .pipeline-nodes { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; position: relative; z-index: 1; }
+        .pipeline-node { display: flex; flex-direction: column; align-items: center; gap: 16px; opacity: 0; transform: translateY(8px); transition: opacity 360ms var(--ease-out), transform 360ms var(--ease-out); }
+        .pipeline-node.active { opacity: 1; transform: translateY(0); }
+        .pipeline-circle {
+            width: 120px; height: 120px; border-radius: 50%; background: var(--white);
+            border: 2px solid var(--accent-500); display: flex; flex-direction: column;
+            align-items: center; justify-content: center; box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        .pipeline-circle.last { border-color: var(--navy-700); }
+        .pipeline-num {
+            position: absolute; top: -10px; font-family: var(--font-mono);
+            font-size: 11px; font-weight: 700; background: var(--navy-900); color: var(--accent-500);
+            padding: 3px 10px; border-radius: 999px; letter-spacing: 0.06em;
+        }
+        .pipeline-key { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-tertiary); margin-top: 6px; }
+        .pipeline-label { text-align: center; }
+        .pipeline-label h4 { font-family: var(--font-display); font-size: 15px; font-weight: 600; color: var(--navy-900); margin-bottom: 4px; }
+        .pipeline-label p { font-size: 12px; color: var(--fg-secondary); font-family: var(--font-mono); letter-spacing: 0.02em; }
+
+        /* ── METHODS ── */
+        .methods-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: stretch; margin-bottom: 64px; }
+        .quadrant-wrap {
+            position: relative; background: var(--white); border: 1px solid var(--border-default);
+            border-radius: 14px; padding: 32px 40px 56px 64px;
+            box-shadow: var(--shadow-sm); min-height: 460px;
+        }
+        .quadrant-yaxis {
+            position: absolute; left: 14px; top: 50%; transform: translateY(-50%) rotate(-90deg);
+            transformOrigin: left center; font-size: 11px; font-weight: 700;
+            letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-tertiary);
+            white-space: nowrap;
+        }
+        .quadrant-xaxis {
+            position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%);
+            font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-tertiary);
+        }
+        .quadrant-plot {
+            position: relative; height: 360px; border: 1px solid var(--border-default);
+            border-radius: 8px; background: linear-gradient(135deg, var(--paper) 0%, var(--white) 100%);
+        }
+        .q-gridline-v { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--border-subtle); }
+        .q-gridline-h { position: absolute; left: 0; right: 0; height: 1px; background: var(--border-subtle); }
+        .q-label { position: absolute; font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+        .bubble {
+            position: absolute; border-radius: 50%; border: 3px solid var(--white);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; opacity: 0; transform: scale(0.4);
+            transition: opacity 400ms var(--ease-out), transform 280ms var(--ease-out), box-shadow 200ms;
+        }
+        .bubble.active { opacity: 1; transform: scale(1); }
+        .bubble:hover { transform: scale(1.08) !important; box-shadow: var(--shadow-lg); z-index: 5; }
+        .bubble-label {
+            position: absolute; white-space: nowrap; font-size: 11px; font-weight: 600;
+            color: var(--navy-900); background: var(--white); padding: 2px 8px;
+            border-radius: 999px; border: 1px solid var(--border-default);
+            left: 50%; transform: translateX(-50%);
+        }
+        .quadrant-legend { margin-top: 16px; display: flex; align-items: center; gap: 14px; font-size: 11px; color: var(--fg-tertiary); }
+        .legend-dot { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--white); }
+
+        .methods-list { display: flex; flex-direction: column; gap: 12px; }
+        .method-card {
+            background: var(--white); border: 1px solid var(--border-default);
+            border-radius: 12px; padding: 14px 18px;
+            display: flex; align-items: center; gap: 14px;
+            transition: border-color 200ms, transform 200ms; cursor: default;
+        }
+        .method-card:hover { border-color: var(--navy-900); transform: translateX(-4px); }
+        .method-icon {
+            width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .method-icon.accent { background: var(--accent-500); }
+        .method-icon.navy  { background: var(--navy-900); }
+        .method-info { flex: 1; }
+        .method-name { font-family: var(--font-display); font-size: 15px; font-weight: 600; color: var(--navy-900); }
+        .method-sub  { font-size: 12px; color: var(--fg-tertiary); margin-top: 2px; }
+        .method-meta { text-align: right; }
+        .method-time { font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--navy-900); }
+        .method-weight { font-size: 11px; color: var(--fg-tertiary); margin-top: 2px; }
+
+        /* ── COMPARISON TABLE ── */
+        .cmp-table {
+            background: var(--white); border: 1px solid var(--border-default);
+            border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-sm);
+        }
+        .cmp-table-head {
+            padding: 20px 28px; border-bottom: 1px solid var(--border-default);
+            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+        }
+        .cmp-table-cols {
+            display: grid; grid-template-columns: 1.1fr 1.6fr 1fr 1fr 1fr;
+            align-items: center; padding: 12px 28px; background: var(--paper);
+            border-bottom: 1px solid var(--border-default);
+            font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-tertiary);
+        }
+        .cmp-row {
+            display: grid; grid-template-columns: 1.1fr 1.6fr 1fr 1fr 1fr;
+            align-items: center; padding: 20px 28px;
+        }
+        .cmp-row:not(:last-child) { border-bottom: 1px solid var(--border-subtle); }
+        .bar-track { height: 6px; background: var(--paper-2); border-radius: 999px; overflow: hidden; margin-top: 6px; }
+        .bar-fill { height: 100%; border-radius: 999px; width: 0%; transition: width 900ms var(--ease-out); }
+        .cost-dots { display: flex; gap: 3px; }
+        .cost-dot { width: 6px; height: 14px; border-radius: 2px; }
+
+        /* ── INSIGHT CALLOUT ── */
+        .insight-callout {
+            margin-top: 48px; padding: 20px 24px;
+            background: var(--accent-100); border-radius: 14px;
+            border-left: 3px solid var(--accent-500);
+            display: flex; align-items: center; gap: 14px; max-width: 920px;
+        }
+
+        /* ── PROCESS ── */
+        .process-track { position: relative; margin-bottom: 56px; }
+        .process-rail { position: absolute; left: 5%; right: 5%; top: 44px; height: 4px; background: var(--border-default); border-radius: 999px; }
+        .process-fill {
+            position: absolute; left: 5%; top: 44px; height: 4px;
+            background: linear-gradient(90deg, var(--accent-500), var(--navy-900));
+            border-radius: 999px; width: 0%;
+            transition: width 1400ms var(--ease-out) 200ms;
+        }
+        .process-fill.active { width: 90%; }
+        .process-nodes { display: grid; grid-template-columns: repeat(5,1fr); gap: 8px; position: relative; }
+        .process-node { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 4px 8px; opacity: 0; transform: translateY(8px); transition: opacity 360ms var(--ease-out), transform 360ms var(--ease-out); }
+        .process-node.active { opacity: 1; transform: translateY(0); }
+        .process-circle {
+            width: 88px; height: 88px; border-radius: 50%; background: var(--navy-900);
+            border: 3px solid var(--accent-500); display: flex; flex-direction: column;
+            align-items: center; justify-content: center; box-shadow: var(--shadow-md);
+        }
+        .process-n { font-family: var(--font-mono); font-size: 9px; font-weight: 700; letter-spacing: 0.1em; color: var(--paper); margin-top: 2px; }
+        .process-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-900); text-align: center; }
+
+        .step-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+        .step-card {
+            background: var(--white); border: 1px solid var(--border-default);
+            border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 14px;
+            box-shadow: var(--shadow-xs); opacity: 0; transform: translateY(12px);
+            transition: opacity 400ms var(--ease-out), transform 400ms var(--ease-out);
+        }
+        .step-card.active { opacity: 1; transform: translateY(0); }
+        .step-card-header { display: flex; align-items: center; gap: 12px; }
+        .step-icon-wrap {
+            width: 44px; height: 44px; border-radius: 10px; background: var(--navy-900);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .step-num-tag { font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-700); }
+        .step-h { font-family: var(--font-display); font-size: 16px; line-height: 22px; font-weight: 600; color: var(--navy-900); margin-top: 4px; }
+        .step-p { font-size: 13px; line-height: 20px; color: var(--fg-secondary); }
+        .step-bullets { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
+        .step-bullet { display: flex; align-items: flex-start; gap: 8px; font-size: 12.5px; color: var(--navy-900); }
+        .step-deliverable {
+            margin-top: auto; padding-top: 14px; border-top: 1px dashed var(--border-default);
+            display: flex; align-items: center; gap: 8px;
+        }
+        .step-out-label { font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-tertiary); }
+        .step-out-val { font-size: 13px; font-weight: 600; color: var(--navy-900); line-height: 18px; }
+
+        .remote-badge {
+            margin-top: 24px; padding: 14px 22px; background: var(--paper-2);
+            border-radius: 999px; font-size: 14px; color: var(--navy-900);
+            display: inline-flex; align-items: center; gap: 10px;
+        }
+
+        /* ── CTA BAND ── */
+        .cta-band {
+            padding: 96px 0; background: var(--navy-900);
+            position: relative; overflow: hidden;
+        }
+        .cta-band::before {
+            content: ''; position: absolute; right: -120px; top: -80px;
+            width: 480px; height: 480px; background: var(--accent-500); opacity: 0.16;
+            clip-path: path("M260 0 C 320 0, 360 40, 360 100 L 360 180 C 400 180, 440 200, 440 240 C 440 280, 400 300, 360 300 L 360 380 C 360 440, 320 480, 260 480 L 80 480 C 40 480, 0 440, 0 380 L 0 260 C 40 260, 80 240, 80 200 C 80 160, 40 140, 0 140 L 0 80 C 0 40, 40 0, 80 0 Z");
+            pointer-events: none;
+        }
+        .cta-band .eyebrow { color: var(--accent-500); }
+        .cta-h2 {
+            font-family: var(--font-display); font-size: 52px; line-height: 60px;
+            letter-spacing: -0.025em; font-weight: 700;
+            margin-top: 16px; margin-bottom: 20px; color: var(--paper);
+        }
+        .cta-h2 span { color: var(--accent-500); }
+        .cta-lead { font-size: 18px; line-height: 30px; color: rgba(251,250,247,0.78); max-width: 640px; margin-bottom: 36px; }
+        .cta-fine { margin-top: 28px; font-size: 13px; color: rgba(251,250,247,0.6); display: inline-flex; align-items: center; gap: 10px; }
 
         /* ── FAQ ── */
-        .faq { padding: 72px 5%; background: var(--white); border-top: 1px solid var(--gray2); }
-        .faq-inner { max-width: 800px; margin: 0 auto; }
-        .faq-header { text-align: center; margin-bottom: 48px; }
-        .faq-tag { font-size: 11px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 10px; display: block; }
-        .faq-header h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 900; color: var(--navy); }
-        .faq-item { border-bottom: 1px solid var(--gray2); }
-        .faq-q { width: 100%; padding: 18px 0; text-align: left; background: none; border: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
-        .faq-q:hover { color: var(--gold2); }
-        .faq-icon { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--gray2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all .3s; }
-        .faq-icon svg { width: 12px; height: 12px; color: var(--navy); transition: transform .3s; }
-        .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s; font-size: 14px; color: var(--muted); line-height: 1.75; }
-        .faq-item.open .faq-a { max-height: 200px; padding-bottom: 18px; }
-        .faq-item.open .faq-icon { background: var(--navy); border-color: var(--navy); }
-        .faq-item.open .faq-icon svg { color: white; transform: rotate(45deg); }
+        .faq-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 64px; align-items: flex-start; }
+        .faq-sticky { position: sticky; top: 96px; }
+        .faq-sticky h2 { font-family: var(--font-display); font-size: 34px; line-height: 42px; letter-spacing: -0.02em; font-weight: 700; margin-top: 16px; margin-bottom: 20px; color: var(--navy-900); }
+        .faq-sticky p { font-size: 15px; line-height: 24px; color: var(--fg-secondary); margin-bottom: 24px; }
+        .faq-list { display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--border-default); border-radius: 14px; overflow: hidden; }
+        .faq-item { border-top: 1px solid var(--border-subtle); }
+        .faq-item:first-child { border-top: none; }
+        .faq-btn {
+            width: 100%; text-align: left; background: transparent; border: none; cursor: pointer;
+            padding: 24px 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px;
+            font-family: var(--font-display); font-size: 16px; line-height: 24px; font-weight: 600;
+            color: var(--navy-900); letter-spacing: -0.005em;
+        }
+        .faq-toggle {
+            width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+            background: var(--paper-2); color: var(--navy-900);
+            display: inline-flex; align-items: center; justify-content: center;
+            transition: background 200ms, color 200ms;
+        }
+        .faq-item.open .faq-toggle { background: var(--navy-900); color: var(--paper); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 320ms cubic-bezier(0.16,1,0.3,1); }
+        .faq-answer-inner { padding: 0 28px 24px; font-size: 15px; line-height: 24px; color: var(--fg-secondary); }
+        .faq-item.open .faq-answer { max-height: 400px; }
 
-        /* ── FOOTER ── */
-        .footer { background: var(--white); border-top: 1px solid var(--gray2); padding: 52px 5% 0; }
-        .footer-inner { max-width: 1100px; margin: 0 auto; }
-        .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 60px; padding-bottom: 32px; }
-        .footer-contact-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 12px; }
-        .footer-logo-text { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: var(--navy); letter-spacing: -1px; display: inline-block; margin-bottom: 14px; }
-        .footer-logo-text span { color: var(--gold); }
-        .footer-brand-title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-        .footer-brand-info { font-size: 13px; color: var(--muted); line-height: 1.9; }
-        .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 800; color: var(--navy); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 16px; }
-        .footer-col a { display: block; font-size: 13px; color: var(--muted); margin-bottom: 10px; transition: color .2s; }
-        .footer-col a:hover { color: var(--navy); }
-        .footer-payments { border-top: 1px solid var(--gray2); padding: 20px 0; display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
-        .payment-badge { background: var(--gray); border: 1px solid var(--gray2); border-radius: 4px; padding: 4px 8px; font-size: 10px; font-weight: 700; color: var(--muted); }
-        .footer-bottom { background: var(--navy2); margin: 0 -5%; padding: 20px 5%; text-align: center; }
-        .footer-bottom p { font-size: 12px; color: rgba(255,255,255,.4); line-height: 1.7; }
-        .footer-bottom strong { color: rgba(255,255,255,.6); }
-
+        /* ── RESPONSIVE ── */
         @media (max-width: 900px) {
-            .hero h1 { font-size: 26px; }
-            .servicio-slide { flex: 0 0 calc(80% - 8px); }
-            .footer-top { grid-template-columns: 1fr; gap: 32px; }
-            .nav-links { display: none; }
+            .hero-grid { grid-template-columns: 1fr; }
+            .hero-h1 { font-size: 38px; line-height: 46px; }
+            .methods-grid { grid-template-columns: 1fr; }
+            .faq-grid { grid-template-columns: 1fr; }
+            .faq-sticky { position: static; }
+            .pipeline-nodes { grid-template-columns: repeat(2,1fr); }
+            .process-nodes { grid-template-columns: repeat(3,1fr); }
+            .cta-h2 { font-size: 38px; line-height: 46px; }
+            .cmp-table-cols, .cmp-row { grid-template-columns: 1fr 1.6fr 1fr; }
+            .cmp-table-cols > *:nth-child(n+4),
+            .cmp-row > *:nth-child(n+4) { display: none; }
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 20px; }
+            .section { padding: 64px 0; }
+            .hero-section { padding: 32px 0 52px; }
+            .hero-h1 { font-size: 30px; line-height: 38px; }
+            .cta-h2 { font-size: 28px; line-height: 36px; }
+            .step-cards { grid-template-columns: 1fr; }
+            .process-nodes { grid-template-columns: repeat(2,1fr); }
         }
     </style>
 </head>
 <body>
-
 <x-nav />
 
-{{-- HERO --}}
-<section class="hero">
-    <span class="hero-alert">
-        <svg viewBox="0 0 14 14" fill="none"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
-        Soluciones logísticas aéreas exclusivas para empresas.
-    </span>
-    <h1>¿Exportas desde Latam?<br>Tu envío desde <em>Estados Unidos</em> puede ser más económico</h1>
-    <p class="hero-desc">
-        <svg style="display:inline;width:16px;height:16px;vertical-align:-3px;color:var(--green)" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0L2 3v5c0 4 2.7 7.3 6 8 3.3-.7 6-4 6-8V3L8 0z"/></svg>
-        Gestionamos tus envíos <strong>aéreos internacionales desde Estados Unidos</strong>, ayudándote a reducir costos y mejorar los tiempos de entrega.
-    </p>
-    <p class="hero-only">
-        <svg viewBox="0 0 14 14" fill="currentColor"><circle cx="7" cy="7" r="6"/></svg>
-        Solo trabajamos con empresas.
-    </p>
-    <a href="https://wa.me/573116473200" class="btn-red" target="_blank">Cotiza tu envío aéreo</a>
-    <p class="hero-sub">
-        <svg viewBox="0 0 13 13" fill="currentColor"><path d="M6.5 1l1.5 3 3.3.5-2.4 2.3.6 3.3L6.5 8.5l-3 1.6.6-3.3L1.7 4.5 5 4z"/></svg>
-        Ahorra en logística sin sacrificar tiempos de entrega.
-    </p>
-</section>
-
-{{-- OTROS SERVICIOS --}}
-<section class="otros">
-    <div class="otros-inner">
-        <h2>Otros servicios que te ayudan a exportar, vender y operar con éxito en Estados Unidos</h2>
-        <div class="carousel-wrap">
-            <button class="carousel-btn prev" onclick="moverCarousel(-1)">
-                <svg viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <div class="carousel-track" id="carouselTrack">
-
-                {{-- Slide 1 --}}
-                <div class="servicio-slide">
-                    {{--
-                        Para imagen real reemplaza slide-placeholder con:
-                        <img src="URL_IMAGEN_MARKETPLACE" alt="Apertura Marketplace" class="servicio-slide-img">
-                    --}}
-                    <div class="slide-placeholder" style="background:#1a2a4a">
-                        <svg viewBox="0 0 56 56" fill="none"><rect x="4" y="10" width="48" height="36" rx="4" stroke="white" stroke-width="2"/><path d="M4 20h48" stroke="white" stroke-width="2"/></svg>
-                    </div>
-                    <div class="slide-overlay">
-                        <span class="slide-label">Apertura<br>Marketplace</span>
-                        <a href="/amazon" class="slide-more">Ver Más <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="white" stroke-width="1"/><path d="M5 4l2 2-2 2" stroke="white" stroke-width="1" stroke-linecap="round"/></svg></a>
-                    </div>
+<!-- ── HERO ── -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-grid">
+            <div>
+                <span class="eyebrow">Logística internacional · LATAM → EE.UU.</span>
+                <h1 class="hero-h1">
+                    Lleva tus productos a EE.UU. con una logística
+                    <span class="hl">estructurada</span>
+                    desde el inicio.
+                </h1>
+                <p class="hero-lead">
+                    Vender en Amazon, Shopify o Faire desde LATAM requiere que tu producto llegue a tiempo, sin problemas en aduana y a un costo que deje margen. Sell·U te ayuda a estructurar tu logística correctamente desde el principio.
+                </p>
+                <div class="hero-btns">
+                    <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20cotizar%20mi%20env%C3%ADo%20a%20EE.UU." target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                        Cotizar mi envío a EE.UU. →
+                    </a>
+                    <a href="#proceso" class="btn btn-secondary btn-lg">Ver cómo funciona</a>
                 </div>
-
-                {{-- Slide 2 --}}
-                <div class="servicio-slide">
-                    {{--
-                        Para imagen real reemplaza slide-placeholder con:
-                        <img src="URL_IMAGEN_CONSTITUCION" alt="Constitución empresa" class="servicio-slide-img">
-                    --}}
-                    <div class="slide-placeholder" style="background:#0f2d4a">
-                        <svg viewBox="0 0 56 56" fill="none"><path d="M8 48V24l20-16 20 16v24H8z" stroke="white" stroke-width="2" stroke-linejoin="round"/><rect x="20" y="32" width="16" height="16" stroke="white" stroke-width="2"/></svg>
-                    </div>
-                    <div class="slide-overlay">
-                        <span class="slide-label">Constitución<br>Empresa en<br>Estados Unidos<br>LLC/Corp</span>
-                        <a href="/abre-empresa" class="slide-more">Ver Más <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="white" stroke-width="1"/><path d="M5 4l2 2-2 2" stroke="white" stroke-width="1" stroke-linecap="round"/></svg></a>
-                    </div>
+                <div class="hero-checks">
+                    <span class="hero-check">
+                        <i data-lucide="check" style="width:14px;height:14px;color:var(--success-500);flex-shrink:0;"></i>
+                        Experiencia con Amazon FBA, Faire y ecommerce independiente
+                    </span>
+                    <span class="hero-check">
+                        <i data-lucide="check" style="width:14px;height:14px;color:var(--success-500);flex-shrink:0;"></i>
+                        Acompañamiento en español desde LATAM
+                    </span>
+                    <span class="hero-check">
+                        <i data-lucide="check" style="width:14px;height:14px;color:var(--success-500);flex-shrink:0;"></i>
+                        Asesoría en aduana, documentación y costos reales
+                    </span>
                 </div>
-
-                {{-- Slide 3 --}}
-                <div class="servicio-slide">
-                    {{--
-                        Para imagen real reemplaza slide-placeholder con:
-                        <img src="URL_IMAGEN_FDA" alt="Registro FDA" class="servicio-slide-img">
-                    --}}
-                    <div class="slide-placeholder" style="background:#1a2040">
-                        <svg viewBox="0 0 56 56" fill="none"><rect x="8" y="12" width="40" height="32" rx="3" stroke="white" stroke-width="2"/><path d="M18 28h20M18 34h12" stroke="white" stroke-width="2" stroke-linecap="round"/><text x="28" y="24" text-anchor="middle" fill="white" font-size="10" font-weight="800" font-family="sans-serif">FDA</text></svg>
-                    </div>
-                    <div class="slide-overlay">
-                        <span class="slide-label">Registro<br>Sanitario ante<br>la FDA</span>
-                        <a href="/sanitario" class="slide-more">Ver Más <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="white" stroke-width="1"/><path d="M5 4l2 2-2 2" stroke="white" stroke-width="1" stroke-linecap="round"/></svg></a>
-                    </div>
-                </div>
-
-                {{-- Slide 4 --}}
-                <div class="servicio-slide">
-                    {{--
-                        Para imagen real reemplaza slide-placeholder con:
-                        <img src="URL_IMAGEN_MARCA" alt="Registro de Marca" class="servicio-slide-img">
-                    --}}
-                    <div class="slide-placeholder" style="background:#2a1a40">
-                        <svg viewBox="0 0 56 56" fill="none"><path d="M28 10L14 16v12c0 8 6 15 14 18 8-3 14-10 14-18V16L28 10z" stroke="white" stroke-width="2" stroke-linejoin="round"/><path d="M22 28l4 4 8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </div>
-                    <div class="slide-overlay">
-                        <span class="slide-label">Registro<br>de Marca<br>USPTO</span>
-                        <a href="/marca" class="slide-more">Ver Más <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="white" stroke-width="1"/><path d="M5 4l2 2-2 2" stroke="white" stroke-width="1" stroke-linecap="round"/></svg></a>
-                    </div>
-                </div>
-
             </div>
-            <button class="carousel-btn next" onclick="moverCarousel(1)">
-                <svg viewBox="0 0 14 14" fill="none"><path d="M5 2l5 5-5 5" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
+
+            <!-- MAP CARD -->
+            <div class="map-card">
+                <div class="map-card-header">
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <span class="status-dot"></span>
+                        <span style="font-size:12px;font-weight:700;color:var(--navy-900);letter-spacing:0.08em;">RUTAS ACTIVAS</span>
+                    </div>
+                    <span style="font-size:11px;color:var(--fg-muted);font-family:var(--font-mono);letter-spacing:0.05em;">6 orígenes · 1 destino</span>
+                </div>
+
+                <div style="position:relative;width:100%;">
+                    <svg viewBox="0 0 1080 1262" style="width:100%;height:auto;display:block;" role="img" aria-label="Mapa LATAM → EE.UU.">
+                        <defs>
+                            <linearGradient id="map-bg-grad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#d6e4f7"/>
+                                <stop offset="45%" stop-color="#c2d5ef"/>
+                                <stop offset="100%" stop-color="#b8cceb"/>
+                            </linearGradient>
+                            <linearGradient id="route-grad" x1="0" y1="1" x2="0" y2="0">
+                                <stop offset="0%" stop-color="#F6BB33" stop-opacity="0.4"/>
+                                <stop offset="100%" stop-color="#F6BB33" stop-opacity="1"/>
+                            </linearGradient>
+                            <radialGradient id="dest-glow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#F6BB33" stop-opacity="0.55"/>
+                                <stop offset="100%" stop-color="#F6BB33" stop-opacity="0"/>
+                            </radialGradient>
+                            <filter id="route-glow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="3" result="b"/>
+                                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                            </filter>
+                        </defs>
+
+                        <!-- Background continent silhouette (gradient) -->
+                        <rect width="1080" height="1262" fill="url(#map-bg-grad)" rx="0"/>
+                        <!-- Rough Americas outline shapes for visual context -->
+                        <path d="M300,80 Q420,60 500,120 Q580,180 560,300 Q540,420 480,500 Q460,560 440,640 Q420,720 430,800 Q440,900 480,980 Q520,1060 560,1120 Q580,1160 540,1200 Q500,1230 460,1220 Q380,1210 360,1160 Q320,1100 310,1020 Q300,940 320,860 Q340,780 300,700 Q260,620 240,540 Q220,460 220,380 Q220,280 260,200 Q280,140 300,80Z"
+                              fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                        <path d="M420,80 Q500,50 580,80 Q640,110 660,180 Q680,250 640,320 Q620,360 580,380 Q540,400 520,440 Q500,480 480,500"
+                              fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+                        <!-- dest glow -->
+                        <circle cx="420" cy="380" r="160" fill="url(#dest-glow)"/>
+
+                        <!-- Route arcs: CDMX, Caracas, Bogotá, Lima, Santiago, Buenos Aires → USA -->
+                        <!-- CDMX 360,555 -->
+                        <path d="M 360 555 Q 300 460 420 380" fill="none" stroke="url(#route-grad)" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" filter="url(#route-glow)" style="animation:arc-draw 3800ms cubic-bezier(0.65,0,0.35,1) 0ms infinite;"/>
+                        <!-- Caracas 660,700 -->
+                        <path d="M 660 700 Q 580 560 420 380" fill="none" stroke="url(#route-grad)" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" filter="url(#route-glow)" style="animation:arc-draw 3800ms cubic-bezier(0.65,0,0.35,1) 200ms infinite;"/>
+                        <!-- Bogotá 600,770 -->
+                        <path d="M 600 770 Q 540 580 420 380" fill="none" stroke="url(#route-grad)" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" filter="url(#route-glow)" style="animation:arc-draw 3800ms cubic-bezier(0.65,0,0.35,1) 400ms infinite;"/>
+                        <!-- Lima 605,920 -->
+                        <path d="M 605 920 Q 520 660 420 380" fill="none" stroke="url(#route-grad)" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" filter="url(#route-glow)" style="animation:arc-draw 3800ms cubic-bezier(0.65,0,0.35,1) 600ms infinite;"/>
+                        <!-- Santiago 645,1110 -->
+                        <path d="M 645 1110 Q 500 740 420 380" fill="none" stroke="url(#route-grad)" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" filter="url(#route-glow)" style="animation:arc-draw 3800ms cubic-bezier(0.65,0,0.35,1) 800ms infinite;"/>
+                        <!-- Buenos Aires 760,1110 -->
+                        <path d="M 760 1110 Q 560 740 420 380" fill="none" stroke="url(#route-grad)" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" filter="url(#route-glow)" style="animation:arc-draw 3800ms cubic-bezier(0.65,0,0.35,1) 1000ms infinite;"/>
+
+                        <!-- USA destination badge -->
+                        <rect x="310" y="320" width="220" height="36" rx="18" fill="#F6BB33" stroke="white" stroke-width="3"/>
+                        <text x="420" y="344" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#2e3856">ESTADOS UNIDOS</text>
+
+                        <!-- Origin dots + labels -->
+                        <!-- CDMX -->
+                        <circle cx="360" cy="555" r="14" fill="#F6BB33" opacity="0.5" style="transform-box:fill-box;transform-origin:center;animation:sellu-pulse 2.4s ease-in-out 0s infinite;"/>
+                        <circle cx="360" cy="555" r="9" fill="#F6BB33" stroke="white" stroke-width="3"/>
+                        <rect x="378" y="537" width="100" height="36" rx="18" fill="white" stroke="#2e3856" stroke-width="2"/>
+                        <text x="390" y="561" font-family="Montserrat,sans-serif" font-size="17" font-weight="700" fill="#2e3856">CDMX</text>
+
+                        <!-- Caracas -->
+                        <circle cx="660" cy="700" r="14" fill="#F6BB33" opacity="0.5" style="transform-box:fill-box;transform-origin:center;animation:sellu-pulse 2.4s ease-in-out 0.3s infinite;"/>
+                        <circle cx="660" cy="700" r="9" fill="#F6BB33" stroke="white" stroke-width="3"/>
+                        <rect x="678" y="682" width="130" height="36" rx="18" fill="white" stroke="#2e3856" stroke-width="2"/>
+                        <text x="690" y="706" font-family="Montserrat,sans-serif" font-size="17" font-weight="700" fill="#2e3856">Caracas</text>
+
+                        <!-- Bogotá -->
+                        <circle cx="600" cy="770" r="14" fill="#F6BB33" opacity="0.5" style="transform-box:fill-box;transform-origin:center;animation:sellu-pulse 2.4s ease-in-out 0.6s infinite;"/>
+                        <circle cx="600" cy="770" r="9" fill="#F6BB33" stroke="white" stroke-width="3"/>
+                        <rect x="618" y="752" width="120" height="36" rx="18" fill="white" stroke="#2e3856" stroke-width="2"/>
+                        <text x="630" y="776" font-family="Montserrat,sans-serif" font-size="17" font-weight="700" fill="#2e3856">Bogotá</text>
+
+                        <!-- Lima -->
+                        <circle cx="605" cy="920" r="14" fill="#F6BB33" opacity="0.5" style="transform-box:fill-box;transform-origin:center;animation:sellu-pulse 2.4s ease-in-out 0.9s infinite;"/>
+                        <circle cx="605" cy="920" r="9" fill="#F6BB33" stroke="white" stroke-width="3"/>
+                        <rect x="623" y="902" width="100" height="36" rx="18" fill="white" stroke="#2e3856" stroke-width="2"/>
+                        <text x="635" y="926" font-family="Montserrat,sans-serif" font-size="17" font-weight="700" fill="#2e3856">Lima</text>
+
+                        <!-- Santiago -->
+                        <circle cx="645" cy="1110" r="14" fill="#F6BB33" opacity="0.5" style="transform-box:fill-box;transform-origin:center;animation:sellu-pulse 2.4s ease-in-out 1.2s infinite;"/>
+                        <circle cx="645" cy="1110" r="9" fill="#F6BB33" stroke="white" stroke-width="3"/>
+                        <rect x="663" y="1092" width="130" height="36" rx="18" fill="white" stroke="#2e3856" stroke-width="2"/>
+                        <text x="675" y="1116" font-family="Montserrat,sans-serif" font-size="17" font-weight="700" fill="#2e3856">Santiago</text>
+
+                        <!-- Buenos Aires -->
+                        <circle cx="760" cy="1110" r="14" fill="#F6BB33" opacity="0.5" style="transform-box:fill-box;transform-origin:center;animation:sellu-pulse 2.4s ease-in-out 1.5s infinite;"/>
+                        <circle cx="760" cy="1110" r="9" fill="#F6BB33" stroke="white" stroke-width="3"/>
+                        <rect x="778" y="1092" width="200" height="36" rx="18" fill="white" stroke="#2e3856" stroke-width="2"/>
+                        <text x="790" y="1116" font-family="Montserrat,sans-serif" font-size="17" font-weight="700" fill="#2e3856">Bs. Aires</text>
+
+                        <!-- Destination dot -->
+                        <circle cx="420" cy="380" r="22" fill="white" opacity="0.7" style="transform-box:fill-box;transform-origin:center;animation:sellu-receive 2.2s ease-in-out infinite;"/>
+                        <circle cx="420" cy="380" r="14" fill="#F6BB33" stroke="white" stroke-width="3"/>
+                    </svg>
+                </div>
+
+                <div class="map-card-footer">
+                    <span>BOG · MEX · BUE · LIM · SCL · CCS</span>
+                    <span style="display:inline-flex;align-items:center;gap:6px;">
+                        <i data-lucide="arrow-right" style="width:11px;height:11px;"></i>
+                        MIA · LAX · NYC · HOU
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-{{-- CTA ASESOR --}}
-<section class="cta-asesor">
-    <span class="cta-tag">Necesitas ayuda?</span>
-    <h2>¿Quieres hablar con un asesor?</h2>
-    <p>Contáctanos por WhatsApp o Messenger y recibe atención personalizada de nuestros expertos.</p>
-    <div class="cta-btns">
-        <a href="https://wa.me/573116473200" class="btn-wa-outline" target="_blank">
-            <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.6 0 0 3.6 0 8c0 1.4.4 2.8 1 4L0 16l4.2-1.1C5.4 15.6 6.7 16 8 16c4.4 0 8-3.6 8-8s-3.6-8-8-8zm4.1 11.2c-.2.5-1 .9-1.4 1-.4 0-.7.1-2.2-.5-1.8-.7-3-2.6-3.1-2.7-.1-.2-.9-1.2-.9-2.3 0-1.1.6-1.6.8-1.9.2-.2.4-.3.6-.3h.4c.1 0 .3 0 .4.3.2.4.7 1.6.7 1.7 0 .1 0 .3-.1.4-.1.1-.2.3-.3.4-.1.1-.2.2-.1.4.4.6.8 1.1 1.3 1.5.6.4 1.1.6 1.3.7.2.1.3 0 .5-.1.1-.2.5-.6.7-.8.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.3 0 .2-.1.6-.3 1.1z"/></svg>
-            WhatsApp
-        </a>
-        <a href="#" class="btn-messenger-outline">
-            <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.6 0 0 3.4 0 7.6c0 2.4 1.2 4.5 3 5.9v2.9l2.8-1.5c.7.2 1.4.3 2.2.3 4.4 0 8-3.4 8-7.6S12.4 0 8 0zm.8 10.2L6.9 8.2 3.3 10.2l4-4.2 1.9 2 3.6-2-4 4.2z"/></svg>
-            Messenger
-        </a>
+<!-- ── CÓMO FUNCIONA LA CADENA ── -->
+<section class="section">
+    <div class="container">
+        <div style="max-width:820px;margin-bottom:48px;">
+            <span class="eyebrow">Cómo funciona el puente</span>
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:700;margin-top:16px;margin-bottom:20px;color:var(--navy-900);">
+                La cadena logística, en cuatro etapas.
+            </h2>
+            <p style="font-size:17px;line-height:26px;color:var(--fg-secondary);">
+                Cada etapa tiene decisiones que afectan tiempo, costo y margen. Si una falla, todo el cargamento se detiene.
+            </p>
+        </div>
+
+        <!-- Pipeline diagram -->
+        <div class="pipeline-wrap" id="pipeline-section">
+            <div class="pipeline-rail"></div>
+            <div class="pipeline-fill" id="pipeline-fill"></div>
+            <div class="pipeline-nodes">
+                <div class="pipeline-node" style="transition-delay:500ms;">
+                    <div class="pipeline-circle">
+                        <span class="pipeline-num">01</span>
+                        <i data-lucide="package" style="width:32px;height:32px;color:var(--navy-900);"></i>
+                        <span class="pipeline-key">Decisión</span>
+                    </div>
+                    <div class="pipeline-label">
+                        <h4>Método de envío</h4>
+                        <p>Courier · Air · LCL · FCL</p>
+                    </div>
+                </div>
+                <div class="pipeline-node" style="transition-delay:700ms;">
+                    <div class="pipeline-circle">
+                        <span class="pipeline-num">02</span>
+                        <i data-lucide="file-text" style="width:32px;height:32px;color:var(--navy-900);"></i>
+                        <span class="pipeline-key">Preparación</span>
+                    </div>
+                    <div class="pipeline-label">
+                        <h4>Documentación</h4>
+                        <p>Factura · Packing list · HS</p>
+                    </div>
+                </div>
+                <div class="pipeline-node" style="transition-delay:900ms;">
+                    <div class="pipeline-circle">
+                        <span class="pipeline-num">03</span>
+                        <i data-lucide="calculator" style="width:32px;height:32px;color:var(--navy-900);"></i>
+                        <span class="pipeline-key">Cálculo</span>
+                    </div>
+                    <div class="pipeline-label">
+                        <h4>Costos reales</h4>
+                        <p>Flete · Arancel · Aduana</p>
+                    </div>
+                </div>
+                <div class="pipeline-node" style="transition-delay:1100ms;">
+                    <div class="pipeline-circle last">
+                        <span class="pipeline-num">04</span>
+                        <i data-lucide="map-pin" style="width:32px;height:32px;color:var(--navy-900);"></i>
+                        <span class="pipeline-key">Destino</span>
+                    </div>
+                    <div class="pipeline-label">
+                        <h4>Entrega final</h4>
+                        <p>Amazon FBA · 3PL · D2C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Methods section header -->
+        <div style="margin-top:96px;margin-bottom:32px;">
+            <span class="eyebrow">Cuatro métodos de envío</span>
+            <h3 style="font-family:var(--font-display);font-size:30px;line-height:36px;letter-spacing:-0.015em;font-weight:700;margin-top:12px;color:var(--navy-900);">
+                Cada método ocupa un lugar distinto entre velocidad y costo.
+            </h3>
+        </div>
+
+        <!-- Methods matrix + list -->
+        <div class="methods-grid" id="methods-section">
+            <!-- Quadrant chart -->
+            <div class="quadrant-wrap">
+                <div class="quadrant-yaxis">↑ Mayor volumen</div>
+                <div class="quadrant-xaxis">Tiempo de tránsito →</div>
+                <div class="quadrant-plot">
+                    <div class="q-gridline-v" style="left:25%;"></div>
+                    <div class="q-gridline-v" style="left:50%;"></div>
+                    <div class="q-gridline-v" style="left:75%;"></div>
+                    <div class="q-gridline-h" style="top:25%;"></div>
+                    <div class="q-gridline-h" style="top:50%;"></div>
+                    <div class="q-gridline-h" style="top:75%;"></div>
+                    <div class="q-label" style="top:12px;left:16px;color:var(--fg-muted);">Volumen alto · rápido</div>
+                    <div class="q-label" style="top:12px;right:16px;color:var(--accent-700);">Más eficiente ★</div>
+                    <div class="q-label" style="bottom:12px;left:16px;color:var(--fg-muted);">Volumen bajo · rápido</div>
+                    <div class="q-label" style="bottom:12px;right:16px;color:var(--fg-muted);">Volumen bajo · lento</div>
+                    <!-- Courier: x=8%, y=88% -->
+                    <div class="bubble active" id="b-courier" style="left:8%;top:88%;width:56px;height:56px;background:var(--accent-500);color:var(--navy-900);margin-left:-28px;margin-top:-28px;transition-delay:0ms;" title="Courier">
+                        <i data-lucide="truck" style="width:20px;height:20px;"></i>
+                        <span class="bubble-label" style="top:60px;">Courier</span>
+                    </div>
+                    <!-- Air: x=22%, y=64% -->
+                    <div class="bubble active" id="b-air" style="left:22%;top:64%;width:72px;height:72px;background:var(--accent-500);color:var(--navy-900);margin-left:-36px;margin-top:-36px;transition-delay:150ms;" title="Air Freight">
+                        <i data-lucide="plane" style="width:26px;height:26px;"></i>
+                        <span class="bubble-label" style="top:76px;">Air Freight</span>
+                    </div>
+                    <!-- Sea LCL: x=78%, y=36% -->
+                    <div class="bubble active" id="b-lcl" style="left:78%;top:36%;width:90px;height:90px;background:var(--navy-900);color:var(--accent-500);margin-left:-45px;margin-top:-45px;transition-delay:300ms;" title="Sea LCL">
+                        <i data-lucide="ship" style="width:32px;height:32px;"></i>
+                        <span class="bubble-label" style="top:94px;color:var(--navy-900);">Sea LCL</span>
+                    </div>
+                    <!-- Sea FCL: x=60%, y=12% -->
+                    <div class="bubble active" id="b-fcl" style="left:60%;top:12%;width:110px;height:110px;background:var(--navy-900);color:var(--accent-500);margin-left:-55px;margin-top:-55px;transition-delay:450ms;" title="Sea FCL">
+                        <i data-lucide="container" style="width:38px;height:38px;"></i>
+                        <span class="bubble-label" style="top:114px;color:var(--navy-900);">Sea FCL</span>
+                    </div>
+                </div>
+                <div class="quadrant-legend">
+                    <span style="display:inline-flex;align-items:center;gap:6px;">
+                        <span class="legend-dot" style="width:8px;height:8px;background:var(--accent-500);"></span>
+                        Bajo volumen
+                    </span>
+                    <span style="display:inline-flex;align-items:center;gap:6px;">
+                        <span class="legend-dot" style="width:14px;height:14px;background:var(--navy-900);"></span>
+                        Alto volumen
+                    </span>
+                    <span style="margin-left:auto;font-family:var(--font-mono);letter-spacing:0.04em;">Tamaño = costo por kg</span>
+                </div>
+            </div>
+
+            <!-- Methods list -->
+            <div class="methods-list">
+                <div class="method-card">
+                    <div class="method-icon accent"><i data-lucide="truck" style="width:20px;height:20px;color:var(--navy-900);"></i></div>
+                    <div class="method-info">
+                        <div class="method-name">Courier</div>
+                        <div class="method-sub">DHL · FedEx · UPS</div>
+                    </div>
+                    <div class="method-meta">
+                        <div class="method-time">2–5 días</div>
+                        <div class="method-weight">Hasta 30 kg</div>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon accent"><i data-lucide="plane" style="width:20px;height:20px;color:var(--navy-900);"></i></div>
+                    <div class="method-info">
+                        <div class="method-name">Air Freight</div>
+                        <div class="method-sub">Carga aérea</div>
+                    </div>
+                    <div class="method-meta">
+                        <div class="method-time">3–10 días</div>
+                        <div class="method-weight">50 – 500 kg</div>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon navy"><i data-lucide="ship" style="width:20px;height:20px;color:var(--accent-500);"></i></div>
+                    <div class="method-info">
+                        <div class="method-name">Sea LCL</div>
+                        <div class="method-sub">Marítimo compartido</div>
+                    </div>
+                    <div class="method-meta">
+                        <div class="method-time">20–35 días</div>
+                        <div class="method-weight">100 – 5,000 kg</div>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon navy"><i data-lucide="container" style="width:20px;height:20px;color:var(--accent-500);"></i></div>
+                    <div class="method-info">
+                        <div class="method-name">Sea FCL</div>
+                        <div class="method-sub">Contenedor completo</div>
+                    </div>
+                    <div class="method-meta">
+                        <div class="method-time">15–30 días</div>
+                        <div class="method-weight">+5,000 kg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison table -->
+        <div class="cmp-table" id="cmp-table">
+            <div class="cmp-table-head">
+                <div>
+                    <div style="font-family:var(--font-display);font-size:18px;font-weight:600;color:var(--navy-900);">Comparativa de métodos</div>
+                    <div style="font-size:13px;color:var(--fg-tertiary);">Tránsito visualizado · 35 días = barra completa</div>
+                </div>
+                <span style="font-size:12px;color:var(--fg-tertiary);font-family:var(--font-mono);letter-spacing:0.04em;">4 métodos · 5 dimensiones</span>
+            </div>
+            <div class="cmp-table-cols">
+                <div>Método</div>
+                <div>Tránsito</div>
+                <div>Peso ideal</div>
+                <div>Costo relativo</div>
+                <div>Gestión aduanera</div>
+            </div>
+            <!-- Courier -->
+            <div class="cmp-row">
+                <div style="font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--navy-900);">Courier</div>
+                <div style="padding-right:24px;">
+                    <div style="font-size:13px;color:var(--navy-900);font-weight:500;margin-bottom:6px;">2–5 días</div>
+                    <div class="bar-track"><div class="bar-fill" data-pct="12" style="background:var(--accent-500);"></div></div>
+                </div>
+                <div style="font-size:13px;color:var(--fg-secondary);">Hasta 30 kg</div>
+                <div style="display:flex;align-items:center;gap:8px;">
+                    <div class="cost-dots">
+                        <div class="cost-dot" style="background:var(--navy-700);"></div>
+                        <div class="cost-dot" style="background:var(--navy-700);"></div>
+                        <div class="cost-dot" style="background:var(--navy-700);"></div>
+                        <div class="cost-dot" style="background:var(--navy-700);"></div>
+                    </div>
+                    <span style="font-size:13px;color:var(--fg-secondary);">El más alto</span>
+                </div>
+                <div style="font-size:13px;color:var(--fg-secondary);">Básica incluida</div>
+            </div>
+            <!-- Air Freight -->
+            <div class="cmp-row">
+                <div style="font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--navy-900);">Air Freight</div>
+                <div style="padding-right:24px;">
+                    <div style="font-size:13px;color:var(--navy-900);font-weight:500;margin-bottom:6px;">3–10 días</div>
+                    <div class="bar-track"><div class="bar-fill" data-pct="25" style="background:var(--accent-700);"></div></div>
+                </div>
+                <div style="font-size:13px;color:var(--fg-secondary);">50 – 500 kg</div>
+                <div style="display:flex;align-items:center;gap:8px;">
+                    <div class="cost-dots">
+                        <div class="cost-dot" style="background:var(--navy-700);"></div>
+                        <div class="cost-dot" style="background:var(--navy-700);"></div>
+                        <div class="cost-dot" style="background:var(--navy-700);"></div>
+                        <div class="cost-dot" style="background:var(--ink-200);"></div>
+                    </div>
+                    <span style="font-size:13px;color:var(--fg-secondary);">Medio-alto</span>
+                </div>
+                <div style="font-size:13px;color:var(--fg-secondary);">Requiere broker</div>
+            </div>
+            <!-- Sea LCL -->
+            <div class="cmp-row">
+                <div style="font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--navy-900);">Sea LCL</div>
+                <div style="padding-right:24px;">
+                    <div style="font-size:13px;color:var(--navy-900);font-weight:500;margin-bottom:6px;">20–35 días</div>
+                    <div class="bar-track"><div class="bar-fill" data-pct="88" style="background:var(--navy-700);"></div></div>
+                </div>
+                <div style="font-size:13px;color:var(--fg-secondary);">100 – 5,000 kg</div>
+                <div style="display:flex;align-items:center;gap:8px;">
+                    <div class="cost-dots">
+                        <div class="cost-dot" style="background:var(--navy-700);"></div>
+                        <div class="cost-dot" style="background:var(--navy-700);"></div>
+                        <div class="cost-dot" style="background:var(--ink-200);"></div>
+                        <div class="cost-dot" style="background:var(--ink-200);"></div>
+                    </div>
+                    <span style="font-size:13px;color:var(--fg-secondary);">Medio</span>
+                </div>
+                <div style="font-size:13px;color:var(--fg-secondary);">Requiere broker</div>
+            </div>
+            <!-- Sea FCL -->
+            <div class="cmp-row">
+                <div style="font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--navy-900);">Sea FCL</div>
+                <div style="padding-right:24px;">
+                    <div style="font-size:13px;color:var(--navy-900);font-weight:500;margin-bottom:6px;">15–30 días</div>
+                    <div class="bar-track"><div class="bar-fill" data-pct="75" style="background:var(--navy-700);"></div></div>
+                </div>
+                <div style="font-size:13px;color:var(--fg-secondary);">+5,000 kg</div>
+                <div style="display:flex;align-items:center;gap:8px;">
+                    <div class="cost-dots">
+                        <div class="cost-dot" style="background:var(--navy-700);"></div>
+                        <div class="cost-dot" style="background:var(--ink-200);"></div>
+                        <div class="cost-dot" style="background:var(--ink-200);"></div>
+                        <div class="cost-dot" style="background:var(--ink-200);"></div>
+                    </div>
+                    <span style="font-size:13px;color:var(--fg-secondary);">El más bajo</span>
+                </div>
+                <div style="font-size:13px;color:var(--fg-secondary);">Requiere broker</div>
+            </div>
+        </div>
+
+        <!-- Insight callout -->
+        <div class="insight-callout">
+            <i data-lucide="lightbulb" style="width:22px;height:22px;color:var(--accent-700);flex-shrink:0;"></i>
+            <p style="font-size:15px;line-height:22px;color:var(--navy-900);margin:0;">
+                Si tienes demanda constante y probada, el modelo más eficiente a mediano plazo es <strong>fulfillment en EE.UU. con reabastecimiento periódico por flete marítimo</strong>.
+            </p>
+        </div>
     </div>
 </section>
 
-{{-- CLIENTES --}}
-<section class="clientes">
-    <div class="clientes-badge-wrap">
-        <span class="clientes-badge">↑ Algunos de nuestros clientes</span>
-    </div>
-    <div class="clientes-grid">
-        {{-- Para logos reales: <img src="URL_LOGO" alt="Cliente" height="28" style="opacity:.4;filter:grayscale(1)"> --}}
-        <span class="cliente-logo">Marathon</span>
-        <span class="cliente-logo">DiferencZax</span>
-        <span class="cliente-logo">SENSE</span>
-        <span class="cliente-logo">HAIKO NATURAL</span>
-        <span class="cliente-logo">Buddy Beauty</span>
-        <span class="cliente-logo">D'Casa St.</span>
+<!-- ── PROCESO DE SELL·U ── -->
+<section class="section section-band" id="proceso">
+    <div class="container">
+        <div style="max-width:820px;margin-bottom:56px;">
+            <span class="eyebrow">Cómo Sell·U lo hace</span>
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:700;margin-top:16px;margin-bottom:20px;color:var(--navy-900);">
+                Cinco pasos del producto al cliente.
+            </h2>
+            <p style="font-size:17px;line-height:26px;color:var(--fg-secondary);">
+                No somos transportista. Somos el equipo que estructura tu logística para que escales sin que el costo operativo te coma el margen.
+            </p>
+        </div>
+
+        <!-- Horizontal process track -->
+        <div class="process-track" id="process-section">
+            <div class="process-rail"></div>
+            <div class="process-fill" id="process-fill"></div>
+            <div class="process-nodes">
+                <div class="process-node" style="transition-delay:500ms;">
+                    <div class="process-circle">
+                        <i data-lucide="search" style="width:26px;height:26px;color:var(--accent-500);"></i>
+                        <span class="process-n">01</span>
+                    </div>
+                    <span class="process-tag">Análisis</span>
+                </div>
+                <div class="process-node" style="transition-delay:650ms;">
+                    <div class="process-circle">
+                        <i data-lucide="calculator" style="width:26px;height:26px;color:var(--accent-500);"></i>
+                        <span class="process-n">02</span>
+                    </div>
+                    <span class="process-tag">Cálculo</span>
+                </div>
+                <div class="process-node" style="transition-delay:800ms;">
+                    <div class="process-circle">
+                        <i data-lucide="file-check" style="width:26px;height:26px;color:var(--accent-500);"></i>
+                        <span class="process-n">03</span>
+                    </div>
+                    <span class="process-tag">Documentos</span>
+                </div>
+                <div class="process-node" style="transition-delay:950ms;">
+                    <div class="process-circle">
+                        <i data-lucide="truck" style="width:26px;height:26px;color:var(--accent-500);"></i>
+                        <span class="process-n">04</span>
+                    </div>
+                    <span class="process-tag">Envío</span>
+                </div>
+                <div class="process-node" style="transition-delay:1100ms;">
+                    <div class="process-circle">
+                        <i data-lucide="map-pin" style="width:26px;height:26px;color:var(--accent-500);"></i>
+                        <span class="process-n">05</span>
+                    </div>
+                    <span class="process-tag">Destino</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step cards -->
+        <div class="step-cards" id="step-cards">
+            <div class="step-card" style="transition-delay:700ms;">
+                <div class="step-card-header">
+                    <div class="step-icon-wrap"><i data-lucide="search" style="width:20px;height:20px;color:var(--accent-500);"></i></div>
+                    <div>
+                        <div class="step-num-tag">Paso 01 · Análisis</div>
+                        <h4 class="step-h">Evaluamos tu producto y operación</h4>
+                    </div>
+                </div>
+                <p class="step-p">Revisamos qué vendes, cuánto pesa cada unidad, en qué canal operas (Amazon, Shopify, Faire, ecommerce propio), tu volumen mensual estimado y tu margen objetivo. Esto define qué método de envío tiene sentido para ti hoy y cuál te conviene cuando crezcas.</p>
+                <div class="step-bullets">
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Producto, peso y volumen</span></div>
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Canal y mercado objetivo</span></div>
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Margen actual y proyectado</span></div>
+                </div>
+                <div class="step-deliverable">
+                    <i data-lucide="package-check" style="width:14px;height:14px;color:var(--navy-800);flex-shrink:0;"></i>
+                    <div>
+                        <div class="step-out-label">Entregable</div>
+                        <div class="step-out-val">Diagnóstico operativo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card" style="transition-delay:800ms;">
+                <div class="step-card-header">
+                    <div class="step-icon-wrap"><i data-lucide="calculator" style="width:20px;height:20px;color:var(--accent-500);"></i></div>
+                    <div>
+                        <div class="step-num-tag">Paso 02 · Cálculo</div>
+                        <h4 class="step-h">Calculamos tu landed cost real</h4>
+                    </div>
+                </div>
+                <p class="step-p">Antes de enviar una sola unidad, calculamos el costo total de poner tu producto en manos del cliente en EE.UU.: producción, flete, aranceles según código HS, agente aduanal, almacenamiento y última milla. Sabrás si tu precio de venta tiene margen real antes de cualquier compromiso.</p>
+                <div class="step-bullets">
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Costo total puesto en EE.UU.</span></div>
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Aranceles por código HS</span></div>
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Punto de equilibrio claro</span></div>
+                </div>
+                <div class="step-deliverable">
+                    <i data-lucide="package-check" style="width:14px;height:14px;color:var(--navy-800);flex-shrink:0;"></i>
+                    <div>
+                        <div class="step-out-label">Entregable</div>
+                        <div class="step-out-val">Margen real por unidad</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card" style="transition-delay:900ms;">
+                <div class="step-card-header">
+                    <div class="step-icon-wrap"><i data-lucide="file-check" style="width:20px;height:20px;color:var(--accent-500);"></i></div>
+                    <div>
+                        <div class="step-num-tag">Paso 03 · Documentos</div>
+                        <h4 class="step-h">Definimos la documentación correcta</h4>
+                    </div>
+                </div>
+                <p class="step-p">Preparamos la factura comercial, packing list, clasificación arancelaria con el código HS correcto, certificados de origen y cualquier permiso adicional que la aduana americana exija para tu categoría. Documentación consistente es la primera línea de defensa contra retenciones en CBP.</p>
+                <div class="step-bullets">
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Factura comercial y packing list</span></div>
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Clasificación HS correcta</span></div>
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Permisos por categoría</span></div>
+                </div>
+                <div class="step-deliverable">
+                    <i data-lucide="package-check" style="width:14px;height:14px;color:var(--navy-800);flex-shrink:0;"></i>
+                    <div>
+                        <div class="step-out-label">Entregable</div>
+                        <div class="step-out-val">Paquete documental aduana-ready</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card" style="transition-delay:1000ms;">
+                <div class="step-card-header">
+                    <div class="step-icon-wrap"><i data-lucide="truck" style="width:20px;height:20px;color:var(--accent-500);"></i></div>
+                    <div>
+                        <div class="step-num-tag">Paso 04 · Envío</div>
+                        <h4 class="step-h">Coordinamos el envío</h4>
+                    </div>
+                </div>
+                <p class="step-p">Te conectamos con el método de flete correcto según volumen y urgencia, y coordinamos con el agente aduanal certificado que presentará el ISF y manejará el despacho en frontera. Acompañamos cada cruce hasta que el cargamento esté liberado.</p>
+                <div class="step-bullets">
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Flete adecuado al volumen</span></div>
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Agente aduanal certificado</span></div>
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>ISF y despacho gestionados</span></div>
+                </div>
+                <div class="step-deliverable">
+                    <i data-lucide="package-check" style="width:14px;height:14px;color:var(--navy-800);flex-shrink:0;"></i>
+                    <div>
+                        <div class="step-out-label">Entregable</div>
+                        <div class="step-out-val">Cargamento en tránsito monitoreado</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-card" style="transition-delay:1100ms;">
+                <div class="step-card-header">
+                    <div class="step-icon-wrap"><i data-lucide="map-pin" style="width:20px;height:20px;color:var(--accent-500);"></i></div>
+                    <div>
+                        <div class="step-num-tag">Paso 05 · Destino</div>
+                        <h4 class="step-h">Acompañamiento en destino</h4>
+                    </div>
+                </div>
+                <p class="step-p">Si tu inventario va a Amazon FBA, te orientamos sobre etiquetado FNSKU, empaque y agendado de cita en el centro de distribución. Si va a un 3PL, te conectamos con socios certificados. El objetivo es que ninguna unidad sea rechazada en bodega ni quede inmovilizada.</p>
+                <div class="step-bullets">
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>FBA: etiquetado y agendado</span></div>
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>3PL: socios certificados</span></div>
+                    <div class="step-bullet"><i data-lucide="check" style="width:13px;height:13px;color:var(--success-500);flex-shrink:0;margin-top:3px;"></i><span>Sin rechazo en recepción</span></div>
+                </div>
+                <div class="step-deliverable">
+                    <i data-lucide="package-check" style="width:14px;height:14px;color:var(--navy-800);flex-shrink:0;"></i>
+                    <div>
+                        <div class="step-out-label">Entregable</div>
+                        <div class="step-out-val">Inventario listo para vender</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="remote-badge">
+            <i data-lucide="globe-2" style="width:16px;height:16px;color:var(--navy-800);"></i>
+            <span>Todo el proceso es remoto · acompañamiento en español desde LATAM</span>
+        </div>
     </div>
 </section>
 
-{{-- FAQ --}}
-<section class="faq">
-    <div class="faq-inner">
-        <div class="faq-header">
-            <span class="faq-tag">Resuelve tus dudas sobre nuestros servicios</span>
-            <h2>Preguntas Frecuentes</h2>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-                ¿Qué incluye el Estudio de Factibilidad para Almacenamiento y Logística?
-                <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-            </button>
-            <div class="faq-a">Incluye el análisis de tus necesidades de almacenamiento, evaluación de ubicaciones estratégicas, estimación de costos operativos, tiempos de entrega y recomendación del modelo logístico más eficiente para tu negocio.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-                ¿Cuáles son los beneficios de almacenar mis productos en Estados Unidos?
-                <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-            </button>
-            <div class="faq-a">Almacenar en EE.UU. te permite tiempos de entrega más rápidos para clientes americanos, acceso a Amazon FBA, menores costos de envío doméstico, y mejor posicionamiento en marketplaces como Amazon y Walmart.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-                ¿Cómo sé cuál es la mejor ubicación para almacenar mis productos?
-                <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-            </button>
-            <div class="faq-a">Depende de dónde se concentran tus clientes, el tipo de producto y los canales de venta. Florida es ideal para LATAM por su proximidad. Texas y California son fuertes para distribución nacional. Te asesoramos en la decisión.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-                ¿Pueden manejar inventarios en múltiples bodegas?
-                <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-            </button>
-            <div class="faq-a">Sí. Trabajamos con una red de 3PLs (terceros logísticos) en distintos estados de EE.UU. Podemos coordinar inventario distribuido según las necesidades de tu negocio y canales de venta.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-                ¿Qué tipo de productos pueden beneficiarse de estos servicios?
-                <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M6 2v8M2 6h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-            </button>
-            <div class="faq-a">Trabajamos principalmente con productos de consumo, cosméticos, suplementos, textiles, electrónica y artículos del hogar. Si tienes un producto regulado (como alimentos o medicamentos), también te orientamos sobre los requisitos adicionales.</div>
+<!-- ── CTA BAND ── -->
+<section id="cotizar" class="cta-band">
+    <div class="container" style="position:relative;">
+        <div style="max-width:760px;">
+            <span class="eyebrow">Tu siguiente paso</span>
+            <h2 class="cta-h2">
+                Tu producto ya está listo.<br>
+                Ahora necesita <span>llegar</span>.
+            </h2>
+            <p class="cta-lead">
+                La logística no es el problema que resuelves después de empezar a vender. Es la base que decide si puedes escalar sin que el costo operativo te coma el margen.
+            </p>
+            <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20cotizar%20mi%20env%C3%ADo%20a%20EE.UU." target="_blank" rel="noopener" class="btn btn-accent btn-lg">
+                    Cotizar mi envío a EE.UU. →
+                </a>
+                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20evaluar%20mi%20log%C3%ADstica%20actual" target="_blank" rel="noopener" class="btn btn-on-dark btn-lg">
+                    Evaluar mi logística actual
+                </a>
+            </div>
+            <div class="cta-fine">
+                <i data-lucide="lock" style="width:14px;height:14px;"></i>
+                Sin compromiso. Te decimos qué método corresponde a tu operación y cuál es el landed cost real de tu producto antes de tomar cualquier decisión.
+            </div>
         </div>
     </div>
 </section>
 
-{{-- FOOTER --}}
+<!-- ── FAQ ── -->
+<section class="section section-band">
+    <div class="container">
+        <div class="faq-grid">
+            <div class="faq-sticky">
+                <span class="eyebrow">FAQ</span>
+                <h2>Preguntas frecuentes sobre envíos a EE.UU.</h2>
+                <p>¿No encuentras lo que buscas? Escríbenos y un especialista de logística te responde en menos de 24 horas hábiles.</p>
+                <a href="https://wa.me/573116473200?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20log%C3%ADstica" target="_blank" rel="noopener" class="btn btn-secondary">
+                    <i data-lucide="message-square" style="width:16px;height:16px;"></i>
+                    Hablar con un especialista
+                </a>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-btn" onclick="toggleFaq(this)">
+                        <span>¿Cuánto cuesta enviar productos a EE.UU. desde LATAM?</span>
+                        <span class="faq-toggle"><i data-lucide="plus" style="width:14px;height:14px;"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            El flete es solo el comienzo. Un envío por courier puede estar entre $80 y $300 USD. Un air freight de 200 kg entre $600 y $1,500 USD. Un contenedor marítimo entre $1,500 y $3,500 USD. A eso se suman aranceles, agente aduanal y fulfillment. El número que importa no es el flete: es el <strong>landed cost total por unidad</strong>.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" onclick="toggleFaq(this)">
+                        <span>¿Qué método de envío me conviene?</span>
+                        <span class="faq-toggle"><i data-lucide="plus" style="width:14px;height:14px;"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Depende de tu volumen, margen y urgencia. Courier para pruebas y volúmenes pequeños. Air freight para reabastecimiento urgente o productos de alto valor. Sea freight para operaciones de volumen constante. Sell·U evalúa tu caso antes de recomendar cualquier estructura.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" onclick="toggleFaq(this)">
+                        <span>¿Necesito empresa en EE.UU. para importar mis productos?</span>
+                        <span class="faq-toggle"><i data-lucide="plus" style="width:14px;height:14px;"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            No es obligatorio, pero sí prácticamente necesario para operar con fluidez. El Importer of Record (IOR) es la entidad legalmente responsable del cargamento al entrar a EE.UU.: declara en aduana, paga los aranceles y garantiza el cumplimiento. Tener una LLC en EE.UU. con EIN simplifica enormemente este proceso.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" onclick="toggleFaq(this)">
+                        <span>¿Qué pasa si mi cargamento queda retenido en aduana?</span>
+                        <span class="faq-toggle"><i data-lucide="plus" style="width:14px;height:14px;"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            El cargamento queda en almacén portuario con costo diario a tu cargo mientras se resuelve la situación. Los problemas menores se resuelven en 1 a 5 días si el agente aduanal actúa rápido. Los casos más complejos pueden durar semanas. La mejor estrategia es siempre la prevención: documentación correcta desde el inicio.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" onclick="toggleFaq(this)">
+                        <span>¿Cómo puedo reducir los costos de envío?</span>
+                        <span class="faq-toggle"><i data-lucide="plus" style="width:14px;height:14px;"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Las palancas principales son: elegir el método correcto según volumen, consolidar envíos en lugar de despachar frecuentemente en pequeñas cantidades, clasificar correctamente el código HS y construir una relación estable con un agente aduanal que conozca tu producto. A mediano plazo, fulfillment en EE.UU. con reabastecimiento periódico por flete marítimo es el modelo más eficiente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <x-footer />
 
 <script>
+lucide.createIcons();
+
 function toggleFaq(btn) {
-    const item = btn.parentElement;
+    const item = btn.closest('.faq-item');
     const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-toggle i').setAttribute('data-lucide', 'plus');
+    });
+    if (!isOpen) {
+        item.classList.add('open');
+        item.querySelector('.faq-toggle i').setAttribute('data-lucide', 'minus');
+    }
+    lucide.createIcons();
 }
 
-let carouselPos = 0;
-function moverCarousel(dir) {
-    const track = document.getElementById('carouselTrack');
-    const cards = track.querySelectorAll('.servicio-slide');
-    const visible = window.innerWidth < 900 ? 1 : 3;
-    const maxPos = Math.max(0, cards.length - visible);
-    carouselPos = Math.max(0, Math.min(maxPos, carouselPos + dir));
-    const cardWidth = cards[0].offsetWidth + 16;
-    track.style.transform = `translateX(-${carouselPos * cardWidth}px)`;
-}
+// IntersectionObserver for pipeline, process track, step cards, and comparison bars
+const observerOpts = { threshold: 0.2 };
+
+const pipelineObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            document.getElementById('pipeline-fill').classList.add('active');
+            document.querySelectorAll('.pipeline-node').forEach(n => n.classList.add('active'));
+            pipelineObs.disconnect();
+        }
+    });
+}, observerOpts);
+const pipelineEl = document.getElementById('pipeline-section');
+if (pipelineEl) pipelineObs.observe(pipelineEl);
+
+const processObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            document.getElementById('process-fill').classList.add('active');
+            document.querySelectorAll('.process-node').forEach(n => n.classList.add('active'));
+            processObs.disconnect();
+        }
+    });
+}, observerOpts);
+const processEl = document.getElementById('process-section');
+if (processEl) processObs.observe(processEl);
+
+const stepObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            document.querySelectorAll('.step-card').forEach(c => c.classList.add('active'));
+            stepObs.disconnect();
+        }
+    });
+}, { threshold: 0.1 });
+const stepEl = document.getElementById('step-cards');
+if (stepEl) stepObs.observe(stepEl);
+
+const cmpObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            document.querySelectorAll('.bar-fill').forEach((bar, i) => {
+                const pct = bar.getAttribute('data-pct');
+                setTimeout(() => { bar.style.width = pct + '%'; }, i * 180);
+            });
+            cmpObs.disconnect();
+        }
+    });
+}, { threshold: 0.4 });
+const cmpEl = document.getElementById('cmp-table');
+if (cmpEl) cmpObs.observe(cmpEl);
 </script>
 </body>
 </html>
