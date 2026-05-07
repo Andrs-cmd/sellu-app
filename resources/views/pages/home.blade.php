@@ -119,7 +119,7 @@
         .hero-inner { position:relative; z-index:1; padding:80px 8%; width:100%; }
         .hero-content { max-width:560px; }
         .hero-eyebrow { font-size:12px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:20px; }
-        .hero h1 { font-family:'Montserrat',sans-serif; font-size:42px; font-weight:900; line-height:1.1; color:var(--white); margin-bottom:20px; letter-spacing:-.5px; }
+        .hero h1 { font-family:'Montserrat',sans-serif; font-size:42px; font-weight:600; line-height:1.1; color:var(--white); margin-bottom:20px; letter-spacing:-.5px; }
         .hero h1 em { font-style:normal; color:var(--gold); }
         .hero p { font-size:16px; color:rgba(255,255,255,.75); line-height:1.7; margin-bottom:36px; max-width:460px; }
         .hero-btn { display:inline-block; background:var(--gold); color:var(--navy); padding:14px 32px; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:14px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; transition:background .2s; }
