@@ -462,11 +462,12 @@
 <div class="divider"></div>
 
 <!-- WHAT IS -->
-<section class="section">
+<section class="section" style="
+    background: white;>
     <div class="container">
         <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:96px;align-items:flex-start;">
             <div class="sticky-left anim">
-                <span class="eyebrow">El concepto</span>
+                <!--<span class="eyebrow">El concepto</span>-->
                 <h2 style="font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-top:16px;margin-bottom:16px;color:var(--navy-900);">¿Qué es un Certificado de Revendedor?</h2>
                 <p style="font-size:16px;line-height:26px;color:var(--fg-secondary);">También conocido como Sales Tax Exemption Certificate, Resale Certificate, Reseller Permit o Resale License. Distintos nombres, mismo documento.</p>
             </div>
