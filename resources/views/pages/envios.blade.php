@@ -485,11 +485,6 @@
                 <div style="position:relative;width:100%;">
                     <svg viewBox="0 0 1080 1262" style="width:100%;height:auto;display:block;" role="img" aria-label="Mapa LATAM → EE.UU.">
                         <defs>
-                            <linearGradient id="map-bg-grad" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="0%" stop-color="#d6e4f7"/>
-                                <stop offset="45%" stop-color="#c2d5ef"/>
-                                <stop offset="100%" stop-color="#b8cceb"/>
-                            </linearGradient>
                             <linearGradient id="route-grad" x1="0" y1="1" x2="0" y2="0">
                                 <stop offset="0%" stop-color="#F6BB33" stop-opacity="0.4"/>
                                 <stop offset="100%" stop-color="#F6BB33" stop-opacity="1"/>
@@ -504,13 +499,8 @@
                             </filter>
                         </defs>
 
-                        <!-- Background continent silhouette (gradient) -->
-                        <rect width="1080" height="1262" fill="url(#map-bg-grad)" rx="0"/>
-                        <!-- Rough Americas outline shapes for visual context -->
-                        <path d="M300,80 Q420,60 500,120 Q580,180 560,300 Q540,420 480,500 Q460,560 440,640 Q420,720 430,800 Q440,900 480,980 Q520,1060 560,1120 Q580,1160 540,1200 Q500,1230 460,1220 Q380,1210 360,1160 Q320,1100 310,1020 Q300,940 320,860 Q340,780 300,700 Q260,620 240,540 Q220,460 220,380 Q220,280 260,200 Q280,140 300,80Z"
-                              fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-                        <path d="M420,80 Q500,50 580,80 Q640,110 660,180 Q680,250 640,320 Q620,360 580,380 Q540,400 520,440 Q500,480 480,500"
-                              fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                        <!-- Background: real Americas map -->
+                        <image href="/images/americas-map.png" x="0" y="0" width="1080" height="1262" preserveAspectRatio="xMidYMid slice"/>
 
                         <!-- dest glow -->
                         <circle cx="420" cy="380" r="160" fill="url(#dest-glow)"/>
