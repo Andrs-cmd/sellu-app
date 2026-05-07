@@ -391,9 +391,9 @@
     <div class="container">
         <div class="hero-grid">
             <div class="anim">
-                <span class="eyebrow">Reseller Certificate · Exención de sales tax</span>
-                <h1>Deja de pagar impuestos que <span class="hl">no te corresponden</span> al comprar inventario en EE.UU.</h1>
-                <p class="hero-sub">Si tienes una LLC y compras productos para revenderlos —en Amazon, en tu tienda online, en wholesale o en dropshipping— el Reseller Certificate te exime del sales tax en cada compra. Sell-U lo gestiona por ti, desde LATAM y en español.</p>
+                <!--<span class="eyebrow">Reseller Certificate · Exención de sales tax</span>-->
+                <h1>Compra inventario en <span class="hl">EE.UU.</span> sin pagar impuestos de reventa.</h1>
+                <p class="hero-sub">Si compras productos para reventa en EE.UU., el Reseller Certificate puede ayudarte a evitar el sales tax en tus compras. Sell-U lo gestiona por ti, desde LATAM y en español.</p>
                 <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
                     <a href="/#servicios" class="btn btn-primary btn-lg">Obtener mi Reseller Certificate →</a>
                     <a href="/pages/canales-de-atencion" class="btn btn-secondary btn-lg">Evaluar si lo necesito</a>
