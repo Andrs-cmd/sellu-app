@@ -175,8 +175,8 @@
         /* ── HERO ── */
         .itin-hero-grid {
             display: grid;
-            grid-template-columns: 1.1fr 1fr;
-            gap: 64px;
+            grid-template-columns: 1fr 1fr;
+            gap: 56px;
             align-items: center;
         }
         .itin-puzzle {
@@ -456,10 +456,10 @@
             </div>
 
             {{-- IRS Form card --}}
-            <div class="itin-hero-card" style="background:#0D1B3E; border-radius:28px; padding:20px; box-shadow:0 24px 48px -12px rgba(13,27,62,.30);">
+            <div class="itin-hero-card" style="background:#0D1B3E; border-radius:28px; padding:10px; box-shadow:0 24px 48px -12px rgba(13,27,62,.30);">
                 <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778180837/ITIN_Number_bx2r05.png"
                      alt="ITIN Number — Sell·U"
-                     style="width:100%; height:auto; display:block; border-radius:12px;">
+                     style="width:100%; height:auto; display:block; border-radius:18px;">
             </div>
         </div>
     </div>
