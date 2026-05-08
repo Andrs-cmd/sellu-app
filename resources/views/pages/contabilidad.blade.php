@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
     <link rel="apple-touch-icon" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
-    <title>Contabilidad para LLC No Residente USA — Sell·U</title>
+    <title>Bookkeeping para LLC en EE.UU. | Contabilidad No Residente — Sell·U</title>
 
     <!-- ── SEO PRIMARIO ── -->
-    <meta name="description" content="Contabilidad, bookkeeping e impuestos para tu LLC en Estados Unidos. Declaración anual, reportes financieros y asesoría tributaria para latinoamericanos. Precios claros y proceso digital.">
-    <meta name="keywords" content="contabilidad LLC USA, taxes para LLC, declaración de impuestos estados unidos, bookkeeping estados unidos, contador LLC, impuestos para extranjeros USA, asesoría fiscal LATAM">
+    <meta name="description" content="Servicio de bookkeeping mensual para tu LLC en EE.UU. Categorización de transacciones, conciliación bancaria, estados financieros P&L y preparación para impuestos (Form 1120, 5472). Especialistas en LLC para latinoamericanos. Desde $179/mes.">
+    <meta name="keywords" content="bookkeeping LLC USA, bookkeeping para no residentes, bookkeeper LLC latinoamerica, bookkeeping en español USA, contabilidad LLC USA, bookkeeping mensual LLC, conciliacion bancaria LLC, estados financieros LLC, QuickBooks LLC, taxes para LLC, declaración de impuestos estados unidos, contador LLC, impuestos para extranjeros USA, asesoría fiscal LATAM, Form 5472, Form 1120">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
     <link rel="canonical" href="https://sellu.co/pages/contabilidad">
@@ -17,19 +17,19 @@
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sellu.co/pages/contabilidad">
-    <meta property="og:title" content="Contabilidad para LLC No Residente USA — Sell·U">
-    <meta property="og:description" content="Contabilidad, bookkeeping e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. Proceso 100% digital.">
+    <meta property="og:title" content="Bookkeeping para LLC en EE.UU. | Contabilidad No Residente — Sell·U">
+    <meta property="og:description" content="Bookkeeping mensual para tu LLC en Estados Unidos: categorización, conciliación bancaria, P&L y preparación para taxes. Especialistas en LLC para latinoamericanos. Desde $179/mes.">
     <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Sell·U — Contabilidad para LLC No Residente USA">
+    <meta property="og:image:alt" content="Sell·U — Bookkeeping y Contabilidad para LLC No Residente en EE.UU.">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="Sell·U LATAM">
 
     <!-- ── TWITTER CARD ── -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contabilidad para LLC No Residente USA — Sell·U">
-    <meta name="twitter:description" content="Contabilidad e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. 100% digital.">
+    <meta name="twitter:title" content="Bookkeeping para LLC en EE.UU. | Contabilidad No Residente — Sell·U">
+    <meta name="twitter:description" content="Bookkeeping mensual para tu LLC en EE.UU.: categorización, conciliación bancaria, P&L y preparación para taxes. Especialistas en LLC para latinoamericanos. Desde $179/mes.">
     <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
 
     <!-- ── STRUCTURED DATA ── -->
@@ -38,8 +38,8 @@
     {
         "@context": "https://schema.org",
         "@type": "AccountingService",
-        "name": "Sell·U LATAM — Contabilidad y Taxes para LLC",
-        "description": "Servicio de contabilidad, bookkeeping y declaración de impuestos para LLC y corporaciones en Estados Unidos, especializado en emprendedores latinoamericanos.",
+        "name": "Sell·U LATAM — Bookkeeping y Contabilidad para LLC",
+        "description": "Servicio de bookkeeping mensual, contabilidad y declaración de impuestos para LLC en Estados Unidos. Especializado en emprendedores latinoamericanos no residentes. Categorización de transacciones, conciliación bancaria, P&L y preparación para Form 1120 y 5472.",
         "url": "https://sellu.co/pages/contabilidad",
         "logo": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196",
         "image": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008",
@@ -60,28 +60,111 @@
             {"@type": "Country", "name": "Ecuador"},
             {"@type": "Country", "name": "United States"}
         ],
-        "serviceType": ["Bookkeeping", "Tax Preparation", "Financial Reporting", "Tax Advisory", "LLC Accounting"],
+        "serviceType": ["Bookkeeping", "Monthly Bookkeeping", "Bank Reconciliation", "Financial Statements", "Tax Preparation", "LLC Accounting", "Form 5472", "Form 1120"],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Planes de Contabilidad para LLC",
+            "name": "Planes de Bookkeeping para LLC",
             "itemListElement": [
                 {
                     "@type": "Offer",
-                    "itemOffered": {"@type": "Service", "name": "Starter — Bookkeeping básico"},
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Starter — Bookkeeping mensual básico",
+                        "description": "Bookkeeping cash basis, hasta 2 cuentas bancarias, hasta 100 transacciones/mes, reportes trimestrales, QuickBooks incluido."
+                    },
                     "price": "179",
                     "priceCurrency": "USD",
                     "priceSpecification": {"@type": "UnitPriceSpecification", "unitText": "MONTH"}
                 },
                 {
                     "@type": "Offer",
-                    "itemOffered": {"@type": "Service", "name": "Pro — Contabilidad completa con taxes"},
-                    "price": "299",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Growth — Bookkeeping completo con multimoneda",
+                        "description": "Todo lo de Starter, hasta 4 cuentas bancarias, hasta 250 transacciones/mes, reportes mensuales, contabilidad multimoneda USD/COP/MXN/ARS."
+                    },
+                    "price": "249",
+                    "priceCurrency": "USD",
+                    "priceSpecification": {"@type": "UnitPriceSpecification", "unitText": "MONTH"}
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Pro — Bookkeeping para LLC con operaciones complejas",
+                        "description": "Bookkeeping para LLCs establecidas con múltiples cuentas, volumen alto de transacciones y operaciones en varias monedas."
+                    },
+                    "price": "499",
                     "priceCurrency": "USD",
                     "priceSpecification": {"@type": "UnitPriceSpecification", "unitText": "MONTH"}
                 }
             ]
         },
         "sameAs": ["https://sellu.co"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Por qué necesito bookkeeping si mi LLC no tuvo ingresos?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El IRS exige presentar Form 5472 + Form 1120 incluso con cero ingresos. Sin libros mínimamente organizados no puedes responder si te preguntan, y la multa por no presentar es de USD 25,000. El bookkeeping ordenado es obligatorio desde el día uno."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo trabajan juntos el bookkeeping y los impuestos?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nuestro bookkeeping mensual se entrega listo para que tu CPA prepare Form 1120, 5472 o 1065. Trabajamos con CPAs aliados o con el tuyo — los reportes están en el formato que necesitan, sin reprocesos."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué pasa si mi bookkeeping está atrasado?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Hacemos limpieza de libros y conciliación de fin de año, mes por mes hasta ponerte al día. El precio depende del volumen y los meses pendientes; te lo confirmamos en la consulta gratuita."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿En qué moneda llevan mi bookkeeping?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En USD por defecto, porque es la moneda de tu LLC. Si recibes ingresos en COP, MXN, ARS u otras, las convertimos correctamente al tipo de cambio del IRS — ese es el plan Growth o superior."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta el servicio de bookkeeping para LLC?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Desde USD 179/mes para el plan Starter. El precio depende del número de transacciones, cuentas bancarias y si necesitas contabilidad multimoneda. La consulta gratuita aterriza el plan adecuado para tu caso."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Trabajan con LLCs de cualquier estado?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí: Wyoming, Delaware, Florida, New Mexico, Texas y prácticamente cualquier estado. Lo que cambia entre estados son las declaraciones estatales, no el bookkeeping en sí."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Y si solo necesito bookkeeping una vez al año?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tenemos un servicio puntual de 'annual cleanup' para LLCs que solo presentan Form 5472 al año. Es ideal si la LLC tuvo poco o ningún movimiento. Te lo cotizamos en la consulta gratuita."
+                }
+            }
+        ]
     }
     </script>
     @endverbatim
@@ -502,12 +585,12 @@
     <div class="container">
         <div class="hero-grid">
             <div>
-<!--<span class="eyebrow">Contabilidad para LLC · No residentes USA</span>-->
+<span class="eyebrow">Bookkeeping · Contabilidad LLC · No Residentes EE.UU.</span>
                 <h1 class="hero-h1">
-                    Contabilidad para tu LLC,<br>
-                    <span class="highlight">la tranquilidad</span> que tu negocio merece.
+                    Bookkeeping para tu LLC en EE.UU.,<br>
+                    <span class="highlight">sin complicaciones</span> desde LATAM.
                 </h1>
-                <p class="hero-sub">Ten el control contable de tu LLC en EE.UU. en todo momento — con acompañamiento experto, sin salir de Latinoamérica.</p>
+                <p class="hero-sub">Ten el control contable de tu LLC en EE.UU. en todo momento — bookkeeping mensual, conciliación bancaria y reportes listos para impuestos, con acompañamiento experto en español.</p>
                 <div class="bullet-row">
                     <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Contabilidad siempre al día</span>
                     <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Cumplimiento fiscal</span>
@@ -673,8 +756,8 @@
     <div class="container">
         <div class="section-head reveal">
             <!--<span class="eyebrow">Servicios incluidos</span>-->
-            <h2>Qué incluye nuestro servicio de contabilidad LLC.</h2>
-            <p>Todo lo que tu LLC necesita para mantenerse al día con el IRS, sin perseguir múltiples proveedores ni montar planillas en Excel.</p>
+            <h2>Qué incluye nuestro servicio de bookkeeping para LLC.</h2>
+            <p>Todo lo que tu LLC necesita para mantenerse al día con el IRS: bookkeeping mensual, conciliación bancaria, estados financieros y listo para impuestos — sin perseguir múltiples proveedores ni montar planillas en Excel.</p>
         </div>
         <div class="grid-4 reveal">
             <div class="service-card"><div class="service-icon"><i data-lucide="bar-chart-3" width="20" height="20"></i></div><div><h4>Bookkeeping mensual</h4><p>Cada transacción categorizada y reconciliada.</p></div></div>
@@ -694,8 +777,8 @@
     <div class="container">
         <div class="section-head reveal">
             <!--<span class="eyebrow">Precios</span>-->
-            <h2>Paquetes de contabilidad para tu LLC.</h2>
-            <p>Tarifas claras en USD, sin complicaciones ni sorpresas. Pagas por lo que necesitas, con total control.</p>
+            <h2>Paquetes de bookkeeping y contabilidad para tu LLC.</h2>
+            <p>Tarifas claras en USD, sin complicaciones ni sorpresas. Elige el plan de bookkeeping que se adapta al volumen de tu LLC.</p>
         </div>
 
         <div class="pricing-toggle">
