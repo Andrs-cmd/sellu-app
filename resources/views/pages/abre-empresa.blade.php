@@ -418,10 +418,10 @@
         </span>
         <span>Asesoría sin compromiso</span>
         <span class="sep">|</span>
-        <span>Te explicamos todo antes de tomar decisión.</span>
+        <span>El proceso más simple para emprender en EE.UU.</span>
       </div>
 
-      <p class="hero-secondary">El proceso más simple para emprender en EE.UU.</p>
+      <!--<p class="hero-secondary"></p>-->
 
       <div class="hero-cta">
         <a href="#precios" class="btn-navy">Ver precios</a>
