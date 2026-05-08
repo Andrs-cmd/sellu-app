@@ -265,7 +265,9 @@
                 <!-- Amazon tile -->
                 <div style="transform:rotate(-3deg);min-width:180px;">
                     <div class="mk-brand-tile paper floating" style="animation-delay:0s;">
-                        <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/amazon_j3cpnc.png" alt="Amazon" class="mk-brand-logo">
+                        <div class="mk-brand-badge" style="background:#FF9900;">
+                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/amazon_j3cpnc.png" alt="Amazon" style="width:44px;height:44px;object-fit:contain;display:block;">
+                        </div>
                         <div style="font-size:16px;font-weight:700;color:var(--mk-navy);">Amazon</div>
                         <div class="mk-brand-tag" style="color:var(--mk-ink5);">
                             <span style="width:6px;height:6px;border-radius:3px;background:var(--mk-success);"></span>
@@ -290,7 +292,9 @@
                 <!-- Walmart tile -->
                 <div style="transform:rotate(3deg);min-width:180px;">
                     <div class="mk-brand-tile navy floating" style="animation-delay:0.6s;">
-                        <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/walmart_ltretj.png" alt="Walmart" class="mk-brand-logo">
+                        <div class="mk-brand-badge" style="background:#0071DC;">
+                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/walmart_ltretj.png" alt="Walmart" style="width:44px;height:44px;object-fit:contain;display:block;">
+                        </div>
                         <div style="font-size:16px;font-weight:700;color:var(--mk-paper);">Walmart</div>
                         <div class="mk-brand-tag" style="color:rgba(251,250,247,0.75);">
                             <span style="width:6px;height:6px;border-radius:3px;background:var(--mk-accent);"></span>
@@ -311,20 +315,26 @@
             <div class="mk-hero-logo-bot" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
                 <div style="transform:rotate(-1.5deg);">
                     <div class="mk-brand-tile paper floating" style="animation-delay:1.2s;">
-                        <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/tiktokshop_tdidoe.png" alt="TikTok Shop" class="mk-brand-logo">
+                        <div class="mk-brand-badge" style="background:#000;width:50px;height:50px;">
+                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/tiktokshop_tdidoe.png" alt="TikTok Shop" style="width:34px;height:34px;object-fit:contain;display:block;">
+                        </div>
                         <div style="font-size:14px;font-weight:700;">TikTok Shop</div>
                         <div class="mk-brand-tag" style="color:var(--mk-ink5);"><span style="width:6px;height:6px;border-radius:3px;background:#FE2C55;"></span>Social commerce</div>
                     </div>
                 </div>
-                <div class="mk-brand-tile paper" style="transform:rotate(1deg);">
-                    <div class="mk-brand-badge" style="background:#1f1f1f;width:50px;height:50px;font-size:22px;">f</div>
-                    <div style="font-size:14px;font-weight:700;">Faire</div>
-                    <div class="mk-brand-tag" style="color:var(--mk-ink5);"><span style="width:6px;height:6px;border-radius:3px;background:var(--mk-ink7);"></span>B2B wholesale</div>
+                <div style="transform:rotate(1deg);">
+                    <div class="mk-brand-tile paper floating" style="animation-delay:1.8s;">
+                        <div class="mk-brand-badge" style="background:#1f1f1f;width:50px;height:50px;font-size:22px;">f</div>
+                        <div style="font-size:14px;font-weight:700;">Faire</div>
+                        <div class="mk-brand-tag" style="color:var(--mk-ink5);"><span style="width:6px;height:6px;border-radius:3px;background:var(--mk-ink7);"></span>B2B wholesale</div>
+                    </div>
                 </div>
-                <div class="mk-brand-tile paper" style="transform:rotate(-1deg);">
-                    <div class="mk-brand-badge" style="background:#0099D8;width:50px;height:50px;font-size:22px;">s</div>
-                    <div style="font-size:14px;font-weight:700;">Sysco</div>
-                    <div class="mk-brand-tag" style="color:var(--mk-ink5);"><span style="width:6px;height:6px;border-radius:3px;background:#0099D8;"></span>Food service B2B</div>
+                <div style="transform:rotate(-1deg);">
+                    <div class="mk-brand-tile paper floating" style="animation-delay:2.4s;">
+                        <div class="mk-brand-badge" style="background:#0099D8;width:50px;height:50px;font-size:22px;">s</div>
+                        <div style="font-size:14px;font-weight:700;">Sysco</div>
+                        <div class="mk-brand-tag" style="color:var(--mk-ink5);"><span style="width:6px;height:6px;border-radius:3px;background:#0099D8;"></span>Food service B2B</div>
+                    </div>
                 </div>
             </div>
         </div>
