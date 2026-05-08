@@ -446,7 +446,7 @@
 </section>
 
 <!-- ── CTA ASESOR ── -->
-<section id="asesor" class="cta-asesor" aria-label="Contacta un asesor">
+<!--<section id="asesor" class="cta-asesor" aria-label="Contacta un asesor">
     <div class="cta-asesor-inner">
         <h2>Tu empresa en Estados Unidos,<br>activa en 14 días.</h2>
         <p>Habla hoy con uno de nuestros especialistas. Sin compromiso, en español, desde donde estés en LATAM.</p>
@@ -460,7 +460,7 @@
             </a>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- ── FAQ BANNER ── 
 <div style="width:100%; height:130px; overflow:hidden; line-height:0;">
@@ -468,7 +468,7 @@
 </div>-->
 
 <!-- ── FAQ ── -->
-<section id="faq" class="faq" aria-label="Preguntas frecuentes">
+<!--<section id="faq" class="faq" aria-label="Preguntas frecuentes">
     <div class="faq-inner">
         <div class="faq-header">
             <span class="section-tag">Dudas frecuentes</span>
@@ -495,7 +495,7 @@
             <div class="faq-a">Sí, contamos con equipo bilingüe español-inglés y podemos coordinar en portugués para clientes brasileños.</div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- ── BLOG ── -->
 <section class="blog" aria-label="Artículos de interés">
