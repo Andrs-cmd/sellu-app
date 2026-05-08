@@ -364,15 +364,13 @@
 .wm-clientes { background: #fff; padding: 52px 0; border-top: 1px solid var(--w-line); border-bottom: 1px solid var(--w-line); }
 .wm-clientes-header { display: flex; align-items: center; justify-content: center; margin-bottom: 36px; }
 .wm-clientes-badge { background: var(--w-dark); color: #fff; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; padding: 6px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: .06em; }
-.wm-clientes-track-wrap { overflow: hidden; width: 100%; }
-.wm-clientes-track { display: flex; align-items: center; gap: 56px; animation: wm-scroll-logos 30s linear infinite; will-change: transform; }
+.wm-clientes-track-wrap { overflow: hidden; width: 100%; -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%); }
+.wm-clientes-track { display: flex; align-items: center; gap: 56px; width: max-content; animation: wm-scroll-logos 30s linear infinite; will-change: transform; }
 .wm-clientes-track:hover { animation-play-state: paused; }
 .wm-cliente-logo { height: 130px; width: 130px; object-fit: contain; opacity: .55; transition: opacity .2s; filter: grayscale(100%); flex-shrink: 0; }
 .wm-cliente-logo:hover { opacity: 1; filter: grayscale(0%); }
-@keyframes wm-scroll-logos {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(calc(-130px * 8 - 56px * 8)); }
-}
+@keyframes wm-scroll-logos { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 600px) { .wm-clientes-track { gap: 28px; } .wm-cliente-logo { height: 64px; width: 64px; } }
 </style>
 <section class="wm-clientes" aria-label="Nuestros clientes">
     <div class="wm-clientes-header">

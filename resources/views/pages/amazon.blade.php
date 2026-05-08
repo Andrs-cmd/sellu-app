@@ -192,6 +192,8 @@
         }
         .marquee-track-wrap {
             overflow: hidden; width: 100%;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
         }
         .marquee-track {
             display: flex; align-items: center; gap: 64px;
@@ -209,7 +211,10 @@
             filter: grayscale(100%); flex-shrink: 0;
         }
         .cliente-logo-img:hover { opacity: 1; filter: grayscale(0%); }
-        @media (max-width: 600px) { .cliente-logo-img { height: 80px; width: 80px; } }
+        @media (max-width: 600px) {
+            .marquee-track { gap: 28px; }
+            .cliente-logo-img { height: 64px; width: 64px; }
+        }
 
         /* ── BENEFITS ── */
         .benefits-section { padding: 26px 0; }
