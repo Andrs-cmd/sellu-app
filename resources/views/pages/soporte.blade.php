@@ -54,7 +54,7 @@
         :root {
             --navy-900: #0D1B3E; --navy-800: #122050; --navy-700: #1A2D6B;
             --accent-700: #B8870E; --accent-500: #F6BB33; --accent-300: #FAD97A; --accent-100: #FEF5DA;
-            --paper: #FBFAF7; --paper-2: #F4F3EE; --white: #FFFFFF;
+            --paper: #EEF1F8; --paper-2: #EEF1F8; --white: #FFFFFF;
             --border-default: rgba(13,27,62,0.12); --border-subtle: rgba(13,27,62,0.07); --border-strong: rgba(13,27,62,0.22);
             --fg-secondary: #434966; --fg-tertiary: #8A8FA8;
             --success-100: #D4F0E3; --success-500: #1AA05F; --success-700: #147A47;
@@ -63,7 +63,8 @@
             --shadow-md: 0 4px 16px rgba(13,27,62,.12); --shadow-lg: 0 8px 32px rgba(13,27,62,.16);
         }
         html { scroll-behavior: smooth; }
-        body { font-family: 'Montserrat', sans-serif; color: var(--fg-secondary); background: var(--white); -webkit-font-smoothing: antialiased; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--fg-secondary); background: #EEF1F8; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 600 !important; }
 
         .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
         .section { padding: 88px 0; }
@@ -145,11 +146,10 @@
 <!-- ══════════════════════════════════════════════
      HERO
 ══════════════════════════════════════════════ -->
-<section style="padding:80px 0 64px; background:var(--white); overflow:hidden;">
+<section style="padding:80px 0 64px; background:#EEF1F8; overflow:hidden;">
     <div class="container" style="display:grid; grid-template-columns:1.5fr 1fr; gap:72px; align-items:center;">
         <div class="anim">
-            <span class="eyebrow">Contacto</span>
-            <h1 style="font-family:'Montserrat',sans-serif; font-size:clamp(44px,5.5vw,68px); line-height:1.06; letter-spacing:-0.025em; font-weight:700; margin-top:20px; margin-bottom:24px; color:var(--navy-900);">
+            <h1 style="font-family:'Montserrat',sans-serif; font-size:clamp(44px,5.5vw,68px); line-height:1.06; letter-spacing:-0.025em; font-weight:600; margin-bottom:24px; color:var(--navy-900);">
                 ¿En qué podemos<br>
                 <em style="font-style:normal; color:var(--accent-700); position:relative;">ayudarte hoy?
                     <svg width="100%" height="10" viewBox="0 0 200 10" preserveAspectRatio="none" style="position:absolute;left:0;bottom:-4px;height:8px;"><path d="M2 6 Q 50 1, 100 5 T 198 4" stroke="#F6BB33" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
@@ -205,8 +205,7 @@
 <section class="section section-band" id="categorias">
     <div class="container">
         <div style="margin-bottom:40px;" class="anim">
-            <span class="eyebrow">01 · Categoría</span>
-            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:700; margin-top:16px; margin-bottom:12px; color:var(--navy-900);">Cuéntanos qué necesitas.</h2>
+            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:600; margin-bottom:12px; color:var(--navy-900);">Cuéntanos qué necesitas.</h2>
             <p style="font-size:17px; line-height:26px; color:var(--fg-secondary); max-width:600px;">Selecciona el tema que más se acerca a tu consulta. Esto nos ayuda a conectarte con el especialista correcto.</p>
         </div>
 
@@ -259,8 +258,7 @@
 <section class="section" id="canales">
     <div class="container">
         <div style="max-width:600px; margin-bottom:40px;" class="anim">
-            <span class="eyebrow">02 · Canal</span>
-            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:700; margin-top:16px; margin-bottom:12px; color:var(--navy-900);">Elige cómo quieres contactarnos.</h2>
+            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:600; margin-bottom:12px; color:var(--navy-900);">Elige cómo quieres contactarnos.</h2>
             <p style="font-size:17px; line-height:26px; color:var(--fg-secondary);">No todos los casos son iguales. Usa el canal que mejor se adapte a lo que necesitas.</p>
         </div>
 
@@ -358,8 +356,7 @@
 <section class="section section-band" id="formulario">
     <div class="container" style="display:grid; grid-template-columns:1fr 1.4fr; gap:80px; align-items:flex-start;">
         <div style="position:sticky; top:100px;" class="anim">
-            <span class="eyebrow">03 · Formulario</span>
-            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:700; margin-top:16px; margin-bottom:16px; color:var(--navy-900);">Escríbenos directamente.</h2>
+            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:600; margin-bottom:16px; color:var(--navy-900);">Escríbenos directamente.</h2>
             <p style="font-size:17px; line-height:26px; color:var(--fg-secondary); margin-bottom:32px;">Cuéntanos sobre tu situación. Entre más detalle nos des, mejor podemos orientarte.</p>
             <div style="border-top:1px solid var(--border-default); padding-top:20px;">
                 <div style="display:flex; align-items:flex-start; gap:12px; padding:12px 0;"><i data-lucide="lock" style="width:16px;height:16px;color:var(--navy-700);margin-top:3px;flex:none;"></i><span style="font-size:14px; line-height:22px; color:var(--fg-secondary);">No compartimos tus datos con terceros.</span></div>
@@ -463,8 +460,7 @@
 <section class="section" id="faq">
     <div class="container" style="display:grid; grid-template-columns:1fr 1.6fr; gap:80px; align-items:flex-start;">
         <div style="position:sticky; top:100px;" class="anim">
-            <span class="eyebrow">04 · Preguntas frecuentes</span>
-            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:700; margin-top:16px; margin-bottom:16px; color:var(--navy-900);">Respuestas rápidas a las dudas más comunes.</h2>
+            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:600; margin-bottom:16px; color:var(--navy-900);">Respuestas rápidas a las dudas más comunes.</h2>
             <p style="font-size:16px; line-height:24px; color:var(--fg-secondary); margin-bottom:24px;">Antes de escribirnos, revisa si tu pregunta ya tiene respuesta aquí.</p>
             <div style="display:flex; flex-wrap:wrap; gap:6px;">
                 <button class="filter-btn active" data-tag="Todas" onclick="filterFaq(this,'Todas')">Todas</button>
@@ -503,8 +499,7 @@
     <div class="container">
         <div style="display:grid; grid-template-columns:1fr 1.4fr; gap:80px; align-items:flex-start;">
             <div class="anim">
-                <span class="eyebrow">05 · Horarios</span>
-                <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:700; margin-top:16px; margin-bottom:16px; color:var(--navy-900);">Horarios y tiempos de respuesta.</h2>
+                <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:600; margin-bottom:16px; color:var(--navy-900);">Horarios y tiempos de respuesta.</h2>
                 <p style="font-size:17px; line-height:26px; color:var(--fg-secondary); margin-bottom:24px;">Queremos responderte rápido y con calidad. Estas son las expectativas reales.</p>
                 <div style="background:var(--white); border:1px solid var(--border-default); border-radius:12px; padding:20px; display:flex; align-items:flex-start; gap:14px;">
                     <i data-lucide="info" style="width:20px;height:20px;color:var(--navy-700);flex:none;margin-top:2px;"></i>
@@ -535,8 +530,7 @@
 <section class="section" id="redes">
     <div class="container">
         <div style="max-width:680px; margin-bottom:48px;" class="anim">
-            <span class="eyebrow">06 · Redes</span>
-            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:700; margin-top:16px; margin-bottom:16px; color:var(--navy-900);">Síguenos y aprende mientras decides.</h2>
+            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:600; margin-bottom:16px; color:var(--navy-900);">Síguenos y aprende mientras decides.</h2>
             <p style="font-size:17px; line-height:26px; color:var(--fg-secondary);">Nuestras redes no son para soporte — son para educarte e informarte sobre cómo expandir tu negocio a EE.UU.</p>
         </div>
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
@@ -616,8 +610,7 @@
 <section class="section">
     <div class="container" style="display:grid; grid-template-columns:1fr 1.6fr; gap:80px; align-items:flex-start;">
         <div class="anim">
-            <span class="eyebrow">07 · Confianza</span>
-            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:700; margin-top:16px; margin-bottom:16px; color:var(--navy-900);">Por qué confiar en Sell-U.</h2>
+            <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(30px,3.5vw,44px); line-height:1.18; letter-spacing:-0.02em; font-weight:600; margin-bottom:16px; color:var(--navy-900);">Por qué confiar en Sell-U.</h2>
             <p style="font-size:17px; line-height:26px; color:var(--fg-secondary);">Sell-U nació para acompañar a emprendedores de LATAM. No somos un formulario automatizado — somos un equipo que conoce los procesos, habla tu idioma y entiende el contexto desde el que partes.</p>
             <div style="margin-top:28px; display:grid; grid-template-columns:1fr 1fr; gap:0;">
                 <div style="padding:16px 0; border-top:1px solid var(--border-default);"><div style="font-family:'Montserrat',sans-serif; font-size:26px; font-weight:700; color:var(--navy-900);">1,200+</div><div style="font-size:13px; color:var(--fg-tertiary); margin-top:4px;">empresas constituidas</div></div>
