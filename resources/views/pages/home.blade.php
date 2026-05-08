@@ -333,7 +333,7 @@
             <div class="servicio-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <div class="servicio-num">®</div>
+            <div class="servicio-num">TM</div>
             <div class="servicio-label">Registro de marca ante la USPTO</div>
             <p class="servicio-desc">Protege tu marca en EE.UU. y bloquea imitadores. Gestionamos todo el proceso ante la USPTO.</p>
             <span class="servicio-ver-mas">Ver más </span>
