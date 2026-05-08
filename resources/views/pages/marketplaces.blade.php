@@ -248,15 +248,6 @@
 
     <div class="mk-container" style="position:relative;">
 
-        <!-- Eyebrow row -->
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:12px;">
-            <div class="mk-trust-pill">
-                <span style="width:6px;height:6px;border-radius:3px;background:var(--mk-success);"></span>
-                Pilar Marketplaces · LATAM → EE.UU.
-            </div>
-            <div style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--mk-ink5);letter-spacing:0.04em;">01 / Vende donde compran</div>
-        </div>
-
         <!-- Logo stage — 5 channels -->
         <div>
             <!-- Top row: Amazon × Walmart + headline -->
@@ -418,7 +409,6 @@
 <section class="mk-section" id="canales" style="background:var(--mk-white);">
     <div class="mk-container">
         <div style="max-width:760px;margin-bottom:56px;">
-            <span class="mk-eyebrow mk-eyebrow-accent">Sección 02 · Marketplaces</span>
             <h2 class="mk-h2" style="font-size:44px;line-height:52px;letter-spacing:-0.022em;margin-top:14px;margin-bottom:14px;color:var(--mk-navy);">Cinco canales, cinco oportunidades.</h2>
             <p style="font-size:18px;line-height:28px;color:var(--mk-ink7);max-width:640px;">
                 No son iguales. Cada marketplace tiene su comprador, su economía y su barrera de entrada. Elegir el correcto — o combinarlos estratégicamente — depende de tu producto, tu volumen y tu etapa.
@@ -428,7 +418,6 @@
         <!-- Flow diagram -->
         <div class="mk-flow">
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:8px;">
-                <span class="mk-eyebrow">Flujo · de tu bodega al carrito americano</span>
                 <span style="font-size:12px;color:var(--mk-ink5);font-family:'JetBrains Mono',monospace;">4 pasos · 1 estructura</span>
             </div>
             <div class="mk-flow-nodes">
@@ -695,7 +684,6 @@
     <div class="mk-container">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:flex-end;margin-bottom:48px;" class="mk-hero-grid">
             <div>
-                <span class="mk-eyebrow mk-eyebrow-accent">Sección 03 · Estructura</span>
                 <h2 class="mk-h2" style="font-size:44px;line-height:52px;letter-spacing:-0.022em;margin-top:14px;color:var(--mk-navy);">Lo que necesitas para vender en marketplaces de EE.UU.</h2>
             </div>
             <div>
@@ -785,7 +773,6 @@
 <section class="mk-section" id="proceso" style="background:var(--mk-white);">
     <div class="mk-container">
         <div style="max-width:760px;margin-bottom:64px;">
-            <span class="mk-eyebrow mk-eyebrow-accent">Sección 04 · Proceso</span>
             <h2 class="mk-h2" style="font-size:44px;line-height:52px;letter-spacing:-0.022em;margin-top:14px;margin-bottom:14px;color:var(--mk-navy);">Cómo Sell-U te lleva de cero a seller activo en Amazon o Walmart.</h2>
             <p style="font-size:18px;line-height:28px;color:var(--mk-ink7);max-width:640px;">No solo configuramos tu cuenta. Construimos la estructura completa para que puedas vender de forma legal, recibir pagos sin fricción y escalar sin que la operación se rompa.</p>
         </div>
