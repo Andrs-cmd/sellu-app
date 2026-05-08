@@ -208,6 +208,14 @@
     /* CTA section */
     .mk-cta { background: var(--mk-navy); color: var(--mk-paper); padding: 96px 0; position: relative; overflow: hidden; }
 
+    /* Brand tile float animation */
+    @keyframes mk-float {
+        0%, 100% { transform: translateY(0px);   }
+        50%       { transform: translateY(-10px); }
+    }
+    .mk-brand-tile.floating { animation: mk-float 3.6s ease-in-out infinite; }
+    .mk-brand-logo { max-width: 120px; max-height: 64px; width: auto; height: auto; object-fit: contain; display: block; }
+
     /* Mobile */
     @media (max-width: 900px) {
         .mk-hero-grid { grid-template-columns: 1fr !important; }
@@ -255,12 +263,14 @@
             <div class="mk-hero-logo-top" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;min-height:260px;position:relative;">
 
                 <!-- Amazon tile -->
-                <div class="mk-brand-tile paper" style="transform:rotate(-3deg);min-width:180px;">
-                    <div class="mk-brand-badge" style="background:#FF9900;">a</div>
-                    <div style="font-size:16px;font-weight:700;color:var(--mk-navy);">Amazon</div>
-                    <div class="mk-brand-tag" style="color:var(--mk-ink5);">
-                        <span style="width:6px;height:6px;border-radius:3px;background:var(--mk-success);"></span>
-                        FBA · Prime ready
+                <div style="transform:rotate(-3deg);min-width:180px;">
+                    <div class="mk-brand-tile paper floating" style="animation-delay:0s;">
+                        <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/amazon_j3cpnc.png" alt="Amazon" class="mk-brand-logo">
+                        <div style="font-size:16px;font-weight:700;color:var(--mk-navy);">Amazon</div>
+                        <div class="mk-brand-tag" style="color:var(--mk-ink5);">
+                            <span style="width:6px;height:6px;border-radius:3px;background:var(--mk-success);"></span>
+                            FBA · Prime ready
+                        </div>
                     </div>
                 </div>
 
@@ -278,12 +288,14 @@
                 </div>
 
                 <!-- Walmart tile -->
-                <div class="mk-brand-tile navy" style="transform:rotate(3deg);min-width:180px;">
-                    <div class="mk-brand-badge" style="background:#0071DC;">w</div>
-                    <div style="font-size:16px;font-weight:700;color:var(--mk-paper);">Walmart</div>
-                    <div class="mk-brand-tag" style="color:rgba(251,250,247,0.75);">
-                        <span style="width:6px;height:6px;border-radius:3px;background:var(--mk-accent);"></span>
-                        WFS · menos saturado
+                <div style="transform:rotate(3deg);min-width:180px;">
+                    <div class="mk-brand-tile navy floating" style="animation-delay:0.6s;">
+                        <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/walmart_ltretj.png" alt="Walmart" class="mk-brand-logo">
+                        <div style="font-size:16px;font-weight:700;color:var(--mk-paper);">Walmart</div>
+                        <div class="mk-brand-tag" style="color:rgba(251,250,247,0.75);">
+                            <span style="width:6px;height:6px;border-radius:3px;background:var(--mk-accent);"></span>
+                            WFS · menos saturado
+                        </div>
                     </div>
                 </div>
             </div>
@@ -297,10 +309,12 @@
 
             <!-- Bottom row: TikTok / Faire / Sysco -->
             <div class="mk-hero-logo-bot" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
-                <div class="mk-brand-tile paper" style="transform:rotate(-1.5deg);">
-                    <div class="mk-brand-badge" style="background:#000;width:50px;height:50px;font-size:22px;">t</div>
-                    <div style="font-size:14px;font-weight:700;">TikTok Shop</div>
-                    <div class="mk-brand-tag" style="color:var(--mk-ink5);"><span style="width:6px;height:6px;border-radius:3px;background:#FE2C55;"></span>Social commerce</div>
+                <div style="transform:rotate(-1.5deg);">
+                    <div class="mk-brand-tile paper floating" style="animation-delay:1.2s;">
+                        <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/tiktokshop_tdidoe.png" alt="TikTok Shop" class="mk-brand-logo">
+                        <div style="font-size:14px;font-weight:700;">TikTok Shop</div>
+                        <div class="mk-brand-tag" style="color:var(--mk-ink5);"><span style="width:6px;height:6px;border-radius:3px;background:#FE2C55;"></span>Social commerce</div>
+                    </div>
                 </div>
                 <div class="mk-brand-tile paper" style="transform:rotate(1deg);">
                     <div class="mk-brand-badge" style="background:#1f1f1f;width:50px;height:50px;font-size:22px;">f</div>
