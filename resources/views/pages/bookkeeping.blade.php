@@ -469,7 +469,7 @@
                 <span style="text-transform:uppercase;letter-spacing:0.12em;">Servicio · Bookkeeping</span>
             </div>
             <h1 class="bk-hero-h1">
-                La contabilidad de tu LLC en EE.UU.,<br>
+                La operación de tu LLC en EE.UU.,<br>
                 <span class="bk-highlight">resuelta desde LATAM</span>.
             </h1>
             <p class="bk-hero-sub">
