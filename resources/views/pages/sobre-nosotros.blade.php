@@ -7,7 +7,7 @@
 <meta name="description" content="Sell-U lleva negocios de LATAM al mercado americano. LLC, IRS, USPTO, FDA, Amazon y logística — en un solo lugar, en español.">
 <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -25,8 +25,8 @@ html{scroll-behavior:smooth}
   --success-700:#0f6b3f; --success-500:#1aa05f; --success-100:#e3f6ec;
   --fg-primary:#434966; --fg-secondary:#3a3d46; --fg-tertiary:#6b6f7a;
   --border-default:#e5e6ea; --border-strong:#c5c8d0; --border-subtle:#f0f0f2;
-  --font-display:'Poppins',ui-sans-serif,system-ui,sans-serif;
-  --font-sans:'Poppins',ui-sans-serif,system-ui,sans-serif;
+  --font-display:'Montserrat',ui-sans-serif,system-ui,sans-serif;
+  --font-sans:'Montserrat',ui-sans-serif,system-ui,sans-serif;
   --font-mono:'JetBrains Mono',ui-monospace,monospace;
   --shadow-sm:0 1px 2px rgba(46,56,86,.05),0 1px 3px rgba(46,56,86,.04);
   --shadow-md:0 4px 8px -2px rgba(46,56,86,.06),0 2px 4px -2px rgba(46,56,86,.04);

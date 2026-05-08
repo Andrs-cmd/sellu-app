@@ -195,7 +195,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 .hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 72px; align-items: center; }
 .hero h1 {
     font-family: var(--font-display); font-size: 68px; line-height: 1.04;
-    letter-spacing: -0.025em; font-weight: 200; color: var(--navy-900); margin: 18px 0 24px;
+    letter-spacing: -0.025em; font-weight: 600; color: var(--navy-900); margin: 18px 0 24px;
 }
 .hero h1 .line { display: block; overflow: hidden; }
 .hero h1 .line > span {
@@ -385,7 +385,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 }
 .profile:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 .profile .glyph { width: 100%; aspect-ratio: 4/3; border-radius: 12px; background: var(--paper-2); margin-bottom: 24px; overflow: hidden; }
-.profile h4 { font-size: 20px; line-height: 26px; font-weight: 700; color: var(--navy-900); margin: 0 0 10px; letter-spacing: -0.01em; }
+.profile h4 { font-size: 20px; line-height: 26px; font-weight: 600; color: var(--navy-900); margin: 0 0 10px; letter-spacing: -0.01em; }
 .profile p { font-size: 14px; line-height: 22px; color: var(--ink-500); margin: 0; }
 .profile .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-700); margin-bottom: 10px; }
 
@@ -393,7 +393,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 .benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .benefit { padding: 32px; border: 1px solid var(--border-default); border-radius: 14px; background: var(--white); box-shadow: var(--shadow-xs); }
 .benefit .ic { width: 44px; height: 44px; border-radius: 12px; background: var(--navy-900); color: var(--accent-500); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
-.benefit h5 { font-size: 17px; line-height: 24px; font-weight: 700; color: var(--navy-900); margin: 0 0 8px; letter-spacing: -0.005em; }
+.benefit h5 { font-size: 17px; line-height: 24px; font-weight: 600; color: var(--navy-900); margin: 0 0 8px; letter-spacing: -0.005em; }
 .benefit p { font-size: 14px; line-height: 22px; color: var(--ink-500); margin: 0; }
 
 /* ── Section 7 — Pricing ── */
@@ -431,7 +431,7 @@ a:hover { text-decoration-color: var(--navy-800); }
     transition: opacity 400ms var(--ease-out) 100ms, transform 400ms var(--ease-out) 100ms;
 }
 .tnode.active .body { opacity: 1; transform: none; }
-.tnode h5 { font-size: 17px; font-weight: 700; color: var(--navy-900); margin: 0 0 6px; }
+.tnode h5 { font-size: 17px; font-weight: 600; color: var(--navy-900); margin: 0 0 6px; }
 .tnode .when { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; color: var(--accent-700); font-weight: 600; text-transform: uppercase; margin-bottom: 4px; display: block; }
 .tnode p { font-size: 14px; line-height: 22px; color: var(--ink-500); margin: 0; }
 
@@ -439,7 +439,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 .errors { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .err { padding: 24px 26px; border: 1px solid var(--border-default); border-radius: 14px; background: var(--white); display: flex; gap: 16px; }
 .err .ic { flex: 0 0 40px; height: 40px; border-radius: 10px; background: var(--danger-100); color: var(--danger-700); display: flex; align-items: center; justify-content: center; }
-.err h5 { font-size: 16px; font-weight: 700; color: var(--navy-900); margin: 0 0 6px; }
+.err h5 { font-size: 16px; font-weight: 600; color: var(--navy-900); margin: 0 0 6px; }
 .err p { font-size: 14px; line-height: 21px; color: var(--ink-500); margin: 0; }
 
 /* ── Section 10 — Stepper ── */
@@ -460,7 +460,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 .step.active .step-num .connector .fill { height: 100%; }
 .step .body { padding-bottom: 40px; opacity: 0.45; transition: opacity 400ms var(--ease-out); }
 .step.active .body { opacity: 1; }
-.step .body h5 { font-size: 19px; font-weight: 700; color: var(--paper); margin: 14px 0 8px; letter-spacing: -0.005em; }
+.step .body h5 { font-size: 19px; font-weight: 600; color: var(--paper); margin: 14px 0 8px; letter-spacing: -0.005em; }
 .step .body p { font-size: 15px; line-height: 24px; color: rgba(251,250,247,0.78); margin: 0; max-width: 580px; }
 .step .body .meta {
     display: inline-flex; align-items: center; gap: 8px; margin-top: 12px;
@@ -488,7 +488,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 .req-table .rlabel { font-weight: 600; color: var(--navy-900); }
 .req-aside { background: var(--navy-900); color: var(--paper); border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 16px; box-shadow: var(--shadow-md); }
 .req-aside .ic { width: 44px; height: 44px; border-radius: 12px; background: rgba(246,187,51,0.16); color: var(--accent-500); display: flex; align-items: center; justify-content: center; }
-.req-aside h5 { color: var(--paper); font-size: 18px; font-weight: 700; margin: 0; }
+.req-aside h5 { color: var(--paper); font-size: 18px; font-weight: 600; margin: 0; }
 .req-aside .bignum { font-family: var(--font-display); font-size: 48px; font-weight: 700; line-height: 1; letter-spacing: -0.025em; color: var(--paper); }
 .req-aside p { font-size: 14px; line-height: 22px; color: rgba(251,250,247,0.78); margin: 0; }
 
@@ -521,7 +521,7 @@ a:hover { text-decoration-color: var(--navy-800); }
 .final-cta .container { position: relative; }
 .final-cta h2 {
     font-family: var(--font-display); font-size: 64px; line-height: 1.05;
-    font-weight: 700; letter-spacing: -0.025em; color: var(--paper); margin: 14px 0 20px;
+    font-weight: 600; letter-spacing: -0.025em; color: var(--paper); margin: 14px 0 20px;
     max-width: 880px;
     opacity: 0; transform: scale(0.97);
     transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out);
@@ -751,7 +751,7 @@ a:hover { text-decoration-color: var(--navy-800); }
         </div>
         <div class="anim left">
             <span class="eyebrow">¿Qué es un Trademark?</span>
-            <h2 style="font-family:var(--font-display);font-size:48px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--navy-900);margin:16px 0 18px">
+            <h2 style="font-family:var(--font-display);font-size:48px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--navy-900);margin:16px 0 18px">
                 La diferencia entre tener una marca y <em style="font-style:normal;background:linear-gradient(180deg,transparent 60%,var(--accent-300) 60%);padding:0 4px">ser dueño</em> de ella.
             </h2>
             <p style="font-size:17px;line-height:28px;color:var(--ink-700);margin:0;max-width:520px">
@@ -792,7 +792,7 @@ a:hover { text-decoration-color: var(--navy-800); }
     <div class="container">
         <div style="max-width:720px;margin-bottom:48px">
             <span class="eyebrow">Marca vs Marca registrada</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
                 La marca que defiendes en un tribunal vale más que la que solo está en Instagram.
             </h2>
             <p style="font-size:17px;line-height:28px;color:var(--ink-700);margin:0">
@@ -889,7 +889,7 @@ a:hover { text-decoration-color: var(--navy-800); }
         </div>
         <div class="anim right">
             <span class="eyebrow">¿Qué es el USPTO?</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 16px">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 16px">
                 La oficina federal donde tu marca se vuelve oficial.
             </h2>
             <p style="font-size:17px;line-height:28px;color:var(--ink-700);margin:0 0 18px">
@@ -922,7 +922,7 @@ a:hover { text-decoration-color: var(--navy-800); }
     <div class="container">
         <div style="max-width:720px;margin-bottom:56px">
             <span class="eyebrow">¿Quién necesita registrar su marca?</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
                 Si tu negocio existe, ya tienes una marca que defender.
             </h2>
             <p style="font-size:17px;line-height:28px;color:var(--ink-700);margin:0;max-width:600px">
@@ -995,7 +995,7 @@ a:hover { text-decoration-color: var(--navy-800); }
     <div class="container">
         <div style="max-width:720px;margin-bottom:48px">
             <span class="eyebrow">Beneficios</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
                 Lo que ganas el día que tu marca queda registrada.
             </h2>
         </div>
@@ -1051,7 +1051,7 @@ a:hover { text-decoration-color: var(--navy-800); }
     <div class="container">
         <div style="max-width:720px;margin-bottom:48px">
             <span class="eyebrow">¿Cuánto cuesta?</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
                 Transparencia desde el primer dólar.
             </h2>
             <p style="font-size:17px;line-height:28px;color:var(--ink-700);margin:0;max-width:600px">
@@ -1086,7 +1086,7 @@ a:hover { text-decoration-color: var(--navy-800); }
     <div class="container">
         <div style="max-width:720px;margin:0 auto 56px;text-align:center">
             <span class="eyebrow">Proceso de registro</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
                 De idea a marca registrada en 5 etapas.
             </h2>
         </div>
@@ -1156,7 +1156,7 @@ a:hover { text-decoration-color: var(--navy-800); }
     <div class="container">
         <div style="max-width:720px;margin-bottom:48px">
             <span class="eyebrow">Errores comunes</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
                 Lo que se rompe cuando se hace solo.
             </h2>
         </div>
@@ -1206,7 +1206,7 @@ a:hover { text-decoration-color: var(--navy-800); }
     <div class="container">
         <div style="max-width:720px;margin-bottom:64px">
             <span class="eyebrow">Cómo Sell·U lo hace</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--paper);margin:14px 0 14px">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--paper);margin:14px 0 14px">
                 Cinco pasos. Un especialista. Cero papeleo confuso.
             </h2>
         </div>
@@ -1275,7 +1275,7 @@ a:hover { text-decoration-color: var(--navy-800); }
     <div class="container">
         <div style="max-width:720px;margin-bottom:48px">
             <span class="eyebrow">Requisitos y tiempos</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
                 Todo lo que vamos a necesitar de ti.
             </h2>
         </div>
@@ -1346,7 +1346,7 @@ a:hover { text-decoration-color: var(--navy-800); }
     <div class="container">
         <div style="max-width:720px;margin:0 auto 56px;text-align:center">
             <span class="eyebrow">Preguntas frecuentes</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-0.02em;color:var(--navy-900);margin:14px 0 14px">
                 Lo que más nos preguntan los founders.
             </h2>
         </div>

@@ -273,7 +273,7 @@
         .paso:nth-child(4).visible .paso-icon { animation-delay: 0.28s, 0.98s, 0.98s, 1.48s; }
         .paso:nth-child(5).visible .paso-icon { animation-delay: 0.42s, 1.12s, 1.12s, 1.62s; }
 
-        .paso h3 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+        .paso h3 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
         .paso p { font-size: 13px; color: var(--muted); line-height: 1.65; }
 
         /* ── Keyframes ── */

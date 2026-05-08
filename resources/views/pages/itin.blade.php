@@ -475,7 +475,7 @@
                 <h2 style="font-size:40px; line-height:48px; letter-spacing:-.02em; font-weight:600; color:#0D1B3E; margin-bottom:16px;">
                     ¿Qué es el ITIN Number y para qué sirve?
                 </h2>
-                <h3 style="font-size:17px; font-weight:700; color:#434966; margin-bottom:12px;">
+                <h3 style="font-size:17px; font-weight:600; color:#434966; margin-bottom:12px;">
                     ITIN: tu identificación fiscal como no residente.
                 </h3>
                 <p style="font-size:16px; line-height:27px; color:#6b6f7a; margin-bottom:14px;">
@@ -582,13 +582,13 @@
 
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:36px;" class="grid-2col">
             <div style="background:#fff; border-radius:14px; padding:28px; border:1px solid #e5e6ea;">
-                <h3 style="font-size:17px; font-weight:700; color:#0D1B3E; margin-bottom:10px;">La diferencia clave entre SSN e ITIN</h3>
+                <h3 style="font-size:17px; font-weight:600; color:#0D1B3E; margin-bottom:10px;">La diferencia clave entre SSN e ITIN</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">
                     Si eres de Colombia, México, Argentina o cualquier otro país de LATAM y tienes una LLC en EE.UU., no puedes obtener un SSN porque no eres residente ni ciudadano. El ITIN existe precisamente para ti.
                 </p>
             </div>
             <div style="background:#fff; border-radius:14px; padding:28px; border:1px solid #e5e6ea;">
-                <h3 style="font-size:17px; font-weight:700; color:#0D1B3E; margin-bottom:10px;">El EIN no es lo mismo que el ITIN</h3>
+                <h3 style="font-size:17px; font-weight:600; color:#0D1B3E; margin-bottom:10px;">El EIN no es lo mismo que el ITIN</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">
                     El EIN identifica a tu <strong style="color:#434966;">empresa</strong>. El ITIN te identifica a <strong style="color:#434966;">ti</strong> como persona y dueño. Para operar correctamente una LLC como no residente, muchas veces necesitas ambos.
                 </p>
@@ -616,21 +616,21 @@
                 <div class="who-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                 </div>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Personas con SSN (Social Security Number)</h3>
+                <h3 style="font-size:20px; line-height:27px; font-weight:600; color:#0D1B3E;">Personas con SSN (Social Security Number)</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Si ya tienes un número de seguro social emitido por EE.UU., no necesitas un ITIN. El SSN cumple la misma función de identificación ante el IRS.</p>
             </div>
             <div class="who-card">
                 <div class="who-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
                 </div>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">LLCs con múltiples miembros o con EIN</h3>
+                <h3 style="font-size:20px; line-height:27px; font-weight:600; color:#0D1B3E;">LLCs con múltiples miembros o con EIN</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Si tu empresa ya cuenta con un EIN (Employer Identification Number) y no tienes obligaciones fiscales personales en EE.UU., generalmente no se requiere un ITIN.</p>
             </div>
             <div class="who-card">
                 <div class="who-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
                 </div>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Quienes no tienen actividad ni ingresos en EE.UU.</h3>
+                <h3 style="font-size:20px; line-height:27px; font-weight:600; color:#0D1B3E;">Quienes no tienen actividad ni ingresos en EE.UU.</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Si no vendes, no prestas servicios ni recibes pagos de fuentes estadounidenses, el IRS no te exige un ITIN porque no hay obligación fiscal que reportar.</p>
             </div>
         </div>
@@ -651,17 +651,17 @@
         <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-bottom:36px;" class="grid-3col">
             <div class="case-card">
                 <div class="case-head"><span class="case-dot"></span>Caso 01</div>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Para declarar impuestos ante el IRS</h3>
+                <h3 style="font-size:20px; line-height:27px; font-weight:600; color:#0D1B3E;">Para declarar impuestos ante el IRS</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Tener una LLC en EE.UU. no significa que no tengas obligaciones tributarias. Como dueño, debes presentar ciertos formularios ante el IRS cada año. Sin ITIN, no puedes hacerlo correctamente, y eso genera multas.</p>
             </div>
             <div class="case-card">
                 <div class="case-head"><span class="case-dot"></span>Caso 02</div>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Para operar y bancarizar tu LLC</h3>
+                <h3 style="font-size:20px; line-height:27px; font-weight:600; color:#0D1B3E;">Para operar y bancarizar tu LLC</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Algunas instituciones financieras y proveedores de servicios en EE.UU. te piden el ITIN del dueño como requisito para abrir cuentas, procesar pagos o activar servicios a nombre de tu empresa.</p>
             </div>
             <div class="case-card">
                 <div class="case-head"><span class="case-dot"></span>Caso 03</div>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Para recibir pagos desde EE.UU.</h3>
+                <h3 style="font-size:20px; line-height:27px; font-weight:600; color:#0D1B3E;">Para recibir pagos desde EE.UU.</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Clientes, plataformas o servicios de pago en EE.UU. que deben emitirte formularios fiscales (como el 1099) necesitan tu número de identificación. El ITIN es ese número cuando no tienes SSN.</p>
             </div>
         </div>
@@ -745,27 +745,27 @@
         <div class="steps-grid">
             <div class="step-node">
                 <div class="step-bubble first">01</div>
-                <h4 style="font-size:17px; line-height:24px; font-weight:700; color:#fff;">Evaluamos tu caso</h4>
+                <h4 style="font-size:17px; line-height:24px; font-weight:600; color:#fff;">Evaluamos tu caso</h4>
                 <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Te explicamos si necesitas un ITIN, qué tipo de tramitación aplica y qué documentos vamos a requerir: pasaporte, visa (si aplica) y los formularios W-7 y 2848. Sin sorpresas.</p>
             </div>
             <div class="step-node">
                 <div class="step-bubble rest">02</div>
-                <h4 style="font-size:17px; line-height:24px; font-weight:700; color:#fff;">Recopilamos tus documentos</h4>
+                <h4 style="font-size:17px; line-height:24px; font-weight:600; color:#fff;">Recopilamos tus documentos</h4>
                 <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Te indicamos cómo escanear tu pasaporte correctamente: formato PDF, escáner plano a 300 dpi mínimo, sin reflejos ni sombras, con las cuatro esquinas visibles. Cero errores por documentación incompleta.</p>
             </div>
             <div class="step-node">
                 <div class="step-bubble rest">03</div>
-                <h4 style="font-size:17px; line-height:24px; font-weight:700; color:#fff;">Preparamos y enviamos tu W-7</h4>
+                <h4 style="font-size:17px; line-height:24px; font-weight:600; color:#fff;">Preparamos y enviamos tu W-7</h4>
                 <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Te enviamos el W-7 prellenado para que lo imprimas, firmes en el espacio indicado y nos lo reenvíes escaneado. También gestionamos el formulario 2848 que nos autoriza a actuar ante el IRS en tu nombre.</p>
             </div>
             <div class="step-node">
                 <div class="step-bubble rest">04</div>
-                <h4 style="font-size:17px; line-height:24px; font-weight:700; color:#fff;">Hacemos seguimiento por ti</h4>
+                <h4 style="font-size:17px; line-height:24px; font-weight:600; color:#fff;">Hacemos seguimiento por ti</h4>
                 <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Mientras el IRS procesa tu solicitud, nosotros monitoreamos el estado y te mantenemos informado. Si surge algo, actuamos de inmediato.</p>
             </div>
             <div class="step-node">
                 <div class="step-bubble rest">05</div>
-                <h4 style="font-size:17px; line-height:24px; font-weight:700; color:#fff;">Recibes tu ITIN</h4>
+                <h4 style="font-size:17px; line-height:24px; font-weight:600; color:#fff;">Recibes tu ITIN</h4>
                 <p style="font-size:14px; line-height:22px; color:rgba(255,255,255,.70);">Una vez aprobado, te entregamos tu número y te orientamos sobre los siguientes pasos fiscales para tu LLC.</p>
             </div>
         </div>
@@ -790,22 +790,22 @@
         <div class="benefits-grid">
             <div class="benefit-cell">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0D1B3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Menos tiempo perdido</h3>
+                <h3 style="font-size:20px; line-height:27px; font-weight:600; color:#0D1B3E;">Menos tiempo perdido</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Evitas aprender un proceso burocrático desde cero. Nosotros ya lo conocemos. Tú te enfocas en tu negocio.</p>
             </div>
             <div class="benefit-cell">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0D1B3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Menos riesgo de rechazo</h3>
+                <h3 style="font-size:20px; line-height:27px; font-weight:600; color:#0D1B3E;">Menos riesgo de rechazo</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">La mayoría de los rechazos del IRS ocurren por errores evitables en el formulario o en la documentación. Los eliminamos antes de enviar.</p>
             </div>
             <div class="benefit-cell">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0D1B3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Acompañamiento en español</h3>
+                <h3 style="font-size:20px; line-height:27px; font-weight:600; color:#0D1B3E;">Acompañamiento en español</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">No tienes que descifrar formularios en inglés ni lidiar con el IRS directamente. Tenemos el proceso mapeado para emprendedores de LATAM.</p>
             </div>
             <div class="benefit-cell">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0D1B3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                <h3 style="font-size:20px; line-height:27px; font-weight:700; color:#0D1B3E;">Cumplimiento desde el inicio</h3>
+                <h3 style="font-size:20px; line-height:27px; font-weight:600; color:#0D1B3E;">Cumplimiento desde el inicio</h3>
                 <p style="font-size:15px; line-height:24px; color:#6b6f7a;">Obtener tu ITIN correctamente desde el principio te pone en regla con el IRS y evita problemas futuros con declaraciones, multas o bloqueos en tu LLC.</p>
             </div>
         </div>
@@ -825,21 +825,21 @@
 
         {{-- Documentación --}}
         <div style="margin-bottom:56px;">
-            <h3 style="font-size:22px; font-weight:700; color:#0D1B3E; margin-bottom:22px;">Documentación requerida</h3>
+            <h3 style="font-size:22px; font-weight:600; color:#0D1B3E; margin-bottom:22px;">Documentación requerida</h3>
             <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;" class="grid-3col">
                 <div class="doc-card">
                     <span class="doc-num">01 / 03</span>
-                    <h4 style="font-size:17px; font-weight:700; color:#434966;">Pasaporte vigente</h4>
+                    <h4 style="font-size:17px; font-weight:600; color:#434966;">Pasaporte vigente</h4>
                     <p style="font-size:14px; line-height:22px; color:#6b6f7a;">El documento más común y más completo para identificarte ante el IRS.</p>
                 </div>
                 <div class="doc-card">
                     <span class="doc-num">02 / 03</span>
-                    <h4 style="font-size:17px; font-weight:700; color:#434966;">Formulario W-7 diligenciado</h4>
+                    <h4 style="font-size:17px; font-weight:600; color:#434966;">Formulario W-7 diligenciado</h4>
                     <p style="font-size:14px; line-height:22px; color:#6b6f7a;">Sell·U lo prepara por ti, en inglés y según el protocolo del IRS.</p>
                 </div>
                 <div class="doc-card">
                     <span class="doc-num">03 / 03</span>
-                    <h4 style="font-size:17px; font-weight:700; color:#434966;">Justificación de la necesidad</h4>
+                    <h4 style="font-size:17px; font-weight:600; color:#434966;">Justificación de la necesidad</h4>
                     <p style="font-size:14px; line-height:22px; color:#6b6f7a;">Documentos de tu LLC o retenciones de impuestos que sustenten tu solicitud.</p>
                 </div>
             </div>
@@ -850,7 +850,7 @@
 
         {{-- Tiempos --}}
         <!--<div>
-            <h3 style="font-size:22px; font-weight:700; color:#0D1B3E; margin-bottom:22px;">Tiempo estimado del proceso</h3>
+            <h3 style="font-size:22px; font-weight:600; color:#0D1B3E; margin-bottom:22px;">Tiempo estimado del proceso</h3>
 
             <div class="timeline-bar">
                 <div class="tl-seg tl-sellu">

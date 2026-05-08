@@ -113,7 +113,7 @@
         .eyebrow-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); display: inline-block; }
         .page-h1 {
             font-size: clamp(32px, 4.4vw, 52px); line-height: 1.08;
-            letter-spacing: -0.02em; font-weight: 800; color: var(--ink-900);
+            letter-spacing: -0.02em; font-weight: 600; color: var(--ink-900);
             margin-bottom: 16px;
         }
         .page-h1 .accent {
@@ -228,7 +228,7 @@
             display: flex; align-items: center; justify-content: space-between;
             gap: 32px; border: 1px solid var(--ink-200);
         }
-        .help-block h3 { font-size: 22px; font-weight: 800; color: var(--ink-900); margin-bottom: 8px; }
+        .help-block h3 { font-size: 22px; font-weight: 600; color: var(--ink-900); margin-bottom: 8px; }
         .help-block p { color: var(--fg-secondary); font-size: 15px; max-width: 520px; line-height: 1.6; }
         .help-actions { display: flex; gap: 12px; flex-shrink: 0; flex-wrap: wrap; }
         .btn-outline-navy {

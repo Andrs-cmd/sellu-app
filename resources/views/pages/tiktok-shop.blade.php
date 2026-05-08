@@ -472,7 +472,7 @@
     .pbr-eyebrow-row { display:inline-flex;align-items:center;gap:10px;padding:6px 12px 6px 8px;border-radius:999px;background:#fff;border:1px solid #e0e0e0;box-shadow:0 1px 2px rgba(0,0,0,0.05);margin-bottom:24px; }
     .pbr-eyebrow-dot { width:18px;height:18px;border-radius:999px;background:#f6bb33;display:inline-flex;align-items:center;justify-content:center;color:#434966;font-weight:700;font-size:11px;font-family:'Montserrat',sans-serif; }
     .pbr-eyebrow-label { color:#434966;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;font-family:'Montserrat',sans-serif; }
-    .pbr-title { font-family:'Montserrat',sans-serif;font-weight:700;font-size:52px;line-height:62px;letter-spacing:-0.025em;color:#434966;margin:0 0 28px; }
+    .pbr-title { font-family:'Montserrat',sans-serif;font-weight:600;font-size:52px;line-height:62px;letter-spacing:-0.025em;color:#434966;margin:0 0 28px; }
     .pbr-accent { position:relative;white-space:nowrap;display:inline-block; }
     .pbr-accent::after { content:"";position:absolute;left:0;right:0;bottom:-6px;height:8px;background:#f6bb33;border-radius:2px;transform-origin:left center;animation:pbr-underline 700ms ease 200ms both; }
     @keyframes pbr-underline { from{transform:scaleX(0)} to{transform:scaleX(1)} }
@@ -633,7 +633,7 @@
     <section class="tt-section">
         <div class="tt-container">
             <div style="text-align:center;max-width:760px;margin:0 auto 56px;">
-                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
+                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
                     El marketplace de <span class="tt-glitch-text">social commerce</span> más grande del mundo.
                 </h2>
             </div>
@@ -672,7 +672,7 @@
                 {{-- Left text --}}
                 <div>
                     <span class="tt-eyebrow">Exclusivo TikTok Shop</span>
-                    <h2 style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:44px;line-height:1.15;letter-spacing:-0.025em;color:#fff;margin-top:16px;margin-bottom:18px;">
+                    <h2 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:44px;line-height:1.15;letter-spacing:-0.025em;color:#fff;margin-top:16px;margin-bottom:18px;">
                         Vende <span style="border-bottom:3px dotted var(--tt-cyan);padding-bottom:4px;">en vivo</span>.<br>
                         Tu tienda abierta<br>las 24 horas.
                     </h2>
@@ -761,7 +761,7 @@
     <section class="tt-section tt-section-gray">
         <div class="tt-container">
             <div style="text-align:center;max-width:760px;margin:0 auto 56px;">
-                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
+                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
                     Todo lo que hacemos para que<br>tu tienda TikTok Shop venda.
                 </h2>
             </div>
@@ -769,7 +769,7 @@
 
                 <div class="tt-service-card" data-hc="#f6bb33">
                     <div class="tt-service-icon" style="background:#FEF5DD;">🏪</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Apertura de cuenta TikTok Shop</h3>
+                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Apertura de cuenta TikTok Shop</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Creamos y verificamos tu cuenta Business Seller en TikTok Shop Seller Center correctamente desde el inicio.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
                         <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Registro con tu LLC y EIN</span></li>
@@ -780,7 +780,7 @@
 
                 <div class="tt-service-card" data-hc="#25F4EE">
                     <div class="tt-service-icon" style="background:#E6FCFB;">📦</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Configuración de tienda</h3>
+                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Configuración de tienda</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Configuramos tu Seller Center, nombre de tienda, categorías y preferencias de envío.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
                         <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#25F4EE;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Nombre y perfil de tienda</span></li>
@@ -791,7 +791,7 @@
 
                 <div class="tt-service-card" data-hc="#f6bb33">
                     <div class="tt-service-icon" style="background:#FEF5DD;">🎥</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Listings para shoppable content</h3>
+                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Listings para shoppable content</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Cargamos tus productos optimizados para aparecer en shoppable videos y live streams.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
                         <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Títulos y descripciones en inglés</span></li>
@@ -802,7 +802,7 @@
 
                 <div class="tt-service-card" data-hc="#f6bb33">
                     <div class="tt-service-icon" style="background:#FEF5DD;">🚚</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">FBT — Fulfilled by TikTok</h3>
+                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">FBT — Fulfilled by TikTok</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Configuramos Fulfilled by TikTok para que la plataforma gestione tu logística y envíos.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
                         <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Envío a warehouse TikTok</span></li>
@@ -813,7 +813,7 @@
 
                 <div class="tt-service-card" data-hc="#25F4EE">
                     <div class="tt-service-icon" style="background:#E6FCFB;">📣</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Activación de afiliados</h3>
+                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Activación de afiliados</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Conectamos tu tienda con creadores de TikTok para que promuevan tus productos a cambio de comisión.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
                         <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#25F4EE;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Acceso al TikTok Affiliate Marketplace</span></li>
@@ -824,7 +824,7 @@
 
                 <div class="tt-service-card" data-hc="#f6bb33">
                     <div class="tt-service-icon" style="background:#FEF5DD;">💵</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Cobros y payouts en USD</h3>
+                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Cobros y payouts en USD</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Configuramos cómo recibes los pagos de TikTok en dólares americanos desde LATAM.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
                         <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Cuenta bancaria US vinculada</span></li>
@@ -844,7 +844,7 @@
     <section class="tt-section">
         <div class="tt-container">
             <div style="text-align:center;max-width:800px;margin:0 auto 64px;">
-                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
+                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
                     <span style="color:var(--tt-pink);"></span>4 pasos,
                     para tener tu tienda TikTok Shop activa y vendiendo.
                 </h2>
@@ -856,7 +856,7 @@
                         <div class="tt-step-num">01</div>
                         <div class="tt-process-line"></div>
                     </div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Diagnóstico inicial</h3>
+                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Diagnóstico inicial</h3>
                     <p style="font-size:14px;line-height:1.6;color:#666;margin:0;">Analizamos tu LLC, producto y estructura para diseñar el mejor camino de entrada a TikTok Shop.</p>
                 </div>
 
@@ -865,7 +865,7 @@
                         <div class="tt-step-num">02</div>
                         <div class="tt-process-line"></div>
                     </div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Preparamos documentación</h3>
+                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Preparamos documentación</h3>
                     <p style="font-size:14px;line-height:1.6;color:#666;margin:0;">Recopilamos LLC, EIN, identificación y cuenta bancaria. Preparamos el W-9 y documentación de negocio.</p>
                 </div>
 
@@ -874,7 +874,7 @@
                         <div class="tt-step-num">03</div>
                         <div class="tt-process-line"></div>
                     </div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Registro y verificación</h3>
+                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Registro y verificación</h3>
                     <p style="font-size:14px;line-height:1.6;color:#666;margin:0;">Creamos tu cuenta Seller Center, verificamos tu identidad y completamos el onboarding de la tienda.</p>
                 </div>
 
@@ -882,7 +882,7 @@
                     <div style="display:flex;align-items:center;width:100%;">
                         <div class="tt-step-num">04</div>
                     </div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Lanzamiento</h3>
+                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Lanzamiento</h3>
                     <p style="font-size:14px;line-height:1.6;color:#666;margin:0;">Cargamos productos, activamos shoppable links, configuramos FBT y conectamos con primeros creadores afiliados.</p>
                 </div>
 
@@ -973,7 +973,7 @@
     <section class="tt-section tt-section-gray">
         <div class="tt-container">
             <div style="text-align:center;max-width:720px;margin:0 auto 24px;">
-                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
+                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
                     Lo que necesitas tener<br>antes de empezar.
                 </h2>
                 <p style="font-size:16px;line-height:1.65;color:#666;max-width:580px;margin:20px auto 0;">
@@ -988,7 +988,7 @@
                 <div class="tt-req-card" style="border-left-color:var(--tt-pink);">
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">🏢</div>
                     <div>
-                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">LLC activa en EE.UU.</h3>
+                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">LLC activa en EE.UU.</h3>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">Empresa registrada en EE.UU. Wyoming o Florida recomendados.</p>
                     </div>
                 </div>
@@ -996,7 +996,7 @@
                 <div class="tt-req-card" style="border-left-color:var(--tt-cyan);">
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">🔢</div>
                     <div>
-                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">EIN del IRS</h3>
+                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">EIN del IRS</h3>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">Número de identificación fiscal para tu empresa americana.</p>
                     </div>
                 </div>
@@ -1004,7 +1004,7 @@
                 <div class="tt-req-card" style="border-left-color:var(--t-yellow);">
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">🏦</div>
                     <div>
-                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Cuenta bancaria US</h3>
+                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Cuenta bancaria US</h3>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">Cuenta bancaria americana para recibir tus pagos de TikTok en dólares.</p>
                     </div>
                 </div>
@@ -1012,7 +1012,7 @@
                 <div class="tt-req-card" style="border-left-color:var(--tt-pink);">
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">📱</div>
                     <div>
-                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Cuenta TikTok Business</h3>
+                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Cuenta TikTok Business</h3>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">Cuenta TikTok convertida a Business Account. No puedes usar una cuenta personal para vender.</p>
                     </div>
                 </div>
@@ -1021,7 +1021,7 @@
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">📋</div>
                     <div>
                         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-                            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">W-9 / Información fiscal</h3>
+                            <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">W-9 / Información fiscal</h3>
                             <span style="background:#FEF5DD;color:var(--tt-pink);font-size:10px;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:0.04em;">Exclusivo TikTok</span>
                         </div>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">TikTok reporta transacciones al IRS. Necesitas completar el W-9 con tu TIN (EIN o SSN).</p>
@@ -1031,7 +1031,7 @@
                 <div class="tt-req-card" style="border-left-color:var(--t-yellow);">
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">📸</div>
                     <div>
-                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Producto listo con imágenes</h3>
+                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Producto listo con imágenes</h3>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">Producto definido con proveedor o inventario, fotos en fondo blanco (mínimo 800×800 px).</p>
                     </div>
                 </div>
@@ -1096,7 +1096,7 @@
                 <span class="tt-live-dot"></span>
                 DISPONIBLE AHORA
             </div>
-            <h2 class="tt-final-h2" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:56px;line-height:1.1;letter-spacing:-0.025em;color:var(--t-dark);margin:24px 0 22px;">
+            <h2 class="tt-final-h2" style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:56px;line-height:1.1;letter-spacing:-0.025em;color:var(--t-dark);margin:24px 0 22px;">
                 Tu tienda TikTok Shop,<br>lista para <span style="color:var(--t-yellow);">vender</span>.
             </h2>
             <p style="font-size:18px;line-height:1.6;color:#6b6f7a;margin:0 auto;max-width:640px;">

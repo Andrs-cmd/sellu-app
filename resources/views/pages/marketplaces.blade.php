@@ -50,7 +50,7 @@
     @endverbatim
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
     <style>
@@ -83,11 +83,11 @@
     html, body {
         background: var(--mk-paper);
         color: var(--mk-navy);
-        font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+        font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
         font-size: 16px; line-height: 1.5;
         -webkit-font-smoothing: antialiased;
     }
-    h1,h2,h3,h4 { font-family: 'Poppins', sans-serif; font-weight: 600; margin: 0; }
+    h1,h2,h3,h4 { font-family: 'Montserrat', sans-serif; font-weight: 600; margin: 0; }
     p { margin: 0; }
     a { color: inherit; text-decoration: none; }
     ::selection { background: rgba(246,187,51,.3); color: var(--mk-navy); }
@@ -108,7 +108,7 @@
     /* Buttons */
     .mk-btn {
         display: inline-flex; align-items: center; gap: 8px;
-        font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 15px;
+        font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px;
         padding: 13px 24px; border-radius: 12px; border: 1.5px solid transparent;
         cursor: pointer; white-space: nowrap;
         transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
@@ -158,7 +158,7 @@
     .mk-stat { padding: 14px 16px; border-radius: 12px; }
     .mk-stat.paper { background: var(--mk-paper2); border: 1px solid var(--mk-ink2); }
     .mk-stat.inverse { background: rgba(251,250,247,0.06); border: 1px solid rgba(251,250,247,0.10); }
-    .mk-stat-val { font-family: 'Poppins', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.02em; line-height: 32px; }
+    .mk-stat-val { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 600; letter-spacing: -0.02em; line-height: 32px; }
     .mk-stat-lbl { font-size: 12px; line-height: 16px; margin-top: 4px; }
     .mk-stat.paper .mk-stat-val { color: var(--mk-navy); }
     .mk-stat.paper .mk-stat-lbl { color: var(--mk-ink5); }
@@ -286,7 +286,7 @@
 
                 <!-- Center: big × glyph + headline -->
                 <div style="position:relative;text-align:center;padding:0 16px;">
-                    <div aria-hidden="true" style="position:absolute;inset:0;display:grid;place-items:center;font-family:'Poppins',sans-serif;font-size:280px;line-height:1;font-weight:700;color:var(--mk-navy);opacity:0.04;letter-spacing:-0.04em;pointer-events:none;">×</div>
+                    <div aria-hidden="true" style="position:absolute;inset:0;display:grid;place-items:center;font-family:'Montserrat',sans-serif;font-size:280px;line-height:1;font-weight:700;color:var(--mk-navy);opacity:0.04;letter-spacing:-0.04em;pointer-events:none;">×</div>
                     <h1 class="mk-h1" style="position:relative;font-size:56px;line-height:62px;letter-spacing:-0.028em;font-weight:700;color:var(--mk-navy);margin:0;">
                         Vende en
                         <em style="font-style:normal;background:linear-gradient(180deg,transparent 62%,var(--mk-accent3) 62%);padding:0 4px;">cinco canales</em><br>
@@ -368,7 +368,7 @@
 
         <!-- Header -->
         <div style="display:flex;flex-direction:column;gap:24px;margin-bottom:56px;max-width:880px;">
-            <h2 style="font-family:'Poppins',sans-serif;font-size:52px;line-height:62px;letter-spacing:-0.025em;font-weight:600;color:var(--mk-navy);margin:0;">
+            <h2 style="font-family:'Montserrat',sans-serif;font-size:52px;line-height:62px;letter-spacing:-0.025em;font-weight:600;color:var(--mk-navy);margin:0;">
                 Marketplaces para vender en
                 <em style="font-style:normal;position:relative;white-space:nowrap;">EE.UU.<span aria-hidden="true" style="position:absolute;left:-2px;right:-2px;bottom:6px;height:14px;background:var(--mk-accent);z-index:-1;border-radius:2px;transform:skewX(-6deg);"></span></em>
             </h2>

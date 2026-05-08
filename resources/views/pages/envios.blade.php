@@ -122,7 +122,7 @@
         }
         .hero-h1 {
             font-family: var(--font-display); font-size: 52px; line-height: 60px;
-            letter-spacing: -0.025em; font-weight: 700;
+            letter-spacing: -0.025em; font-weight: 600;
             margin-top: 18px; margin-bottom: 22px; color: var(--navy-900);
         }
         .hero-h1 .hl {
@@ -376,7 +376,7 @@
         .cta-band .eyebrow { color: var(--accent-500); }
         .cta-h2 {
             font-family: var(--font-display); font-size: 52px; line-height: 60px;
-            letter-spacing: -0.025em; font-weight: 700;
+            letter-spacing: -0.025em; font-weight: 600;
             margin-top: 16px; margin-bottom: 20px; color: var(--paper);
         }
         .cta-h2 span { color: var(--accent-500); }
@@ -386,7 +386,7 @@
         /* ── FAQ ── */
         .faq-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 64px; align-items: flex-start; }
         .faq-sticky { position: sticky; top: 96px; }
-        .faq-sticky h2 { font-family: var(--font-display); font-size: 34px; line-height: 42px; letter-spacing: -0.02em; font-weight: 700; margin-top: 16px; margin-bottom: 20px; color: var(--navy-900); }
+        .faq-sticky h2 { font-family: var(--font-display); font-size: 34px; line-height: 42px; letter-spacing: -0.02em; font-weight: 600; margin-top: 16px; margin-bottom: 20px; color: var(--navy-900); }
         .faq-sticky p { font-size: 15px; line-height: 24px; color: var(--fg-secondary); margin-bottom: 24px; }
         .faq-list { display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--border-default); border-radius: 14px; overflow: hidden; }
         .faq-item { border-top: 1px solid var(--border-subtle); }
@@ -581,7 +581,7 @@
 <section class="section">
     <div class="container">
         <div style="max-width:820px;margin-bottom:48px;">
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:700;margin-bottom:20px;color:var(--navy-900);">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-bottom:20px;color:var(--navy-900);">
                 La cadena logística, en cuatro etapas.
             </h2>
             <p style="font-size:17px;line-height:26px;color:var(--fg-secondary);">
@@ -643,7 +643,7 @@
 
         <!-- Methods section header -->
         <!--<div style="margin-top:96px;margin-bottom:32px;">
-            <h3 style="font-family:var(--font-display);font-size:30px;line-height:36px;letter-spacing:-0.015em;font-weight:700;color:var(--navy-900);">
+            <h3 style="font-family:var(--font-display);font-size:30px;line-height:36px;letter-spacing:-0.015em;font-weight:600;color:var(--navy-900);">
 
                 Cada método ocupa un lugar distinto entre velocidad y costo.
             </h3>
@@ -857,7 +857,7 @@
 <section class="section section-band" id="proceso">
     <div class="container">
         <div style="max-width:820px;margin-bottom:56px;">
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:700;margin-bottom:20px;color:var(--navy-900);">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:600;margin-bottom:20px;color:var(--navy-900);">
                 Cinco pasos del producto al cliente.
             </h2>
             <p style="font-size:17px;line-height:26px;color:var(--fg-secondary);">

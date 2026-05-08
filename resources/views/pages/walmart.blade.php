@@ -621,7 +621,7 @@
     <div aria-hidden="true" style="position:absolute;right:-160px;bottom:-160px;width:480px;height:480px;border-radius:50%;background:var(--w-yellow);opacity:.10;filter:blur(60px);"></div>
     <div aria-hidden="true" style="position:absolute;left:-120px;top:-120px;width:360px;height:360px;border-radius:50%;background:#fff;opacity:.06;filter:blur(60px);"></div>
     <div class="w-container" style="position:relative;text-align:center;">
-        <h2 style="font-weight:800;font-size:52px;line-height:1.12;letter-spacing:-.025em;color:#fff;margin:0;">
+        <h2 style="font-weight:600;font-size:52px;line-height:1.12;letter-spacing:-.025em;color:#fff;margin:0;">
             Tu cuenta de Walmart Marketplace,<br>
             <span style="color:var(--w-yellow);">activa en 3 semanas.</span>
         </h2>

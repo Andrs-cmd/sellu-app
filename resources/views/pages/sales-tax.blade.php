@@ -67,7 +67,7 @@
         }
         .st-hero h1 {
             font-size: clamp(28px, 4vw, 48px);
-            font-weight: 900; color: var(--white);
+            font-weight: 600; color: var(--white);
             line-height: 1.15; margin-bottom: 16px;
         }
         .st-hero h1 span { color: var(--gold); }

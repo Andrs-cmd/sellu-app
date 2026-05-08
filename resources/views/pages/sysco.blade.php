@@ -104,7 +104,7 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 .svc-card{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:28px;transition:transform .2s,border-color .2s,box-shadow .2s}
 .svc-card:hover{transform:translateY(-4px);border-color:var(--yellow);box-shadow:0 18px 36px -12px rgba(246,187,51,.18)}
 .svc-icon{width:52px;height:52px;border-radius:14px;background:#fef5dd;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px}
-.svc-h{font-family:'Montserrat',sans-serif;font-weight:700;font-size:18px;color:var(--fg);margin:0 0 10px;letter-spacing:-.01em}
+.svc-h{font-family:'Montserrat',sans-serif;font-weight:600;font-size:18px;color:var(--fg);margin:0 0 10px;letter-spacing:-.01em}
 .svc-p{font-size:14px;line-height:1.6;color:var(--fg2);margin:0 0 16px}
 .svc-bullets{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
 .svc-bullets li{font-size:13px;color:var(--fg);display:flex;gap:10px;align-items:flex-start}
@@ -147,7 +147,7 @@ html,body{background:#fff;color:#434966;font-family:'Montserrat',ui-sans-serif,s
 .req-card.accent-orange{border-left:4px solid var(--orange)}
 .req-card.accent-yellow{border-left:4px solid var(--yellow)}
 .req-icon{width:44px;height:44px;border-radius:12px;background:var(--gray);display:flex;align-items:center;justify-content:center;font-size:22px}
-.req-h{font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;color:var(--fg);letter-spacing:-.01em}
+.req-h{font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;color:var(--fg);letter-spacing:-.01em}
 .req-p{font-size:13px;line-height:1.6;color:var(--fg2);margin:0}
 .req-badge{align-self:flex-start;font-size:11px;font-weight:700;padding:5px 10px;border-radius:999px;margin-top:4px}
 

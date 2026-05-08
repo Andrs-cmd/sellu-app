@@ -7,12 +7,12 @@
 <meta name="description" content="Faire conecta tu marca de LATAM con más de 700,000 tiendas físicas y boutiques en EE.UU. Sin ferias, sin intermediarios. Sell-U gestiona todo el proceso.">
 <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Poppins',ui-sans-serif,system-ui,sans-serif;background:#ffffff;color:#434966;-webkit-font-smoothing:antialiased}
+body{font-family:'Montserrat',ui-sans-serif,system-ui,sans-serif;background:#ffffff;color:#434966;-webkit-font-smoothing:antialiased}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;height:auto}
 
@@ -27,7 +27,7 @@ img{max-width:100%;height:auto}
   --danger-100:#fbe4e2; --danger-700:#99231b;
   --border-default:#e5e6ea; --border-strong:#c5c8d0; --border-subtle:#f0f0f2;
   --fg-secondary:#3a3d46; --fg-tertiary:#6b6f7a;
-  --font-display:'Poppins',sans-serif; --font-mono:'JetBrains Mono',monospace;
+  --font-display:'Montserrat',sans-serif; --font-mono:'JetBrains Mono',monospace;
   --shadow-sm:0 1px 3px rgba(46,56,86,.05); --shadow-md:0 4px 8px -2px rgba(46,56,86,.08);
   --shadow-lg:0 12px 24px -8px rgba(46,56,86,.12); --shadow-xl:0 24px 48px -12px rgba(46,56,86,.16);
   --ease-out:cubic-bezier(.16,1,.3,1); --ease-in-out:cubic-bezier(.65,0,.35,1);

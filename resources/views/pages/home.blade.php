@@ -130,7 +130,7 @@
         /* ── SERVICIOS ── */
         .servicios { padding:72px 5%; background:#EEF1F8; }
         .section-tag { font-size:11px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:10px; display:block; text-align:center; }
-        .section-title { font-family:'Montserrat',sans-serif; font-size:26px; font-weight:800; color:var(--navy); text-align:center; margin-bottom:10px; text-transform:uppercase; }
+        .section-title { font-family:'Montserrat',sans-serif; font-size:26px; font-weight:600; color:var(--navy); text-align:center; margin-bottom:10px; text-transform:uppercase; }
         .section-sub { font-size:15px; color:var(--muted); text-align:center; margin-bottom:48px; line-height:1.6; max-width:600px; margin-left:auto; margin-right:auto; }
         .servicios-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; max-width:1100px; margin:0 auto 40px; }
         .servicio-card { background:#fff; border-radius:14px; padding:28px; display:flex; flex-direction:column; text-decoration:none; border:1px solid #e5e6ea; transition:box-shadow 200ms,transform 200ms; }
@@ -160,14 +160,14 @@
         .who-section { background:#122050; padding:72px 5%; }
         .who-section-inner { max-width:1100px; margin:0 auto; }
         .who-section-head { max-width:720px; margin-bottom:44px; }
-        .who-section-head h2 { font-family:'Montserrat',sans-serif; font-size:36px; line-height:1.2; font-weight:800; color:#fff; margin-bottom:14px; }
+        .who-section-head h2 { font-family:'Montserrat',sans-serif; font-size:36px; line-height:1.2; font-weight:600; color:#fff; margin-bottom:14px; }
         .who-section-head p { font-size:16px; line-height:1.7; color:rgba(255,255,255,.65); }
         .who-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
         .who-card { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:32px; display:flex; flex-direction:column; gap:14px; transition:background .2s,box-shadow .2s; }
         .who-card:hover { background:rgba(255,255,255,.11); box-shadow:0 4px 20px rgba(0,0,0,.25); }
         .who-icon { width:44px; height:44px; background:rgba(246,187,51,.18); color:#F5A623; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; }
         .who-icon svg { width:22px; height:22px; }
-        .who-card h3 { font-family:'Montserrat',sans-serif; font-size:20px; line-height:27px; font-weight:700; color:#fff; margin:0; }
+        .who-card h3 { font-family:'Montserrat',sans-serif; font-size:20px; line-height:27px; font-weight:600; color:#fff; margin:0; }
         .who-card p { font-size:15px; line-height:24px; color:rgba(255,255,255,.65); margin:0; }
 
         /* ── CLIENTES ── */
@@ -211,7 +211,7 @@
         .blog-inner { max-width:1100px; margin:0 auto; }
         .blog-header { margin-bottom:40px; }
         .blog-tag { font-size:11px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.12em; margin-bottom:8px; display:block; }
-        .blog-header h2 { font-family:'Montserrat',sans-serif; font-size:26px; font-weight:800; color:var(--navy); margin-bottom:8px; }
+        .blog-header h2 { font-family:'Montserrat',sans-serif; font-size:26px; font-weight:600; color:var(--navy); margin-bottom:8px; }
         .blog-header p { font-size:14px; color:var(--muted); max-width:600px; line-height:1.6; }
         .blog-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
         .blog-card { background:var(--white); border-radius:10px; overflow:hidden; border:1px solid var(--gray2); transition:transform .2s; display:block; }
@@ -221,7 +221,7 @@
         .blog-date { font-size:10px; font-weight:600; color:rgba(255,255,255,.6); text-transform:uppercase; letter-spacing:.08em; position:relative; z-index:1; }
         .blog-body { padding:20px; }
         .blog-cat { font-size:10px; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; display:block; }
-        .blog-card h3 { font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; color:var(--navy); line-height:1.4; margin-bottom:10px; }
+        .blog-card h3 { font-family:'Montserrat',sans-serif; font-size:15px; font-weight:600; color:var(--navy); line-height:1.4; margin-bottom:10px; }
         .blog-card p { font-size:13px; color:var(--muted); line-height:1.6; }
 
         /* ── FOOTER ── */
