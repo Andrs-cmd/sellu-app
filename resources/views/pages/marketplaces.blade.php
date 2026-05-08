@@ -249,13 +249,13 @@
     <div class="mk-container" style="position:relative;">
 
         <!-- Eyebrow row -->
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:12px;">
+        <!--<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:12px;">
             <div class="mk-trust-pill">
                 <span style="width:6px;height:6px;border-radius:3px;background:var(--mk-success);"></span>
                 Pilar Marketplaces · LATAM → EE.UU.
             </div>
             <div style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--mk-ink5);letter-spacing:0.04em;">01 / Vende donde compran</div>
-        </div>
+        </div>-->
 
         <!-- Logo stage — 5 channels -->
         <div>
