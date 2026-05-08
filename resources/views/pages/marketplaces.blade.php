@@ -348,7 +348,7 @@
         </div>
 
         <!-- Description + CTAs -->
-        <div style="margin-top:64px;max-width:720px;">
+        <!--<div style="margin-top:64px;max-width:720px;">
             <p style="font-size:18px;line-height:30px;letter-spacing:-0.005em;color:var(--mk-ink7);margin:0;">
                 Millones de compradores en EE.UU. — y miles de retailers, restaurantes y creadores — buscan productos todos los días en Amazon, Walmart, TikTok Shop, Faire y Sysco. Llegar a ellos desde Colombia, México, Argentina o cualquier país de LATAM es posible — si tienes la cuenta bien configurada, la estructura legal correcta y la logística resuelta. <strong style="color:var(--mk-navy);font-weight:600;">Sell-U lo gestiona por ti.</strong>
             </p>
@@ -356,7 +356,7 @@
                 <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20información%20sobre%20vender%20en%20marketplaces%20de%20EE.UU." class="mk-btn mk-btn-accent mk-btn-lg">Empezar en marketplaces →</a>
                 <a href="{{ url('/pages/canales-de-atencion') }}" class="mk-btn mk-btn-outline mk-btn-lg">Hablar con un asesor</a>
             </div>
-        </div>
+        </div>-->
     </div>
 </section>
 
@@ -877,7 +877,7 @@
 <!-- ═══════════════════════════════════════════════════════
      SECTION 4 — PROCESO
 ═══════════════════════════════════════════════════════ -->
-<section class="mk-section" id="proceso" style="background:var(--mk-white);">
+<!--<section class="mk-section" id="proceso" style="background:var(--mk-white);">
     <div class="mk-container">
         <div style="max-width:760px;margin-bottom:64px;">
             <h2 class="mk-h2" style="font-size:44px;line-height:52px;letter-spacing:-0.022em;margin-top:14px;margin-bottom:14px;color:var(--mk-navy);">Cómo Sell-U te lleva de cero a seller activo en Amazon o Walmart.</h2>
@@ -885,10 +885,10 @@
         </div>
 
         <ol class="mk-steps">
-            <!-- Vertical connector -->
+             Vertical connector 
             <div aria-hidden="true" style="position:absolute;left:35px;top:36px;bottom:36px;width:2px;background:repeating-linear-gradient(to bottom,var(--mk-ink3) 0 6px,transparent 6px 12px);z-index:0;"></div>
 
-            <!-- Paso 01 -->
+             Paso 01
             <li class="mk-step reveal" style="--reveal-delay:0ms;">
                 <div>
                     <div class="mk-step-icon" style="background:var(--mk-accent);color:var(--mk-navy);">
@@ -907,7 +907,7 @@
                 </div>
             </li>
 
-            <!-- Paso 02 -->
+             Paso 02 
             <li class="mk-step reveal" style="--reveal-delay:100ms;">
                 <div>
                     <div class="mk-step-icon" style="background:var(--mk-white);border:1px solid var(--mk-ink3);color:var(--mk-navy);box-shadow:var(--mk-shadow-sm);">
@@ -926,7 +926,7 @@
                 </div>
             </li>
 
-            <!-- Paso 03 -->
+             Paso 03 
             <li class="mk-step reveal" style="--reveal-delay:200ms;">
                 <div>
                     <div class="mk-step-icon" style="background:var(--mk-white);border:1px solid var(--mk-ink3);color:var(--mk-navy);box-shadow:var(--mk-shadow-sm);">
@@ -945,7 +945,7 @@
                 </div>
             </li>
 
-            <!-- Paso 04 -->
+            Paso 04 
             <li class="mk-step reveal" style="--reveal-delay:300ms;">
                 <div>
                     <div class="mk-step-icon" style="background:var(--mk-white);border:1px solid var(--mk-ink3);color:var(--mk-navy);box-shadow:var(--mk-shadow-sm);">
@@ -964,7 +964,7 @@
                 </div>
             </li>
 
-            <!-- Paso 05 -->
+            Paso 05 
             <li class="mk-step reveal" style="--reveal-delay:400ms;">
                 <div>
                     <div class="mk-step-icon" style="background:var(--mk-white);border:1px solid var(--mk-ink3);color:var(--mk-navy);box-shadow:var(--mk-shadow-sm);">
@@ -984,7 +984,7 @@
             </li>
         </ol>
     </div>
-</section>
+</section>-->
 
 <!-- ═══════════════════════════════════════════════════════
      SECTION 5 — CTA FINAL
