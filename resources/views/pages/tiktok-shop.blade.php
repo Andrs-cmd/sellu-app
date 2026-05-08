@@ -808,7 +808,7 @@
         <div class="tt-container">
             <div style="text-align:center;max-width:800px;margin:0 auto 64px;">
                 <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
-                    <span style="color:var(--tt-pink);">3–5 días</span>, 4 pasos,<br>
+                    <span style="color:var(--tt-pink);"></span>, 4 pasos,
                     para tener tu tienda TikTok Shop activa y vendiendo.
                 </h2>
             </div>
