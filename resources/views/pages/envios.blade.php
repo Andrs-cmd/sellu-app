@@ -52,7 +52,7 @@
             --navy-900: #2e3856; --navy-800: #3a4568; --navy-700: #434966;
             --accent-500: #F6BB33; --accent-400: #f9cc66; --accent-300: #fbdd95;
             --accent-100: #EEF1F8; --accent-700: #c89320;
-            --paper: #fbfaf7; --paper-2: #f5f3ee; --white: #ffffff;
+            --paper: #EEF1F8; --paper-2: #EEF1F8; --white: #ffffff;
             --ink-900: #15161a; --ink-700: #3a3d46; --ink-500: #6b6f7a;
             --ink-400: #9298a3; --ink-300: #c5c8d0; --ink-200: #e5e6ea; --ink-100: #f0f0f2;
             --success-500: #1aa05f; --success-100: #e3f6ec;
@@ -441,7 +441,6 @@
     <div class="container">
         <div class="hero-grid">
             <div>
-                <span class="eyebrow">Logística internacional · LATAM → EE.UU.</span>
                 <h1 class="hero-h1">
                     Lleva tus productos a EE.UU. con una logística
                     <span class="hl">estructurada</span>
@@ -582,8 +581,7 @@
 <section class="section">
     <div class="container">
         <div style="max-width:820px;margin-bottom:48px;">
-            <span class="eyebrow">Cómo funciona el puente</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:700;margin-top:16px;margin-bottom:20px;color:var(--navy-900);">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:700;margin-bottom:20px;color:var(--navy-900);">
                 La cadena logística, en cuatro etapas.
             </h2>
             <p style="font-size:17px;line-height:26px;color:var(--fg-secondary);">
@@ -644,9 +642,9 @@
         </div>
 
         <!-- Methods section header -->
-        <<!--<div style="margin-top:96px;margin-bottom:32px;">
-            <span class="eyebrow">Cuatro métodos de envío</span>
-            <h3 style="font-family:var(--font-display);font-size:30px;line-height:36px;letter-spacing:-0.015em;font-weight:700;margin-top:12px;color:var(--navy-900);">
+        <div style="margin-top:96px;margin-bottom:32px;">
+            <h3 style="font-family:var(--font-display);font-size:30px;line-height:36px;letter-spacing:-0.015em;font-weight:700;color:var(--navy-900);">
+
                 Cada método ocupa un lugar distinto entre velocidad y costo.
             </h3>
         </div>
@@ -859,8 +857,7 @@
 <section class="section section-band" id="proceso">
     <div class="container">
         <div style="max-width:820px;margin-bottom:56px;">
-            <span class="eyebrow">Cómo Sell·U lo hace</span>
-            <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:700;margin-top:16px;margin-bottom:20px;color:var(--navy-900);">
+            <h2 style="font-family:var(--font-display);font-size:44px;line-height:52px;letter-spacing:-0.02em;font-weight:700;margin-bottom:20px;color:var(--navy-900);">
                 Cinco pasos del producto al cliente.
             </h2>
             <p style="font-size:17px;line-height:26px;color:var(--fg-secondary);">
@@ -1040,7 +1037,6 @@
 <section id="cotizar" class="cta-band">
     <div class="container" style="position:relative;">
         <div style="max-width:760px;">
-            <span class="eyebrow">Tu siguiente paso</span>
             <h2 class="cta-h2">
                 Tu producto ya está listo.<br>
                 Ahora necesita <span>llegar</span>.
@@ -1069,7 +1065,6 @@
     <div class="container">
         <div class="faq-grid">
             <div class="faq-sticky">
-                <span class="eyebrow">FAQ</span>
                 <h2>Preguntas frecuentes sobre envíos a EE.UU.</h2>
                 <p>¿No encuentras lo que buscas? Escríbenos y un especialista de logística te responde en menos de 24 horas hábiles.</p>
                 <a href="https://wa.me/573116473200?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20log%C3%ADstica" target="_blank" rel="noopener" class="btn btn-secondary">
