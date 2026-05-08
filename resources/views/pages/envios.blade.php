@@ -750,7 +750,7 @@
         </div>-->
 
         <!-- Comparison table -->
-        <div class="cmp-table" id="cmp-table">
+        <!--<div class="cmp-table" id="cmp-table">
             <div class="cmp-table-head">
                 <div>
                     <div style="font-family:var(--font-display);font-size:18px;font-weight:600;color:var(--navy-900);">Comparativa de métodos</div>
@@ -765,7 +765,7 @@
                 <div>Costo relativo</div>
                 <div>Gestión aduanera</div>
             </div>
-            <!-- Courier -->
+             Courier 
             <div class="cmp-row">
                 <div style="font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--navy-900);">Courier</div>
                 <div style="padding-right:24px;">
@@ -784,7 +784,7 @@
                 </div>
                 <div style="font-size:13px;color:var(--fg-secondary);">Básica incluida</div>
             </div>
-            <!-- Air Freight -->
+             Air Freight 
             <div class="cmp-row">
                 <div style="font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--navy-900);">Air Freight</div>
                 <div style="padding-right:24px;">
@@ -803,7 +803,7 @@
                 </div>
                 <div style="font-size:13px;color:var(--fg-secondary);">Requiere broker</div>
             </div>
-            <!-- Sea LCL -->
+             Sea LCL 
             <div class="cmp-row">
                 <div style="font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--navy-900);">Sea LCL</div>
                 <div style="padding-right:24px;">
@@ -822,7 +822,7 @@
                 </div>
                 <div style="font-size:13px;color:var(--fg-secondary);">Requiere broker</div>
             </div>
-            <!-- Sea FCL -->
+             Sea FCL
             <div class="cmp-row">
                 <div style="font-family:var(--font-display);font-size:16px;font-weight:600;color:var(--navy-900);">Sea FCL</div>
                 <div style="padding-right:24px;">
@@ -841,15 +841,15 @@
                 </div>
                 <div style="font-size:13px;color:var(--fg-secondary);">Requiere broker</div>
             </div>
-        </div>
+        </div>-->
 
         <!-- Insight callout -->
-        <div class="insight-callout">
+        <!--<div class="insight-callout">
             <i data-lucide="lightbulb" style="width:22px;height:22px;color:var(--accent-700);flex-shrink:0;"></i>
             <p style="font-size:15px;line-height:22px;color:var(--navy-900);margin:0;">
                 Si tienes demanda constante y probada, el modelo más eficiente a mediano plazo es <strong>fulfillment en EE.UU. con reabastecimiento periódico por flete marítimo</strong>.
             </p>
-        </div>
+        </div>-->
     </div>
 </section>
 
