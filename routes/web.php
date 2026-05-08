@@ -40,6 +40,7 @@ Route::prefix('pages')->group(function () {
     Route::get('/tiktok-shop', fn() => view('pages.tiktok-shop'))->name('pages.tiktok-shop');
     Route::get('/faire', fn() => view('pages.faire'))->name('pages.faire');
     Route::get('/sysco', fn() => view('pages.sysco'))->name('pages.sysco');
+    Route::get('/marketplaces', fn() => view('pages.marketplaces'))->name('pages.marketplaces');
     Route::get('/crear-llc-en-delaware', fn() => view('pages.delaware-llc'))->name('pages.delaware-llc');
     Route::get('/crear-llc-en-wyoming', fn() => view('pages.wyoming-llc'))->name('pages.wyoming-llc');
     Route::get('/crear-llc-en-new-mexico', fn() => view('pages.new-mexico-llc'))->name('pages.new-mexico-llc');
