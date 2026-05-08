@@ -287,13 +287,13 @@
         <div class="sx-header">
             <div class="sx-eyebrow">¿Por qué Delaware?</div>
             <h2>¿Por qué Delaware?</h2>
-            <p class="sx-lead">Delaware combina una legislación corporativa centenaria, máxima privacidad para los socios y el sistema judicial más especializado en derecho mercantil del país. Si planeas escalar, levantar inversión o estructurar un holding, este es el estado referente.</p>
+            <p class="sx-lead">Delaware no es solo un estado más de EE.UU. Es el domicilio de más de 1.8 millones de empresas registradas y la opción preferida por startups globales, fondos de inversión y emprendedores internacionales. Si tu cliente, proveedor o inversionista está en EE.UU., una LLC en Delaware da credibilidad inmediata a tu operación. </p>
         </div>
         <div class="adv-grid">
             <div class="adv-card">
                 <div class="adv-icon"><i data-lucide="percent" style="width:22px;height:22px"></i></div>
                 <h4>0% Income Tax para no residentes</h4>
-                <p>Delaware no cobra impuesto estatal sobre la renta a propietarios no residentes. Tu LLC paga solo a nivel federal. Como single-member non-resident sin actividad dentro de EE.UU., el federal suele ser $0.</p>
+                <p>Delaware no cobra impuesto estatal sobre la renta de actividades fuera del estado. Si tu LLC no opera físicamente en EE.UU., no pagas income tax estatal — aunque sí debes presentar formularios informativos ante el IRS (Form 5472). </p>
             </div>
             <div class="adv-card">
                 <div class="adv-icon"><i data-lucide="scale" style="width:22px;height:22px"></i></div>
@@ -381,7 +381,7 @@
                         <span class="step-h">Solicita tu EIN al IRS</span>
                         <span class="step-meta">Trámite ante el IRS</span>
                     </div>
-                    <p class="step-p">El Employer Identification Number es el "RFC" de tu empresa. Sin SSN debes presentar el SS-4 por fax o correo. Tarda 4–8 semanas si lo haces solo.</p>
+                    <p class="step-p">El Employer Identification Number es el equivalente al RFC en México o NIT en Colombia. Sin SSN debes presentar el SS-4 por fax o correo. Tarda 4–8 semanas si lo haces solo. </p>
                     <a href="#cta-final" class="step-cta"><i data-lucide="zap" style="width:14px;height:14px"></i> Sell·U se encarga →</a>
                 </div>
             </div>
@@ -402,7 +402,7 @@
                         <span class="step-h">Abre tu cuenta bancaria y empieza a operar</span>
                         <span class="step-meta">Sin SSN · 100% remoto</span>
                     </div>
-                    <p class="step-p">Con LLC + EIN puedes abrir cuenta en Mercury, Relay, Wise Business. Acepta pagos en USD, conecta Stripe y empieza a facturar.</p>
+                    <p class="step-p">Con tu LLC activa y tu EIN puedes aplicar a fintechs como Mercury, Relay o Wise Business. El proceso es 100% remoto. Ten en cuenta que la aprobación depende de cada entidad financiera y no está garantizada. </p>
                 </div>
             </div>
         </div>
@@ -429,9 +429,9 @@
                 </thead>
                 <tbody>
                     <tr><td class="col-key">Agente registrado</td><td>Servicio anual obligatorio para LLCs sin oficina física en Delaware.</td><td class="num">$125</td><td><span class="tag tag-warn">Anual</span></td></tr>
-                    <tr><td class="col-key">Annual Franchise Tax</td><td>Reporte anual obligatorio. Vence el 1 de junio de cada año.</td><td class="num">$300</td><td><span class="tag tag-warn">Anual</span></td></tr>
-                    <tr><td class="col-key">Impuestos federales</td><td>1 socio: declaración individual. 2 o más: declaración de partnership + K-1 por cada socio.</td><td class="num">Desde $200</td><td><span class="tag tag-warn">Anual</span></td></tr>
-                    <tr><td class="col-key">EIN (IRS)</td><td>Número de identificación fiscal de tu LLC ante el IRS. Lo gestionamos por ti.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
+                    <tr><td class="col-key">Annual Franchise Tax</td><td>Impuesto anual obligatorio para todas las LLC de Delaware. Flat fee, sin importar ingresos o actividad. Vence el 1 de junio. </td><td class="num">$300</td><td><span class="tag tag-warn">Anual</span></td></tr>
+                    <tr><td class="col-key">Impuestos federales</td><td>1 socio extranjero: Form 5472 + Pro Forma 1120 (informativo). 2 o más socios: Form 1065 + K-1 por cada socio. </td><td class="num">Desde $200</td><td><span class="tag tag-warn">Anual</span></td></tr>
+                    <tr><td class="col-key">Sales Tax en Delaware </td><td>Delaware no tiene sales tax estatal (0%). Si vendes en otros estados o usas marketplaces como Amazon, pueden existir obligaciones de sales tax en esos estados. Cada caso debe evaluarse con un CPA.</td><td class="num">N/A en Delaware </td><td><span class="tag tag-mid">No aplica </span></td></tr>
                     <!--<tr><td class="col-key">Operating Agreement</td><td>Documento interno que define cómo opera tu LLC. Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
                     <tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + franchise tax + impuestos federales + EIN.</td><td class="num">$735–1,000</td><td>—</td></tr>-->
                 </tbody>
