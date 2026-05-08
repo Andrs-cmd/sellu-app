@@ -902,8 +902,8 @@
                 </div>
                 <h2 class="pbr-title">
                     <span style="display:block;">El requisito que muchos</span>
-                    <span style="display:block;">descubren <span class="pbr-accent">demasiado tarde</span></span>
-                    <span style="display:block;">en TikTok Shop.</span>
+                    <span style="display:block;">descubren <span class="pbr-accent">demasiado tarde</span> en TikTok Shop.</span>
+                    <span style="display:block;"></span>
                 </h2>
                 <p class="pbr-subtitle">
                     Para vender en TikTok Shop EE.UU., no basta con tener una LLC y un EIN. La plataforma también exige un representante de negocio en Estados Unidos que pueda pasar la verificación.
