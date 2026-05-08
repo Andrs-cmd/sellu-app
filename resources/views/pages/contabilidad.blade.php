@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
     <link rel="apple-touch-icon" href="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_redondo.png?v=1738200788">
-    <title>Bookkeeping para LLC en EE.UU. | Contabilidad No Residente — Sell·U</title>
+    <title>Contabilidad para LLC No Residente USA — Sell·U</title>
 
     <!-- ── SEO PRIMARIO ── -->
-    <meta name="description" content="Servicio de bookkeeping mensual para tu LLC en EE.UU. Categorización de transacciones, conciliación bancaria, estados financieros P&L y preparación para impuestos (Form 1120, 5472). Especialistas en LLC para latinoamericanos. Desde $179/mes.">
-    <meta name="keywords" content="bookkeeping LLC USA, bookkeeping para no residentes, bookkeeper LLC latinoamerica, bookkeeping en español USA, contabilidad LLC USA, bookkeeping mensual LLC, conciliacion bancaria LLC, estados financieros LLC, QuickBooks LLC, taxes para LLC, declaración de impuestos estados unidos, contador LLC, impuestos para extranjeros USA, asesoría fiscal LATAM, Form 5472, Form 1120">
+    <meta name="description" content="Contabilidad e impuestos para tu LLC en Estados Unidos. Declaración anual (Form 1120, 5472), reportes financieros y asesoría tributaria para latinoamericanos no residentes. Proceso 100% digital. Desde $179/mes.">
+    <meta name="keywords" content="contabilidad LLC USA, taxes para LLC, declaración de impuestos estados unidos, contador LLC, impuestos para extranjeros USA, asesoría fiscal LATAM, Form 5472, Form 1120, contabilidad no residente USA, contabilidad multimoneda LLC, estados financieros LLC, declaración anual LLC">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sell·U LATAM LLC">
     <link rel="canonical" href="https://sellu.co/pages/contabilidad">
@@ -17,19 +17,19 @@
     <!-- ── OPEN GRAPH ── -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sellu.co/pages/contabilidad">
-    <meta property="og:title" content="Bookkeeping para LLC en EE.UU. | Contabilidad No Residente — Sell·U">
-    <meta property="og:description" content="Bookkeeping mensual para tu LLC en Estados Unidos: categorización, conciliación bancaria, P&L y preparación para taxes. Especialistas en LLC para latinoamericanos. Desde $179/mes.">
+    <meta property="og:title" content="Contabilidad para LLC No Residente USA — Sell·U">
+    <meta property="og:description" content="Contabilidad e impuestos para tu LLC en Estados Unidos. Declaración anual, reportes financieros y asesoría tributaria para latinoamericanos. Proceso 100% digital.">
     <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Sell·U — Bookkeeping y Contabilidad para LLC No Residente en EE.UU.">
+    <meta property="og:image:alt" content="Sell·U — Contabilidad para LLC No Residente USA">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="Sell·U LATAM">
 
     <!-- ── TWITTER CARD ── -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bookkeeping para LLC en EE.UU. | Contabilidad No Residente — Sell·U">
-    <meta name="twitter:description" content="Bookkeeping mensual para tu LLC en EE.UU.: categorización, conciliación bancaria, P&L y preparación para taxes. Especialistas en LLC para latinoamericanos. Desde $179/mes.">
+    <meta name="twitter:title" content="Contabilidad para LLC No Residente USA — Sell·U">
+    <meta name="twitter:description" content="Contabilidad e impuestos para tu LLC en Estados Unidos. Asesoría tributaria para latinoamericanos. 100% digital.">
     <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008">
 
     <!-- ── STRUCTURED DATA ── -->
@@ -38,8 +38,8 @@
     {
         "@context": "https://schema.org",
         "@type": "AccountingService",
-        "name": "Sell·U LATAM — Bookkeeping y Contabilidad para LLC",
-        "description": "Servicio de bookkeeping mensual, contabilidad y declaración de impuestos para LLC en Estados Unidos. Especializado en emprendedores latinoamericanos no residentes. Categorización de transacciones, conciliación bancaria, P&L y preparación para Form 1120 y 5472.",
+        "name": "Sell·U LATAM — Contabilidad y Taxes para LLC",
+        "description": "Servicio de contabilidad, declaración de impuestos y asesoría tributaria para LLC en Estados Unidos. Especializado en emprendedores latinoamericanos no residentes. Form 1120, 5472, reportes financieros y cumplimiento fiscal.",
         "url": "https://sellu.co/pages/contabilidad",
         "logo": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/SellU_2.png?v=1737756196",
         "image": "https://cdn.shopify.com/s/files/1/0900/0674/9556/files/Sell-U_Latam_-_Banner_No_1.webp?v=1760852008",
@@ -585,12 +585,12 @@
     <div class="container">
         <div class="hero-grid">
             <div>
-<span class="eyebrow">Bookkeeping · Contabilidad LLC · No Residentes EE.UU.</span>
+<span class="eyebrow">Contabilidad LLC · Taxes · No Residentes EE.UU.</span>
                 <h1 class="hero-h1">
-                    Bookkeeping para tu LLC en EE.UU.,<br>
-                    <span class="highlight">sin complicaciones</span> desde LATAM.
+                    Contabilidad para tu LLC,<br>
+                    <span class="highlight">la tranquilidad</span> que tu negocio merece.
                 </h1>
-                <p class="hero-sub">Ten el control contable de tu LLC en EE.UU. en todo momento — bookkeeping mensual, conciliación bancaria y reportes listos para impuestos, con acompañamiento experto en español.</p>
+                <p class="hero-sub">Ten el control contable de tu LLC en EE.UU. en todo momento — con acompañamiento experto, sin salir de Latinoamérica.</p>
                 <div class="bullet-row">
                     <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Contabilidad siempre al día</span>
                     <span class="bullet"><i data-lucide="check" width="16" height="16"></i> Cumplimiento fiscal</span>
@@ -756,11 +756,11 @@
     <div class="container">
         <div class="section-head reveal">
             <!--<span class="eyebrow">Servicios incluidos</span>-->
-            <h2>Qué incluye nuestro servicio de bookkeeping para LLC.</h2>
-            <p>Todo lo que tu LLC necesita para mantenerse al día con el IRS: bookkeeping mensual, conciliación bancaria, estados financieros y listo para impuestos — sin perseguir múltiples proveedores ni montar planillas en Excel.</p>
+            <h2>Qué incluye nuestro servicio de contabilidad para LLC.</h2>
+            <p>Todo lo que tu LLC necesita para mantenerse al día con el IRS, sin perseguir múltiples proveedores ni montar planillas en Excel.</p>
         </div>
         <div class="grid-4 reveal">
-            <div class="service-card"><div class="service-icon"><i data-lucide="bar-chart-3" width="20" height="20"></i></div><div><h4>Bookkeeping mensual</h4><p>Cada transacción categorizada y reconciliada.</p></div></div>
+            <a href="{{ url('/pages/bookkeeping') }}" class="service-card" style="text-decoration:none;"><div class="service-icon"><i data-lucide="bar-chart-3" width="20" height="20"></i></div><div><h4>Bookkeeping mensual</h4><p>Cada transacción categorizada y reconciliada. <span style="color:var(--navy-900);font-weight:600;">Ver detalle →</span></p></div></a>
             <div class="service-card"><div class="service-icon"><i data-lucide="landmark" width="20" height="20"></i></div><div><h4>Conciliaciones bancarias</h4><p>Bancos, tarjetas y pasarelas como Stripe.</p></div></div>
             <div class="service-card"><div class="service-icon"><i data-lucide="line-chart" width="20" height="20"></i></div><div><h4>Estados financieros</h4><p>P&L, Balance General y Cash Flow mensuales.</p></div></div>
             <div class="service-card"><div class="service-icon"><i data-lucide="coins" width="20" height="20"></i></div><div><h4>Contabilidad multimoneda</h4><p>USD, COP, MXN, ARS — convertidos correctamente.</p></div></div>
@@ -777,8 +777,8 @@
     <div class="container">
         <div class="section-head reveal">
             <!--<span class="eyebrow">Precios</span>-->
-            <h2>Paquetes de bookkeeping y contabilidad para tu LLC.</h2>
-            <p>Tarifas claras en USD, sin complicaciones ni sorpresas. Elige el plan de bookkeeping que se adapta al volumen de tu LLC.</p>
+            <h2>Paquetes de contabilidad para tu LLC.</h2>
+            <p>Tarifas claras en USD, sin complicaciones ni sorpresas. Pagas por lo que necesitas, con total control.</p>
         </div>
 
         <div class="pricing-toggle">

@@ -46,13 +46,13 @@
     {{-- FILA 2: Menú centrado (desktop) --}}
     <nav class="nav-menu-row">
         <a href="{{ url('/pages/crear-empresa-en-estados-unidos') }}" class="nav-item {{ request()->is('pages/crear-empresa-en-estados-unidos') ? 'active' : '' }}">Abre tu empresa</a>
-        <div class="nav-dropdown {{ request()->is('pages/contabilidad') || request()->is('pages/certificado-revendedor') || request()->is('pages/presentacion-de-impuestos') || request()->is('pages/itin-number') ? 'active' : '' }}">
-            <a href="{{ url('/pages/contabilidad') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/contabilidad') || request()->is('pages/certificado-revendedor') || request()->is('pages/presentacion-de-impuestos') || request()->is('pages/itin-number') ? 'active' : '' }}">
+        <div class="nav-dropdown {{ request()->is('pages/contabilidad') || request()->is('pages/bookkeeping') || request()->is('pages/certificado-revendedor') || request()->is('pages/presentacion-de-impuestos') || request()->is('pages/itin-number') ? 'active' : '' }}">
+            <a href="{{ url('/pages/contabilidad') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/contabilidad') || request()->is('pages/bookkeeping') || request()->is('pages/certificado-revendedor') || request()->is('pages/presentacion-de-impuestos') || request()->is('pages/itin-number') ? 'active' : '' }}">
                 Contabilidad
                 <svg class="nav-chevron" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
             <div class="nav-submenu">
-                <a href="{{ url('/pages/contabilidad') }}#bookkeeping" class="nav-subitem">
+                <a href="{{ url('/pages/bookkeeping') }}" class="nav-subitem {{ request()->is('pages/bookkeeping') ? 'active' : '' }}">
                     <svg viewBox="0 0 16 16" fill="none"><path d="M3 2h7l3 3v9H3V2z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M10 2v3h3" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M5 8h6M5 11h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
                     Bookkeeping
                 </a>
@@ -142,7 +142,7 @@
                 <svg class="mobile-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="mobile-subitems">
-                <a href="{{ url('/pages/contabilidad') }}#bookkeeping" class="mobile-subitem">Bookkeeping</a>
+                <a href="{{ url('/pages/bookkeeping') }}" class="mobile-subitem">Bookkeeping</a>
                 <a href="{{ url('/pages/presentacion-de-impuestos') }}" class="mobile-subitem">Presentación de impuestos</a>
                 <a href="{{ url('/pages/itin-number') }}" class="mobile-subitem">ITIN Number</a>
                 <a href="{{ url('/pages/certificado-revendedor') }}" class="mobile-subitem {{ request()->is('pages/certificado-revendedor') ? 'active' : '' }}">Certificado de revendedor</a>
