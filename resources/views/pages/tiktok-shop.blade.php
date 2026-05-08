@@ -6,7 +6,8 @@
     <title>TikTok Shop — Vende en EE.UU. desde LATAM | Sell-U</title>
     <meta name="description" content="Abre tu tienda TikTok Shop en EE.UU. desde LATAM. Sell-U gestiona tu cuenta Seller Center, shoppable videos, FBT y afiliados en 3–5 días.">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     @verbatim
     <script type="application/ld+json">
     {
@@ -463,6 +464,116 @@
         .tt-section-h2 { font-size: 28px !important; }
         .tt-final-h2 { font-size: 36px !important; }
     }
+    /* ══ PBR SECTION ══════════════════════════════════════════════════ */
+    .pbr-section { padding: 112px 0 96px; position: relative; overflow: hidden; background: #fbfaf7; }
+    .pbr-container { max-width: 1160px; margin: 0 auto; position: relative; padding: 0 32px; }
+    .pbr-paper-mark {
+        position: absolute; top: -120px; right: -160px;
+        width: 520px; height: 520px; background: #f6bb33;
+        opacity: 0.08; border-radius: 28px; transform: rotate(12deg);
+        z-index: 0; pointer-events: none;
+    }
+    .pbr-header { max-width: 880px; position: relative; z-index: 1; margin: 0 auto 64px; text-align: center; }
+    .pbr-eyebrow-row {
+        display: inline-flex; align-items: center; gap: 10px;
+        padding: 6px 12px 6px 8px; border-radius: 999px;
+        background: #fff; border: 1px solid #e5e6ea;
+        box-shadow: 0 1px 2px rgba(46,56,86,0.04); margin-bottom: 24px;
+    }
+    .pbr-eyebrow-dot {
+        width: 18px; height: 18px; border-radius: 999px; background: #f6bb33;
+        display: inline-flex; align-items: center; justify-content: center;
+        color: #434966; font-weight: 700; font-size: 11px; font-family: 'Poppins', sans-serif;
+    }
+    .pbr-eyebrow-label { color: #434966; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+    .pbr-title {
+        font-family: 'Poppins', sans-serif; font-weight: 600;
+        font-size: 56px; line-height: 66px; letter-spacing: -0.025em;
+        color: #434966; margin: 0 0 28px; text-wrap: balance;
+    }
+    .pbr-title .pbr-accent {
+        position: relative; white-space: nowrap; display: inline-block;
+    }
+    .pbr-title .pbr-accent::after {
+        content: ""; position: absolute; left: 0; right: 0; bottom: -6px;
+        height: 8px; background: #f6bb33; border-radius: 2px;
+        transform-origin: left center;
+        animation: pbr-underline 700ms cubic-bezier(0.16,1,0.3,1) 200ms both;
+    }
+    @keyframes pbr-underline { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .pbr-subtitle { font-size: 19px; line-height: 30px; color: #3a3d46; max-width: 720px; margin: 0 auto; }
+    .pbr-definition {
+        display: grid; grid-template-columns: 220px 1fr; gap: 32px;
+        align-items: start; padding: 28px 32px;
+        background: #fff; border: 1px solid #e5e6ea; border-left: 3px solid #434966;
+        border-radius: 14px; box-shadow: 0 1px 2px rgba(46,56,86,0.05),0 1px 3px rgba(46,56,86,0.04);
+        margin-bottom: 56px; position: relative; z-index: 1;
+    }
+    .pbr-definition .pbr-term {
+        font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px;
+        letter-spacing: 0.04em; text-transform: uppercase; color: #434966;
+    }
+    .pbr-definition .pbr-term-full {
+        display: block; font-size: 12px; letter-spacing: 0.08em; color: #6b6f7a;
+        font-weight: 500; margin-top: 6px; text-transform: none;
+        font-family: 'JetBrains Mono', monospace;
+    }
+    .pbr-definition .pbr-desc { font-size: 16px; line-height: 26px; color: #3a3d46; }
+    .pbr-definition .pbr-desc strong { color: #434966; font-weight: 600; }
+    .pbr-grid {
+        display: grid; grid-template-columns: repeat(4,1fr);
+        gap: 1px; background: #e5e6ea;
+        border: 1px solid #e5e6ea; border-radius: 14px; overflow: hidden;
+        position: relative; z-index: 1;
+    }
+    .pbr-card {
+        background: #fff; padding: 32px 28px 36px;
+        display: flex; flex-direction: column; gap: 14px;
+        transition: background 200ms cubic-bezier(0.16,1,0.3,1);
+    }
+    .pbr-card:hover { background: #f5f3ee; }
+    .pbr-card .pbr-num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c89320; font-weight: 500; letter-spacing: 0.06em; }
+    .pbr-card .pbr-icon {
+        width: 40px; height: 40px; border-radius: 10px;
+        background: #f5f3ee; border: 1px solid #e5e6ea;
+        display: inline-flex; align-items: center; justify-content: center;
+        color: #434966; margin-bottom: 4px;
+    }
+    .pbr-card h4 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; line-height: 24px; letter-spacing: -0.01em; color: #434966; margin: 0; }
+    .pbr-card p  { font-size: 14px; line-height: 22px; color: #3a3d46; margin: 0; }
+    .pbr-close {
+        margin-top: 64px; background: #434966; border-radius: 20px; padding: 40px 48px;
+        display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center;
+        position: relative; z-index: 1;
+        box-shadow: 0 12px 24px -8px rgba(46,56,86,0.10),0 4px 8px -4px rgba(46,56,86,0.06);
+    }
+    .pbr-close .pbr-close-eyebrow { color: #f6bb33; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; display: block; }
+    .pbr-close p { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 22px; line-height: 32px; letter-spacing: -0.01em; color: #fbfaf7; margin: 0; max-width: 720px; }
+    .pbr-close .pbr-brand { color: #f6bb33; font-weight: 600; }
+    .pbr-checks { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 20px; font-size: 13px; color: rgba(251,250,247,0.72); }
+    .pbr-checks span { display: inline-flex; align-items: center; gap: 6px; }
+    .pbr-checks i { color: #f6bb33; }
+    .pbr-cta {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: #f6bb33; color: #434966;
+        font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15px;
+        padding: 14px 22px; border-radius: 12px; border: none; cursor: pointer;
+        box-shadow: 0 1px 2px rgba(46,56,86,0.05),0 1px 3px rgba(46,56,86,0.04);
+        transition: background 200ms, box-shadow 200ms; text-decoration: none; white-space: nowrap;
+    }
+    .pbr-cta:hover { background: #f9cc66; box-shadow: 0 4px 8px -2px rgba(46,56,86,0.06); }
+    @media (max-width: 980px) {
+        .pbr-grid { grid-template-columns: repeat(2,1fr) !important; }
+        .pbr-title { font-size: 40px !important; line-height: 50px !important; }
+        .pbr-definition { grid-template-columns: 1fr !important; gap: 12px !important; }
+        .pbr-close { grid-template-columns: 1fr !important; padding: 32px !important; }
+    }
+    @media (max-width: 600px) {
+        .pbr-section { padding: 80px 0 72px !important; }
+        .pbr-grid { grid-template-columns: 1fr !important; }
+        .pbr-title { font-size: 32px !important; line-height: 42px !important; }
+        .pbr-subtitle { font-size: 17px !important; line-height: 26px !important; }
+    }
     </style>
 </head>
 <body>
@@ -853,6 +964,85 @@
         </div>
     </section>
 
+    {{-- ===== PBR SECTION ===== --}}
+    <section class="pbr-section">
+        <div class="pbr-paper-mark" aria-hidden="true"></div>
+        <div class="pbr-container">
+
+            <header class="pbr-header">
+                <div class="pbr-eyebrow-row">
+                    <span class="pbr-eyebrow-dot">U</span>
+                    <span class="pbr-eyebrow-label">TikTok Shop · Estados Unidos</span>
+                </div>
+                <h2 class="pbr-title">
+                    <span style="display:block;">El requisito que muchos</span>
+                    <span style="display:block;">descubren <span class="pbr-accent">demasiado tarde</span></span>
+                    <span style="display:block;">en TikTok Shop.</span>
+                </h2>
+                <p class="pbr-subtitle">
+                    Para vender en TikTok Shop EE.UU., no basta con tener una LLC y un EIN. La plataforma también exige un representante de negocio en Estados Unidos que pueda pasar la verificación.
+                </p>
+            </header>
+
+            <div class="pbr-definition">
+                <div class="pbr-term">
+                    PBR
+                    <span class="pbr-term-full">Primary Business Representative</span>
+                </div>
+                <p class="pbr-desc">
+                    Es la persona basada en EE.UU. que actúa como <strong>enlace de cumplimiento</strong> ante TikTok Shop. Debe contar con documentación válida estadounidense —ID, dirección verificable y SSN o ITIN— y su información debe coincidir <strong>exactamente</strong> con los documentos del negocio.
+                </p>
+            </div>
+
+            <div class="pbr-grid">
+                <article class="pbr-card">
+                    <span class="pbr-num">01</span>
+                    <span class="pbr-icon"><i data-lucide="shield-check" width="20" height="20"></i></span>
+                    <h4>Verificación obligatoria</h4>
+                    <p>TikTok Shop exige validar la identidad del representante y la información del negocio antes de aprobar la cuenta.</p>
+                </article>
+                <article class="pbr-card">
+                    <span class="pbr-num">02</span>
+                    <span class="pbr-icon"><i data-lucide="user-check" width="20" height="20"></i></span>
+                    <h4>No es un simple contacto</h4>
+                    <p>El PBR funciona como el punto de referencia legal y operativo de la cuenta frente a la plataforma.</p>
+                </article>
+                <article class="pbr-card">
+                    <span class="pbr-num">03</span>
+                    <span class="pbr-icon"><i data-lucide="file-check-2" width="20" height="20"></i></span>
+                    <h4>Los datos deben coincidir</h4>
+                    <p>Errores en nombres, direcciones o documentos pueden causar rechazos, congelamiento de cuenta o fallas en la re-verificación.</p>
+                </article>
+                <article class="pbr-card">
+                    <span class="pbr-num">04</span>
+                    <span class="pbr-icon"><i data-lucide="globe-2" width="20" height="20"></i></span>
+                    <h4>Riesgo para marcas extranjeras</h4>
+                    <p>Muchos crean su LLC y obtienen su EIN, pero descubren después que no tienen la estructura correcta para pasar TikTok Shop.</p>
+                </article>
+            </div>
+
+            <div class="pbr-close">
+                <div>
+                    <span class="pbr-close-eyebrow">El enfoque Sell-U</span>
+                    <p>
+                        En <span class="pbr-brand">Sell-U</span> acompañamos la creación de la estructura correcta desde el inicio: LLC, EIN, documentación alineada y preparación para procesos de verificación en plataformas como TikTok Shop.
+                    </p>
+                    <div class="pbr-checks">
+                        <span><i data-lucide="check" width="14" height="14"></i> LLC en Delaware o Wyoming</span>
+                        <span><i data-lucide="check" width="14" height="14"></i> EIN ante el IRS</span>
+                        <span><i data-lucide="check" width="14" height="14"></i> Documentación alineada</span>
+                        <span><i data-lucide="check" width="14" height="14"></i> Preparación de verificación</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20información%20sobre%20el%20PBR%20para%20TikTok%20Shop" class="pbr-cta">
+                    Agenda una llamada
+                    <i data-lucide="arrow-right" width="16" height="16"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
     {{-- ===== REQUISITES ===== --}}
     <section class="tt-section tt-section-gray">
         <div class="tt-container">
@@ -1092,6 +1282,9 @@
     });
 
 }());
+
+/* 7 — Lucide icons */
+if (window.lucide) lucide.createIcons();
 </script>
 </body>
 </html>
