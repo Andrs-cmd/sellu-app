@@ -251,7 +251,7 @@
                     <div class="lbl">Costo filing oficial</div>
                 </div>
                 <div class="hero-badge">
-                    <div class="val">Inmediato</div>
+                    <div class="val">5–15 días hábiles </div>
                     <div class="lbl">Tiempo de aprobación</div>
                 </div>
             </div>
@@ -287,18 +287,18 @@
         <div class="sx-header">
             <div class="sx-eyebrow">¿Por qué Wyoming?</div>
             <h2>¿Por qué Wyoming?</h2>
-            <p class="sx-lead">Wyoming es tax-friendly para founders LATAM: privacidad de owners + 0% income + bajo costo. Filing fee $100, annual fee $60/año (mín.) y aprobación inmediata. Si buscas proteger activos o crear un holding privado al menor costo, Wyoming es tu estado.</p>
+            <p class="sx-lead">Wyoming es tax-friendly para founders LATAM: privacidad de owners, 0% income tax estatal, sin franchise tax y el menor costo anual de los tres estados. Filing fee $100, annual fee $60/año (mín.). Si buscas proteger activos o crear un holding privado al menor costo, Wyoming es tu estado. </p>
         </div>
         <div class="adv-grid">
             <div class="adv-card">
                 <div class="adv-icon"><i data-lucide="percent" style="width:22px;height:22px"></i></div>
                 <h4>0% Income Tax estatal</h4>
-                <p>Wyoming no cobra income tax estatal. Tu LLC paga solo a nivel federal — y como single-member non-resident sin actividad en EE.UU., el federal suele ser $0. Solo debes presentar el formulario 5472 + 1120 cada año.</p>
+                <p>Wyoming no cobra income tax estatal. Tu LLC paga solo a nivel federal, como single-member non-resident sin actividad física en EE.UU., no necesariamente hay un pago federal, pero sí la obligación de presentar el Form 5472 + Pro Forma 1120 cada año ante el IRS. </p>
             </div>
             <div class="adv-card">
                 <div class="adv-icon"><i data-lucide="shield" style="width:22px;height:22px"></i></div>
                 <h4>Holdings y asset protection</h4>
-                <p>Wyoming es el estado de referencia para estructurar holdings y proteger activos. Legislación favorable al propietario con los costos recurrentes más bajos del país.</p>
+                <p>Agregar al texto existente: Wyoming es el único estado que extiende la protección de charging order incluso a LLCs de un solo miembro — la más robusta del país. </p>
             </div>
             <div class="adv-card">
                 <div class="adv-icon"><i data-lucide="lock" style="width:22px;height:22px"></i></div>
@@ -369,7 +369,7 @@
                 <div>
                     <div class="step-top">
                         <span class="step-h">Radica los Articles of Organization</span>
-                        <span class="step-meta">Radicación oficial · Aprobación inmediata</span>
+                        <span class="step-meta">Radicación oficial · 5–15 días hábiles</span>
                     </div>
                     <p class="step-p">Documento que constituye tu LLC ante Wyoming Secretary of State. Filing fee $100. Aprobación inmediata online.</p>
                 </div>
@@ -381,7 +381,8 @@
                         <span class="step-h">Solicita tu EIN al IRS</span>
                         <span class="step-meta">Trámite ante el IRS</span>
                     </div>
-                    <p class="step-p">El Employer Identification Number es el "RFC" de tu empresa. Sin SSN debes presentar el SS-4 por fax o correo. Tarda 4–8 semanas si lo haces solo.</p>
+                    <p class="step-p">El Employer Identification Number es el equivalente al RFC en México o NIT en Colombia. Sin SSN debes presentar el SS-4 por fax o correo. Tarda 4–8 semanas si lo haces solo.   
+</p>
                     <a href="#cta-final" class="step-cta"><i data-lucide="zap" style="width:14px;height:14px"></i> Sell·U se encarga →</a>
                 </div>
             </div>
@@ -402,7 +403,7 @@
                         <span class="step-h">Abre tu cuenta bancaria y empieza a operar</span>
                         <span class="step-meta">Sin SSN · 100% remoto</span>
                     </div>
-                    <p class="step-p">Con LLC + EIN puedes abrir cuenta en Mercury, Relay, Wise Business. Acepta pagos en USD, conecta Stripe y empieza a facturar.</p>
+                    <p class="step-p">Con tu LLC activa y tu EIN puedes aplicar a fintechs como Mercury, Relay o Wise Business. El proceso es 100% remoto. Ten en cuenta que la aprobación depende de cada entidad financiera y no está garantizada. Sell·U puede orientarte en el proceso. </p>
                 </div>
             </div>
         </div>
