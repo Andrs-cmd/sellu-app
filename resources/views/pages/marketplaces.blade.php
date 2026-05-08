@@ -143,7 +143,7 @@
         box-shadow: var(--mk-shadow-md);
     }
     .mk-brand-tile.paper { background: var(--mk-white); border: 1px solid var(--mk-ink2); }
-    .mk-brand-tile.navy  { background: var(--mk-navy); border: none; box-shadow: var(--mk-shadow-lg); }
+    .mk-brand-tile.navy  { background: #fff; border: none; box-shadow: var(--mk-shadow-lg); }
     .mk-brand-badge { width: 64px; height: 64px; border-radius: 16px; display: grid; place-items: center; font-weight: 800; font-size: 28px; color: #fff; }
     .mk-brand-tag  { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
 
@@ -303,8 +303,8 @@
                         <div class="mk-brand-badge" style="background:#0071DC;">
                             <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778273323/Wallmart_f07neq.png" alt="Walmart" style="width:44px;height:44px;object-fit:contain;display:block;">
                         </div>
-                        <div style="font-size:16px;font-weight:700;color:var(--mk-paper);">Walmart</div>
-                        <div class="mk-brand-tag" style="color:rgba(251,250,247,0.75);">
+                        <div style="font-size:16px;font-weight:700;color:#434966;">Walmart</div>
+                        <div class="mk-brand-tag" style="color:#434966;">
                             <span style="width:6px;height:6px;border-radius:3px;background:var(--mk-accent);"></span>
                             WFS · menos saturado
                         </div>
