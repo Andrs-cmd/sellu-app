@@ -266,7 +266,7 @@
                 <div style="transform:rotate(-3deg);min-width:180px;">
                     <div class="mk-brand-tile paper floating" style="animation-delay:0s;">
                         <div class="mk-brand-badge" style="background:#FF9900;">
-                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/amazon_j3cpnc.png" alt="Amazon" style="width:44px;height:44px;object-fit:contain;display:block;">
+                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778273547/amazon2_cvo6qy.png" alt="Amazon" style="width:44px;height:44px;object-fit:contain;display:block;">
                         </div>
                         <div style="font-size:16px;font-weight:700;color:var(--mk-navy);">Amazon</div>
                         <div class="mk-brand-tag" style="color:var(--mk-ink5);">
@@ -316,7 +316,7 @@
                 <div style="transform:rotate(-1.5deg);">
                     <div class="mk-brand-tile paper floating" style="animation-delay:1.2s;">
                         <div class="mk-brand-badge" style="background:#000;width:50px;height:50px;">
-                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/tiktokshop_tdidoe.png" alt="TikTok Shop" style="width:34px;height:34px;object-fit:contain;display:block;">
+                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778273547/tiktok2_qokys7.png" alt="TikTok Shop" style="width:34px;height:34px;object-fit:contain;display:block;">
                         </div>
                         <div style="font-size:14px;font-weight:700;">TikTok Shop</div>
                         <div class="mk-brand-tag" style="color:var(--mk-ink5);"><span style="width:6px;height:6px;border-radius:3px;background:#FE2C55;"></span>Social commerce</div>
