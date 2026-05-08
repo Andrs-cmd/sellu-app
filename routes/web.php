@@ -12,6 +12,8 @@ use App\Http\Controllers\Admin\NotaTramiteController;
 use App\Http\Controllers\Admin\UsuarioController;
 use App\Http\Controllers\PagoController;
 use App\Http\Controllers\Admin\NotificacionController;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rules\Password;
 
 // ── Páginas públicas ──
 Route::get('/', fn() => view('pages.home'));
@@ -97,8 +99,25 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/documentos/{documento}', [DocumentoController::class, 'destroy'])->name('documentos.destroy');
 
     Route::post('/pago/checkout', [PagoController::class, 'checkout'])->name('pago.checkout');
-Route::get('/pago/success', [PagoController::class, 'success'])->name('pago.success');
+    Route::get('/pago/success', [PagoController::class, 'success'])->name('pago.success');
 
+    Route::patch('/cuenta/perfil', function (Request $request) {
+        $request->validate([
+            'name'  => 'required|string|max:255',
+            'email' => 'required|email|max:255|unique:users,email,' . auth()->id(),
+        ]);
+        auth()->user()->update($request->only('name', 'email'));
+        return redirect()->route('dashboard')->with('status_cuenta', 'Perfil actualizado correctamente.');
+    })->name('cuenta.perfil');
+
+    Route::put('/cuenta/password', function (Request $request) {
+        $request->validate([
+            'current_password' => ['required', 'current_password'],
+            'password'         => ['required', 'confirmed', Password::defaults()],
+        ]);
+        auth()->user()->update(['password' => Hash::make($request->password)]);
+        return redirect()->route('dashboard')->with('status_cuenta', 'Contraseña actualizada correctamente.');
+    })->name('cuenta.password');
 });
 
 // ── Panel admin ──

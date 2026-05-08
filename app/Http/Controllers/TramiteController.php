@@ -29,7 +29,7 @@ class TramiteController extends Controller
         $query->where('estado', $estado);
     }
 
-    $tramites = $query->latest()->get();
+    $tramites = $query->with('documentos')->latest()->get();
 
     return view('dashboard', compact('tramites'));
 }
