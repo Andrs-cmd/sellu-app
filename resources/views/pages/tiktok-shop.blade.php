@@ -6,7 +6,8 @@
     <title>TikTok Shop — Vende en EE.UU. desde LATAM | Sell-U</title>
     <meta name="description" content="Abre tu tienda TikTok Shop en EE.UU. desde LATAM. Sell-U gestiona tu cuenta Seller Center, shoppable videos, FBT y afiliados en 3–5 días.">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     @verbatim
     <script type="application/ld+json">
     {
@@ -29,7 +30,7 @@
     .tt-page {
         --tt-black:     #010101;
         --tt-cyan:      #25F4EE;
-        --tt-pink:      #f6bb33;
+        --tt-pink:      #FE2C55;
         --tt-cyan-deep: #008a85;
         --t-dark:       #434966;
         --t-yellow:     #f6bb33;
@@ -38,7 +39,7 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html, body {
-        font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
         -webkit-font-smoothing: antialiased;
         background: #fff;
         color: #434966;
@@ -47,7 +48,7 @@
     img { max-width: 100%; display: block; }
 
     .tt-page {
-        font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
         color: var(--t-dark);
         background: #fff;
         -webkit-font-smoothing: antialiased;
@@ -65,7 +66,7 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 700;
         font-size: 15px;
         padding: 14px 28px;
@@ -81,12 +82,12 @@
     .tt-btn:hover { transform: translateY(-2px); }
     .tt-btn-yellow  { background: var(--t-yellow); color: var(--t-dark); box-shadow: 0 6px 18px rgba(246,187,51,0.32); }
     .tt-btn-yellow:hover  { box-shadow: 0 12px 28px rgba(246,187,51,0.45); }
-    .tt-btn-pink    { background: var(--tt-pink); color: var(--t-dark); box-shadow: 0 6px 18px rgba(246,187,51,0.32); }
-    .tt-btn-pink:hover    { box-shadow: 0 12px 28px rgba(246,187,51,0.45); }
+    .tt-btn-pink    { background: var(--tt-pink); color: #fff; box-shadow: 0 6px 18px rgba(254,44,85,0.32); }
+    .tt-btn-pink:hover    { box-shadow: 0 12px 28px rgba(254,44,85,0.45); }
     .tt-btn-od      { background: transparent; color: var(--t-dark); border-color: var(--t-dark); }
     .tt-btn-od:hover      { background: var(--t-dark); color: #fff; }
     .tt-btn-op      { background: transparent; color: var(--tt-pink); border-color: var(--tt-pink); }
-    .tt-btn-op:hover      { background: var(--tt-pink); color: var(--t-dark); }
+    .tt-btn-op:hover      { background: var(--tt-pink); color: #fff; }
     .tt-btn-ow      { background: transparent; color: #fff; border-color: #fff; }
     .tt-btn-ow:hover      { background: #fff; color: var(--t-dark); }
 
@@ -102,7 +103,7 @@
 
     /* ---- Sections ---- */
     .tt-section      { padding: 96px 0; position: relative; }
-    .tt-section-dark { background: #0D1B3E; color: #fff; }
+    .tt-section-dark { background: var(--tt-black); color: #fff; }
     .tt-section-gray { background: var(--t-gray); }
 
     /* ---- Keyframe animations ---- */
@@ -127,7 +128,7 @@
     }
     @keyframes tt-bagGlow {
         0%, 100% { box-shadow: 0 32px 80px rgba(1,1,1,0.4), 0 0 60px rgba(37,244,238,0.10); }
-        50%      { box-shadow: 0 32px 80px rgba(1,1,1,0.4), 0 0 90px rgba(37,244,238,0.22), 0 0 120px rgba(246,187,51,0.10); }
+        50%      { box-shadow: 0 32px 80px rgba(1,1,1,0.4), 0 0 90px rgba(37,244,238,0.22), 0 0 120px rgba(254,44,85,0.10); }
     }
     @keyframes tt-glitchCyan {
         0%, 90%, 100% { transform: translate(0,0); opacity: 0.9; }
@@ -214,7 +215,7 @@
         display: inline-flex; align-items: center; gap: 6px;
         padding: 5px 10px;
         background: var(--tt-pink);
-        color: var(--t-dark);
+        color: #fff;
         border-radius: 999px;
         font-size: 11px;
         font-weight: 700;
@@ -283,7 +284,7 @@
     }
     .tt-metric-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(67,73,102,0.12); }
     .tt-metric-num {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 800;
         font-size: 56px;
         line-height: 1;
@@ -294,7 +295,7 @@
     .tt-glitch-text {
         position: relative;
         display: inline-block;
-        text-shadow: 2px 0 0 var(--tt-cyan), -2px 0 0 var(--t-yellow);
+        text-shadow: 2px 0 0 var(--tt-cyan), -2px 0 0 var(--tt-pink);
     }
 
     /* ---- Live mockup (phone) ---- */
@@ -307,7 +308,7 @@
         background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
         border-radius: 24px;
         overflow: hidden;
-        box-shadow: 0 40px 80px rgba(0,0,0,0.5), 0 0 60px rgba(246,187,51,0.15);
+        box-shadow: 0 40px 80px rgba(0,0,0,0.5), 0 0 60px rgba(254,44,85,0.15);
     }
     .tt-live-mockup::after {
         content: '';
@@ -463,6 +464,116 @@
         .tt-section-h2 { font-size: 28px !important; }
         .tt-final-h2 { font-size: 36px !important; }
     }
+    /* ══ PBR SECTION ══════════════════════════════════════════════════ */
+    .pbr-section { padding: 112px 0 96px; position: relative; overflow: hidden; background: #fbfaf7; }
+    .pbr-container { max-width: 1160px; margin: 0 auto; position: relative; padding: 0 32px; }
+    .pbr-paper-mark {
+        position: absolute; top: -120px; right: -160px;
+        width: 520px; height: 520px; background: #f6bb33;
+        opacity: 0.08; border-radius: 28px; transform: rotate(12deg);
+        z-index: 0; pointer-events: none;
+    }
+    .pbr-header { max-width: 880px; position: relative; z-index: 1; margin: 0 auto 64px; text-align: center; }
+    .pbr-eyebrow-row {
+        display: inline-flex; align-items: center; gap: 10px;
+        padding: 6px 12px 6px 8px; border-radius: 999px;
+        background: #fff; border: 1px solid #e5e6ea;
+        box-shadow: 0 1px 2px rgba(46,56,86,0.04); margin-bottom: 24px;
+    }
+    .pbr-eyebrow-dot {
+        width: 18px; height: 18px; border-radius: 999px; background: #f6bb33;
+        display: inline-flex; align-items: center; justify-content: center;
+        color: #434966; font-weight: 700; font-size: 11px; font-family: 'Poppins', sans-serif;
+    }
+    .pbr-eyebrow-label { color: #434966; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+    .pbr-title {
+        font-family: 'Poppins', sans-serif; font-weight: 600;
+        font-size: 56px; line-height: 66px; letter-spacing: -0.025em;
+        color: #434966; margin: 0 0 28px; text-wrap: balance;
+    }
+    .pbr-title .pbr-accent {
+        position: relative; white-space: nowrap; display: inline-block;
+    }
+    .pbr-title .pbr-accent::after {
+        content: ""; position: absolute; left: 0; right: 0; bottom: -6px;
+        height: 8px; background: #f6bb33; border-radius: 2px;
+        transform-origin: left center;
+        animation: pbr-underline 700ms cubic-bezier(0.16,1,0.3,1) 200ms both;
+    }
+    @keyframes pbr-underline { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .pbr-subtitle { font-size: 19px; line-height: 30px; color: #3a3d46; max-width: 720px; margin: 0 auto; }
+    .pbr-definition {
+        display: grid; grid-template-columns: 220px 1fr; gap: 32px;
+        align-items: start; padding: 28px 32px;
+        background: #fff; border: 1px solid #e5e6ea; border-left: 3px solid #434966;
+        border-radius: 14px; box-shadow: 0 1px 2px rgba(46,56,86,0.05),0 1px 3px rgba(46,56,86,0.04);
+        margin-bottom: 56px; position: relative; z-index: 1;
+    }
+    .pbr-definition .pbr-term {
+        font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px;
+        letter-spacing: 0.04em; text-transform: uppercase; color: #434966;
+    }
+    .pbr-definition .pbr-term-full {
+        display: block; font-size: 12px; letter-spacing: 0.08em; color: #6b6f7a;
+        font-weight: 500; margin-top: 6px; text-transform: none;
+        font-family: 'JetBrains Mono', monospace;
+    }
+    .pbr-definition .pbr-desc { font-size: 16px; line-height: 26px; color: #3a3d46; }
+    .pbr-definition .pbr-desc strong { color: #434966; font-weight: 600; }
+    .pbr-grid {
+        display: grid; grid-template-columns: repeat(4,1fr);
+        gap: 1px; background: #e5e6ea;
+        border: 1px solid #e5e6ea; border-radius: 14px; overflow: hidden;
+        position: relative; z-index: 1;
+    }
+    .pbr-card {
+        background: #fff; padding: 32px 28px 36px;
+        display: flex; flex-direction: column; gap: 14px;
+        transition: background 200ms cubic-bezier(0.16,1,0.3,1);
+    }
+    .pbr-card:hover { background: #f5f3ee; }
+    .pbr-card .pbr-num { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #c89320; font-weight: 500; letter-spacing: 0.06em; }
+    .pbr-card .pbr-icon {
+        width: 40px; height: 40px; border-radius: 10px;
+        background: #f5f3ee; border: 1px solid #e5e6ea;
+        display: inline-flex; align-items: center; justify-content: center;
+        color: #434966; margin-bottom: 4px;
+    }
+    .pbr-card h4 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 18px; line-height: 24px; letter-spacing: -0.01em; color: #434966; margin: 0; }
+    .pbr-card p  { font-size: 14px; line-height: 22px; color: #3a3d46; margin: 0; }
+    .pbr-close {
+        margin-top: 64px; background: #434966; border-radius: 20px; padding: 40px 48px;
+        display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center;
+        position: relative; z-index: 1;
+        box-shadow: 0 12px 24px -8px rgba(46,56,86,0.10),0 4px 8px -4px rgba(46,56,86,0.06);
+    }
+    .pbr-close .pbr-close-eyebrow { color: #f6bb33; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; display: block; }
+    .pbr-close p { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 22px; line-height: 32px; letter-spacing: -0.01em; color: #fbfaf7; margin: 0; max-width: 720px; }
+    .pbr-close .pbr-brand { color: #f6bb33; font-weight: 600; }
+    .pbr-checks { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 20px; font-size: 13px; color: rgba(251,250,247,0.72); }
+    .pbr-checks span { display: inline-flex; align-items: center; gap: 6px; }
+    .pbr-checks i { color: #f6bb33; }
+    .pbr-cta {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: #f6bb33; color: #434966;
+        font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15px;
+        padding: 14px 22px; border-radius: 12px; border: none; cursor: pointer;
+        box-shadow: 0 1px 2px rgba(46,56,86,0.05),0 1px 3px rgba(46,56,86,0.04);
+        transition: background 200ms, box-shadow 200ms; text-decoration: none; white-space: nowrap;
+    }
+    .pbr-cta:hover { background: #f9cc66; box-shadow: 0 4px 8px -2px rgba(46,56,86,0.06); }
+    @media (max-width: 980px) {
+        .pbr-grid { grid-template-columns: repeat(2,1fr) !important; }
+        .pbr-title { font-size: 40px !important; line-height: 50px !important; }
+        .pbr-definition { grid-template-columns: 1fr !important; gap: 12px !important; }
+        .pbr-close { grid-template-columns: 1fr !important; padding: 32px !important; }
+    }
+    @media (max-width: 600px) {
+        .pbr-section { padding: 80px 0 72px !important; }
+        .pbr-grid { grid-template-columns: 1fr !important; }
+        .pbr-title { font-size: 32px !important; line-height: 42px !important; }
+        .pbr-subtitle { font-size: 17px !important; line-height: 26px !important; }
+    }
     </style>
 </head>
 <body>
@@ -482,7 +593,7 @@
                 {{-- Left --}}
                 <div>
                     <!--<span class="tt-eyebrow tt-fade-in-up" style="animation-delay:0ms;">TikTok Shop · Social Commerce USA</span>-->
-                    <h1 class="tt-hero-h1 tt-fade-in-up" style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:56px;line-height:1.05;letter-spacing:-0.025em;margin-top:18px;margin-bottom:22px;color:var(--t-dark);animation-delay:50ms;">
+                    <h1 class="tt-hero-h1 tt-fade-in-up" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:56px;line-height:1.05;letter-spacing:-0.025em;margin-top:18px;margin-bottom:22px;color:var(--t-dark);animation-delay:50ms;">
                         <span style="display:block;">Tu producto</span>
                         <span style="display:block;">en el feed de</span>
                         <span style="display:block;color:#f6bb33;">150 millones</span>
@@ -505,7 +616,7 @@
                 <div class="tt-card-col" style="display:flex;justify-content:flex-end;">
                     <div class="tt-logo-card">
                         {{-- bg texture --}}
-                        <div aria-hidden style="position:absolute;inset:0;background:radial-gradient(circle at 50% 50%, rgba(37,244,238,0.06), transparent 60%), radial-gradient(circle at 80% 90%, rgba(246,187,51,0.06), transparent 50%);pointer-events:none;"></div>
+                        <div aria-hidden style="position:absolute;inset:0;background:radial-gradient(circle at 50% 50%, rgba(37,244,238,0.06), transparent 60%), radial-gradient(circle at 80% 90%, rgba(254,44,85,0.06), transparent 50%);pointer-events:none;"></div>
 
                         {{-- Header row --}}
                         <div style="position:relative;display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
@@ -541,7 +652,7 @@
                                         <svg width="64" height="84" viewBox="0 0 64 84"><path d="M 38 6 C 38 6, 46 22, 60 24 L 60 38 C 50 38, 42 34, 38 30 L 38 56 C 38 71, 25 80, 14 80 C 6 80, 0 73, 0 64 C 0 54, 8 47, 18 47 C 21 47, 23 47.5, 24 48 L 24 62 C 23 61, 21 60, 19 60 C 16 60, 13 62.5, 13 66 C 13 69, 16 71, 19 71 C 23 71, 26 68, 26 63 L 26 6 Z" fill="#25F4EE"/></svg>
                                     </div>
                                     <div style="position:absolute;inset:0;mix-blend-mode:screen;animation:tt-glitchPink 3.4s ease-in-out infinite;">
-                                        <svg width="64" height="84" viewBox="0 0 64 84"><path d="M 38 6 C 38 6, 46 22, 60 24 L 60 38 C 50 38, 42 34, 38 30 L 38 56 C 38 71, 25 80, 14 80 C 6 80, 0 73, 0 64 C 0 54, 8 47, 18 47 C 21 47, 23 47.5, 24 48 L 24 62 C 23 61, 21 60, 19 60 C 16 60, 13 62.5, 13 66 C 13 69, 16 71, 19 71 C 23 71, 26 68, 26 63 L 26 6 Z" fill="#f6bb33"/></svg>
+                                        <svg width="64" height="84" viewBox="0 0 64 84"><path d="M 38 6 C 38 6, 46 22, 60 24 L 60 38 C 50 38, 42 34, 38 30 L 38 56 C 38 71, 25 80, 14 80 C 6 80, 0 73, 0 64 C 0 54, 8 47, 18 47 C 21 47, 23 47.5, 24 48 L 24 62 C 23 61, 21 60, 19 60 C 16 60, 13 62.5, 13 66 C 13 69, 16 71, 19 71 C 23 71, 26 68, 26 63 L 26 6 Z" fill="#FE2C55"/></svg>
                                     </div>
                                     <div style="position:absolute;inset:0;">
                                         <svg width="64" height="84" viewBox="0 0 64 84"><path d="M 38 6 C 38 6, 46 22, 60 24 L 60 38 C 50 38, 42 34, 38 30 L 38 56 C 38 71, 25 80, 14 80 C 6 80, 0 73, 0 64 C 0 54, 8 47, 18 47 C 21 47, 23 47.5, 24 48 L 24 62 C 23 61, 21 60, 19 60 C 16 60, 13 62.5, 13 66 C 13 69, 16 71, 19 71 C 23 71, 26 68, 26 63 L 26 6 Z" fill="#ffffff"/></svg>
@@ -552,7 +663,7 @@
 
                         {{-- Title --}}
                         <div style="position:relative;text-align:center;margin-top:8px;">
-                            <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:28px;color:#fff;letter-spacing:-0.02em;opacity:0;animation:tt-fadeInUp 700ms ease forwards 2.4s;">
+                            <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:28px;color:#fff;letter-spacing:-0.02em;opacity:0;animation:tt-fadeInUp 700ms ease forwards 2.4s;">
                                 TikTok<span style="font-weight:500;opacity:0.85;">Shop</span>
                             </div>
                         </div>
@@ -562,11 +673,11 @@
                         {{-- Stats row --}}
                         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;position:relative;">
                             <div style="background:rgba(255,255,255,0.05);border-radius:12px;padding:12px 14px;">
-                                <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:22px;color:var(--tt-cyan);letter-spacing:-0.02em;">150M+</div>
+                                <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:22px;color:var(--tt-cyan);letter-spacing:-0.02em;">150M+</div>
                                 <div style="font-size:11px;color:rgba(255,255,255,0.6);margin-top:2px;">Usuarios EE.UU.</div>
                             </div>
                             <div style="background:rgba(255,255,255,0.05);border-radius:12px;padding:12px 14px;">
-                                <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:22px;color:var(--tt-pink);letter-spacing:-0.02em;">$26.2B</div>
+                                <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:22px;color:var(--tt-pink);letter-spacing:-0.02em;">$26.2B</div>
                                 <div style="font-size:11px;color:rgba(255,255,255,0.6);margin-top:2px;">GMV · H1 2025</div>
                             </div>
                         </div>
@@ -596,7 +707,7 @@
     <section class="tt-section">
         <div class="tt-container">
             <div style="text-align:center;max-width:760px;margin:0 auto 56px;">
-                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
+                <h2 class="tt-section-h2" style="font-family:'Poppins',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
                     El marketplace de <span class="tt-glitch-text">social commerce</span> más grande del mundo.
                 </h2>
             </div>
@@ -627,7 +738,7 @@
 
     {{-- ===== LIVE SHOPPING ===== --}}
     <!--<section class="tt-section tt-section-dark" style="overflow:hidden;position:relative;">
-        <div aria-hidden style="position:absolute;top:-160px;left:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(246,187,51,0.18),transparent 60%);pointer-events:none;"></div>
+        <div aria-hidden style="position:absolute;top:-160px;left:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(254,44,85,0.18),transparent 60%);pointer-events:none;"></div>
         <div aria-hidden style="position:absolute;bottom:-180px;right:-120px;width:460px;height:460px;background:radial-gradient(circle,rgba(37,244,238,0.12),transparent 60%);pointer-events:none;"></div>
         <div class="tt-container" style="position:relative;">
             <div class="tt-live-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
@@ -635,7 +746,7 @@
                 {{-- Left text --}}
                 <div>
                     <span class="tt-eyebrow">Exclusivo TikTok Shop</span>
-                    <h2 style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:44px;line-height:1.15;letter-spacing:-0.025em;color:#fff;margin-top:16px;margin-bottom:18px;">
+                    <h2 style="font-family:'Poppins',sans-serif;font-weight:800;font-size:44px;line-height:1.15;letter-spacing:-0.025em;color:#fff;margin-top:16px;margin-bottom:18px;">
                         Vende <span style="border-bottom:3px dotted var(--tt-cyan);padding-bottom:4px;">en vivo</span>.<br>
                         Tu tienda abierta<br>las 24 horas.
                     </h2>
@@ -724,26 +835,26 @@
     <section class="tt-section tt-section-gray">
         <div class="tt-container">
             <div style="text-align:center;max-width:760px;margin:0 auto 56px;">
-                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
+                <h2 class="tt-section-h2" style="font-family:'Poppins',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
                     Todo lo que hacemos para que<br>tu tienda TikTok Shop venda.
                 </h2>
             </div>
             <div class="tt-services-grid">
 
-                <div class="tt-service-card" data-hc="#f6bb33">
-                    <div class="tt-service-icon" style="background:#FEF5DD;">🏪</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Apertura de cuenta TikTok Shop</h3>
+                <div class="tt-service-card" data-hc="#FE2C55">
+                    <div class="tt-service-icon" style="background:#FFF0F3;">🏪</div>
+                    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Apertura de cuenta TikTok Shop</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Creamos y verificamos tu cuenta Business Seller en TikTok Shop Seller Center correctamente desde el inicio.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
-                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Registro con tu LLC y EIN</span></li>
-                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Verificación de identidad guiada</span></li>
-                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Configuración de cuenta bancaria US</span></li>
+                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#FE2C55;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Registro con tu LLC y EIN</span></li>
+                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#FE2C55;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Verificación de identidad guiada</span></li>
+                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#FE2C55;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Configuración de cuenta bancaria US</span></li>
                     </ul>
                 </div>
 
                 <div class="tt-service-card" data-hc="#25F4EE">
                     <div class="tt-service-icon" style="background:#E6FCFB;">📦</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Configuración de tienda</h3>
+                    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Configuración de tienda</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Configuramos tu Seller Center, nombre de tienda, categorías y preferencias de envío.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
                         <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#25F4EE;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Nombre y perfil de tienda</span></li>
@@ -754,7 +865,7 @@
 
                 <div class="tt-service-card" data-hc="#f6bb33">
                     <div class="tt-service-icon" style="background:#FEF5DD;">🎥</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Listings para shoppable content</h3>
+                    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Listings para shoppable content</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Cargamos tus productos optimizados para aparecer en shoppable videos y live streams.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
                         <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Títulos y descripciones en inglés</span></li>
@@ -763,20 +874,20 @@
                     </ul>
                 </div>
 
-                <div class="tt-service-card" data-hc="#f6bb33">
-                    <div class="tt-service-icon" style="background:#FEF5DD;">🚚</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">FBT — Fulfilled by TikTok</h3>
+                <div class="tt-service-card" data-hc="#FE2C55">
+                    <div class="tt-service-icon" style="background:#FFF0F3;">🚚</div>
+                    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">FBT — Fulfilled by TikTok</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Configuramos Fulfilled by TikTok para que la plataforma gestione tu logística y envíos.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
-                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Envío a warehouse TikTok</span></li>
-                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Etiquetas y requisitos de prep</span></li>
-                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Entrega rápida activada</span></li>
+                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#FE2C55;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Envío a warehouse TikTok</span></li>
+                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#FE2C55;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Etiquetas y requisitos de prep</span></li>
+                        <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#FE2C55;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Entrega rápida activada</span></li>
                     </ul>
                 </div>
 
                 <div class="tt-service-card" data-hc="#25F4EE">
                     <div class="tt-service-icon" style="background:#E6FCFB;">📣</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Activación de afiliados</h3>
+                    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Activación de afiliados</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Conectamos tu tienda con creadores de TikTok para que promuevan tus productos a cambio de comisión.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
                         <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#25F4EE;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Acceso al TikTok Affiliate Marketplace</span></li>
@@ -787,7 +898,7 @@
 
                 <div class="tt-service-card" data-hc="#f6bb33">
                     <div class="tt-service-icon" style="background:#FEF5DD;">💵</div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Cobros y payouts en USD</h3>
+                    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;line-height:1.25;letter-spacing:-0.015em;color:var(--t-dark);margin:0;">Cobros y payouts en USD</h3>
                     <p style="font-size:14px;line-height:1.6;color:#6b6f7a;margin:0;">Configuramos cómo recibes los pagos de TikTok en dólares americanos desde LATAM.</p>
                     <ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px;">
                         <li style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--t-dark);font-weight:500;"><span style="color:#f6bb33;font-weight:800;line-height:1.4;flex-shrink:0;">✓</span><span>Cuenta bancaria US vinculada</span></li>
@@ -807,8 +918,8 @@
     <section class="tt-section">
         <div class="tt-container">
             <div style="text-align:center;max-width:800px;margin:0 auto 64px;">
-                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
-                    <span style="color:var(--tt-pink);"></span>4 pasos,
+                <h2 class="tt-section-h2" style="font-family:'Poppins',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
+                    <span style="color:var(--tt-pink);">3–5 días</span>, 4 pasos,<br>
                     para tener tu tienda TikTok Shop activa y vendiendo.
                 </h2>
             </div>
@@ -819,7 +930,7 @@
                         <div class="tt-step-num">01</div>
                         <div class="tt-process-line"></div>
                     </div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Diagnóstico inicial</h3>
+                    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Diagnóstico inicial</h3>
                     <p style="font-size:14px;line-height:1.6;color:#666;margin:0;">Analizamos tu LLC, producto y estructura para diseñar el mejor camino de entrada a TikTok Shop.</p>
                 </div>
 
@@ -828,7 +939,7 @@
                         <div class="tt-step-num">02</div>
                         <div class="tt-process-line"></div>
                     </div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Preparamos documentación</h3>
+                    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Preparamos documentación</h3>
                     <p style="font-size:14px;line-height:1.6;color:#666;margin:0;">Recopilamos LLC, EIN, identificación y cuenta bancaria. Preparamos el W-9 y documentación de negocio.</p>
                 </div>
 
@@ -837,7 +948,7 @@
                         <div class="tt-step-num">03</div>
                         <div class="tt-process-line"></div>
                     </div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Registro y verificación</h3>
+                    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Registro y verificación</h3>
                     <p style="font-size:14px;line-height:1.6;color:#666;margin:0;">Creamos tu cuenta Seller Center, verificamos tu identidad y completamos el onboarding de la tienda.</p>
                 </div>
 
@@ -845,7 +956,7 @@
                     <div style="display:flex;align-items:center;width:100%;">
                         <div class="tt-step-num">04</div>
                     </div>
-                    <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Lanzamiento</h3>
+                    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:17px;line-height:1.3;color:var(--t-dark);margin:4px 0 0;">Lanzamiento</h3>
                     <p style="font-size:14px;line-height:1.6;color:#666;margin:0;">Cargamos productos, activamos shoppable links, configuramos FBT y conectamos con primeros creadores afiliados.</p>
                 </div>
 
@@ -853,11 +964,90 @@
         </div>
     </section>
 
+    {{-- ===== PBR SECTION ===== --}}
+    <section class="pbr-section">
+        <div class="pbr-paper-mark" aria-hidden="true"></div>
+        <div class="pbr-container">
+
+            <header class="pbr-header">
+                <div class="pbr-eyebrow-row">
+                    <span class="pbr-eyebrow-dot">U</span>
+                    <span class="pbr-eyebrow-label">TikTok Shop · Estados Unidos</span>
+                </div>
+                <h2 class="pbr-title">
+                    <span style="display:block;">El requisito que muchos</span>
+                    <span style="display:block;">descubren <span class="pbr-accent">demasiado tarde</span></span>
+                    <span style="display:block;">en TikTok Shop.</span>
+                </h2>
+                <p class="pbr-subtitle">
+                    Para vender en TikTok Shop EE.UU., no basta con tener una LLC y un EIN. La plataforma también exige un representante de negocio en Estados Unidos que pueda pasar la verificación.
+                </p>
+            </header>
+
+            <div class="pbr-definition">
+                <div class="pbr-term">
+                    PBR
+                    <span class="pbr-term-full">Primary Business Representative</span>
+                </div>
+                <p class="pbr-desc">
+                    Es la persona basada en EE.UU. que actúa como <strong>enlace de cumplimiento</strong> ante TikTok Shop. Debe contar con documentación válida estadounidense —ID, dirección verificable y SSN o ITIN— y su información debe coincidir <strong>exactamente</strong> con los documentos del negocio.
+                </p>
+            </div>
+
+            <div class="pbr-grid">
+                <article class="pbr-card">
+                    <span class="pbr-num">01</span>
+                    <span class="pbr-icon"><i data-lucide="shield-check" width="20" height="20"></i></span>
+                    <h4>Verificación obligatoria</h4>
+                    <p>TikTok Shop exige validar la identidad del representante y la información del negocio antes de aprobar la cuenta.</p>
+                </article>
+                <article class="pbr-card">
+                    <span class="pbr-num">02</span>
+                    <span class="pbr-icon"><i data-lucide="user-check" width="20" height="20"></i></span>
+                    <h4>No es un simple contacto</h4>
+                    <p>El PBR funciona como el punto de referencia legal y operativo de la cuenta frente a la plataforma.</p>
+                </article>
+                <article class="pbr-card">
+                    <span class="pbr-num">03</span>
+                    <span class="pbr-icon"><i data-lucide="file-check-2" width="20" height="20"></i></span>
+                    <h4>Los datos deben coincidir</h4>
+                    <p>Errores en nombres, direcciones o documentos pueden causar rechazos, congelamiento de cuenta o fallas en la re-verificación.</p>
+                </article>
+                <article class="pbr-card">
+                    <span class="pbr-num">04</span>
+                    <span class="pbr-icon"><i data-lucide="globe-2" width="20" height="20"></i></span>
+                    <h4>Riesgo para marcas extranjeras</h4>
+                    <p>Muchos crean su LLC y obtienen su EIN, pero descubren después que no tienen la estructura correcta para pasar TikTok Shop.</p>
+                </article>
+            </div>
+
+            <div class="pbr-close">
+                <div>
+                    <span class="pbr-close-eyebrow">El enfoque Sell-U</span>
+                    <p>
+                        En <span class="pbr-brand">Sell-U</span> acompañamos la creación de la estructura correcta desde el inicio: LLC, EIN, documentación alineada y preparación para procesos de verificación en plataformas como TikTok Shop.
+                    </p>
+                    <div class="pbr-checks">
+                        <span><i data-lucide="check" width="14" height="14"></i> LLC en Delaware o Wyoming</span>
+                        <span><i data-lucide="check" width="14" height="14"></i> EIN ante el IRS</span>
+                        <span><i data-lucide="check" width="14" height="14"></i> Documentación alineada</span>
+                        <span><i data-lucide="check" width="14" height="14"></i> Preparación de verificación</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20información%20sobre%20el%20PBR%20para%20TikTok%20Shop" class="pbr-cta">
+                    Agenda una llamada
+                    <i data-lucide="arrow-right" width="16" height="16"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
     {{-- ===== REQUISITES ===== --}}
     <section class="tt-section tt-section-gray">
         <div class="tt-container">
             <div style="text-align:center;max-width:720px;margin:0 auto 24px;">
-                <h2 class="tt-section-h2" style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
+                <h2 class="tt-section-h2" style="font-family:'Poppins',sans-serif;font-weight:700;font-size:38px;line-height:1.2;letter-spacing:-0.02em;color:var(--t-dark);margin:0;">
                     Lo que necesitas tener<br>antes de empezar.
                 </h2>
                 <p style="font-size:16px;line-height:1.65;color:#666;max-width:580px;margin:20px auto 0;">
@@ -872,7 +1062,7 @@
                 <div class="tt-req-card" style="border-left-color:var(--tt-pink);">
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">🏢</div>
                     <div>
-                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">LLC activa en EE.UU.</h3>
+                        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">LLC activa en EE.UU.</h3>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">Empresa registrada en EE.UU. Wyoming o Florida recomendados.</p>
                     </div>
                 </div>
@@ -880,7 +1070,7 @@
                 <div class="tt-req-card" style="border-left-color:var(--tt-cyan);">
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">🔢</div>
                     <div>
-                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">EIN del IRS</h3>
+                        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">EIN del IRS</h3>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">Número de identificación fiscal para tu empresa americana.</p>
                     </div>
                 </div>
@@ -888,7 +1078,7 @@
                 <div class="tt-req-card" style="border-left-color:var(--t-yellow);">
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">🏦</div>
                     <div>
-                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Cuenta bancaria US</h3>
+                        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Cuenta bancaria US</h3>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">Cuenta bancaria americana para recibir tus pagos de TikTok en dólares.</p>
                     </div>
                 </div>
@@ -896,7 +1086,7 @@
                 <div class="tt-req-card" style="border-left-color:var(--tt-pink);">
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">📱</div>
                     <div>
-                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Cuenta TikTok Business</h3>
+                        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Cuenta TikTok Business</h3>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">Cuenta TikTok convertida a Business Account. No puedes usar una cuenta personal para vender.</p>
                     </div>
                 </div>
@@ -905,8 +1095,8 @@
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">📋</div>
                     <div>
                         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-                            <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">W-9 / Información fiscal</h3>
-                            <span style="background:#FEF5DD;color:var(--tt-pink);font-size:10px;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:0.04em;">Exclusivo TikTok</span>
+                            <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">W-9 / Información fiscal</h3>
+                            <span style="background:#FFF0F3;color:var(--tt-pink);font-size:10px;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:0.04em;">Exclusivo TikTok</span>
                         </div>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">TikTok reporta transacciones al IRS. Necesitas completar el W-9 con tu TIN (EIN o SSN).</p>
                     </div>
@@ -915,7 +1105,7 @@
                 <div class="tt-req-card" style="border-left-color:var(--t-yellow);">
                     <div style="font-size:24px;line-height:1;flex-shrink:0;">📸</div>
                     <div>
-                        <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Producto listo con imágenes</h3>
+                        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;line-height:1.3;color:var(--t-dark);margin:0;">Producto listo con imágenes</h3>
                         <p style="font-size:13px;line-height:1.55;color:#666;margin:6px 0 0;">Producto definido con proveedor o inventario, fotos en fondo blanco (mínimo 800×800 px).</p>
                     </div>
                 </div>
@@ -926,12 +1116,12 @@
 
     {{-- ===== QUOTE ===== --}}
     <section class="tt-section tt-section-dark" style="position:relative;overflow:hidden;">
-        <div aria-hidden style="position:absolute;top:-100px;right:-80px;width:360px;height:360px;background:radial-gradient(circle,rgba(246,187,51,0.15),transparent 65%);pointer-events:none;"></div>
+        <div aria-hidden style="position:absolute;top:-100px;right:-80px;width:360px;height:360px;background:radial-gradient(circle,rgba(254,44,85,0.15),transparent 65%);pointer-events:none;"></div>
         <div class="tt-container" style="position:relative;">
             <div class="tt-quote-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
                 <div>
-                    <div style="font-family:'Montserrat',sans-serif;font-size:120px;font-weight:800;color:var(--tt-pink);opacity:0.3;line-height:0.7;margin-bottom:12px;">"</div>
-                    <p style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:22px;line-height:1.55;color:#fff;font-style:italic;margin:0;max-width:520px;">
+                    <div style="font-family:'Poppins',sans-serif;font-size:120px;font-weight:800;color:var(--tt-pink);opacity:0.3;line-height:0.7;margin-bottom:12px;">"</div>
+                    <p style="font-family:'Poppins',sans-serif;font-weight:600;font-size:22px;line-height:1.55;color:#fff;font-style:italic;margin:0;max-width:520px;">
                         TikTok Shop no es solo un marketplace. Es el único canal donde el algoritmo trabaja para ti: un video viral puede generar $20,000 en ventas en 48 horas sin gastar un dólar en ads.
                     </p>
                     <div style="display:flex;align-items:center;gap:14px;margin-top:28px;">
@@ -944,22 +1134,22 @@
                 </div>
                 <div class="tt-stats-grid">
                     <div class="tt-stat-dark-card">
-                        <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:40px;line-height:1;letter-spacing:-0.03em;color:var(--tt-cyan);">17<span style="font-size:26px;">%</span></div>
+                        <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:40px;line-height:1;letter-spacing:-0.03em;color:var(--tt-cyan);">17<span style="font-size:26px;">%</span></div>
                         <div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,0.78);margin-top:12px;font-weight:500;">Menor costo por adquisición vs Instagram Shops</div>
                         <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;font-weight:500;">CommerceNext 2025</div>
                     </div>
                     <div class="tt-stat-dark-card">
-                        <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:40px;line-height:1;letter-spacing:-0.03em;color:var(--tt-pink);">1<span style="font-size:26px;">h+</span></div>
+                        <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:40px;line-height:1;letter-spacing:-0.03em;color:var(--tt-pink);">1<span style="font-size:26px;">h+</span></div>
                         <div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,0.78);margin-top:12px;font-weight:500;">Tiempo diario promedio de usuarios US en TikTok</div>
                         <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;font-weight:500;">Sensor Tower</div>
                     </div>
                     <div class="tt-stat-dark-card">
-                        <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:40px;line-height:1;letter-spacing:-0.03em;color:var(--t-yellow);">3<span style="font-size:26px;">%</span></div>
+                        <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:40px;line-height:1;letter-spacing:-0.03em;color:var(--t-yellow);">3<span style="font-size:26px;">%</span></div>
                         <div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,0.78);margin-top:12px;font-weight:500;">Fee reducido para nuevos sellers</div>
                         <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;font-weight:500;">Primeros 30 días</div>
                     </div>
                     <div class="tt-stat-dark-card">
-                        <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:40px;line-height:1;letter-spacing:-0.03em;color:#fff;">24<span style="font-size:26px;">/48h</span></div>
+                        <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:40px;line-height:1;letter-spacing:-0.03em;color:#fff;">24<span style="font-size:26px;">/48h</span></div>
                         <div style="font-size:13px;line-height:1.5;color:rgba(255,255,255,0.78);margin-top:12px;font-weight:500;">Tiempo de aprobación de cuenta</div>
                         <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;font-weight:500;">TikTok Shop Seller</div>
                     </div>
@@ -976,12 +1166,12 @@
             </svg>
         </div>
         <div class="tt-container" style="position:relative;text-align:center;">
-            <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(246,187,51,0.10);border:1px solid rgba(246,187,51,0.25);color:var(--t-dark);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:0.06em;">
+            <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(254,44,85,0.10);border:1px solid rgba(254,44,85,0.25);color:var(--tt-pink);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:0.06em;">
                 <span class="tt-live-dot"></span>
                 DISPONIBLE AHORA
             </div>
-            <h2 class="tt-final-h2" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:56px;line-height:1.1;letter-spacing:-0.025em;color:var(--t-dark);margin:24px 0 22px;">
-                Tu tienda TikTok Shop,<br>lista para <span style="color:var(--t-yellow);">vender</span>.
+            <h2 class="tt-final-h2" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:56px;line-height:1.1;letter-spacing:-0.025em;color:var(--t-dark);margin:24px 0 22px;">
+                Tu tienda TikTok Shop,<br>lista para <span style="color:var(--tt-pink);">vender</span>.
             </h2>
             <p style="font-size:18px;line-height:1.6;color:#6b6f7a;margin:0 auto;max-width:640px;">
                 Habla hoy con uno de nuestros especialistas en social commerce. Sin compromiso, en español, desde donde estés en LATAM.
@@ -1086,12 +1276,15 @@
 
     /* 6 — Service card hover top-border color */
     document.querySelectorAll('.tt-service-card').forEach(function (card) {
-        var color = card.dataset.hc || '#f6bb33';
+        var color = card.dataset.hc || '#FE2C55';
         card.addEventListener('mouseenter', function () { card.style.borderTopColor = color; });
         card.addEventListener('mouseleave', function () { card.style.borderTopColor = 'transparent'; });
     });
 
 }());
+
+/* 7 — Lucide icons */
+if (window.lucide) lucide.createIcons();
 </script>
 </body>
 </html>
