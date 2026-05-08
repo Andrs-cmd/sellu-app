@@ -102,7 +102,7 @@
 
     /* ---- Sections ---- */
     .tt-section      { padding: 96px 0; position: relative; }
-    .tt-section-dark { background: var(--tt-black); color: #fff; }
+    .tt-section-dark { background: #0D1B3E; color: #fff; }
     .tt-section-gray { background: var(--t-gray); }
 
     /* ---- Keyframe animations ---- */
@@ -482,7 +482,7 @@
                 {{-- Left --}}
                 <div>
                     <!--<span class="tt-eyebrow tt-fade-in-up" style="animation-delay:0ms;">TikTok Shop · Social Commerce USA</span>-->
-                    <h1 class="tt-hero-h1 tt-fade-in-up" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:56px;line-height:1.05;letter-spacing:-0.025em;margin-top:18px;margin-bottom:22px;color:var(--t-dark);animation-delay:50ms;">
+                    <h1 class="tt-hero-h1 tt-fade-in-up" style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:56px;line-height:1.05;letter-spacing:-0.025em;margin-top:18px;margin-bottom:22px;color:var(--t-dark);animation-delay:50ms;">
                         <span style="display:block;">Tu producto</span>
                         <span style="display:block;">en el feed de</span>
                         <span style="display:block;color:#f6bb33;">150 millones</span>
