@@ -241,22 +241,42 @@
         .pasos-line { position: absolute; top: 20px; left: calc(12.5% + 10px); right: calc(12.5% + 10px); height: 2px; background: var(--gray2); z-index: 0; }
         .paso { text-align: center; position: relative; z-index: 1; padding: 0 12px; opacity: 0; transform: translateY(24px); transition: none; }
         .paso.visible { animation: paso-slide-up 0.5s ease forwards; }
-        .paso-icon { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; position: relative; border: 3px solid var(--white); box-shadow: 0 4px 16px rgba(0,0,0,0.10); opacity: 0; transform: scale(0.4); }
-        .paso.visible .paso-icon { animation: paso-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
-        .paso:nth-child(2).visible .paso-icon { animation-delay: 0.05s; }
-        .paso:nth-child(3).visible .paso-icon { animation-delay: 0.18s; }
-        .paso:nth-child(4).visible .paso-icon { animation-delay: 0.31s; }
-        .paso:nth-child(5).visible .paso-icon { animation-delay: 0.44s; }
-        .paso-icon.n1 { background: #0D1B3E; color: var(--white); }
-        .paso-icon.n2 { background: var(--gold); color: var(--navy); }
-        .paso-icon.n3 { background: #0D1B3E; color: var(--white); }
-        .paso-icon.n4 { background: var(--gold); color: var(--navy); }
-        .paso-icon svg { width: 26px; height: 26px; stroke-width: 2; }
-        .paso-badge { position: absolute; top: -6px; right: -6px; width: 20px; height: 20px; border-radius: 50%; background: var(--white); border: 2px solid currentColor; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 800; display: flex; align-items: center; justify-content: center; line-height: 1; }
+
+        /* ── Liquid Metal Icon ── */
+        .paso-icon { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; position: relative; border: 3px solid rgba(255,255,255,0.85); background-size: 300% 300%; opacity: 0; transform: scale(0.4); }
+        .paso-icon.n1, .paso-icon.n3 {
+            background: linear-gradient(135deg, #0D1B3E 0%, #1e3f84 22%, #071326 44%, #2a52b0 66%, #0a1f4a 88%, #0D1B3E 100%);
+            background-size: 300% 300%; color: var(--white);
+        }
+        .paso-icon.n2, .paso-icon.n4 {
+            background: linear-gradient(135deg, #B8720C 0%, #FFD54F 22%, #F5A623 44%, #FFC233 66%, #C88015 88%, #B8720C 100%);
+            background-size: 300% 300%; color: var(--navy);
+        }
+        .paso-icon svg { width: 26px; height: 26px; stroke-width: 2; position: relative; z-index: 2; }
+        .paso-badge { position: absolute; top: -6px; right: -6px; width: 20px; height: 20px; border-radius: 50%; background: var(--white); border: 2px solid currentColor; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 800; display: flex; align-items: center; justify-content: center; line-height: 1; z-index: 3; }
         .paso-icon.n1 .paso-badge, .paso-icon.n3 .paso-badge { color: #0D1B3E; }
         .paso-icon.n2 .paso-badge, .paso-icon.n4 .paso-badge { color: var(--navy); border-color: var(--navy); }
+
+        /* Visible: entrada + liquid metal continuo */
+        .paso.visible .paso-icon {
+            animation:
+                paso-pop      0.55s cubic-bezier(0.34, 1.56, 0.64, 1)  0s    1        forwards,
+                blob-morph    7s   ease-in-out                          0.7s  infinite normal,
+                liquid-shift  4s   ease                                 0.7s  infinite normal,
+                glow-pulse    3s   ease-in-out                          1.2s  infinite normal;
+        }
+        .paso.visible .paso-icon svg { animation: icon-float 2.5s ease-in-out 1s infinite; }
+
+        /* Stagger escalonado por paso */
+        .paso:nth-child(2).visible .paso-icon { animation-delay: 0s,    0.70s, 0.70s, 1.20s; }
+        .paso:nth-child(3).visible .paso-icon { animation-delay: 0.14s, 0.84s, 0.84s, 1.34s; }
+        .paso:nth-child(4).visible .paso-icon { animation-delay: 0.28s, 0.98s, 0.98s, 1.48s; }
+        .paso:nth-child(5).visible .paso-icon { animation-delay: 0.42s, 1.12s, 1.12s, 1.62s; }
+
         .paso h3 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
         .paso p { font-size: 13px; color: var(--muted); line-height: 1.65; }
+
+        /* ── Keyframes ── */
         @keyframes paso-pop {
             0%   { opacity: 0; transform: scale(0.4) rotate(-12deg); }
             60%  { opacity: 1; transform: scale(1.18) rotate(4deg); }
@@ -266,6 +286,28 @@
         @keyframes paso-slide-up {
             0%   { opacity: 0; transform: translateY(24px); }
             100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes blob-morph {
+            0%, 100% { border-radius: 50%; }
+            15%  { border-radius: 44% 56% 54% 46% / 47% 53% 47% 53%; }
+            30%  { border-radius: 52% 48% 44% 56% / 56% 44% 56% 44%; }
+            50%  { border-radius: 46% 54% 58% 42% / 54% 46% 52% 48%; }
+            70%  { border-radius: 56% 44% 48% 52% / 42% 58% 44% 56%; }
+            85%  { border-radius: 48% 52% 50% 50% / 50% 48% 54% 46%; }
+        }
+        @keyframes liquid-shift {
+            0%, 100% { background-position: 0%   50%; filter: brightness(1);    }
+            33%       { background-position: 100% 50%; filter: brightness(1.28); }
+            66%       { background-position: 50%  0%;  filter: brightness(0.82); }
+        }
+        @keyframes icon-float {
+            0%, 100% { transform: translateY(0px)  rotate(0deg);  }
+            30%      { transform: translateY(-4px) rotate(-8deg); }
+            70%      { transform: translateY(-2px) rotate(5deg);  }
+        }
+        @keyframes glow-pulse {
+            0%, 100% { box-shadow: 0 4px 14px rgba(0,0,0,0.12); }
+            50%      { box-shadow: 0 6px 32px rgba(0,0,0,0.24), 0 0 24px rgba(255,255,255,0.18); }
         }
 
         /* ── PRECIOS ── */
