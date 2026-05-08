@@ -462,14 +462,14 @@
         </div>
 
         <!-- B2C block -->
-        <div style="margin-top:72px;margin-bottom:20px;display:flex;align-items:center;gap:14px;">
+        <!--<div style="margin-top:72px;margin-bottom:20px;display:flex;align-items:center;gap:14px;">
             <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--mk-accent2);">Bloque B2C — consumidor final</span>
             <span style="flex:1;height:1px;background:var(--mk-ink2);"></span>
-        </div>
+        </div>-->
 
         <!-- Amazon + Walmart -->
-        <div class="mk-ch-grid-2">
-            <!-- Amazon -->
+        <!--<div class="mk-ch-grid-2">
+            Amazon 
             <div class="reveal" style="--reveal-delay:0ms;">
                 <article class="mk-card" style="display:flex;flex-direction:column;gap:20px;height:100%;">
                     <header style="display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid var(--mk-ink2);">
@@ -505,7 +505,7 @@
                 </article>
             </div>
 
-            <!-- Walmart -->
+             Walmart
             <div class="reveal" style="--reveal-delay:150ms;">
                 <article class="mk-card-navy" style="display:flex;flex-direction:column;gap:20px;height:100%;">
                     <header style="display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid rgba(251,250,247,0.14);">
@@ -526,10 +526,10 @@
                     <a href="{{ url('/pages/walmart') }}" style="margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--mk-accent);padding:10px 16px;border-radius:999px;border:1px solid rgba(246,187,51,0.45);background:rgba(246,187,51,0.08);">Ver servicio de Walmart <i data-lucide="arrow-right" width="14" height="14"></i></a>
                 </article>
             </div>
-        </div>
+        </div>-->
 
         <!-- TikTok Shop (full width) -->
-        <div class="reveal" style="--reveal-delay:300ms;margin-top:24px;">
+        <!--<div class="reveal" style="--reveal-delay:300ms;margin-top:24px;">
             <article class="mk-card" style="display:flex;flex-direction:column;gap:20px;">
                 <header style="display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid var(--mk-ink2);">
                     <div style="width:40px;height:40px;border-radius:10px;background:#000;display:grid;place-items:center;color:#fff;font-weight:700;font-size:18px;">t</div>
@@ -565,17 +565,17 @@
                 </div>
                 <a href="{{ url('/pages/tiktok-shop') }}" style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--mk-navy);padding:10px 16px;border-radius:999px;border:1px solid var(--mk-ink3);background:var(--mk-white);">Ver servicio de TikTok Shop <i data-lucide="arrow-right" width="14" height="14"></i></a>
             </article>
-        </div>
+        </div>-->
 
         <!-- B2B block -->
-        <div style="margin-top:56px;margin-bottom:20px;display:flex;align-items:center;gap:14px;">
+        <!--<div style="margin-top:56px;margin-bottom:20px;display:flex;align-items:center;gap:14px;">
             <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--mk-accent2);">Bloque B2B — venta a negocios</span>
             <span style="flex:1;height:1px;background:var(--mk-ink2);"></span>
-        </div>
+        </div>-->
 
         <!-- Faire + Sysco -->
-        <div class="mk-ch-grid-2">
-            <!-- Faire -->
+       <!-- <div class="mk-ch-grid-2">
+             Faire 
             <div class="reveal" style="--reveal-delay:0ms;">
                 <article class="mk-card-navy" style="display:flex;flex-direction:column;gap:20px;height:100%;">
                     <header style="display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid rgba(251,250,247,0.14);">
@@ -597,7 +597,7 @@
                 </article>
             </div>
 
-            <!-- Sysco -->
+             Sysco 
             <div class="reveal" style="--reveal-delay:150ms;">
                 <article class="mk-card" style="display:flex;flex-direction:column;gap:20px;height:100%;">
                     <header style="display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid var(--mk-ink2);">
@@ -632,10 +632,10 @@
                     <a href="{{ url('/pages/sysco') }}" style="margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--mk-navy);padding:10px 16px;border-radius:999px;border:1px solid var(--mk-ink3);background:var(--mk-white);">Ver servicio de Sysco <i data-lucide="arrow-right" width="14" height="14"></i></a>
                 </article>
             </div>
-        </div>
+        </div>-->
 
         <!-- Comparison table -->
-        <div style="margin-top:56px;">
+        <!--<div style="margin-top:56px;">
             <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
                 <h3 style="font-size:24px;letter-spacing:-0.015em;color:var(--mk-navy);">Comparación lado a lado</h3>
                 <span style="font-size:13px;color:var(--mk-ink5);">5 canales · datos públicos · 2025</span>
@@ -660,7 +660,7 @@
                     <div class="mk-table-row"><div class="mk-table-cell">Ideal para</div><div class="mk-table-cell">Todo tipo de producto</div><div class="mk-table-cell">Producto establecido</div><div class="mk-table-cell">Producto visual</div><div class="mk-table-cell">Marca con identidad</div><div class="mk-table-cell">Alimento a escala</div></div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <!-- Combined power callout -->
         <div style="margin-top:32px;padding:28px 32px;border-radius:16px;background:var(--mk-paper2);border:1px solid var(--mk-ink2);display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
