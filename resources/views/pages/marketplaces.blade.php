@@ -636,7 +636,7 @@
         </div>-->
 
         <!-- Comparison table -->
-        <div style="margin-top:56px;">
+        <!--<div style="margin-top:56px;">
             <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
                 <h3 style="font-size:24px;letter-spacing:-0.015em;color:var(--mk-navy);">Comparación lado a lado</h3>
                 <span style="font-size:13px;color:var(--mk-ink5);">5 canales · datos públicos · 2025</span>
@@ -661,7 +661,7 @@
                     <div class="mk-table-row"><div class="mk-table-cell">Ideal para</div><div class="mk-table-cell">Todo tipo de producto</div><div class="mk-table-cell">Producto establecido</div><div class="mk-table-cell">Producto visual</div><div class="mk-table-cell">Marca con identidad</div><div class="mk-table-cell">Alimento a escala</div></div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <!-- Combined power callout -->
         <div style="margin-top:32px;padding:28px 32px;border-radius:16px;background:var(--mk-paper2);border:1px solid var(--mk-ink2);display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
