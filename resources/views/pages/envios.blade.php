@@ -642,15 +642,15 @@
         </div>
 
         <!-- Methods section header -->
-        <div style="margin-top:96px;margin-bottom:32px;">
+        <!--<div style="margin-top:96px;margin-bottom:32px;">
             <h3 style="font-family:var(--font-display);font-size:30px;line-height:36px;letter-spacing:-0.015em;font-weight:700;color:var(--navy-900);">
 
                 Cada método ocupa un lugar distinto entre velocidad y costo.
             </h3>
-        </div>
+        </div>-->
 
          Methods matrix + list 
-        <div class="methods-grid" id="methods-section">
+        <!--<div class="methods-grid" id="methods-section">
              Quadrant chart 
             <div class="quadrant-wrap">
                 <div class="quadrant-yaxis">↑ Mayor volumen</div>
