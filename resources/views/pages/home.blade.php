@@ -174,15 +174,13 @@
         .clientes { background:var(--gray); padding:52px 0; }
         .clientes-header { display:flex; align-items:center; justify-content:center; margin-bottom:36px; }
         .clientes-badge { background:var(--navy); color:var(--white); font-family:'Montserrat',sans-serif; font-size:12px; font-weight:700; padding:6px 18px; border-radius:20px; text-transform:uppercase; letter-spacing:.06em; }
-        .clientes-track-wrap { overflow:hidden; width:100%; }
-        .clientes-track { display:flex; align-items:center; gap:56px; animation: scroll-logos 30s linear infinite; will-change:transform; }
+        .clientes-track-wrap { overflow:hidden; width:100%; -webkit-mask-image:linear-gradient(to right,transparent 0%,black 8%,black 92%,transparent 100%); mask-image:linear-gradient(to right,transparent 0%,black 8%,black 92%,transparent 100%); }
+        .clientes-track { display:flex; align-items:center; gap:56px; width:max-content; animation:scroll-logos 30s linear infinite; will-change:transform; }
         .clientes-track:hover { animation-play-state:paused; }
         .cliente-logo-img { height:130px; width:130px; object-fit:contain; opacity:.55; transition:opacity .2s; filter:grayscale(100%); flex-shrink:0; }
         .cliente-logo-img:hover { opacity:1; filter:grayscale(0%); }
-        @keyframes scroll-logos {
-            0%   { transform: translateX(0); }
-            100% { transform: translateX(calc(-130px * 8 - 56px * 8)); }
-        }
+        @keyframes scroll-logos { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+        @media (max-width:600px) { .clientes-track { gap:28px; } .cliente-logo-img { height:64px; width:64px; } }
 
         /* ── CTA ASESOR ── */
         .cta-asesor { background:var(--white); padding:80px 5%; text-align:center; border-top:1px solid var(--gray2); }
@@ -262,7 +260,6 @@
             .pull-quote-wrap img.pq-bg { display:none; }
             .pull-quote { position:static; width:100%; background:var(--navy); border-radius:20px; padding:32px 28px; }
             .pull-quote q { font-size:16px; line-height:26px; }
-            .cliente-logo-img { height:36px; }
         }
 
         @media(max-width:600px) {
