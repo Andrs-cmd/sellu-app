@@ -429,11 +429,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td class="col-key">Articles of Organization</td><td>Filing fee oficial ante el Wyoming Secretary of State.</td><td class="num">$100</td><td><span class="tag tag-mid">Pago único</span></td></tr>
-                    <tr><td class="col-key">Agente registrado</td><td>Servicio anual obligatorio para LLCs sin oficina física en Wyoming.</td><td class="num">$125</td><td><span class="tag tag-warn">Anual</span></td></tr>
-                    <tr><td class="col-key">Annual Report (License Tax)</td><td>Reporte anual obligatorio. Vence el 1er día del mes de aniversario de tu LLC.</td><td class="num">$60/año (mín.)</td><td><span class="tag tag-warn">Anual</span></td></tr>
-                    <tr><td class="col-key">Impuestos federales</td><td>1 socio: formularios 5472 + 1120. 2 o más: declaración de partnership + K-1 por cada socio.</td><td class="num">Desde $200</td><td><span class="tag tag-warn">Anual</span></td></tr>
-                    <tr><td class="col-key">EIN (IRS)</td><td>Número de identificación fiscal. Lo gestionamos por ti.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
+                    <tr><td class="col-key">Agente registrado</td><td>Servicio anual obligatorio para LLCs sin oficina física en Wyoming. Costo varía según proveedor.</td><td class="num">$50 – $300</td><td><span class="tag tag-mid">$50 – $300</span></td></tr>
+                    <tr><td class="col-key">Annual Report (License Tax)</td><td>Obligación anual. Vence el 1er día del mes aniversario de formación de tu LLC — la fecha es distinta para cada empresa.</td><td class="num">$60/año (mín.)</td><td><span class="tag tag-warn">Anual</span></td></tr>
+                    <tr><td class="col-key">Impuestos y cumplimiento fiscal</td><td>Presentación de impuestos y obligaciones informativas ante el IRS, según tipo de estructura y actividad.</td><td class="num">Desde $150</td><td><span class="tag tag-warn">Anual</span></td></tr>
+                    <tr><td class="col-key">Sales Tax Wyoming</td><td>Wyoming tiene sales tax 4% + hasta 2–4% local. Para no residentes sin presencia física en Wyoming y ventas bajo $100,000/año a clientes de Wyoming, generalmente no aplica. Verificar con CPA.</td><td class="num">4% + local si aplica</td><td><span class="tag tag-warn">Depende</span></td></tr>
+                    <!--<tr><td class="col-key">EIN (IRS)</td><td>Número de identificación fiscal. Lo gestionamos por ti.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>-->
                     <!--<tr><td class="col-key">Operating Agreement</td><td>Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
                     <tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + annual report + impuestos federales + EIN.</td><td class="num">$485–$700</td><td>—</td></tr>-->
                 </tbody>
@@ -453,16 +453,16 @@
         </div>
         <div class="tax-grid">
             <div class="tax-card">
-                <span class="tax-tag" style="background:var(--success-100);color:var(--success-700)">Income Tax estatal</span>
+                <span class="tax-tag" style="background:var(--success-100);color:var(--success-700)">Income Tax Estatal 0% </span>
                 <div class="tax-num" style="color:var(--success-700)">0%</div>
                 <h4>Wyoming no cobra impuesto estatal sobre la renta.</h4>
-                <p>Tu LLC paga solo a nivel federal. Como single-member non-resident sin actividad dentro de EE.UU., el federal suele ser $0 — pero igual debes presentar el formulario 5472 + 1120 cada año.</p>
+                <p>Tu LLC paga solo a nivel federal. Como single-member non-resident sin actividad física en EE.UU., no necesariamente hay un pago federal — pero sí la obligación de presentar el Form 5472 + Pro Forma 1120 cada año ante el IRS. </p>
             </div>
             <div class="tax-card">
                 <span class="tax-tag" style="background:var(--info-100);color:var(--info-700)">Sales Tax</span>
                 <div class="tax-num" style="color:var(--info-700)">4%</div>
-                <h4>Aplica solo si vendes bienes físicos en Wyoming.</h4>
-                <p>Si vendes servicios digitales o productos a clientes fuera de Wyoming, no debes recolectar Sales Tax. Si tienes nexo físico (warehouse, empleado en WY) sí debes registrarte.</p>
+                <h4>Aplica si tienes nexo físico o económico en Wyoming. </h4>
+                <p>Si no tienes presencia física en Wyoming y tus ventas anuales a clientes de Wyoming no superan $100,000, generalmente no aplica. Si tienes nexo físico (warehouse, empleado) o superas ese umbral económico, sí debes registrarte. Cada caso debe evaluarse con un CPA. </p>
             </div>
             <div class="tax-card">
                 <span class="tax-tag" style="background:var(--danger-100);color:var(--danger-700)">License Tax</span>
@@ -498,7 +498,7 @@
                         <td class="col-key" style="display:flex;align-items:center;gap:8px;"><i data-lucide="alert-triangle" style="width:14px;height:14px;color:var(--danger-700);flex-shrink:0"></i>Annual Report (License Tax)</td>
                         <td>1er día del mes de aniversario</td>
                         <td class="num">$60/año (mín.)</td>
-                        <td style="color:var(--danger-700);font-weight:600;">Multas + disolución administrativa</td>
+                        <td style="color:var(--danger-700);font-weight:600;">Sin multa inmediata. Disolución administrativa a los 60 días. Reinstatement: $100 + fees. </td>
                     </tr>
                     <tr>
                         <td class="col-key">Renovación agente registrado</td>
@@ -510,13 +510,13 @@
                         <td class="col-key" style="display:flex;align-items:center;gap:8px;"><i data-lucide="alert-triangle" style="width:14px;height:14px;color:var(--danger-700);flex-shrink:0"></i>Impuestos federales</td>
                         <td>15 de abril</td>
                         <td class="num">Según estructura</td>
-                        <td style="color:var(--danger-700);font-weight:600;">Multas e intereses del IRS</td>
+                        <td style="color:var(--danger-700);font-weight:600;">Multa base de $25,000 USD por no presentar Form 5472 (IRS) </td>
                     </tr>
                     <tr>
                         <td class="col-key">Sales Tax (si aplica)</td>
                         <td>Mensual o trimestral</td>
                         <td class="num">Variable</td>
-                        <td style="color:var(--danger-700);font-weight:600;">Solo si hay nexo en Wyoming</td>
+                        <td style="color:var(--danger-700);font-weight:600;">Aplica solo si hay nexo físico o económico (+$100K en ventas anuales a clientes de Wyoming) </td>
                     </tr>
                 </tbody>
             </table>
