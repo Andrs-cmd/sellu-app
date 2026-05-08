@@ -63,7 +63,7 @@
         :root {
             --navy-900: #2e3856; --navy-800: #3a4568; --navy-700: #434966;
             --accent-500: #F6BB33; --accent-400: #f9cc66; --accent-100: #EEF1F8; --accent-700: #c89320;
-            --paper: #fbfaf7; --paper-2: #f5f3ee; --white: #ffffff;
+            --paper: #EEF1F8; --paper-2: #EEF1F8; --white: #ffffff;
             --ink-900: #15161a; --ink-700: #3a3d46; --ink-500: #6b6f7a; --ink-400: #9298a3;
             --ink-300: #c5c8d0; --ink-200: #e5e6ea; --ink-100: #f0f0f2;
             --success-700: #0f6b3f; --success-100: #e3f6ec;

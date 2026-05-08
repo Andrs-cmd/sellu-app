@@ -62,7 +62,7 @@
         --w-blue:   #434966;
         --w-yellow: #f6bb33;
         --w-gray:   #eef1f8;
-        --w-paper:  #fbfaf7;
+        --w-paper:  #EEF1F8;
         --w-white:  #ffffff;
         --w-ink-2:  #5b607d;
         --w-ink-3:  #6b6f7a;

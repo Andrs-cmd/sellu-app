@@ -60,7 +60,7 @@
             --navy-200: #e2e4ea; --navy-100: #eef0f4; --navy-50: #f6f7f9;
             --accent-700: #c89320; --accent-500: #f6bb33; --accent-400: #f9cc66;
             --accent-200: #fdecc2; --accent-100: #fef5dd;
-            --paper: #fbfaf7; --paper-2: #f5f3ee; --white: #ffffff;
+            --paper: #EEF1F8; --paper-2: #EEF1F8; --white: #ffffff;
             --ink-900: #15161a; --ink-700: #3a3d46; --ink-500: #6b6f7a;
             --ink-400: #9298a3; --ink-300: #c5c8d0; --ink-200: #e5e6ea;
             --success-700: #0f6b3f; --success-500: #1aa05f; --success-100: #e3f6ec;

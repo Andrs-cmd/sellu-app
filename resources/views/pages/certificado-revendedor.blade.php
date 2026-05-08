@@ -78,7 +78,7 @@
         --blue-700: #072ac8; --blue-500: #3d5cdb; --blue-400: #7589e6;
         --accent-700: #c89320; --accent-500: #f6bb33; --accent-400: #f9cc66;
         --accent-300: #fbdd95; --accent-200: #fdecc2; --accent-100: #fef5dd; --accent-50: #fffbef;
-        --paper: #fbfaf7; --paper-2: #f5f3ee;
+        --paper: #EEF1F8; --paper-2: #EEF1F8;
         --ink-900: #15161a; --ink-700: #3a3d46; --ink-500: #6b6f7a;
         --ink-400: #9298a3; --ink-300: #c5c8d0; --ink-200: #e5e6ea; --ink-100: #f0f0f2;
         --white: #ffffff;

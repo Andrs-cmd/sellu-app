@@ -199,7 +199,7 @@
         .btn-accent   { background: #F6BB33; color: #0D1B3E; border-color: #F6BB33; }
         .btn-accent:hover { background: #F9CC66; }
         .btn-secondary { background: #fff; color: #0D1B3E; border-color: #c5c8d0; }
-        .btn-secondary:hover { background: #f5f3ee; border-color: #434966; }
+        .btn-secondary:hover { background: #EEF1F8; border-color: #434966; }
         .btn-on-dark  { background: #fff; color: #0D1B3E; border-color: #fff; }
         .btn-on-dark:hover { background: #EEF1F8; }
         .btn-lg { padding: 14px 24px; font-size: 15px; border-radius: 12px; }
@@ -218,7 +218,7 @@
         .compare th, .compare td { padding: 16px 20px; text-align: left; vertical-align: top; border-bottom: 1px solid #e5e6ea; border-right: 1px solid #e5e6ea; }
         .compare th:last-child, .compare td:last-child { border-right: none; }
         .compare tr:last-child td { border-bottom: none; }
-        .compare thead th { background: #f5f3ee; color: #434966; font-weight: 600; font-size: 13px; }
+        .compare thead th { background: #EEF1F8; color: #434966; font-weight: 600; font-size: 13px; }
         .compare thead th.col-itin { background: #EEF1F8; position: relative; }
         .compare thead th.col-itin::after {
             content: 'Para ti'; position: absolute; top: -10px; right: 12px;
@@ -227,7 +227,7 @@
             padding: 4px 8px; border-radius: 999px;
         }
         .compare tbody td.col-itin { background: #EEF1F8; }
-        .compare tbody th[scope="row"] { background: #f5f3ee; font-weight: 600; color: #6b6f7a; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; width: 200px; }
+        .compare tbody th[scope="row"] { background: #EEF1F8; font-weight: 600; color: #6b6f7a; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; width: 200px; }
         .compare .yes     { color: #0f6b3f; font-weight: 700; }
         .compare .no      { color: #99231b; font-weight: 700; }
         .compare .neutral { color: #6b6f7a; }
@@ -328,7 +328,7 @@
         .tl-cap { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: #6b6f7a; }
         .tl-amt { font-family: 'Montserrat', sans-serif; font-size: 26px; line-height: 32px; letter-spacing: -.02em; font-weight: 700; color: #434966; }
         .tl-sub { font-size: 12px; color: #6b6f7a; }
-        .tl-seg.tl-sellu  { background: #f5f3ee; }
+        .tl-seg.tl-sellu  { background: #EEF1F8; }
         .tl-seg.tl-irs    { background: #fff; }
         .tl-seg.tl-total  { background: #0D1B3E; }
         .tl-seg.tl-total .tl-cap { color: #F6BB33; }
@@ -687,19 +687,19 @@
                 </p>
 
                 <ol style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;">
-                    <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#f5f3ee; border-radius:10px;">
+                    <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#EEF1F8; border-radius:10px;">
                         <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">01</span>
                         <span style="font-size:15px; line-height:22px; color:#434966;">Completar el formulario W-7 en inglés.</span>
                     </li>
-                    <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#f5f3ee; border-radius:10px;">
+                    <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#EEF1F8; border-radius:10px;">
                         <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">02</span>
                         <span style="font-size:15px; line-height:22px; color:#434966;">Adjuntar documentos de identidad originales o certificados (pasaporte, entre otros).</span>
                     </li>
-                    <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#f5f3ee; border-radius:10px;">
+                    <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#EEF1F8; border-radius:10px;">
                         <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">03</span>
                         <span style="font-size:15px; line-height:22px; color:#434966;">Enviar todo por correo al IRS o entregar en persona en un CAA (Certifying Acceptance Agent).</span>
                     </li>
-                    <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#f5f3ee; border-radius:10px;">
+                    <li style="display:flex; align-items:flex-start; gap:16px; padding:14px 16px; background:#EEF1F8; border-radius:10px;">
                         <span style="font-family:'Montserrat',sans-serif; font-size:11px; color:#c89320; font-weight:600; flex-shrink:0; margin-top:2px;">04</span>
                         <span style="font-size:15px; line-height:22px; color:#434966;">Esperar respuesta del IRS.</span>
                     </li>
@@ -873,7 +873,7 @@
             <div style="margin-top:20px; height:10px; background:#fff; border:1px solid #e5e6ea; border-radius:999px; overflow:hidden; display:flex;">
                 <div style="width:8%; background:#F6BB33;"></div>
                 <div style="width:78%; background:#434966;"></div>
-                <div style="width:14%; background:#f5f3ee;"></div>
+                <div style="width:14%; background:#EEF1F8;"></div>
             </div>
             <div style="margin-top:10px; display:flex; justify-content:space-between; font-size:12px; font-family:'Montserrat',sans-serif; color:#9298a3;">
                 <span>Semana 0</span><span>Semana 4</span><span>Semana 8</span><span>Semana 12</span>

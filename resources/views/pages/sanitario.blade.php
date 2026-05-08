@@ -84,8 +84,8 @@
         --navy2:   #2c3250;
         --accent:  #F6BB33;
         --accent2: #c89320;
-        --paper:   #fbfaf7;
-        --paper2:  #f5f3ee;
+        --paper:   #EEF1F8;
+        --paper2:  #EEF1F8;
         --white:   #ffffff;
         --ink700:  #3a3d46;
         --ink500:  #6b6f7a;

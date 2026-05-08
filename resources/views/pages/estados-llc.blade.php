@@ -65,8 +65,8 @@
             --navy2:     #1a2340;
             --gold:      #F6BB33;
             --white:     #ffffff;
-            --paper:     #fbfaf7;
-            --paper-2:   #f5f3ee;
+            --paper:     #EEF1F8;
+            --paper-2:   #EEF1F8;
             --ink-900:   #15161a;
             --ink-700:   #3a3d46;
             --ink-500:   #6b6f7a;

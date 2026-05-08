@@ -62,8 +62,8 @@
         --mk-accent2: #c89320;
         --mk-accent3: #fbdd95;
         --mk-accent4: #fef5dd;
-        --mk-paper:   #fbfaf7;
-        --mk-paper2:  #f5f3ee;
+        --mk-paper:   #EEF1F8;
+        --mk-paper2:  #EEF1F8;
         --mk-white:   #ffffff;
         --mk-ink7:    #3a3d46;
         --mk-ink5:    #6b6f7a;

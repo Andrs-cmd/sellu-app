@@ -198,7 +198,7 @@
         --accent-300: #fbdd95;
         --accent-200: #fdecc2;
         --accent-100: #fef5dd;
-        --paper:      #fbfaf7;
+        --paper:      #EEF1F8;
         --paper-2:    #fff;
         --ink-900:    #15161a;
         --ink-700:    #3a3d46;

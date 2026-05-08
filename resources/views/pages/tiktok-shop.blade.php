@@ -484,9 +484,9 @@
     .pbr-desc strong { color:#434966;font-weight:700; }
     .pbr-grid { display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e0e0e0;border:1px solid #e0e0e0;border-radius:14px;overflow:hidden;position:relative;z-index:1; }
     .pbr-card { background:#fff;padding:32px 28px 36px;display:flex;flex-direction:column;gap:14px;transition:background 200ms ease; }
-    .pbr-card:hover { background:#f5f3ee; }
+    .pbr-card:hover { background:#EEF1F8; }
     .pbr-num { font-family:'JetBrains Mono',monospace;font-size:12px;color:#c89320;font-weight:500;letter-spacing:0.06em; }
-    .pbr-icon { width:40px;height:40px;border-radius:10px;background:#f5f3ee;border:1px solid #e0e0e0;display:inline-flex;align-items:center;justify-content:center;color:#434966;margin-bottom:4px; }
+    .pbr-icon { width:40px;height:40px;border-radius:10px;background:#EEF1F8;border:1px solid #e0e0e0;display:inline-flex;align-items:center;justify-content:center;color:#434966;margin-bottom:4px; }
     .pbr-card h4 { font-family:'Montserrat',sans-serif;font-weight:700;font-size:17px;line-height:24px;letter-spacing:-0.01em;color:#434966;margin:0; }
     .pbr-card p  { font-size:14px;line-height:22px;color:#5b607d;margin:0;font-family:'Montserrat',sans-serif; }
     .pbr-close { margin-top:64px;background:#434966;border-radius:20px;padding:40px 48px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;position:relative;z-index:1;box-shadow:0 12px 32px rgba(67,73,102,0.18); }
