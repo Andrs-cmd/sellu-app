@@ -468,7 +468,7 @@
     .pbr-section { padding: 112px 0 96px; position: relative; overflow: hidden; background: #EEF1F8; }
     .pbr-container { max-width: 1160px; margin: 0 auto; position: relative; padding: 0 32px; }
     .pbr-paper-mark { position:absolute;top:-120px;right:-160px;width:520px;height:520px;background:#f6bb33;opacity:0.08;border-radius:28px;transform:rotate(12deg);z-index:0;pointer-events:none; }
-    .pbr-header { max-width:880px;position:relative;z-index:1;margin:0 auto 64px;text-align:center; }
+    .pbr-header { max-width:1200px;position:relative;z-index:1;margin:0 auto 64px;text-align:center; }
     .pbr-eyebrow-row { display:inline-flex;align-items:center;gap:10px;padding:6px 12px 6px 8px;border-radius:999px;background:#fff;border:1px solid #e0e0e0;box-shadow:0 1px 2px rgba(0,0,0,0.05);margin-bottom:24px; }
     .pbr-eyebrow-dot { width:18px;height:18px;border-radius:999px;background:#f6bb33;display:inline-flex;align-items:center;justify-content:center;color:#434966;font-weight:700;font-size:11px;font-family:'Montserrat',sans-serif; }
     .pbr-eyebrow-label { color:#434966;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;font-family:'Montserrat',sans-serif; }
@@ -897,13 +897,13 @@
 
             <header class="pbr-header">
                 <div class="pbr-eyebrow-row">
-                    <span class="pbr-eyebrow-dot">U</span>
+                    <!--<span class="pbr-eyebrow-dot">U</span>-->
                     <!--<span class="pbr-eyebrow-label">TikTok Shop · Estados Unidos</span>-->
                 </div>
                 <h2 class="pbr-title">
-                    <span style="display:block;">El requisito que muchos</span>
-                    <span style="display:block;">descubren <span class="pbr-accent">demasiado tarde</span> en TikTok Shop.</span>
-                    <span style="display:block;"></span>
+                    <span style="display:block;">El requisito que muchos descubren</span>
+                    <span style="display:block;"> demasiado<span class="pbr-accent"> tarde en</span>  TikTok Shop.</span>
+                    
                 </h2>
                 <p class="pbr-subtitle">
                     Para vender en TikTok Shop EE.UU., no basta con tener una LLC y un EIN. La plataforma también exige un representante de negocio en Estados Unidos que pueda pasar la verificación.
