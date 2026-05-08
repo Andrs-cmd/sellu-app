@@ -239,14 +239,34 @@
         .pasos-header h2 em { font-style: normal; color: var(--gold); }
         .pasos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; max-width: 1400px; margin: 0 auto; position: relative; }
         .pasos-line { position: absolute; top: 20px; left: calc(12.5% + 10px); right: calc(12.5% + 10px); height: 2px; background: var(--gray2); z-index: 0; }
-        .paso { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
-        .paso-num { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 800; color: var(--white); border: 3px solid var(--white); }
-        .paso-num.n1 { background: #0D1B3E; }
-        .paso-num.n2 { background: var(--gold); color: var(--navy); }
-        .paso-num.n3 { background: #0D1B3E; }
-        .paso-num.n4 { background: var(--gold); color: var(--navy); }
+        .paso { text-align: center; position: relative; z-index: 1; padding: 0 12px; opacity: 0; transform: translateY(24px); transition: none; }
+        .paso.visible { animation: paso-slide-up 0.5s ease forwards; }
+        .paso-icon { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; position: relative; border: 3px solid var(--white); box-shadow: 0 4px 16px rgba(0,0,0,0.10); opacity: 0; transform: scale(0.4); }
+        .paso.visible .paso-icon { animation: paso-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+        .paso:nth-child(2).visible .paso-icon { animation-delay: 0.05s; }
+        .paso:nth-child(3).visible .paso-icon { animation-delay: 0.18s; }
+        .paso:nth-child(4).visible .paso-icon { animation-delay: 0.31s; }
+        .paso:nth-child(5).visible .paso-icon { animation-delay: 0.44s; }
+        .paso-icon.n1 { background: #0D1B3E; color: var(--white); }
+        .paso-icon.n2 { background: var(--gold); color: var(--navy); }
+        .paso-icon.n3 { background: #0D1B3E; color: var(--white); }
+        .paso-icon.n4 { background: var(--gold); color: var(--navy); }
+        .paso-icon svg { width: 26px; height: 26px; stroke-width: 2; }
+        .paso-badge { position: absolute; top: -6px; right: -6px; width: 20px; height: 20px; border-radius: 50%; background: var(--white); border: 2px solid currentColor; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 800; display: flex; align-items: center; justify-content: center; line-height: 1; }
+        .paso-icon.n1 .paso-badge, .paso-icon.n3 .paso-badge { color: #0D1B3E; }
+        .paso-icon.n2 .paso-badge, .paso-icon.n4 .paso-badge { color: var(--navy); border-color: var(--navy); }
         .paso h3 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
         .paso p { font-size: 13px; color: var(--muted); line-height: 1.65; }
+        @keyframes paso-pop {
+            0%   { opacity: 0; transform: scale(0.4) rotate(-12deg); }
+            60%  { opacity: 1; transform: scale(1.18) rotate(4deg); }
+            80%  { transform: scale(0.94) rotate(-2deg); }
+            100% { opacity: 1; transform: scale(1) rotate(0deg); }
+        }
+        @keyframes paso-slide-up {
+            0%   { opacity: 0; transform: translateY(24px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
 
         /* ── PRECIOS ── */
         .precios { padding: 80px 5%; background: var(--gray); }
@@ -585,25 +605,37 @@
     <div class="pasos-header">
         <h2>Estás a <em>cuatro pasos</em> de crear tu empresa en Estados Unidos</h2>
     </div>
-    <div class="pasos-grid">
+    <div class="pasos-grid" id="pasos-grid">
         <div class="pasos-line"></div>
         <div class="paso">
-            <div class="paso-num n1">1</div>
+            <div class="paso-icon n1">
+                <i data-lucide="map-pin"></i>
+                <span class="paso-badge">1</span>
+            </div>
             <h3>Escoge el estado</h3>
             <p>Selecciona el estado en el que deseas registrar tu empresa según tus objetivos y beneficios fiscales.</p>
         </div>
         <div class="paso">
-            <div class="paso-num n2">2</div>
+            <div class="paso-icon n2">
+                <i data-lucide="credit-card"></i>
+                <span class="paso-badge">2</span>
+            </div>
             <h3>Realiza el Pago</h3>
             <p>Agrega el servicio al carrito, completa tu compra y recibe la confirmación en tu correo electrónico.</p>
         </div>
         <div class="paso">
-            <div class="paso-num n3">3</div>
+            <div class="paso-icon n3">
+                <i data-lucide="clipboard-list"></i>
+                <span class="paso-badge">3</span>
+            </div>
             <h3>Llena el formulario</h3>
             <p>Completa el formulario con la información de tu empresa para iniciar el proceso de constitución.</p>
         </div>
         <div class="paso">
-            <div class="paso-num n4">4</div>
+            <div class="paso-icon n4">
+                <i data-lucide="building-2"></i>
+                <span class="paso-badge">4</span>
+            </div>
             <h3>Tu empresa estará lista</h3>
             <p>Recibe tus documentos oficiales y empieza a operar tu negocio en EE. UU. desde cualquier lugar.</p>
         </div>
@@ -940,6 +972,36 @@ function renderPreciosPage(state) {
 
 // Render inicial con Florida
 renderPreciosPage('FL');
+</script>
+
+{{-- Lucide Icons --}}
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+// Init Lucide icons
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.lucide) lucide.createIcons();
+
+    // ── Pasos scroll animation ──
+    const grid = document.getElementById('pasos-grid');
+    if (!grid) return;
+
+    const pasos = grid.querySelectorAll('.paso');
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                pasos.forEach(function (paso, i) {
+                    setTimeout(function () {
+                        paso.classList.add('visible');
+                    }, i * 140);
+                });
+                observer.unobserve(grid);
+            }
+        });
+    }, { threshold: 0.25 });
+
+    observer.observe(grid);
+});
 </script>
 
 <script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script>
