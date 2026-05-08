@@ -443,7 +443,7 @@
 </section>
 
 {{-- ── IMPUESTOS ── --}}
-<section class="sx sx-band">
+<!--<section class="sx sx-band">
     <div class="container">
         <div class="sx-header">
             <div class="sx-eyebrow">Impuestos</div>
@@ -472,7 +472,7 @@
         </div>
         <p style="font-size:13px;color:var(--fg-tertiary);margin-top:24px;max-width:720px;">Esto no es asesoría fiscal. Cada caso depende de tu residencia e ingresos. Trabajamos con CPAs aliados que conocen el caso de founders LATAM.</p>
     </div>
-</section>
+</section>-->
 
 {{-- ── OBLIGACIONES ANUALES ── --}}
 <section class="sx sx-white">
