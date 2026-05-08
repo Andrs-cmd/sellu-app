@@ -454,7 +454,7 @@
                     <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20cotizar%20mi%20env%C3%ADo%20a%20EE.UU." target="_blank" rel="noopener" class="btn btn-primary btn-lg">
                         Cotizar mi envío a EE.UU. →
                     </a>
-                    <a href="#proceso" class="btn btn-secondary btn-lg">Ver cómo funciona</a>
+                    <!--<a href="#proceso" class="btn btn-secondary btn-lg">Ver cómo funciona</a>-->
                 </div>
                 <div class="hero-checks">
                     <span class="hero-check">
@@ -644,16 +644,16 @@
         </div>
 
         <!-- Methods section header -->
-        <div style="margin-top:96px;margin-bottom:32px;">
+        <<!--<div style="margin-top:96px;margin-bottom:32px;">
             <span class="eyebrow">Cuatro métodos de envío</span>
             <h3 style="font-family:var(--font-display);font-size:30px;line-height:36px;letter-spacing:-0.015em;font-weight:700;margin-top:12px;color:var(--navy-900);">
                 Cada método ocupa un lugar distinto entre velocidad y costo.
             </h3>
         </div>
 
-        <!-- Methods matrix + list -->
+         Methods matrix + list 
         <div class="methods-grid" id="methods-section">
-            <!-- Quadrant chart -->
+             Quadrant chart 
             <div class="quadrant-wrap">
                 <div class="quadrant-yaxis">↑ Mayor volumen</div>
                 <div class="quadrant-xaxis">Tiempo de tránsito →</div>
@@ -668,22 +668,22 @@
                     <div class="q-label" style="top:12px;right:16px;color:var(--accent-700);">Más eficiente ★</div>
                     <div class="q-label" style="bottom:12px;left:16px;color:var(--fg-muted);">Volumen bajo · rápido</div>
                     <div class="q-label" style="bottom:12px;right:16px;color:var(--fg-muted);">Volumen bajo · lento</div>
-                    <!-- Courier: x=8%, y=88% -->
+                     Courier: x=8%, y=88% 
                     <div class="bubble active" id="b-courier" style="left:8%;top:88%;width:56px;height:56px;background:var(--accent-500);color:var(--navy-900);margin-left:-28px;margin-top:-28px;transition-delay:0ms;" title="Courier">
                         <i data-lucide="truck" style="width:20px;height:20px;"></i>
                         <span class="bubble-label" style="top:60px;">Courier</span>
                     </div>
-                    <!-- Air: x=22%, y=64% -->
+                    Air: x=22%, y=64% 
                     <div class="bubble active" id="b-air" style="left:22%;top:64%;width:72px;height:72px;background:var(--accent-500);color:var(--navy-900);margin-left:-36px;margin-top:-36px;transition-delay:150ms;" title="Air Freight">
                         <i data-lucide="plane" style="width:26px;height:26px;"></i>
                         <span class="bubble-label" style="top:76px;">Air Freight</span>
                     </div>
-                    <!-- Sea LCL: x=78%, y=36% -->
+                 Sea LCL: x=78%, y=36%
                     <div class="bubble active" id="b-lcl" style="left:78%;top:36%;width:90px;height:90px;background:var(--navy-900);color:var(--accent-500);margin-left:-45px;margin-top:-45px;transition-delay:300ms;" title="Sea LCL">
                         <i data-lucide="ship" style="width:32px;height:32px;"></i>
                         <span class="bubble-label" style="top:94px;color:var(--navy-900);">Sea LCL</span>
                     </div>
-                    <!-- Sea FCL: x=60%, y=12% -->
+                    Sea FCL: x=60%, y=12% 
                     <div class="bubble active" id="b-fcl" style="left:60%;top:12%;width:110px;height:110px;background:var(--navy-900);color:var(--accent-500);margin-left:-55px;margin-top:-55px;transition-delay:450ms;" title="Sea FCL">
                         <i data-lucide="container" style="width:38px;height:38px;"></i>
                         <span class="bubble-label" style="top:114px;color:var(--navy-900);">Sea FCL</span>
@@ -702,7 +702,7 @@
                 </div>
             </div>
 
-            <!-- Methods list -->
+             Methods list 
             <div class="methods-list">
                 <div class="method-card">
                     <div class="method-icon accent"><i data-lucide="truck" style="width:20px;height:20px;color:var(--navy-900);"></i></div>
@@ -749,7 +749,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <!-- Comparison table -->
         <div class="cmp-table" id="cmp-table">
