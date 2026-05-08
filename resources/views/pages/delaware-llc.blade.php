@@ -454,13 +454,13 @@
                 <span class="tax-tag" style="background:var(--success-100);color:var(--success-700)">Income Tax estatal</span>
                 <div class="tax-num" style="color:var(--success-700)">0%</div>
                 <h4>Delaware no cobra impuesto estatal sobre la renta.</h4>
-                <p>Tu LLC paga solo a nivel federal. Como single-member non-resident sin actividad dentro de EE.UU., el federal suele ser $0 — pero igual debes presentar el formulario 5472 + 1120 cada año.</p>
+                <p>Tu LLC paga solo a nivel federal. Como single-member non-resident sin actividad dentro de EE.UU., no necesariamente hay un pago federal — pero sí existe la obligación de presentar el Form 5472 + Pro Forma 1120 cada año ante el IRS. </p>
             </div>
             <div class="tax-card">
                 <span class="tax-tag" style="background:var(--success-100);color:var(--success-700)">Sales Tax</span>
                 <div class="tax-num" style="color:var(--success-700)">0%</div>
                 <h4>Delaware es uno de los cinco estados sin impuesto a las ventas.</h4>
-                <p>No debes recolectar ni remitir Sales Tax sobre ninguna transacción, independientemente de dónde vivan tus clientes.</p>
+                <p>Delaware no tiene sales tax estatal. Sin embargo, si vendes en otros estados o usas marketplaces como Amazon o Etsy, pueden existir obligaciones de sales tax en esos estados según el nexo fiscal. </p>
             </div>
             <div class="tax-card">
                 <span class="tax-tag" style="background:var(--danger-100);color:var(--danger-700)">Franchise Tax</span>
@@ -496,25 +496,25 @@
                         <td class="col-key" style="display:flex;align-items:center;gap:8px;"><i data-lucide="alert-triangle" style="width:14px;height:14px;color:var(--danger-700);flex-shrink:0"></i>Annual Franchise Tax</td>
                         <td>1 de junio, cada año</td>
                         <td class="num">$300</td>
-                        <td style="color:var(--danger-700);font-weight:600;">$200 + intereses si no cumples</td>
+                        <td style="color:var(--danger-700);font-weight:600;">$200 fijo + 1.5% mensual sobre impuesto y multa </td>
                     </tr>
                     <tr>
                         <td class="col-key">Renovación agente registrado</td>
                         <td>Aniversario de tu LLC</td>
                         <td class="num">$125</td>
-                        <td style="color:var(--danger-700);font-weight:600;">Pérdida de status legal</td>
+                        <td style="color:var(--danger-700);font-weight:600;">Multa: Pérdida de representación legal y riesgo de cancelación de la LLC </td>
                     </tr>
                     <tr>
                         <td class="col-key" style="display:flex;align-items:center;gap:8px;"><i data-lucide="alert-triangle" style="width:14px;height:14px;color:var(--danger-700);flex-shrink:0"></i>Impuestos federales</td>
                         <td>15 de abril</td>
                         <td class="num">Según estructura</td>
-                        <td style="color:var(--danger-700);font-weight:600;">Multas e intereses del IRS</td>
+                        <td style="color:var(--danger-700);font-weight:600;">Multa base de $25,000 USD por no presentar Form 5472 (IRS) </td>
                     </tr>
                     <tr>
                         <td class="col-key">Sales Tax</td>
-                        <td>N/A — Delaware no tiene Sales Tax</td>
+                        <td>Vencimiento: N/A en Delaware.</td>
                         <td class="num">$0</td>
-                        <td>—</td>
+                        <td>Si vendes en otros estados, verifica nexo fiscal. </td>
                     </tr>
                 </tbody>
             </table>
