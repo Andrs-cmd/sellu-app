@@ -981,7 +981,7 @@ const statePrices = {
 function getPlansForState(state) {
     const base  = statePrices[state] || 399;
     const full  = base + 100;
-    const lux   = 1200;
+    const lux   = full <= 499 ? 1199 : 1299;
     return [
         { tier:'Básico', sub:'Inicio rápido',              price:base, list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
         { tier:'Full',   sub:'Variedad y acompañamiento',  price:full, list:[`Todo Plan Básico ${state}`,'Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
