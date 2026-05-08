@@ -89,7 +89,7 @@
     --accent-200: #fdecc2; --accent-100: #fef5dd; --accent-50: #fffbef;
     --accent-700: #c89320; --accent-900: #c89320;
 
-    --paper: #fbfaf7; --paper-2: #f5f3ee;
+    --paper: #EEF1F8; --paper-2: #EEF1F8;
     --ink-900: #15161a; --ink-700: #3a3d46; --ink-500: #6b6f7a;
     --ink-400: #9298a3; --ink-300: #c5c8d0; --ink-200: #e5e6ea;
     --ink-100: #f0f0f2; --white: #ffffff;
@@ -936,15 +936,15 @@ a:hover { text-decoration-color: var(--navy-800); }
                         <rect x="20" y="22" width="160" height="106" rx="10" fill="white" stroke="#e5e6ea"/>
                         <rect x="20" y="22" width="160" height="20" rx="10" fill="#434966"/>
                         <circle cx="32" cy="32" r="2.5" fill="#f6bb33"/>
-                        <rect x="34" y="56" width="60" height="56" rx="6" fill="#f5f3ee"/>
+                        <rect x="34" y="56" width="60" height="56" rx="6" fill="#EEF1F8"/>
                         <rect x="42" y="68" width="44" height="6" rx="3" fill="#f6bb33"/>
                         <rect x="42" y="80" width="32" height="4" rx="2" fill="#c5c8d0"/>
                         <rect x="42" y="90" width="38" height="4" rx="2" fill="#c5c8d0"/>
                         <rect x="104" y="56" width="64" height="22" rx="4" fill="#e3f6ec"/>
                         <text x="112" y="71" font-size="10" font-weight="700" fill="#0f6b3f">+ 24% MoM</text>
-                        <rect x="104" y="84" width="64" height="6" rx="3" fill="#f5f3ee"/>
-                        <rect x="104" y="94" width="50" height="6" rx="3" fill="#f5f3ee"/>
-                        <rect x="104" y="104" width="38" height="6" rx="3" fill="#f5f3ee"/>
+                        <rect x="104" y="84" width="64" height="6" rx="3" fill="#EEF1F8"/>
+                        <rect x="104" y="94" width="50" height="6" rx="3" fill="#EEF1F8"/>
+                        <rect x="104" y="104" width="38" height="6" rx="3" fill="#EEF1F8"/>
                     </svg>
                 </div>
                 <span class="tag">E-commerce / Amazon</span>
@@ -954,7 +954,7 @@ a:hover { text-decoration-color: var(--navy-800); }
             <div class="profile anim">
                 <div class="glyph">
                     <svg viewBox="0 0 200 150" width="100%" height="100%">
-                        <rect x="0" y="0" width="200" height="150" fill="#f5f3ee"/>
+                        <rect x="0" y="0" width="200" height="150" fill="#EEF1F8"/>
                         <circle cx="100" cy="60" r="26" fill="#434966"/>
                         <path d="M52 130 C 52 100, 76 92, 100 92 C 124 92, 148 100, 148 130 Z" fill="#434966"/>
                         <rect x="14" y="14" width="52" height="14" rx="3" fill="white" stroke="#e5e6ea"/>
@@ -970,7 +970,7 @@ a:hover { text-decoration-color: var(--navy-800); }
             <div class="profile anim">
                 <div class="glyph">
                     <svg viewBox="0 0 200 150" width="100%" height="100%">
-                        <rect x="0" y="0" width="200" height="150" fill="#f5f3ee"/>
+                        <rect x="0" y="0" width="200" height="150" fill="#EEF1F8"/>
                         <circle cx="60" cy="100" r="6" fill="#434966"/>
                         <circle cx="140" cy="50" r="6" fill="#f6bb33"/>
                         <path d="M60 100 Q 100 30 140 50" stroke="#434966" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
