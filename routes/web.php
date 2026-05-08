@@ -20,7 +20,7 @@ Route::get('/', fn() => view('pages.home'));
 
 Route::prefix('pages')->group(function () {
     Route::get('/crear-empresa-en-estados-unidos', fn() => view('pages.abre-empresa'))->name('pages.crear-empresa-en-estados-unidos');
-    Route::get('/contabilidad', fn() => view('pages.contabilidad'))->name('pages.contabilidad');
+    Route::get('/contabilidad', fn() => view('pages.bookkeeping'))->name('pages.contabilidad');
     Route::get('/apertura-marketplace', fn() => view('pages.amazon'))->name('pages.apertura-marketplace');
     Route::get('/registro-de-marca-ante-la-uspto', fn() => view('pages.marca'))->name('pages.registro-de-marca-ante-la-uspto');
     Route::get('/almacenamiento-y-logistica', fn() => view('pages.envios'))->name('pages.almacenamiento-y-logistica');
@@ -43,7 +43,7 @@ Route::prefix('pages')->group(function () {
     Route::get('/crear-llc-en-delaware', fn() => view('pages.delaware-llc'))->name('pages.delaware-llc');
     Route::get('/crear-llc-en-wyoming', fn() => view('pages.wyoming-llc'))->name('pages.wyoming-llc');
     Route::get('/crear-llc-en-new-mexico', fn() => view('pages.new-mexico-llc'))->name('pages.new-mexico-llc');
-    Route::get('/bookkeeping', fn() => view('pages.bookkeeping'))->name('pages.bookkeeping');
+    Route::get('/bookkeeping', fn() => view('pages.contabilidad'))->name('pages.bookkeeping');
     Route::post('/canales-de-atencion/contacto', function (Request $request) {
         $validated = $request->validate([
             'nombre'   => 'required|string|max:255',
