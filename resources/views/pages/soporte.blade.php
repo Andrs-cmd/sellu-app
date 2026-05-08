@@ -598,7 +598,7 @@
                 <span style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--navy-900); opacity:.7;">Para quienes están listos para iniciar</span>
                 <h3 style="font-family:'Montserrat',sans-serif; font-size:28px; line-height:36px; font-weight:700; color:var(--navy-900); margin:16px 0;">Cuéntanos tu caso y arrancamos hoy mismo.</h3>
                 <p style="font-size:16px; line-height:26px; color:rgba(67,73,102,.85); margin-bottom:28px;">Si ya sabes lo que necesitas, podemos arrancar directamente.</p>
-                <a href="#formulario" class="btn btn-primary btn-lg"><span>Iniciar mi proceso</span><i data-lucide="arrow-right" style="width:18px;height:18px;"></i></a>
+                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20agendar%20una%20llamada%20con%20un%20especialista%20de%20Sell-U" class="btn btn-primary btn-lg"><span>Iniciar mi proceso</span><i data-lucide="arrow-right" style="width:18px;height:18px;"></i></a>
             </div>
         </div>
     </div>
