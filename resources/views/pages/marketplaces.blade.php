@@ -293,7 +293,7 @@
                 <div style="transform:rotate(3deg);min-width:180px;">
                     <div class="mk-brand-tile navy floating" style="animation-delay:0.6s;">
                         <div class="mk-brand-badge" style="background:#0071DC;">
-                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/walmart_ltretj.png" alt="Walmart" style="width:44px;height:44px;object-fit:contain;display:block;">
+                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778273323/Wallmart_f07neq.png" alt="Walmart" style="width:44px;height:44px;object-fit:contain;display:block;">
                         </div>
                         <div style="font-size:16px;font-weight:700;color:var(--mk-paper);">Walmart</div>
                         <div class="mk-brand-tag" style="color:rgba(251,250,247,0.75);">
