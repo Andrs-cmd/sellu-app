@@ -274,7 +274,7 @@
                 </li>
                 <li>
                     <span class="check-gold"><i data-lucide="check" style="width:12px;height:12px;stroke-width:3;color:var(--navy-900)"></i></span>
-                    Pass-through: solo pagas impuestos si tienes ingresos efectivos en EE.UU.
+                    Pass-through por defecto: sin Franchise Tax, sin impuesto corporativo estatal. Sí aplican obligaciones informativas ante el IRS (Form 5472). 
                 </li>
             </ul>
         </div>
@@ -303,7 +303,7 @@
             <div class="adv-card">
                 <div class="adv-icon"><i data-lucide="shield" style="width:22px;height:22px"></i></div>
                 <h4>Protección de activos sólida</h4>
-                <p>New Mexico cuenta con sólidas leyes de asset protection y charging order para LLCs. Tus bienes personales quedan protegidos si tu LLC enfrenta una demanda.</p>
+                <p>Protección de activos sólida: New Mexico tiene charging order estándar para LLCs. Protege tus bienes personales en caso de demanda contra la LLC. Ten en cuenta que esta protección no es tan robusta como la de Wyoming, que extiende el charging order incluso a LLCs de un solo miembro. </p>
             </div>
         </div>
 
@@ -350,7 +350,7 @@
                         <span class="step-h">Elige el nombre de tu LLC</span>
                         <span class="step-meta">Tú lo eliges · 5 min</span>
                     </div>
-                    <p class="step-p">Debe terminar en "LLC" o "L.L.C." y ser único en New Mexico. Verifica disponibilidad en el portal del New Mexico Secretary of State.</p>
+                    <p class="step-p">Debe terminar en "LLC" o "L.L.C." y ser único en New Mexico. Verifica disponibilidad en el portal sos.state.nm.us. No hay cargo por reserva de nombre. </p>
                 </div>
             </div>
             <div class="step-row featured">
@@ -381,7 +381,7 @@
                         <span class="step-h">Solicita tu EIN al IRS</span>
                         <span class="step-meta">Trámite ante el IRS</span>
                     </div>
-                    <p class="step-p">El Employer Identification Number es el "RFC" de tu empresa. Sin SSN debes presentar el SS-4 por fax o correo. Tarda 4–8 semanas si lo haces solo.</p>
+                    <p class="step-p">El Employer Identification Number es el equivalente al RFC en México o NIT en Colombia. Sin SSN debes presentar el SS-4 por fax o correo. Tarda 4–8 semanas si lo haces solo. </p>
                     <a href="#cta-final" class="step-cta"><i data-lucide="zap" style="width:14px;height:14px"></i> Sell·U se encarga →</a>
                 </div>
             </div>
@@ -402,7 +402,7 @@
                         <span class="step-h">Abre tu cuenta bancaria y empieza a operar</span>
                         <span class="step-meta">Sin SSN · 100% remoto</span>
                     </div>
-                    <p class="step-p">Con LLC + EIN puedes abrir cuenta en Mercury, Relay, Wise Business. Acepta pagos en USD, conecta Stripe y empieza a facturar.</p>
+                    <p class="step-p">Con LLC + EIN puedes abrir cuenta en Mercury, Relay, Wise Business.  La aprobación depende de cada entidad financiera y no está garantizada. Sell·U puede orientarte en el proceso.</p>
                 </div>
             </div>
         </div>
@@ -431,8 +431,8 @@
                     <tr><td class="col-key">Articles of Organization</td><td>Filing fee oficial ante el New Mexico Secretary of State.</td><td class="num">$50</td><td><span class="tag tag-mid">Pago único</span></td></tr>
                     <tr><td class="col-key">Agente registrado</td><td>Servicio anual obligatorio para LLCs sin oficina física en New Mexico.</td><td class="num">$125</td><td><span class="tag tag-warn">Anual</span></td></tr>
                     <tr><td class="col-key">Annual Report</td><td>New Mexico no requiere Annual Report para LLCs.</td><td class="num">$0</td><td>No aplica</td></tr>
-                    <tr><td class="col-key">Impuestos federales</td><td>1 socio: formularios 5472 + 1120. 2 o más: declaración de partnership + K-1 por cada socio.</td><td class="num">Desde $200</td><td><span class="tag tag-warn">Anual</span></td></tr>
-                    <tr><td class="col-key">EIN (IRS)</td><td>Número de identificación fiscal. Lo gestionamos por ti.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
+                    <tr><td class="col-key">Impuestos federales</td><td>1 socio: formularios 5472 + 1120. 2 o más: declaración de partnership + K-1 por cada socio.</td><td class="num">Desde $150</td><td><span class="tag tag-warn">Anual</span></td></tr>
+                    <tr><td class="col-key">Sales Tax</td><td>New Mexico no tiene sales tax estatal. </td><td class="num">0%</td><td><span class="tag tag-mid">No aplica </span></td></tr>
                     <!--<tr><td class="col-key">Operating Agreement</td><td>Plantilla profesional incluida.</td><td class="num">Incluido</td><td><span class="tag tag-mid">Pago único</span></td></tr>
                     <tr class="row-total"><td class="col-key">Total estimado · Año 1</td><td>Suma de filing + agente + impuestos federales + EIN.</td><td class="num">$375–$500</td><td>—</td></tr>-->
                 </tbody>
