@@ -465,7 +465,7 @@
         .tt-final-h2 { font-size: 36px !important; }
     }
     /* ══ PBR SECTION ══════════════════════════════════════════════════ */
-    .pbr-section { padding: 112px 0 96px; position: relative; overflow: hidden; background: #fbfaf7; }
+    .pbr-section { padding: 112px 0 96px; position: relative; overflow: hidden; background: #EEF1F8; }
     .pbr-container { max-width: 1160px; margin: 0 auto; position: relative; padding: 0 32px; }
     .pbr-paper-mark { position:absolute;top:-120px;right:-160px;width:520px;height:520px;background:#f6bb33;opacity:0.08;border-radius:28px;transform:rotate(12deg);z-index:0;pointer-events:none; }
     .pbr-header { max-width:880px;position:relative;z-index:1;margin:0 auto 64px;text-align:center; }
@@ -898,7 +898,7 @@
             <header class="pbr-header">
                 <div class="pbr-eyebrow-row">
                     <span class="pbr-eyebrow-dot">U</span>
-                    <span class="pbr-eyebrow-label">TikTok Shop · Estados Unidos</span>
+                    <!--<span class="pbr-eyebrow-label">TikTok Shop · Estados Unidos</span>-->
                 </div>
                 <h2 class="pbr-title">
                     <span style="display:block;">El requisito que muchos</span>
