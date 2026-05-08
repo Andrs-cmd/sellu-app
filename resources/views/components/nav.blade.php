@@ -70,8 +70,8 @@
                 </a>
             </div>
         </div>
-        <div class="nav-dropdown {{ request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') || request()->is('pages/faire') || request()->is('pages/sysco') ? 'active' : '' }}">
-            <a href="{{ url('/pages/apertura-marketplace') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') || request()->is('pages/faire') || request()->is('pages/sysco') ? 'active' : '' }}">
+        <div class="nav-dropdown {{ request()->is('pages/marketplaces') || request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') || request()->is('pages/faire') || request()->is('pages/sysco') ? 'active' : '' }}">
+            <a href="{{ url('/pages/marketplaces') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/marketplaces') || request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') || request()->is('pages/faire') || request()->is('pages/sysco') ? 'active' : '' }}">
                 Vende en Marketplace
                 <svg class="nav-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -148,7 +148,7 @@
                 <a href="{{ url('/pages/certificado-revendedor') }}" class="mobile-subitem {{ request()->is('pages/certificado-revendedor') ? 'active' : '' }}">Certificado de revendedor</a>
             </div>
         </div>
-        <div class="mobile-accordion {{ request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') || request()->is('pages/faire') || request()->is('pages/sysco') ? 'open' : '' }}">
+        <div class="mobile-accordion {{ request()->is('pages/marketplaces') || request()->is('pages/apertura-marketplace') || request()->is('pages/walmart') || request()->is('pages/tiktok-shop') || request()->is('pages/faire') || request()->is('pages/sysco') ? 'open' : '' }}">
             <button class="mobile-item mobile-accordion-trigger" onclick="toggleAccordion(this)">
                 Vende en Marketplace
                 <svg class="mobile-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
