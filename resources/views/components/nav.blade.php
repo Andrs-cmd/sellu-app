@@ -106,11 +106,11 @@
             <div class="nav-submenu">
                 <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="nav-subitem">
                     <svg viewBox="0 0 16 16" fill="none"><path d="M8 2l1.5 3 3.5.5-2.5 2.5.5 3.5L8 10l-3 1.5.5-3.5L3 5.5l3.5-.5L8 2z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
-                    Marca
+                    Registro de Marca USPTO
                 </a>
                 <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="nav-subitem">
                     <svg viewBox="0 0 16 16" fill="none"><path d="M3 2h10v12H3z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M5 6h6M5 9h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-                    FDA
+                    Registro sanitario FDA
                 </a>
             </div>
         </div>
