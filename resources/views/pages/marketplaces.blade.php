@@ -208,6 +208,23 @@
     /* CTA section */
     .mk-cta { background: var(--mk-navy); color: var(--mk-paper); padding: 96px 0; position: relative; overflow: hidden; }
 
+    /* ── Marketplace service cards ── */
+    .mp-card {
+        display: flex; flex-direction: column; gap: 14px;
+        padding: 24px 22px 20px; border-radius: 14px;
+        background: var(--mk-white); border: 1px solid var(--mk-ink2);
+        box-shadow: var(--mk-shadow-xs); position: relative;
+        text-decoration: none; color: var(--mk-navy); height: 100%;
+        transition: box-shadow 200ms var(--mk-ease-out), border-color 200ms, transform 200ms;
+    }
+    .mp-card.featured { border-color: var(--mk-navy); box-shadow: var(--mk-shadow-md); }
+    .mp-card:hover { border-color: #5b607d; box-shadow: var(--mk-shadow-md); transform: translateY(-2px); }
+    .mp-card:hover .mp-arrow { transform: translateX(4px); }
+    .mp-arrow { display: inline-flex; transition: transform 200ms var(--mk-ease-out); }
+    @media (max-width: 1100px) { .mp-row { grid-template-columns: repeat(3,1fr) !important; } }
+    @media (max-width: 880px)  { .mp-row { grid-template-columns: repeat(2,1fr) !important; } }
+    @media (max-width: 560px)  { .mp-row { grid-template-columns: 1fr !important; } }
+
     /* Brand tile float animation */
     @keyframes mk-float {
         0%, 100% { transform: translateY(0px);   }
@@ -330,76 +347,166 @@
             </div>
         </div>
 
-        <!-- Sub-content row: description + ledger -->
-        <div class="mk-hero-grid" style="margin-top:64px;display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:flex-start;">
-            <div>
-                <p style="font-size:18px;line-height:30px;letter-spacing:-0.005em;color:var(--mk-ink7);max-width:560px;margin:0;">
-                    Millones de compradores en EE.UU. — y miles de retailers, restaurantes y creadores — buscan productos todos los días en Amazon, Walmart, TikTok Shop, Faire y Sysco. Llegar a ellos desde Colombia, México, Argentina o cualquier país de LATAM es posible — si tienes la cuenta bien configurada, la estructura legal correcta y la logística resuelta. <strong style="color:var(--mk-navy);font-weight:600;">Sell-U lo gestiona por ti.</strong>
-                </p>
-                <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
-                    <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20información%20sobre%20vender%20en%20marketplaces%20de%20EE.UU." class="mk-btn mk-btn-accent mk-btn-lg">Empezar en marketplaces →</a>
-                    <a href="{{ url('/pages/canales-de-atencion') }}" class="mk-btn mk-btn-outline mk-btn-lg">Hablar con un asesor</a>
-                </div>
-                <div style="margin-top:22px;display:flex;align-items:center;gap:18px;font-size:13px;color:var(--mk-ink5);flex-wrap:wrap;">
-                    <span style="display:inline-flex;align-items:center;gap:6px;"><i data-lucide="video" width="14" height="14"></i> 100% remoto</span>
-                    <span style="width:4px;height:4px;background:var(--mk-ink3);border-radius:50%;"></span>
-                    <span style="display:inline-flex;align-items:center;gap:6px;"><i data-lucide="languages" width="14" height="14"></i> En español</span>
-                    <span style="width:4px;height:4px;background:var(--mk-ink3);border-radius:50%;"></span>
-                    <span style="display:inline-flex;align-items:center;gap:6px;"><i data-lucide="globe-2" width="14" height="14"></i> Para no residentes</span>
-                </div>
-            </div>
-
-            <!-- Channel ledger -->
-            <div style="background:var(--mk-white);border:1px solid var(--mk-ink2);border-radius:18px;padding:24px;box-shadow:var(--mk-shadow-sm);">
-                <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--mk-ink5);margin-bottom:16px;">Tus cinco puertas a EE.UU.</div>
-                <div style="display:flex;flex-direction:column;gap:10px;">
-                    <div class="mk-ledger-row">
-                        <div class="mk-ledger-logo" style="background:#FF9900;">a</div>
-                        <div>
-                            <div style="font-size:14px;font-weight:600;color:var(--mk-navy);">Amazon</div>
-                            <div style="font-size:11px;color:var(--mk-ink5);margin-top:1px;">300M+ compradores · FBA Prime</div>
-                        </div>
-                        <span style="font-size:10px;font-weight:700;padding:4px 9px;border-radius:999px;background:var(--mk-white);border:1px solid var(--mk-ink2);color:var(--mk-navy);text-transform:uppercase;letter-spacing:0.04em;white-space:nowrap;">B2C</span>
-                    </div>
-                    <div class="mk-ledger-row">
-                        <div class="mk-ledger-logo" style="background:#0071DC;">w</div>
-                        <div>
-                            <div style="font-size:14px;font-weight:600;color:var(--mk-navy);">Walmart</div>
-                            <div style="font-size:11px;color:var(--mk-ink5);margin-top:1px;">~150K sellers · LLC obligatoria</div>
-                        </div>
-                        <span style="font-size:10px;font-weight:700;padding:4px 9px;border-radius:999px;background:var(--mk-white);border:1px solid var(--mk-ink2);color:var(--mk-navy);text-transform:uppercase;letter-spacing:0.04em;white-space:nowrap;">B2C</span>
-                    </div>
-                    <div class="mk-ledger-row">
-                        <div class="mk-ledger-logo" style="background:#000;">t</div>
-                        <div>
-                            <div style="font-size:14px;font-weight:600;color:var(--mk-navy);">TikTok Shop</div>
-                            <div style="font-size:11px;color:var(--mk-ink5);margin-top:1px;">Social commerce · 6% tarifa unificada</div>
-                        </div>
-                        <span style="font-size:10px;font-weight:700;padding:4px 9px;border-radius:999px;background:var(--mk-white);border:1px solid var(--mk-ink2);color:var(--mk-navy);text-transform:uppercase;letter-spacing:0.04em;white-space:nowrap;">B2C</span>
-                    </div>
-                    <div class="mk-ledger-row">
-                        <div class="mk-ledger-logo" style="background:#1f1f1f;">f</div>
-                        <div>
-                            <div style="font-size:14px;font-weight:600;color:var(--mk-navy);">Faire</div>
-                            <div style="font-size:11px;color:var(--mk-ink5);margin-top:1px;">700K+ retailers · pedidos por lotes</div>
-                        </div>
-                        <span style="font-size:10px;font-weight:700;padding:4px 9px;border-radius:999px;background:var(--mk-white);border:1px solid var(--mk-ink2);color:var(--mk-navy);text-transform:uppercase;letter-spacing:0.04em;white-space:nowrap;">B2B</span>
-                    </div>
-                    <div class="mk-ledger-row">
-                        <div class="mk-ledger-logo" style="background:#0099D8;">s</div>
-                        <div>
-                            <div style="font-size:14px;font-weight:600;color:var(--mk-navy);">Sysco</div>
-                            <div style="font-size:11px;color:var(--mk-ink5);margin-top:1px;">Food service · distribución nacional</div>
-                        </div>
-                        <span style="font-size:10px;font-weight:700;padding:4px 9px;border-radius:999px;background:var(--mk-white);border:1px solid var(--mk-ink2);color:var(--mk-navy);text-transform:uppercase;letter-spacing:0.04em;white-space:nowrap;">Food B2B</span>
-                    </div>
-                </div>
-                <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--mk-ink2);display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mk-ink7);">
-                    <i data-lucide="zap" width="14" height="14" style="color:var(--mk-accent2);"></i>
-                    Una LLC. Un EIN. Acceso a los cinco.
-                </div>
+        <!-- Description + CTAs -->
+        <div style="margin-top:64px;max-width:720px;">
+            <p style="font-size:18px;line-height:30px;letter-spacing:-0.005em;color:var(--mk-ink7);margin:0;">
+                Millones de compradores en EE.UU. — y miles de retailers, restaurantes y creadores — buscan productos todos los días en Amazon, Walmart, TikTok Shop, Faire y Sysco. Llegar a ellos desde Colombia, México, Argentina o cualquier país de LATAM es posible — si tienes la cuenta bien configurada, la estructura legal correcta y la logística resuelta. <strong style="color:var(--mk-navy);font-weight:600;">Sell-U lo gestiona por ti.</strong>
+            </p>
+            <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+                <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20información%20sobre%20vender%20en%20marketplaces%20de%20EE.UU." class="mk-btn mk-btn-accent mk-btn-lg">Empezar en marketplaces →</a>
+                <a href="{{ url('/pages/canales-de-atencion') }}" class="mk-btn mk-btn-outline mk-btn-lg">Hablar con un asesor</a>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION — SERVICIOS POR MARKETPLACE (5 CARDS)
+═══════════════════════════════════════════════════════ -->
+<section class="mk-section mk-section-band" id="servicios-marketplace">
+    <div class="mk-container">
+
+        <!-- Header -->
+        <div style="display:flex;flex-direction:column;gap:24px;margin-bottom:56px;max-width:880px;">
+            <h2 style="font-family:'Poppins',sans-serif;font-size:52px;line-height:62px;letter-spacing:-0.025em;font-weight:600;color:var(--mk-navy);margin:0;">
+                Marketplaces para vender en
+                <em style="font-style:normal;position:relative;white-space:nowrap;">EE.UU.<span aria-hidden="true" style="position:absolute;left:-2px;right:-2px;bottom:6px;height:14px;background:var(--mk-accent);z-index:-1;border-radius:2px;transform:skewX(-6deg);"></span></em>
+            </h2>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px 22px;">
+                <li style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--mk-ink5);">
+                    <span style="width:22px;height:22px;border-radius:999px;background:var(--mk-accent4);color:var(--mk-navy);display:inline-flex;align-items:center;justify-content:center;flex:none;"><i data-lucide="globe" width="12" height="12"></i></span>
+                    100% remoto
+                </li>
+                <li style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--mk-ink5);">
+                    <span style="width:22px;height:22px;border-radius:999px;background:var(--mk-accent4);color:var(--mk-navy);display:inline-flex;align-items:center;justify-content:center;flex:none;"><i data-lucide="languages" width="12" height="12"></i></span>
+                    En español
+                </li>
+                <li style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--mk-ink5);">
+                    <span style="width:22px;height:22px;border-radius:999px;background:var(--mk-accent4);color:var(--mk-navy);display:inline-flex;align-items:center;justify-content:center;flex:none;"><i data-lucide="user-round" width="12" height="12"></i></span>
+                    Para no residentes
+                </li>
+            </ul>
+        </div>
+
+        <!-- 5 Cards -->
+        <div class="mp-row reveal" style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;align-items:stretch;">
+
+            <!-- 01 Amazon — featured -->
+            <a href="{{ url('/pages/apertura-marketplace') }}" class="mp-card featured">
+                <span style="position:absolute;top:-10px;left:18px;background:var(--mk-accent);color:var(--mk-navy);border:1px solid var(--mk-accent);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;white-space:nowrap;">Más consultado</span>
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.04em;color:var(--mk-accent2);font-weight:500;">01 <span style="opacity:.5">/ 05</span></span>
+                    <span style="font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--mk-navy);background:var(--mk-white);border:1px solid var(--mk-ink2);padding:3px 7px;border-radius:5px;">B2C</span>
+                </div>
+                <div style="width:44px;height:44px;border-radius:10px;background:var(--mk-navy);color:var(--mk-accent);display:flex;align-items:center;justify-content:center;flex:none;">
+                    <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 13.5c0-2 1.8-3.5 4.2-3.5 2.5 0 4 1.4 4 3.7v5.6c0 .9.2 1.6.7 2.2"/>
+                        <path d="M9.6 18.5c0-1.7 1.4-2.5 3.5-2.7l3.6-.4"/>
+                        <path d="M6.5 23.5c3.4 2 8.4 2.7 13.4 1.4 2-.5 3.7-1.3 5.2-2.3"/>
+                        <path d="M22.5 21.2c.5-.7 1.4-2.4 1.6-3.4"/>
+                    </svg>
+                </div>
+                <h3 style="font-size:22px;line-height:28px;letter-spacing:-0.02em;font-weight:600;color:var(--mk-navy);margin:0;">Amazon</h3>
+                <p style="font-size:13px;line-height:20px;color:var(--mk-ink7);margin:0;">Preparamos tu LLC, EIN, dirección comercial y estructura base para vender en Amazon como extranjero o no residente.</p>
+                <div style="margin-top:auto;padding-top:14px;border-top:1px solid var(--mk-ink2);">
+                    <span class="mp-cta" style="font-size:13px;font-weight:600;color:var(--mk-navy);display:inline-flex;align-items:center;gap:6px;">Ver servicio <span class="mp-arrow">→</span></span>
+                </div>
+            </a>
+
+            <!-- 02 Walmart -->
+            <a href="{{ url('/pages/walmart') }}" class="mp-card">
+                <span style="position:absolute;top:-10px;left:18px;background:var(--mk-white);color:var(--mk-navy);border:1px solid var(--mk-ink3);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;white-space:nowrap;">Ideal ecommerce</span>
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.04em;color:var(--mk-ink5);font-weight:500;">02 <span style="opacity:.5">/ 05</span></span>
+                    <span style="font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--mk-navy);background:var(--mk-white);border:1px solid var(--mk-ink2);padding:3px 7px;border-radius:5px;">B2C</span>
+                </div>
+                <div style="width:44px;height:44px;border-radius:10px;background:var(--mk-paper2);color:var(--mk-navy);display:flex;align-items:center;justify-content:center;flex:none;">
+                    <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="16" cy="16" r="2.4"/>
+                        <path d="M16 7v3.5"/><path d="M16 21.5V25"/>
+                        <path d="M9.5 12.5l3 1.7"/><path d="M19.5 18.3l3 1.7"/>
+                        <path d="M22.5 12.5l-3 1.7"/><path d="M12.5 18.3l-3 1.7"/>
+                    </svg>
+                </div>
+                <h3 style="font-size:22px;line-height:28px;letter-spacing:-0.02em;font-weight:600;color:var(--mk-navy);margin:0;">Walmart</h3>
+                <p style="font-size:13px;line-height:20px;color:var(--mk-ink7);margin:0;">Configuramos la estructura legal y documental para aplicar a Walmart Marketplace con una LLC correctamente preparada.</p>
+                <div style="margin-top:auto;padding-top:14px;border-top:1px solid var(--mk-ink2);">
+                    <span class="mp-cta" style="font-size:13px;font-weight:600;color:var(--mk-navy);display:inline-flex;align-items:center;gap:6px;">Ver servicio <span class="mp-arrow">→</span></span>
+                </div>
+            </a>
+
+            <!-- 03 TikTok Shop -->
+            <a href="{{ url('/pages/tiktok-shop') }}" class="mp-card">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.04em;color:var(--mk-ink5);font-weight:500;">03 <span style="opacity:.5">/ 05</span></span>
+                    <span style="font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--mk-navy);background:var(--mk-white);border:1px solid var(--mk-ink2);padding:3px 7px;border-radius:5px;">B2C</span>
+                </div>
+                <div style="width:44px;height:44px;border-radius:10px;background:var(--mk-paper2);color:var(--mk-navy);display:flex;align-items:center;justify-content:center;flex:none;">
+                    <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17.5 7v12.5a4 4 0 1 1-4-4"/>
+                        <path d="M17.5 7c.4 2.6 2.3 4.4 4.8 4.6"/>
+                    </svg>
+                </div>
+                <h3 style="font-size:22px;line-height:28px;letter-spacing:-0.02em;font-weight:600;color:var(--mk-navy);margin:0;">TikTok Shop</h3>
+                <p style="font-size:13px;line-height:20px;color:var(--mk-ink7);margin:0;">Organizamos requisitos de negocio, documentación y estructura de cumplimiento para iniciar en TikTok Shop EE.UU.</p>
+                <div style="margin-top:auto;padding-top:14px;border-top:1px solid var(--mk-ink2);">
+                    <span class="mp-cta" style="font-size:13px;font-weight:600;color:var(--mk-navy);display:inline-flex;align-items:center;gap:6px;">Ver servicio <span class="mp-arrow">→</span></span>
+                </div>
+            </a>
+
+            <!-- 04 Faire -->
+            <a href="{{ url('/pages/faire') }}" class="mp-card">
+                <span style="position:absolute;top:-10px;left:18px;background:var(--mk-white);color:var(--mk-navy);border:1px solid var(--mk-ink3);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;white-space:nowrap;">Canal B2B</span>
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.04em;color:var(--mk-ink5);font-weight:500;">04 <span style="opacity:.5">/ 05</span></span>
+                    <span style="font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--mk-navy);background:var(--mk-paper2);border:1px solid var(--mk-ink2);padding:3px 7px;border-radius:5px;">B2B</span>
+                </div>
+                <div style="width:44px;height:44px;border-radius:10px;background:var(--mk-paper2);color:var(--mk-navy);display:flex;align-items:center;justify-content:center;flex:none;">
+                    <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 24V8h13"/>
+                        <path d="M9 16h11"/>
+                    </svg>
+                </div>
+                <h3 style="font-size:22px;line-height:28px;letter-spacing:-0.02em;font-weight:600;color:var(--mk-navy);margin:0;">Faire</h3>
+                <p style="font-size:13px;line-height:20px;color:var(--mk-ink7);margin:0;">Te acompañamos a vender al por mayor a retailers en EE.UU., con documentación y estructura comercial clara.</p>
+                <div style="margin-top:auto;padding-top:14px;border-top:1px solid var(--mk-ink2);">
+                    <span class="mp-cta" style="font-size:13px;font-weight:600;color:var(--mk-navy);display:inline-flex;align-items:center;gap:6px;">Ver servicio <span class="mp-arrow">→</span></span>
+                </div>
+            </a>
+
+            <!-- 05 Sysco -->
+            <a href="{{ url('/pages/sysco') }}" class="mp-card">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.04em;color:var(--mk-ink5);font-weight:500;">05 <span style="opacity:.5">/ 05</span></span>
+                    <span style="font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--mk-navy);background:var(--mk-accent4);border:1px solid var(--mk-accent3);padding:3px 7px;border-radius:5px;">FOOD B2B</span>
+                </div>
+                <div style="width:44px;height:44px;border-radius:10px;background:var(--mk-paper2);color:var(--mk-navy);display:flex;align-items:center;justify-content:center;flex:none;">
+                    <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 12.5l9-4.5 9 4.5v8.5l-9 4.5-9-4.5z"/>
+                        <path d="M7 12.5l9 4.5 9-4.5"/>
+                        <path d="M16 17v8.5"/>
+                    </svg>
+                </div>
+                <h3 style="font-size:22px;line-height:28px;letter-spacing:-0.02em;font-weight:600;color:var(--mk-navy);margin:0;">Sysco</h3>
+                <p style="font-size:13px;line-height:20px;color:var(--mk-ink7);margin:0;">Base legal y documental para marcas de alimentos o productos que entran a canales de distribución como Sysco.</p>
+                <div style="margin-top:auto;padding-top:14px;border-top:1px solid var(--mk-ink2);">
+                    <span class="mp-cta" style="font-size:13px;font-weight:600;color:var(--mk-navy);display:inline-flex;align-items:center;gap:6px;">Ver servicio <span class="mp-arrow">→</span></span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Footnote -->
+        <div style="margin-top:24px;display:flex;align-items:center;gap:16px;padding:18px 22px;background:var(--mk-white);border:1px solid var(--mk-ink2);border-radius:14px;font-size:14px;color:var(--mk-ink5);line-height:22px;flex-wrap:wrap;">
+            <span style="width:34px;height:34px;border-radius:10px;background:var(--mk-white);border:1px solid var(--mk-ink2);display:inline-flex;align-items:center;justify-content:center;flex:none;color:var(--mk-navy);">
+                <i data-lucide="sparkles" width="16" height="16"></i>
+            </span>
+            <span style="flex:1;min-width:240px;">¿No encuentras tu marketplace? También trabajamos con Etsy, Shopify Wholesale, Mercado Libre US y otros canales bajo demanda.</span>
+            <a href="https://wa.me/573116473200?text=Hola%2C%20quiero%20información%20sobre%20un%20marketplace%20específico" style="flex:none;font-size:13px;font-weight:600;color:var(--mk-navy);text-decoration:none;display:inline-flex;align-items:center;gap:6px;">
+                Solicitar canal →
+            </a>
+        </div>
+
     </div>
 </section>
 
