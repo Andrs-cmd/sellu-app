@@ -151,7 +151,7 @@
         <div class="anim">
             <h1 style="font-family:'Montserrat',sans-serif; font-size:clamp(44px,5.5vw,68px); line-height:1.06; letter-spacing:-0.025em; font-weight:600; margin-bottom:24px; color:var(--navy-900);">
                 ¿En qué podemos<br>
-                <em style="font-style:normal; color:var(--accent-700); position:relative;">ayudarte hoy?
+                <em style="font-style:normal; color:#F5A623; position:relative;">ayudarte hoy?
                     <svg width="100%" height="10" viewBox="0 0 200 10" preserveAspectRatio="none" style="position:absolute;left:0;bottom:-4px;height:8px;"><path d="M2 6 Q 50 1, 100 5 T 198 4" stroke="#F6BB33" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
                 </em>
             </h1>
