@@ -981,11 +981,11 @@ const statePrices = {
 function getPlansForState(state) {
     const base  = statePrices[state] || 399;
     const full  = base + 100;
-    const lux   = base <= 349 ? 999 : base <= 399 ? 1099 : base <= 449 ? 1199 : 1299;
+    const lux   = 1200;
     return [
         { tier:'Básico', sub:'Inicio rápido',              price:base, list:['Registro LLC','Agente registrado','Dirección Física','EIN','Tarifas estatales','Operating Agreement'] },
         { tier:'Full',   sub:'Variedad y acompañamiento',  price:full, list:[`Todo Plan Básico ${state}`,'Cuenta Bancaria en Mercury o Relay','Stripe configurado e integrado','Asesoría básica'], featured:true },
-        { tier:'Luxury', sub:'Solución integral',          price:lux,  list:[`Todo Plan Full ${state}`,'Asesoría contable','Página Web','Línea Telefónica'] }
+        { tier:'Luxury', sub:'Solución integral',          price:lux,  list:[`Todo el Plan Full ${state} (LLC + EIN + Agente registrado + Operating Agreement + Dirección física)`,'Presentación de impuestos federales (Form 5472 + 1120)','ITIN del titular','Asesoría contable 3 horas durante el año fiscal','Asesor dedicado 90 días por WhatsApp (incluye 3 videollamadas adicionales)'] }
     ];
 }
 
