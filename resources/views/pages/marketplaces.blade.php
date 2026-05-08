@@ -248,15 +248,6 @@
 
     <div class="mk-container" style="position:relative;">
 
-        <!-- Eyebrow row -->
-        <!--<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:12px;">
-            <div class="mk-trust-pill">
-                <span style="width:6px;height:6px;border-radius:3px;background:var(--mk-success);"></span>
-                Pilar Marketplaces · LATAM → EE.UU.
-            </div>
-            <div style="font-size:12px;font-family:'JetBrains Mono',monospace;color:var(--mk-ink5);letter-spacing:0.04em;">01 / Vende donde compran</div>
-        </div>-->
-
         <!-- Logo stage — 5 channels -->
         <div>
             <!-- Top row: Amazon × Walmart + headline -->
@@ -266,7 +257,7 @@
                 <div style="transform:rotate(-3deg);min-width:180px;">
                     <div class="mk-brand-tile paper floating" style="animation-delay:0s;">
                         <div class="mk-brand-badge" style="background:#FF9900;">
-                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778273547/amazon2_cvo6qy.png" alt="Amazon" style="width:44px;height:44px;object-fit:contain;display:block;">
+                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/amazon_j3cpnc.png" alt="Amazon" style="width:44px;height:44px;object-fit:contain;display:block;">
                         </div>
                         <div style="font-size:16px;font-weight:700;color:var(--mk-navy);">Amazon</div>
                         <div class="mk-brand-tag" style="color:var(--mk-ink5);">
@@ -293,7 +284,7 @@
                 <div style="transform:rotate(3deg);min-width:180px;">
                     <div class="mk-brand-tile navy floating" style="animation-delay:0.6s;">
                         <div class="mk-brand-badge" style="background:#0071DC;">
-                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778273323/Wallmart_f07neq.png" alt="Walmart" style="width:44px;height:44px;object-fit:contain;display:block;">
+                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/walmart_ltretj.png" alt="Walmart" style="width:44px;height:44px;object-fit:contain;display:block;">
                         </div>
                         <div style="font-size:16px;font-weight:700;color:var(--mk-paper);">Walmart</div>
                         <div class="mk-brand-tag" style="color:rgba(251,250,247,0.75);">
@@ -316,7 +307,7 @@
                 <div style="transform:rotate(-1.5deg);">
                     <div class="mk-brand-tile paper floating" style="animation-delay:1.2s;">
                         <div class="mk-brand-badge" style="background:#000;width:50px;height:50px;">
-                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778273547/tiktok2_qokys7.png" alt="TikTok Shop" style="width:34px;height:34px;object-fit:contain;display:block;">
+                            <img src="https://res.cloudinary.com/dq5tsivzq/image/upload/q_auto/f_auto/v1778272671/tiktokshop_tdidoe.png" alt="TikTok Shop" style="width:34px;height:34px;object-fit:contain;display:block;">
                         </div>
                         <div style="font-size:14px;font-weight:700;">TikTok Shop</div>
                         <div class="mk-brand-tag" style="color:var(--mk-ink5);"><span style="width:6px;height:6px;border-radius:3px;background:#FE2C55;"></span>Social commerce</div>
@@ -418,7 +409,6 @@
 <section class="mk-section" id="canales" style="background:var(--mk-white);">
     <div class="mk-container">
         <div style="max-width:760px;margin-bottom:56px;">
-            <span class="mk-eyebrow mk-eyebrow-accent">Sección 02 · Marketplaces</span>
             <h2 class="mk-h2" style="font-size:44px;line-height:52px;letter-spacing:-0.022em;margin-top:14px;margin-bottom:14px;color:var(--mk-navy);">Cinco canales, cinco oportunidades.</h2>
             <p style="font-size:18px;line-height:28px;color:var(--mk-ink7);max-width:640px;">
                 No son iguales. Cada marketplace tiene su comprador, su economía y su barrera de entrada. Elegir el correcto — o combinarlos estratégicamente — depende de tu producto, tu volumen y tu etapa.
@@ -428,7 +418,6 @@
         <!-- Flow diagram -->
         <div class="mk-flow">
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:8px;">
-                <span class="mk-eyebrow">Flujo · de tu bodega al carrito americano</span>
                 <span style="font-size:12px;color:var(--mk-ink5);font-family:'JetBrains Mono',monospace;">4 pasos · 1 estructura</span>
             </div>
             <div class="mk-flow-nodes">
@@ -473,14 +462,14 @@
         </div>
 
         <!-- B2C block -->
-        <!--<div style="margin-top:72px;margin-bottom:20px;display:flex;align-items:center;gap:14px;">
+        <div style="margin-top:72px;margin-bottom:20px;display:flex;align-items:center;gap:14px;">
             <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--mk-accent2);">Bloque B2C — consumidor final</span>
             <span style="flex:1;height:1px;background:var(--mk-ink2);"></span>
-        </div>-->
+        </div>
 
         <!-- Amazon + Walmart -->
-        <!--<div class="mk-ch-grid-2">
-             Amazon 
+        <div class="mk-ch-grid-2">
+            <!-- Amazon -->
             <div class="reveal" style="--reveal-delay:0ms;">
                 <article class="mk-card" style="display:flex;flex-direction:column;gap:20px;height:100%;">
                     <header style="display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid var(--mk-ink2);">
@@ -516,7 +505,7 @@
                 </article>
             </div>
 
-             Walmart 
+            <!-- Walmart -->
             <div class="reveal" style="--reveal-delay:150ms;">
                 <article class="mk-card-navy" style="display:flex;flex-direction:column;gap:20px;height:100%;">
                     <header style="display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid rgba(251,250,247,0.14);">
@@ -537,10 +526,10 @@
                     <a href="{{ url('/pages/walmart') }}" style="margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--mk-accent);padding:10px 16px;border-radius:999px;border:1px solid rgba(246,187,51,0.45);background:rgba(246,187,51,0.08);">Ver servicio de Walmart <i data-lucide="arrow-right" width="14" height="14"></i></a>
                 </article>
             </div>
-        </div>-->
+        </div>
 
         <!-- TikTok Shop (full width) -->
-        <!--<div class="reveal" style="--reveal-delay:300ms;margin-top:24px;">
+        <div class="reveal" style="--reveal-delay:300ms;margin-top:24px;">
             <article class="mk-card" style="display:flex;flex-direction:column;gap:20px;">
                 <header style="display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid var(--mk-ink2);">
                     <div style="width:40px;height:40px;border-radius:10px;background:#000;display:grid;place-items:center;color:#fff;font-weight:700;font-size:18px;">t</div>
@@ -576,17 +565,17 @@
                 </div>
                 <a href="{{ url('/pages/tiktok-shop') }}" style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--mk-navy);padding:10px 16px;border-radius:999px;border:1px solid var(--mk-ink3);background:var(--mk-white);">Ver servicio de TikTok Shop <i data-lucide="arrow-right" width="14" height="14"></i></a>
             </article>
-        </div>-->
+        </div>
 
         <!-- B2B block -->
-        <!--<div style="margin-top:56px;margin-bottom:20px;display:flex;align-items:center;gap:14px;">
+        <div style="margin-top:56px;margin-bottom:20px;display:flex;align-items:center;gap:14px;">
             <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--mk-accent2);">Bloque B2B — venta a negocios</span>
             <span style="flex:1;height:1px;background:var(--mk-ink2);"></span>
-        </div>-->
+        </div>
 
         <!-- Faire + Sysco -->
-        <!--<div class="mk-ch-grid-2">
-            Faire 
+        <div class="mk-ch-grid-2">
+            <!-- Faire -->
             <div class="reveal" style="--reveal-delay:0ms;">
                 <article class="mk-card-navy" style="display:flex;flex-direction:column;gap:20px;height:100%;">
                     <header style="display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid rgba(251,250,247,0.14);">
@@ -608,7 +597,7 @@
                 </article>
             </div>
 
-             Sysco
+            <!-- Sysco -->
             <div class="reveal" style="--reveal-delay:150ms;">
                 <article class="mk-card" style="display:flex;flex-direction:column;gap:20px;height:100%;">
                     <header style="display:flex;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid var(--mk-ink2);">
@@ -643,10 +632,10 @@
                     <a href="{{ url('/pages/sysco') }}" style="margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--mk-navy);padding:10px 16px;border-radius:999px;border:1px solid var(--mk-ink3);background:var(--mk-white);">Ver servicio de Sysco <i data-lucide="arrow-right" width="14" height="14"></i></a>
                 </article>
             </div>
-        </div>-->
+        </div>
 
         <!-- Comparison table -->
-        <!--<div style="margin-top:56px;">
+        <div style="margin-top:56px;">
             <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px;">
                 <h3 style="font-size:24px;letter-spacing:-0.015em;color:var(--mk-navy);">Comparación lado a lado</h3>
                 <span style="font-size:13px;color:var(--mk-ink5);">5 canales · datos públicos · 2025</span>
@@ -671,7 +660,7 @@
                     <div class="mk-table-row"><div class="mk-table-cell">Ideal para</div><div class="mk-table-cell">Todo tipo de producto</div><div class="mk-table-cell">Producto establecido</div><div class="mk-table-cell">Producto visual</div><div class="mk-table-cell">Marca con identidad</div><div class="mk-table-cell">Alimento a escala</div></div>
                 </div>
             </div>
-        </div>-->
+        </div>
 
         <!-- Combined power callout -->
         <div style="margin-top:32px;padding:28px 32px;border-radius:16px;background:var(--mk-paper2);border:1px solid var(--mk-ink2);display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
@@ -695,7 +684,6 @@
     <div class="mk-container">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:flex-end;margin-bottom:48px;" class="mk-hero-grid">
             <div>
-                <span class="mk-eyebrow mk-eyebrow-accent">Sección 03 · Estructura</span>
                 <h2 class="mk-h2" style="font-size:44px;line-height:52px;letter-spacing:-0.022em;margin-top:14px;color:var(--mk-navy);">Lo que necesitas para vender en marketplaces de EE.UU.</h2>
             </div>
             <div>
@@ -782,19 +770,18 @@
 <!-- ═══════════════════════════════════════════════════════
      SECTION 4 — PROCESO
 ═══════════════════════════════════════════════════════ -->
-<!--<section class="mk-section" id="proceso" style="background:var(--mk-white);">
+<section class="mk-section" id="proceso" style="background:var(--mk-white);">
     <div class="mk-container">
         <div style="max-width:760px;margin-bottom:64px;">
-            <span class="mk-eyebrow mk-eyebrow-accent">Sección 04 · Proceso</span>
             <h2 class="mk-h2" style="font-size:44px;line-height:52px;letter-spacing:-0.022em;margin-top:14px;margin-bottom:14px;color:var(--mk-navy);">Cómo Sell-U te lleva de cero a seller activo en Amazon o Walmart.</h2>
             <p style="font-size:18px;line-height:28px;color:var(--mk-ink7);max-width:640px;">No solo configuramos tu cuenta. Construimos la estructura completa para que puedas vender de forma legal, recibir pagos sin fricción y escalar sin que la operación se rompa.</p>
         </div>
 
         <ol class="mk-steps">
-             Vertical connector 
+            <!-- Vertical connector -->
             <div aria-hidden="true" style="position:absolute;left:35px;top:36px;bottom:36px;width:2px;background:repeating-linear-gradient(to bottom,var(--mk-ink3) 0 6px,transparent 6px 12px);z-index:0;"></div>
 
-            Paso 01
+            <!-- Paso 01 -->
             <li class="mk-step reveal" style="--reveal-delay:0ms;">
                 <div>
                     <div class="mk-step-icon" style="background:var(--mk-accent);color:var(--mk-navy);">
@@ -813,7 +800,7 @@
                 </div>
             </li>
 
-         Paso 02 
+            <!-- Paso 02 -->
             <li class="mk-step reveal" style="--reveal-delay:100ms;">
                 <div>
                     <div class="mk-step-icon" style="background:var(--mk-white);border:1px solid var(--mk-ink3);color:var(--mk-navy);box-shadow:var(--mk-shadow-sm);">
@@ -832,7 +819,7 @@
                 </div>
             </li>
 
-             Paso 03 
+            <!-- Paso 03 -->
             <li class="mk-step reveal" style="--reveal-delay:200ms;">
                 <div>
                     <div class="mk-step-icon" style="background:var(--mk-white);border:1px solid var(--mk-ink3);color:var(--mk-navy);box-shadow:var(--mk-shadow-sm);">
@@ -851,7 +838,7 @@
                 </div>
             </li>
 
-             Paso 04 
+            <!-- Paso 04 -->
             <li class="mk-step reveal" style="--reveal-delay:300ms;">
                 <div>
                     <div class="mk-step-icon" style="background:var(--mk-white);border:1px solid var(--mk-ink3);color:var(--mk-navy);box-shadow:var(--mk-shadow-sm);">
@@ -870,7 +857,7 @@
                 </div>
             </li>
 
-             Paso 05 
+            <!-- Paso 05 -->
             <li class="mk-step reveal" style="--reveal-delay:400ms;">
                 <div>
                     <div class="mk-step-icon" style="background:var(--mk-white);border:1px solid var(--mk-ink3);color:var(--mk-navy);box-shadow:var(--mk-shadow-sm);">
@@ -890,7 +877,7 @@
             </li>
         </ol>
     </div>
-</section>-->
+</section>
 
 <!-- ═══════════════════════════════════════════════════════
      SECTION 5 — CTA FINAL
