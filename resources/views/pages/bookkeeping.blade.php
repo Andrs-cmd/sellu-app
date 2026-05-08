@@ -619,39 +619,6 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════
-     SECTION 2 — WHY BOOKKEEPING MATTERS
-═══════════════════════════════════════════════════════════ -->
-<section class="bk-band">
-    <div class="container bk-why-grid">
-        <div>
-            <h2 class="bk-why-h2">¿Qué es el bookkeeping y por qué tu LLC lo necesita?</h2>
-            <p class="bk-why-p">
-                El bookkeeping es el registro mensual de todas las transacciones de tu LLC: ingresos, gastos, pagos y movimientos entre tú y tu empresa. Es la base de todo lo demás — sin libros en orden, no puedes presentar impuestos, respaldar una auditoría ni tomar decisiones financieras con información real.
-            </p>
-            <p class="bk-why-p" style="margin-bottom:0;">
-                Para una LLC con dueño no residente, el bookkeeping es especialmente crítico. El IRS exige el <strong style="color:var(--navy-900);font-weight:600;">Form 5472</strong> cada año, que reporta todas las transacciones entre tú y tu empresa.
-            </p>
-        </div>
-
-        <!-- Penalty card with CountUp -->
-        <div class="bk-penalty-card">
-            <span class="bk-penalty-ref">Form 5472 · IRS</span>
-            <div class="bk-penalty-badge">
-                <span class="bk-penalty-icon">
-                    <i data-lucide="alert-triangle" width="16" height="16"></i>
-                </span>
-                <span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--danger-700);">Multa por no presentar</span>
-            </div>
-            <div class="bk-penalty-amount">$<span class="bk-count-up" data-to="25000">0</span></div>
-            <div class="bk-penalty-sub">USD por formulario · multa inicial</div>
-            <p class="bk-penalty-desc">
-                No presentar el Form 5472 — incluso si tu LLC no tuvo ingresos — genera multas desde <strong style="color:var(--navy-900);font-weight:600;">$25,000 por formulario</strong>. El bookkeeping correcto es lo que hace posible cumplir ese requisito sin errores y sin consecuencias.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════
      SECTION 3 — SERVICES HUB
 ═══════════════════════════════════════════════════════════ -->
 <section class="section" id="servicios">
@@ -734,7 +701,7 @@
                         <p class="bk-card-p">Registro y categorización de todas las transacciones de tu LLC. Reconciliación de cuentas bancarias y pasarelas de pago. Reportes mensuales en español con el estado real de tus finanzas en USD.</p>
                     </div>
                     <div class="bk-card-footer">
-                        <span class="bk-card-badge"><span class="bk-card-badge-dot"></span>Punto de partida</span>
+                        <a href="{{ url('/pages/bookkeeping') }}" class="bk-card-cta">Ver servicio de bookkeeping <i data-lucide="arrow-right" width="14" height="14"></i></a>
                     </div>
                 </article>
 
@@ -793,6 +760,39 @@
                 <div class="bk-services-cta-box-sub">En 30 minutos te lo decimos.</div>
             </div>
             <a href="#asesoria" class="btn btn-primary">Agendar asesoría gratuita →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 2 — WHY BOOKKEEPING MATTERS
+═══════════════════════════════════════════════════════════ -->
+<section class="bk-band">
+    <div class="container bk-why-grid">
+        <div>
+            <h2 class="bk-why-h2">¿Qué es el bookkeeping y por qué tu LLC lo necesita?</h2>
+            <p class="bk-why-p">
+                El bookkeeping es el registro mensual de todas las transacciones de tu LLC: ingresos, gastos, pagos y movimientos entre tú y tu empresa. Es la base de todo lo demás — sin libros en orden, no puedes presentar impuestos, respaldar una auditoría ni tomar decisiones financieras con información real.
+            </p>
+            <p class="bk-why-p" style="margin-bottom:0;">
+                Para una LLC con dueño no residente, el bookkeeping es especialmente crítico. El IRS exige el <strong style="color:var(--navy-900);font-weight:600;">Form 5472</strong> cada año, que reporta todas las transacciones entre tú y tu empresa.
+            </p>
+        </div>
+
+        <!-- Penalty card with CountUp -->
+        <div class="bk-penalty-card">
+            <span class="bk-penalty-ref">Form 5472 · IRS</span>
+            <div class="bk-penalty-badge">
+                <span class="bk-penalty-icon">
+                    <i data-lucide="alert-triangle" width="16" height="16"></i>
+                </span>
+                <span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--danger-700);">Multa por no presentar</span>
+            </div>
+            <div class="bk-penalty-amount">$<span class="bk-count-up" data-to="25000">0</span></div>
+            <div class="bk-penalty-sub">USD por formulario · multa inicial</div>
+            <p class="bk-penalty-desc">
+                No presentar el Form 5472 — incluso si tu LLC no tuvo ingresos — genera multas desde <strong style="color:var(--navy-900);font-weight:600;">$25,000 por formulario</strong>. El bookkeeping correcto es lo que hace posible cumplir ese requisito sin errores y sin consecuencias.
+            </p>
         </div>
     </div>
 </section>
