@@ -22,6 +22,7 @@ Route::prefix('pages')->group(function () {
     Route::get('/crear-empresa-en-estados-unidos', fn() => view('pages.abre-empresa'))->name('pages.crear-empresa-en-estados-unidos');
     Route::get('/contabilidad', fn() => view('pages.bookkeeping'))->name('pages.contabilidad');
     Route::get('/apertura-marketplace', fn() => view('pages.amazon'))->name('pages.apertura-marketplace');
+    Route::get('/registros-legales', fn() => view('pages.registros-legales'))->name('pages.registros-legales');
     Route::get('/registro-de-marca-ante-la-uspto', fn() => view('pages.marca'))->name('pages.registro-de-marca-ante-la-uspto');
     Route::get('/almacenamiento-y-logistica', fn() => view('pages.envios'))->name('pages.almacenamiento-y-logistica');
     Route::get('/registro-fda-de-alimentos', fn() => view('pages.sanitario'))->name('pages.registro-fda-de-alimentos');
