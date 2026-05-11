@@ -98,8 +98,8 @@
                 </a>
             </div>
         </div>
-        <div class="nav-dropdown {{ request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">
-            <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">
+        <div class="nav-dropdown {{ request()->is('pages/registros-legales') || request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">
+            <a href="{{ url('/pages/registros-legales') }}" class="nav-item nav-dropdown-trigger {{ request()->is('pages/registros-legales') || request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">
                 Registros legales
                 <svg class="nav-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -161,14 +161,15 @@
                 <a href="{{ url('/pages/sysco') }}" class="mobile-subitem {{ request()->is('pages/sysco') ? 'active' : '' }}">Sysco</a>
             </div>
         </div>
-        <div class="mobile-accordion {{ request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'open' : '' }}">
+        <div class="mobile-accordion {{ request()->is('pages/registros-legales') || request()->is('pages/registro-de-marca-ante-la-uspto') || request()->is('pages/registro-fda-de-alimentos') ? 'open' : '' }}">
             <button class="mobile-item mobile-accordion-trigger" onclick="toggleAccordion(this)">
                 Registros legales
                 <svg class="mobile-chevron" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="mobile-subitems">
-                <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="mobile-subitem">Marca</a>
-                <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="mobile-subitem">FDA</a>
+                <a href="{{ url('/pages/registros-legales') }}" class="mobile-subitem {{ request()->is('pages/registros-legales') ? 'active' : '' }}">Todos los registros</a>
+                <a href="{{ url('/pages/registro-de-marca-ante-la-uspto') }}" class="mobile-subitem {{ request()->is('pages/registro-de-marca-ante-la-uspto') ? 'active' : '' }}">Marca</a>
+                <a href="{{ url('/pages/registro-fda-de-alimentos') }}" class="mobile-subitem {{ request()->is('pages/registro-fda-de-alimentos') ? 'active' : '' }}">FDA</a>
             </div>
         </div>
         <a href="{{ url('/pages/almacenamiento-y-logistica') }}" class="mobile-item {{ request()->is('pages/almacenamiento-y-logistica') ? 'active' : '' }}">Envíos</a>
